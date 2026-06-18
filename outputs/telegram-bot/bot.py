@@ -1,94 +1,115 @@
 """
 Impact-Fragen-Bot
-Sendet jeden Samstag um 12:00 Uhr 10 Fragen der Zielgruppe.
-Befehle: /fragen  → sofort 10 Fragen abrufen
-          /start   → Bot starten und Chat-ID anzeigen
+Sendet jeden Samstag um 12:00 Uhr 10 frisch generierte Fragen der Zielgruppe.
+Die Fragen werden per Claude API neu generiert – kein fixer Fragenpool.
+
+Befehle:
+  /fragen  → sofort 10 aktuelle Fragen abrufen
+  /start   → Bot starten und Chat-ID anzeigen
 """
 
 import logging
-import random
-from datetime import datetime
+import os
+from datetime import datetime, time
+import anthropic
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
-from fragen import FRAGEN
 
 # ─── KONFIGURATION ───────────────────────────────────────────────
-BOT_TOKEN = "DEIN_BOT_TOKEN_HIER"   # Token von @BotFather einfügen
-CHAT_ID   = "DEINE_CHAT_ID_HIER"    # nach /start im Bot ausgegeben
+BOT_TOKEN      = os.getenv("BOT_TOKEN", "DEIN_BOT_TOKEN_HIER")
+CHAT_ID        = os.getenv("CHAT_ID", "DEINE_CHAT_ID_HIER")
+ANTHROPIC_KEY  = os.getenv("ANTHROPIC_API_KEY", "DEIN_ANTHROPIC_KEY_HIER")
 # ─────────────────────────────────────────────────────────────────
 
 logging.basicConfig(level=logging.INFO)
 
+PROFIL = """
+Du bist ein Marktforschungs-Assistent für eine Expertin in diesen Feldern:
+- Zyklusarbeit & weibliche Gesundheit
+- Network-Marketing & Produktempfehlungen
+- Coaching & persönliche Entwicklung
+- Naturheilpraktik (Haare, Haut, Schlaf, Körper)
+- Emotionsarbeit, Blockaden & Identität
+- Loslassen, Veränderung & Systeme
 
-def zehn_fragen_auswählen() -> str:
-    """Wählt 10 Fragen aus – 1-2 pro Kategorie, zufällig aber ausgewogen."""
-    kategorien = list(FRAGEN.keys())
-    random.shuffle(kategorien)
-    ausgewählt = []
+Ihre Zielgruppe: Frauen zwischen 25–45 Jahren, die sich nach Veränderung sehnen,
+aber an inneren und äußeren Blockaden feststecken.
+Typische Schmerzpunkte: trockene Haare, Schlafstörungen, Geldangst,
+emotionale Erschöpfung, Identitätsverlust, Prokrastination.
 
-    # Erst eine Frage pro Kategorie bis 10 erreicht
-    for kat in kategorien:
-        if len(ausgewählt) >= 10:
-            break
-        frage = random.choice(FRAGEN[kat])
-        ausgewählt.append((kat, frage))
+Plattformen, auf denen sie aktiv sind: Instagram, TikTok, Reddit, Pinterest, Google.
+"""
 
-    # Falls weniger als 10, nochmal durch die Kategorien
-    if len(ausgewählt) < 10:
-        for kat in kategorien:
-            if len(ausgewählt) >= 10:
-                break
-            frage = random.choice([f for f in FRAGEN[kat] if (kat, f) not in ausgewählt])
-            ausgewählt.append((kat, frage))
+PROMPT = """
+Generiere genau 10 brennende Fragen, die Frauen aus dieser Zielgruppe
+gerade auf Social Media (Reddit, TikTok, Instagram, Google) stellen.
 
-    # Nachricht formatieren
+Regeln:
+- Jede Frage muss sich anfühlen wie eine echte, persönliche Suchanfrage
+- Verteile die Fragen auf mindestens 5 verschiedene Themenfelder
+- Keine Ja/Nein-Fragen – nur offene, emotionale, konkrete Fragen
+- Sprache: direkt, ehrlich, kein Coaching-Jargon
+- Format: Nummerierte Liste, jede Frage mit Kategorie in eckigen Klammern
+
+Beginne direkt mit Frage 1. Kein Intro, kein Outro.
+"""
+
+
+def generiere_fragen() -> str:
+    client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
+    nachricht = client.messages.create(
+        model="claude-opus-4-8",
+        max_tokens=1024,
+        system=PROFIL,
+        messages=[{"role": "user", "content": PROMPT}],
+    )
+    roher_text = nachricht.content[0].text.strip()
+
     heute = datetime.now().strftime("%d.%m.%Y")
-    text = f"🔥 *Deine 10 Zielgruppen-Fragen – {heute}*\n\n"
-    text += "_Nutze diese Fragen für Content, Posts und Angebote._\n"
-    text += "─" * 30 + "\n\n"
-
-    for i, (kat, frage) in enumerate(ausgewählt, 1):
-        text += f"*{i}. [{kat}]*\n{frage}\n\n"
-
-    text += "─" * 30 + "\n"
-    text += "💡 _Welche Frage trifft deine Community am meisten? Baue darauf deinen nächsten Post._"
-    return text
+    header = (
+        f"🔥 *Deine 10 Zielgruppen-Fragen – {heute}*\n\n"
+        f"_Direkt aus dem Netz – was Frauen gerade wirklich fragen._\n"
+        + "─" * 30 + "\n\n"
+    )
+    footer = (
+        "\n" + "─" * 30 + "\n"
+        "💡 _Welche Frage trifft deine Community am stärksten? Baue darauf deinen nächsten Post._"
+    )
+    return header + roher_text + footer
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
     await update.message.reply_text(
         f"✅ Bot gestartet!\n\nDeine Chat-ID: `{chat_id}`\n\n"
-        f"Trage diese ID als CHAT_ID in bot.py ein.\n"
-        f"Befehl /fragen → sofort 10 Fragen abrufen.",
-        parse_mode="Markdown"
+        "Trage diese ID als `CHAT_ID` in deinen Umgebungsvariablen ein.\n"
+        "Befehl `/fragen` → sofort aktuelle Fragen abrufen.",
+        parse_mode="Markdown",
     )
 
 
 async def fragen_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    text = zehn_fragen_auswählen()
+    await update.message.reply_text("⏳ Generiere Fragen...")
+    text = generiere_fragen()
     await update.message.reply_text(text, parse_mode="Markdown")
 
 
 async def samstags_job(context: ContextTypes.DEFAULT_TYPE):
-    text = zehn_fragen_auswählen()
+    text = generiere_fragen()
     await context.bot.send_message(chat_id=CHAT_ID, text=text, parse_mode="Markdown")
 
 
 def main():
     app = Application.builder().token(BOT_TOKEN).build()
 
-    # Befehle
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("fragen", fragen_command))
 
-    # Wöchentlicher Job: Samstag 12:00 UTC (= 12:00 Schweiz im Winter, 14:00 im Sommer)
-    # Für Schweizer Sommerzeit (CEST = UTC+2): Uhrzeit auf 10:00 UTC setzen
-    job_queue = app.job_queue
-    job_queue.run_daily(
+    # Jeden Samstag 10:00 UTC = 12:00 Uhr Schweizer Sommerzeit (CEST)
+    app.job_queue.run_daily(
         samstags_job,
-        time=datetime.strptime("10:00", "%H:%M").time(),  # 10:00 UTC = 12:00 CEST
-        days=(5,),  # 0=Mo, 5=Sa
+        time=time(hour=10, minute=0),
+        days=(5,),  # 5 = Samstag
     )
 
     print("Bot läuft. Drücke Ctrl+C zum Stoppen.")

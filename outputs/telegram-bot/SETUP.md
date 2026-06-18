@@ -2,85 +2,75 @@
 
 ## Was der Bot macht
 
-- Schickt dir **jeden Samstag um 12:00 Uhr** genau 10 Fragen deiner Zielgruppe
-- Verteilt die Fragen über 7 Kategorien (Haare, Geld, Schlaf, Emotionen, Loslassen, Zyklus, Systeme)
-- Befehl `/fragen` → sofort 10 Fragen abrufen, wann immer du willst
+- Schickt dir **jeden Samstag um 12:00 Uhr** 10 frische Fragen deiner Zielgruppe
+- Die Fragen werden wöchentlich **neu generiert** (via Claude AI) – kein fixer Pool
+- Befehl `/fragen` → sofort 10 aktuelle Fragen abrufen, wann du willst
 
 ---
 
-## Einrichtung (einmalig, ca. 15 Minuten)
+## Tokens sicher übergeben – NIEMALS in den Chat schreiben
 
-### Schritt 1 – Bot bei Telegram erstellen
+Du brauchst drei Schlüssel. Alle werden als **Umgebungsvariablen** gesetzt –
+niemals in eine Datei oder in einen Chat eingefügt.
+
+| Variable          | Woher                        |
+|-------------------|------------------------------|
+| `BOT_TOKEN`       | @BotFather auf Telegram      |
+| `CHAT_ID`         | nach `/start` im Bot         |
+| `ANTHROPIC_API_KEY` | console.anthropic.com       |
+
+---
+
+## Einrichtung Schritt für Schritt
+
+### Schritt 1 – Telegram Bot erstellen
 
 1. Öffne Telegram → suche **@BotFather**
 2. Sende `/newbot`
 3. Name eingeben: z. B. `Impact Fragen Bot`
-4. Benutzername eingeben (muss auf „bot" enden): z. B. `impactfragenbot`
-5. BotFather gibt dir einen **API-Token** – sicher kopieren
+4. Benutzername (muss auf „bot" enden): z. B. `impactfragenbot`
+5. BotFather gibt dir deinen **BOT_TOKEN** – nur für dich, sicher aufbewahren
 
-### Schritt 2 – Token eintragen
+### Schritt 2 – Anthropic API Key holen
 
-Öffne `bot.py`, Zeile 16:
-```python
-BOT_TOKEN = "DEIN_BOT_TOKEN_HIER"
+1. Gehe zu [console.anthropic.com](https://console.anthropic.com)
+2. Account erstellen (kostenloser Einstieg verfügbar)
+3. „API Keys" → „Create Key"
+4. Key kopieren und sicher speichern (nur einmal sichtbar)
+
+### Schritt 3 – Bot auf Railway.app deployen (empfohlen, kostenlos)
+
+Railway ist eine Plattform, auf der der Bot dauerhaft läuft – kein eigener Server nötig.
+
+1. Gehe zu [railway.app](https://railway.app) → Account mit GitHub erstellen
+2. „New Project" → „Deploy from GitHub" → diesen Ordner verbinden
+   *(oder: „Empty Project" → Dateien manuell hochladen)*
+3. Im Railway-Dashboard: **„Variables"** öffnen
+4. Drei Variablen eintragen (hier sind Tokens sicher):
+
 ```
-Ersetze `DEIN_BOT_TOKEN_HIER` durch deinen echten Token.
-
-### Schritt 3 – Chat-ID herausfinden
-
-1. Bot installieren und starten (Schritt 4)
-2. Schreibe deinem Bot `/start` auf Telegram
-3. Der Bot antwortet mit deiner Chat-ID
-4. Diese ID in `bot.py` Zeile 17 eintragen:
-```python
-CHAT_ID = "123456789"
+BOT_TOKEN       = [dein Token von BotFather]
+CHAT_ID         = [wird nach Schritt 4 bekannt]
+ANTHROPIC_API_KEY = [dein Key von Anthropic]
 ```
 
-### Schritt 4 – Bot auf deinem Computer/Server starten
+5. Deployment starten
 
-```bash
-# Python-Pakete installieren
-pip install -r requirements.txt
+### Schritt 4 – Chat-ID herausfinden
 
-# Bot starten
-python bot.py
-```
+1. Suche deinen Bot auf Telegram (z. B. `@impactfragenbot`)
+2. Schreibe `/start`
+3. Bot antwortet mit deiner Chat-ID
+4. Diese ID in Railway unter `CHAT_ID` nachtragen → Bot neu starten
 
 ---
 
-## Dauerhaft laufen lassen (empfohlen)
+## Zeitzone
 
-Damit der Bot auch läuft, wenn du deinen Computer zumachst, braucht er einen Server.
+Bot ist auf **10:00 UTC** eingestellt = **12:00 Uhr Schweizer Sommerzeit (CEST)**
 
-**Einfachste Option: Railway.app (kostenlos)**
-1. Gehe zu [railway.app](https://railway.app)
-2. Neues Projekt → „Deploy from GitHub" oder manuell
-3. Dateien hochladen: `bot.py`, `fragen.py`, `requirements.txt`
-4. Umgebungsvariablen setzen: `BOT_TOKEN` und `CHAT_ID`
-5. Deployment starten → Bot läuft 24/7
-
-**Alternative: PythonAnywhere (kostenlos)**
-1. Account auf [pythonanywhere.com](https://pythonanywhere.com) erstellen
-2. Dateien hochladen
-3. „Always-on task" einrichten
-
----
-
-## Zeitzone beachten
-
-Der Bot ist auf **10:00 UTC** eingestellt = **12:00 Uhr Schweizer Sommerzeit (CEST)**.
-
-Im Winter (MEZ = UTC+1): Nachricht kommt um 11:00 Uhr.
-→ Dann `bot.py` Zeile 38 auf `"11:00"` ändern.
-
----
-
-## Fragen anpassen
-
-Alle Fragen stehen in `fragen.py`. Du kannst jederzeit:
-- Neue Fragen hinzufügen
-- Kategorien ergänzen (z. B. „Ernährung", „Beziehungen")
-- Fragen entfernen, die nicht mehr passen
+Winter (MEZ, November–März): Nachricht kommt um 11:00 Uhr.
+→ Dann in `bot.py` Zeile `time(hour=10)` auf `time(hour=11)` ändern.
 
 ---
 
@@ -89,4 +79,16 @@ Alle Fragen stehen in `fragen.py`. Du kannst jederzeit:
 | Befehl | Funktion |
 |--------|----------|
 | `/start` | Bot starten, Chat-ID anzeigen |
-| `/fragen` | Sofort 10 Fragen abrufen |
+| `/fragen` | Sofort 10 frische Fragen generieren |
+
+---
+
+## Kosten
+
+| Dienst | Kosten |
+|--------|--------|
+| Railway.app | Kostenlos (Hobby-Plan) |
+| Anthropic API | ~0.01–0.03 CHF pro Woche |
+| Telegram Bot | Kostenlos |
+
+Der Bot kostet dich praktisch nichts.
