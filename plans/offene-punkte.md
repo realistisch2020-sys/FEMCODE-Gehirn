@@ -4,7 +4,7 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- (noch nichts)
+- Männer-Set-Monat-Flyer A5 erstellen (Infos zu Produkt, Preis, Zeitraum, Brand noch offen)
 
 ## Demnächst
 
