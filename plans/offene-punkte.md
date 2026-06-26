@@ -2,23 +2,22 @@
 
 ## Diese Woche
 
-### Telegram-Bot fertig einrichten
+### Telegram-Bot – letzter Schritt fehlt
 
-Bot-Code ist fertig (Google Apps Script, kein API-Key nötig, kostenlos).
-**Bot-Token ist bereits im Google Script eingetragen (Zeile 2) ✓**
+**Was bereits funktioniert:**
+- Bot @zielgruppenbot existiert auf Telegram ✓
+- Chat-ID bekannt: 447547765 ✓
+- Google Script mit Code ist eingerichtet ✓
+- Code (jetztSenden-Funktion) ist eingefügt ✓
+- BOT_TOKEN (neu) ist eingetragen ✓
 
-Noch offen – nächste Sitzung hier weitermachen:
+**Was noch fehlt:**
+- Google Apps Script Autorisierung abschliessen – blockiert immer wieder
+- Einmalig „Zulassen" klicken damit Script auf Telegram zugreifen darf
+- Dann: wöchentlichen Trigger einrichten (Samstag 12:00)
 
-1. ~~Bot-Token eintragen~~ ✓ bereits drin
-2. Alten Code ersetzen durch neuen (ohne Anthropic-Key):
-   - script.google.com öffnen → Projekt öffnen
-   - Strg+A → Entf → neuen Code einfügen → Strg+S
-   - Bot-Token aus dem alten Code oben in Zeile 2 wieder eintragen
-3. Auf Telegram: eigenen Bot suchen → /start schreiben
-4. In Google Script: Funktion `meineChatIdFinden` ausführen → Chat-ID notieren
-5. Chat-ID in Zeile 3 eintragen → Strg+S
-6. Funktion `jetztSenden` testen → prüfen ob Nachricht auf Telegram ankommt
-7. Automatischen Trigger einrichten (jeden Samstag 12:00)
+**Nächste Session: Lösung vorab testen, dann Petra führen.**
+Mögliche Alternative falls Script-Autorisierung weiter blockiert: Make.com oder direkter API-Aufruf via Browser-Lesezeichen.
 
 ## Demnächst
 
@@ -26,4 +25,4 @@ Noch offen – nächste Sitzung hier weitermachen:
 
 ## Ideen / später
 
-- Fragenbank erweitern oder durch KI-generierte Fragen ersetzen
+- Fragenbank erweitern
