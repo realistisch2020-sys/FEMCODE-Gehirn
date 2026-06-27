@@ -1,113 +1,55 @@
-// ── DEINE EINSTELLUNGEN ──────────────────────────────────────────
-var BOT_TOKEN = "HIER_BOT_TOKEN_EINFÜGEN";
-var CHAT_ID   = "";  // wird automatisch gefunden
-// ─────────────────────────────────────────────────────────────────
+var BOT_TOKEN = "HIER_TOKEN_EINFÜGEN";
+var CHAT_ID = "447547765";
 
-var ALLE_FRAGEN = [
-  // Haare & Körper
-  "Warum sind meine Haare immer so trocken, egal welches Shampoo ich benutze?",
-  "Was hilft wirklich gegen kaputte Haarspitzen – ohne teuren Salon?",
-  "Warum verliere ich so viele Haare und was kann ich dagegen tun?",
-  "Kann Ernährung wirklich die Haarqualität verändern?",
-  "Was tun, wenn die Haare nach dem Waschen sofort wieder fettig sind?",
-  "Welche natürlichen Öle sind wirklich gut für die Kopfhaut?",
-  "Wie pflege ich coloriertes Haar, ohne es noch mehr zu schädigen?",
-  // Geld & Finanzen
-  "Wie komme ich raus aus dem Gefühl, nie genug Geld zu haben?",
-  "Was blockiert mich unbewusst beim Geldverdienen?",
-  "Wie ändere ich meine innere Einstellung zu Geld?",
-  "Was ist der erste Schritt, wenn man am Ende des Monats immer im Minus ist?",
-  "Wie spreche ich über Preise, ohne mich dabei schlecht zu fühlen?",
-  "Was bedeutet Geldenergie und wie nutze ich sie?",
-  "Wie setze ich einen fairen Preis für meine Leistungen?",
-  // Schlaf & Hormone
-  "Warum wache ich nachts immer um 3 Uhr auf und kann nicht mehr schlafen?",
-  "Was hilft wirklich bei Einschlafproblemen – ohne Schlafmittel?",
-  "Wie beruhige ich meinen Kopf, bevor ich schlafen gehe?",
-  "Was ist der Zusammenhang zwischen meinem Zyklus und meinem Schlaf?",
-  "Warum bin ich morgens noch müde, obwohl ich 8 Stunden geschlafen habe?",
-  "Wie beeinflussen Emotionen meinen Schlaf?",
-  "Kann Magnesium wirklich beim Schlafen helfen?",
-  // Emotionen & Identität
-  "Warum fühle ich mich manchmal tagelang leer, ohne zu wissen warum?",
-  "Wie erkenne ich, was ich wirklich will – und nicht, was andere erwarten?",
-  "Wie höre ich auf, meine Emotionen zu unterdrücken?",
-  "Was bedeutet es, sich selbst treu zu sein?",
-  "Wie komme ich raus aus dem Gefühl, nicht gut genug zu sein?",
-  "Wie lerne ich, Nein zu sagen, ohne mich schuldig zu fühlen?",
-  "Wie gehe ich mit starker Selbstkritik um?",
-  // Loslassen & Neuanfang
-  "Wie lasse ich jemanden los, der mir wichtig war?",
-  "Was hält mich in alten Mustern fest – und wie breche ich daraus aus?",
-  "Wie schaffe ich Platz für Neues in meinem Leben?",
-  "Wie lasse ich Kontrolle los, ohne das Gefühl zu haben, alles zu verlieren?",
-  "Wie fange ich nach einem Rückschlag neu an?",
-  "Wie trenne ich mich von Gewohnheiten, die mich belasten?",
-  "Wie unterscheide ich, was ich loslassen soll und was ich festhalten darf?",
-  // Zyklus & Frausein
-  "Warum bin ich kurz vor der Periode so reizbar – was steckt dahinter?",
-  "Wie nutze ich meinen Zyklus, um produktiver zu sein?",
-  "Was ist Zyklusarbeit und wie fange ich damit an?",
-  "Was sagt mir mein Zyklus über meine Gesundheit?",
-  "Wie beeinflusst der Zyklus meine Energie und Stimmung?",
-  "Was sind häufige Zeichen, dass mein Hormonsystem aus dem Gleichgewicht ist?",
-  "Wie ernähre ich mich zyklusgerecht?",
-  // Systeme & Struktur
-  "Wie baue ich eine Morgenroutine auf, die ich wirklich durchhalte?",
-  "Was ist der einfachste Weg, meinen Tag zu strukturieren?",
-  "Wie organisiere ich mein Business neben dem Job?",
-  "Wie höre ich auf, alles auf einmal anzugehen?",
-  "Wie bleibe ich fokussiert, wenn es tausend Ablenkungen gibt?",
-  "Was tue ich, wenn ich immer prokrastiniere?",
-  "Ich weiß was ich ändern müsste – aber tue es trotzdem nicht. Warum sabotiere ich mich selbst?",
-  // Coaching & Blockaden
-  "Wie weiß ich, ob ich eine Beziehung oder ein Projekt wirklich loslassen soll?",
-  "Was ist ein Glaubenssatz – und wie löse ich ihn auf?",
-  "Wie fange ich neu an, wenn ich nicht mal mehr weiß, wer ich bin?",
-  "Wie höre ich auf, für alle da zu sein, bevor ich für mich selbst da bin?",
-  "Was ist der Unterschied zwischen Traurigkeit und Depression?",
+var FRAGEN = [
+  "Wie baue ich ein Business auf, das zu meinem Leben passt – nicht umgekehrt?",
+  "Wie spreche ich über meine Produkte, ohne mich wie eine Verkäuferin zu fühlen?",
+  "Wie finde ich die richtigen Menschen für mein Team?",
+  "Wie bleibe ich motiviert, wenn das Business langsam wächst?",
+  "Was brauche ich wirklich, um im Network-Marketing erfolgreich zu sein?",
+  "Wie kombiniere ich Coaching und Produkte in einem Angebot?",
+  "Wie baue ich Vertrauen auf, bevor jemand bei mir kauft?",
+  "Was ist der Unterschied zwischen einem Kunden und einem Teampartner?",
+  "Wie finde ich heraus, was mich wirklich antreibt – jenseits von Geld?",
+  "Was hält mich davon ab, mein volles Potenzial zu leben?",
+  "Wie setze ich Ziele, die ich wirklich erreiche – und nicht nur plane?",
+  "Was bedeutet es, aus der Opferrolle herauszutreten?",
+  "Wie verändere ich Glaubenssätze, die mich seit Jahren blockieren?",
+  "Wie erkenne ich, ob ich aus Angst handle oder aus Stärke?",
+  "Was tue ich, wenn mein Umfeld mein Business nicht ernst nimmt?",
+  "Wie gehe ich mit Ablehnung um, ohne aufzugeben?",
+  "Wie höre ich auf, anderen zu gefallen, und fange an, mir selbst treu zu sein?",
+  "Was bedeutet es, eine starke weibliche Identität zu entwickeln?",
+  "Wie komme ich in meine Kraft, wenn ich mich klein fühle?",
+  "Was ist der Unterschied zwischen Selbstliebe und Selbstgefälligkeit?",
+  "Wie baue ich echtes Vertrauen in mich selbst auf?",
+  "Was bedeutet es, eine Frau zu sein, die von innen heraus führt?",
   "Wie erkenne ich emotionale Erschöpfung, bevor sie zum Burnout wird?",
-  "Wie lerne ich, meine eigenen Bedürfnisse ernst zu nehmen?"
+  "Wie fange ich neu an, wenn ich nicht mehr weiss, wer ich bin?",
+  "Was brauche ich, um den nächsten grossen Schritt in meinem Leben zu wagen?",
+  "Wie lasse ich los, was mich zurückhält – ohne zu wissen, was danach kommt?",
+  "Was tue ich, wenn ich weiss, dass sich etwas ändern muss, aber nicht weiss wie?",
+  "Wie trenne ich mich von Mustern, die mich seit Jahren begleiten?",
+  "Was bedeutet es, sich selbst neu zu erfinden?",
+  "Wie finde ich Mut, wenn die Angst grösser ist als der Wunsch nach Veränderung?"
 ];
 
-function zufälligeFragen() {
-  var kopie = ALLE_FRAGEN.slice();
-  // mischen
+function jetztSenden() {
+  var kopie = FRAGEN.slice();
   for (var i = kopie.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
     var temp = kopie[i]; kopie[i] = kopie[j]; kopie[j] = temp;
   }
   var auswahl = kopie.slice(0, 10);
-  var text = "";
-  for (var k = 0; k < auswahl.length; k++) {
-    text += (k + 1) + ". " + auswahl[k] + "\n\n";
+  var text = "Deine 10 Zielgruppen-Fragen:\n\n";
+  for (var k = 0; k < 10; k++) {
+    text += (k+1) + ". " + auswahl[k] + "\n\n";
   }
-  return text;
-}
-
-function meineChatIdFinden() {
-  var url = "https://api.telegram.org/bot" + BOT_TOKEN + "/getUpdates";
-  var antwort = UrlFetchApp.fetch(url);
-  var daten = JSON.parse(antwort.getContentText());
-  if (daten.result && daten.result.length > 0) {
-    var id = daten.result[0].message.chat.id;
-    Browser.msgBox("Deine Chat-ID: " + id + "\n\nKopiere diese Zahl und trage sie oben bei CHAT_ID ein.");
-  } else {
-    Browser.msgBox("Keine Nachrichten gefunden.\nSchreibe zuerst /start an deinen Bot auf Telegram, dann nochmal versuchen.");
-  }
-}
-
-function jetztSenden() {
-  var datum = Utilities.formatDate(new Date(), "Europe/Zurich", "dd.MM.yyyy");
-  var text = "🔥 Deine 10 Zielgruppen-Fragen – " + datum + "\n\nWas Frauen gerade wirklich fragen:\n\n" + zufälligeFragen() + "💡 Welche Frage trifft deine Community am stärksten?";
-
   var url = "https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage";
   UrlFetchApp.fetch(url, {
-    "method": "post",
-    "contentType": "application/json",
-    "payload": JSON.stringify({
-      "chat_id": CHAT_ID,
-      "text": text
-    })
+    method: "post",
+    contentType: "application/json",
+    payload: JSON.stringify({ chat_id: CHAT_ID, text: text })
   });
+  Logger.log("Gesendet!");
 }
