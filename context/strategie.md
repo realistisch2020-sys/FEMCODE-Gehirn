@@ -1,17 +1,18 @@
 # Strategie
 
-Hier kommt rein, woran du gerade arbeitest und wohin es gehen soll. So weiß Claude, was Priorität hat.
-
 ## Aktueller Fokus
 
-Woran arbeitest du gerade konkret?
+Aufbau und Launch von "Feminin Aura" — einem bezahlten Duplikationssystem für Monat Networkerinnen.
 
 ## Ziele der nächsten Monate
 
-Was willst du in den nächsten drei bis sechs Monaten erreichen?
+1. Feminin Aura offiziell launchen (Launch Post fertig, Grafik noch offen)
+2. Erstes Praxis Training durchführen
+3. Preis und Verkaufsstrategie für Feminin Aura aufbauen
+4. Erste Käuferinnen gewinnen
 
 ## Prioritäten
 
-Was ist wichtig, was kann warten?
-
-Kurz und konkret. Drei klare Ziele schlagen zehn vage.
+1. Canva Grafik für den Launch Post erstellen
+2. Preis festlegen und Verkaufsseite aufbauen
+3. Datum für erstes Praxis Training festlegen und ankündigen

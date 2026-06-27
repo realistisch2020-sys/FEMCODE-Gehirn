@@ -1,21 +1,30 @@
 # Mein Business
 
-Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content, Angebote und Texte wirklich in deinem Kontext bauen.
-
 ## Was ich anbiete
 
-Welche Produkte, Programme oder Leistungen? Was ist dein Hauptangebot?
+1. **Monat Produkte** — Haarpflege und Hautpflege (Network Marketing)
+   Lieblingsprodukte: Renew Linie, ir Clinical Set, Scrub
+   Kernaussage: Produkte die wirklich Ergebnisse liefern. Kunden kommen zurück.
+
+2. **Feminin Aura** — ein Duplikationssystem für Monat Networkerinnen
+   Analog zu DupliSog (Golden Wave Int.)
+   Kernversprechen: "Das erste Monat System das sich selbst erklärt. Baue dein Business ohne jemals zu präsentieren. Vollständig replizierbar."
 
 ## Meine Zielgruppe
 
-Für wen ist das? Wer kauft bei dir, was beschäftigt diese Menschen?
+Frauen 25 bis 45 die schön aussehen UND nebenbei Geld verdienen wollen.
+Typischer Weg: Startet als Kundin → liebt die Produkte → wird Partnerin.
 
 ## Meine Kanäle
 
-Wo findest du statt (Instagram, Newsletter, Podcast, was auch immer)?
+Instagram und Facebook (Hauptkanäle)
 
-## Meine Angebote und Preise
+## Feminin Aura — System Bausteine
 
-Was kostet was? Grobe Preisspannen reichen.
+1. Skript-Bibliothek (7 DM Skripte)
+2. Social Media Paket (7 Posts pro Woche)
+3. Onboarding System (4 Nachrichten, Tag 1 bis 7)
+4. Selbsterklärungs-System (5 Nachrichten die alles erklären)
+5. Praxis Training (monatlich, Zoom, 1 Stunde)
 
-Kurz halten. Genug damit Claude dich versteht, kein vollständiges Wiki.
+Alle Inhalte in outputs/ gespeichert.

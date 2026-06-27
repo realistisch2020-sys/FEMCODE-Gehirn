@@ -1,15 +1,17 @@
 # Offene Punkte
 
-Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
-
 ## Diese Woche
 
-- (noch nichts)
+- Canva Grafik für Feminin Aura Launch Post erstellen (Anleitung liegt in outputs/feminin-aura-launch-post.md)
+- Datum für erstes Praxis Training festlegen
 
 ## Demnächst
 
-- (noch nichts)
+- Preis für Feminin Aura festlegen
+- Verkaufsseite / Verkaufsstrategie aufbauen (wie sie das System an andere Networkerinnen verkauft)
+- Launch Post veröffentlichen
 
 ## Ideen / später
 
-- (noch nichts)
+- Feminin Aura Community (private Facebook Gruppe oder WhatsApp)
+- Weitere wöchentliche Social Media Posts ausbauen
