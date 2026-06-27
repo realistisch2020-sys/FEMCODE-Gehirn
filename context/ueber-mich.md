@@ -5,6 +5,14 @@
 Petra Tanner, 60 Jahre. Expertin für Network-Marketing-Produkte, Coaching, Naturheilpraktik und Emotionen.
 Ziel: Zielgruppe besser verstehen, um daraus gezielten Content, Social-Media-Auftritte und Pay-Point-Marketing zu entwickeln.
 
+## Business-Situation
+
+- Verdient aktuell leicht fünfstellig (Einzelsitzungen in der Praxis)
+- Ziel: sechsstellig — schneller, leichter, ohne mehr Zeit zu tauschen
+- Arbeitet nur in Einzelsitzungen — möchte skalieren
+- Hochpreis-Paket „Von innen frei. Von aussen erfolgreich." entwickelt (4.800 CHF, 6 Monate)
+- Nächster Schritt: Paket sichtbar machen via Instagram/Social Media
+
 ## Themen-Felder
 
 - Network-Marketing / Produktempfehlungen

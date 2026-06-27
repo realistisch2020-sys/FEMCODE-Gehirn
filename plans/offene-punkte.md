@@ -2,15 +2,16 @@
 
 ## Diese Woche
 
-- 12 Telegram-Automatisierungen aus Julia Nickel Kurs einrichten (der Reihe nach)
-  - 01 ✓ Brennende Fragen (läuft bereits jeden Samstag)
-  - 02–12 noch offen
-- Vor jeder neuen Automatisierung: Julias Video dazu anschauen, damit wir denselben Weg gehen
+- Instagram-Post posten (Post 1 oder Post 2 aus outputs/instagram-post-hochpreis.md)
+- Eigenes Foto für den Post auswählen → in Canva mit Text versehen
+- Reel-Script erstellen (nächste Session)
 
 ## Demnächst
 
-- Content aus den wöchentlichen Fragen entwickeln (Posts, Reels, Newsletter)
-- Fragenbank regelmässig aktualisieren / erweitern
+- 12 Telegram-Automatisierungen aus Julia Nickel Kurs einrichten (der Reihe nach)
+  - 01 ✓ Brennende Fragen (läuft bereits jeden Samstag)
+  - 02–12 noch offen
+- Vor jeder neuen Automatisierung: Julias Video dazu anschauen
 
 ## Wichtige Regel für nächste Sessions
 
