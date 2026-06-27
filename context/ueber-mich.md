@@ -39,3 +39,23 @@ Wöchentliche Fragen der Zielgruppe → Social Media Posts, gezieltes Marketing,
 - Bevorzugt kostenlose Lösungen
 - Wird ungeduldig wenn etwas nicht klappt – Lösungen vorab testen
 - Kein Zyklus, kein Wechseljahre, kein reife Frauen – allgemeine Zielgruppe
+- Macht Julia Nickel Kurs „Claude Code Business" – orientiert sich an Julias Methoden
+- Möchte DENSELBEN Weg wie Julia – nicht alternative Lösungen
+- Arbeitet über Browser (claude.ai), kein Terminal verfügbar
+- Bot läuft über Google Apps Script (nicht Claude Code direkt)
+- Nächste Ausbaustufe: 12 Telegram-Automatisierungen aus Julias Kurs einrichten
+
+## Telegram – Geplante Automatisierungen (aus Julia Nickel Kurs)
+
+01. Brennende Fragen der Zielgruppe ✓ (läuft jeden Samstag)
+02. Marktanalyse und Trends in der Nische
+03. Verkaufszahlen im Blick
+04. Social-Media-Zahlen und beste Posts
+05. Newsletter-Zahlen und neue Abonnentinnen
+06. Konkurrenz-Beobachtung
+07. Content-Vorschläge für die Woche
+08. Erinnerungen an Aufgaben und Termine
+09. Fertig-Meldung wenn ein Post fertig ist
+10. Fragen und Feedback aus der Community
+11. Anmeldezahlen während eines Launches
+12. Chef-Agentin, die alle Routinen überwacht
