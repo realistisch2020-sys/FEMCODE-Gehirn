@@ -2,16 +2,20 @@
 
 ## Diese Woche
 
-- Canva Grafik für Feminin Aura Launch Post erstellen (Anleitung liegt in outputs/feminin-aura-launch-post.md)
+- Canva Grafik erstellen (Anleitung: outputs/feminin-aura-canva-anleitung.md)
+- Professionelles Foto für den Netzwerk-Baum aussuchen
+- Google Drive Ordner "Feminin Aura System" erstellen und befüllen
 - Datum für erstes Praxis Training festlegen
+- Twint oder PayPal für Zahlungen bereit machen
 
 ## Demnächst
 
-- Preis für Feminin Aura festlegen
-- Verkaufsseite / Verkaufsstrategie aufbauen (wie sie das System an andere Networkerinnen verkauft)
-- Launch Post veröffentlichen
+- Launch Post veröffentlichen (Text + Grafik fertig)
+- Erstes kostenloses Praxis Training ankündigen und durchführen
+- Erste Mitglieder gewinnen und in WhatsApp Gruppe einladen
 
 ## Ideen / später
 
-- Feminin Aura Community (private Facebook Gruppe oder WhatsApp)
 - Weitere wöchentliche Social Media Posts ausbauen
+- Empfehlungssystem aktivieren (CHF 10 pro geworbene Freundin)
+- Preis erhöhen sobald System läuft und Ergebnisse da sind
