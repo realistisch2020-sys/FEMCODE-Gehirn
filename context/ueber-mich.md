@@ -13,3 +13,6 @@ Network Marketing Unternehmerin bei Monat. Seit 1 Jahr dabei.
 - Spirit: Franzi von New Life Spirit + Nadine Tosun
 - Kundisch: erst nach der anderen Person fragen, dann über das Angebot reden
 - Keine langen Erklärungen — kurz, klar, menschlich
+- Arbeitet auf dem Handy (Canva Mobile App) → immer mobile-freundliche Anleitungen geben
+- Braucht fertige Elemente zum Einfügen, keine manuelle Schritt für Schritt Konstruktion
+- Wording Regel: "Das System das jede weitergeben kann" statt "vollständig replizierbar"
