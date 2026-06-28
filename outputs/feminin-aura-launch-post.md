@@ -17,7 +17,7 @@ das sich selbst erklärt.
 
 Baue dein Business ohne
 jemals zu präsentieren.
-Vollständig replizierbar.
+Das System das jede weitergeben kann.
 
 [Netzwerk-Baum mit Frauenfotos]
 

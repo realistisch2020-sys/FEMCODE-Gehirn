@@ -8,7 +8,7 @@
 
 2. **Feminin Aura** — ein Duplikationssystem für Monat Networkerinnen
    Analog zu DupliSog (Golden Wave Int.)
-   Kernversprechen: "Das erste Monat System das sich selbst erklärt. Baue dein Business ohne jemals zu präsentieren. Vollständig replizierbar."
+   Kernversprechen: "Das erste Monat System das sich selbst erklärt. Baue dein Business ohne jemals zu präsentieren. Das System das jede weitergeben kann."
 
 ## Meine Zielgruppe
 

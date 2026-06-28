@@ -36,7 +36,7 @@ Und wer möchte kann damit auch ein Business aufbauen. Nicht müssen. Können. �
 
 Du bekommst fertige Texte für deine Nachrichten. Fertige Posts für Social Media. Ein Onboarding das neue Partnerinnen selbst durch alles führt.
 
-Du musst niemandem etwas erklären. Das System macht das für dich. Jede Frau in deinem Team kann es genauso nutzen. 🌿"
+Du musst niemandem etwas erklären. Das System macht das für dich. Das System das jede weitergeben kann. 🌿"
 
 ---
 

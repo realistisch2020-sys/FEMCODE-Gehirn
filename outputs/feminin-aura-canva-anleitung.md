@@ -40,7 +40,7 @@ Farbe: #F0E6D3 (Champagne) | Schrift: kursiv, mittelgross | Empfehlung: "Playfai
 Text 3: Das erste Monat System das sich selbst erklärt.
 Farbe: #F0E6D3 (Champagne) | Schrift: mittelgross, normal
 
-Text 4: Baue dein Business ohne jemals zu präsentieren. Vollständig replizierbar.
+Text 4: Baue dein Business ohne jemals zu präsentieren. Das System das jede weitergeben kann.
 Farbe: #C9A0A0 (Rose Gold) | Schrift: klein, leicht
 
 Text 5: mitentwickelt von Petra Tanner
