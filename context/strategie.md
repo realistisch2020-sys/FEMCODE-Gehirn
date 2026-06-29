@@ -2,17 +2,25 @@
 
 ## Aktueller Fokus
 
-Aufbau und Launch von "Feminin Aura" — einem bezahlten Duplikationssystem für Monat Networkerinnen.
+Feminin Aura testen mit 2-3 Frauen. System ist vollständig aufgebaut.
+Ablauf wie DupliSog: manuell per WhatsApp, Zahlung per Twint, kein Automationstool nötig.
 
 ## Ziele der nächsten Monate
 
-1. Feminin Aura offiziell launchen (Launch Post fertig, Grafik noch offen)
+1. Test mit 2-3 Frauen abschliessen und Feedback sammeln
 2. Erstes Praxis Training durchführen
-3. Preis und Verkaufsstrategie für Feminin Aura aufbauen
-4. Erste Käuferinnen gewinnen
+3. Öffentlichen Launch Post veröffentlichen
+4. Erste zahlende Mitglieder gewinnen
 
 ## Prioritäten
 
-1. Canva Grafik für den Launch Post erstellen
-2. Preis festlegen und Verkaufsseite aufbauen
-3. Datum für erstes Praxis Training festlegen und ankündigen
+1. WhatsApp Gruppe "Feminin Aura" erstellen
+2. 2-3 Testfrauen mit Skript 1 anschreiben
+3. Twint oder PayPal für Zahlungen bereit machen
+
+## Was fertig ist
+
+Canva Grafik: fertig
+Alle Inhalte: vollständig (12 Dateien in outputs/)
+Preis: CHF 37 pro Monat
+Verkauf: Launch Post + Kommentare oder kostenloses erstes Training

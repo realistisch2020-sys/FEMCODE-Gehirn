@@ -2,19 +2,19 @@
 
 ## Diese Woche
 
-- Canva Grafik fertigstellen — Netzwerk-Baum fehlt noch (in Canva suche: "hierarchy" oder "org chart" → Element einfügen → Rose Gold anpassen → Fotos einsetzen)
-- Google Drive Ordner "Feminin Aura System" erstellen und alle Output-Dateien reinkopieren
-- Datum für erstes Praxis Training festlegen
+- WhatsApp Gruppe erstellen mit Name: Feminin Aura
+- 2-3 Testfrauen aussuchen und Skript 1 schicken
 - Twint oder PayPal für Zahlungen bereit machen
+- Datum für erstes Praxis Training festlegen
 
 ## Demnächst
 
-- Launch Post veröffentlichen (Text fertig in outputs/feminin-aura-launch-post.md, Grafik fast fertig)
+- Launch Post auf Instagram und Facebook veröffentlichen (Text + Grafik sind fertig)
 - Erstes kostenloses Praxis Training ankündigen und durchführen
-- Erste Mitglieder gewinnen und in WhatsApp Gruppe einladen
+- Feedback von den 2-3 Testfrauen sammeln und System anpassen
 
 ## Ideen / später
 
-- Weitere wöchentliche Social Media Posts ausbauen
 - Empfehlungssystem aktivieren (CHF 10 pro geworbene Freundin)
 - Preis erhöhen sobald System läuft und Ergebnisse da sind
+- Weitere monatliche Social Media Posts ausbauen
