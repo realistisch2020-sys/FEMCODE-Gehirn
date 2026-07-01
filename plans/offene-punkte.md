@@ -2,19 +2,21 @@
 
 ## Diese Woche
 
-- WhatsApp Gruppe erstellen mit Name: Feminin Aura
-- 2-3 Testfrauen aussuchen und Skript 1 schicken
-- Twint oder PayPal für Zahlungen bereit machen
-- Datum für erstes Praxis Training festlegen
+- Elopage Account erstellen: elopage.com → kostenlos registrieren
+- Erstes Produkt "Feminin Aura System" auf Elopage anlegen
+- Alle 8 Module mit Inhalten befüllen
+- Zahlung CHF 37/Monat einrichten + automatischen Zugang aktivieren
 
 ## Demnächst
 
-- Launch Post auf Instagram und Facebook veröffentlichen (Text + Grafik sind fertig)
-- Erstes kostenloses Praxis Training ankündigen und durchführen
-- Feedback von den 2-3 Testfrauen sammeln und System anpassen
+- AGB schreiben (Claude macht das)
+- Test mit 2-3 Frauen: Link schicken und Feedback sammeln
+- Launch Post auf Instagram und Facebook veröffentlichen
+- Datum für erstes Praxis Training festlegen
 
 ## Ideen / später
 
 - Empfehlungssystem aktivieren (CHF 10 pro geworbene Freundin)
-- Preis erhöhen sobald System läuft und Ergebnisse da sind
+- Preis erhöhen sobald System läuft
 - Weitere monatliche Social Media Posts ausbauen
+- Video-Willkommensnachricht aufnehmen
