@@ -28,3 +28,11 @@ Instagram und Facebook (Hauptkanäle)
 5. Praxis Training (monatlich, Zoom, 1 Stunde)
 
 Alle Inhalte in outputs/ gespeichert.
+
+## Feminin Aura — Live Webseite
+
+URL: https://realistisch2020-sys.github.io/FEMCODE-Gehirn/
+Hosting: GitHub Pages (gh-pages Branch, kostenlos, öffentlich)
+Status: Live seit 04.07.2026
+Technik: Eine HTML-Datei, alle 8 Module, kein Login nötig, funktioniert auf jedem Handy
+Teilen: Link direkt in WhatsApp kopieren, fertig
