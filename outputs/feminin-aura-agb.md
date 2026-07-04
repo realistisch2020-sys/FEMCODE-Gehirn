@@ -11,9 +11,10 @@ Stand: Juli 2026
 Anbieterin und Vertragspartnerin ist:
 
 Petra Tanner
-[Strasse und Hausnummer]
-[PLZ Ort], Schweiz
+Sonnental, Schweiz
 E-Mail: tanner.pe@bluewin.ch
+
+(Vollständige Adresse auf Anfrage erhältlich — Postfach wird eingerichtet)
 
 Diese AGB gelten für alle Käufe des digitalen Produkts "Feminin Aura System" und richten sich an Käuferinnen in der Schweiz, Deutschland und Österreich.
 
