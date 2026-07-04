@@ -3,6 +3,8 @@
 ## Diese Woche
 
 - Feminin Aura Webseite live: https://realistisch2020-sys.github.io/FEMCODE-Gehirn/ ✓
+- Modul 2: 30 Skripte in 6 Kategorien eingebaut ✓
+- **Name entscheiden**: "Feminin Aura" behalten oder umbenennen? (FemSog System, Feminin Sog, DupliFem) → Petra entscheidet
 - Link an erste 2-3 Frauen schicken und Feedback sammeln
 - Launch Post auf Instagram und Facebook veröffentlichen
 

@@ -21,8 +21,8 @@ Instagram und Facebook (Hauptkanäle)
 
 ## Feminin Aura — System Bausteine
 
-1. Skript-Bibliothek (7 DM Skripte)
-2. Social Media Paket (7 Posts pro Woche)
+1. Skript-Bibliothek (30 DM Skripte in 6 Kategorien)
+2. Social Media Paket (7 Posts pro Woche, 28 gesamt)
 3. Onboarding System (4 Nachrichten, Tag 1 bis 7)
 4. Selbsterklärungs-System (5 Nachrichten die alles erklären)
 5. Praxis Training (monatlich, Zoom, 1 Stunde)
@@ -36,3 +36,11 @@ Hosting: GitHub Pages (gh-pages Branch, kostenlos, öffentlich)
 Status: Live seit 04.07.2026
 Technik: Eine HTML-Datei, alle 8 Module, kein Login nötig, funktioniert auf jedem Handy
 Teilen: Link direkt in WhatsApp kopieren, fertig
+
+## Namens-Überlegung (offen)
+
+Petra fragt ob "Feminin Aura" den Inhalt gut widerspiegelt.
+Das System ist inhaltlich ähnlich wie DupliSog (duplication, automatisch, erklärt sich selbst).
+"Feminin" klingt schön aber sagt nichts über die Funktion.
+Vorgeschlagene Alternativen: FemSog System, Feminin Sog, DupliFem.
+Entscheidung noch offen.
