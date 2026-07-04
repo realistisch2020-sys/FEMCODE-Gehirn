@@ -9,7 +9,8 @@
 
 ## Demnächst
 
-- AGB schreiben (Claude macht das)
+- clevver.io aufrufen → virtuelle Geschäftsadresse ab EUR 9.90/Monat einrichten → Adresse in AGB einsetzen (outputs/feminin-aura-agb.md)
+- AGB: fertig, nur Adresse fehlt noch (wartet auf clevver.io)
 - Test mit 2-3 Frauen: Link schicken und Feedback sammeln
 - Launch Post auf Instagram und Facebook veröffentlichen
 - Datum für erstes Praxis Training festlegen
