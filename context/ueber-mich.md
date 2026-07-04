@@ -16,3 +16,4 @@ Network Marketing Unternehmerin bei Monat. Seit 1 Jahr dabei.
 - Arbeitet auf dem Handy (Canva Mobile App) → immer mobile-freundliche Anleitungen geben
 - Braucht fertige Elemente zum Einfügen, keine manuelle Schritt für Schritt Konstruktion
 - Wording Regel: "Das System das jede weitergeben kann" statt "vollständig replizierbar"
+- Qualitätsregel: IMMER die beste, rechtsgültige Version erstellen. Keine vereinfachten Versionen bei rechtlichen Dokumenten. DE/AT/CH Recht berücksichtigen.
