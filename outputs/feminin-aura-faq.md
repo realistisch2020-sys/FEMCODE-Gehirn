@@ -15,7 +15,13 @@ Häufige Fragen und fertige Antworten. Copy paste und schicken.
 ---
 
 **Wie viel kostet es zum Start?**
-"Ein Starter-Paket mit Produkten. Ich erkläre dir welches für dich sinnvoll ist wenn wir kurz gesprochen haben."
+"Es gibt drei Pakete je nach dem was du dir vorstellst:
+
+Custom Lite — CHF 170 (Produktwert CHF 307)
+Custom Hair Essentials — CHF 260 (Produktwert CHF 555)
+Dream Big — CHF 700 (Produktwert CHF 1'800)
+
+Das beliebteste für den Einstieg ist das Hair Essentials Paket. Welches am besten zu dir passt sag ich dir gern wenn wir kurz gesprochen haben."
 
 ---
 
