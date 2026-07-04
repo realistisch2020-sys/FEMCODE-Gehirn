@@ -1,4 +1,4 @@
-# Feminin Aura — FAQ
+# DupliHer Network — FAQ
 
 Häufige Fragen und fertige Antworten. Copy paste und schicken.
 
@@ -36,7 +36,7 @@ Das beliebteste für den Einstieg ist das Hair Essentials Paket. Welches am best
 ---
 
 **Was wenn ich niemanden kenne?**
-"Alle fangen so an. Mit den Feminin Aura Skripten weisst du genau was du schreiben musst. Das Netzwerk kommt mit der Zeit."
+"Alle fangen so an. Mit den DupliHer Network Skripten weisst du genau was du schreiben musst. Das Netzwerk kommt mit der Zeit."
 
 ---
 
@@ -45,5 +45,5 @@ Das beliebteste für den Einstieg ist das Hair Essentials Paket. Welches am best
 
 ---
 
-**Was ist Feminin Aura genau?**
-"Feminin Aura ist das System das ich entwickelt habe um Monat einfacher aufzubauen. Du bekommst fertige Texte, Posts und Anleitungen. Das System erklärt sich selbst. Das System das jede weitergeben kann. 🌿"
+**Was ist DupliHer Network genau?**
+"DupliHer Network ist das System das ich entwickelt habe um Monat einfacher aufzubauen. Du bekommst fertige Texte, Posts und Anleitungen. Das System erklärt sich selbst. Das System das jede weitergeben kann. 🌿"

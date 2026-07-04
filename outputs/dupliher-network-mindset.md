@@ -1,4 +1,4 @@
-# Feminin Aura — Kopf frei
+# DupliHer Network — Kopf frei
 
 Kein Motivationstext. Keine leeren Versprechen.
 Nur das was du wirklich brauchst bevor du anfängst.

@@ -1,4 +1,4 @@
-# Feminin Aura — Selbsterklärungs-System
+# DupliHer Network — Selbsterklärungs-System
 
 Für: Petra Tanner | Monat
 Schick diese 5 Nachrichten nacheinander an Interessentinnen.
@@ -30,9 +30,9 @@ Und wer möchte kann damit auch ein Business aufbauen. Nicht müssen. Können. �
 
 ---
 
-## Nachricht 4 — Was Feminin Aura dazu macht
+## Nachricht 4 — Was DupliHer Network dazu macht
 
-"Feminin Aura ist das System dahinter.
+"DupliHer Network ist das System dahinter.
 
 Du bekommst fertige Texte für deine Nachrichten. Fertige Posts für Social Media. Ein Onboarding das neue Partnerinnen selbst durch alles führt.
 

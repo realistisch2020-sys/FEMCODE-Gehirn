@@ -1,4 +1,4 @@
-# Feminin Aura — Canva Design Anleitung
+# DupliHer Network — Canva Design Anleitung
 
 Farbpalette: Deep Rose Gold — feminin, luxuriös, exklusiv.
 
@@ -31,7 +31,7 @@ Das ist das tiefe Bordeaux.
 
 Füge diese Texte von oben nach unten ein:
 
-Text 1: Feminin Aura
+Text 1: DupliHer Network
 Farbe: #C9A0A0 (Rose Gold) | Schrift: fett, gross | Empfehlung: "Cormorant Garamond Bold" oder "Playfair Display Bold"
 
 Text 2: Team by Monat
@@ -82,7 +82,7 @@ PRAXIS TRAINING | [Datum] | [Uhrzeit] Uhr | Dauer: 1 Stunde
 
 ## Schrift Empfehlungen für Canva (kostenlos)
 
-Haupttitel "Feminin Aura": Cormorant Garamond Bold oder Playfair Display Bold
+Haupttitel "DupliHer Network": Cormorant Garamond Bold oder Playfair Display Bold
 Untertitel kursiv: Playfair Display Italic
 Fliesstext: Lato Light oder Montserrat Light
 

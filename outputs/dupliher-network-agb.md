@@ -1,5 +1,5 @@
 # Allgemeine Geschäftsbedingungen (AGB)
-## Feminin Aura System
+## DupliHer Network
 ### Anbieterin: Petra Tanner
 
 Stand: Juli 2026
@@ -16,13 +16,13 @@ E-Mail: tanner.pe@bluewin.ch
 
 (Vollständige Adresse auf Anfrage erhältlich — Postfach wird eingerichtet)
 
-Diese AGB gelten für alle Käufe des digitalen Produkts "Feminin Aura System" und richten sich an Käuferinnen in der Schweiz, Deutschland und Österreich.
+Diese AGB gelten für alle Käufe des digitalen Produkts "DupliHer Network" und richten sich an Käuferinnen in der Schweiz, Deutschland und Österreich.
 
 ---
 
 ## § 2 Leistungsgegenstand
 
-Das Feminin Aura System ist ein digitales Produkt für Monat Market Partnerinnen. Der Zugang umfasst:
+Das DupliHer Network ist ein digitales Produkt für Monat Market Partnerinnen. Der Zugang umfasst:
 
 - Skript-Bibliothek (Nachrichten-Vorlagen für die Direktansprache)
 - Social Media Posts (28 fertige Beiträge für 4 Wochen)
@@ -81,13 +81,13 @@ Die Kündigung kann jederzeit per E-Mail an tanner.pe@bluewin.ch erfolgen und gi
 
 ## § 7 Nutzungsrechte
 
-Die Inhalte des Feminin Aura Systems sind ausschliesslich für den persönlichen Gebrauch der Käuferin bestimmt. Eine Weitergabe, Vervielfältigung oder Weiterverkauf der Inhalte an Dritte ist ohne ausdrückliche schriftliche Genehmigung der Anbieterin nicht gestattet.
+Die Inhalte des DupliHer Networks sind ausschliesslich für den persönlichen Gebrauch der Käuferin bestimmt. Eine Weitergabe, Vervielfältigung oder Weiterverkauf der Inhalte an Dritte ist ohne ausdrückliche schriftliche Genehmigung der Anbieterin nicht gestattet.
 
 ---
 
 ## § 8 Haftungsausschluss
 
-Das Feminin Aura System stellt Werkzeuge und Anleitungen zur Verfügung. Die Anbieterin übernimmt keine Garantie für bestimmte Einkommensergebnisse oder geschäftlichen Erfolg. Der Erfolg der Käuferin hängt von ihrem eigenen Einsatz, ihrer Situation und weiteren individuellen Faktoren ab.
+Das DupliHer Network stellt Werkzeuge und Anleitungen zur Verfügung. Die Anbieterin übernimmt keine Garantie für bestimmte Einkommensergebnisse oder geschäftlichen Erfolg. Der Erfolg der Käuferin hängt von ihrem eigenen Einsatz, ihrer Situation und weiteren individuellen Faktoren ab.
 
 Die Anbieterin haftet nicht für mittelbare Schäden, entgangenen Gewinn oder sonstige Folgeschäden, sofern kein vorsätzliches oder grob fahrlässiges Handeln vorliegt.
 

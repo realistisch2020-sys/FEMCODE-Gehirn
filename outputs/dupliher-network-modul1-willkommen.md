@@ -1,4 +1,4 @@
-# Feminin Aura — Modul 1: Willkommen & Überblick
+# DupliHer Network — Modul 1: Willkommen & Überblick
 
 Willkommen. Du hast das Richtige gefunden.
 
@@ -8,7 +8,7 @@ Dieses System ist für Frauen die ihr Monat Business aufbauen möchten, ohne zu 
 
 ## Was du hier hast
 
-**Feminin Aura** ist ein komplettes System das du einfach weitergibst.
+**DupliHer Network** ist ein komplettes System das du einfach weitergibst.
 
 Du kaufst es einmal. Du benutzt alles was drin ist. Wenn eine Frau aus deinem Umfeld interessiert ist, gibst du ihr denselben Link. Sie kauft, bekommt denselben Zugang, und fängt an. Genauso wie du.
 
@@ -58,7 +58,7 @@ Instagram oder Facebook Bio:
 "Monat Market Partnerin 🌿 Haarpflege die wirklich funktioniert 🌸"
 
 Oder:
-"Feminin Aura System 🌸 Monat Partnerin | Link unten ↓"
+"DupliHer Network 🌸 Monat Partnerin | Link unten ↓"
 
 **Schritt 4 — Morgen deine erste Nachricht (2 Minuten)**
 Öffne Modul 2. Nimm Skript 1. Passe nur den Namen an. Schick sie.
@@ -115,6 +115,6 @@ Du hast jetzt dasselbe Werkzeug das ich benutze.
 
 Und wenn du jemandem davon erzählst und sie kaufen — kannst du es einfach weitergeben. Genauso. Ohne es erklären zu müssen.
 
-Das ist Feminin Aura 🌿
+Das ist DupliHer Network 🌿
 
 — Petra

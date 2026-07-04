@@ -1,4 +1,4 @@
-# Feminin Aura — Social Media Posts Woche 4
+# DupliHer Network — Social Media Posts Woche 4
 
 Thema: Community und Lifestyle
 
@@ -6,7 +6,7 @@ Thema: Community und Lifestyle
 
 ## Post 22 — Montag
 
-"Weisst du was ich an Feminin Aura am meisten liebe?
+"Weisst du was ich an DupliHer Network am meisten liebe?
 
 Die Frauen die dabei sind.
 
@@ -36,7 +36,7 @@ Nicht weil man muss. Sondern weil man will.
 
 Das ist das Ziel. Nicht reich werden über Nacht. Sondern Schritt für Schritt etwas aufbauen das zu einem passt.
 
-Das ist Feminin Aura. 🌿"
+Das ist DupliHer Network. 🌿"
 
 ---
 
@@ -64,7 +64,7 @@ Wenn du Angst hast: das ist normal. Tu es trotzdem. 🌿"
 
 ## Post 27 — Samstag
 
-"Was Feminin Aura dir gibt:
+"Was DupliHer Network dir gibt:
 
 Fertige Texte damit du nicht überlegen musst was du schreiben sollst.
 Fertige Posts damit du nicht stundenlang Content machst.

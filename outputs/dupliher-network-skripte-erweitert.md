@@ -1,4 +1,4 @@
-# Feminin Aura — Erweiterte Skript-Bibliothek
+# DupliHer Network — Erweiterte Skript-Bibliothek
 
 15 Skripte für alle Situationen. Copy paste und schicken.
 

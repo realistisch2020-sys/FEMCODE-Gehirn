@@ -1,4 +1,4 @@
-# Feminin Aura — 30-Tage Onboarding Plan
+# DupliHer Network — 30-Tage Onboarding Plan
 
 Für neue Mitglieder. Schick jeder neuen Partnerin diese Nachrichten.
 Schritt für Schritt. Keine Überforderung. Klare Richtung.
@@ -8,7 +8,7 @@ Schritt für Schritt. Keine Überforderung. Klare Richtung.
 ## WOCHE 1 — Ankommen und starten
 
 **Tag 1 — Willkommen**
-"Hey [Name] 🌸 herzlich willkommen bei Feminin Aura. Ich freu mich so dass du dabei bist.
+"Hey [Name] 🌸 herzlich willkommen bei DupliHer Network. Ich freu mich so dass du dabei bist.
 
 Heute machst du nur eine Sache: Lies alle Module einmal durch. Nur lesen, noch nichts tun. Damit du weisst was du hast.
 
@@ -53,7 +53,7 @@ Nicht mehr. Nicht weniger. Dieser Rhythmus bringt Ergebnisse 🌸"
 ---
 
 **Tag 7 — Erste Woche geschafft**
-"Eine Woche Feminin Aura 🌿 wie fühlst du dich?
+"Eine Woche DupliHer Network 🌿 wie fühlst du dich?
 
 Du hast angeschrieben, gepostet und angefangen. Das ist mehr als die meisten je tun.
 
@@ -174,7 +174,7 @@ Dein Feedback hilft mir das System für alle besser zu machen 🌿"
 ---
 
 **Tag 30 — Ein Monat geschafft**
-"Ein Monat Feminin Aura 🌸
+"Ein Monat DupliHer Network 🌸
 
 Du hast angefangen. Du hast drangeblieben. Du weisst jetzt wie das System funktioniert.
 

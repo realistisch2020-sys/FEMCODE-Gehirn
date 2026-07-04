@@ -1,4 +1,4 @@
-# Feminin Aura — Skript-Bibliothek
+# DupliHer Network — Skript-Bibliothek
 
 Für: Petra Tanner | Monat
 Ton: Authentisch, feminin, kundisch — klingt wie ein echtes Gespräch.

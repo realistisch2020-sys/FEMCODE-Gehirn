@@ -1,4 +1,4 @@
-# Feminin Aura — Social Media Posts Woche 3
+# DupliHer Network — Social Media Posts Woche 3
 
 Thema: Business und Einkommen
 
@@ -76,7 +76,7 @@ Mehr nicht. Und mehr braucht es oft auch nicht. 🌿"
 
 ## Post 21 — Sonntag
 
-"Nächste Woche machen wir unser Feminin Aura Praxis Training.
+"Nächste Woche machen wir unser DupliHer Network Praxis Training.
 
 Eine Stunde. Zoom. Wir schauen durch echte Beispiele und ich beantworte alle Fragen.
 

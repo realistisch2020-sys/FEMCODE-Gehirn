@@ -1,4 +1,4 @@
-# Feminin Aura — Business-Erklärung
+# DupliHer Network — Business-Erklärung
 
 ---
 
@@ -88,7 +88,7 @@ Du meldest dich als VIP an — kostenlos — und bestellst monatlich mindestens 
 Du kaufst ein Starter-Paket (ab CHF 170) und wirst offizielle Monat Marktpartnerin. Ab diesem Moment:
 - Kaufst du alle Produkte mit 30% Rabatt (Marktpartner-Preis)
 - Verdienst du Provision wenn jemand über deinen Link kauft
-- Kannst du das Feminin Aura System nutzen und weitergeben
+- Kannst du das DupliHer Network nutzen und weitergeben
 - Baust du ein eigenes Business auf
 
 → Zahlt MP-Preis. Zum Beispiel: ir Clinical System CHF 150 statt CHF 215.

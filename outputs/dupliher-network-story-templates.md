@@ -1,4 +1,4 @@
-# Feminin Aura — Instagram Story Vorlagen
+# DupliHer Network — Instagram Story Vorlagen
 
 Stories konvertieren besser als Feed Posts.
 Weil sie direkt und persönlich wirken.

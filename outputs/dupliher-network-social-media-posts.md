@@ -1,4 +1,4 @@
-# Feminin Aura — Social Media Paket
+# DupliHer Network — Social Media Paket
 
 Für: Petra Tanner | Monat
 7 Posts, eine pro Tag, sofort verwendbar.
@@ -74,13 +74,13 @@ Neugierig. Vielleicht ein bisschen skeptisch. Und dann haben sie es einfach ausp
 
 Heute sind sie Teil von etwas das sich anfühlt wie Gemeinschaft und nicht wie Arbeit.
 
-Das ist Feminin Aura. Wenn du wissen willst was das ist schreib mir. 🌸"
+Das ist DupliHer Network. Wenn du wissen willst was das ist schreib mir. 🌸"
 
 ---
 
 ## Post 7 — Sonntag | Einladung Praxis Training
 
-"Am [Datum] machen wir unser nächstes Feminin Aura Praxis Training.
+"Am [Datum] machen wir unser nächstes DupliHer Network Praxis Training.
 
 Eine Stunde. Zoom. Wir zeigen wie das System funktioniert, beantworten Fragen und gehen durch echte Beispiele.
 

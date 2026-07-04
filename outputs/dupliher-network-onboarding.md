@@ -1,4 +1,4 @@
-# Feminin Aura — Onboarding für neue Partnerinnen
+# DupliHer Network — Onboarding für neue Partnerinnen
 
 Für: Petra Tanner | Monat
 Schick diese Nachrichten jeder neuen Partnerin in den ersten 7 Tagen.
@@ -8,7 +8,7 @@ Ton: Warm, unterstützend, Schritt für Schritt — keine Überforderung.
 
 ## Nachricht 1 — Sofort nach dem Start
 
-"Hey [Name] 🌸 herzlich willkommen im Feminin Aura Team! Ich freu mich so dass du dabei bist.
+"Hey [Name] 🌸 herzlich willkommen im DupliHer Network Team! Ich freu mich so dass du dabei bist.
 
 Du bekommst gleich alles was du brauchst. Schritt für Schritt. Nichts auf einmal.
 
@@ -40,7 +40,7 @@ Eins nach dem anderen. Du machst das super."
 
 ## Nachricht 4 — Tag 7
 
-"Eine Woche Feminin Aura 🌸 wie fühlst du dich?
+"Eine Woche DupliHer Network 🌸 wie fühlst du dich?
 
 Du hast diese Woche angeschrieben, gepostet und angefangen. Das ist mehr als die meisten je tun.
 

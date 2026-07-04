@@ -1,4 +1,4 @@
-# Feminin Aura — Dein Fortschritts-Tracker
+# DupliHer Network — Dein Fortschritts-Tracker
 
 Damit du siehst ob du auf Kurs bist. Auch wenn noch kein Geld geflossen ist.
 
@@ -58,7 +58,7 @@ Normal. Es braucht manchmal 4 bis 8 Wochen. Bleib dran.
 Nicht mehr. Nur eine.
 
 Eine neue Mitglieder bedeutet:
-- Das Feminin Aura System hat sich für dich bezahlt
+- Das DupliHer Network hat sich für dich bezahlt
 - Du weisst dass es funktioniert
 - Du hast eine Partnerin die dasselbe System benutzt
 

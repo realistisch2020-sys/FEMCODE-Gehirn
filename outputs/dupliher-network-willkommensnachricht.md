@@ -1,10 +1,10 @@
-# Feminin Aura — Willkommensnachricht
+# DupliHer Network — Willkommensnachricht
 
 Schick diese Nachricht sobald jemand Mitglied wird. Direkt nach der Zahlung.
 
 ---
 
-"Hey [Name] 🌸 herzlich willkommen bei Feminin Aura.
+"Hey [Name] 🌸 herzlich willkommen bei DupliHer Network.
 
 Ich bin so froh dass du dabei bist.
 

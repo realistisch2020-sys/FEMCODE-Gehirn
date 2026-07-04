@@ -6,7 +6,7 @@
    Lieblingsprodukte: Renew Linie, ir Clinical Set, Scrub
    Kernaussage: Produkte die wirklich Ergebnisse liefern. Kunden kommen zurück.
 
-2. **FemSog** — ein Duplikationssystem für Monat Networkerinnen
+2. **DupliHer Network** — ein Duplikationssystem für Monat Networkerinnen
    Analog zu DupliSog (Martin Ryf / Golden Wave Int.)
    Kernversprechen: "Das erste Monat System das sich selbst erklärt. Baue dein Business ohne jemals zu präsentieren. Das System das jede weitergeben kann."
 
@@ -19,7 +19,7 @@ Typischer Weg: Startet als Kundin → liebt die Produkte → wird Partnerin.
 
 Instagram und Facebook (Hauptkanäle)
 
-## FemSog — System Bausteine (Stand Juli 2026)
+## DupliHer Network — System Bausteine (Stand Juli 2026)
 
 16 Module, 112 Posts (16 Wochen), 30 Skripte
 
@@ -40,7 +40,7 @@ Instagram und Facebook (Hauptkanäle)
 15. Modul 15: Mindset & Dranbleiben (Der Dip, Tagesroutine, Story-Texte)
 16. Modul 16: Canva-Vorlagen (5 Vorlagen-Typen, Anleitung zum Teilen)
 
-## FemSog — Live Webseite
+## DupliHer Network — Live Webseite
 
 URL: https://realistisch2020-sys.github.io/FEMCODE-Gehirn/
 Hosting: GitHub Pages (gh-pages Branch, kostenlos, öffentlich)
@@ -50,7 +50,7 @@ Teilen: Link direkt in WhatsApp kopieren, fertig
 
 ## Wichtige Wording-Regeln
 
-- Name: FemSog (entschieden, nicht mehr "Feminin Aura")
+- Name: DupliHer Network (entschieden, nicht mehr "Feminin Aura")
 - Monat beschreiben: "kein stationärer Handel — kein Ladenlokal, kein Werbeetat, kein Regal. Das Budget fliesst in die Produktqualität." (NICHT "ohne Zwischenhändler")
 - Verdienst ansprechen: "Wenn du heute deine Besties einschreibst verdienst du heute." (direkt, positiv, ehrlich)
 - Stil: Franzi von New Life Spirit + Nadine Tosun — warm, echt, kein Fachjargon

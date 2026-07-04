@@ -1,4 +1,4 @@
-# Feminin Aura — Quick Start Guide
+# DupliHer Network — Quick Start Guide
 
 Was du in den ersten 24 Stunden tust. Nicht mehr. Nicht weniger.
 

@@ -1,4 +1,4 @@
-# Feminin Aura — Social Media Posts Woche 2
+# DupliHer Network — Social Media Posts Woche 2
 
 Thema: Produkte
 

@@ -1,4 +1,4 @@
-# Feminin Aura — Deine eigene Geschichte dokumentieren
+# DupliHer Network — Deine eigene Geschichte dokumentieren
 
 Die stärkste Werbung die du machen kannst bist du selbst.
 Kein Text schlägt ein echtes Vorher-Nachher.

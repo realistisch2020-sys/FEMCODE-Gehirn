@@ -1,4 +1,4 @@
-# Feminin Aura — Launch Post
+# DupliHer Network — Launch Post
 
 Für: Petra Tanner | Monat
 Zwei Teile: Bildtext für die Grafik + Caption für Facebook/Instagram.
@@ -9,7 +9,7 @@ Zwei Teile: Bildtext für die Grafik + Caption für Facebook/Instagram.
 
 BRAND NEU 2026
 
-Feminin Aura Team
+DupliHer Network Team
 by Monat
 
 Das erste Monat System
@@ -34,7 +34,7 @@ PRAXIS TRAINING
 
 Weil ich weiss wie viele Frauen im Network Marketing stecken bleiben. Nicht weil sie nicht wollen. Sondern weil niemand ihnen gezeigt hat wie es wirklich geht.
 
-Feminin Aura ist meine Antwort darauf.
+DupliHer Network ist meine Antwort darauf.
 
 Ein System das sich selbst erklärt. Fertige Texte. Fertige Posts. Ein Onboarding das neue Partnerinnen durch alles führt. Du musst niemandem etwas erklären. Das System macht das für dich.
 

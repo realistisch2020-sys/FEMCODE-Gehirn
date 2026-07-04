@@ -1,4 +1,4 @@
-# Feminin Aura — Dein Weg zu den ersten Einnahmen
+# DupliHer Network — Dein Weg zu den ersten Einnahmen
 
 Klar. Realistisch. Ohne Versprechen die nicht haltbar sind.
 
@@ -6,7 +6,7 @@ Klar. Realistisch. Ohne Versprechen die nicht haltbar sind.
 
 ## Zwei Wege wie du verdienst
 
-**Weg 1 — Feminin Aura System verkaufen**
+**Weg 1 — DupliHer Network verkaufen**
 Eine Frau kauft das System (CHF 37/Monat) → du erhältst eine Provision.
 Das ist der schnellste Weg zu ersten Einnahmen.
 
@@ -14,7 +14,7 @@ Das ist der schnellste Weg zu ersten Einnahmen.
 Frauen kaufen Monat Produkte über deinen Link → du erhältst Provision auf jede Bestellung.
 Das ist wiederkehrendes Einkommen — sie bestellen jeden Monat nach.
 
-Die meisten Frauen kombinieren beides. Mit Feminin Aura fängst du mit Weg 1 an.
+Die meisten Frauen kombinieren beides. Mit DupliHer Network fängst du mit Weg 1 an.
 
 ---
 
@@ -35,7 +35,7 @@ Eine von 20 bis 30 Frauen wird dabei sein. Das ist die Realität. Das ist auch g
 
 ## Die ersten CHF 100 — was das braucht
 
-Drei neue Mitglieder im Feminin Aura System.
+Drei neue Mitglieder im DupliHer Network.
 
 Oder: 5 bis 8 aktive Monat Kundinnen die monatlich bestellen.
 
@@ -49,7 +49,7 @@ Nicht von Anfang an. Mit der Zeit. Mit dem System.
 
 ## Was wiederkehrendes Einkommen bedeutet
 
-Wenn eine Frau das Feminin Aura System kauft zahlt sie CHF 37 pro Monat.
+Wenn eine Frau das DupliHer Network kauft zahlt sie CHF 37 pro Monat.
 Wenn sie im nächsten Monat wieder zahlt bekommst du wieder eine Provision.
 
 Du arbeitest einmal um sie zu gewinnen. Danach läuft es von selbst.

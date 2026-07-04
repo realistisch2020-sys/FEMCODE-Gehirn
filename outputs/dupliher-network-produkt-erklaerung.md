@@ -1,4 +1,4 @@
-# Feminin Aura — Produkt-Erklärung
+# DupliHer Network — Produkt-Erklärung
 
 Schick diese 3 Nachrichten wenn jemand fragt was Monat für Produkte hat.
 

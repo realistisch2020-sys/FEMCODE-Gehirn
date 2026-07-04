@@ -1,4 +1,4 @@
-# Feminin Aura — Zoom Gespräch Leitfaden
+# DupliHer Network — Zoom Gespräch Leitfaden
 
 Wenn jemand wirklich interessiert ist und mehr wissen will.
 Kein Verkaufsgespräch. Ein echtes Gespräch.
@@ -33,7 +33,7 @@ Fang nicht mit Monat an. Fang mit ihr an.
 
 Hör zu. Wirklich. Nicht um das Gespräch zu steuern. Sondern weil es zählt.
 
-Dann: "Was hat dich an Feminin Aura interessiert? War es mehr die Produkte oder der Business-Aspekt?"
+Dann: "Was hat dich an DupliHer Network interessiert? War es mehr die Produkte oder der Business-Aspekt?"
 
 ---
 
@@ -51,7 +51,7 @@ Keine Zahlenversprechen. Keine Übertreibungen. Nur deine echte Geschichte.
 
 **Minute 13 bis 17 — Das System zeigen**
 
-"Ich zeig dir kurz wie Feminin Aura funktioniert. Das Besondere daran ist dass du nicht alles selbst erklären musst."
+"Ich zeig dir kurz wie DupliHer Network funktioniert. Das Besondere daran ist dass du nicht alles selbst erklären musst."
 
 Kurz erklären:
 - Fertige Skripte für Nachrichten

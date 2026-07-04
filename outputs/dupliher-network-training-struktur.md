@@ -1,4 +1,4 @@
-# Feminin Aura — Praxis Training Struktur
+# DupliHer Network — Praxis Training Struktur
 
 Für: Petra Tanner | Monat
 Einmal pro Monat. Zoom. Eine Stunde.
@@ -11,7 +11,7 @@ Einmal pro Monat. Zoom. Eine Stunde.
 Petra begrüsst alle, stellt sich kurz vor, erklärt was heute kommt.
 
 **0:10 bis 0:25 — System Erklärung**
-Wie Feminin Aura funktioniert. Die 5 Nachrichten. Die Skripte. Für alle die neu dabei sind.
+Wie DupliHer Network funktioniert. Die 5 Nachrichten. Die Skripte. Für alle die neu dabei sind.
 
 **0:25 bis 0:40 — Fallbeispiel**
 Eine echte Geschichte aus dem Team. Was hat jemand gemacht, was ist passiert. Konkret, nicht abstrakt.
@@ -26,7 +26,7 @@ Nächster Schritt für jeden. Datum des nächsten Trainings. Verabschiedung.
 
 ## Ankündigungstext für jedes Training
 
-"Am [Datum] um [Uhrzeit] Uhr machen wir unser Feminin Aura Praxis Training.
+"Am [Datum] um [Uhrzeit] Uhr machen wir unser DupliHer Network Praxis Training.
 
 Eine Stunde Zoom. Wir gehen durch echte Beispiele, beantworten Fragen und zeigen Schritt für Schritt wie das System funktioniert.
 
