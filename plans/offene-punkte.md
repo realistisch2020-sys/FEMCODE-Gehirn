@@ -21,3 +21,4 @@
 - Preis erhöhen sobald System läuft
 - Weitere monatliche Social Media Posts ausbauen
 - Video-Willkommensnachricht aufnehmen
+- Business-Videos (Modul 7) von Zoom herunterladen → auf YouTube "Nicht gelistet" hochladen → Zoom-Links in Modul 7 durch YouTube-Links ersetzen (Zoom-Links laufen ab!)
