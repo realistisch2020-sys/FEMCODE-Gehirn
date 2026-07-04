@@ -17,14 +17,9 @@
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #FAF4F1;
-    --bg-card: #fff;
-    --bg-subtle: #F5ECE8;
-    --text: #2C1018;
-    --text-muted: #7A5558;
-    --accent: #A07070;
-    --border: #E8D5D5;
-    --copy-bg: #F0E6D3;
+    --bg: #FAF4F1; --bg-card: #fff; --bg-subtle: #F5ECE8;
+    --text: #2C1018; --text-muted: #7A5558; --accent: #A07070;
+    --border: #E8D5D5; --copy-bg: #F0E6D3;
   }
 }
 :root[data-theme="light"] {
@@ -46,6 +41,7 @@ body {
   font-size: 16px; line-height: 1.6;
 }
 
+/* HERO */
 .hero {
   background: #2C1018; padding: 44px 20px 36px;
   text-align: center; position: relative; overflow: hidden;
@@ -71,34 +67,45 @@ body {
   color: #C9A0A0; font-size: 12px; padding: 4px 12px; border-radius: 20px;
 }
 
-.sticky-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--bg-card); border-bottom: 1px solid var(--border);
-  overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+/* MODULE ACCORDION */
+.acc-mod { border-bottom: 1px solid var(--border); }
+.acc-toggle {
+  width: 100%; display: flex; align-items: center; gap: 14px;
+  padding: 20px 18px; background: var(--bg-card); border: none;
+  cursor: pointer; font-family: inherit; text-align: left;
+  color: var(--text); -webkit-tap-highlight-color: transparent;
+  transition: background .12s;
 }
-.sticky-nav::-webkit-scrollbar { display: none; }
-.nav-inner { display: flex; padding: 0 12px; min-width: max-content; }
-.nav-link {
-  padding: 13px 14px; font-size: 13px; font-weight: 500;
-  color: var(--text-muted); text-decoration: none; white-space: nowrap;
-  border-bottom: 2px solid transparent; transition: color .15s, border-color .15s;
-  letter-spacing: .01em;
+.acc-toggle:active { background: var(--bg-subtle); }
+.acc-num {
+  font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--accent); font-weight: 600; flex-shrink: 0; min-width: 24px;
 }
-.nav-link:hover { color: var(--text); }
-.nav-link:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+.acc-title {
+  font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+  font-size: 18px; font-weight: 400; flex: 1; line-height: 1.25;
+  color: var(--text);
+}
+.acc-arrow {
+  font-size: 13px; color: var(--text-muted);
+  transition: transform .2s; flex-shrink: 0;
+  width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: var(--bg-subtle);
+}
+.acc-toggle[aria-expanded="true"] .acc-arrow { transform: rotate(180deg); }
+.acc-body { display: none; padding: 8px 16px 36px; max-width: 680px; margin: 0 auto; }
+.acc-body.open { display: block; }
 
-.module {
-  max-width: 680px; margin: 0 auto; padding: 36px 16px 60px;
-  border-bottom: 1px solid var(--border);
-}
+/* INNER MODULE */
 .mod-eye { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
 .mod-title {
   font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
-  font-size: clamp(22px,5vw,30px); font-weight: 400; line-height: 1.2;
-  text-wrap: balance; margin-bottom: 10px;
+  font-size: clamp(20px,4vw,26px); font-weight: 400; line-height: 1.2;
+  text-wrap: balance; margin-bottom: 8px;
 }
 .mod-desc { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin-bottom: 24px; }
 
+/* INFO BOX */
 .info {
   background: var(--bg-subtle); border: 1px solid var(--border);
   border-left: 3px solid var(--accent); border-radius: 8px;
@@ -106,6 +113,7 @@ body {
   line-height: 1.6; margin-bottom: 22px;
 }
 
+/* GROUP LABEL */
 .glabel {
   font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
   color: var(--accent); padding-bottom: 8px;
@@ -113,6 +121,7 @@ body {
 }
 .glabel:first-child { margin-top: 0; }
 
+/* CARDS */
 .cards { display: flex; flex-direction: column; gap: 10px; }
 .card {
   background: var(--bg-card); border: 1px solid var(--border);
@@ -136,6 +145,7 @@ body {
 .copy:hover { opacity: .72; }
 .copy.ok { color: var(--accent); }
 
+/* QUICK REF */
 .qref { display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
 .qrow {
   display: flex; align-items: center; gap: 10px;
@@ -145,6 +155,7 @@ body {
 .qsit { color: var(--text-muted); flex: 1; }
 .qmod { color: var(--accent); font-weight: 600; white-space: nowrap; font-size: 13px; }
 
+/* DAYS */
 .days { display: flex; flex-direction: column; gap: 10px; }
 .day { display: grid; grid-template-columns: 46px 1fr; gap: 12px; align-items: start; }
 .dnum {
@@ -157,6 +168,7 @@ body {
 .dtitle { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
 .ddesc { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
 
+/* PRICE TABLE */
 .tbl-wrap { overflow-x: auto; margin: 14px 0; }
 table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
 th { text-align: left; padding: 9px 11px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); border-bottom: 1px solid var(--border); font-weight: 600; }
@@ -166,6 +178,7 @@ tr:last-child td { border-bottom: none; }
 .pvip { color: var(--text); }
 .pret { color: var(--text-muted); }
 
+/* TIERS */
 .tiers { display: flex; flex-direction: column; gap: 10px; margin: 16px 0; }
 .tier { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
 .tier-head {
@@ -181,34 +194,37 @@ tr:last-child td { border-bottom: none; }
 .tier-body { padding: 12px 14px; font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 .texample { font-size: 13px; margin-top: 7px; padding-top: 7px; border-top: 1px solid var(--border); color: var(--accent); }
 
+/* VIDEO */
 .vcard { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 10px; }
 .veye { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
 .vtitle { font-size: 15px; font-weight: 600; margin-bottom: 11px; }
 .vlink { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-size: 14px; font-weight: 500; text-decoration: none; padding: 8px 14px; background: var(--bg-subtle); border: 1px solid var(--border); border-radius: 7px; margin-bottom: 10px; }
 .vlink:hover { opacity: .8; }
-.vpw-row { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); }
-.vpw { font-family: monospace; background: var(--copy-bg); padding: 3px 9px; border-radius: 5px; color: var(--text); letter-spacing: .06em; }
+.vpw-row { font-size: 13px; color: var(--text-muted); }
+.vpw { font-family: monospace; font-size: 14px; color: var(--text); background: var(--bg-subtle); padding: 2px 7px; border-radius: 4px; }
 
-.faq { border-bottom: 1px solid var(--border); padding: 15px 0; }
-.faq:last-child { border-bottom: none; }
-.fq { font-weight: 600; font-size: 15px; margin-bottom: 7px; }
-.fa { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+/* FAQ */
+.faq { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 15px; margin-bottom: 10px; }
+.fq { font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+.fa { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 
-hr { border: none; border-top: 1px solid var(--border); margin: 26px 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 
+/* FOOTER */
 .site-footer {
-  text-align: center; padding: 32px 20px;
-  font-size: 12px; color: var(--text-muted); letter-spacing: .06em;
-  border-top: 1px solid var(--border);
+  text-align: center; padding: 28px 16px;
+  font-size: 12px; color: var(--text-muted); letter-spacing: .05em;
 }
 .site-footer span { color: var(--accent); }
 
+/* GLITTER CANVAS */
 #glitter {
   position: absolute; top: 0; left: 0;
   width: 100%; height: 100%;
   pointer-events: none;
 }
 
+/* WEEK ACCORDION */
 .week { margin-bottom: 12px; }
 .wtoggle {
   width: 100%; display: flex; align-items: center; justify-content: space-between;
@@ -232,6 +248,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 26px 0; }
 </head>
 <body>
 
+<!-- HERO -->
 <div class="hero">
   <canvas id="glitter" aria-hidden="true"></canvas>
   <p class="hero-eye">Monat · Schweiz</p>
@@ -245,275 +262,285 @@ hr { border: none; border-top: 1px solid var(--border); margin: 26px 0; }
   </div>
 </div>
 
-<nav class="sticky-nav" aria-label="Module">
-  <div class="nav-inner">
-    <a class="nav-link" href="#m1">1 · Willkommen</a>
-    <a class="nav-link" href="#m2">2 · Skripte</a>
-    <a class="nav-link" href="#m3">3 · Posts</a>
-    <a class="nav-link" href="#m4">4 · Selbsterklärer</a>
-    <a class="nav-link" href="#m5">5 · Onboarding</a>
-    <a class="nav-link" href="#m6">6 · Produkte</a>
-    <a class="nav-link" href="#m7">7 · Business</a>
-    <a class="nav-link" href="#m8">8 · FAQ</a>
-  </div>
-</nav>
-
-<div class="module" id="m1">
-  <p class="mod-eye">Modul 01</p>
-  <h2 class="mod-title">Willkommen &amp; Überblick</h2>
-  <p class="mod-desc">Lies das zuerst. Es erklärt wie das System funktioniert und was du wann tust.</p>
-  <div class="info">Du musst nichts erklären. Das System erklärt sich selbst. Du gibst neuen Partnerinnen denselben Link — sie starten genauso wie du.</div>
-  <p class="glabel">Was du wann öffnest</p>
-  <div class="qref">
-    <div class="qrow"><span class="qsit">Jemand schreibt zurück</span><span class="qmod">→ Modul 2</span></div>
-    <div class="qrow"><span class="qsit">Jemand fragt nach Produkten</span><span class="qmod">→ Modul 6</span></div>
-    <div class="qrow"><span class="qsit">Jemand fragt nach dem Business</span><span class="qmod">→ Modul 7</span></div>
-    <div class="qrow"><span class="qsit">Jemand ist wirklich interessiert</span><span class="qmod">→ Modul 4</span></div>
-    <div class="qrow"><span class="qsit">Jemand stellt Fragen</span><span class="qmod">→ Modul 8</span></div>
-    <div class="qrow"><span class="qsit">Jemand kauft das System</span><span class="qmod">→ Modul 5</span></div>
-    <div class="qrow"><span class="qsit">Täglich posten</span><span class="qmod">→ Modul 3</span></div>
-  </div>
-  <p class="glabel">Die ersten 4 Tage</p>
-  <div class="days">
-    <div class="day"><div class="dnum">1</div><div class="dtxt"><div class="dtitle">Alle Module lesen</div><div class="ddesc">Nur lesen, noch nichts tun. 30 Minuten.</div></div></div>
-    <div class="day"><div class="dnum">2</div><div class="dtxt"><div class="dtitle">3 Namen aufschreiben</div><div class="ddesc">Frauen die du als erste anschreibst. Nur aufschreiben.</div></div></div>
-    <div class="day"><div class="dnum">3</div><div class="dtxt"><div class="dtitle">Erste Nachricht schicken</div><div class="ddesc">Modul 2 → Skript 1 → Namen anpassen → senden.</div></div></div>
-    <div class="day"><div class="dnum">4</div><div class="dtxt"><div class="dtitle">Ersten Post veröffentlichen</div><div class="ddesc">Modul 3 → Post 1 → Foto hochladen → fertig.</div></div></div>
-  </div>
-  <hr>
-  <div class="info"><strong>Der Rhythmus der wirklich funktioniert:</strong> Ein Post täglich. Mindestens 3–5 neue Frauen täglich anschreiben. Warum so viele? Von 30 Gesprächen antwortet etwa 1 mit echtem Interesse. Das ist keine Niederlage — das ist die Realität jedes erfolgreichen NM-Business. Wer das konsequent 8–12 Wochen durchzieht, sieht erste echte Ergebnisse.</div>
-</div>
-
-<div class="module" id="m2">
-  <p class="mod-eye">Modul 02</p>
-  <h2 class="mod-title">Skripte</h2>
-  <p class="mod-desc">15 fertige Nachrichten. Namen anpassen, auf "Kopieren" tippen, in WhatsApp einfügen.</p>
-  <p class="glabel">Erstkontakt</p>
-  <div class="cards">
-    <div class="card"><div class="card-label">Skript 1 — Produkt (kalt)</div><div class="script" id="s1">Hey [Name] 😊 darf ich dich kurz was fragen? Hast du gerade eine Haarpflege die du wirklich liebst oder suchst du noch nach etwas das wirklich funktioniert? 🌿</div><button class="copy" onclick="cp('s1',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 2 — Business (kalt)</div><div class="script" id="s2">Hey [Name], ich hoffe es ist okay dass ich kurz schreibe. Ich hab gerade etwas angefangen das ich wirklich liebe und suche Frauen die Lust hätten das auch auszuprobieren. Wärst du offen dafür oder eher nicht? 🌸</div><button class="copy" onclick="cp('s2',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 3 — Warmes Umfeld</div><div class="script" id="s3">Hey [Name] 😊 ich wollte dich mal was fragen weil ich weiss dass du auf gute Haarpflege Wert legst. Ich bin seit einem Jahr bei Monat und mein Haar hat sich komplett verändert. Darf ich dir zeigen was ich benutze?</div><button class="copy" onclick="cp('s3',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 4 — Story Reaktion</div><div class="script" id="s4">Hey danke für deine Reaktion 🌸 darf ich fragen was dich daran interessiert hat? Dann kann ich dir genau das schicken was für dich relevant ist 🌿</div><button class="copy" onclick="cp('s4',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 5 — Kommentar auf Post</div><div class="script" id="s5">Hey [Name] 😊 schön dass du kommentiert hast! Schreib mir kurz eine Nachricht dann schick ich dir alle Infos direkt 🌿</div><button class="copy" onclick="cp('s5',this)">Kopieren</button></div>
-  </div>
-  <p class="glabel">Follow-up</p>
-  <div class="cards">
-    <div class="card"><div class="card-label">Skript 6 — Erstes Follow-up (nach 2 Tagen)</div><div class="script" id="s6">Hey [Name] 😊 ich wollte nur kurz fragen ob du meine Nachricht gesehen hast. Meld dich gern wenn du magst.</div><button class="copy" onclick="cp('s6',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 7 — Zweites Follow-up (nach einer Woche)</div><div class="script" id="s7">Hey [Name] 🌿 ich frage noch einmal kurz nach. Ich weiss du hast viel um die Ohren. Falls du neugierig bist bin ich noch da. Falls nicht auch okay.</div><button class="copy" onclick="cp('s7',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 8 — Wiederansprache</div><div class="script" id="s8">Hey [Name] 😊 wir haben uns eine Weile nicht geschrieben. Ich wollte kurz fragen wie es dir geht. Und ehrlich gesagt wollte ich dich auch auf etwas aufmerksam machen das ich gerade mache. Darf ich?</div><button class="copy" onclick="cp('s8',this)">Kopieren</button></div>
-  </div>
-  <p class="glabel">Einwände</p>
-  <div class="cards">
-    <div class="card"><div class="card-label">Skript 9 — Zu teuer</div><div class="script" id="s9">Das kenn ich so gut, ich hab am Anfang auch gezögert. Ich hab dann mal nachgerechnet was ich früher für verschiedene Sachen ausgegeben hab und ehrlich gesagt ist es jetzt weniger geworden bei viel besserer Qualität. Soll ich dir mal zeigen was ich meine?</div><button class="copy" onclick="cp('s9',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 10 — Keine Zeit</div><div class="script" id="s10">Oh das kenn ich 😄 ich hab das auch gedacht. Aber ich pass das komplett in meinen Alltag ein ohne feste Zeiten. Wie schaut dein Alltag so aus?</div><button class="copy" onclick="cp('s10',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 11 — Ist das MLM?</div><div class="script" id="s11">Ja es ist Network Marketing, da bin ich völlig ehrlich. Was mich damals überzeugt hat waren wirklich die Produkte und nicht irgendwelche Versprechen. Ich würde dir das einfach mal zeigen und du entscheidest selbst was du davon hältst.</div><button class="copy" onclick="cp('s11',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 12 — Muss überlegen</div><div class="script" id="s12">Natürlich nimm dir die Zeit die du brauchst 🌸 Darf ich fragen was du noch überlegen möchtest? Vielleicht kann ich dir dabei helfen.</div><button class="copy" onclick="cp('s12',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 13 — Schlechte NM-Erfahrung</div><div class="script" id="s13">Das höre ich öfter und ich verstehe das total. Ich hab selbst lange gezögert. Was mich am Ende überzeugt hat waren wirklich die Produkte. Nicht das Business. Nicht das Versprechen. Die Produkte. Darf ich dir einfach zeigen was ich meine?</div><button class="copy" onclick="cp('s13',this)">Kopieren</button></div>
-  </div>
-  <p class="glabel">Abschluss</p>
-  <div class="cards">
-    <div class="card"><div class="card-label">Skript 14 — Kundin wird Partnerin</div><div class="script" id="s14">Hey [Name] 😊 ich freu mich so dass dir die Produkte gefallen! Ich wollte dich mal kurz was fragen. Weisst du eigentlich dass du als Partnerin deine Produkte günstiger bekommst und nebenbei auch etwas verdienen kannst? Wäre sowas überhaupt interessant für dich?</div><button class="copy" onclick="cp('s14',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Skript 15 — Nach dem Selbsterklärungs-System</div><div class="script" id="s15">Hast du alles gelesen? 🌸 Was hat dich am meisten angesprochen? Ich freu mich auf deine Antwort 🌿</div><button class="copy" onclick="cp('s15',this)">Kopieren</button></div>
+<!-- MODULE 1 -->
+<div class="acc-mod" id="m1">
+  <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="true">
+    <span class="acc-num">01</span>
+    <span class="acc-title">Willkommen &amp; Überblick</span>
+    <span class="acc-arrow">▼</span>
+  </button>
+  <div class="acc-body open">
+    <p class="mod-eye">Modul 01</p>
+    <h2 class="mod-title">Willkommen &amp; Überblick</h2>
+    <p class="mod-desc">Lies das zuerst. Es erklärt wie das System funktioniert und was du wann tust.</p>
+    <div class="info">Du musst nichts erklären. Das System erklärt sich selbst. Du gibst neuen Partnerinnen denselben Link — sie starten genauso wie du.</div>
+    <p class="glabel">Was du wann öffnest</p>
+    <div class="qref">
+      <div class="qrow"><span class="qsit">Jemand schreibt zurück</span><span class="qmod">→ Modul 2</span></div>
+      <div class="qrow"><span class="qsit">Jemand fragt nach Produkten</span><span class="qmod">→ Modul 6</span></div>
+      <div class="qrow"><span class="qsit">Jemand fragt nach dem Business</span><span class="qmod">→ Modul 7</span></div>
+      <div class="qrow"><span class="qsit">Jemand ist wirklich interessiert</span><span class="qmod">→ Modul 4</span></div>
+      <div class="qrow"><span class="qsit">Jemand stellt Fragen</span><span class="qmod">→ Modul 8</span></div>
+      <div class="qrow"><span class="qsit">Jemand kauft das System</span><span class="qmod">→ Modul 5</span></div>
+      <div class="qrow"><span class="qsit">Täglich posten</span><span class="qmod">→ Modul 3</span></div>
+    </div>
+    <p class="glabel">Die ersten 4 Tage</p>
+    <div class="days">
+      <div class="day"><div class="dnum">1</div><div class="dtxt"><div class="dtitle">Alle Module lesen</div><div class="ddesc">Nur lesen, noch nichts tun. 30 Minuten.</div></div></div>
+      <div class="day"><div class="dnum">2</div><div class="dtxt"><div class="dtitle">3 Namen aufschreiben</div><div class="ddesc">Frauen die du als erste anschreibst. Nur aufschreiben.</div></div></div>
+      <div class="day"><div class="dnum">3</div><div class="dtxt"><div class="dtitle">Erste Nachricht schicken</div><div class="ddesc">Modul 2 → Skript 1 → Namen anpassen → senden.</div></div></div>
+      <div class="day"><div class="dnum">4</div><div class="dtxt"><div class="dtitle">Ersten Post veröffentlichen</div><div class="ddesc">Modul 3 → Post 1 → Foto hochladen → fertig.</div></div></div>
+    </div>
+    <hr>
+    <div class="info"><strong>Der Rhythmus der wirklich funktioniert:</strong> Ein Post täglich. Mindestens 3–5 neue Frauen täglich anschreiben. Warum so viele? Von 30 Gesprächen antwortet etwa 1 mit echtem Interesse. Das ist keine Niederlage — das ist die Realität jedes erfolgreichen NM-Business. Wer das konsequent 8–12 Wochen durchzieht, sieht erste echte Ergebnisse.</div>
   </div>
 </div>
 
-<div class="module" id="m3">
-  <p class="mod-eye">Modul 03</p>
-  <h2 class="mod-title">Social Media Posts</h2>
-  <p class="mod-desc">28 fertige Posts für 4 Wochen. Text kopieren, eigenes Foto hinzufügen, veröffentlichen.</p>
-  <div class="week">
-    <button class="wtoggle" aria-expanded="true" onclick="toggleW(this)">Woche 1 — Einstieg <span class="wicon">▼</span></button>
-    <div class="wposts open">
-      <div class="card"><div class="card-label">Post 1 · Mo</div><div class="script" id="p1">Ich hab so viele Produkte ausprobiert. Wirklich viele.
+<!-- MODULE 2 -->
+<div class="acc-mod" id="m2">
+  <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="false">
+    <span class="acc-num">02</span>
+    <span class="acc-title">Skripte</span>
+    <span class="acc-arrow">▼</span>
+  </button>
+  <div class="acc-body">
+    <p class="mod-eye">Modul 02</p>
+    <h2 class="mod-title">Skripte</h2>
+    <p class="mod-desc">15 fertige Nachrichten. Namen anpassen, auf "Kopieren" tippen, in WhatsApp einfügen.</p>
+    <p class="glabel">Erstkontakt</p>
+    <div class="cards">
+      <div class="card"><div class="card-label">Skript 1 — Produkt (kalt)</div><div class="script" id="s1">Hey [Name] 😊 darf ich dich kurz was fragen? Hast du gerade eine Haarpflege die du wirklich liebst oder suchst du noch nach etwas das wirklich funktioniert? 🌿</div><button class="copy" onclick="cp('s1',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 2 — Business (kalt)</div><div class="script" id="s2">Hey [Name], ich hoffe es ist okay dass ich kurz schreibe. Ich hab gerade etwas angefangen das ich wirklich liebe und suche Frauen die Lust hätten das auch auszuprobieren. Wärst du offen dafür oder eher nicht? 🌸</div><button class="copy" onclick="cp('s2',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 3 — Warmes Umfeld</div><div class="script" id="s3">Hey [Name] 😊 ich wollte dich mal was fragen weil ich weiss dass du auf gute Haarpflege Wert legst. Ich bin seit einem Jahr bei Monat und mein Haar hat sich komplett verändert. Darf ich dir zeigen was ich benutze?</div><button class="copy" onclick="cp('s3',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 4 — Story Reaktion</div><div class="script" id="s4">Hey danke für deine Reaktion 🌸 darf ich fragen was dich daran interessiert hat? Dann kann ich dir genau das schicken was für dich relevant ist 🌿</div><button class="copy" onclick="cp('s4',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 5 — Kommentar auf Post</div><div class="script" id="s5">Hey [Name] 😊 schön dass du kommentiert hast! Schreib mir kurz eine Nachricht dann schick ich dir alle Infos direkt 🌿</div><button class="copy" onclick="cp('s5',this)">Kopieren</button></div>
+    </div>
+    <p class="glabel">Follow-up</p>
+    <div class="cards">
+      <div class="card"><div class="card-label">Skript 6 — Erstes Follow-up (nach 2 Tagen)</div><div class="script" id="s6">Hey [Name] 😊 ich wollte nur kurz fragen ob du meine Nachricht gesehen hast. Meld dich gern wenn du magst.</div><button class="copy" onclick="cp('s6',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 7 — Zweites Follow-up (nach einer Woche)</div><div class="script" id="s7">Hey [Name] 🌿 ich frage noch einmal kurz nach. Ich weiss du hast viel um die Ohren. Falls du neugierig bist bin ich noch da. Falls nicht auch okay.</div><button class="copy" onclick="cp('s7',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 8 — Wiederansprache</div><div class="script" id="s8">Hey [Name] 😊 wir haben uns eine Weile nicht geschrieben. Ich wollte kurz fragen wie es dir geht. Und ehrlich gesagt wollte ich dich auch auf etwas aufmerksam machen das ich gerade mache. Darf ich?</div><button class="copy" onclick="cp('s8',this)">Kopieren</button></div>
+    </div>
+    <p class="glabel">Einwände</p>
+    <div class="cards">
+      <div class="card"><div class="card-label">Skript 9 — Zu teuer</div><div class="script" id="s9">Das kenn ich so gut, ich hab am Anfang auch gezögert. Ich hab dann mal nachgerechnet was ich früher für verschiedene Sachen ausgegeben hab und ehrlich gesagt ist es jetzt weniger geworden bei viel besserer Qualität. Soll ich dir mal zeigen was ich meine?</div><button class="copy" onclick="cp('s9',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 10 — Keine Zeit</div><div class="script" id="s10">Oh das kenn ich 😄 ich hab das auch gedacht. Aber ich pass das komplett in meinen Alltag ein ohne feste Zeiten. Wie schaut dein Alltag so aus?</div><button class="copy" onclick="cp('s10',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 11 — Ist das MLM?</div><div class="script" id="s11">Ja es ist Network Marketing, da bin ich völlig ehrlich. Was mich damals überzeugt hat waren wirklich die Produkte und nicht irgendwelche Versprechen. Ich würd dir das einfach mal zeigen und du entscheidest selbst was du davon hältst.</div><button class="copy" onclick="cp('s11',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 12 — Muss überlegen</div><div class="script" id="s12">Natürlich nimm dir die Zeit die du brauchst 🌸 Darf ich fragen was du noch überlegen möchtest? Vielleicht kann ich dir dabei helfen.</div><button class="copy" onclick="cp('s12',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 13 — Schlechte NM-Erfahrung</div><div class="script" id="s13">Das höre ich öfter und ich verstehe das total. Ich hab selbst lange gezögert. Was mich am Ende überzeugt hat waren wirklich die Produkte. Nicht das Business. Nicht das Versprechen. Die Produkte. Darf ich dir einfach zeigen was ich meine?</div><button class="copy" onclick="cp('s13',this)">Kopieren</button></div>
+    </div>
+    <p class="glabel">Abschluss</p>
+    <div class="cards">
+      <div class="card"><div class="card-label">Skript 14 — Kundin wird Partnerin</div><div class="script" id="s14">Hey [Name] 😊 ich freu mich so dass dir die Produkte gefallen! Ich wollte dich mal kurz was fragen. Weisst du eigentlich dass du als Partnerin deine Produkte günstiger bekommst und nebenbei auch etwas verdienen kannst? Wäre sowas überhaupt interessant für dich?</div><button class="copy" onclick="cp('s14',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 15 — Nach dem Selbsterklärungs-System</div><div class="script" id="s15">Hast du alles gelesen? 🌸 Was hat dich am meisten angesprochen? Ich freu mich auf deine Antwort 🌿</div><button class="copy" onclick="cp('s15',this)">Kopieren</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODULE 3 -->
+<div class="acc-mod" id="m3">
+  <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="false">
+    <span class="acc-num">03</span>
+    <span class="acc-title">Social Media Posts</span>
+    <span class="acc-arrow">▼</span>
+  </button>
+  <div class="acc-body">
+    <p class="mod-eye">Modul 03</p>
+    <h2 class="mod-title">Social Media Posts</h2>
+    <p class="mod-desc">28 fertige Posts für 4 Wochen. Text kopieren, eigenes Foto hinzufügen, veröffentlichen.</p>
+    <div class="week">
+      <button class="wtoggle" aria-expanded="true" onclick="toggleW(this)">Woche 1 — Einstieg <span class="wicon">▼</span></button>
+      <div class="wposts open">
+        <div class="card"><div class="card-label">Post 1 · Mo · Produkt</div><div class="script" id="p1">Ich hab so viele Produkte ausprobiert. Wirklich viele.
 
 Und dann kam Monat. Die Renew Linie hat mein Haar so verändert dass ich es selbst kaum glauben konnte. Nicht nach einem Monat. Schon nach den ersten Anwendungen.
 
 Ich frag mich heute noch warum ich so lange gewartet hab.
 
 Wenn du neugierig bist was ich benutze schreib mir einfach 🌿</div><button class="copy" onclick="cp('p1',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 2 · Di</div><div class="script" id="p2">Ich hab nie gedacht dass ich sowas machen würde.
+        <div class="card"><div class="card-label">Post 2 · Di · Persönlich</div><div class="script" id="p2">Ich hab nie gedacht dass ich sowas machen würde.
 
 Network Marketing? Nein danke, hab ich gedacht. Bis ich die Produkte selbst ausprobiert hab und gemerkt hab dass ich sie ohnehin jedem weiterempfehle. Dann hab ich gedacht: warum nicht auch dafür belohnt werden?
 
 Heute bin ich froh dass ich den Schritt gemacht hab. 🌸
 
 Wenn dich das neugierig macht schreib mir kurz.</div><button class="copy" onclick="cp('p2',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 3 · Mi</div><div class="script" id="p3">Weisst du was mich am meisten überrascht hat?
+        <div class="card"><div class="card-label">Post 3 · Mi · Ergebnis</div><div class="script" id="p3">Weisst du was mich am meisten überrascht hat?
 
 Nicht nur mein Haar hat sich verändert. Mein ganzes Selbstbewusstsein hat sich verändert. Wenn man morgens aufwacht und die eigenen Haare liebt fängt der Tag einfach anders an.
 
 Das klingt vielleicht übertrieben. Ist es aber nicht.
 
 Welches Produkt interessiert dich am meisten? Schreib es mir unten 👇🌿</div><button class="copy" onclick="cp('p3',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 4 · Do</div><div class="script" id="p4">Was wenn dein Business zu deinem Leben passt und nicht umgekehrt?
+        <div class="card"><div class="card-label">Post 4 · Do · Business</div><div class="script" id="p4">Was wenn dein Business zu deinem Leben passt und nicht umgekehrt?
 
 Keine festen Zeiten. Kein Büro. Kein Chef. Ich mach das zwischen Alltag, Familie und allem anderen.
 
 Und die Produkte die ich empfehle würde ich ohnehin kaufen. Das ist der Unterschied.
 
 Wenn das für dich interessant klingt bin ich hier 🌸</div><button class="copy" onclick="cp('p4',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 5 · Fr</div><div class="script" id="p5">Meine ehrliche Meinung zum Monat ir Clinical Set.
+        <div class="card"><div class="card-label">Post 5 · Fr · Clinical Set</div><div class="script" id="p5">Meine ehrliche Meinung zum Monat ir Clinical Set.
 
 Ich war skeptisch. Es klingt nach viel und der Preis ist nicht klein. Aber ich hab es ausprobiert und ich kann jetzt nicht mehr ohne.
 
 Meine Kopfhaut hat sich komplett beruhigt. Mein Haar fühlt sich an wie nach dem Friseur. Nur zu Hause.
 
 Willst du mehr wissen? Schreib mir einfach 🌿</div><button class="copy" onclick="cp('p5',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 6 · Sa</div><div class="script" id="p6">Es gibt Frauen die genauso gestartet haben wie du gerade schaust.
+        <div class="card"><div class="card-label">Post 6 · Sa · Community</div><div class="script" id="p6">Es gibt Frauen die genauso gestartet haben wie du gerade schaust.
 
 Neugierig. Vielleicht ein bisschen skeptisch. Und dann haben sie es einfach ausprobiert.
 
 Heute sind sie Teil von etwas das sich anfühlt wie Gemeinschaft und nicht wie Arbeit.
 
 Das ist Feminin Aura. Wenn du wissen willst was das ist schreib mir. 🌸</div><button class="copy" onclick="cp('p6',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 7 · So</div><div class="script" id="p7">Am [Datum] machen wir unser nächstes Feminin Aura Praxis Training.
+        <div class="card"><div class="card-label">Post 7 · So · Training</div><div class="script" id="p7">Am [Datum] machen wir unser nächstes Feminin Aura Praxis Training.
 
 Eine Stunde. Zoom. Wir zeigen wie das System funktioniert, beantworten Fragen und gehen durch echte Beispiele.
 
 Du musst gar nichts wissen. Du musst nur neugierig sein.
 
 Den Link bekommst du wenn du mir kurz schreibst. 🌿</div><button class="copy" onclick="cp('p7',this)">Kopieren</button></div>
+      </div>
     </div>
-  </div>
-  <div class="week">
-    <button class="wtoggle" aria-expanded="false" onclick="toggleW(this)">Woche 2 — Produkte <span class="wicon">▼</span></button>
-    <div class="wposts">
-      <div class="card"><div class="card-label">Post 8 · Mo</div><div class="script" id="p8">Ich wurde letzte Woche gefragt was ich für mein Haar mache.
+    <div class="week">
+      <button class="wtoggle" aria-expanded="false" onclick="toggleW(this)">Woche 2 — Produkte <span class="wicon">▼</span></button>
+      <div class="wposts">
+        <div class="card"><div class="card-label">Post 8 · Mo</div><div class="script" id="p8">Ich wurde letzte Woche gefragt was ich für mein Haar mache.
 
 Ehrliche Antwort: ich hab lange gesucht. Und dann hab ich aufgehört zu suchen weil ich gefunden hab was funktioniert.
 
 Monat Renew Linie. Jeden Tag. Seit einem Jahr.
 
 Was ist deine grösste Herausforderung mit deinem Haar gerade? Schreib es mir 👇🌿</div><button class="copy" onclick="cp('p8',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 9 · Di</div><div class="script" id="p9">Haarausfall. Das Thema das viele beschäftigt aber kaum jemand laut sagt.
+        <div class="card"><div class="card-label">Post 9 · Di</div><div class="script" id="p9">Haarausfall. Das Thema das viele beschäftigt aber kaum jemand laut sagt.
 
 Ich hab es selbst erlebt. Und ich hab das ir Clinical Set ausprobiert weil mir jemand davon erzählt hat.
 
 Drei Monate später. Anderes Bild.
 
 Wenn dich das Thema beschäftigt schreib mir einfach 🌸</div><button class="copy" onclick="cp('p9',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 10 · Mi</div><div class="script" id="p10">Ein Kopfhaut-Scrub klingt komisch.
+        <div class="card"><div class="card-label">Post 10 · Mi</div><div class="script" id="p10">Ein Kopfhaut-Scrub klingt komisch.
 
 Ich dachte das auch. Bis ich es ausprobiert hab.
 
 Nach dem ersten Mal hat sich mein Haar angefühlt als hätte ich gerade beim Friseur gesessen. Leichter. Sauberer. Lebendiger.
 
 Der Monat Smoothing Scrub ist jetzt fest in meiner Routine. 🌿</div><button class="copy" onclick="cp('p10',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 11 · Do</div><div class="script" id="p11">Was mich an Monat am meisten überrascht hat:
+        <div class="card"><div class="card-label">Post 11 · Do</div><div class="script" id="p11">Was mich an Monat am meisten überrascht hat:
 
 Keine schädlichen Inhaltsstoffe. Ich hab vorher nie darauf geachtet was in meiner Haarpflege steckt.
 
 Jetzt schon. Und ich gehe nicht mehr zurück.
 
 Willst du wissen was in deinen jetzigen Produkten steckt? Schick mir den Namen 🌸</div><button class="copy" onclick="cp('p11',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 12 · Fr</div><div class="script" id="p12">Monat kommt direkt nach Hause. Kein Laden. Kein Ausverkauft. Kein Suchen.
+        <div class="card"><div class="card-label">Post 12 · Fr</div><div class="script" id="p12">Monat kommt direkt nach Hause. Kein Laden. Kein Ausverkauft. Kein Suchen.
 
 Das klingt klein aber für mich ist das ein echter Unterschied im Alltag.
 
 Einfach bestellen und bekommen. Das ist mein Tempo. 🌿</div><button class="copy" onclick="cp('p12',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 13 · Sa</div><div class="script" id="p13">Die Frage die ich am meisten bekomme: lohnt es sich wirklich?
+        <div class="card"><div class="card-label">Post 13 · Sa</div><div class="script" id="p13">Die Frage die ich am meisten bekomme: lohnt es sich wirklich?
 
 Ich sag es so: ich hab aufgehört zu rechnen was ich vorher für Haarpflege ausgegeben hab. Die Antwort wäre peinlich.
 
 Heute weiss ich was funktioniert. Und ich bleibe dabei. 🌸</div><button class="copy" onclick="cp('p13',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 14 · So</div><div class="script" id="p14">Manchmal reicht ein Produkt um alles zu verändern.
+        <div class="card"><div class="card-label">Post 14 · So</div><div class="script" id="p14">Manchmal reicht ein Produkt um alles zu verändern.
 
 Bei mir war es die Renew Linie. Bei einer Freundin das Clinical Set. Bei einer anderen der Scrub.
 
 Jede Frau ist anders. Das ist auch das Schöne.
 
 Was würde bei dir passen? Schreib mir 🌿</div><button class="copy" onclick="cp('p14',this)">Kopieren</button></div>
+      </div>
     </div>
-  </div>
-  <div class="week">
-    <button class="wtoggle" aria-expanded="false" onclick="toggleW(this)">Woche 3 — Business &amp; Einkommen <span class="wicon">▼</span></button>
-    <div class="wposts">
-      <div class="card"><div class="card-label">Post 15 · Mo</div><div class="script" id="p15">Ich hab nie gedacht dass ich mal Geld verdiene indem ich Produkte empfehle die ich ohnehin kaufen würde.
+    <div class="week">
+      <button class="wtoggle" aria-expanded="false" onclick="toggleW(this)">Woche 3 — Business &amp; Einkommen <span class="wicon">▼</span></button>
+      <div class="wposts">
+        <div class="card"><div class="card-label">Post 15 · Mo</div><div class="script" id="p15">Ich hab nie gedacht dass ich mal Geld verdiene indem ich Produkte empfehle die ich ohnehin kaufen würde.
 
 Aber genau so fing es an.
 
 Heute ist es ein Teil meines Einkommens. Kein Hauptjob. Aber ein echter Teil.
 
 Wenn dich das neugierig macht schreib mir 🌸</div><button class="copy" onclick="cp('p15',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 16 · Di</div><div class="script" id="p16">Network Marketing hat einen schlechten Ruf. Den versteh ich.
+        <div class="card"><div class="card-label">Post 16 · Di</div><div class="script" id="p16">Network Marketing hat einen schlechten Ruf. Den versteh ich.
 
 Was mich überzeugt hat war nicht das Business. Es waren die Produkte.
 
 Ich hab als Kundin angefangen. Und irgendwann gemerkt dass ich sie ohnehin weiterempfehle. Also warum nicht auch dafür belohnt werden?
 
 Das ist meine ehrliche Geschichte. 🌿</div><button class="copy" onclick="cp('p16',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 17 · Mi</div><div class="script" id="p17">Kein Lager. Kein Büro. Keine festen Zeiten.
+        <div class="card"><div class="card-label">Post 17 · Mi</div><div class="script" id="p17">Kein Lager. Kein Büro. Keine festen Zeiten.
 
 Ich mache das zwischen allem anderen. Zwischen Familie, Alltag, Leben.
 
 Das ist nicht für jede Frau. Aber für manche ist es genau das Richtige.
 
 Für wen das klingt wie sie: meld dich 🌸</div><button class="copy" onclick="cp('p17',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 18 · Do</div><div class="script" id="p18">Was ich gelernt hab in einem Jahr Monat:
+        <div class="card"><div class="card-label">Post 18 · Do</div><div class="script" id="p18">Was ich gelernt hab in einem Jahr Monat:
 
 Du brauchst keine Erfahrung. Du brauchst kein grosses Netzwerk. Du brauchst nur die Bereitschaft anzufangen.
 
 Der Rest kommt mit der Zeit. Und mit dem richtigen System. 🌿</div><button class="copy" onclick="cp('p18',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 19 · Fr</div><div class="script" id="p19">Die meisten Frauen in meinem Team haben so angefangen wie du gerade schaust.
+        <div class="card"><div class="card-label">Post 19 · Fr</div><div class="script" id="p19">Die meisten Frauen in meinem Team haben so angefangen wie du gerade schaust.
 
 Neugierig. Ein bisschen skeptisch. Nicht sicher ob es für sie ist.
 
 Und dann haben sie es einfach ausprobiert.
 
 Heute bin ich froh dass sie es getan haben. 🌸</div><button class="copy" onclick="cp('p19',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 20 · Sa</div><div class="script" id="p20">Was wenn du für das bezahlt werden würdest was du ohnehin tust?
+        <div class="card"><div class="card-label">Post 20 · Sa</div><div class="script" id="p20">Was wenn du für das bezahlt werden würdest was du ohnehin tust?
 
 Du empfiehlst Restaurants. Serien. Urlaube. Produkte.
 
 Der Unterschied bei Monat: du bekommst eine Provision dafür.
 
 Mehr nicht. Und mehr braucht es oft auch nicht. 🌿</div><button class="copy" onclick="cp('p20',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 21 · So</div><div class="script" id="p21">Nächste Woche machen wir unser Feminin Aura Praxis Training.
+        <div class="card"><div class="card-label">Post 21 · So</div><div class="script" id="p21">Nächste Woche machen wir unser Feminin Aura Praxis Training.
 
 Eine Stunde. Zoom. Wir schauen durch echte Beispiele und ich beantworte alle Fragen.
 
 Du musst noch nichts wissen. Du musst nur neugierig sein.
 
 Schreib mir kurz wenn du dabei sein willst 🌸</div><button class="copy" onclick="cp('p21',this)">Kopieren</button></div>
+      </div>
     </div>
-  </div>
-  <div class="week">
-    <button class="wtoggle" aria-expanded="false" onclick="toggleW(this)">Woche 4 — Community &amp; Lifestyle <span class="wicon">▼</span></button>
-    <div class="wposts">
-      <div class="card"><div class="card-label">Post 22 · Mo</div><div class="script" id="p22">Weisst du was ich an Feminin Aura am meisten liebe?
+    <div class="week">
+      <button class="wtoggle" aria-expanded="false" onclick="toggleW(this)">Woche 4 — Community &amp; Lifestyle <span class="wicon">▼</span></button>
+      <div class="wposts">
+        <div class="card"><div class="card-label">Post 22 · Mo</div><div class="script" id="p22">Weisst du was ich an Feminin Aura am meisten liebe?
 
 Die Frauen die dabei sind.
 
 Frauen die wollen. Die machen. Die füreinander da sind.
 
 Das hätte ich nicht erwartet. Und ich bin jeden Tag dankbar dafür. 🌿</div><button class="copy" onclick="cp('p22',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 23 · Di</div><div class="script" id="p23">Eine Frage die mich heute beschäftigt:
+        <div class="card"><div class="card-label">Post 23 · Di</div><div class="script" id="p23">Eine Frage die mich heute beschäftigt:
 
 Was wäre wenn du in einem Jahr zurückschaust und sagst: gut dass ich damals angefangen hab?
 
 Was müsstest du heute tun damit das so wird?
 
 Ich frag weil ich mir diese Frage vor einem Jahr gestellt hab. Die Antwort hat mein Leben verändert. 🌸</div><button class="copy" onclick="cp('p23',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 24 · Mi</div><div class="script" id="p24">Morgens aufwachen und wissen was man tut.
+        <div class="card"><div class="card-label">Post 24 · Mi</div><div class="script" id="p24">Morgens aufwachen und wissen was man tut.
 
 Nicht weil man muss. Sondern weil man will.
 
 Das ist das Ziel. Nicht reich werden über Nacht. Sondern Schritt für Schritt etwas aufbauen das zu einem passt.
 
 Das ist Feminin Aura. 🌿</div><button class="copy" onclick="cp('p24',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 25 · Do</div><div class="script" id="p25">Eine Frau in meinem Team hat letzte Woche ihre erste Zahlung bekommen.
+        <div class="card"><div class="card-label">Post 25 · Do</div><div class="script" id="p25">Eine Frau in meinem Team hat letzte Woche ihre erste Zahlung bekommen.
 
 Nicht viel. Aber real. Ihr eigenes Geld. Verdient mit ihren eigenen Händen.
 
 Dieser Moment. Den wünsche ich jeder Frau. 🌸</div><button class="copy" onclick="cp('p25',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 26 · Fr</div><div class="script" id="p26">Ich werde manchmal gefragt ob ich Angst hatte anzufangen.
+        <div class="card"><div class="card-label">Post 26 · Fr</div><div class="script" id="p26">Ich werde manchmal gefragt ob ich Angst hatte anzufangen.
 
 Ja. Ich hatte Angst. Ich dachte ich bin nicht gut genug. Nicht überzeugend genug. Nicht vernetzt genug.
 
 Aber ich hab trotzdem angefangen. Und heute bin ich froh.
 
 Wenn du Angst hast: das ist normal. Tu es trotzdem. 🌿</div><button class="copy" onclick="cp('p26',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 27 · Sa</div><div class="script" id="p27">Was Feminin Aura dir gibt:
+        <div class="card"><div class="card-label">Post 27 · Sa</div><div class="script" id="p27">Was Feminin Aura dir gibt:
 
 Fertige Texte damit du nicht überlegen musst was du schreiben sollst.
 Fertige Posts damit du nicht stundenlang Content machst.
@@ -521,7 +548,7 @@ Ein System das sich selbst erklärt.
 Frauen die denselben Weg gehen.
 
 Alles an einem Ort. 🌸</div><button class="copy" onclick="cp('p27',this)">Kopieren</button></div>
-      <div class="card"><div class="card-label">Post 28 · So</div><div class="script" id="p28">Ein Jahr. Das ist wie lange ich jetzt bei Monat bin.
+        <div class="card"><div class="card-label">Post 28 · So</div><div class="script" id="p28">Ein Jahr. Das ist wie lange ich jetzt bei Monat bin.
 
 Was hat sich verändert?
 Mein Haar. Mein Selbstbewusstsein. Mein Einkommen. Meine Community.
@@ -530,87 +557,111 @@ Was hat sich nicht verändert?
 Ich. Ich bin noch genau dieselbe Frau. Nur mit besserem Haar und mehr Möglichkeiten.
 
 Das ist meine Geschichte. Was wird deine sein? 🌿</div><button class="copy" onclick="cp('p28',this)">Kopieren</button></div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="module" id="m4">
-  <p class="mod-eye">Modul 04</p>
-  <h2 class="mod-title">Selbsterklärungs-System</h2>
-  <p class="mod-desc">5 Nachrichten nacheinander schicken wenn jemand wirklich interessiert ist. Danach Skript 15 aus Modul 2.</p>
-  <div class="info">Alle 5 Nachrichten nacheinander — mit etwas Abstand dazwischen. Das System erklärt alles für dich. Du musst nichts erklären.</div>
-  <div class="cards">
-    <div class="card"><div class="card-label">Nachricht 1</div><div class="script" id="se1">Hey 🌿 schön dass du neugierig bist. Ich schick dir jetzt alles Schritt für Schritt. Einfach lesen und dann sag mir was du denkst.</div><button class="copy" onclick="cp('se1',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 2</div><div class="script" id="se2">Die meisten Frauen kennen das. Man gibt viel Geld für Haarpflege aus. Probiert ein Produkt nach dem anderen. Manchmal hilft es kurz, dann nicht mehr.
+<!-- MODULE 4 -->
+<div class="acc-mod" id="m4">
+  <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="false">
+    <span class="acc-num">04</span>
+    <span class="acc-title">Selbsterklärungs-System</span>
+    <span class="acc-arrow">▼</span>
+  </button>
+  <div class="acc-body">
+    <p class="mod-eye">Modul 04</p>
+    <h2 class="mod-title">Selbsterklärungs-System</h2>
+    <p class="mod-desc">5 Nachrichten nacheinander schicken wenn jemand wirklich interessiert ist. Danach Skript 15 aus Modul 2.</p>
+    <div class="info">Alle 5 Nachrichten nacheinander — mit etwas Abstand dazwischen. Das System erklärt alles für dich. Du musst nichts erklären.</div>
+    <div class="cards">
+      <div class="card"><div class="card-label">Nachricht 1</div><div class="script" id="se1">Hey 🌿 schön dass du neugierig bist. Ich schick dir jetzt alles Schritt für Schritt. Einfach lesen und dann sag mir was du denkst.</div><button class="copy" onclick="cp('se1',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Nachricht 2</div><div class="script" id="se2">Die meisten Frauen kennen das. Man gibt viel Geld für Haarpflege aus. Probiert ein Produkt nach dem anderen. Manchmal hilft es kurz, dann nicht mehr.
 
 Und nebenbei wünscht man sich etwas das neben dem Alltag funktioniert. Ohne Chef. Ohne feste Zeiten. Ohne grosse Investition.</div><button class="copy" onclick="cp('se2',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 3</div><div class="script" id="se3">Genau das ist Monat.
+      <div class="card"><div class="card-label">Nachricht 3</div><div class="script" id="se3">Genau das ist Monat.
 
 Produkte die wirklich Ergebnisse liefern. Ich benutze sie selbst seit einem Jahr und ich würde sie nie mehr hergeben.
 
 Und wer möchte kann damit auch ein Business aufbauen. Nicht müssen. Können. 🌸</div><button class="copy" onclick="cp('se3',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 4</div><div class="script" id="se4">Feminin Aura ist das System dahinter.
+      <div class="card"><div class="card-label">Nachricht 4</div><div class="script" id="se4">Feminin Aura ist das System dahinter.
 
 Du bekommst fertige Texte für deine Nachrichten. Fertige Posts für Social Media. Ein Onboarding das neue Partnerinnen selbst durch alles führt.
 
 Du musst niemandem etwas erklären. Das System macht das für dich. Das System das jede weitergeben kann. 🌿</div><button class="copy" onclick="cp('se4',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 5</div><div class="script" id="se5">Jetzt weisst du alles was du brauchst um zu entscheiden.
+      <div class="card"><div class="card-label">Nachricht 5</div><div class="script" id="se5">Jetzt weisst du alles was du brauchst um zu entscheiden.
 
 Hast du Fragen? Schreib mir einfach.
 Willst du dabei sein? Sag mir Bescheid.
 Noch nicht sicher? Auch okay, ich bin hier wenn du soweit bist 🌸</div><button class="copy" onclick="cp('se5',this)">Kopieren</button></div>
+    </div>
   </div>
 </div>
 
-<div class="module" id="m5">
-  <p class="mod-eye">Modul 05</p>
-  <h2 class="mod-title">Onboarding</h2>
-  <p class="mod-desc">Was du sofort schickst wenn jemand Mitglied wird. Dann 30 Tage begleiten.</p>
-  <p class="glabel">Willkommensnachrichten</p>
-  <div class="cards">
-    <div class="card"><div class="card-label">Tag 1 — Sofort senden</div><div class="script" id="ob1">Hey [Name] 🌸 herzlich willkommen bei Feminin Aura. Ich freu mich so dass du dabei bist.
+<!-- MODULE 5 -->
+<div class="acc-mod" id="m5">
+  <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="false">
+    <span class="acc-num">05</span>
+    <span class="acc-title">Onboarding</span>
+    <span class="acc-arrow">▼</span>
+  </button>
+  <div class="acc-body">
+    <p class="mod-eye">Modul 05</p>
+    <h2 class="mod-title">Onboarding</h2>
+    <p class="mod-desc">Was du sofort schickst wenn jemand Mitglied wird. Dann 30 Tage begleiten.</p>
+    <p class="glabel">Willkommensnachrichten</p>
+    <div class="cards">
+      <div class="card"><div class="card-label">Tag 1 — Sofort senden</div><div class="script" id="ob1">Hey [Name] 🌸 herzlich willkommen bei Feminin Aura. Ich freu mich so dass du dabei bist.
 
 Heute machst du nur eine Sache: Lies alle Module einmal durch. Nur lesen, noch nichts tun. Damit du weisst was du hast.
 
 Ich bin für dich da wenn du Fragen hast 🌿</div><button class="copy" onclick="cp('ob1',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Tag 2</div><div class="script" id="ob2">Guten Morgen [Name] 😊
+      <div class="card"><div class="card-label">Tag 2</div><div class="script" id="ob2">Guten Morgen [Name] 😊
 
 Heute schreibst du drei Namen auf. Frauen die du kennst und die du als erstes anschreiben möchtest.
 
 Nur aufschreiben. Noch nicht schreiben. Schick mir die Namen wenn du magst 🌿</div><button class="copy" onclick="cp('ob2',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Tag 3</div><div class="script" id="ob3">Heute schickst du deine erste Nachricht.
+      <div class="card"><div class="card-label">Tag 3</div><div class="script" id="ob3">Heute schickst du deine erste Nachricht.
 
 Öffne Modul 2. Nimm Skript 1. Passe nur den Namen an. Der Rest bleibt genau so.
 
 Du musst nichts erklären. Das Skript macht das für dich 🌸</div><button class="copy" onclick="cp('ob3',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Tag 7 — Erste Woche</div><div class="script" id="ob7">Eine Woche Feminin Aura 🌿 wie fühlst du dich?
+      <div class="card"><div class="card-label">Tag 7 — Erste Woche</div><div class="script" id="ob7">Eine Woche Feminin Aura 🌿 wie fühlst du dich?
 
 Du hast angeschrieben, gepostet und angefangen. Das ist mehr als die meisten je tun.
 
 Nächste Woche zeige ich dir wie du mit Antworten umgehst und dein Selbsterklärungs-System einsetzt 🌸</div><button class="copy" onclick="cp('ob7',this)">Kopieren</button></div>
-  </div>
-  <hr>
-  <p class="glabel">30-Tage Meilensteine</p>
-  <div class="days">
-    <div class="day"><div class="dnum">8</div><div class="dtxt"><div class="dtitle">Reaktionen nutzen</div><div class="ddesc">Wenn jemand antwortet → Modul 2, passendes Skript öffnen und antworten.</div></div></div>
-    <div class="day"><div class="dnum">10</div><div class="dtxt"><div class="dtitle">Selbsterklärungs-System einsetzen</div><div class="ddesc">Bei echtem Interesse → Modul 4, alle 5 Nachrichten nacheinander.</div></div></div>
-    <div class="day"><div class="dnum">14</div><div class="dtxt"><div class="dtitle">Erste Auswertung</div><div class="ddesc">Wie viele haben geantwortet? Was hat funktioniert, was nicht?</div></div></div>
-    <div class="day"><div class="dnum">22</div><div class="dtxt"><div class="dtitle">Erstes Training vorbereiten</div><div class="ddesc">Datum + Zoom-Link + Post 7 veröffentlichen.</div></div></div>
-    <div class="day"><div class="dnum">30</div><div class="dtxt"><div class="dtitle">Ein Monat geschafft</div><div class="ddesc">Weitermachen. Ab Monat 2: Rhythmus festigen, Team aufbauen.</div></div></div>
+    </div>
+    <hr>
+    <p class="glabel">30-Tage Meilensteine</p>
+    <div class="days">
+      <div class="day"><div class="dnum">8</div><div class="dtxt"><div class="dtitle">Reaktionen nutzen</div><div class="ddesc">Wenn jemand antwortet → Modul 2, passendes Skript öffnen und antworten.</div></div></div>
+      <div class="day"><div class="dnum">10</div><div class="dtxt"><div class="dtitle">Selbsterklärungs-System einsetzen</div><div class="ddesc">Bei echtem Interesse → Modul 4, alle 5 Nachrichten nacheinander.</div></div></div>
+      <div class="day"><div class="dnum">14</div><div class="dtxt"><div class="dtitle">Erste Auswertung</div><div class="ddesc">Wie viele haben geantwortet? Was hat funktioniert, was nicht?</div></div></div>
+      <div class="day"><div class="dnum">22</div><div class="dtxt"><div class="dtitle">Erstes Training vorbereiten</div><div class="ddesc">Datum + Zoom-Link + Post 7 veröffentlichen.</div></div></div>
+      <div class="day"><div class="dnum">30</div><div class="dtxt"><div class="dtitle">Ein Monat geschafft</div><div class="ddesc">Weitermachen. Ab Monat 2: Rhythmus festigen, Team aufbauen.</div></div></div>
+    </div>
   </div>
 </div>
 
-<div class="module" id="m6">
-  <p class="mod-eye">Modul 06</p>
-  <h2 class="mod-title">Produkt-Erklärung</h2>
-  <p class="mod-desc">3 Nachrichten wenn jemand fragt was Monat für Produkte hat.</p>
-  <div class="cards">
-    <div class="card"><div class="card-label">Nachricht 1</div><div class="script" id="pr1">Schön dass du fragst 🌿 Monat ist eine Haarpflege und Hautpflegemarke die ich selbst seit einem Jahr benutze.
+<!-- MODULE 6 -->
+<div class="acc-mod" id="m6">
+  <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="false">
+    <span class="acc-num">06</span>
+    <span class="acc-title">Produkte &amp; Preise</span>
+    <span class="acc-arrow">▼</span>
+  </button>
+  <div class="acc-body">
+    <p class="mod-eye">Modul 06</p>
+    <h2 class="mod-title">Produkt-Erklärung</h2>
+    <p class="mod-desc">3 Nachrichten wenn jemand fragt was Monat für Produkte hat.</p>
+    <div class="cards">
+      <div class="card"><div class="card-label">Nachricht 1</div><div class="script" id="pr1">Schön dass du fragst 🌿 Monat ist eine Haarpflege und Hautpflegemarke die ich selbst seit einem Jahr benutze.
 
 Was mich überzeugt hat: die Produkte sind nicht nur schön verpackt. Sie liefern wirklich Ergebnisse. Mein Haar hat sich komplett verändert.
 
 Ich schick dir die drei Produkte die ich am meisten liebe.</div><button class="copy" onclick="cp('pr1',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 2</div><div class="script" id="pr2">Das sind meine drei Lieblingsprodukte:
+      <div class="card"><div class="card-label">Nachricht 2</div><div class="script" id="pr2">Das sind meine drei Lieblingsprodukte:
 
 Renew Linie — für trockenes Haar. Shampoo CHF 58 / Spülung CHF 71. Als VIP Kundin: CHF 50 und CHF 59.
 
@@ -619,7 +670,7 @@ ir Clinical System — für dünner werdendes Haar. Komplettes Set: VIP CHF 181 
 Kopfhaut Scrub — Tiefenreinigung für die Kopfhaut. VIP CHF 67 / normal CHF 78.
 
 Alle drei benutze ich selbst. Ich würde nichts empfehlen das ich nicht kenne.</div><button class="copy" onclick="cp('pr2',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 3</div><div class="script" id="pr3">Was Monat von anderen Marken unterscheidet:
+      <div class="card"><div class="card-label">Nachricht 3</div><div class="script" id="pr3">Was Monat von anderen Marken unterscheidet:
 
 Keine schädlichen Inhaltsstoffe. Kein SLS, kein Paraben, kein Formaldehyd.
 
@@ -628,89 +679,106 @@ Direkt nach Hause geliefert. Kein Laden nötig.
 Als VIP Kundin 15% Rabatt auf alles. Als Marktpartnerin sogar 30%.
 
 Willst du wissen welches Produkt für dich passt? Schreib mir kurz wie dein Haar gerade ist 🌸</div><button class="copy" onclick="cp('pr3',this)">Kopieren</button></div>
+    </div>
+    <hr>
+    <p class="glabel">Schweizer Preise — Mai 2026</p>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Produkt</th><th>MP</th><th>VIP</th><th>Retail</th></tr>
+        <tr><td>Renew Shampoo</td><td class="pmp">42</td><td class="pvip">50</td><td class="pret">58</td></tr>
+        <tr><td>Renew Spülung</td><td class="pmp">50</td><td class="pvip">59</td><td class="pret">71</td></tr>
+        <tr><td>Renew System</td><td class="pmp">114</td><td class="pvip">137</td><td class="pret">162</td></tr>
+        <tr><td>IR Clinical Shampoo</td><td class="pmp">50</td><td class="pvip">59</td><td class="pret">71</td></tr>
+        <tr><td>IR Clinical Spülung</td><td class="pmp">56</td><td class="pvip">68</td><td class="pret">80</td></tr>
+        <tr><td>IR Clinical Serum</td><td class="pmp">82</td><td class="pvip">100</td><td class="pret">118</td></tr>
+        <tr><td>IR Clinical System</td><td class="pmp">150</td><td class="pvip">181</td><td class="pret">215</td></tr>
+        <tr><td>Kopfhaut Scrub</td><td class="pmp">55</td><td class="pvip">67</td><td class="pret">78</td></tr>
+      </table>
+    </div>
+    <p style="font-size:12px;color:var(--text-muted);margin-top:6px">Alle Preise CHF · MP = Marktpartnerin −30% · VIP −15%</p>
   </div>
-  <hr>
-  <p class="glabel">Schweizer Preise — Mai 2026</p>
-  <div class="tbl-wrap">
-    <table>
-      <tr><th>Produkt</th><th>MP</th><th>VIP</th><th>Retail</th></tr>
-      <tr><td>Renew Shampoo</td><td class="pmp">42</td><td class="pvip">50</td><td class="pret">58</td></tr>
-      <tr><td>Renew Spülung</td><td class="pmp">50</td><td class="pvip">59</td><td class="pret">71</td></tr>
-      <tr><td>Renew System</td><td class="pmp">114</td><td class="pvip">137</td><td class="pret">162</td></tr>
-      <tr><td>IR Clinical Shampoo</td><td class="pmp">50</td><td class="pvip">59</td><td class="pret">71</td></tr>
-      <tr><td>IR Clinical Spülung</td><td class="pmp">56</td><td class="pvip">68</td><td class="pret">80</td></tr>
-      <tr><td>IR Clinical Serum</td><td class="pmp">82</td><td class="pvip">100</td><td class="pret">118</td></tr>
-      <tr><td>IR Clinical System</td><td class="pmp">150</td><td class="pvip">181</td><td class="pret">215</td></tr>
-      <tr><td>Kopfhaut Scrub</td><td class="pmp">55</td><td class="pvip">67</td><td class="pret">78</td></tr>
-    </table>
-  </div>
-  <p style="font-size:12px;color:var(--text-muted);margin-top:6px">Alle Preise CHF · MP = Marktpartnerin −30% · VIP −15%</p>
 </div>
 
-<div class="module" id="m7">
-  <p class="mod-eye">Modul 07</p>
-  <h2 class="mod-title">Business-Erklärung</h2>
-  <p class="mod-desc">Schau zuerst die Videos. Dann die Nachrichten wenn jemand fragt wie das Verdienen funktioniert.</p>
-  <p class="glabel">Business-Videos</p>
-  <div class="vcard">
-    <div class="veye">Video 1</div>
-    <div class="vtitle">Business-Erklärung auf Deutsch</div>
-    <a class="vlink" href="https://us06web.zoom.us/rec/share/Cvmgn2tHDMP0nXY0k1q5N8HUtuhVRp7n9vcRFjPPKRqOUApohv9KUmlt1F11QlRN.-SF89Ziy1W_14DJa?startTime=1778522791000" target="_blank" rel="noopener">&#9654; Video öffnen</a>
-    <div class="vpw-row">Passwort: <span class="vpw">+zmJm24N</span></div>
-  </div>
-  <div class="vcard">
-    <div class="veye">Video 2</div>
-    <div class="vtitle">Business-Erklärung auf Schweizerdeutsch</div>
-    <a class="vlink" href="https://us06web.zoom.us/rec/share/paTRDDx-ocnJZCQR72JR8cv47NFou-jmUC9bJZllxe-5G1vcF7SQxJ_f6VoZKkqR.jKrrfiBaY7A1Swqh?from=hub" target="_blank" rel="noopener">&#9654; Video öffnen</a>
-    <div class="vpw-row">Passwort: <span class="vpw">=BD7VrV1</span></div>
-  </div>
-  <hr>
-  <p class="glabel">Die drei Stufen</p>
-  <div class="tiers">
-    <div class="tier"><div class="tier-head"><span class="dot k"></span><span class="tname">Kundin</span><span class="tdisc">Retail</span></div><div class="tier-body">Einfach bestellen. Kein Abo, keine Verpflichtung.<div class="texample">IR Clinical System: CHF 215</div></div></div>
-    <div class="tier"><div class="tier-head"><span class="dot v"></span><span class="tname">VIP</span><span class="tdisc">&#8722;15%</span></div><div class="tier-body">Kostenlos anmelden, monatlich bestellen. 15% auf alles.<div class="texample">IR Clinical System: CHF 181</div></div></div>
-    <div class="tier"><div class="tier-head"><span class="dot m"></span><span class="tname">Marktpartnerin</span><span class="tdisc">&#8722;30%</span></div><div class="tier-body">Starter-Paket ab CHF 170. 30% Rabatt + Provision verdienen.<div class="texample">IR Clinical System: CHF 150</div></div></div>
-  </div>
-  <hr>
-  <p class="glabel">Nachrichten</p>
-  <div class="cards">
-    <div class="card"><div class="card-label">Nachricht 1</div><div class="script" id="biz1">Ich erklär dir kurz wie das bei Monat funktioniert. Einfach und ehrlich. 🌿
+<!-- MODULE 7 -->
+<div class="acc-mod" id="m7">
+  <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="false">
+    <span class="acc-num">07</span>
+    <span class="acc-title">Business-Erklärung</span>
+    <span class="acc-arrow">▼</span>
+  </button>
+  <div class="acc-body">
+    <p class="mod-eye">Modul 07</p>
+    <h2 class="mod-title">Business-Erklärung</h2>
+    <p class="mod-desc">Schau zuerst die Videos. Dann die Nachrichten wenn jemand fragt wie das Verdienen funktioniert.</p>
+    <p class="glabel">Business-Videos</p>
+    <div class="vcard">
+      <div class="veye">Video 1</div>
+      <div class="vtitle">Business-Erklärung auf Deutsch</div>
+      <a class="vlink" href="https://us06web.zoom.us/rec/share/Cvmgn2tHDMP0nXY0k1q5N8HUtuhVRp7n9vcRFjPPKRqOUApohv9KUmlt1F11QlRN.-SF89Ziy1W_14DJa?startTime=1778522791000" target="_blank" rel="noopener">&#9654; Video öffnen</a>
+      <div class="vpw-row">Passwort: <span class="vpw">+zmJm24N</span></div>
+    </div>
+    <div class="vcard">
+      <div class="veye">Video 2</div>
+      <div class="vtitle">Business-Erklärung auf Schweizerdeutsch</div>
+      <a class="vlink" href="https://us06web.zoom.us/rec/share/paTRDDx-ocnJZCQR72JR8cv47NFou-jmUC9bJZllxe-5G1vcF7SQxJ_f6VoZKkqR.jKrrfiBaY7A1Swqh?from=hub" target="_blank" rel="noopener">&#9654; Video öffnen</a>
+      <div class="vpw-row">Passwort: <span class="vpw">=BD7VrV1</span></div>
+    </div>
+    <hr>
+    <p class="glabel">Die drei Stufen</p>
+    <div class="tiers">
+      <div class="tier"><div class="tier-head"><span class="dot k"></span><span class="tname">Kundin</span><span class="tdisc">Retail</span></div><div class="tier-body">Einfach bestellen. Kein Abo, keine Verpflichtung.<div class="texample">IR Clinical System: CHF 215</div></div></div>
+      <div class="tier"><div class="tier-head"><span class="dot v"></span><span class="tname">VIP</span><span class="tdisc">&#8722;15%</span></div><div class="tier-body">Kostenlos anmelden, monatlich bestellen. 15% auf alles.<div class="texample">IR Clinical System: CHF 181</div></div></div>
+      <div class="tier"><div class="tier-head"><span class="dot m"></span><span class="tname">Marktpartnerin</span><span class="tdisc">&#8722;30%</span></div><div class="tier-body">Starter-Paket ab CHF 170. 30% Rabatt + Provision verdienen.<div class="texample">IR Clinical System: CHF 150</div></div></div>
+    </div>
+    <hr>
+    <p class="glabel">Nachrichten</p>
+    <div class="cards">
+      <div class="card"><div class="card-label">Nachricht 1</div><div class="script" id="biz1">Ich erklär dir kurz wie das bei Monat funktioniert. Einfach und ehrlich. 🌿
 
 Du empfiehlst Produkte die du selbst liebst. Jemand kauft über deinen Link. Du bekommst eine Provision. Das ist der Kern.</div><button class="copy" onclick="cp('biz1',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 2</div><div class="script" id="biz2">Was du konkret machst:
+      <div class="card"><div class="card-label">Nachricht 2</div><div class="script" id="biz2">Was du konkret machst:
 
 Du baust einen Kundenkreis auf. Menschen die regelmässig Monat bestellen. Die meisten bestellen jeden Monat automatisch weil sie die Produkte nicht mehr hergeben wollen.
 
 Das bedeutet: du verdienst nicht einmal. Du verdienst jeden Monat wieder wenn deine Kunden nachbestellen.</div><button class="copy" onclick="cp('biz2',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 3 — Starterpakete</div><div class="script" id="biz3">Es gibt drei Pakete je nach dem was du dir vorstellst:
+      <div class="card"><div class="card-label">Nachricht 3 — Starterpakete</div><div class="script" id="biz3">Es gibt drei Pakete je nach dem was du dir vorstellst:
 
 Custom Lite — CHF 170 (Produktwert CHF 307)
 Custom Hair Essentials — CHF 260 (Produktwert CHF 555)
-Dream Big — CHF 700 (Produktwert CHF 1’800)
+Dream Big — CHF 700 (Produktwert CHF 1'800)
 
 Kein Lager nötig. Alles direkt an den Kunden geliefert. Du brauchst nur dein Handy.</div><button class="copy" onclick="cp('biz3',this)">Kopieren</button></div>
-    <div class="card"><div class="card-label">Nachricht 4</div><div class="script" id="biz4">Was die meisten Frauen überrascht:
+      <div class="card"><div class="card-label">Nachricht 4</div><div class="script" id="biz4">Was die meisten Frauen überrascht:
 
 Du brauchst keine Erfahrung. Du brauchst kein grosses Netzwerk. Ich hab auch mit null angefangen.
 
 Was du brauchst: Lust auf die Produkte und die Bereitschaft einfach anzufangen.
 
 Wenn du mehr wissen willst können wir kurz telefonieren oder ich schick dir mehr Infos. Was passt dir besser? 🌸</div><button class="copy" onclick="cp('biz4',this)">Kopieren</button></div>
+    </div>
   </div>
 </div>
 
-<div class="module" id="m8">
-  <p class="mod-eye">Modul 08</p>
-  <h2 class="mod-title">FAQ</h2>
-  <p class="mod-desc">Die 8 häufigsten Fragen mit fertigen Antworten zum Kopieren.</p>
-  <div class="faq"><div class="fq">Ist das MLM?</div><div class="fa" id="faq1">Ja es ist Network Marketing, da bin ich völlig ehrlich. Was mich überzeugt hat waren wirklich die Produkte und nicht irgendwelche Versprechen. Du kannst auch einfach Kundin werden ohne das Business zu machen.</div><button class="copy" onclick="cp('faq1',this)" style="margin-top:10px">Kopieren</button></div>
-  <div class="faq"><div class="fq">Wie viel kann ich verdienen?</div><div class="fa" id="faq2">Das hängt davon ab wie viel du reininvestierst. Ich nenne keine Zahlen die ich nicht versprechen kann. Was ich sagen kann: wer regelmässig dran ist und die Skripte nutzt sieht nach 3 Monaten erste Ergebnisse.</div><button class="copy" onclick="cp('faq2',this)" style="margin-top:10px">Kopieren</button></div>
-  <div class="faq"><div class="fq">Wie viel kostet es zum Start?</div><div class="fa" id="faq3">Es gibt drei Pakete: Custom Lite CHF 170 (Wert CHF 307) · Hair Essentials CHF 260 (Wert CHF 555) · Dream Big CHF 700 (Wert CHF 1’800). Das beliebteste für den Einstieg ist das Hair Essentials Paket.</div><button class="copy" onclick="cp('faq3',this)" style="margin-top:10px">Kopieren</button></div>
-  <div class="faq"><div class="fq">Muss ich Produkte auf Lager haben?</div><div class="fa" id="faq4">Nein. Alles wird direkt an den Kunden geliefert. Du hast kein Lager und kein Risiko.</div><button class="copy" onclick="cp('faq4',this)" style="margin-top:10px">Kopieren</button></div>
-  <div class="faq"><div class="fq">Wie viel Zeit brauche ich?</div><div class="fa" id="faq5">Ich mache das neben dem Alltag. Keine festen Zeiten. Du entscheidest selbst wie viel du investierst.</div><button class="copy" onclick="cp('faq5',this)" style="margin-top:10px">Kopieren</button></div>
-  <div class="faq"><div class="fq">Was wenn ich niemanden kenne?</div><div class="fa" id="faq6">Alle fangen so an. Mit den Feminin Aura Skripten weisst du genau was du schreiben musst. Das Netzwerk kommt mit der Zeit.</div><button class="copy" onclick="cp('faq6',this)" style="margin-top:10px">Kopieren</button></div>
-  <div class="faq"><div class="fq">Sind die Produkte wirklich gut?</div><div class="fa" id="faq7">Ich benutze sie selbst seit einem Jahr und würde sie nie mehr hergeben. Das ist meine ehrlichste Antwort.</div><button class="copy" onclick="cp('faq7',this)" style="margin-top:10px">Kopieren</button></div>
-  <div class="faq"><div class="fq">Was ist Feminin Aura genau?</div><div class="fa" id="faq8">Feminin Aura ist das System das ich entwickelt habe um Monat einfacher aufzubauen. Du bekommst fertige Texte, Posts und Anleitungen. Das System erklärt sich selbst. Das System das jede weitergeben kann. 🌿</div><button class="copy" onclick="cp('faq8',this)" style="margin-top:10px">Kopieren</button></div>
+<!-- MODULE 8 -->
+<div class="acc-mod" id="m8">
+  <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="false">
+    <span class="acc-num">08</span>
+    <span class="acc-title">FAQ — Häufige Fragen</span>
+    <span class="acc-arrow">▼</span>
+  </button>
+  <div class="acc-body">
+    <p class="mod-eye">Modul 08</p>
+    <h2 class="mod-title">FAQ</h2>
+    <p class="mod-desc">Die 8 häufigsten Fragen mit fertigen Antworten zum Kopieren.</p>
+    <div class="faq"><div class="fq">Ist das MLM?</div><div class="fa" id="faq1">Ja es ist Network Marketing, da bin ich völlig ehrlich. Was mich überzeugt hat waren wirklich die Produkte und nicht irgendwelche Versprechen. Du kannst auch einfach Kundin werden ohne das Business zu machen.</div><button class="copy" onclick="cp('faq1',this)" style="margin-top:10px">Kopieren</button></div>
+    <div class="faq"><div class="fq">Wie viel kann ich verdienen?</div><div class="fa" id="faq2">Das hängt davon ab wie viel du reininvestierst. Ich nenne keine Zahlen die ich nicht versprechen kann. Was ich sagen kann: wer regelmässig dran ist und die Skripte nutzt sieht nach 3 Monaten erste Ergebnisse.</div><button class="copy" onclick="cp('faq2',this)" style="margin-top:10px">Kopieren</button></div>
+    <div class="faq"><div class="fq">Wie viel kostet es zum Start?</div><div class="fa" id="faq3">Es gibt drei Pakete: Custom Lite CHF 170 (Wert CHF 307) · Hair Essentials CHF 260 (Wert CHF 555) · Dream Big CHF 700 (Wert CHF 1'800). Das beliebteste für den Einstieg ist das Hair Essentials Paket.</div><button class="copy" onclick="cp('faq3',this)" style="margin-top:10px">Kopieren</button></div>
+    <div class="faq"><div class="fq">Muss ich Produkte auf Lager haben?</div><div class="fa" id="faq4">Nein. Alles wird direkt an den Kunden geliefert. Du hast kein Lager und kein Risiko.</div><button class="copy" onclick="cp('faq4',this)" style="margin-top:10px">Kopieren</button></div>
+    <div class="faq"><div class="fq">Wie viel Zeit brauche ich?</div><div class="fa" id="faq5">Ich mache das neben dem Alltag. Keine festen Zeiten. Du entscheidest selbst wie viel du investierst.</div><button class="copy" onclick="cp('faq5',this)" style="margin-top:10px">Kopieren</button></div>
+    <div class="faq"><div class="fq">Was wenn ich niemanden kenne?</div><div class="fa" id="faq6">Alle fangen so an. Mit den Feminin Aura Skripten weisst du genau was du schreiben musst. Das Netzwerk kommt mit der Zeit.</div><button class="copy" onclick="cp('faq6',this)" style="margin-top:10px">Kopieren</button></div>
+    <div class="faq"><div class="fq">Sind die Produkte wirklich gut?</div><div class="fa" id="faq7">Ich benutze sie selbst seit einem Jahr und würde sie nie mehr hergeben. Das ist meine ehrlichste Antwort.</div><button class="copy" onclick="cp('faq7',this)" style="margin-top:10px">Kopieren</button></div>
+    <div class="faq"><div class="fq">Was ist Feminin Aura genau?</div><div class="fa" id="faq8">Feminin Aura ist das System das ich entwickelt habe um Monat einfacher aufzubauen. Du bekommst fertige Texte, Posts und Anleitungen. Das System erklärt sich selbst. Das System das jede weitergeben kann. 🌿</div><button class="copy" onclick="cp('faq8',this)" style="margin-top:10px">Kopieren</button></div>
+  </div>
 </div>
 
 <footer class="site-footer">&#169; 2026 <span>Petra Tanner</span> · Feminin Aura · Alle Rechte vorbehalten</footer>
@@ -740,7 +808,13 @@ function toggleW(btn) {
   btn.setAttribute('aria-expanded', String(!open));
   btn.nextElementSibling.classList.toggle('open', !open);
 }
+function toggleM(btn) {
+  var open = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!open));
+  btn.nextElementSibling.classList.toggle('open', !open);
+}
 
+// Golden glitter stars
 (function(){
   var canvas = document.getElementById('glitter');
   if (!canvas) return;
@@ -748,11 +822,13 @@ function toggleW(btn) {
   var GOLD = ['#D4AF37','#E8D06A','#F0E6D3','#C9A0A0','#F5E08A','#ffffff'];
   var particles = [];
   var count = 55;
+
   function resize() {
     var hero = canvas.parentElement;
     canvas.width = hero.offsetWidth;
     canvas.height = hero.offsetHeight;
   }
+
   function init() {
     particles = [];
     for (var i = 0; i < count; i++) {
@@ -768,6 +844,7 @@ function toggleW(btn) {
       });
     }
   }
+
   function drawCross(x, y, size, alpha, color) {
     ctx.save();
     ctx.globalAlpha = alpha;
@@ -782,6 +859,7 @@ function toggleW(btn) {
     ctx.stroke();
     ctx.restore();
   }
+
   var t = 0;
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -805,6 +883,7 @@ function toggleW(btn) {
     }
     requestAnimationFrame(draw);
   }
+
   var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (!mq.matches) {
     resize();
