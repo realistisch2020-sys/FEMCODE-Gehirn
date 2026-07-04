@@ -1,5 +1,22 @@
 # Feminin Aura — Business-Erklärung
 
+---
+
+## 🎥 Business-Aufzeichnungen — schau diese Videos zuerst
+
+**Video 1 — Business-Erklärung auf Deutsch**
+🔗 Link: https://us06web.zoom.us/rec/share/Cvmgn2tHDMP0nXY0k1q5N8HUtuhVRp7n9vcRFjPPKRqOUApohv9KUmlt1F11QlRN.-SF89Ziy1W_14DJa?startTime=1778522791000
+🔑 Passwort: +zmJm24N
+
+**Video 2 — Business-Erklärung auf Schweizerdeutsch**
+🔗 Link: https://us06web.zoom.us/rec/share/paTRDDx-ocnJZCQR72JR8cv47NFou-jmUC9bJZllxe-5G1vcF7SQxJ_f6VoZKkqR.jKrrfiBaY7A1Swqh?from=hub
+🔑 Passwort: =BD7VrV1
+
+Schau das Video in deiner Sprache an. Es erklärt wie das Monat Business in der Schweiz funktioniert.
+Danach gehen die Nachrichten unten noch einmal alles schriftlich durch — zum Nachlesen und Weiterschicken.
+
+---
+
 Schick diese 4 Nachrichten wenn jemand fragt wie das Verdienen funktioniert.
 
 ---

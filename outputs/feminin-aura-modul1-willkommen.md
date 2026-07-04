@@ -38,7 +38,7 @@ Was du tust wenn jemand Mitglied wird. Sofort-Willkommen und 30-Tage Plan. Deine
 3 Nachrichten wenn jemand mehr über Monat Produkte wissen möchte. Renew Linie, ir Clinical Set, alle wichtigen Infos. Fertig geschrieben.
 
 **Modul 7 — Business-Erklärung**
-4 Nachrichten wenn jemand fragt wie das Business funktioniert. Ehrlich. Klar. Ohne Versprechen die du nicht halten kannst.
+2 Videos (Deutsch + Schweizerdeutsch) + 4 Nachrichten wenn jemand fragt wie das Business funktioniert. Ehrlich. Klar. Ohne Versprechen die du nicht halten kannst.
 
 **Modul 8 — FAQ**
 Die 8 häufigsten Fragen die du bekommst. Mit fertigen Antworten. Kein Nachdenken mehr nötig.
