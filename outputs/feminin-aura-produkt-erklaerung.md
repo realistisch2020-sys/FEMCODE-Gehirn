@@ -39,3 +39,24 @@ Die Produkte kommen direkt zu dir nach Hause geliefert. Du brauchst nicht in den
 Und wenn du regelmässig bestellst bekommst du automatisch bessere Preise als Kundin.
 
 Willst du wissen welches Produkt für dich am besten passen würde? Schreib mir kurz wie dein Haar gerade ist 🌸"
+
+---
+
+## Wenn nach dem Preis gefragt wird
+
+"Die Preise variieren je nach Produkt und Paket. Als Kundin bekommst du automatisch bessere Preise als im Einzelkauf — und wenn du regelmässig bestellst wird es nochmal günstiger.
+
+Ich schau kurz mit dir zusammen was für dich sinnvoll wäre. Schreib mir kurz was dich am meisten interessiert dann geh ich das mit dir durch 🌿"
+
+---
+
+## Wichtig für dich als Partnerin
+
+Trage hier deine aktuellen Monat Produktpreise ein. Die findest du in deinem Monat Back Office unter "Produkte" oder "Preisliste".
+
+**Renew Linie:** CHF ____
+**ir Clinical Set:** CHF ____
+**Smoothing Scrub:** CHF ____
+**Starter-Paket (empfohlen für neue Kundinnen):** CHF ____
+
+Diese Preise ändern sich gelegentlich — halte sie aktuell.
