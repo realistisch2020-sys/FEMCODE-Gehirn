@@ -3,8 +3,10 @@
 ## Wer ich bin
 
 Name: Petra Tanner
-E-Mail: tanner.pe@bluewin.ch
+Adresse: Brübach 13, 9245 Sonnental
+E-Mail: tanner.pe@bluewin.ch / realistisch2020@gmail.com
 Network Marketing Unternehmerin bei Monat. Seit 1 Jahr dabei.
+Persönlicher Meilenstein: AMM-Rang bereits im ersten Monat erreicht — durch tägliche Konsequenz, nicht durch besonderes Talent. Diesen Beweis gezielt in Gesprächen einsetzen.
 
 ## Wie ich kommuniziere
 

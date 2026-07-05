@@ -20,10 +20,10 @@ Instagram und Facebook (Hauptkanäle)
 
 ## DupliHer Network — System Bausteine (Stand Juli 2026)
 
-16 Module, 112 Posts (16 Wochen), 30 Skripte
+**17 Module, 112 Posts (16 Wochen), 35 Skripte**
 
 1. Modul 1: Willkommen & Überblick (Quick-Ref, Tagesplan)
-2. Modul 2: Skripte (30 Skripte, 6 Kategorien)
+2. Modul 2: Skripte (35 Skripte, 6 Kategorien)
 3. Modul 3: Social Media Posts (112 Posts, 16 Wochen)
 4. Modul 4: Selbsterklärungs-System (5 Nachrichten)
 5. Modul 5: Onboarding (Video-Skript + Nachrichten Tag 1–30)
@@ -34,10 +34,11 @@ Instagram und Facebook (Hauptkanäle)
 10. Modul 10: Team-Aufbau
 11. Modul 11: Saisonale Posts (Weihnachten, Neujahr, Valentinstag, Ostern, Sommer)
 12. Modul 12: 30-Tage Challenge
-13. Modul 13: Einkommensplan (Zahlen, Beispiel-Szenarien, Skripte)
+13. Modul 13: Einkommensplan — inkl. Schnell-Pfad (4 Schritte: Kunden → 2 Partnerinnen einschreiben → Stammkunden → Team-Provision)
 14. Modul 14: Warum Monat — Die Fakten (Inhaltsstoffe-Tabelle, Skeptiker-Skripte)
 15. Modul 15: Mindset & Dranbleiben (Der Dip, Tagesroutine, Story-Texte)
 16. Modul 16: Canva-Vorlagen (5 Vorlagen-Typen, Anleitung zum Teilen)
+17. Modul 17: Erfahrungsberichte & Resultate (5 Vorher-Nachher Fotos, 9 Kundenstimmen-Skripte)
 
 ## DupliHer Network — Live Webseite
 
@@ -51,8 +52,16 @@ Teilen: Link direkt in WhatsApp kopieren, fertig
 
 - Name: DupliHer Network (entschieden, nicht mehr "Feminin Aura")
 - Monat beschreiben: "kein stationärer Handel — kein Ladenlokal, kein Werbeetat, kein Regal. Das Budget fliesst in die Produktqualität." (NICHT "ohne Zwischenhändler")
-- Verdienst ansprechen: "Wenn du heute deine Besties einschreibst verdienst du heute." (direkt, positiv, ehrlich)
+- Verdienst ansprechen: Provisionsrecht entsteht mit dem ersten Verkauf. Tempo ist individuell. Kein "verdienst du heute" — rechtlich nicht zulässig.
 - Stil: Franzi von New Life Spirit + Nadine Tosun — warm, echt, kein Fachjargon
+
+## Rechtliche Regeln (Schweiz)
+
+- Einkommensangaben: Immer als "illustrativ" kennzeichnen. Verweis auf Monat Annual Income Disclosure auf monat.com.
+- Produktaussagen: NIE "fördert Haarwachstum", NIE "für Frauen mit Haarausfall" (Haarausfall ist ein medizinischer Begriff). Stattdessen: "intensive Kopfhautpflege", "für Haar das mehr Pflege sucht", "meine persönliche Erfahrung".
+- Vorher-Nachher Posts: Immer "Individuelle Erfahrung — Ergebnisse können variieren" einfügen.
+- Vergleiche mit anderen Marken: Keine Behauptungen über Inhaltsstoffe von Konkurrenten (z.B. kein "greift Kopfhaut an").
+- Impressum steht auf der Webseite (Brübach 13, 9245 Sonnental, realistisch2020@gmail.com).
 
 ## Canva-Vorlagen (noch zu erstellen)
 
