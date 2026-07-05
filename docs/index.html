@@ -314,6 +314,28 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 .enav-result { display: none; background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid #B8888A; border-radius: 8px; padding: 14px 15px; }
 .enav-rlbl { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B8888A; margin-bottom: 10px; }
 .enav-rtxt { font-size: 14px; line-height: 1.75; color: var(--text); white-space: pre-wrap; margin-bottom: 14px; }
+
+/* ABSAGEN-FUNNEL */
+.fv-wrap { border-bottom: 1px solid var(--border); background: var(--bg-card); padding: 24px 16px 28px; }
+.fv-inner { max-width: 680px; margin: 0 auto; }
+.fv-eye { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+.fv-title { font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif; font-size: clamp(18px,5vw,24px); color: var(--text); font-weight: 400; margin-bottom: 22px; line-height: 1.2; }
+.fv-stages { display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; }
+.fv-stage { display: flex; align-items: center; gap: 14px; }
+.fv-bar-wrap { flex: 1; }
+.fv-bar { height: 38px; border-radius: 6px; background: var(--bg-subtle); display: flex; align-items: center; padding: 0 14px; min-width: 48px; position: relative; overflow: hidden; }
+.fv-bar::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; background: var(--accent); opacity: .18; border-radius: 6px; }
+.fv-bar.w100::before { width: 100%; }
+.fv-bar.w20::before { width: 20%; }
+.fv-bar.w04::before { width: 4%; }
+.fv-bar-txt { font-size: 13px; color: var(--text-muted); position: relative; z-index: 1; }
+.fv-num { font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif; font-size: clamp(26px,6vw,34px); color: var(--text); font-weight: 400; flex-shrink: 0; width: 72px; text-align: right; line-height: 1; }
+.fv-arrow { text-align: right; width: 72px; flex-shrink: 0; font-size: 11px; color: var(--text-muted); opacity: .35; padding: 2px 0; }
+.fv-insight { font-size: 14px; line-height: 1.7; color: var(--text-muted); padding: 14px 15px; background: var(--bg-subtle); border-left: 3px solid var(--accent); border-radius: 8px; margin-bottom: 14px; }
+.fv-insight strong { color: var(--text); }
+.fv-rule { display: flex; align-items: center; gap: 14px; padding: 13px 15px; border: 1px solid var(--border); border-radius: 8px; }
+.fv-rule-big { font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif; font-size: 30px; color: var(--accent); font-weight: 400; flex-shrink: 0; line-height: 1; }
+.fv-rule-txt { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
 </style>
 </head>
 <body>
@@ -334,6 +356,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 
 <nav class="qnav" aria-label="Schnellnavigation">
   <a class="qnav-pill rose" href="#enav">Was hat sie gesagt?</a>
+  <a class="qnav-pill steel" href="#funnel">Absagen normal?</a>
   <a class="qnav-pill rose" href="#m2">Skripte</a>
   <a class="qnav-pill sage" href="#m3">Posts</a>
   <a class="qnav-pill rose" href="#m4">Selbsterklärung</a>
@@ -362,6 +385,37 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
       <div class="ss-step"><span class="ss-num">5</span><div class="ss-step-txt"><strong>Morgen nachschauen</strong> — Wer hat geantwortet? Für alle anderen: Skript 6 schicken.</div></div>
     </div>
     <p class="ss-note">Erst senden, dann weiterlesen. Wer wartet bis alles perfekt ist fängt nie an.</p>
+  </div>
+</div>
+
+<!-- ABSAGEN-FUNNEL -->
+<div class="fv-wrap" id="funnel">
+  <div class="fv-inner">
+    <p class="fv-eye">Warum Absagen kein Problem sind</p>
+    <h2 class="fv-title">Die Mathe des Erfolgs</h2>
+    <div class="fv-stages">
+      <div class="fv-stage">
+        <div class="fv-num">50</div>
+        <div class="fv-bar-wrap"><div class="fv-bar w100"><span class="fv-bar-txt">Nachrichten geschrieben</span></div></div>
+      </div>
+      <div class="fv-stage"><div class="fv-arrow">▼</div><div class="fv-bar-wrap"></div></div>
+      <div class="fv-stage">
+        <div class="fv-num">8–12</div>
+        <div class="fv-bar-wrap"><div class="fv-bar w20"><span class="fv-bar-txt">antworten</span></div></div>
+      </div>
+      <div class="fv-stage"><div class="fv-arrow">▼</div><div class="fv-bar-wrap"></div></div>
+      <div class="fv-stage">
+        <div class="fv-num">1–2</div>
+        <div class="fv-bar-wrap"><div class="fv-bar w04"><span class="fv-bar-txt">starten</span></div></div>
+      </div>
+    </div>
+    <div class="fv-insight">
+      <strong>48 von 50 sagen Nein.</strong> Das ist kein Zeichen dass du es falsch machst — das ist die normale Quote jeder erfolgreichen Networkerin weltweit. Wer nach 10 Absagen aufhört, hat die Quote nie erreicht. Wer weitermacht schon.
+    </div>
+    <div class="fv-rule">
+      <div class="fv-rule-big">×10</div>
+      <div class="fv-rule-txt">10× mehr schreiben = 10× mehr Ergebnisse. Es ist eine Rechenaufgabe, kein Glück. 500 Nachrichten bedeuten 10–20 neue Partnerinnen.</div>
+    </div>
   </div>
 </div>
 
