@@ -7,7 +7,6 @@
    Kernaussage: Produkte die wirklich Ergebnisse liefern. Kunden kommen zurück.
 
 2. **DupliHer Network** — ein Duplikationssystem für Monat Networkerinnen
-   Analog zu DupliSog (Martin Ryf / Golden Wave Int.)
    Kernversprechen: "Das erste Monat System das sich selbst erklärt. Baue dein Business ohne jemals zu präsentieren. Das System das jede weitergeben kann."
 
 ## Meine Zielgruppe

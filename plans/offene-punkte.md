@@ -31,3 +31,5 @@
 - Video-Skript geschrieben (in Modul 5) ✓
 - 30-Tage Challenge ✓
 - Saisonale Posts ✓
+- 112 Posts überarbeitet: kein KI-Stil, keine Aufzählungen, fliessender Text ✓
+- "FemSog" / "Sog" komplett entfernt, überall DupliHer Network ✓
