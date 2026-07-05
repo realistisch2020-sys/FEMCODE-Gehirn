@@ -1728,46 +1728,46 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
 
 <!-- Canva Template Preview Styles -->
 <style>
-.cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin:1.4rem 0}
+.cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin:1.5rem 0}
 @media(max-width:480px){.cv-grid{grid-template-columns:1fr}}
-.cv-cw{container-type:inline-size;display:flex;flex-direction:column;gap:.45rem}
-.cv-cw-story{grid-column:1/-1;container-type:inline-size;display:flex;flex-direction:column;align-items:center;gap:.45rem}
-.cv-lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted)}
+.cv-cw{container-type:inline-size;display:flex;flex-direction:column;gap:.55rem}
+.cv-cw-story{grid-column:1/-1;container-type:inline-size;display:flex;flex-direction:column;align-items:center;gap:.55rem}
+.cv-lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted);font-weight:500}
 .cv-cw-story .cv-lbl{text-align:center}
-.cv-tpl{position:relative;width:100%;aspect-ratio:1;overflow:hidden;border-radius:5px}
-.cv-tpl.story{aspect-ratio:9/16;max-width:210px}
-.cv-t1{background:#F7F3EF}
-.cv-t2{background:#0A0608}.cv-t2::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 40% 40%,#1A0C16 0%,#060308 100%)}
-.cv-t3{background:#0C0810}.cv-t3::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,#200E1A 0%,#070408 100%)}
-.cv-t4{background:#080510}.cv-t4::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 65% at 50% 45%,#18102A 0%,#050310 100%)}
-.cv-t5{background:#070408}.cv-t5::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 100% 45% at 50% 15%,#1E0C18 0%,#060308 65%)}
+.cv-tpl{position:relative;width:100%;aspect-ratio:1;overflow:hidden;border-radius:9px;box-shadow:0 4px 20px rgba(0,0,0,.13),0 1px 4px rgba(0,0,0,.07)}
+.cv-tpl.story{aspect-ratio:9/16;max-width:195px}
+.cv-t1{background:#EDE4D8}
+.cv-t2{background:#120A10}
+.cv-t3{background:#2C1018}
+.cv-t4{background:#F0E6D3}
+.cv-t5{background:#0F0810}
+.cv-t5::before{content:'';position:absolute;inset:0;background:linear-gradient(155deg,#200E18 0%,#08040C 65%)}
 .cv-orn{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.cv-c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10% 9%}
-.cv-c.left{align-items:flex-start;text-align:left}
-.cv-c.space{justify-content:space-between;padding:14% 11%}
+.cv-c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8% 9%}
+.cv-c.left{align-items:flex-start;text-align:left;padding:10% 12%}
+.cv-c.space{justify-content:space-between;padding:12% 10%}
 @container(min-width:1px){
-  .cv-hero{font-family:Arial,Helvetica,sans-serif;font-size:10.5cqw;font-weight:700;letter-spacing:.04em;text-transform:uppercase;line-height:1.0;text-wrap:balance}
-  .cv-hero.light{color:#0D0810}.cv-hero.dark{color:#F5F0EC}
-  .cv-mega{font-family:Arial,Helvetica,sans-serif;font-size:17cqw;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;line-height:.92}
-  .cv-mega.light{color:#0D0810}.cv-mega.dark{color:#F5F0EC}
-  .cv-script{font-family:Arial,Helvetica,sans-serif;font-style:italic;font-weight:300;font-size:12cqw;line-height:1.1}
-  .cv-script.light{color:#0D0810}.cv-script.dark{color:#F5F0EC}
-  .cv-script-sm{font-family:Arial,Helvetica,sans-serif;font-style:italic;font-weight:300;font-size:6.5cqw;line-height:1.2}
-  .cv-script-sm.light{color:#0D0810}.cv-script-sm.dark{color:#F5F0EC}
-  .cv-gold{font-family:Arial,Helvetica,sans-serif;font-style:italic;font-weight:300;font-size:9cqw;color:#C4A882;line-height:1.15}
-  .cv-sub{font-size:2.2cqw;letter-spacing:.07em;line-height:1.9;text-wrap:balance}
-  .cv-sub.light{color:rgba(13,8,16,.45)}.cv-sub.dark{color:rgba(245,240,236,.45)}
-  .cv-eye{font-size:1.9cqw;letter-spacing:.35em;text-transform:uppercase}
-  .cv-eye.light{color:rgba(13,8,16,.4)}.cv-eye.dark{color:#C4A882}
-  .cv-brand{font-size:1.7cqw;letter-spacing:.38em;text-transform:uppercase}
-  .cv-brand.light{color:rgba(13,8,16,.3)}.cv-brand.dark{color:rgba(196,168,130,.6)}
+  .cv-eye{font-family:Arial,Helvetica,sans-serif;font-size:3cqw;letter-spacing:.28em;text-transform:uppercase}
+  .cv-eye.lt{color:rgba(44,16,24,.38)}.cv-eye.dk{color:#C9A0A0}
+  .cv-serif{font-family:Georgia,'Times New Roman',serif;font-size:7.5cqw;line-height:1.2;font-style:italic}
+  .cv-serif.lt{color:#2C1018}.cv-serif.dk{color:#EDE4D8}
+  .cv-serif-lg{font-family:Georgia,'Times New Roman',serif;font-size:9cqw;line-height:1.12;font-style:italic}
+  .cv-serif-lg.lt{color:#2C1018}.cv-serif-lg.dk{color:#EDE4D8}
+  .cv-bold{font-family:Arial,Helvetica,sans-serif;font-size:8.5cqw;font-weight:900;letter-spacing:.01em;text-transform:uppercase;line-height:.97}
+  .cv-bold.lt{color:#2C1018}.cv-bold.dk{color:#EDE4D8}
+  .cv-sub{font-family:Arial,Helvetica,sans-serif;font-size:4cqw;letter-spacing:.03em;line-height:1.65}
+  .cv-sub.lt{color:rgba(44,16,24,.5)}.cv-sub.dk{color:rgba(237,228,216,.45)}
+  .cv-tag{font-family:Arial,Helvetica,sans-serif;font-size:2.6cqw;letter-spacing:.3em;text-transform:uppercase}
+  .cv-tag.lt{color:rgba(44,16,24,.28)}.cv-tag.dk{color:rgba(201,160,160,.5)}
+  .cv-rose{font-family:Georgia,'Times New Roman',serif;font-size:8cqw;font-style:italic;color:#C9A0A0;line-height:1.1}
   .cv-rule{width:100%;height:1px;flex-shrink:0}
-  .cv-rule.light{background:rgba(13,8,16,.12);margin:1.3em 0}.cv-rule.dark{background:rgba(196,168,130,.2);margin:1.3em 0}
-  .cv-rule-s{width:4cqw;min-width:1.5rem;height:1px;flex-shrink:0}
-  .cv-rule-s.light{background:rgba(13,8,16,.25);margin:1.2em auto}.cv-rule-s.dark{background:rgba(196,168,130,.45);margin:1.2em auto}
-  .story .cv-hero{font-size:8cqw}.story .cv-mega{font-size:14cqw}.story .cv-script{font-size:10cqw}
-  .story .cv-script-sm{font-size:5.5cqw}.story .cv-gold{font-size:8cqw}.story .cv-sub{font-size:2cqw}
-  .story .cv-eye{font-size:1.7cqw}.story .cv-brand{font-size:1.5cqw}
+  .cv-rule.lt{background:rgba(44,16,24,.13)}.cv-rule.dk{background:rgba(201,160,160,.2)}
+  .cv-rule-s{width:3.5cqw;height:1px;flex-shrink:0;margin:0 auto}
+  .cv-rule-s.lt{background:rgba(44,16,24,.28)}.cv-rule-s.dk{background:rgba(201,160,160,.48)}
+  .story .cv-serif{font-size:6.5cqw}.story .cv-serif-lg{font-size:8cqw}
+  .story .cv-bold{font-size:7cqw}.story .cv-sub{font-size:3.4cqw}
+  .story .cv-eye{font-size:2.6cqw}.story .cv-tag{font-size:2.2cqw}
+  .story .cv-rose{font-size:7cqw}
 }
 </style>
 
@@ -1782,97 +1782,91 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
     <p class="mod-eye">Modul 16</p>
     <h2 class="mod-title">Canva-Vorlagen</h2>
     <p class="mod-desc">Petra erstellt die Vorlagen einmal. Jede Partnerin bekommt denselben Link und passt nur Foto und Name an. Einmal einrichten — für immer weitergeben.</p>
-    <div class="info"><strong>So funktioniert das Teilen:</strong> In Canva oben rechts auf "Teilen" → "Vorlage teilen" → Link kopieren. Wer diesen Link öffnet bekommt eine eigene Kopie und kann sie beliebig anpassen — dein Original bleibt unberührt. Den Link in Modul 5 einfügen.</div>
+    <div class="info">So funktioniert das Teilen: In Canva oben rechts auf "Teilen" klicken, dann "Vorlage teilen" wählen und den Link kopieren. Wer diesen Link öffnet bekommt eine eigene Kopie und kann sie anpassen — dein Original bleibt unberührt. Den Link in Modul 5 einfügen.</div>
 
     <p class="glabel">So sehen die 5 Vorlagen aus</p>
     <div class="cv-grid">
 
       <div class="cv-cw">
-        <div class="cv-lbl">01 · Produktpost · hell · editorial</div>
+        <div class="cv-lbl">Produktpost</div>
         <div class="cv-tpl cv-t1">
-          <div class="cv-c">
-            <div class="cv-eye light" style="margin-bottom:2em;">Monat Haarpflege</div>
-            <div class="cv-hero light" style="font-size:9cqw;line-height:1.05;">PRODUKTE<br>DIE FÜR SICH<br>SPRECHEN.</div>
-            <div class="cv-rule light"></div>
-            <div class="cv-sub light" style="font-size:2.4cqw;">Kunden kommen zurück —<br>ganz von selbst.</div>
-            <div class="cv-brand light" style="margin-top:2em;">DupliHer Network</div>
+          <div class="cv-c" style="gap:0">
+            <div class="cv-eye lt" style="margin-bottom:1.6em">Monat Haarpflege</div>
+            <div class="cv-rule lt" style="margin-bottom:1.2em"></div>
+            <div class="cv-serif lt">Produkte die<br>wirklich wirken.</div>
+            <div class="cv-rule lt" style="margin:1.2em 0"></div>
+            <div class="cv-sub lt">Kunden kommen zurück<br>ganz von selbst.</div>
+            <div class="cv-tag lt" style="margin-top:1.8em">DupliHer Network</div>
           </div>
         </div>
       </div>
 
       <div class="cv-cw">
-        <div class="cv-lbl">02 · Ergebnis-Post · dunkel</div>
+        <div class="cv-lbl">Ergebnis-Post</div>
         <div class="cv-tpl cv-t2">
-          <div class="cv-c">
-            <div class="cv-script-sm dark" style="font-size:5cqw;margin-bottom:.3em;">ich hätte nie gedacht,</div>
-            <div class="cv-mega dark" style="font-size:15cqw;line-height:.9;">DASS<br>EIN<br>PRO-<br>DUKT</div>
-            <div class="cv-script-sm dark" style="font-size:5cqw;margin-top:.4em;">alles verändern kann.</div>
-            <div class="cv-brand dark" style="margin-top:2em;">DupliHer Network</div>
+          <div class="cv-c" style="gap:0">
+            <div class="cv-serif-lg dk" style="margin-bottom:1.1em">Ich hätte nie<br>gedacht, dass<br>ein Produkt<br>alles verändert.</div>
+            <div class="cv-rule-s dk" style="margin-bottom:1.1em"></div>
+            <div class="cv-sub dk">vorher — nachher</div>
+            <div class="cv-tag dk" style="margin-top:2.2em">DupliHer Network</div>
           </div>
         </div>
       </div>
 
       <div class="cv-cw">
-        <div class="cv-lbl">03 · Business-Post · dunkel</div>
+        <div class="cv-lbl">Business-Post</div>
         <div class="cv-tpl cv-t3">
-          <div class="cv-c left" style="padding:12% 13%;">
-            <div class="cv-eye dark" style="margin-bottom:1.8em;">Business</div>
-            <div class="cv-script dark" style="font-size:8.5cqw;line-height:1.15;">schön aussehen</div>
-            <div class="cv-mega dark" style="font-size:14cqw;line-height:.93;margin-top:.1em;">UND<br>VER&shy;DIE-<br>NEN.</div>
-            <div class="cv-rule dark"></div>
-            <div class="cv-sub dark">Das System das jede<br>weitergeben kann.</div>
-            <div class="cv-brand dark" style="margin-top:1.5em;">DupliHer Network</div>
+          <div class="cv-c left" style="gap:0">
+            <div class="cv-eye dk" style="margin-bottom:2em">Business</div>
+            <div class="cv-serif dk" style="margin-bottom:.2em">schön aussehen</div>
+            <div class="cv-bold dk">und<br>verdienen.</div>
+            <div class="cv-rule dk" style="margin:1em 0"></div>
+            <div class="cv-sub dk">Das System das jede<br>weitergeben kann.</div>
+            <div class="cv-tag dk" style="margin-top:1.8em">DupliHer Network</div>
           </div>
         </div>
       </div>
 
       <div class="cv-cw">
-        <div class="cv-lbl">04 · Mindset-Quote · Nadine-Stil</div>
+        <div class="cv-lbl">Mindset-Quote</div>
         <div class="cv-tpl cv-t4">
-          <svg class="cv-orn" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7,23 L7,7 L23,7" stroke="#C4A882" stroke-width=".6" opacity=".5"/>
-            <path d="M77,7 L93,7 L93,23" stroke="#C4A882" stroke-width=".6" opacity=".5"/>
-            <path d="M7,77 L7,93 L23,93" stroke="#C4A882" stroke-width=".6" opacity=".5"/>
-            <path d="M77,93 L93,93 L93,77" stroke="#C4A882" stroke-width=".6" opacity=".5"/>
-            <path d="M10,23 L10,10 L23,10" stroke="#C4A882" stroke-width=".25" opacity=".2"/>
-            <path d="M77,10 L90,10 L90,23" stroke="#C4A882" stroke-width=".25" opacity=".2"/>
-            <path d="M10,77 L10,90 L23,90" stroke="#C4A882" stroke-width=".25" opacity=".2"/>
-            <path d="M77,90 L90,90 L90,77" stroke="#C4A882" stroke-width=".25" opacity=".2"/>
-            <line x1="20" y1="50" x2="35" y2="50" stroke="#C4A882" stroke-width=".3" opacity=".25"/>
-            <line x1="65" y1="50" x2="80" y2="50" stroke="#C4A882" stroke-width=".3" opacity=".25"/>
+          <svg class="cv-orn" viewBox="0 0 100 100" fill="none">
+            <path d="M6,20 L6,6 L20,6" stroke="#2C1018" stroke-width=".5" opacity=".14"/>
+            <path d="M80,6 L94,6 L94,20" stroke="#2C1018" stroke-width=".5" opacity=".14"/>
+            <path d="M6,80 L6,94 L20,94" stroke="#2C1018" stroke-width=".5" opacity=".14"/>
+            <path d="M80,94 L94,94 L94,80" stroke="#2C1018" stroke-width=".5" opacity=".14"/>
           </svg>
-          <div class="cv-c">
-            <div class="cv-eye dark" style="font-size:1.8cqw;margin-bottom:2em;letter-spacing:.4em;">DupliHer Network</div>
-            <div class="cv-script dark" style="font-size:11cqw;line-height:1.2;">»Du bist nicht<br>zu spät.«</div>
-            <div class="cv-rule-s dark"></div>
-            <div class="cv-hero dark" style="font-size:4.5cqw;letter-spacing:.2em;opacity:.6;">DU FÄNGST GENAU JETZT AN.</div>
-            <div class="cv-brand dark" style="margin-top:2.5em;">DupliHer Network</div>
+          <div class="cv-c" style="gap:0">
+            <div class="cv-eye lt" style="margin-bottom:2em;letter-spacing:.34em">DupliHer Network</div>
+            <div class="cv-serif-lg lt" style="margin-bottom:1em">Du bist nicht<br>zu spät.</div>
+            <div class="cv-rule-s lt" style="margin-bottom:1em"></div>
+            <div class="cv-sub lt">Du fängst genau jetzt an.</div>
           </div>
         </div>
       </div>
 
       <div class="cv-cw-story">
-        <div class="cv-lbl">05 · Story · 1080 × 1920</div>
+        <div class="cv-lbl">Story</div>
         <div class="cv-tpl story cv-t5">
-          <svg class="cv-orn" viewBox="0 0 56.25 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4,14 L4,4 L14,4" stroke="#C4A882" stroke-width=".6" opacity=".45"/>
-            <path d="M42.25,4 L52.25,4 L52.25,14" stroke="#C4A882" stroke-width=".6" opacity=".45"/>
-            <path d="M4,86 L4,96 L14,96" stroke="#C4A882" stroke-width=".6" opacity=".45"/>
-            <path d="M42.25,96 L52.25,96 L52.25,86" stroke="#C4A882" stroke-width=".6" opacity=".45"/>
+          <svg class="cv-orn" viewBox="0 0 56.25 100" fill="none">
+            <path d="M4,13 L4,4 L13,4" stroke="#C9A0A0" stroke-width=".5" opacity=".35"/>
+            <path d="M43.25,4 L52.25,4 L52.25,13" stroke="#C9A0A0" stroke-width=".5" opacity=".35"/>
+            <path d="M4,87 L4,96 L13,96" stroke="#C9A0A0" stroke-width=".5" opacity=".35"/>
+            <path d="M43.25,96 L52.25,96 L52.25,87" stroke="#C9A0A0" stroke-width=".5" opacity=".35"/>
           </svg>
           <div class="cv-c space">
-            <div style="text-align:center;">
-              <div class="cv-eye dark" style="margin-bottom:1em;">DupliHer Network</div>
-              <div class="cv-hero dark" style="font-size:5cqw;line-height:1.3;">DAS SYSTEM<br>DAS SICH SELBST<br>ERKLÄRT.</div>
+            <div style="text-align:center">
+              <div class="cv-eye dk" style="margin-bottom:.9em">DupliHer Network</div>
+              <div class="cv-bold dk" style="font-size:6cqw;line-height:1.22">Das System<br>das sich selbst<br>erklärt.</div>
             </div>
-            <div style="text-align:center;">
-              <div class="cv-script dark" style="font-size:13cqw;">Bereit?</div>
-              <div class="cv-rule dark" style="margin:1em 0;background:rgba(196,168,130,.18);"></div>
-              <div class="cv-sub dark" style="font-size:2.1cqw;line-height:2.1;">Kein Erklären.<br>Kein Präsentieren.<br>Das System arbeitet.</div>
+            <div style="text-align:center">
+              <div class="cv-serif-lg dk" style="margin-bottom:.7em">Bereit?</div>
+              <div class="cv-rule dk" style="background:rgba(201,160,160,.18);margin-bottom:.7em"></div>
+              <div class="cv-sub dk" style="line-height:1.8">Kein Erklären.<br>Kein Präsentieren.<br>Das System arbeitet.</div>
             </div>
-            <div style="text-align:center;">
-              <div class="cv-sub dark" style="font-size:1.9cqw;opacity:.55;margin-bottom:.5em;letter-spacing:.15em;text-transform:uppercase;">Schreib mir</div>
-              <div class="cv-gold" style="font-size:9cqw;">"System"</div>
+            <div style="text-align:center">
+              <div class="cv-tag dk" style="margin-bottom:.5em;letter-spacing:.16em">Schreib mir</div>
+              <div class="cv-rose">"System"</div>
             </div>
           </div>
         </div>
@@ -1880,75 +1874,111 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
 
     </div>
 
-    <p class="glabel">Vorlage 1 — Produktpost (1080×1080)</p>
+    <p class="glabel">Vorlage 1 — Produktpost</p>
     <div class="cards">
-      <div class="card"><div class="card-label">Aufbau</div><div class="script" id="cv1">Hintergrund: dunkelrosa (#2C1018) oder Creme (#FAF4F1)
+      <div class="card"><div class="card-label">Aufbau in Canva</div><div class="script" id="cv1">Grösse: 1080 × 1080 Pixel
 
-Oben links: "DupliHer Network" klein in Rosa (#C9A0A0) — Schrift: Cormorant Garamond oder ähnlich
+Hintergrund: Creme #FAF4F1 oder Dunkelrosa #2C1018
 
-Mitte: dein Foto (quadratisch, füllt 70% der Fläche)
+Oben: "DupliHer Network" sehr klein, viel Buchstabenabstand, in Rosa #C9A0A0
 
-Unten: ein Satz aus Modul 3 — weisse oder cremefarbene Schrift, max. 2 Zeilen
+Dünne horizontale Linie
 
-Beispieltext: "Produkte die wirklich etwas bewirken. Schreib mir wenn du neugierig bist. 🌿"</div><button class="copy" onclick="cp('cv1',this)">Kopieren</button></div>
+Mitte: dein Foto, quadratisch, füllt ca. 65 Prozent der Fläche, sanfter Schatten
+
+Darunter: ein Satz aus Modul 3 in cremefarbener oder weisser Schrift, max. 2 Zeilen
+
+Ganz unten: "DupliHer Network" winzig in Rosa
+
+Schrift: Cormorant Garamond oder Playfair Display
+
+Beispieltext: Produkte die wirklich etwas bewirken. Schreib mir wenn du neugierig bist.</div><button class="copy" onclick="cp('cv1',this)">Kopieren</button></div>
     </div>
-    <p class="glabel">Vorlage 2 — Ergebnis-Post (1080×1080)</p>
+
+    <p class="glabel">Vorlage 2 — Ergebnis-Post</p>
     <div class="cards">
-      <div class="card"><div class="card-label">Aufbau</div><div class="script" id="cv2">Hintergrund: Creme (#FAF4F1)
+      <div class="card"><div class="card-label">Aufbau in Canva</div><div class="script" id="cv2">Grösse: 1080 × 1080 Pixel
 
-Oben: grosser Zitat-Text in Dunkelrosa — z.B. "Vorher. Nachher. Kein Filter." — Schrift: Cormorant Garamond, gross und dünn
+Hintergrund: sehr dunkles Bordeaux #120A10
 
-Mitte: dein Vorher-Nachher Foto (zwei Bilder nebeneinander oder ein ehrliches Einzelbild)
+Mitte: ein ehrliches Zitat in grosser kursiver Schrift, Creme #EDE4D8
 
-Unten: "Mehr wissen? Schreib mir direkt 🌸" — kleine Schrift, Rosa
+Beispielzitat: Ich hätte nie gedacht, dass ein Produkt wirklich etwas verändert.
+
+Darunter: dein Vorher-Nachher Foto oder ein ehrliches Einzelbild, kantig zugeschnitten
+
+Ganz unten: "DupliHer Network" sehr klein in Rosa #C9A0A0
+
+Schrift: Cormorant Garamond Italic für das Zitat
 
 Kein Logo nötig — dein Gesicht ist das Branding</div><button class="copy" onclick="cp('cv2',this)">Kopieren</button></div>
     </div>
-    <p class="glabel">Vorlage 3 — Business-Post (1080×1080)</p>
+
+    <p class="glabel">Vorlage 3 — Business-Post</p>
     <div class="cards">
-      <div class="card"><div class="card-label">Aufbau</div><div class="script" id="cv3">Hintergrund: dunkelrosa (#2C1018)
+      <div class="card"><div class="card-label">Aufbau in Canva</div><div class="script" id="cv3">Grösse: 1080 × 1080 Pixel
 
-Mitte: ein mutiger Satz in gross — cremefarbene Schrift (#F0E6D3)
-Beispiel: "Kein Büro. Kein Chef. Kein fixer Plan." oder "Das System das jede weitergeben kann."
+Hintergrund: Dunkelrosa #2C1018
 
-Unten: dein Vorname + "DupliHer Network" in Rosa (#C9A0A0), klein
+Oben links: "Business" klein in Rosa #C9A0A0
 
-Optional: ein kleines Foto von dir in der Ecke oben rechts (runder Ausschnitt)</div><button class="copy" onclick="cp('cv3',this)">Kopieren</button></div>
+Linksbündig, zweistufig:
+Zeile 1 — "schön aussehen" kursiv in Creme, Cormorant Garamond, gross
+Zeile 2 — "UND VERDIENEN." fett in Creme, Arial Black, noch grösser
+
+Dünne Linie darunter
+
+Klein in Creme: Das System das jede weitergeben kann.
+
+Ganz unten: dein Vorname und "DupliHer Network" in Rosa</div><button class="copy" onclick="cp('cv3',this)">Kopieren</button></div>
     </div>
-    <p class="glabel">Vorlage 4 — Mindset-Quote (1080×1080)</p>
+
+    <p class="glabel">Vorlage 4 — Mindset-Quote</p>
     <div class="cards">
-      <div class="card"><div class="card-label">Aufbau</div><div class="script" id="cv4">Hintergrund: einfarbig Rosa (#C9A0A0) oder Gold (#D4AF37)
+      <div class="card"><div class="card-label">Aufbau in Canva</div><div class="script" id="cv4">Grösse: 1080 × 1080 Pixel
 
-Mitte: ein kurzer Satz, gross und zentriert — dunkle Schrift
-Beispiel: "Nicht jeder Tag ist gut. Aber jeder Tag zählt. 🌿"
+Hintergrund: Creme #F0E6D3
 
-Kein weiterer Text nötig — der Satz trägt sich selbst
+Oben: "DupliHer Network" winzig, viel Buchstabenabstand, in Dunkelrosa #2C1018
 
-Schrift: Cormorant Garamond Italic für den eleganten Look</div><button class="copy" onclick="cp('cv4',this)">Kopieren</button></div>
+Mitte, zentriert: ein kurzer Satz gross und kursiv in Dunkelrosa
+
+Dünne kurze Linie darunter
+
+Klein darunter: ein Begleitsatz in hellerer Farbe
+
+Beispiel: Du bist nicht zu spät. — Du fängst genau jetzt an.
+Oder: Nicht jeder Tag ist gut. Aber jeder Tag zählt.
+
+Schrift: Cormorant Garamond Italic — elegant und ruhig gesetzt</div><button class="copy" onclick="cp('cv4',this)">Kopieren</button></div>
     </div>
-    <p class="glabel">Vorlage 5 — Story (1080×1920 vertikal)</p>
+
+    <p class="glabel">Vorlage 5 — Story</p>
     <div class="cards">
-      <div class="card"><div class="card-label">Aufbau</div><div class="script" id="cv5">Format: 1080×1920 (Story-Format in Canva wählen: "Instagram Story")
+      <div class="card"><div class="card-label">Aufbau in Canva</div><div class="script" id="cv5">Grösse: 1080 × 1920 Pixel — in Canva "Instagram Story" wählen
 
-Oben: "DupliHer Network" klein in Rosa
+Hintergrund: sehr dunkles Plum #0F0810 mit sanftem Verlauf zu #200E18
 
-Mitte oben: dein Foto (Portrait, füllt die obere Hälfte)
+Drei Zonen von oben nach unten:
 
-Mitte unten: ein kurzer Text aus Modul 9 (Stories & Status)
+Oben: "DupliHer Network" winzig in Rosa, darunter "Das System das sich selbst erklärt." fett in Creme
 
-Ganz unten: "Schreib mir 🌸" als Call-to-Action
+Mitte: grosses kursives "Bereit?" in Creme, dünne Linie, dann kurz: "Kein Erklären. Kein Präsentieren. Das System arbeitet."
 
-Hintergrund: dunkelrosa, Creme oder dein Lieblingsfoto als Vollbild mit dunklem Overlay</div><button class="copy" onclick="cp('cv5',this)">Kopieren</button></div>
+Unten: "Schreib mir" winzig in Rosa, darunter gross kursiv "System" in Rosa — das ist der Call-to-Action
+
+Schrift: Arial Black für Headlines, Cormorant Garamond Italic für Bereit und System</div><button class="copy" onclick="cp('cv5',this)">Kopieren</button></div>
     </div>
+
     <p class="glabel">Schritt für Schritt in Canva</p>
     <div class="days">
-      <div class="day"><div class="dnum">1</div><div class="dtxt"><div class="dtitle">Canva öffnen</div><div class="ddesc">canva.com → kostenlos anmelden → "Erstelle ein Design" → "Benutzerdefinierte Größe" → 1080×1080 Pixel eingeben.</div></div></div>
-      <div class="day"><div class="dnum">2</div><div class="dtxt"><div class="dtitle">Vorlage aufbauen</div><div class="ddesc">Hintergrundfarbe einstellen → Foto einsetzen → Textfelder hinzufügen → Farben und Schriften nach Angaben oben einstellen.</div></div></div>
-      <div class="day"><div class="dnum">3</div><div class="dtxt"><div class="dtitle">Als Vorlage teilen</div><div class="ddesc">Oben rechts: "Teilen" → "Vorlage teilen" → Link kopieren. Dieser Link gibt anderen eine eigene Kopie — dein Original bleibt unberührt.</div></div></div>
-      <div class="day"><div class="dnum">4</div><div class="dtxt"><div class="dtitle">Link in Modul 5 einfügen</div><div class="ddesc">Den Canva-Link in die Tag-1-Nachricht (Modul 5) einfügen. Jede neue Partnerin bekommt ihn automatisch und kann sofort loslegen.</div></div></div>
-      <div class="day"><div class="dnum">5</div><div class="dtxt"><div class="dtitle">Alle 5 Vorlagen erstellen</div><div class="ddesc">Je eine Vorlage pro Typ. Das dauert insgesamt 1–2 Stunden. Einmal gemacht — für immer fertig. Dein ganzes Team benutzt dieselben Vorlagen.</div></div></div>
+      <div class="day"><div class="dnum">1</div><div class="dtxt"><div class="dtitle">Canva öffnen</div><div class="ddesc">canva.com aufrufen, kostenlos anmelden, "Erstelle ein Design" wählen, "Benutzerdefinierte Grösse" klicken und 1080 × 1080 Pixel eingeben.</div></div></div>
+      <div class="day"><div class="dnum">2</div><div class="dtxt"><div class="dtitle">Vorlage aufbauen</div><div class="ddesc">Hintergrundfarbe einstellen, Foto einsetzen, Textfelder hinzufügen, Farben und Schriften nach den Angaben oben einstellen.</div></div></div>
+      <div class="day"><div class="dnum">3</div><div class="dtxt"><div class="dtitle">Als Vorlage teilen</div><div class="ddesc">Oben rechts "Teilen" klicken, dann "Vorlage teilen" wählen, Link kopieren. Dieser Link gibt anderen eine eigene Kopie — dein Original bleibt unberührt.</div></div></div>
+      <div class="day"><div class="dnum">4</div><div class="dtxt"><div class="dtitle">Link in Modul 5 einfügen</div><div class="ddesc">Den Canva-Link in die Tag-1-Nachricht in Modul 5 einsetzen. Jede neue Partnerin bekommt ihn automatisch und kann sofort loslegen.</div></div></div>
+      <div class="day"><div class="dnum">5</div><div class="dtxt"><div class="dtitle">Alle 5 Vorlagen erstellen</div><div class="ddesc">Je eine Vorlage pro Typ, dauert insgesamt 1 bis 2 Stunden. Einmal gemacht — dein ganzes Team benutzt dieselben Vorlagen für immer.</div></div></div>
     </div>
-    <div class="info">Die Farben die zu DupliHer Network passen: Dunkelrosa <strong>#2C1018</strong> · Akzent Rosa <strong>#C9A0A0</strong> · Creme <strong>#F0E6D3</strong> · Weiss <strong>#FAF4F1</strong>. Diese Werte direkt in Canva unter "Farbe" → "Eigene Farbe" eingeben.</div>
+    <div class="info">Farben für DupliHer Network: Dunkelrosa <strong>#2C1018</strong>, Akzent Rosa <strong>#C9A0A0</strong>, Creme <strong>#F0E6D3</strong>, Weiss <strong>#FAF4F1</strong>. In Canva unter "Farbe" dann "Eigene Farbe" eingeben.</div>
   </div>
 </div>
 
