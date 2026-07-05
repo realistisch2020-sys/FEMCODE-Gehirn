@@ -37,3 +37,4 @@
 - 112 Posts überarbeitet: kein KI-Stil, keine Aufzählungen, fliessender Text ✓
 - "FemSog" / "Sog" komplett entfernt, überall DupliHer Network ✓
 - Willkommensnachricht für neue Partnerinnen fertig in Modul 5 (kein Video nötig) ✓
+- Open Graph Meta-Tags: Link-Vorschau zeigt jetzt "DupliHer für Networker" statt altem Inhalt ✓
