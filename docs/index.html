@@ -336,6 +336,33 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 .fv-rule { display: flex; align-items: center; gap: 14px; padding: 13px 15px; border: 1px solid var(--border); border-radius: 8px; }
 .fv-rule-big { font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif; font-size: 30px; color: var(--accent); font-weight: 400; flex-shrink: 0; line-height: 1; }
 .fv-rule-txt { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+/* Fast Path — Vergütungsplan Schnellstart */
+.fp-wrap { margin: 4px 0 24px; }
+.fp-steps { display: flex; flex-direction: column; gap: 0; }
+.fp-step { display: flex; align-items: flex-start; gap: 14px; padding-bottom: 20px; position: relative; }
+.fp-step:last-child { padding-bottom: 0; }
+.fp-left { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+.fp-badge { width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: var(--bg-card); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.fp-line { width: 2px; flex: 1; min-height: 20px; background: var(--border); margin-top: 5px; }
+.fp-step:last-child .fp-line { display: none; }
+.fp-right { padding-top: 5px; flex: 1; }
+.fp-when { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); margin-bottom: 3px; }
+.fp-action { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 5px; line-height: 1.35; }
+.fp-detail { font-size: 13px; color: var(--text-muted); line-height: 1.55; margin-bottom: 8px; }
+.fp-earn { display: inline-flex; align-items: center; background: var(--bg-subtle); border-radius: 20px; padding: 4px 11px; font-size: 12px; font-weight: 600; color: #4A7A4A; letter-spacing: .01em; }
+@media (prefers-color-scheme: dark) { .fp-earn { color: #82C082; } }
+:root[data-theme="dark"] .fp-earn { color: #82C082; }
+:root[data-theme="light"] .fp-earn { color: #4A7A4A; }
+.fp-key { margin-top: 18px; padding: 14px 16px; background: var(--bg-subtle); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; }
+.fp-key strong { font-size: 13px; color: var(--text); display: block; margin-bottom: 5px; }
+.fp-key p { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin: 0; }
+.fp-sumtable { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 13px; }
+.fp-sumtable th { background: var(--bg-subtle); color: var(--text-muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--border); }
+.fp-sumtable td { padding: 8px 10px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+.fp-sumtable td:last-child { font-weight: 600; color: #4A7A4A; white-space: nowrap; }
+@media (prefers-color-scheme: dark) { .fp-sumtable td:last-child { color: #82C082; } }
+:root[data-theme="dark"] .fp-sumtable td:last-child { color: #82C082; }
+:root[data-theme="light"] .fp-sumtable td:last-child { color: #4A7A4A; }
 </style>
 </head>
 <body>
@@ -1782,6 +1809,61 @@ Monat-Produkte kommen mit auf Reisen. Klein. Leicht. Effektiv. 🌿</div><button
     <h2 class="mod-title">Einkommensplan</h2>
     <p class="mod-desc">Wie das Verdienen bei Monat funktioniert — ehrlich und mit echten Zahlen. Zum Selbstverstehen und zum Weitergeben.</p>
     <div class="info">Das hier sind realistische Beispiel-Szenarien basierend auf konkreter Aktivität. Kein Einkommen ist garantiert. Wer mehr macht verdient mehr. Wer weniger macht verdient weniger.</div>
+    <p class="glabel">Schnellst-Pfad: wie du zügig verdienst</p>
+    <div class="fp-wrap">
+      <div class="fp-steps">
+        <div class="fp-step">
+          <div class="fp-left"><div class="fp-badge">1</div><div class="fp-line"></div></div>
+          <div class="fp-right">
+            <div class="fp-when">Sofort &amp; Woche 1</div>
+            <div class="fp-action">Erste Kundinnen gewinnen</div>
+            <div class="fp-detail">Als Marktpartnerin kaufst du mit 30% Rabatt und empfiehlst zum regulären Preis. Jeder Verkauf ist sofort deine Provision — keine Wartezeit, kein Mindestbestand.</div>
+            <span class="fp-earn">CHF 30–80 schon in Woche 1 möglich</span>
+          </div>
+        </div>
+        <div class="fp-step">
+          <div class="fp-left"><div class="fp-badge">2</div><div class="fp-line"></div></div>
+          <div class="fp-right">
+            <div class="fp-when">Erster Monat — entscheidend</div>
+            <div class="fp-action">2 Partnerinnen persönlich einschreiben</div>
+            <div class="fp-detail">Das ist der Schlüssel zu schnellem Einkommen. Wer im ersten Monat 2 aktive Partnerinnen einschreibt, schaltet den Fast Start Bonus frei. Zusätzlich zur normalen Provision — und beide fangen selbst an aufzubauen.</div>
+            <span class="fp-earn">+ CHF 150–300 Fast Start Bonus</span>
+          </div>
+        </div>
+        <div class="fp-step">
+          <div class="fp-left"><div class="fp-badge">3</div><div class="fp-line"></div></div>
+          <div class="fp-right">
+            <div class="fp-when">Monatlich wiederkehrend</div>
+            <div class="fp-action">Stammkunden aufbauen und aktiv bleiben</div>
+            <div class="fp-detail">Kunden die monatlich nachbestellen zahlen dir jeden Monat neu ohne neuen Aufwand. Wer dazu ihr Mindestvolumen hält, bekommt monatliche Aktivitätsboni obendrauf.</div>
+            <span class="fp-earn">CHF 100–500 monatlich bei regelmässiger Aktivität</span>
+          </div>
+        </div>
+        <div class="fp-step">
+          <div class="fp-left"><div class="fp-badge">4</div></div>
+          <div class="fp-right">
+            <div class="fp-when">Ab Monat 3</div>
+            <div class="fp-action">Team-Provision: dein Team verdient, du verdienst mit</div>
+            <div class="fp-detail">Deine eingeschriebenen Partnerinnen verkaufen und bauen selbst Teams auf. Du erhältst einen Prozentsatz auf ihren Umsatz — ohne selbst mehr Zeit zu investieren. Das ist der eigentliche Hebel.</div>
+            <span class="fp-earn">CHF 200–1'000+ monatlich bei aktivem Team</span>
+          </div>
+        </div>
+      </div>
+      <div class="fp-key">
+        <strong>Warum genau 2 Einschreibungen so wichtig sind</strong>
+        <p>Zwei persönlich eingeschriebene und aktive Partnerinnen im ersten Monat schalten den Fast Start Bonus frei — das ist der grösste Einzelsprung beim Einkommen in der Anfangsphase. Gleichzeitig beginnen beide selbst aufzubauen, was ab Monat 3 deine Team-Provision startet. Ein Schritt der doppelt wirkt.</p>
+      </div>
+      <div class="tbl-wrap" style="margin-top:16px">
+        <table class="fp-sumtable">
+          <tr><th>Was du tust</th><th>Was du bekommst</th><th>Beispiel CHF</th></tr>
+          <tr><td>Produkte weiterempfehlen</td><td>30% Provision auf Verkauf</td><td>30–80 / Woche</td></tr>
+          <tr><td>2 Partnerinnen einschreiben</td><td>Fast Start Bonus (einmalig)</td><td>150–300 / Monat 1</td></tr>
+          <tr><td>Aktiv bleiben, Stammkunden halten</td><td>Monatliche Aktivitätsboni</td><td>100–500 / Monat</td></tr>
+          <tr><td>Team verkauft</td><td>Team-Provision (% auf Umsatz)</td><td>200–1'000+ / Monat</td></tr>
+        </table>
+      </div>
+      <p style="font-size:11px;color:var(--text-muted);margin-top:8px">Beispielzahlen · kein garantiertes Einkommen · abhängig von persönlicher Aktivität und Marktpartner-Rang</p>
+    </div>
     <p class="glabel">Wie die Provision funktioniert</p>
     <div class="cards">
       <div class="card"><div class="card-label">Kurz erklärt</div><div class="script" id="inc1">Als Marktpartnerin kaufst du Produkte mit 30% Rabatt.
