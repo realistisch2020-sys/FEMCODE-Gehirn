@@ -1654,6 +1654,51 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
   </div>
 </div>
 
+<!-- Canva Template Preview Styles -->
+<style>
+.cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin:1.4rem 0}
+@media(max-width:480px){.cv-grid{grid-template-columns:1fr}}
+.cv-cw{container-type:inline-size;display:flex;flex-direction:column;gap:.45rem}
+.cv-cw-story{grid-column:1/-1;container-type:inline-size;display:flex;flex-direction:column;align-items:center;gap:.45rem}
+.cv-lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted)}
+.cv-cw-story .cv-lbl{text-align:center}
+.cv-tpl{position:relative;width:100%;aspect-ratio:1;overflow:hidden;border-radius:5px}
+.cv-tpl.story{aspect-ratio:9/16;max-width:210px}
+.cv-t1{background:#F7F3EF}
+.cv-t2{background:#0A0608}.cv-t2::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 40% 40%,#1A0C16 0%,#060308 100%)}
+.cv-t3{background:#0C0810}.cv-t3::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,#200E1A 0%,#070408 100%)}
+.cv-t4{background:#080510}.cv-t4::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 65% at 50% 45%,#18102A 0%,#050310 100%)}
+.cv-t5{background:#070408}.cv-t5::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 100% 45% at 50% 15%,#1E0C18 0%,#060308 65%)}
+.cv-orn{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.cv-c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10% 9%}
+.cv-c.left{align-items:flex-start;text-align:left}
+.cv-c.space{justify-content:space-between;padding:14% 11%}
+@container(min-width:1px){
+  .cv-hero{font-family:Arial,Helvetica,sans-serif;font-size:10.5cqw;font-weight:700;letter-spacing:.04em;text-transform:uppercase;line-height:1.0;text-wrap:balance}
+  .cv-hero.light{color:#0D0810}.cv-hero.dark{color:#F5F0EC}
+  .cv-mega{font-family:Arial,Helvetica,sans-serif;font-size:17cqw;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;line-height:.92}
+  .cv-mega.light{color:#0D0810}.cv-mega.dark{color:#F5F0EC}
+  .cv-script{font-family:Arial,Helvetica,sans-serif;font-style:italic;font-weight:300;font-size:12cqw;line-height:1.1}
+  .cv-script.light{color:#0D0810}.cv-script.dark{color:#F5F0EC}
+  .cv-script-sm{font-family:Arial,Helvetica,sans-serif;font-style:italic;font-weight:300;font-size:6.5cqw;line-height:1.2}
+  .cv-script-sm.light{color:#0D0810}.cv-script-sm.dark{color:#F5F0EC}
+  .cv-gold{font-family:Arial,Helvetica,sans-serif;font-style:italic;font-weight:300;font-size:9cqw;color:#C4A882;line-height:1.15}
+  .cv-sub{font-size:2.2cqw;letter-spacing:.07em;line-height:1.9;text-wrap:balance}
+  .cv-sub.light{color:rgba(13,8,16,.45)}.cv-sub.dark{color:rgba(245,240,236,.45)}
+  .cv-eye{font-size:1.9cqw;letter-spacing:.35em;text-transform:uppercase}
+  .cv-eye.light{color:rgba(13,8,16,.4)}.cv-eye.dark{color:#C4A882}
+  .cv-brand{font-size:1.7cqw;letter-spacing:.38em;text-transform:uppercase}
+  .cv-brand.light{color:rgba(13,8,16,.3)}.cv-brand.dark{color:rgba(196,168,130,.6)}
+  .cv-rule{width:100%;height:1px;flex-shrink:0}
+  .cv-rule.light{background:rgba(13,8,16,.12);margin:1.3em 0}.cv-rule.dark{background:rgba(196,168,130,.2);margin:1.3em 0}
+  .cv-rule-s{width:4cqw;min-width:1.5rem;height:1px;flex-shrink:0}
+  .cv-rule-s.light{background:rgba(13,8,16,.25);margin:1.2em auto}.cv-rule-s.dark{background:rgba(196,168,130,.45);margin:1.2em auto}
+  .story .cv-hero{font-size:8cqw}.story .cv-mega{font-size:14cqw}.story .cv-script{font-size:10cqw}
+  .story .cv-script-sm{font-size:5.5cqw}.story .cv-gold{font-size:8cqw}.story .cv-sub{font-size:2cqw}
+  .story .cv-eye{font-size:1.7cqw}.story .cv-brand{font-size:1.5cqw}
+}
+</style>
+
 <!-- MODULE 16 -->
 <div class="acc-mod" id="m16">
   <button class="acc-toggle" onclick="toggleM(this)" aria-expanded="false">
@@ -1665,7 +1710,104 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
     <p class="mod-eye">Modul 16</p>
     <h2 class="mod-title">Canva-Vorlagen</h2>
     <p class="mod-desc">Petra erstellt die Vorlagen einmal. Jede Partnerin bekommt denselben Link und passt nur Foto und Name an. Einmal einrichten — für immer weitergeben.</p>
-    <div class="info"><strong>So funktioniert das Teilen:</strong> In Canva oben rechts auf "Teilen" → "Vorlage teilen" → Link kopieren. Wer diesen Link öffnet bekommt eine eigene Kopie und kann sie beliebig anpassen — dein Original bleibt unberührt. Den Link in Modul 5 (Tag 1 Nachricht) einfügen.</div>
+    <div class="info"><strong>So funktioniert das Teilen:</strong> In Canva oben rechts auf "Teilen" → "Vorlage teilen" → Link kopieren. Wer diesen Link öffnet bekommt eine eigene Kopie und kann sie beliebig anpassen — dein Original bleibt unberührt. Den Link in Modul 5 einfügen.</div>
+
+    <p class="glabel">So sehen die 5 Vorlagen aus</p>
+    <div class="cv-grid">
+
+      <div class="cv-cw">
+        <div class="cv-lbl">01 · Produktpost · hell · editorial</div>
+        <div class="cv-tpl cv-t1">
+          <div class="cv-c">
+            <div class="cv-eye light" style="margin-bottom:2em;">Monat Haarpflege</div>
+            <div class="cv-hero light" style="font-size:9cqw;line-height:1.05;">PRODUKTE<br>DIE FÜR SICH<br>SPRECHEN.</div>
+            <div class="cv-rule light"></div>
+            <div class="cv-sub light" style="font-size:2.4cqw;">Kunden kommen zurück —<br>ganz von selbst.</div>
+            <div class="cv-brand light" style="margin-top:2em;">DupliHer Network</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-cw">
+        <div class="cv-lbl">02 · Ergebnis-Post · dunkel</div>
+        <div class="cv-tpl cv-t2">
+          <div class="cv-c">
+            <div class="cv-script-sm dark" style="font-size:5cqw;margin-bottom:.3em;">ich hätte nie gedacht,</div>
+            <div class="cv-mega dark" style="font-size:15cqw;line-height:.9;">DASS<br>EIN<br>PRO-<br>DUKT</div>
+            <div class="cv-script-sm dark" style="font-size:5cqw;margin-top:.4em;">alles verändern kann.</div>
+            <div class="cv-brand dark" style="margin-top:2em;">DupliHer Network</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-cw">
+        <div class="cv-lbl">03 · Business-Post · dunkel</div>
+        <div class="cv-tpl cv-t3">
+          <div class="cv-c left" style="padding:12% 13%;">
+            <div class="cv-eye dark" style="margin-bottom:1.8em;">Business</div>
+            <div class="cv-script dark" style="font-size:8.5cqw;line-height:1.15;">schön aussehen</div>
+            <div class="cv-mega dark" style="font-size:14cqw;line-height:.93;margin-top:.1em;">UND<br>VER&shy;DIE-<br>NEN.</div>
+            <div class="cv-rule dark"></div>
+            <div class="cv-sub dark">Das System das jede<br>weitergeben kann.</div>
+            <div class="cv-brand dark" style="margin-top:1.5em;">DupliHer Network</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-cw">
+        <div class="cv-lbl">04 · Mindset-Quote · Nadine-Stil</div>
+        <div class="cv-tpl cv-t4">
+          <svg class="cv-orn" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7,23 L7,7 L23,7" stroke="#C4A882" stroke-width=".6" opacity=".5"/>
+            <path d="M77,7 L93,7 L93,23" stroke="#C4A882" stroke-width=".6" opacity=".5"/>
+            <path d="M7,77 L7,93 L23,93" stroke="#C4A882" stroke-width=".6" opacity=".5"/>
+            <path d="M77,93 L93,93 L93,77" stroke="#C4A882" stroke-width=".6" opacity=".5"/>
+            <path d="M10,23 L10,10 L23,10" stroke="#C4A882" stroke-width=".25" opacity=".2"/>
+            <path d="M77,10 L90,10 L90,23" stroke="#C4A882" stroke-width=".25" opacity=".2"/>
+            <path d="M10,77 L10,90 L23,90" stroke="#C4A882" stroke-width=".25" opacity=".2"/>
+            <path d="M77,90 L90,90 L90,77" stroke="#C4A882" stroke-width=".25" opacity=".2"/>
+            <line x1="20" y1="50" x2="35" y2="50" stroke="#C4A882" stroke-width=".3" opacity=".25"/>
+            <line x1="65" y1="50" x2="80" y2="50" stroke="#C4A882" stroke-width=".3" opacity=".25"/>
+          </svg>
+          <div class="cv-c">
+            <div class="cv-eye dark" style="font-size:1.8cqw;margin-bottom:2em;letter-spacing:.4em;">DupliHer Network</div>
+            <div class="cv-script dark" style="font-size:11cqw;line-height:1.2;">»Du bist nicht<br>zu spät.«</div>
+            <div class="cv-rule-s dark"></div>
+            <div class="cv-hero dark" style="font-size:4.5cqw;letter-spacing:.2em;opacity:.6;">DU FÄNGST GENAU JETZT AN.</div>
+            <div class="cv-brand dark" style="margin-top:2.5em;">DupliHer Network</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-cw-story">
+        <div class="cv-lbl">05 · Story · 1080 × 1920</div>
+        <div class="cv-tpl story cv-t5">
+          <svg class="cv-orn" viewBox="0 0 56.25 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4,14 L4,4 L14,4" stroke="#C4A882" stroke-width=".6" opacity=".45"/>
+            <path d="M42.25,4 L52.25,4 L52.25,14" stroke="#C4A882" stroke-width=".6" opacity=".45"/>
+            <path d="M4,86 L4,96 L14,96" stroke="#C4A882" stroke-width=".6" opacity=".45"/>
+            <path d="M42.25,96 L52.25,96 L52.25,86" stroke="#C4A882" stroke-width=".6" opacity=".45"/>
+          </svg>
+          <div class="cv-c space">
+            <div style="text-align:center;">
+              <div class="cv-eye dark" style="margin-bottom:1em;">DupliHer Network</div>
+              <div class="cv-hero dark" style="font-size:5cqw;line-height:1.3;">DAS SYSTEM<br>DAS SICH SELBST<br>ERKLÄRT.</div>
+            </div>
+            <div style="text-align:center;">
+              <div class="cv-script dark" style="font-size:13cqw;">Bereit?</div>
+              <div class="cv-rule dark" style="margin:1em 0;background:rgba(196,168,130,.18);"></div>
+              <div class="cv-sub dark" style="font-size:2.1cqw;line-height:2.1;">Kein Erklären.<br>Kein Präsentieren.<br>Das System arbeitet.</div>
+            </div>
+            <div style="text-align:center;">
+              <div class="cv-sub dark" style="font-size:1.9cqw;opacity:.55;margin-bottom:.5em;letter-spacing:.15em;text-transform:uppercase;">Schreib mir</div>
+              <div class="cv-gold" style="font-size:9cqw;">"System"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     <p class="glabel">Vorlage 1 — Produktpost (1080×1080)</p>
     <div class="cards">
       <div class="card"><div class="card-label">Aufbau</div><div class="script" id="cv1">Hintergrund: dunkelrosa (#2C1018) oder Creme (#FAF4F1)
