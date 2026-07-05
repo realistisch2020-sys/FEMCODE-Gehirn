@@ -80,13 +80,13 @@ body {
 .acc-toggle:active { background: var(--bg-subtle); }
 .acc-toggle[aria-expanded="true"] {
   background: var(--bg-subtle);
-  border-left-color: #39FF14;
+  border-left-color: var(--cat-color, var(--accent));
 }
 .acc-num {
   font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
-  color: #0a1a05; font-weight: 700; flex-shrink: 0;
-  background: #39FF14; border-radius: 6px;
-  padding: 4px 8px; text-align: center;
+  color: #fff; font-weight: 700; flex-shrink: 0;
+  background: var(--cat-color, var(--accent)); border-radius: 6px;
+  padding: 4px 8px; text-align: center; min-width: 34px;
 }
 .acc-title {
   font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
@@ -94,10 +94,10 @@ body {
   color: var(--text);
 }
 .acc-arrow {
-  font-size: 13px; color: #0a1a05;
+  font-size: 13px; color: #fff;
   transition: transform .2s; flex-shrink: 0;
   width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;
-  border-radius: 50%; background: #39FF14; flex-shrink: 0;
+  border-radius: 50%; background: var(--cat-color, var(--accent)); flex-shrink: 0;
 }
 .acc-toggle[aria-expanded="true"] .acc-arrow { transform: rotate(180deg); }
 .acc-body { display: none; padding: 8px 16px 36px; max-width: 680px; margin: 0 auto; }
@@ -251,6 +251,42 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
   .tiers { flex-direction: row; }
   .tier { flex: 1; }
 }
+
+/* KATEGORIE-FARBEN — jede Modulgruppe hat eine eigene Farbe */
+/* Rose — Skripte & Gespräche */
+#m2, #m4, #m8 { --cat-color: #B8888A; }
+/* Sage — Posts & Content */
+#m3, #m9, #m11, #m12, #m16 { --cat-color: #6E9E6E; }
+/* Gold — Onboarding & Team */
+#m1, #m5, #m7, #m10 { --cat-color: #B89050; }
+/* Blaugrau — Wissen & Mindset */
+#m6, #m13, #m14, #m15 { --cat-color: #728AA0; }
+
+/* Leichte linke Linie auf geschlossenem Modul */
+.acc-toggle { border-left-color: rgba(255,255,255,.06); }
+@media (prefers-color-scheme: light) { .acc-toggle { border-left-color: rgba(0,0,0,.06); } }
+:root[data-theme="light"] .acc-toggle { border-left-color: rgba(0,0,0,.06); }
+:root[data-theme="dark"] .acc-toggle { border-left-color: rgba(255,255,255,.06); }
+
+/* SCHNELLNAVIGATION */
+.qnav {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; gap: .45rem; overflow-x: auto; padding: .7rem 1rem;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  scrollbar-width: none; -ms-overflow-style: none;
+}
+.qnav::-webkit-scrollbar { display: none; }
+.qnav-pill {
+  flex-shrink: 0; padding: .32rem .85rem; border-radius: 99px;
+  font-size: .72rem; letter-spacing: .04em; font-weight: 600;
+  text-decoration: none; white-space: nowrap;
+  border: 1px solid; transition: opacity .15s;
+}
+.qnav-pill:active { opacity: .7; }
+.qnav-pill.rose { background: rgba(184,136,138,.14); color: #B8888A; border-color: rgba(184,136,138,.32); }
+.qnav-pill.sage { background: rgba(110,158,110,.14); color: #6E9E6E; border-color: rgba(110,158,110,.32); }
+.qnav-pill.gold { background: rgba(184,144,80,.14); color: #B89050; border-color: rgba(184,144,80,.32); }
+.qnav-pill.steel { background: rgba(114,138,160,.14); color: #728AA0; border-color: rgba(114,138,160,.32); }
 </style>
 </head>
 <body>
@@ -268,6 +304,19 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
     <span class="badge">30-Tage Challenge</span>
   </div>
 </div>
+
+<nav class="qnav" aria-label="Schnellnavigation">
+  <a class="qnav-pill rose" href="#m2">Skripte</a>
+  <a class="qnav-pill sage" href="#m3">Posts</a>
+  <a class="qnav-pill gold" href="#m5">Onboarding</a>
+  <a class="qnav-pill gold" href="#m7">Business erklären</a>
+  <a class="qnav-pill rose" href="#m8">FAQ</a>
+  <a class="qnav-pill sage" href="#m9">Stories</a>
+  <a class="qnav-pill gold" href="#m10">Team aufbauen</a>
+  <a class="qnav-pill steel" href="#m13">Einkommensplan</a>
+  <a class="qnav-pill steel" href="#m15">Mindset</a>
+  <a class="qnav-pill sage" href="#m16">Canva</a>
+</nav>
 
 <!-- MODULE 1 -->
 <div class="acc-mod" id="m1">
