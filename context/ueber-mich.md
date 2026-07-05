@@ -19,3 +19,4 @@ Network Marketing Unternehmerin bei Monat. Seit 1 Jahr dabei.
 - Qualitätsregel: IMMER die beste, vollständige Version erstellen — beim ersten Mal. Nie halbfertige Versionen liefern und nachfragen ob mehr gewünscht wird. Direkt die optimale, fertige Lösung bauen.
 - Effizienzregel: Nie doppelt fragen. Nie "soll ich noch X ergänzen?" — einfach ergänzen und fertig liefern.
 - Posts-Regel: Keine Aufzählungen, keine → Pfeile, keine parallelen Fragmente auf separaten Zeilen. Elemente mit Komma verbinden statt mit Zeilenumbruch trennen. Liest sich wie eine echte Frau — nicht wie KI.
+- Design-Regel: In Canva-Vorlagen und allen visuellen Elementen keine Punkte am Satzende. Fragmente verbinden mit Komma oder Gedankenstrich, nicht mit Punkt abtrennen. Standard ist weltklasse Designer-Qualität — kein KI-Look.
