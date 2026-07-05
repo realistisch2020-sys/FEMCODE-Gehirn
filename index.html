@@ -301,6 +301,19 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 .ss-step-txt { font-size: 14px; line-height: 1.55; padding-top: 4px; color: var(--text-muted); }
 .ss-step-txt strong { color: var(--text); }
 .ss-note { font-size: 12px; color: var(--text-muted); font-style: italic; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 4px; }
+
+/* EINWAND-NAVIGATOR */
+.enav-wrap { border-bottom: 1px solid var(--border); background: var(--bg); padding: 22px 16px 28px; }
+.enav-inner { max-width: 680px; margin: 0 auto; }
+.enav-eye { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: #B8888A; margin-bottom: 6px; }
+.enav-title { font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif; font-size: clamp(17px,4.5vw,22px); color: var(--text); font-weight: 400; margin-bottom: 16px; line-height: 1.2; }
+.enav-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.enav-sec { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); opacity: .6; grid-column: 1/-1; margin-top: 10px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.enav-btn { background: var(--bg-card); border: 1px solid var(--border); color: var(--text-muted); font-size: 13px; font-family: inherit; padding: 10px 12px; border-radius: 8px; cursor: pointer; text-align: left; line-height: 1.35; transition: border-color .12s, background .12s; -webkit-tap-highlight-color: transparent; }
+.enav-btn.active { background: var(--bg-subtle); border-color: #B8888A; color: var(--text); }
+.enav-result { display: none; background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid #B8888A; border-radius: 8px; padding: 14px 15px; }
+.enav-rlbl { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #B8888A; margin-bottom: 10px; }
+.enav-rtxt { font-size: 14px; line-height: 1.75; color: var(--text); white-space: pre-wrap; margin-bottom: 14px; }
 </style>
 </head>
 <body>
@@ -320,6 +333,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 </div>
 
 <nav class="qnav" aria-label="Schnellnavigation">
+  <a class="qnav-pill rose" href="#enav">Was hat sie gesagt?</a>
   <a class="qnav-pill rose" href="#m2">Skripte</a>
   <a class="qnav-pill sage" href="#m3">Posts</a>
   <a class="qnav-pill rose" href="#m4">Selbsterklärung</a>
@@ -390,6 +404,46 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
     </div>
     <hr>
     <div class="info"><strong>Der Rhythmus der wirklich funktioniert:</strong> Ein Post täglich. Und täglich neue Menschen anschreiben — mindestens 10, besser 15 bis 20. Nicht nur Frauen. Auch Männer die Frauen in ihrem Umfeld kennen. Auch Bekannte die du lange nicht gesprochen hast. Auch Menschen die auf deine Stories reagieren. Je mehr du anschreibst desto schneller kommt Bewegung rein. Von 50 Nachrichten antworten vielleicht 3 bis 5 mit echtem Interesse — und genau diese 3 bis 5 bauen dein Business. Das ist keine Niederlage. Das ist die Realität jedes erfolgreichen Network Marketers weltweit. Wer das konsequent 8–12 Wochen durchzieht und nie aufhört neue Menschen anzusprechen sieht echte Ergebnisse.</div>
+  </div>
+</div>
+
+<!-- EINWAND-NAVIGATOR -->
+<div class="enav-wrap" id="enav">
+  <div class="enav-inner">
+    <p class="enav-eye">Sofort das richtige Skript</p>
+    <h2 class="enav-title">Was hat sie gesagt?</h2>
+    <div class="enav-grid">
+
+      <div class="enav-sec">Keine Antwort</div>
+      <button class="enav-btn" onclick="enav('s6','Erstes Follow-up — 2 Tage',this)">Hat nicht geantwortet — 2 Tage</button>
+      <button class="enav-btn" onclick="enav('s7','Zweites Follow-up — 1 Woche',this)">Hat nicht geantwortet — 1 Woche</button>
+      <button class="enav-btn" onclick="enav('s35','Kein Zeichen nach dem Link',this)">Link geschickt, keine Reaktion</button>
+      <button class="enav-btn" onclick="enav('s10','Reaktivierung',this)">Schon lange nichts mehr</button>
+
+      <div class="enav-sec">Erste Reaktion</div>
+      <button class="enav-btn" onclick="enav('s31','Sie zeigt Interesse',this)">Zeigt Interesse</button>
+      <button class="enav-btn" onclick="enav('s18','Was macht man genau?',this)">Fragt was man genau macht</button>
+      <button class="enav-btn" onclick="enav('s17','Wie viel verdient man?',this)">Fragt nach dem Verdienst</button>
+      <button class="enav-btn" onclick="enav('s16','Interesse bestätigt',this)">Möchte mehr wissen</button>
+
+      <div class="enav-sec">Einwände</div>
+      <button class="enav-btn" onclick="enav('s11','Zu teuer',this)">Zu teuer</button>
+      <button class="enav-btn" onclick="enav('s12','Keine Zeit',this)">Keine Zeit</button>
+      <button class="enav-btn" onclick="enav('s13','Ist das MLM?',this)">Ist das MLM?</button>
+      <button class="enav-btn" onclick="enav('s14','Muss noch überlegen',this)">Muss noch überlegen</button>
+      <button class="enav-btn" onclick="enav('s15','Schlechte NM-Erfahrung',this)" style="grid-column:1/-1">Schlechte Erfahrung mit NM</button>
+
+      <div class="enav-sec">Bereit</div>
+      <button class="enav-btn" onclick="enav('s32','Hat den Link gelesen',this)">Hat den Link gelesen</button>
+      <button class="enav-btn" onclick="enav('s33','Zögert noch',this)">Zögert noch</button>
+      <button class="enav-btn" onclick="enav('s34','Bereit zu starten',this)" style="grid-column:1/-1">Bereit zu starten 🌸</button>
+
+    </div>
+    <div class="enav-result" id="enav-result">
+      <div class="enav-rlbl" id="enav-lbl"></div>
+      <div class="enav-rtxt" id="enav-txt"></div>
+      <button class="copy" onclick="enavCopy(this)">Kopieren</button>
+    </div>
   </div>
 </div>
 
@@ -2169,6 +2223,23 @@ function toggleM(btn) {
   var open = btn.getAttribute('aria-expanded') === 'true';
   btn.setAttribute('aria-expanded', String(!open));
   btn.nextElementSibling.classList.toggle('open', !open);
+}
+function enav(sid, label, btn) {
+  var src = document.getElementById(sid);
+  if (!src) return;
+  document.getElementById('enav-lbl').textContent = label;
+  document.getElementById('enav-txt').textContent = src.textContent.trim();
+  var res = document.getElementById('enav-result');
+  res.style.display = 'block';
+  document.querySelectorAll('.enav-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  setTimeout(function(){ res.scrollIntoView({behavior:'smooth', block:'nearest'}); }, 50);
+}
+function enavCopy(btn) {
+  var text = document.getElementById('enav-txt').textContent;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function(){ flash(btn); }).catch(function(){ fallback(text, btn); });
+  } else { fallback(text, btn); }
 }
 
 // Golden glitter stars
