@@ -7,7 +7,6 @@
 
 ## Demnächst — Petra macht das selbst
 
-- **Video aufnehmen**: Skript steht in Modul 5. Handy reicht. Auf YouTube "Nicht gelistet" hochladen → Link in Modul 5 Tag-1-Nachricht einsetzen.
 - **Canva-Vorlagen erstellen**: 5 Vorlagen nach Modul 16 aufbauen (1–2 Stunden). Als Template-Link teilen → in Modul 5 Tag-1-Nachricht einsetzen.
 - **Elopage Account erstellen**: elopage.com → kostenlos registrieren → Produkt "DupliHer Network" anlegen → CHF 37/Monat
 - **clevver.io**: virtuelle Geschäftsadresse ab EUR 9.90/Monat → Adresse in AGB einsetzen (outputs/dupliher-network-agb.md)
@@ -33,3 +32,4 @@
 - Saisonale Posts ✓
 - 112 Posts überarbeitet: kein KI-Stil, keine Aufzählungen, fliessender Text ✓
 - "FemSog" / "Sog" komplett entfernt, überall DupliHer Network ✓
+- Willkommensnachricht für neue Partnerinnen fertig in Modul 5 (kein Video nötig) ✓
