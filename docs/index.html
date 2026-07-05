@@ -287,6 +287,18 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 .qnav-pill.sage { background: rgba(110,158,110,.14); color: #6E9E6E; border-color: rgba(110,158,110,.32); }
 .qnav-pill.gold { background: rgba(184,144,80,.14); color: #B89050; border-color: rgba(184,144,80,.32); }
 .qnav-pill.steel { background: rgba(114,138,160,.14); color: #728AA0; border-color: rgba(114,138,160,.32); }
+
+/* SCHNELLSTART */
+.ss-wrap { border-bottom: 1px solid var(--border); background: var(--bg-card); padding: 26px 16px 30px; }
+.ss-inner { max-width: 680px; margin: 0 auto; }
+.ss-eye { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+.ss-title { font-family: "Palatino Linotype","Book Antiqua",Palatino,Georgia,serif; font-size: clamp(18px,5vw,24px); color: var(--text); font-weight: 400; margin-bottom: 18px; line-height: 1.2; }
+.ss-steps { display: flex; flex-direction: column; gap: 13px; margin-bottom: 16px; }
+.ss-step { display: flex; align-items: flex-start; gap: 14px; }
+.ss-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--bg-card); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.ss-step-txt { font-size: 14px; line-height: 1.55; padding-top: 4px; color: var(--text-muted); }
+.ss-step-txt strong { color: var(--text); }
+.ss-note { font-size: 12px; color: var(--text-muted); font-style: italic; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -317,6 +329,22 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
   <a class="qnav-pill steel" href="#m15">Mindset</a>
   <a class="qnav-pill sage" href="#m16">Canva</a>
 </nav>
+
+<!-- SCHNELLSTART -->
+<div class="ss-wrap">
+  <div class="ss-inner">
+    <p class="ss-eye">Neu hier? Dein erster Tag</p>
+    <h2 class="ss-title">In 48 Stunden gestartet</h2>
+    <div class="ss-steps">
+      <div class="ss-step"><span class="ss-num">1</span><div class="ss-step-txt"><strong>Modul 1 lesen</strong> — Versteh wie das System funktioniert. 10 Minuten.</div></div>
+      <div class="ss-step"><span class="ss-num">2</span><div class="ss-step-txt"><strong>3 Namen aufschreiben</strong> — Welche 3 Frauen schreibst du heute an? Nur aufschreiben, noch nicht senden.</div></div>
+      <div class="ss-step"><span class="ss-num">3</span><div class="ss-step-txt"><strong>Skript 1 aus Modul 2 kopieren</strong> — Namen anpassen, an alle drei senden. Das wars.</div></div>
+      <div class="ss-step"><span class="ss-num">4</span><div class="ss-step-txt"><strong>Post 1 aus Modul 3 veröffentlichen</strong> — Bild dazu, abschicken. Ab jetzt täglich einen.</div></div>
+      <div class="ss-step"><span class="ss-num">5</span><div class="ss-step-txt"><strong>Morgen nachschauen</strong> — Wer hat geantwortet? Für alle anderen: Skript 6 schicken.</div></div>
+    </div>
+    <p class="ss-note">Erst senden, dann weiterlesen. Wer wartet bis alles perfekt ist fängt nie an.</p>
+  </div>
+</div>
 
 <!-- MODULE 1 -->
 <div class="acc-mod" id="m1">
@@ -418,6 +446,21 @@ hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
       <div class="card"><div class="card-label">Skript 28 — Jemand auf Pause</div><div class="script" id="s28">Hey [Name] 🌸 ich weiss du hast eine Pause gemacht. Das ist okay. Manchmal kommt das Leben dazwischen. Wenn du wieder starten willst bin ich hier. Kein Drama. Kein Vorwurf. Einfach weitermachen 🌿</div><button class="copy" onclick="cp('s28',this)">Kopieren</button></div>
       <div class="card"><div class="card-label">Skript 29 — Nach negativer Reaktion</div><div class="script" id="s29">Hey [Name] 😊 ich hab das Gefühl meine letzte Nachricht war vielleicht falsch angekommen. Das tut mir leid. Ich wollte wirklich nicht pushy sein. Wenn das Thema gerade nicht passt ist das absolut okay 🌸</div><button class="copy" onclick="cp('s29',this)">Kopieren</button></div>
       <div class="card"><div class="card-label">Skript 30 — Auslandskontakt</div><div class="script" id="s30">Hey [Name] 😊 ich weiss du bist in [Land]. Ich wollte kurz sagen: Monat gibt es auch dort. Ich kann dir zeigen wie das genau funktioniert wenn du interessiert bist. Oder ich empfehle dich an jemanden weiter der in deiner Region schon dabei ist 🌿</div><button class="copy" onclick="cp('s30',this)">Kopieren</button></div>
+    </div>
+    <p class="glabel">Reaktions-Pipeline</p>
+    <div class="info">Jemand hat geantwortet — jetzt kommt die Sequenz. Erst fragen, dann den Link schicken, dann 48 Stunden lassen. Nicht erklären, nicht überreden.</div>
+    <div class="days">
+      <div class="day"><div class="dnum">1</div><div class="dtxt"><div class="dtitle">Erst fragen</div><div class="ddesc">Nicht sofort erklären. "Was interessiert dich mehr — die Produkte oder die Business-Möglichkeit?" Warte auf die Antwort.</div></div></div>
+      <div class="day"><div class="dnum">2</div><div class="dtxt"><div class="dtitle">Passend antworten</div><div class="ddesc">Produkt-Interesse → Modul 6 verwenden. Business-Interesse → Modul 7. Dann: den Link schicken.</div></div></div>
+      <div class="day"><div class="dnum">3</div><div class="dtxt"><div class="dtitle">Link schicken</div><div class="ddesc">"Schau das mal an — es erklärt sich selbst. Sag mir dann was du denkst." Fertig. Jetzt warten.</div></div></div>
+      <div class="day"><div class="dnum">4</div><div class="dtxt"><div class="dtitle">48 Stunden lassen</div><div class="ddesc">Nicht sofort nachhaken. Nach 2 Tagen: Skript 32 schicken. Das ist der natürlichste Moment für ein Ja.</div></div></div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-label">Skript 31 — Sie hat geantwortet, zeigt Interesse</div><div class="script" id="s31">Schön dass du zurückschreibst 😊 darf ich kurz fragen — interessiert dich mehr das Produkt oder eher die Möglichkeit nebenbei was zu verdienen? Ich frag damit ich dir genau das Richtige schicken kann 🌸</div><button class="copy" onclick="cp('s31',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 32 — Nach dem Link (48h später)</div><div class="script" id="s32">Hey 🌿 du hast jetzt alles gelesen. Was war dein erster Gedanke? Ich will das wirklich wissen — auch wenn es skeptisch ist. Das ist okay 😊</div><button class="copy" onclick="cp('s32',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 33 — Sie ist interessiert aber zögert</div><div class="script" id="s33">Das kenn ich 🌸 ich hab damals auch gezögert. Was ist das eine Ding das dich noch hält? Manchmal ist es eine einzige Frage die alles klärt 🌿</div><button class="copy" onclick="cp('s33',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 34 — Sie will starten</div><div class="script" id="s34">Das freut mich so 🌸 dann machen wir das jetzt. Ich schick dir alles was du brauchst. Du musst wirklich gar nichts erklären können — das System macht das für dich. Bereit? 🌿</div><button class="copy" onclick="cp('s34',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Skript 35 — Kein Zeichen nach dem Link (3 Tage)</div><div class="script" id="s35">Hey [Name] 😊 ich wollte kurz nachfragen ob du dazu gekommen bist zu lesen. Kein Druck, kein Drama. Ich weiss nur gerne wo du stehst 🌸</div><button class="copy" onclick="cp('s35',this)">Kopieren</button></div>
     </div>
   </div>
 </div>
@@ -1425,6 +1468,19 @@ Wenn du mehr wissen willst können wir kurz telefonieren oder ich schick dir meh
       <div class="day"><div class="dnum">3</div><div class="dtxt"><div class="dtitle">Duplikation</div><div class="ddesc">Deine Partnerinnen bringen ihre Partnerinnen. Du begleitest. Du erklärst nicht mehr.</div></div></div>
       <div class="day"><div class="dnum">4</div><div class="dtxt"><div class="dtitle">Monatliches Training</div><div class="ddesc">Das DupliHer Network Training hält das Team zusammen und bringt neue Impulse jeden Monat.</div></div></div>
     </div>
+    <p class="glabel">Das System einer neuen Partnerin zeigen</p>
+    <div class="info">Du erklärst nichts — du zeigst. Der Link tut die ganze Erklärung. Dein Job: sie neugierig machen, Link schicken, 48 Stunden lassen, dann fragen was sie denkt.</div>
+    <div class="days">
+      <div class="day"><div class="dnum">1</div><div class="dtxt"><div class="dtitle">Neugier wecken</div><div class="ddesc">Nachricht 10 schicken. Kein langer Pitch, kein erklären — nur sagen dass du ihr etwas zeigen willst.</div></div></div>
+      <div class="day"><div class="dnum">2</div><div class="dtxt"><div class="dtitle">Link schicken</div><div class="ddesc">"Schau das mal an. Es erklärt sich selbst. Sag mir was du denkst." — und warten.</div></div></div>
+      <div class="day"><div class="dnum">3</div><div class="dtxt"><div class="dtitle">48 Stunden geben</div><div class="ddesc">Nicht nachhaken. Sie braucht Zeit. Du meldest dich nach 2 Tagen mit Nachricht 11.</div></div></div>
+      <div class="day"><div class="dnum">4</div><div class="dtxt"><div class="dtitle">Sie startet — Link weiterleiten</div><div class="ddesc">Sie bekommt denselben Link. Sie gibt ihn weiter. Das ist Duplikation. Du erklärst ihr nichts mehr.</div></div></div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-label">Nachricht 10 — Das System zeigen</div><div class="script" id="t10">Hey [Name] 🌸 ich wollte dir ehrlich was zeigen. Ich benutze ein System das mein Monat Business komplett strukturiert. Fertige Texte, fertige Posts, fertige Onboarding-Anleitungen — ich muss niemandem mehr etwas erklären. Willst du kurz reinschauen? Ich schick dir den Link 🌿</div><button class="copy" onclick="cp('t10',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Nachricht 11 — Nach dem Lesen (48h später)</div><div class="script" id="t11">Hey [Name] 😊 hast du Zeit gehabt reinzuschauen? Was war dein erster Gedanke? Ich bin wirklich gespannt — auch wenn du skeptisch bist 🌸</div><button class="copy" onclick="cp('t11',this)">Kopieren</button></div>
+      <div class="card"><div class="card-label">Nachricht 12 — Was kostet das?</div><div class="script" id="t12">Das ist eine faire Frage 🌿 sag mir kurz ob du eher am Business oder nur an den Produkten interessiert bist — dann sag ich dir genau was drin ist und was es kostet 🌸</div><button class="copy" onclick="cp('t12',this)">Kopieren</button></div>
+    </div>
   </div>
 </div>
 
@@ -1845,7 +1901,6 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
             <div class="cv-serif lt">Mehr Volumen,<br>weniger Ausfall</div>
             <div class="cv-rule lt" style="margin:1.2em 0"></div>
             <div class="cv-sub lt">ir Clinical Set —<br>ich hätte es nicht geglaubt</div>
-            <div class="cv-tag lt" style="margin-top:1.8em">Petra Tanner · Monat</div>
           </div>
         </div>
       </div>
@@ -1857,7 +1912,6 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
             <div class="cv-serif-lg dk" style="margin-bottom:1.1em">Drei Monate<br>ir Clinical —<br>mein Haar hat<br>sich verändert</div>
             <div class="cv-rule-s dk" style="margin-bottom:1.1em"></div>
             <div class="cv-sub dk">vorher — nachher · kein Filter</div>
-            <div class="cv-tag dk" style="margin-top:2.2em">Petra Tanner · Monat</div>
           </div>
         </div>
       </div>
@@ -1871,7 +1925,6 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
             <div class="cv-bold dk">und<br>verdienen</div>
             <div class="cv-rule dk" style="margin:1em 0"></div>
             <div class="cv-sub dk">Kein Büro, kein Chef —<br>nur echte Empfehlungen</div>
-            <div class="cv-tag dk" style="margin-top:1.8em">DupliHer Network</div>
           </div>
         </div>
       </div>
@@ -1905,7 +1958,6 @@ Das ist kein Geheimnis. Das ist das System. Weiterschreiben. Weiterposten. Wer a
           </svg>
           <div class="cv-c space">
             <div style="text-align:center">
-              <div class="cv-eye dk" style="margin-bottom:.9em">Petra Tanner · Monat</div>
               <div class="cv-bold dk" style="font-size:6cqw;line-height:1.22">Neugierig<br>auf Monat<br>Haarpflege?</div>
             </div>
             <div style="text-align:center">
