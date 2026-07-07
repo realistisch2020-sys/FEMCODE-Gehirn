@@ -27,6 +27,29 @@ Menschen in blockierenden Lebenssituationen — alle Lebensbereiche (Beziehungen
 5. **ANCHOR** — Entscheidung im Alltag verankern
 6. **EXPAND** — Bedeutung geben, spirituelle Integration
 
+## Stil-Referenzen
+
+- **New Lives Spirit** — Stil, Energie, Feeling dieser Marke ist Orientierung
+- **Franzi (den Weib)** — Sprache, Authentizität, Wirkung dieser Person ist Orientierung
+
+Shift Code muss das übertreffen — etwas erschaffen, das es so auf der Welt noch nicht gibt.
+
+## Einzigartigkeit — was Shift Code von allem anderen unterscheidet
+
+- Einzige Methode, die alle 6 Ebenen gleichzeitig aktiviert (Nervensystem + Psychologie + Körper + Identität + Realität + Spiritualität)
+- Kein Coaching, kein Therapeut nötig — vollständig automatisiert
+- Nicht Verstehen. Nicht Denken. Nur Fühlen — und der Shift passiert
+- Der "Code" ist das Schlüsselbild: jeder Mensch hat einen Code, der ihn hält. Shift Code knackt ihn.
+
+## Rechtssicherheit (wichtig — immer beachten)
+
+- Keine therapeutischen oder medizinischen Versprechen
+- Nicht „heilt" — sondern „unterstützt", „begleitet", „macht erfahrbar"
+- Nicht „löst Trauma" — sondern „arbeitet mit dem, was dich hält"
+- Pflichthinweis in allen Materialien: „Shift Code ersetzt keine Therapie oder medizinische Behandlung."
+- Double Opt-in, Datenschutzerklärung, Abmeldelink — immer dabei
+- Keine Erfolgsversprechen als Garantie — nur als Möglichkeit formulieren
+
 ## Kanäle
 
 Noch offen — wird erarbeitet.
