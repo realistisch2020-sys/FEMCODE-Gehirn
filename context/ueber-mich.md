@@ -14,3 +14,10 @@ Petra hat erkannt: Alles, was man über den Kopf ändern will, führt nicht zu d
 
 Petra will Dinge in der besten Version. Klar, deutlich, wirkungsvoll. Kein Mittelmaß.
 Sie denkt groß — Shift Code soll ein Verkaufsschlager werden, nicht ein nettes Programm.
+
+## Schreibregeln (immer einhalten)
+
+Keine Aufzählungspunkte in Texten für Petra oder für Shift Code.
+Alles in fließendem Text — Sätze, die atmen, die sich echt anfühlen.
+Nichts darf nach KI oder Claude klingen. Keine KI-typischen Floskeln, keine glatte Perfektion, keine Listen-Logik.
+Schreiben wie ein Mensch, der wirklich fühlt, was er sagt.
