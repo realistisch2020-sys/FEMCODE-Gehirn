@@ -34,12 +34,29 @@ Menschen in blockierenden Lebenssituationen — alle Lebensbereiche (Beziehungen
 
 Shift Code muss das übertreffen — etwas erschaffen, das es so auf der Welt noch nicht gibt.
 
-## Einzigartigkeit — was Shift Code von allem anderen unterscheidet
+## Shift Code als echte Erfindung — Kern-Positionierung
 
-- Einzige Methode, die alle 6 Ebenen gleichzeitig aktiviert (Nervensystem + Psychologie + Körper + Identität + Realität + Spiritualität)
-- Kein Coaching, kein Therapeut nötig — vollständig automatisiert
-- Nicht Verstehen. Nicht Denken. Nur Fühlen — und der Shift passiert
-- Der "Code" ist das Schlüsselbild: jeder Mensch hat einen Code, der ihn hält. Shift Code knackt ihn.
+Shift Code ist keine Methode. Es ist eine Entdeckung.
+
+Das menschliche Nervensystem hat einen eigenen Code — eine präzise neurobiologische Reihenfolge, in der es sich wirklich öffnen kann. Dieser Code war immer da. Niemand hat ihn je so beschrieben, so nutzbar gemacht, so automatisiert.
+
+Jede Phase von Shift Code folgt der inneren Logik des Nervensystems:
+GROUND muss zuerst kommen — ohne Sicherheit im Körper öffnet sich nichts.
+Erst dann kann TRACE funktionieren — das Nervensystem lässt Fühlen zu, wenn es sicher ist.
+Erst dann entlädt RELEASE wirklich — weil der Körper nicht mehr im Alarm ist.
+Erst dann greift IMPRINT tief — neue Muster brauchen ein reguliertes System als Boden.
+Erst dann wirkt ANCHOR nachhaltig — Entscheidungen halten, wenn der Körper sie trägt.
+Erst dann öffnet EXPAND vollständig — Bedeutung und Frieden entstehen, wenn alles andere entsperrt ist.
+
+Du kannst die Reihenfolge nicht tauschen. Du kannst keinen Schritt überspringen. Weil das Nervensystem das nicht erlaubt — und alle anderen Methoden genau das ignorieren.
+
+Das ist die Erfindung: Die erste Methode der Welt, die dem Nervensystem folgt. Nicht dem Verstand. Nicht einer Theorie. Dem, was biologisch wahr ist.
+
+Shift Code-Satz für die Welt: „Der Code war immer in dir. Jetzt weißt du, wie man ihn liest."
+
+## Nervensystem-Ausrichtung in allen Texten (immer beachten)
+
+Alle Texte müssen selbst nervensystemgerecht sein — nicht nur über das Nervensystem sprechen. Das bedeutet: kurze Sätze, Pausen durch Absätze, keine Reizüberflutung, keine Dringlichkeit, keine Panik. Die Sprache reguliert — sie hetzt nicht. Wer den Text liest, soll sich bereits sicherer fühlen als vorher.
 
 ## Rechtssicherheit (wichtig — immer beachten)
 
