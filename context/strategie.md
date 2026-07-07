@@ -4,14 +4,16 @@ Hier kommt rein, woran du gerade arbeitest und wohin es gehen soll. So weiß Cla
 
 ## Aktueller Fokus
 
-Woran arbeitest du gerade konkret?
+Shift Code aufbauen — von der Methode bis zum Launch.
 
-## Ziele der nächsten Monate
+## Ziele
 
-Was willst du in den nächsten drei bis sechs Monaten erreichen?
+1. 30 Tages-E-Mails fertigschreiben
+2. Technisches Setup aufsetzen (MailerLite + Datenschutz)
+3. Verkaufsseite live bringen
+4. Ersten Launch durchführen
 
 ## Prioritäten
 
-Was ist wichtig, was kann warten?
-
-Kurz und konkret. Drei klare Ziele schlagen zehn vage.
+Wichtig jetzt: Inhalte (E-Mails), dann Technik, dann Launch.
+Kann warten: Community, App, Membership.

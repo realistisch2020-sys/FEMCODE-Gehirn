@@ -4,12 +4,21 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- (noch nichts)
+- [ ] E-Mails Tag 1–3 schreiben (GROUND-Phase)
+- [ ] Betreffzeilen für alle 30 Tage festlegen
 
 ## Demnächst
 
-- (noch nichts)
+- [ ] Alle 30 E-Mails fertigschreiben
+- [ ] MailerLite oder ConvertKit einrichten
+- [ ] Double Opt-in + Datenschutzerklärung aufsetzen
+- [ ] Zahlungsanbieter auswählen (z.B. Stripe, Digistore)
+- [ ] Verkaufsseite live schalten
+- [ ] Launch-Post für Social Media schreiben
 
 ## Ideen / später
 
-- (noch nichts)
+- [ ] Community-Komponente (Circle oder Skool)
+- [ ] Monatliche Membership als Upsell
+- [ ] App als Premium-Stufe
+- [ ] Testimonials sammeln nach erstem Launch
