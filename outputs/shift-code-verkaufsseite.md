@@ -1,41 +1,163 @@
 # Shift Code — Verkaufsseite
 
+Hinweis zur Umsetzung: Die Abschnitte unten entsprechen den Sektionen der Website. Die Überschriften in [KLAMMERN] sind Platzhalter für die visuelle Gliederung auf der Seite — sie erscheinen nicht als Text, sondern als Gestaltungselemente.
+
+
+---
+
+
+[HERO]
+
 Dein Kopf weiß es schon lange.
 Dein Leben hat es noch nicht bekommen.
 
-Du kennst das Thema. Schon dein ganzes Leben begleitet es dich. Du hast Bücher gelesen, Coaches gebucht, meditiert, analysiert, verstanden und bist trotzdem wieder hier. Dieselbe Bremse. Dasselbe Gefühl. Dieselbe Stelle, an der du immer wieder anhältst.
+[SUBHEADLINE]
 
-Das liegt nicht an dir. Es liegt daran, dass du versuchst über den Kopf zu lösen, was nie im Kopf war.
+Das 30-Tage-Programm, das der biologischen Reihenfolge deines Nervensystems folgt. Und deshalb dort ankommt, wo alles andere nicht durchgekommen ist.
 
-Blockaden sitzen nicht in deinen Gedanken. Sie sitzen in deinem Körper. In deinem Nervensystem. In Mustern, die sich so tief eingegraben haben, dass sie sich längst wie du selbst anfühlen. Manche davon hast du nicht einmal selbst erlebt. Du hast sie geerbt. Von deiner Mutter, deinem Vater, von Generationen vor dir, die keine andere Wahl hatten, als den Schmerz in sich hineinzuschweigen.
 
-Kein Seminar löscht das. Kein Verstehen macht es weg.
+---
 
-Was wirklich wirkt ist der Weg über das Fühlen. Nicht dramatisch. Nicht laut. Tief, präzise und auf allen Ebenen gleichzeitig.
 
-Genau dafür ist Shift Code entstanden.
+[PROBLEM]
 
-Shift Code ist kein Coaching. Kein weiteres Programm, das dir erklärt, was du falsch machst. Es ist eine Entdeckung. Das menschliche Nervensystem hat eine eigene Reihenfolge, in der es sich öffnen kann. Shift Code folgt genau dieser Reihenfolge. Nicht einer Theorie. Nicht einem Konzept. Dem, was biologisch wahr ist.
+Du kennst das Thema. Vielleicht schon dein ganzes Leben.
 
-Deshalb wirkt es dort, wo alles andere nicht durchgekommen ist.
+Du hast es verstanden. Du hast es analysiert. Du hast gelesen, reflektiert, gecoacht, meditiert. Du weißt, wo es herkommt. Du weißt, was dahintersteckt. Und trotzdem: dieselbe Stelle, an der es immer wieder stockt. Dieselbe Schwere. Dasselbe Muster, das so vertraut ist, dass es sich längst anfühlt wie du selbst.
 
-30 Tage lang bekommst du täglich eine kurze Einheit direkt in dein Postfach. Fünf bis zehn Minuten. Kein Login, keine App, kein Aufwand. Einfach öffnen, lesen, fühlen, leben.
+Das liegt nicht an dir.
 
-Du beginnst damit, Sicherheit in deinem Körper herzustellen, weil ohne das nichts Tieferes möglich ist. Du lernst, die Urwunde nicht zu analysieren, sondern sie zu spüren. Nur einmal, kurz, aber wirklich. Du lässt die Energie los, die sich seit Jahren in dir aufgestaut hat. Du verkörperst eine neue Identität, nicht durch Affirmationen die du runterbetst, sondern durch ein Gefühl das du wirklich spürst. Du verankerst das im echten Leben. Und am Ende gibst du dem was war eine neue Bedeutung und findest einen inneren Frieden, der sich anders anfühlt als alles davor.
+Es liegt daran, wo du gesucht hast.
 
-Das ist der Code. Und er war die ganze Zeit in dir.
 
-Shift Code ist für dich, wenn du weißt, dass in dir mehr steckt als das, was du bisher lebst. Wenn du bereit bist, nicht nur zu verstehen, sondern wirklich zu fühlen. Wenn du aufgehört hast auf die nächste Erklärung zu warten.
+---
 
-Es spielt keine Rolle, in welchem Bereich du blockiert bist. Beziehungen, Geld, Gesundheit, Beruf, Selbstwert. Die Methode wirkt, weil sie nicht das Thema löst, sondern das was hinter allen Themen steckt.
 
-Shift Code. 30 Tage. Vollständig automatisiert. Einmalig CHF 97.
+[URSACHE]
 
-Du bekommst sofort Zugang. Tag 1 startet morgen früh in deinem Postfach.
+Blockaden sitzen nicht im Kopf.
 
-Shift Code ersetzt keine Therapie oder medizinische Behandlung. Es ist ein Selbstentwicklungsprogramm für Menschen, die bereit sind tiefer zu gehen.
+Sie sitzen im Körper. Im Nervensystem. In Energie, die sich irgendwann keinen Weg nach draußen finden konnte und seitdem einfach wartet. Manche davon haben sich nicht einmal in deinem eigenen Leben aufgestaut. Du hast sie geerbt. Von einer Mutter, die stark sein musste. Einem Vater, der nicht weinen durfte. Von Generationen, die den Schmerz in sich hineingeschwiegen haben.
 
-Jetzt starten
+Das versteht man. Man liest darüber. Man nickt.
 
-Die Frage ist nicht ob du bereit bist.
-Die Frage ist ob du es dir erlaubst.
+Und trotzdem ändert sich nichts.
+
+Weil Verstehen nicht ausreicht. Das Nervensystem hat andere Regeln.
+
+Kein Seminar löscht das. Kein weiteres Buch. Kein Affirmations-Programm, das dir beibringt, wie du dir täglich sagst wer du bist, während dein System das Gegenteil sendet.
+
+Was sich wirklich verändert, geht über das Fühlen. Präzise, tief und in genau der Reihenfolge, in der das Nervensystem sich öffnen kann.
+
+Das ist keine Theorie. Das ist Biologie.
+
+
+---
+
+
+[WAS SHIFT CODE IST]
+
+Shift Code ist eine Erfindung.
+
+Nicht noch ein Coaching. Nicht noch eine Methode, die erklärt, was du falsch machst. Das erste Programm, das der biologischen Reihenfolge deines Nervensystems folgt — Schritt für Schritt, weil kein Schritt übersprungen werden kann.
+
+Ein System im Alarm lässt keine echte Veränderung zu. Es überlebt. Das ist seine Aufgabe. Deshalb funktionieren Affirmationen nicht, wenn der Körper angespannt ist. Deshalb hilft das Verstehen nicht, wenn das Nervensystem keinen Boden fühlt.
+
+Shift Code beginnt dort: mit Sicherheit. Erst dann geht es tiefer. Weil das die einzige Reihenfolge ist, in der etwas wirklich landet.
+
+Das hat es so noch nicht gegeben.
+
+
+---
+
+
+[DAS PROGRAMM]
+
+30 Tage. Sechs Phasen. Täglich eine kurze Einheit direkt in dein Postfach.
+
+Fünf bis zehn Minuten. Kein Login. Keine App. Nichts zu installieren. Nur du, die Mail und ein paar Minuten für dich.
+
+GROUND — Woche eins. Dein Nervensystem bekommt das, was es braucht, um sich überhaupt zu öffnen: Sicherheit. Ohne das funktioniert alles andere nicht. Das ist der Boden, auf dem der Rest steht.
+
+TRACE — Woche zwei. Du folgst dem Faden zurück. Sanft, nicht aufwühlend. Zu dem Moment, in dem das Muster damals eine Antwort auf etwas war. Nicht um in der Vergangenheit zu wühlen. Sondern um zu verstehen, wo der Code entstanden ist.
+
+RELEASE — Woche drei. Es wird körperlich. Energie, die sich jahrelang festgehalten hat, bekommt endlich einen Weg raus. Das ist keine spirituelle Phrase. Das ist das Nervensystem, das tut, wofür es gebaut wurde.
+
+IMPRINT — Woche vier. Jetzt ist der Boden bereit. Neue Identität, die wirklich landet. Nicht weil du es dir zehnmal täglich sagst. Weil du es fühlst. Im Körper. Wo Prägung entsteht.
+
+ANCHOR — Woche fünf. Du bringst das Neue ins echte Leben. In echte Momente, echte Entscheidungen, echtes Verhalten. Denn Veränderung, die nur in der Stille funktioniert, ist keine Veränderung.
+
+EXPAND — Die letzte Woche. Du gibst dem, was war, einen Sinn. Und findest heraus, wofür dich das vorbereitet hat.
+
+Mit jedem Tag bekommst du ein Tool. Einen eigenen Namen, eine Übung, eine Praxis. Dreißig Tools, die du nach diesen 30 Tagen für immer behältst.
+
+
+---
+
+
+[FÜR WEN]
+
+Für dich, wenn du weißt, dass da mehr ist als das, was du gerade lebst.
+
+Wenn du aufgehört hast zu glauben, dass noch eine Erklärung den Unterschied macht. Wenn du bereit bist zu fühlen statt nur zu denken. Wenn du nicht mehr nur verstehen willst, sondern wirklich ankommen.
+
+Es spielt keine Rolle, in welchem Bereich du blockiert bist. Beziehungen. Geld. Beruf. Selbstwert. Gesundheit. Shift Code löst nicht das Thema. Es löst das, was hinter allen Themen steckt.
+
+
+---
+
+
+[NICHT FÜR WEN]
+
+Wenn du aktuell in psychotherapeutischer Behandlung bist, sprich bitte zuerst mit deiner Therapeutin oder deinem Therapeuten, bevor du beginnst. Shift Code arbeitet tief und ist kein Ersatz für Therapie. Bei akuten psychischen Erkrankungen oder Krisen ist dieser Zeitpunkt nicht der richtige.
+
+
+---
+
+
+[KAUF]
+
+Shift Code. 30 Tage. Einmalig CHF 97.
+
+Du bekommst sofort die Willkommensmail. Tag 1 startet morgen früh in deinem Postfach.
+
+[BUTTON: Jetzt starten]
+
+Die Frage ist nicht, ob du bereit bist.
+Die Frage ist, ob du es dir erlaubst.
+
+
+---
+
+
+[FAQ]
+
+Was wenn ich einen Tag verpasse?
+Das Programm läuft automatisch und wartet auf dich. Wenn du einen Tag verpasst, lies nach und mach weiter. Ein verpasster Tag verändert nichts am Prozess.
+
+Brauche ich eine App oder einen Account?
+Nein. Nur eine E-Mail-Adresse. Alles kommt direkt zu dir.
+
+Ist Shift Code wie Therapie?
+Nein. Shift Code ist ein Selbstentwicklungsprogramm zur Selbstreflexion und persönlichen Entwicklung. Es ersetzt keine Therapie oder medizinische Behandlung.
+
+Für wen ist das Programm nicht geeignet?
+Menschen mit akuten psychischen Erkrankungen, PTSD oder Menschen in therapeutischer Behandlung sollten das Programm nur nach Rücksprache mit einer Fachperson beginnen. Die genauen Kontraindikationen findest du in den AGB.
+
+Was passiert nach 30 Tagen?
+Die täglichen Mails enden. Das Gelernte bleibt. Du behältst alle Tools und das tägliche Ritual, das du in diesen 30 Tagen aufgebaut hast.
+
+Kann ich das Programm zurückgeben?
+Da Shift Code ein digitales Produkt ist und die Lieferung unmittelbar nach dem Kauf beginnt, erlischt das Widerrufsrecht mit deiner Zustimmung beim Kauf. Details findest du in den AGB.
+
+
+---
+
+
+[FOOTER]
+
+© 2026 Petra Tanner — Shift Code. Alle Rechte vorbehalten.
+
+[Impressum] | [Datenschutz] | [AGB]
+
+Shift Code ersetzt keine Therapie oder medizinische Behandlung. Bei ernsthaften psychischen Beschwerden wende dich bitte an eine Fachperson.
