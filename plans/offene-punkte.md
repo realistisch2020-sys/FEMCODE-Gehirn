@@ -20,6 +20,14 @@ Ersten Launch durchführen
 Feedback nach erstem Durchgang sammeln
 
 
+## Offen: Brandfarbe wählen
+
+Zwei Farbwelten als HTML-Vorschau fertig:
+Pflaume (Dunkle Pflaume #4A2836 / Aubergine #5E3848 / Creme): outputs/shift-code-landingpage-pflaume.html
+Petrol (Petrol #124A57 / Dunkles Petrol #1F5E6A / Beige #E8DCC9 / Goldbeige #B89B5E): outputs/shift-code-landingpage-petrol.html
+Entscheidung steht noch aus. Sobald gewählt: Tentary-Seite in dieser Farbe aufbauen.
+
+
 ## Inhalte: alles fertig
 
 Verkaufsseite: outputs/shift-code-verkaufsseite.md
@@ -31,6 +39,8 @@ Protokoll Tag 18–23 (IMPRINT): outputs/SC-protokoll-tag18-23.md
 Protokoll Tag 24–30 (ANCHOR + EXPAND): outputs/SC-protokoll-tag24-30.md
 Rechtsdokumente (Impressum, Datenschutz, AGB, Widerruf): outputs/SC-rechtsdokumente.md
 Technik und Launch-Plan: plans/shift-code-technik-und-launch.md
+Alle 30 Mails als Reader (beide Farbwelten): outputs/shift-code-reader-pflaume.html / shift-code-reader-petrol.html
+Schreibstil-Leitfaden: context/schreibstil.md
 
 
 ## Ideen für später

@@ -1,0 +1,797 @@
+<title>Shift Code — Alle 30 Mails</title>
+<style>
+:root {
+  --bg: #E8DCC9; --surface: #DDD0B8; --text: #0D3640; --muted: #7A8A86;
+  --accent: #1F5E6A; --border: rgba(18,74,87,.12); --act-bg: rgba(31,94,106,.07);
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #071C22; --surface: #0C2A33; --text: #E8DCC9; --muted: #D9C8B2;
+  --accent: #B89B5E; --border: rgba(232,220,201,.08); --act-bg: rgba(184,155,94,.08);
+}}
+:root[data-theme="dark"] {
+  --bg: #071C22; --surface: #0C2A33; --text: #E8DCC9; --muted: #D9C8B2;
+  --accent: #B89B5E; --border: rgba(232,220,201,.08); --act-bg: rgba(184,155,94,.08);
+}
+:root[data-theme="light"] {
+  --bg: #E8DCC9; --surface: #DDD0B8; --text: #0D3640; --muted: #7A8A86;
+  --accent: #1F5E6A; --border: rgba(18,74,87,.12); --act-bg: rgba(31,94,106,.07);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.7}
+a{color:var(--accent);text-decoration:none}
+
+/* TOP NAV */
+.topnav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);padding:.7rem 0;overflow-x:auto;white-space:nowrap}
+.topnav-inner{display:flex;gap:.3rem;padding:0 1.2rem;align-items:center}
+.topnav-title{font-family:Georgia,serif;font-size:.85rem;letter-spacing:.06em;color:var(--text);margin-right:.8rem;flex-shrink:0}
+.phase-link{display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.4rem .8rem;border:1px solid var(--border);color:var(--muted);border-radius:2px;transition:background .15s,color .15s;flex-shrink:0}
+.phase-link:hover,.phase-link.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* LAYOUT */
+.wrap{max-width:680px;margin:0 auto;padding:0 1.2rem 4rem}
+
+/* PHASE HEADER */
+.phase-header{padding:3rem 0 1.5rem;border-bottom:2px solid var(--accent);margin-bottom:2rem}
+.phase-eyebrow{font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.phase-title{font-family:Georgia,serif;font-size:1.6rem;letter-spacing:-.01em}
+.phase-sub{margin-top:.6rem;font-size:.9rem;color:var(--muted);line-height:1.6}
+
+/* DAY CARD */
+.day{margin-bottom:1.5rem;border:1px solid var(--border);background:var(--surface);border-radius:3px;overflow:hidden}
+.day-header{display:flex;align-items:baseline;gap:1rem;padding:1rem 1.3rem .8rem;border-bottom:1px solid var(--border);background:var(--bg)}
+.day-num{font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.day-betreff{font-family:Georgia,serif;font-size:1rem;line-height:1.35}
+.day-body{padding:1.2rem 1.3rem}
+
+/* EMAIL SECTIONS */
+.esec{margin-bottom:1.3rem}
+.esec:last-child{margin-bottom:0}
+.esec-label{font-size:.60rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:.4rem;display:block}
+.esec p{font-size:.9rem;line-height:1.75;color:var(--text)}
+.esec p+p{margin-top:.7em}
+
+/* AKTIVIERUNG BOX */
+.akt-box{background:var(--act-bg);border-left:2px solid var(--accent);padding:.7rem 1rem;margin-bottom:1.3rem;border-radius:0 2px 2px 0}
+.akt-box .esec-label{margin-bottom:.3rem}
+.akt-box p{font-size:.85rem;color:var(--muted);line-height:1.6}
+
+/* TOOL */
+.tool-name{font-family:Georgia,serif;font-style:italic;font-size:1rem;color:var(--accent);margin-bottom:.4rem;display:block}
+
+/* INTEGRATIONSFRAGE */
+.ifrage{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:.8rem 1rem;margin-top:1rem}
+.ifrage .esec-label{margin-bottom:.3rem}
+.ifrage p{font-size:.88rem;font-style:italic;color:var(--muted)}
+
+/* SIGNATURE */
+.sig{margin-top:1rem;padding-top:.8rem;border-top:1px solid var(--border);font-size:.8rem;color:var(--muted);line-height:1.5}
+.sig strong{display:block;color:var(--text)}
+
+/* DISCLAIMER */
+.disclaimer{font-size:.72rem;color:var(--muted);margin-top:.4rem;opacity:.7}
+
+@media(max-width:500px){
+  .day-header{flex-direction:column;gap:.2rem}
+  .day-betreff{font-size:.95rem}
+}
+</style>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <span class="topnav-title">Shift Code</span>
+    <a href="#ground" class="phase-link">Ground</a>
+    <a href="#trace" class="phase-link">Trace</a>
+    <a href="#release" class="phase-link">Release</a>
+    <a href="#imprint" class="phase-link">Imprint</a>
+    <a href="#anchor" class="phase-link">Anchor</a>
+    <a href="#expand" class="phase-link">Expand</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════ GROUND -->
+<div id="ground">
+<div class="phase-header">
+  <p class="phase-eyebrow">Phase 1 · Tag 1–7</p>
+  <h2 class="phase-title">Ground</h2>
+  <p class="phase-sub">Dein Nervensystem bekommt das, was es braucht, um sich überhaupt zu öffnen: Sicherheit</p>
+</div>
+
+<!-- TAG 1 -->
+<article class="day" id="tag-1">
+  <div class="day-header"><span class="day-num">Tag 1</span><h3 class="day-betreff">Bevor wir anfangen</h3></div>
+  <div class="day-body">
+    <div class="akt-box">
+      <span class="esec-label">Aktivierung</span>
+      <p>Leg jetzt die Hand auf dein Herz. Atme ein bis vier. Aus bis sieben. Dreimal. Sag dabei innerlich: Ich bin jetzt sicher. Wenn sich das komisch anfühlt oder du es nicht glaubst, ist das völlig normal. Sag es trotzdem. Dein Nervensystem hört zu, auch wenn dein Kopf zweifelt.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Weißt du, warum so vieles nicht wirkt? Nicht weil du zu wenig gearbeitet hast. Nicht weil du das Falsche probiert hast. Sondern weil fast alles, was angeboten wird, an dem Ort ansetzt, der das Problem gar nicht hält.</p>
+      <p>Blockaden sitzen nicht im Kopf. Sie sitzen im Körper. Im Nervensystem. In der gespeicherten Energie von Momenten, in denen du keine andere Wahl hattest als dich zu schützen.</p>
+      <p>Und ein System, das im Alarm ist, lässt keine echte Veränderung zu. Es überlebt. Punkt. Deshalb beginnen wir hier.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Anker</span>
+      <p>Hand auf Herz. Atem verlängern. Innerlich: Ich bin sicher. Ich bin hier. Ich bin genug. 60 Sekunden. Immer verfügbar. Kein Equipment nötig. Du wirst ihn öfter brauchen als du denkst.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Mikro-Aktion</span>
+      <p>Das nächste Mal heute, wenn du merkst dass du angespannt bist, hältst du kurz inne. Hand auf Herz. Drei Atemzüge. Nicht wenn du Lust hast. Wenn es unbequem wird.</p>
+    </div>
+    <div class="ifrage">
+      <span class="esec-label">Integrationsfrage</span>
+      <p>Wo in deinem Leben fühlst du dich gerade am wenigsten sicher? Nicht denken. Nur spüren.</p>
+    </div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 2 -->
+<article class="day" id="tag-2">
+  <div class="day-header"><span class="day-num">Tag 2</span><h3 class="day-betreff">Dein Körper lügt dich nicht an</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Dein Kopf lügt dich manchmal an. Er redet dir ein, dass alles gut ist, wenn es das nicht ist. Dein Körper macht das nicht. Er zeigt dir immer die Wahrheit. Du musst nur anfangen, hinzuschauen.</p>
+      <p>Manche Menschen spüren Stress als Druck im Bauch. Andere als Enge in der Brust. Manche als Schwere in den Schultern, die einfach nicht weggeht. Das sind keine Zufälle. Das ist Information.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Körper-Kompass</span>
+      <p>Augen zu. Drei Atemzüge. Dann innerlich fragen: Wie geht es dir gerade wirklich? Einfach spüren, was kommt. Wärme, Kälte, Enge, Weite, Ruhe, Unruhe. Nicht bewerten. Nur wahrnehmen.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Frag heute einmal deinen Körper-Kompass. Zwischendurch. Einmal die Augen zu, drei Atemzüge, und spüren was da ist.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was versucht dir dein Körper gerade zu sagen, das du noch nicht wirklich gehört hast?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 3 -->
+<article class="day" id="tag-3">
+  <div class="day-header"><span class="day-num">Tag 3</span><h3 class="day-betreff">60 Sekunden. Ab heute, jeden Morgen</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Dein Nervensystem lernt durch Wiederholung. Nicht durch Einsicht. Nicht durch Verstehen. Durch das Erleben desselben Signals, immer wieder, bis es sicher anfühlt.</p>
+      <p>Wenn du jeden Morgen dasselbe tust, bevor der Tag anfängt, bevor die erste Nachricht reinkommt, sagst du deinem System: Das ist der Beginn von etwas Sicherem. Und langsam fängt es an zu glauben.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Das Shift-Ritual</span>
+      <p>Hand auf Herz oder Bauch. Dreimal lang ausatmen. Innerlich: Ich bin sicher. Ich bin hier. Ich bin genug. Zehn Sekunden im Gefühl bleiben. Nicht denken. Nur spüren. 60 Sekunden. Jeden Morgen. Bevor irgendetwas anderes passiert.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Morgen früh, bevor du dein Telefon nimmst, machst du das Shift-Ritual. Einmal. 60 Sekunden. Alles andere danach.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was wäre anders in deinem Tag, wenn du jeden Morgen mit dir selbst beginnst statt mit dem Telefon?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 4 -->
+<article class="day" id="tag-4">
+  <div class="day-header"><span class="day-num">Tag 4</span><h3 class="day-betreff">Du bist nicht deine Reaktion</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Wenn dein Nervensystem Gefahr wahrnimmt, hat es drei mögliche Reaktionen. Kämpfen. Fliehen. Einfrieren.</p>
+      <p>Kampf zeigt sich als Gereiztheit, Drang zu kontrollieren. Flucht zeigt sich als Ablenkung, Beschäftigt-Sein, Prokrastination. Einfrieren zeigt sich als Taubheit, Erschöpfung, das Gefühl nicht entscheiden zu können. Keine dieser Reaktionen ist falsch. Sie haben dich irgendwann beschützt. Das Problem ist nur, dass dein System sie auch dort einsetzt, wo keine echte Gefahr ist.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Das Reaktionsmuster</span>
+      <p>Wenn du das nächste Mal merkst, dass du reagierst und es sich zu groß anfühlt für die Situation, halt kurz inne: Kämpfe ich gerade? Fliehe ich? Friere ich ein? Nur benennen. Nicht bewerten. Den Anker einsetzen. Das Benennen allein nimmt dem Muster schon Kraft.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Beobachte heute, welches Muster bei dir am häufigsten auftaucht. Nur beobachten. Kein Verändern nötig.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>In welchem Bereich deines Lebens reagierst du am stärksten? Was könnte das über das erzählen, was da drunter liegt?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 5 -->
+<article class="day" id="tag-5">
+  <div class="day-header"><span class="day-num">Tag 5</span><h3 class="day-betreff">Die härteste Stimme im Raum bist oft du selbst</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Die meisten Menschen haben eine innere Stimme, die sie auf eine Art behandelt, für die sie sich bei niemandem sonst entscheiden würden. Diese Stimme ist überzeugt, dass sie dich vorwärtstreibt. Aber Strenge gegenüber sich selbst erschöpft das Nervensystem. Mitgefühl mit sich selbst reguliert es.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Freund-Spiegel</span>
+      <p>Wenn du dich gerade schlecht behandelst, stell dir vor, ein guter Freund stünde vor dir und würde genau das durchmachen, was du gerade durchmachst. Was würdest du ihm sagen? Sag dir genau das.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Erwisch dich heute einmal dabei, wie du hart mit dir bist. Dann hol den Freund-Spiegel raus. Einen Satz. Das reicht.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was würde sich verändern, wenn du dir gegenüber so viel Geduld hättest wie gegenüber einem Menschen, den du wirklich liebst?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 6 -->
+<article class="day" id="tag-6">
+  <div class="day-header"><span class="day-num">Tag 6</span><h3 class="day-betreff">Was sich diese Woche schon verändert hat, auch wenn du es nicht merkst</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher. Dieses Mal: Sag es und mein es. Auch wenn nur ein bisschen.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Jedes Mal wenn du den Anker einsetzt, schreibst du eine neue Erfahrung ins System. Eine Erfahrung, die sagt: Wenn es eng wird, gibt es eine andere Möglichkeit als Alarm. Das braucht Zeit. Aber es funktioniert. Und du bist seit sechs Tagen dabei.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Innere Zeuge</span>
+      <p>Der Innere Zeuge ist ein Teil von dir, der beobachtet ohne einzugreifen. Der sieht, was passiert, ohne sofort zu bewerten. Wenn das Reaktionsmuster auftaucht, sieht er es. Wenn die harte Stimme kommt, bemerkt er es. Beobachten ist die erste Form von Freiheit.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Einmal heute den Inneren Zeugen aktivieren. Eine Situation aus leichtem Abstand betrachten. Was siehst du, wenn du nicht mitten drin bist?</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was hast du in dieser Woche über dich herausgefunden, das du vorher nicht wirklich gesehen hast?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 7 -->
+<article class="day" id="tag-7">
+  <div class="day-header"><span class="day-num">Tag 7</span><h3 class="day-betreff">Eine Woche. Und jetzt?</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Diese erste Woche hatte einen einzigen Zweck: deinem Nervensystem zu zeigen, dass es hier sicher ist. Nicht heilen. Nicht transformieren. Nur: Sicherheit etablieren. Denn ohne das öffnet sich nichts Tiefes. Kein echtes Fühlen. Kein echtes Loslassen. Keine echte Neuprägung.</p>
+      <p>Ab nächster Woche gehen wir tiefer. Wir kommen dem näher, was dich wirklich hält. Nicht um es aufzureißen. Sondern um es endlich wirklich anzuschauen.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Wochencheck</span>
+      <p>Am Ende jeder Woche: drei Atemzüge. Dann drei Fragen. Was war diese Woche leichter als letzte Woche? Was hat mich diese Woche überrascht? Was will ich nächste Woche anders machen? Nicht analysieren. Einfach kommen lassen was kommt.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Mach den Wochencheck heute. Jetzt oder heute Abend. Drei Fragen. Was kommt?</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Wenn dein Körper dir einen Satz über diese Woche sagen könnte, was wäre das?</p></div>
+    <div class="sig"><strong>Bis nächste Woche. Die wird anders.</strong><br><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+</div>
+
+<!-- ═══════════════════════════════════════════ TRACE -->
+<div id="trace">
+<div class="phase-header">
+  <p class="phase-eyebrow">Phase 2 · Tag 8–12</p>
+  <h2 class="phase-title">Trace</h2>
+  <p class="phase-sub">Du folgst dem Faden zurück — sanft, nicht aufwühlend — zu dem Moment, in dem das Muster entstand</p>
+</div>
+
+<!-- TAG 8 -->
+<article class="day" id="tag-8">
+  <div class="day-header"><span class="day-num">Tag 8</span><h3 class="day-betreff">Wir gehen jetzt dorthin, wo es sitzt</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher. Dein Nervensystem kennt das jetzt. Es weiß: danach kommt etwas Wichtiges. Und es ist sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Alles, was dich heute hält, hat irgendwann angefangen. Nicht als Charakter-Eigenschaft. Als eine Antwort auf etwas, das passiert ist. Als ein Muster, das sich einmal bewährt hat und deshalb geblieben ist.</p>
+      <p>Diese Woche folgen wir diesem Faden. Sanft. Nicht um in der Vergangenheit zu wühlen. Sondern um zu verstehen, wo der Code entstanden ist.</p>
+      <p>Hinweis: Die Arbeit dieser Woche kann starke Gefühle hochbringen. Das ist normal und gut. Wenn du dich überfordert fühlst, pausiere und hol dir Unterstützung. Telefonseelsorge: Deutschland 0800 111 0 111, Österreich 142, Schweiz 143.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Ursprungs-Faden</span>
+      <p>Wenn ein Gefühl oder ein Muster auftaucht, das dich beschäftigt, stell dir vor, du hältst einen Faden in der Hand. Dieser Faden führt zurück zu seinem Ursprung. Du musst nicht wissen wo er endet. Du folgst ihm einfach mit einem Atemzug, mit einem offenen Moment.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Denk heute an etwas, das dich immer wieder beschäftigt. Halt den Ursprungs-Faden. Lass kommen was kommt, auch wenn es nichts ist.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was ist das Thema, das dich am längsten begleitet? Nicht die Situation. Das Gefühl dahinter.</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 9 -->
+<article class="day" id="tag-9">
+  <div class="day-header"><span class="day-num">Tag 9</span><h3 class="day-betreff">Eine Frage. Aber nicht irgendeine</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Denk an ein Gefühl, das dich immer wieder besucht. Vielleicht ist es das Gefühl, nicht gut genug zu sein. Vielleicht Einsamkeit. Vielleicht das Gefühl, unsichtbar zu sein. Und dann frag dich ganz ruhig: Wann habe ich mich das erste Mal so gefühlt? Nicht analysieren. Nur lauschen.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Die Eine Frage</span>
+      <p>Wann habe ich mich das erste Mal so gefühlt? Sie öffnet eine Tür, die meistens geschlossen bleibt. Du kannst sie immer einsetzen, wenn du merkst, dass eine Emotion größer ist als die aktuelle Situation sie rechtfertigt. Die Antwort muss nicht sofort kommen.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Stell dir Die Eine Frage heute einmal. Für ein Thema, das dich gerade beschäftigt. Dann lass los und vertrau darauf, dass etwas kommt.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was war das Erste, das aufgetaucht ist als du Die Eine Frage gestellt hast?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 10 -->
+<article class="day" id="tag-10">
+  <div class="day-header"><span class="day-num">Tag 10</span><h3 class="day-betreff">Nicht die Geschichte. Das Gefühl</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Hinter jeder Geschichte steckt ein Kern. Ein einziges, einfaches, tiefes Gefühl. Nicht die Details. Nicht wer was gesagt hat. Das Gefühl, das darunter liegt. Ablehnung. Scham. Einsamkeit. Das Gefühl zu klein zu sein.</p>
+      <p>Dieser Kern ist das, was im Nervensystem sitzt. Nicht die Geschichte. Deshalb hilft das Erzählen der Geschichte nur begrenzt weiter. Wenn du den Kern berührst, ohne darin zu ertrinken, beginnt sich wirklich etwas zu lösen.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Kern</span>
+      <p>Wenn ein Thema dich beschäftigt: nimm die Geschichte raus. Lass die Personen, die Ereignisse, die Vorwürfe beiseite. Was bleibt? Welches einzige Gefühl bleibt, wenn du alles andere weglässt? Leg die Hand dorthin, wo du es im Körper spürst. Ein Atemzug.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Nimm heute ein Thema und finde seinen Kern. Einen Atemzug bei dem Gefühl. Nicht mehr.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was ist der Kern hinter dem, was dich am meisten beschäftigt? Wenn du es auf ein einziges Wort reduzieren müsstest, welches wäre das?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 11 -->
+<article class="day" id="tag-11">
+  <div class="day-header"><span class="day-num">Tag 11</span><h3 class="day-betreff">Vielleicht trägst du etwas, das nicht deins ist</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Epigenetische Forschung zeigt: traumatische Erfahrungen können über Generationen weitergegeben werden. Nicht nur als Verhalten, das man beobachtet hat. Sondern im Körper. In der Biologie. Deine Großmutter, die nie über ihren Schmerz sprechen durfte. Dein Großvater, der im Krieg gelernt hat, nicht zu fühlen. Das alles kann in dir sein. Als dein Thema. Als dein Muster. Aber es muss nicht deins bleiben.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Das Erbe</span>
+      <p>Wenn du ein Thema in dir spürst, das sich sehr alt anfühlt, sag innerlich: Das gehört vielleicht nicht nur mir. Ich anerkenne, wer es vor mir getragen hat. Und ich gebe zurück, was nicht mein Weg ist. Mit Respekt und Mitgefühl. Du lehnst die Menschen nicht ab. Du lehnst nur das Muster ab, das nicht mehr gebraucht wird.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Denk an ein Muster in dir und frag dich: Kenne ich das auch von jemandem in meiner Familie? Wenn ja: Das Erbe einsetzen. Einmal, innerlich, langsam.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was in dir könnte älter sein als du selbst?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 12 -->
+<article class="day" id="tag-12">
+  <div class="day-header"><span class="day-num">Tag 12</span><h3 class="day-betreff">Das Schwierigste und Wirksamste zugleich</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Was du bekämpfst, wächst. Das ist keine spirituelle Phrase. Das ist Nervensystem-Biologie. Was passiert wenn du dagegen ankämpfst: Das Muster wird stabiler. Was passiert wenn du es anerkennst: Der Widerstand sinkt. Und im gesunkenen Widerstand beginnt Veränderung.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Die Annahme</span>
+      <p>Leg eine Hand auf dein Herz. Denk an das Muster, das du am liebsten loswerden möchtest. Und sag innerlich: Ich sehe dich. Du hast mich irgendwann beschützt. Dafür danke ich dir. Ich brauche dich nicht mehr auf diese Weise. Kein Abfinden mit dem Muster. Sondern das Aufhören zu kämpfen.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Setz Die Annahme heute für ein Muster ein, das dich nervt. Einmal. Langsam. Lass die Worte wirklich ankommen.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Wieviel Energie verwendest du täglich darauf, gegen Teile von dir anzukämpfen?</p></div>
+    <div class="sig"><strong>Bis morgen. Nächste Woche wird physisch.</strong><br><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+</div>
+
+<!-- ═══════════════════════════════════════════ RELEASE -->
+<div id="release">
+<div class="phase-header">
+  <p class="phase-eyebrow">Phase 3 · Tag 13–17</p>
+  <h2 class="phase-title">Release</h2>
+  <p class="phase-sub">Energie, die sich jahrelang festgehalten hat, bekommt endlich einen Weg raus</p>
+</div>
+
+<!-- TAG 13 -->
+<article class="day" id="tag-13">
+  <div class="day-header"><span class="day-num">Tag 13</span><h3 class="day-betreff">Jetzt wird es körperlich</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Blockaden sind keine abstrakten Konzepte. Sie sind Energie. Physikalisch gespeicherte Energie in deinem Körper und Nervensystem, die irgendwann keinen Ausweg hatte. Diese Energie ist noch da. Sie geht nicht weg, nur weil man darüber nachdenkt. Sie braucht einen Weg raus. Diese Woche zeige ich dir diesen Weg.</p>
+      <p>Hinweis: Die körperbasierten Übungen in Woche drei können intensive Reaktionen auslösen. Weinen, Zittern, starke Gefühle — das ist alles in Ordnung. Wenn du dich aber nicht mehr selbst regulieren kannst, pausiere und hol dir Unterstützung. Telefonseelsorge: Deutschland 0800 111 0 111, Österreich 142, Schweiz 143.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Das Energie-Bild</span>
+      <p>Stell dir vor, das was dich hält, ist wie eine Welle, die aufgestaut wurde und nie brechen durfte. Wellen, die brechen dürfen, hören auf. Wellen, die aufgestaut werden, bauen Druck auf. Wenn du heute in deinem Körper Druck, Enge oder Schwere spürst, sag innerlich: Du darfst dich bewegen. Du musst nicht mehr still sein.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Leg heute einmal bewusst die Hand auf eine Stelle in deinem Körper, die sich angespannt anfühlt. Ein Atemzug. Das Energie-Bild. Erlaubnis geben.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Wo im Körper trägst du am meisten? Und wie lange schon?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 14 -->
+<article class="day" id="tag-14">
+  <div class="day-header"><span class="day-num">Tag 14</span><h3 class="day-betreff">Tiere wissen, was wir verlernt haben</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Menschen haben das Zittern verlernt. Wir kontrollieren. Wir halten. Wir sagen: Reiß dich zusammen. Und die Energie bleibt. Zittern, Schütteln, Weinen — das ist nicht Schwäche. Das ist dein Körper, der genau das tut, was er tun soll.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Das Zittern</span>
+      <p>Steh auf. Schüttel deine Hände aus. Dann die Arme. Dann die Schultern. Dann den ganzen Körper. Einfach so. Ohne Ziel. Ohne Technik. Zwei Minuten. Wenn Emotionen kommen, lass sie. Wenn gar nichts kommt, ist das auch gut. Das Zittern wirkt auch dann.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Zwei Minuten das Zittern. Irgendwo heute, wo du kurz allein bist.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was ist passiert, als du das gemacht hast? Im Körper. Nicht im Kopf.</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 15 -->
+<article class="day" id="tag-15">
+  <div class="day-header"><span class="day-num">Tag 15</span><h3 class="day-betreff">Ein Nerv, der alles verändert</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Der Vagusnerv ist der Nerv der Ruhe. Er verbindet Gehirn und Körper, er reguliert Herzschlag, Atmung, Verdauung. Wenn er aktiv ist, ist dein System in Sicherheit. Das Geniale: du kannst ihn absichtlich aktivieren. Nicht durch Gedanken. Durch Atem. Langes Ausatmen mit Ton stimuliert den Vagusnerv direkt. Messbar. Sofort.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Vagus-Atem</span>
+      <p>Such dir einen Moment, in dem du kurz allein bist. Atme tief ein. Dann atme aus, so lang du kannst, durch den Mund, mit Ton. Seufzen, Stöhnen, Blasen — was auch immer kommt. Mach das zehnmal. Viele Menschen spüren dabei wie sich etwas im Bauch oder in der Brust öffnet.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Heute: Der Vagus-Atem. Zehnmal. Irgendwo, wo niemand zuhört.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was hat sich nach dem Vagus-Atem verändert? Auch wenn es nur ein bisschen war.</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 16 -->
+<article class="day" id="tag-16">
+  <div class="day-header"><span class="day-num">Tag 16</span><h3 class="day-betreff">Danach ist es anders. Wirklich</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Wenn Energie fließt, sinkt der Stresspegel. Muskeln, die sich jahrelang festgehalten haben, lockern sich. Gedanken, die vorher eng und kreisend waren, werden weiter. Manchmal kommt danach eine Ruhe, die sich fremd anfühlt, weil man sie so lange nicht gespürt hat. Das ist kein spirituelles Phänomen. Das ist dein Körper, der tut, wofür er gebaut wurde.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Fluss</span>
+      <p>Wenn du nach einer Release-Übung bemerkst, dass irgendetwas leichter ist, auch nur ein bisschen, halt kurz inne. Leg die Hand auf die Stelle im Körper, die sich verändert hat. Sag innerlich: Das ist, wie es sein darf. Ich erlaube mir das. Das verankert die Veränderung im Körper.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Nach der nächsten Release-Übung: Den Fluss einsetzen. Kurz nachspüren, Hand drauflegen, Erlaubnis geben.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was ist in dieser Woche leichter geworden, auch wenn du es kaum beschreiben kannst?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 17 -->
+<article class="day" id="tag-17">
+  <div class="day-header"><span class="day-num">Tag 17</span><h3 class="day-betreff">Jetzt brauchst du Stille</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Integration ist nicht nichts tun. Integration ist aktiv ankommen lassen, was passiert ist. Dem neuen Zustand erlauben sich zu setzen, bevor der Alltag ihn wieder überschreibt. Ohne das bleibt vieles ein schönes Erlebnis. Aber kein bleibender Shift.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Die Stille Danach</span>
+      <p>Wann immer du etwas tief Empfundenes erlebt hast, gönn dir danach zehn Minuten Stille. Kein Telefon. Kein Input. Nur du und das, was gerade passiert ist. Die Stille Danach ist der Unterschied zwischen einer Erfahrung und einer wirklichen Veränderung.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Heute Abend: Zehn Minuten Die Stille Danach. Für alles, was diese Woche in dir passiert ist.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was willst du aus dieser Woche mitnehmen? Was darf bleiben?</p></div>
+    <div class="sig"><strong>Bis nächste Woche. Wir gehen in die Neuprägung.</strong><br><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+</div>
+
+<!-- ═══════════════════════════════════════════ IMPRINT -->
+<div id="imprint">
+<div class="phase-header">
+  <p class="phase-eyebrow">Phase 4 · Tag 18–23</p>
+  <h2 class="phase-title">Imprint</h2>
+  <p class="phase-sub">Neue Identität, die wirklich landet. Nicht weil du es dir sagst. Weil du es fühlst</p>
+</div>
+
+<!-- TAG 18 -->
+<article class="day" id="tag-18">
+  <div class="day-header"><span class="day-num">Tag 18</span><h3 class="day-betreff">Jetzt. Nicht früher, nicht später. Jetzt</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Neue Identität auf ein unreguliertes Nervensystem aufzusetzen, ist wie Farbe auf nasse Wand. Es hält nicht. Du sagst dir zehnmal am Tag, dass du genug bist. Dein Körper sendet das Gegenteil. Das System gewinnt immer.</p>
+      <p>Du aber hast drei Wochen anders gearbeitet. Dein Nervensystem ist ruhiger. Du hast Energie losgelassen. Jetzt ist der richtige Moment für Neuprägung. Weil dein Boden tatsächlich bereit ist.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Richtige Moment</span>
+      <p>Immer wenn du merkst, dass du dich in einem ruhigen Zustand befindest — nach dem Shift-Ritual, nach dem Vagus-Atem, nach einem Moment der Stille — ist das dein Fenster. In diesen Momenten ist dein Nervensystem empfänglich. Was du dort denkst und fühlst, prägt sich tiefer ein. Nutze diese Fenster bewusst.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Heute nach der Aktivierung: Eine Minute im Zustand der Ruhe bleiben und bewusst spüren, wie es sich anfühlt, ruhig zu sein. Nicht analysieren. Nur sein.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Wie fühlt sich Ruhe in deinem Körper an? Kannst du sie beschreiben?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 19 -->
+<article class="day" id="tag-19">
+  <div class="day-header"><span class="day-num">Tag 19</span><h3 class="day-betreff">Wer wärst du ohne diese Geschichte?</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Die alte Geschichte sagt vielleicht: Ich bin jemand, der kämpfen muss. Oder: Ich komme immer zu kurz. Oder: Ich bin jemand, der nicht gesehen wird. Diese Geschichten sind nicht wahr. Sie waren einmal eine Antwort auf etwas. Aber sie sind nicht du.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Das Neue Ich</span>
+      <p>Wenn ein Wort oder ein Gefühl kommt als Antwort auf die Frage, halt es fest. Ruhig. Frei. Weit. Leicht. Sicher. Was auch immer es ist: Das ist Das Neue Ich. Nicht als Ziel irgendwann. Als Möglichkeit jetzt. Schreib das Wort auf. Es wird in den nächsten Tagen dein Kompass.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Stell dir heute die Frage. Lass los. Schreib auf, was kommt, auch wenn es nur eine Ahnung ist.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Wer wärst du ohne diese Geschichte?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 20 -->
+<article class="day" id="tag-20">
+  <div class="day-header"><span class="day-num">Tag 20</span><h3 class="day-betreff">Nicht denken. Fühlen</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Ein gedachtes Wort bleibt im Kopf. Ein gefühltes Wort landet im Körper. Und nur was im Körper landet, verändert nachhaltig etwas. Setz dich hin. Augen zu. Drei tiefe Ausatmungen. Dann bring dir dein Wort ins Bewusstsein und frag dich: Wie würde sich mein Körper anfühlen, wenn das meine Wahrheit wäre? Lass ein Bild entstehen. Eine Wärme. Eine Weite. Bleib zwei Minuten dort.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Das Gefühl Zuerst</span>
+      <p>Gefühl vor Gedanke. Immer. Wenn du eine Neuprägung willst, erst fühlen, dann denken. Erst den Zustand im Körper herstellen, dann die Worte kommen lassen. Das Gefühl Zuerst ist eine Praxis, die du ab heute bewusst einsetzen kannst. Nicht nur bei Shift Code. Im Leben.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Heute die Übung von oben. Dein Wort, dein Körpergefühl, zwei Minuten.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was hat sich in deinem Körper verändert, als du das Gefühl zuerst kommen gelassen hast?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 21 -->
+<article class="day" id="tag-21">
+  <div class="day-header"><span class="day-num">Tag 21</span><h3 class="day-betreff">Dein Gehirn baut gerade etwas Neues</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Wenn du dir ein Gefühl vorstellst und es wirklich im Körper spürst, beginnt dein Gehirn neue neuronale Verbindungen zu bauen. Das nennt sich Neuroplastizität. Dasselbe Wort, das du fühlst während dein Körper entspannt ist, verändert Strukturen im Gehirn. Deshalb haben die letzten drei Wochen Sinn gemacht. Erst Sicherheit. Erst Loslassen. Jetzt Neuprägung. In genau dieser Reihenfolge.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Die Neue Bahn</span>
+      <p>Jeden Tag, für den Rest dieser 30 Tage: Dein Wort, dein Körpergefühl, zwei Minuten. Du bahnst dir täglich neu ein Muster im Nervensystem, bis es sich natürlicher anfühlt als das alte. Es braucht Wiederholung. Aber keine Anstrengung.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Heute wieder: Dein Wort, dein Gefühl, zwei Minuten. Die Neue Bahn.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was wäre anders in deinem Leben, wenn das neue Gefühl so vertraut wäre wie das alte Muster?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 22 -->
+<article class="day" id="tag-22">
+  <div class="day-header"><span class="day-num">Tag 22</span><h3 class="day-betreff">Heute gehst du nach draußen damit</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Identität verändert sich nicht nur in der Stille. Sie verändert sich in dem Moment, in dem du dich anders verhältst als bisher. Nicht groß. Nicht perfekt. Nicht dauerhaft. Einmal heute. Einen Moment, in dem du dich so verhältst wie die Person, die du sein willst. Das sagt deinem Nervensystem: Es ist sicher, anders zu sein.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Erste Schritt Nach Draussen</span>
+      <p>Ein Verhalten, einmal, heute, bewusst anders. Nicht die Transformation. Der erste echte Ausdruck davon.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Such heute einen Moment, in dem du einen winzigen Schritt als die neue Version von dir machst. Und dann spür danach, wie sich das anfühlt.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Wie hat es sich angefühlt, für einen Moment die neue Version von dir zu sein?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 23 -->
+<article class="day" id="tag-23">
+  <div class="day-header"><span class="day-num">Tag 23</span><h3 class="day-betreff">Wer bist du jetzt?</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Wer bist du jetzt? Nicht im Vergleich zu wer du sein möchtest. Nicht im Vergleich zu anderen. Nicht auf dem Papier. Wer bist du heute, in diesem Moment, nach allem was du in diesen Wochen gespürt, losgelassen, anerkannt und neu gefühlt hast? Das ist keine Prüfungsfrage. Es gibt keine richtige Antwort. Aber es gibt deine Antwort.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Spiegel</span>
+      <p>Schreib dir einen ehrlichen Satz. Nicht schön. Nicht perfekt. Nur wahr. Ich bin jemand, der... Das ist Dein Spiegel. Er zeigt dir, wer du gerade bist, nicht wer du warst.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Den Spiegel heute einsetzen. Einen Satz. Aufschreiben. Nur für dich.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was ist der ehrlichste Satz, den du heute über dich sagen kannst?</p></div>
+    <div class="sig"><strong>Bis morgen. Letzte Woche beginnt.</strong><br><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+</div>
+
+<!-- ═══════════════════════════════════════════ ANCHOR -->
+<div id="anchor">
+<div class="phase-header">
+  <p class="phase-eyebrow">Phase 5 · Tag 24–27</p>
+  <h2 class="phase-title">Anchor</h2>
+  <p class="phase-sub">Du bringst das Neue ins echte Leben — in echte Momente, echte Entscheidungen, echtes Verhalten</p>
+</div>
+
+<!-- TAG 24 -->
+<article class="day" id="tag-24">
+  <div class="day-header"><span class="day-num">Tag 24</span><h3 class="day-betreff">Ohne das hier bleibt alles ein schönes Erlebnis</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Veränderung, die nur in der Stille funktioniert, ist keine Veränderung. Dann kommt der Alltag. Das erste schwierige Gespräch. Der Moment, in dem jemand deine Grenze testet. Und dann zeigt sich, ob etwas wirklich angekommen ist. Nicht als Test. Als Möglichkeit. Diese Woche geht es darum, den Shift ins echte Leben zu bringen.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Alltags-Test</span>
+      <p>Wenn du heute in eine Situation kommst, die früher das alte Muster ausgelöst hätte, halt kurz inne. Einen Atemzug. Und dann frag dich: Wie würde die neue Version von mir jetzt reagieren? Nicht perfekt. Nur anders als bisher.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Heute auf den Alltags-Test warten. Und wenn er kommt, einen Atemzug und die Frage.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was ist die Situation in deinem Leben, die deinen Shift am stärksten auf die Probe stellen wird?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 25 -->
+<article class="day" id="tag-25">
+  <div class="day-header"><span class="day-num">Tag 25</span><h3 class="day-betreff">Eine Entscheidung. Heute</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Eine Entscheidung macht etwas mit dem Körper, das eine Absicht nicht macht. Sie gibt dem System einen neuen Orientierungspunkt. Wenn du eine Entscheidung triffst und sie in die Welt bringst, indem du sie aufschreibst, sie laut aussprichst, sie wirklich meinst, dann beginnt etwas. Die Entscheidung muss nicht groß sein. Sie muss nur wahr sein.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Die Entscheidung</span>
+      <p>Triff heute eine Entscheidung. Eine echte. Schreib sie auf. Sag sie laut, auch wenn du allein bist. Und spür, wie sich das in deinem Körper anfühlt. Sie ist dein nächster Ankerpunkt im echten Leben.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Eine Entscheidung. Aufschreiben. Laut aussprechen. Spüren.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was ist die Entscheidung, die schon lange auf dich wartet?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 26 -->
+<article class="day" id="tag-26">
+  <div class="day-header"><span class="day-num">Tag 26</span><h3 class="day-betreff">Heute verhältst du dich anders</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Jedes Mal, wenn du dich anders verhältst als bisher, entsteht etwas Neues in deinem Gehirn. Neue Verhaltensweisen bauen neue neuronale Bahnen. Mit der Zeit wird das neue Verhalten so vertraut wie das alte. Nicht weil du disziplinierter bist, sondern weil es sich verankert hat. Nimm die Entscheidung von gestern. Und tue heute einmal genau das.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Das Neue Verhalten</span>
+      <p>Ein konkretes Verhalten, einmal, heute, anders als bisher. Nicht die endgültige Transformation. Das nächste echte Mal, in dem du die neue Version von dir lebst.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Die Entscheidung von gestern heute einmal leben. Einmal reicht.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Wie hat es sich angefühlt, als du es gemacht hast? Was hat dein Körper dabei gesagt?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 27 -->
+<article class="day" id="tag-27">
+  <div class="day-header"><span class="day-num">Tag 27</span><h3 class="day-betreff">Zwei Dinge. Mehr braucht es nicht</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Es gibt zwei Dinge, die ausreichen. Das Shift-Ritual, jeden Morgen, 60 Sekunden. Und die Entscheidung von Tag 25, die du jeden Tag einmal lebst. Mehr braucht es nicht. Kein Programm. Kein Aufwand. Keine Stunde täglich. Nur diese beiden Dinge, die du schon kannst und die du ab jetzt mit dir nimmst.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Die Zwei-Dinge-Regel</span>
+      <p>Das Shift-Ritual, jeden Morgen, 60 Sekunden. Und die eine Entscheidung von Tag 25, jeden Tag einmal. Das ist alles. Das einfachste und dauerhafteste Werkzeug, das du aus diesen 30 Tagen mitnimmst.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Heute beide Dinge einsetzen: das Ritual und die Entscheidung. Und spüren, wie sich das zusammen anfühlt.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was braucht es, damit diese beiden Dinge in deinen Alltag passen?</p></div>
+    <div class="sig"><strong>Bis morgen. Die letzte Woche beginnt.</strong><br><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+</div>
+
+<!-- ═══════════════════════════════════════════ EXPAND -->
+<div id="expand">
+<div class="phase-header">
+  <p class="phase-eyebrow">Phase 6 · Tag 28–30</p>
+  <h2 class="phase-title">Expand</h2>
+  <p class="phase-sub">Du gibst dem, was war, einen Sinn. Und findest heraus, wofür dich das vorbereitet hat</p>
+</div>
+
+<!-- TAG 28 -->
+<article class="day" id="tag-28">
+  <div class="day-header"><span class="day-num">Tag 28</span><h3 class="day-betreff">Diese Wunde war kein Fehler</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Alles, was du durchgemacht hast, hatte einen Sinn. Nicht weil Schmerz schön ist. Sondern weil du durch das, was dich gehalten hat, zu dem Menschen wurdest, der du heute bist. Mit deiner Tiefe. Mit deiner Empathie. Mit dem Verständnis, das du für andere hast, weil du weißt, wie es sich anfühlt.</p>
+      <p>Das ist kein Auftrag, dankbar für den Schmerz zu sein. Es ist nur eine Einladung zu fragen, was diese Erfahrung in dir gebaut hat, das jetzt tatsächlich wertvoll ist.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Sinn</span>
+      <p>Wenn ein schweres Thema in dir aufsteigt, frag dich ruhig: Was hat mich das gelehrt, das ich sonst nie so tief gewusst hätte? Er dreht den Blickwinkel. Nicht weg vom Schmerz. Hin zu dem, was aus ihm gewachsen ist.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Denk heute an etwas, das schwer war. Und frag dich einmal: Was habe ich dadurch verstanden, das andere vielleicht nicht so tief verstehen?</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was hat dich das Schwerste in deinem Leben gelehrt, das dir heute wirklich weiterhilft?</p></div>
+    <div class="sig"><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 29 -->
+<article class="day" id="tag-29">
+  <div class="day-header"><span class="day-num">Tag 29</span><h3 class="day-betreff">Wofür hat dich das vorbereitet?</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Manchmal finden Menschen bei dieser Frage die klarste Antwort auf das, was sie in der Welt tun wollen. Weil genau das, was uns am tiefsten bewegt hat, uns auch am tiefsten versteht. Das ist kein Muss. Nicht jeder Schmerz braucht einen Auftrag. Aber wenn du spürst, dass da eine Antwort wartet, lass sie kommen.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Die Vorbereitung</span>
+      <p>Wenn du an dein schwerstes Thema denkst und dann fragst: Wen verstehe ich dadurch, den andere vielleicht nicht so verstehen? Das zeigt dir, wofür dein Weg dich geübt hat.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Schreib heute auf, was kommt, wenn du fragst: Wofür hat dich das vorbereitet? Auch wenn es klein klingt.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Wen könntest du durch das, was du erlebt hast, auf eine Weise verstehen, die jemand ohne diesen Weg nicht kann?</p></div>
+    <div class="sig"><strong>Bis morgen. Zum letzten Tag.</strong><br><strong>Petra</strong><span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span></div>
+  </div>
+</article>
+
+<!-- TAG 30 -->
+<article class="day" id="tag-30">
+  <div class="day-header"><span class="day-num">Tag 30</span><h3 class="day-betreff">Der Code war immer in dir</h3></div>
+  <div class="day-body">
+    <div class="akt-box"><span class="esec-label">Aktivierung</span><p>Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal. Ich bin jetzt sicher.</p></div>
+    <div class="esec">
+      <span class="esec-label">Kern</span>
+      <p>Du bist noch hier. Dreißig Tage. Das klingt einfach. Aber du weißt, was dahintersteckt.</p>
+      <p>Du hast gespürt, was lange nicht gespürt werden durfte. Du hast anerkannt, was da ist, ohne es sofort wegzumachen. Du hast Energie freigesetzt, die sich jahrelang festgehalten hatte. Du hast neue Gefühle im Körper verankert und angefangen, dich anders zu verhalten.</p>
+      <p>Das war nicht ich. Ich habe dir Werkzeuge gegeben. Den Rahmen. Den Weg. Aber du hast gegangen.</p>
+    </div>
+    <div class="esec">
+      <span class="esec-label">Tool des Tages</span>
+      <span class="tool-name">Der Code</span>
+      <p>Wenn du je wieder merkst, dass du nicht weiterkommst, weißt du, was zu tun ist. Dem Körper zuerst Sicherheit geben. Dem Gefühl folgen statt der Geschichte. Energie freigeben lassen. Neu fühlen, was du sein willst. Im echten Leben verkörpern, was in der Stille begonnen hat. Das ist Der Code. Er gehört dir jetzt. Für immer.</p>
+    </div>
+    <div class="esec"><span class="esec-label">Mikro-Aktion</span><p>Heute das Shift-Ritual. Zum dreißigsten Mal. Und dann spüren, was anders ist als an Tag eins.</p></div>
+    <div class="ifrage"><span class="esec-label">Integrationsfrage</span><p>Was nimmst du aus diesen 30 Tagen mit, das du nicht mehr loswerden willst?</p></div>
+    <div class="sig">
+      <strong>Der Code war immer in dir. Du hast ihn nur gerade zum ersten Mal wirklich gelesen.</strong><br>
+      <strong>Das hier ist nicht das Ende. Es ist der Anfang davon, dass du weißt, wie du dich selbst liest.</strong><br><br>
+      <strong>Danke, dass du dabei warst. Wirklich.</strong><br>
+      <strong>Petra</strong>
+      <span class="disclaimer">Shift Code ersetzt keine Therapie oder medizinische Behandlung.</span>
+    </div>
+  </div>
+</article>
+</div>
+
+</div><!-- /wrap -->
+
+<script>
+// Highlight active phase in nav on scroll
+var phases = ['ground','trace','release','imprint','anchor','expand'];
+var links = {};
+phases.forEach(function(p){ links[p] = document.querySelector('a[href="#'+p+'"]'); });
+function onScroll(){
+  var scrollY = window.scrollY + 120;
+  var active = phases[0];
+  phases.forEach(function(p){
+    var el = document.getElementById(p);
+    if(el && el.offsetTop <= scrollY) active = p;
+  });
+  phases.forEach(function(p){
+    if(links[p]) links[p].classList.toggle('active', p === active);
+  });
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+</script>
