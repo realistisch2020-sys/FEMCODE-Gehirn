@@ -1,19 +1,21 @@
 # Offene Punkte
 
 
-## Diese Woche
+## Jetzt: Tentary einrichten
 
-Datenschutzerklärung erstellen (datenschutz-generator.de oder e-recht24.de)
-Impressum erstellen (Name, Adresse, E-Mail)
-MailerLite Konto einrichten und Automation aufsetzen
-Stripe Konto eröffnen für Zahlungsabwicklung
-Verkaufsseite live schalten (Carrd oder MailerLite Landing Page)
-Telegram-Kanal erstellen und Aufwärm-Posts starten
+Tentary-Konto öffnen → neues Produkt anlegen: "Shift Code", CHF 97
+E-Mail-Automation einrichten: Willkommensmail sofort, dann 30 Tage je 1 Mail täglich
+Alle 30 Protokoll-Mails in die Automation hochladen (Texte sind fertig in outputs/)
+Verkaufsseite in Tentary aufbauen (Inhalt: outputs/shift-code-verkaufsseite.md)
+Impressum, Datenschutz und AGB als Unterseiten / Links hinzufügen
+TWINT aktivieren: Mollie in Tentary anschließen
+E-Mail-Adresse in outputs/SC-rechtsdokumente.md nachtragen (noch Platzhalter)
+Umsatzsteuer klären: Kleinunternehmerin oder MwSt-pflichtig (für Impressum)
 
 
 ## Demnächst
 
-Alle 30 E-Mails in MailerLite hochladen und testen
+Telegram-Kanal erstellen und Aufwärm-Posts starten (Texte: outputs/shift-code-telegram.md)
 Ersten Launch durchführen
 Feedback nach erstem Durchgang sammeln
 
@@ -22,14 +24,12 @@ Feedback nach erstem Durchgang sammeln
 
 Verkaufsseite: outputs/shift-code-verkaufsseite.md
 Willkommensmail: outputs/shift-code-willkommensmail.md
-E-Mails Tag 1 bis 3: outputs/shift-code-emails-tag1-3.md
-E-Mails Tag 4 bis 7: outputs/shift-code-emails-tag4-7.md
-E-Mails Tag 8 bis 12: outputs/shift-code-emails-tag8-12.md
-E-Mails Tag 13 bis 17: outputs/shift-code-emails-tag13-17.md
-E-Mails Tag 18 bis 23: outputs/shift-code-emails-tag18-23.md
-E-Mails Tag 24 bis 30: outputs/shift-code-emails-tag24-30.md
-Telegram-Inhalte: outputs/shift-code-telegram.md
-30-Tage-Struktur: plans/shift-code-30-tage.md
+Protokoll Tag 1–7 (GROUND): outputs/SC-protokoll-tag1-7.md
+Protokoll Tag 8–12 (TRACE): outputs/SC-protokoll-tag8-12.md
+Protokoll Tag 13–17 (RELEASE): outputs/SC-protokoll-tag13-17.md
+Protokoll Tag 18–23 (IMPRINT): outputs/SC-protokoll-tag18-23.md
+Protokoll Tag 24–30 (ANCHOR + EXPAND): outputs/SC-protokoll-tag24-30.md
+Rechtsdokumente (Impressum, Datenschutz, AGB, Widerruf): outputs/SC-rechtsdokumente.md
 Technik und Launch-Plan: plans/shift-code-technik-und-launch.md
 
 
