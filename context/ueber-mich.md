@@ -4,7 +4,8 @@ Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich ve
 
 ## Wer ich bin
 
-Name: Petra
+Name: Petra Tanner
+Adresse: Brübach 13, 9245 Sonnental, Schweiz
 
 ## Was mich antreibt
 

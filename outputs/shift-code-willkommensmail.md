@@ -27,5 +27,5 @@ Petra
 
 Shift Code ersetzt keine Therapie oder medizinische Behandlung. Bei ernsthaften psychischen Beschwerden wende dich bitte an eine Fachperson.
 
-© 2026 Petra [Nachname eintragen] — Shift Code. Alle Rechte vorbehalten.
+© 2026 Petra Tanner — Shift Code. Alle Rechte vorbehalten.
 [Impressum] | [Datenschutz] | [Abmeldelink — wird automatisch durch MailerLite eingefügt]

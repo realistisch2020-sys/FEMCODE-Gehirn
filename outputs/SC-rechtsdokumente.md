@@ -1,6 +1,6 @@
 # Shift Code — Rechtsdokumente für DACH
 
-Hinweis: Diese Vorlagen decken die wesentlichen rechtlichen Anforderungen für Deutschland, Österreich und die Schweiz ab. Vor dem Live-Gang von einem Anwalt für Digitalrecht prüfen lassen — besonders Impressum und AGB.
+Hinweis: Diese Vorlagen sind auf Basis der aktuellen DACH-Rechtslage erstellt (Stand Juli 2026). Sie decken die wesentlichen Anforderungen für ein digitales E-Mail-Produkt ab. Vor dem Launch empfehle ich dennoch eine einmalige Prüfung durch einen Anwalt für Digitalrecht, da sich Gesetze ändern und individuelle Umstände abweichen können.
 
 Alle Platzhalter in [eckigen Klammern] vor dem Launch eintragen.
 
@@ -12,12 +12,11 @@ Alle Platzhalter in [eckigen Klammern] vor dem Launch eintragen.
 
 Alle Inhalte des Shift Code Programms — Texte, Methodik, Tool-Namen, E-Mail-Sequenz, Struktur — sind urheberrechtlich geschützt.
 
-© 2026 Petra [Nachname eintragen] — Shift Code. Alle Rechte vorbehalten.
+© 2026 Petra Tanner — Shift Code. Alle Rechte vorbehalten.
 
 Vervielfältigung, Weitergabe oder kommerzielle Nutzung ohne ausdrückliche schriftliche Genehmigung sind nicht gestattet.
 
-**Wo dieser Hinweis erscheint:**
-Im Footer jeder Website-Seite. Im Impressum. In den AGB. Im E-Mail-Footer, der in MailerLite einmalig als Template-Footer eingetragen wird und dann automatisch unter jede Mail gesetzt wird.
+Wo dieser Hinweis erscheint: Im Footer jeder Website-Seite, im Impressum, in den AGB und im MailerLite E-Mail-Footer (einmalig im Template eingetragen, erscheint dann automatisch unter jeder Mail).
 
 
 ---
@@ -29,9 +28,9 @@ Angaben gemäß § 5 TMG (Deutschland) / § 25 MedienG (Österreich) / Art. 10 U
 
 Verantwortlich:
 
-Petra [Nachname eintragen]
-[Straße und Hausnummer]
-[PLZ] [Ort]
+Petra Tanner
+Brübach 13
+9245 Sonnental
 Schweiz
 
 Kontakt:
@@ -39,13 +38,15 @@ E-Mail: [E-Mail-Adresse eintragen]
 
 Mehrwertsteuer:
 [Option A — falls steuerpflichtig: Umsatzsteuer-Identifikationsnummer: DE... / UID Schweiz: CHE-...]
-[Option B — falls nicht steuerpflichtig: Als Kleinunternehmerin gemäß § 19 UStG (Deutschland) bzw. Art. 10 MWSTG (Schweiz) wird keine Mehrwertsteuer ausgewiesen.]
+[Option B — falls Kleinunternehmerin: Als Kleinunternehmerin gemäß § 19 UStG (Deutschland) bzw. Art. 10 MWSTG (Schweiz) wird keine Mehrwertsteuer ausgewiesen.]
 
-Inhaltlich verantwortlich: Petra [Nachname eintragen] (Adresse wie oben)
+Inhaltlich verantwortlich: Petra Tanner (Adresse wie oben)
+
+Online-Streitbeilegung: Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: ec.europa.eu/consumers/odr. Ich bin nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
 
-© 2026 Petra [Nachname eintragen] — Shift Code. Alle Rechte vorbehalten.
+© 2026 Petra Tanner — Shift Code. Alle Rechte vorbehalten.
 
 
 ---
@@ -55,21 +56,35 @@ Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine
 
 Stand: Juli 2026
 
-### Wer ist verantwortlich?
+### Verantwortliche Person
 
-Petra [Nachname eintragen]
-[Adresse]
+Petra Tanner
+Brübach 13, 9245 Sonnental, Schweiz
 E-Mail: [E-Mail-Adresse]
+
+Es besteht keine Pflicht zur Benennung einer Datenschutzbeauftragten.
 
 ### Welche Daten werden erhoben?
 
-Bei der Anmeldung zum Shift Code Programm werden folgende Daten erhoben: Vorname, E-Mail-Adresse sowie Datum und Uhrzeit der Anmeldung.
+Bei der Anmeldung zum Shift Code Programm werden folgende Daten erhoben: Vorname, E-Mail-Adresse sowie Datum und Uhrzeit der Anmeldung (technisch notwendig für den Double Opt-in Nachweis).
 
 Beim Kauf über Stripe werden Zahlungsdaten verarbeitet. Diese liegen ausschließlich bei Stripe und werden von mir nicht gespeichert oder eingesehen.
 
-### Zu welchem Zweck?
+### Server-Log-Dateien
 
-Die Daten werden ausschließlich zur Lieferung der 30-tägigen Shift Code E-Mail-Sequenz verwendet. Es findet keine Weitergabe an Dritte für Werbe- oder andere Zwecke statt.
+Beim Besuch der Website werden automatisch folgende Daten durch den Webserver erhoben: IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Browser-Typ und Betriebssystem. Diese Daten werden ausschließlich für technische Zwecke (Fehlerbehebung, Sicherheit) verwendet und nicht mit anderen Daten zusammengeführt. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse). Speicherdauer: maximal 14 Tage.
+
+[Hinweis für dich: Hier den Namen deines Website-Hosters eintragen, z. B. Squarespace, Webflow, Jimdo, etc., und ggf. deren Datenschutzlink ergänzen.]
+
+### Cookies
+
+Diese Website verwendet [keine Cookies / ausschließlich technisch notwendige Session-Cookies, die nach dem Schließen des Browsers gelöscht werden]. Es werden keine Tracking-Cookies, Marketing-Cookies oder Analyse-Tools eingesetzt.
+
+[Hinweis für dich: Falls du Google Analytics, Meta Pixel oder ähnliche Tools einsetzt, muss das hier ausdrücklich erwähnt werden und du benötigst ein Cookie-Banner. Ohne Tracking-Tools ist dieser Satz korrekt und du brauchst kein Banner.]
+
+### Zweck der Verarbeitung
+
+Die erhobenen Daten werden ausschließlich zur Lieferung der 30-tägigen Shift Code E-Mail-Sequenz verwendet. Es findet keine Weitergabe an Dritte für Werbe- oder andere Zwecke statt.
 
 ### Rechtsgrundlage
 
@@ -83,17 +98,21 @@ Zahlungsabwicklung über Stripe Payments Europe Ltd., 1 Grand Canal Street Lower
 
 ### Speicherdauer
 
-E-Mail-Adresse und Name werden gespeichert, bis du dich abmeldest oder die Löschung verlangst. Die Abmeldung ist in jeder E-Mail möglich.
+E-Mail-Adresse und Name werden in MailerLite gespeichert, bis du dich abmeldest oder die Löschung verlangst. Nach Abmeldung werden die Daten innerhalb von 30 Tagen gelöscht. Kaufdaten werden gemäß den gesetzlichen Aufbewahrungsfristen (in der Schweiz 10 Jahre, in Deutschland 10 Jahre) aufbewahrt.
+
+### Keine automatisierte Entscheidungsfindung
+
+Es findet keine automatisierte Entscheidungsfindung oder Profilerstellung im Sinne von Art. 22 DSGVO statt.
 
 ### Deine Rechte
 
-Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Für alle Anfragen: [E-Mail-Adresse eintragen]
+Du hast jederzeit das Recht auf Auskunft über deine gespeicherten Daten, Berichtigung falscher Daten, Löschung deiner Daten, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung. Für alle Anfragen: [E-Mail-Adresse eintragen]
 
-Du hast das Recht, Beschwerde bei der Datenschutzbehörde deines Landes einzulegen: Bundesbeauftragter für Datenschutz und Informationsfreiheit (BfDI) in Deutschland, Datenschutzbehörde (DSB) in Österreich, Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB) in der Schweiz.
+Du hast außerdem das Recht, Beschwerde bei der Datenschutzbehörde deines Landes einzulegen: Bundesbeauftragter für Datenschutz und Informationsfreiheit (BfDI) in Deutschland, Datenschutzbehörde (DSB) in Österreich, Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB) in der Schweiz.
 
 ### Double Opt-in
 
-Bei der Anmeldung erhältst du eine Bestätigungs-E-Mail. Erst wenn du den Bestätigungslink klickst, bist du eingetragen.
+Bei der Anmeldung erhältst du eine Bestätigungs-E-Mail. Erst wenn du den Bestätigungslink klickst, bist du eingetragen. Ohne diese Bestätigung werden keine E-Mails gesendet.
 
 ### Abmeldung
 
@@ -107,51 +126,85 @@ Du kannst dich jederzeit und ohne Angabe von Gründen abmelden. Der Link befinde
 
 Stand: Juli 2026
 
-### Geltungsbereich
+### 1. Geltungsbereich
 
-Diese Allgemeinen Geschäftsbedingungen gelten für alle Käufe des Shift Code Programms über die Website von Petra [Nachname eintragen] (nachfolgend "Anbieter").
+Diese Allgemeinen Geschäftsbedingungen gelten für alle Käufe des Shift Code Programms über die Website von Petra Tanner (nachfolgend "Anbieter").
 
-### Vertragsgegenstand
+### 2. Vertragsgegenstand
 
 Shift Code ist ein digitales 30-Tage-E-Mail-Programm zur Selbstreflexion und persönlichen Entwicklung. Das Programm umfasst eine Willkommensmail sowie 30 tägliche E-Mails, geliefert an die angegebene E-Mail-Adresse.
 
-Shift Code ersetzt keine Therapie oder medizinische Behandlung. Bei ernsthaften psychischen Beschwerden wende dich bitte an eine Fachperson.
+Shift Code ersetzt keine Therapie oder medizinische Behandlung und stellt keine Heilversprechen dar. Bei ernsthaften psychischen Beschwerden wende dich bitte an eine Fachperson.
 
-### Preise und Zahlung
+### 3. Preise und Zahlung
 
-Der Preis beträgt CHF 97 inkl. aller Steuern, soweit zutreffend. Die Zahlung erfolgt über Stripe. Der Vertrag kommt mit Abschluss des Bezahlvorgangs zustande.
+Der Preis beträgt CHF 97 (Schweizer Franken) inkl. aller Steuern, soweit zutreffend. Für Käufer aus Deutschland und Österreich gilt ebenfalls der Preis in CHF; die Umrechnung in Euro erfolgt durch deine Bank oder deinen Zahlungsdienstleister zum jeweiligen Tageskurs.
 
-### Lieferung
+Die Zahlung erfolgt über Stripe. Der Vertrag kommt mit erfolgreichem Abschluss des Bezahlvorgangs zustande.
 
-Nach erfolgreicher Zahlung erhältst du innerhalb weniger Minuten die Willkommensmail. Die täglichen Programm-E-Mails starten am darauffolgenden Tag.
+### 4. Lieferung
 
-### Widerrufsrecht
+Nach erfolgreicher Zahlung erhältst du innerhalb weniger Minuten die Willkommensmail an die angegebene E-Mail-Adresse. Die täglichen Programm-E-Mails starten am darauffolgenden Tag. Bitte überprüfe auch deinen Spam-Ordner.
 
-Du hast als Verbraucherin oder Verbraucher das Recht, diesen Vertrag über digitale Inhalte innerhalb von 14 Tagen ohne Angabe von Gründen zu widerrufen.
+### 5. Widerrufsrecht
 
-Dieses Widerrufsrecht erlischt vorzeitig, wenn die Lieferung mit deiner ausdrücklichen Zustimmung vor Ablauf der Widerrufsfrist beginnt und du bestätigt hast, dass du damit das Widerrufsrecht verlierst.
+Du hast als Verbraucherin oder Verbraucher das Recht, diesen Vertrag innerhalb von vierzehn Tagen ohne Angabe von Gründen zu widerrufen.
 
-Im Kaufprozess muss folgende Checkbox aktiv angekreuzt werden:
+Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.
 
-"Ich stimme zu, dass die Lieferung des digitalen Inhalts (Shift Code) unmittelbar nach Abschluss des Kaufs beginnt. Mir ist bekannt, dass ich damit mein Widerrufsrecht verliere."
+Um das Widerrufsrecht auszuüben, musst du uns (Petra [Nachname], Brübach 13, 9245 Sonnental, Schweiz, E-Mail: [E-Mail-Adresse]) mittels einer eindeutigen Erklärung (z. B. per E-Mail) über deinen Entschluss informieren, diesen Vertrag zu widerrufen. Du kannst dafür das Muster-Widerrufsformular am Ende dieses Abschnitts verwenden, das jedoch nicht vorgeschrieben ist. Zur Wahrung der Widerrufsfrist reicht es aus, dass du die Mitteilung vor Ablauf der Widerrufsfrist absendest.
 
-Ohne diese Zustimmung kann der Widerruf schriftlich per E-Mail an [E-Mail-Adresse] erklärt werden.
+Wenn du widerrufst, erstatten wir alle Zahlungen, die wir von dir erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab Eingang deiner Widerrufserklärung. Die Rückzahlung erfolgt über dasselbe Zahlungsmittel, das du beim Kauf verwendet hast.
 
-### Urheberrecht
+**Vorzeitiges Erlöschen des Widerrufsrechts**
 
-Alle Inhalte des Shift Code Programms sind urheberrechtlich geschützt. Weitergabe, Vervielfältigung oder kommerzielle Nutzung sind ohne ausdrückliche Genehmigung nicht erlaubt.
+Das Widerrufsrecht erlischt bei Verträgen über die Lieferung digitaler Inhalte, die nicht auf einem körperlichen Datenträger geliefert werden, wenn der Unternehmer mit der Ausführung des Vertrags begonnen hat, nachdem die Verbraucherin oder der Verbraucher ausdrücklich zugestimmt hat, dass die Ausführung vor Ablauf der Widerrufsfrist beginnt, und bestätigt hat, dass damit das Widerrufsrecht verloren geht (§ 356 Abs. 5 BGB / § 18 Abs. 1 Z 13 FAGG).
 
-© 2026 Petra [Nachname eintragen] — Shift Code. Alle Rechte vorbehalten.
+Dazu muss im Kaufprozess folgende Checkbox aktiv angekreuzt werden:
 
-### Haftungsausschluss
+"Ich stimme ausdrücklich zu, dass die Lieferung des digitalen Inhalts (Shift Code) unmittelbar nach Abschluss des Kaufs beginnt. Mir ist bekannt und ich bestätige hiermit, dass ich durch diese Zustimmung mit Beginn der Lieferung mein Widerrufsrecht verliere."
 
-Shift Code ist ein Programm zur Selbstreflexion und persönlichen Entwicklung. Es ersetzt keine psychotherapeutische, medizinische oder psychiatrische Behandlung und stellt keine Heilversprechen dar. Der Anbieter übernimmt keine Haftung für individuelle Ergebnisse.
+**Muster-Widerrufsformular**
 
-Bei ernsthaften psychischen Beschwerden, Krisen oder Notfällen wende dich bitte an eine qualifizierte Fachperson oder an die Krisenhotline in deinem Land.
+(Nur ausfüllen und zurücksenden, wenn du den Vertrag widerrufen willst)
 
-### Geltendes Recht
+An: Petra [Nachname], Brübach 13, 9245 Sonnental, Schweiz, E-Mail: [E-Mail-Adresse]
 
-Es gilt Schweizer Recht unter Ausschluss des UN-Kaufrechts. Für Verbraucherinnen und Verbraucher aus Deutschland und Österreich gilt zusätzlich das zwingende Verbraucherrecht ihres Wohnortlandes.
+Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die Lieferung des folgenden digitalen Inhalts:
+
+Bestellt am:
+Name:
+Adresse:
+E-Mail-Adresse:
+Datum:
+
+### 6. Schweizer Käufer
+
+Für Käufer mit Wohnsitz in der Schweiz besteht kein gesetzliches Widerrufsrecht bei digitalen Inhalten. Der Anbieter gewährt freiwillig kein darüber hinausgehendes Rückgaberecht.
+
+### 7. Online-Streitbeilegung
+
+Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: ec.europa.eu/consumers/odr. Der Anbieter ist nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+
+### 8. Urheberrecht
+
+Alle Inhalte des Shift Code Programms sind urheberrechtlich geschützt. Weitergabe, Vervielfältigung oder kommerzielle Nutzung sind ohne ausdrückliche schriftliche Genehmigung nicht erlaubt.
+
+© 2026 Petra Tanner — Shift Code. Alle Rechte vorbehalten.
+
+### 9. Haftungsausschluss
+
+Shift Code ist ein Programm zur Selbstreflexion und persönlichen Entwicklung. Es ersetzt keine psychotherapeutische, medizinische oder psychiatrische Behandlung. Der Anbieter übernimmt keine Haftung für individuelle Ergebnisse. Persönliche Entwicklung hängt von vielen Faktoren ab, die außerhalb des Programms liegen.
+
+Bei ernsthaften psychischen Beschwerden, Krisen oder Notfällen wende dich bitte an eine qualifizierte Fachperson oder an die Krisenhotline in deinem Land (Deutschland: 0800 111 0 111 / Österreich: 142 / Schweiz: 143).
+
+### 10. Salvatorische Klausel
+
+Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. An die Stelle unwirksamer Bestimmungen tritt die gesetzliche Regelung.
+
+### 11. Geltendes Recht und Gerichtsstand
+
+Es gilt Schweizer Recht unter Ausschluss des UN-Kaufrechts. Für Verbraucherinnen und Verbraucher aus Deutschland und Österreich gelten zusätzlich die zwingenden Verbraucherschutzvorschriften ihres Wohnortlandes.
 
 Gerichtsstand: [Ort, Schweiz]
 
@@ -161,40 +214,49 @@ Gerichtsstand: [Ort, Schweiz]
 
 ## 5. E-MAIL-FOOTER (MailerLite Template)
 
-Dieser Text wird einmalig in MailerLite als globaler E-Mail-Footer eingetragen und erscheint dann automatisch unter jeder Mail:
+Dieser Text wird einmalig in MailerLite unter "Settings > Email footer" oder als fester Textblock im Template eingetragen und erscheint dann automatisch unter jeder Mail.
+
+Wichtig: Den Abmeldelink nicht manuell schreiben, sondern in MailerLite den eingebauten "Unsubscribe"-Block verwenden. MailerLite fügt diesen Link gesetzeskonform ein und trackt die Abmeldungen automatisch.
 
 ---
 
-© 2026 Petra [Nachname eintragen] — Shift Code. Alle Rechte vorbehalten.
+© 2026 Petra Tanner — Shift Code. Alle Rechte vorbehalten.
 
-[Impressum-Link] | [Datenschutz-Link]
+[Impressum] | [Datenschutz] | [AGB]
 
 Shift Code ersetzt keine Therapie oder medizinische Behandlung.
 
 Du erhältst diese E-Mail, weil du dich für Shift Code angemeldet hast.
-{{unsubscribe}} | [E-Mail-Adresse] für Fragen und Abmeldewünsche
+[Unsubscribe-Block von MailerLite hier einfügen] | Fragen: [E-Mail-Adresse]
 
 ---
 
 
 ## 6. CHECKLISTE VOR DEM LIVE-GANG
 
-Rechtliches:
-[ ] Echten Namen und Adresse im Impressum eintragen
+Angaben ausfüllen:
+[ ] Nachname und Adresse in alle Dokumente eintragen
 [ ] E-Mail-Adresse in alle Dokumente eintragen
-[ ] Umsatzsteuer-Situation klären (Kleinunternehmerin oder MwSt-pflichtig)
-[ ] Dokumente von einem DACH-Anwalt für Digitalrecht prüfen lassen
+[ ] Umsatzsteuer-Situation klären und in Impressum eintragen (Kleinunternehmerin oder MwSt-pflichtig)
+[ ] Datenschutz: Hoster der Website ergänzen (Squarespace, Webflow etc.)
+[ ] Datenschutz: Falls Analytics oder Pixel eingesetzt werden, Cookie-Sektion anpassen und Cookie-Banner einbauen
 
 Kaufprozess:
-[ ] Checkbox im Stripe-Checkout für Widerrufsrechtsverzicht einbauen
-[ ] Datenschutzerklärung vor Kauf verlinken
+[ ] Stripe Checkout: Checkbox für Widerrufsrechtsverzicht einbauen (Pflichttext aus AGB Abschnitt 5 verwenden)
+[ ] Datenschutzerklärung vor dem Kauf verlinken
+[ ] AGB vor dem Kauf verlinken und Zustimmung einholen
 
 MailerLite:
 [ ] Double Opt-in aktivieren
-[ ] E-Mail-Footer mit Copyright, Links und Abmeldelink einrichten
+[ ] E-Mail-Footer mit Copyright, Links und eingebautem Unsubscribe-Block einrichten
 [ ] Absendername "Petra" eintragen, nicht "Shift Code"
+[ ] Sendezeit festlegen (konsistent, z. B. täglich 07:00 Uhr)
 
 Website:
-[ ] Impressum auf jeder Seite im Footer verlinken
-[ ] Datenschutzerklärung im Footer verlinken
+[ ] Impressum im Footer jeder Seite verlinken
+[ ] Datenschutzerklärung im Footer jeder Seite verlinken
 [ ] AGB auf der Verkaufsseite verlinken
+[ ] OS-Plattform-Link im Impressum prüfen: ec.europa.eu/consumers/odr
+
+Empfohlen:
+[ ] Dokumente einmalig von einem DACH-Anwalt für Digitalrecht gegenlesen lassen
