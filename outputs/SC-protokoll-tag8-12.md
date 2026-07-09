@@ -13,6 +13,8 @@ Diese Woche machen wir etwas, das viele Menschen ihr ganzes Leben vermeiden. Nic
 
 Wir folgen dem Faden zurück.
 
+Ein kurzer Hinweis bevor wir anfangen: Die Arbeit dieser Woche kann starke Gefühle hochbringen. Das ist normal und gut. Wenn du aber merkst, dass du in einer echten Krise bist oder dich überfordert fühlst, dann ist das ein Zeichen, mit einer Fachperson zu sprechen, nicht einfach weiterzumachen. Telefonseelsorge: Deutschland 0800 111 0 111, Österreich 142, Schweiz 143.
+
 AKTIVIERUNG
 
 Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal.

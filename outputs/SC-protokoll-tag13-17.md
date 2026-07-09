@@ -13,6 +13,8 @@ Zwei Wochen hast du deinem Nervensystem Sicherheit gegeben und geschaut, wo dein
 
 Jetzt kommt das, was die meisten Programme komplett übersehen.
 
+Noch ein Hinweis vor dem Start dieser Woche: Die körperbasierten Übungen in Woche drei können intensive Reaktionen auslösen. Weinen, Zittern, starke Gefühle — das ist alles in Ordnung und Teil des Prozesses. Wenn du aber das Gefühl hast, dich nicht mehr selbst zu regulieren, dann pausiere und hol dir Unterstützung. Telefonseelsorge: Deutschland 0800 111 0 111, Österreich 142, Schweiz 143.
+
 AKTIVIERUNG
 
 Hand auf Herz. Ein bis vier, aus bis sieben. Dreimal.

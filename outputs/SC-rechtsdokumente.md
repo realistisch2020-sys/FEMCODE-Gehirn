@@ -134,7 +134,20 @@ Diese Allgemeinen Geschäftsbedingungen gelten für alle Käufe des Shift Code P
 
 Shift Code ist ein digitales 30-Tage-E-Mail-Programm zur Selbstreflexion und persönlichen Entwicklung. Das Programm umfasst eine Willkommensmail sowie 30 tägliche E-Mails, geliefert an die angegebene E-Mail-Adresse.
 
-Shift Code ersetzt keine Therapie oder medizinische Behandlung und stellt keine Heilversprechen dar. Bei ernsthaften psychischen Beschwerden wende dich bitte an eine Fachperson.
+Shift Code ersetzt keine Therapie oder medizinische Behandlung und stellt keine Heilversprechen dar.
+
+### 2a. Kontraindikationen — Wer das Programm nicht nutzen soll
+
+Shift Code arbeitet mit körperbasierten Übungen, Atemtechniken und Selbstreflexion. Das ist für die meisten Menschen sicher und hilfreich. Es gibt jedoch Situationen, in denen du das Programm nicht ohne Rücksprache mit einer Fachperson beginnen solltest.
+
+Bitte nutze Shift Code nicht, wenn du aktuell:
+unter einer diagnostizierten PTSD oder komplexen Traumafolgestörung leidest, dich in einer akuten psychischen Krise befindest, schwer depressiv bist oder suizidale Gedanken hast, an einer Psychose oder schizoaffektiven Störung leidest, eine Borderline-Persönlichkeitsstörung hast, oder in laufender psychiatrischer oder psychotherapeutischer Behandlung bist, ohne Rücksprache mit deiner Therapeutin oder deinem Therapeuten.
+
+Im Zweifel bitte erst mit einer Fachperson sprechen.
+
+Im Kaufprozess muss folgende Checkbox aktiv angekreuzt werden:
+
+"Ich bestätige, dass keine der oben genannten Kontraindikationen auf mich zutrifft oder dass ich die Teilnahme mit einer Fachperson abgesprochen habe. Ich übernehme die Verantwortung für meine eigene Teilnahme."
 
 ### 3. Preise und Zahlung
 
@@ -196,7 +209,11 @@ Alle Inhalte des Shift Code Programms sind urheberrechtlich geschützt. Weiterga
 
 Shift Code ist ein Programm zur Selbstreflexion und persönlichen Entwicklung. Es ersetzt keine psychotherapeutische, medizinische oder psychiatrische Behandlung. Der Anbieter übernimmt keine Haftung für individuelle Ergebnisse. Persönliche Entwicklung hängt von vielen Faktoren ab, die außerhalb des Programms liegen.
 
-Bei ernsthaften psychischen Beschwerden, Krisen oder Notfällen wende dich bitte an eine qualifizierte Fachperson oder an die Krisenhotline in deinem Land (Deutschland: 0800 111 0 111 / Österreich: 142 / Schweiz: 143).
+Die Haftung für leichte Fahrlässigkeit wird ausgeschlossen, soweit es sich nicht um die Verletzung vertragswesentlicher Pflichten, Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit oder Garantien handelt. Für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer fahrlässigen Pflichtverletzung beruhen, haftet der Anbieter nach den gesetzlichen Vorschriften. Dieser Haftungsausschluss gilt auch für das persönliche Verschulden von Erfüllungsgehilfen des Anbieters.
+
+Die Teilnahme an Shift Code erfolgt auf eigene Verantwortung. Die körperbasierten Übungen (u. a. Atemtechniken, Bewegungsübungen) sind für gesunde Erwachsene konzipiert. Wer die unter Abschnitt 2a genannten Kontraindikationen nicht beachtet und dennoch teilnimmt, handelt auf eigenes Risiko.
+
+Bei ernsthaften psychischen Beschwerden, Krisen oder Notfällen sofort Hilfe holen: Telefonseelsorge Deutschland 0800 111 0 111 (kostenlos, 24h), Telefonseelsorge Österreich 142 (kostenlos, 24h), Dargebotene Hand Schweiz 143 (kostenlos, 24h).
 
 ### 10. Salvatorische Klausel
 
@@ -242,9 +259,13 @@ Angaben ausfüllen:
 [ ] Datenschutz: Falls Analytics oder Pixel eingesetzt werden, Cookie-Sektion anpassen und Cookie-Banner einbauen
 
 Kaufprozess:
-[ ] Stripe Checkout: Checkbox für Widerrufsrechtsverzicht einbauen (Pflichttext aus AGB Abschnitt 5 verwenden)
+[ ] Stripe Checkout: Checkbox für Widerrufsrechtsverzicht einbauen (Pflichttext aus AGB Abschnitt 5)
+[ ] Stripe Checkout: Checkbox für Gesundheitsbestätigung / Kontraindikationen einbauen (Pflichttext aus AGB Abschnitt 2a)
 [ ] Datenschutzerklärung vor dem Kauf verlinken
 [ ] AGB vor dem Kauf verlinken und Zustimmung einholen
+
+Versicherung:
+[ ] Berufshaftpflichtversicherung abschliessen — das ist der einzige echte Schutz bei Schadensfällen. Keine AGB-Klausel kann das ersetzen. Anbieter in der Schweiz: z. B. Helvetia, Zurich, Mobiliar (Berufsfeld: Coach / Kursanbieter / digitale Produkte anfragen)
 
 MailerLite:
 [ ] Double Opt-in aktivieren
