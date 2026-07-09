@@ -107,6 +107,24 @@ Es spielt keine Rolle, in welchem Bereich du blockiert bist. Beziehungen. Geld. 
 ---
 
 
+[WAS NACH 30 TAGEN BLEIBT]
+
+Die Mails hören auf. Das Gelernte nicht.
+
+Du hast dreißig benannte Tools. DER ANKER. DAS SHIFT-RITUAL. DER VAGUS-ATEM. DIE EINE FRAGE. DER CODE. Dreißig Werkzeuge mit Namen, die du kennst, die du geübt hast und die du jederzeit einsetzen kannst, wenn das alte Muster wieder auftaucht.
+
+Du hast ein tägliches Ritual. Sechzig Sekunden, jeden Morgen. Du hast es dreißig Tage lang gemacht. Das ist jetzt ein Teil von dir, keine Aufgabe mehr.
+
+Du weißt, wie dein Körper spricht. Du erkennst früher, wenn sich etwas zusammenzieht. Du weißt, was zu tun ist, wenn es eng wird. Das ist ein Wissen, das bleibt.
+
+Und wenn in einem Jahr etwas wieder hochkommt, musst du nicht von vorne anfangen. Du kennst den Weg. Du kennst die Reihenfolge. Du weißt, wie du dich selbst liest.
+
+Der Code war immer in dir. Nach diesen 30 Tagen weißt du, wie man ihn liest.
+
+
+---
+
+
 [NICHT FÜR WEN]
 
 Wenn du aktuell in psychotherapeutischer Behandlung bist, sprich bitte zuerst mit deiner Therapeutin oder deinem Therapeuten, bevor du beginnst. Shift Code arbeitet tief und ist kein Ersatz für Therapie. Bei akuten psychischen Erkrankungen oder Krisen ist dieser Zeitpunkt nicht der richtige.
