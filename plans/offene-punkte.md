@@ -8,7 +8,7 @@ E-Mail-Automation einrichten: Willkommensmail sofort, dann 30 Tage je 1 Mail tä
 Alle 30 Protokoll-Mails in die Automation hochladen (Texte sind fertig in outputs/)
 Verkaufsseite in Tentary aufbauen (Inhalt: outputs/shift-code-verkaufsseite.md)
 Impressum, Datenschutz und AGB als Unterseiten / Links hinzufügen
-TWINT aktivieren: Mollie in Tentary anschließen
+TWINT: Tentary unterstützt kein TWINT. Für Beta kein Problem. Für Launch: Banküberweisung oder separaten Anbieter prüfen.
 E-Mail-Adresse in outputs/SC-rechtsdokumente.md nachtragen (noch Platzhalter)
 Umsatzsteuer klären: Kleinunternehmerin oder MwSt-pflichtig (für Impressum)
 
@@ -20,12 +20,11 @@ Ersten Launch durchführen
 Feedback nach erstem Durchgang sammeln
 
 
-## Offen: Brandfarbe wählen
+## Brandfarben: entschieden
 
-Zwei Farbwelten als HTML-Vorschau fertig:
-Pflaume (Dunkle Pflaume #4A2836 / Aubergine #5E3848 / Creme): outputs/shift-code-landingpage-pflaume.html
-Petrol (Petrol #124A57 / Dunkles Petrol #1F5E6A / Beige #E8DCC9 / Goldbeige #B89B5E): outputs/shift-code-landingpage-petrol.html
-Entscheidung steht noch aus. Sobald gewählt: Tentary-Seite in dieser Farbe aufbauen.
+Pflaume gewählt. Farben: Dunkle Pflaume #4A2836 / Aubergine #5E3848 / Creme #F5F1EC / Greige #C9B9AE / Warmes Taupe #A8948A
+Landingpage-Vorlage: outputs/shift-code-landingpage-pflaume.html
+Mail-Reader-Vorlage: outputs/shift-code-reader-pflaume.html
 
 
 ## Inhalte: alles fertig

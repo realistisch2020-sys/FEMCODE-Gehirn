@@ -67,6 +67,19 @@ Alle Texte müssen selbst nervensystemgerecht sein — nicht nur über das Nerve
 - Double Opt-in, Datenschutzerklärung, Abmeldelink — immer dabei
 - Keine Erfolgsversprechen als Garantie — nur als Möglichkeit formulieren
 
+## Brandfarben Shift Code
+
+Pflaume gewählt (Canva-Palette):
+- Dunkle Pflaume: #4A2836
+- Aubergine: #5E3848
+- Warmes Taupe: #A8948A
+- Greige: #C9B9AE
+- Creme: #F5F1EC
+
+## Plattform
+
+Tentary (E-Mail-Automation + Landingpage + Payment). Kein TWINT verfügbar. Payment: Kreditkarte oder Banküberweisung.
+
 ## Kanäle
 
 Noch offen — wird erarbeitet.
