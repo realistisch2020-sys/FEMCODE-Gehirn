@@ -215,8 +215,6 @@ Die Teilnahme an Shift Code erfolgt auf eigene Verantwortung. Die körperbasiert
 
 Bei ernsthaften psychischen Beschwerden, Krisen oder Notfällen sofort Hilfe holen: Telefonseelsorge Deutschland 0800 111 0 111 (kostenlos, 24h), Telefonseelsorge Österreich 142 (kostenlos, 24h), Dargebotene Hand Schweiz 143 (kostenlos, 24h).
 
-Der Anbieter verfügt über eine Berufshaftpflichtversicherung.
-
 ### 10. Salvatorische Klausel
 
 Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. An die Stelle unwirksamer Bestimmungen tritt die gesetzliche Regelung.
