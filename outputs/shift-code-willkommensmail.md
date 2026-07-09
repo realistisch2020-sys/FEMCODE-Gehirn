@@ -1,25 +1,31 @@
 # Shift Code — Willkommensmail (nach Kauf, vor Tag 1)
 
-Betreff: Du hast es. Shift Code startet morgen früh.
+Betreff: Du startest morgen früh
 
 Absendername: Petra
 
 
 Hallo {{first_name}},
 
-du hast gerade eine Entscheidung für dich getroffen.
+ich sage dir nicht, dass du eine gute Entscheidung getroffen hast.
 
-Die meisten Menschen reden lange darüber. Du hast es gemacht. Das ist schon der erste Shift.
+Das weißt du selbst.
 
-Morgen früh liegt die erste Mail in deinem Postfach. Jeden Tag eine, für 30 Tage. Fünf bis zehn Minuten, mehr nicht. Kein Login. Keine App. Nichts zu installieren. Nur du und das, was kommt.
+Was ich dir sagen will: Ich sehe, was dich hierhergebracht hat. Das Gefühl, dass da mehr geht. Dass irgendetwas zwischen dir und dem, was du dir wünschst, im Weg steht. Dass du vieles versucht hast und trotzdem immer wieder an denselben Stellen hängst.
 
-Was dich erwartet, ist kein Motivationsprogramm. Shift Code folgt der biologischen Abfolge deines Nervensystems, Schicht für Schicht, Woche für Woche. Du wirst jede Woche tiefer gehen als die Woche davor. Und du bekommst Tools, die du nach diesen 30 Tagen für immer behältst.
+Ich kenne diesen Ort. Und ich kenne den Grund, warum sich nichts ändert, egal was man probiert.
 
-Eine Bitte, die ich ernst meine: Öffne die Mails. Nicht jeden Tag perfekt, aber regelmäßig. Die Wirkung kommt durch Wiederholung, nicht durch einen einzigen großen Moment.
+Du bekommst im Leben nicht, was du willst. Du bekommst, was du bist.
 
-Noch etwas: Manchmal landen Mails im Spam-Ordner, besonders wenn man neu bei einem Absender ist. Schau dort kurz nach und verschieb die Mail in deinen Posteingang, damit du alle 30 Tage bekommst.
+Nicht was du denkst zu sein. Was dein Körper, dein Nervensystem, dein tiefstes System sendet. Und solange das nicht übereinstimmt mit dem, was du dir wünschst, wird sich nichts dauerhaft verschieben. Keine Affirmation. Kein Coaching. Keine noch so klare Vision.
 
-Ich freue mich, dass du dabei bist.
+Shift Code setzt genau dort an.
+
+In den nächsten 30 Tagen arbeiten wir nicht am Kopf. Wir arbeiten dort, wo das alles sitzt. Im Nervensystem. Im Körper. In den gespeicherten Mustern, die so alt sind, dass sie sich längst wie du selbst anfühlen. Wir folgen der biologischen Reihenfolge, in der echte Veränderung entsteht. Schritt für Schritt. Weil sich kein Schritt überspringen lässt.
+
+Morgen früh liegt Tag 1 in deinem Postfach. Jeden Tag eine Mail. Fünf bis zehn Minuten. Kein Login, keine App, kein Aufwand. Nur du und das, was kommt.
+
+Eine Bitte: Schau jetzt kurz in deinen Spam-Ordner und verschieb diese Mail in deinen Posteingang. Neue Absender landen dort manchmal unbemerkt. Du willst keine einzige Mail verpassen.
 
 Bis morgen früh.
 
@@ -27,5 +33,5 @@ Petra
 
 Shift Code ersetzt keine Therapie oder medizinische Behandlung. Bei ernsthaften psychischen Beschwerden wende dich bitte an eine Fachperson.
 
-© 2026 Petra Tanner — Shift Code. Alle Rechte vorbehalten.
-[Impressum] | [Datenschutz] | [Abmeldelink — wird automatisch durch MailerLite eingefügt]
+© 2026 Petra Tanner · Shift Code · Alle Rechte vorbehalten.
+[Impressum] | [Datenschutz] | [Abmeldelink]
