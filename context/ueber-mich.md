@@ -13,6 +13,21 @@ Ziel: Zielgruppe besser verstehen, um daraus gezielten Content, Social-Media-Auf
 - Hochpreis-Paket „Von innen frei. Von aussen erfolgreich." entwickelt (4.800 CHF, 6 Monate)
 - Nächster Schritt: Paket sichtbar machen via Instagram/Social Media
 
+## Instagram-Stil (Ziel)
+
+- Möchte dunklen, dramatischen Stil wie @innerimpact.de
+- Schwarz-Weiss Fotos, grosser fetter Text, kraftvoll emotional
+- Fotoshooting-Briefing erstellt: outputs/fotoshooting-briefing.md
+- Aktuell: warme, helle Profifotos vorhanden (gut für übergang)
+- Sobald neue Fotos da: Canva-Vorlagen im Inner-Impact-Stil erstellen
+
+## Canva
+
+- Verbunden mit Claude Code ✓
+- Brand Kit: „Instagram" vorhanden
+- Shift Code Ordner vorhanden (Vorlagen)
+- Erster Post erstellt: canva.com/d/4Tz5cPUFmx1jzGk (Frage 10)
+
 ## Themen-Felder
 
 - Network-Marketing / Produktempfehlungen
