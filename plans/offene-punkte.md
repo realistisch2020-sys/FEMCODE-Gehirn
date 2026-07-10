@@ -1,7 +1,7 @@
 # Offene Punkte
 
 
-## Jetzt: Tentary einrichten
+## Jetzt: Tentary einrichten (blockiert — Tarif noch nicht aktiv)
 
 Tentary-Konto öffnen → neues Produkt anlegen: "Shift Code", CHF 97
 E-Mail-Automation einrichten: Willkommensmail sofort, dann 30 Tage je 1 Mail täglich
@@ -11,6 +11,16 @@ Impressum, Datenschutz und AGB als Unterseiten / Links hinzufügen
 TWINT: Tentary unterstützt kein TWINT. Für Beta kein Problem. Für Launch: Banküberweisung oder separaten Anbieter prüfen.
 E-Mail-Adresse in outputs/SC-rechtsdokumente.md nachtragen (noch Platzhalter)
 Umsatzsteuer klären: Kleinunternehmerin oder MwSt-pflichtig (für Impressum)
+
+
+## Jetzt: Beta-Preis entscheiden
+
+CHF 27 abgelehnt (zu günstig, kein Programm-Ernst). Empfehlung: CHF 47 als Beta-Preis, CHF 97 Vollpreis. Noch keine finale Entscheidung von Petra.
+
+
+## Jetzt: Erster Tester
+
+Sohn erhält HTML-Reader-Datei (shift-code-reader-pflaume.html) zum Durchlesen und Testen. Feedback auswerten sobald er geantwortet hat.
 
 
 ## Demnächst
@@ -34,8 +44,8 @@ Willkommensmail: outputs/shift-code-willkommensmail.md
 Protokoll Tag 1–7 (GROUND): outputs/SC-protokoll-tag1-7.md
 Protokoll Tag 8–12 (TRACE): outputs/SC-protokoll-tag8-12.md
 Protokoll Tag 13–17 (RELEASE): outputs/SC-protokoll-tag13-17.md
-Protokoll Tag 18–23 (IMPRINT): outputs/SC-protokoll-tag18-23.md
-Protokoll Tag 24–30 (ANCHOR + EXPAND): outputs/SC-protokoll-tag24-30.md
+Protokoll Tag 18–23 (IMPRINT): outputs/SC-protokoll-tag18-23.md — Manifestationsfaden eingewoben
+Protokoll Tag 24–30 (ANCHOR + EXPAND): outputs/SC-protokoll-tag24-30.md — Manifestationsfaden + Tag 30 Crescendo
 Rechtsdokumente (Impressum, Datenschutz, AGB, Widerruf): outputs/SC-rechtsdokumente.md
 Technik und Launch-Plan: plans/shift-code-technik-und-launch.md
 Alle 30 Mails als Reader (beide Farbwelten): outputs/shift-code-reader-pflaume.html / shift-code-reader-petrol.html

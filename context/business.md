@@ -91,3 +91,9 @@ Noch offen — wird erarbeitet.
 | Shift Code 30 Tage (E-Mail) | CHF 97 |
 | Shift Code + Community | CHF 147 |
 | Monatliche Membership (Upsell) | CHF 27/Monat |
+
+## Preisstrategie — Grundregel
+
+CHF 97 ist der richtige Vollpreis. Nicht unterschreiten — zu günstiger Preis signalisiert wenig Wert und Käufer nehmen das Programm nicht ernst genug, um es durchzuziehen.
+
+Beta-Preis (für erste Tester / Vertrauenskreis): CHF 47. Klar kommunizieren: "Das ist der Beta-Preis, danach CHF 97." CHF 27 ist zu günstig — zu nahe an App-Abo, zu weit weg von ernsthafter Investition.
