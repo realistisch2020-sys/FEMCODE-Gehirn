@@ -1,21 +1,28 @@
 # Mein Business
 
-Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content, Angebote und Texte wirklich in deinem Kontext bauen.
-
 ## Was ich anbiete
 
-Welche Produkte, Programme oder Leistungen? Was ist dein Hauptangebot?
+**Shift Code** – automatisches E-Mail-Programm
+- Begleitet Frauen Schritt für Schritt dabei, alte Verhaltensmuster (z.B. People Pleasing / Fawn) zu verstehen und loszulassen
+- Landet direkt im Postfach, im eigenen Tempo, kein Live-Format
+- Aktuell im Aufbau (noch kein Preis / Kauflink)
 
 ## Meine Zielgruppe
 
-Für wen ist das? Wer kauft bei dir, was beschäftigt diese Menschen?
+Frauen die:
+- Ständig Ja sagen obwohl sie Nein meinen
+- Am Limit sind aber trotzdem funktionieren
+- Das schlechte Gewissen kennen das nach jedem falschen Ja kommt
+- Sich selbst verloren haben im ewigen Anpassen
+
+Kernthemen: People Pleasing, Fawn-Muster, Grenzen setzen, Selbstvertrauen, emotionale Gesundheit
 
 ## Meine Kanäle
 
-Wo findest du statt (Instagram, Newsletter, Podcast, was auch immer)?
+- Instagram (Hauptkanal für Content und Reichweite)
+- Newsletter / E-Mail (Shift Code läuft darüber)
 
 ## Meine Angebote und Preise
 
-Was kostet was? Grobe Preisspannen reichen.
-
-Kurz halten. Genug damit Claude dich versteht, kein vollständiges Wiki.
+- Shift Code: in Entwicklung, Preis noch offen
+- Interessentinnen werden jetzt schon über Instagram gesammelt (Keyword: SHIFT in Kommentaren oder DM)
