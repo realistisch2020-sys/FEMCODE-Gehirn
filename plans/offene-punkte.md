@@ -4,6 +4,7 @@
 
 - Fotoshooting buchen (Briefing liegt in outputs/fotoshooting-briefing.md)
 - Instagram-Post aus Canva posten (canva.com/d/4Tz5cPUFmx1jzGk — Frage 10, fertig)
+- Karussell in Canva erstellen: neue Session starten → Canva verbindet sich automatisch
 
 ## Demnächst
 
@@ -17,7 +18,7 @@
 
 1. Samstag: Telegram schickt 10 Fragen automatisch
 2. Petra wählt eine Frage aus
-3. Claude erstellt Text + Canva-Post
+3. Claude erstellt Text + Canva-Karussell
 4. Petra postet direkt von Canva
 
 ## Wichtige Regel für nächste Sessions
