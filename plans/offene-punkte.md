@@ -1,27 +1,40 @@
 # Offene Punkte
 
-## Diese Woche
+## Diese Woche (Woche 1)
 
-- [ ] KDP-Account erstellen: kdp.amazon.com
-- [ ] Nische final auswählen (Top-Empfehlung: Berufsgruppen-Planer oder Mental Health Journal)
-- [ ] 3 konkrete Buchideen ausarbeiten + Konkurrenz analysieren (BSR prüfen)
+- [ ] KDP-Account erstellen: kdp.amazon.com (kostenlos, 10 Min)
+- [ ] Zahlungsdaten + Steuernummer auf KDP hinterlegen
+- [ ] Canva-Account erstellen (kostenlos)
+- [ ] Entscheiden: ADHD Planner für Männer, Frauen oder Allgemein
 
-## Demnächst
+## Demnächst (Woche 2–3)
 
-- [ ] Inneninhalt für Buch #1 in Canva erstellen
-- [ ] Cover mit ChatGPT-Prompts generieren + in Canva finalisieren
-- [ ] Keywords (7 Stück, Long-Tail) und Kategorie-Strategie festlegen
-- [ ] Buch hochladen, Preis ≥ $9.99 setzen
-- [ ] ARC-Reader rekrutieren (Facebook-Gruppen, BookFunnel)
-- [ ] Amazon Ads starten ($5/Tag Automatic Campaign)
+- [ ] Tagesseiten-Template in Canva bauen (1 Seite → 120× kopieren)
+- [ ] Wochenrückblick-Seite bauen
+- [ ] Intro-Seiten schreiben
+- [ ] PDF exportieren
+- [ ] ChatGPT Cover-Bild generieren (Prompts in outputs/adhd-planner-komplett-paket.md)
+- [ ] Cover in Canva finalisieren (8.5×11 KDP-Template)
+- [ ] Buch auf KDP hochladen, Preis $14.99, Keywords + Kategorien eintragen
+- [ ] Buchbeschreibung einfügen (HTML-Version im Paket-Dokument)
+
+## Launch (Woche 4)
+
+- [ ] Buch veröffentlichen
+- [ ] In ADHS-Facebook-Gruppen teilen → ARC-Reader finden
+- [ ] Amazon Ads starten: $5/Tag, Automatic Campaign
+- [ ] Nach 30 Tagen: Buch #2 planen (gleiche Vorlage, andere Zielgruppe)
 
 ## Ideen / später
 
-- [ ] Serie aufbauen: 5–10 Bücher in derselben Nische
+- [ ] ADHD Planner for College Students (Buch #2, gleiche Vorlage)
+- [ ] ADHD Planner for Women (Buch #3)
+- [ ] Serie ausbauen: 5–10 Bücher in ADHD-Nische
 - [ ] E-Mail-Liste für ARC-Reader aufbauen
-- [ ] A+ Content auf Produktseiten aktivieren
-- [ ] Zweite Nische erschließen sobald Buch #1 läuft
 
 ---
 
-Komplette Anleitung: `outputs/amazon-kdp-komplett-anleitung.md`
+Alle Dokumente:
+- Komplette KDP-Anleitung: `outputs/amazon-kdp-komplett-anleitung.md`
+- Nischen-Recherche mit Zahlen: `outputs/nischen-recherche-amazon-kdp.md`
+- ADHD Planer Komplett-Paket: `outputs/adhd-planner-komplett-paket.md`
