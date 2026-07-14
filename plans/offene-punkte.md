@@ -1,40 +1,31 @@
 # Offene Punkte
 
-## Diese Woche (Woche 1)
+## Diese Woche
 
-- [ ] KDP-Account erstellen: kdp.amazon.com (kostenlos, 10 Min)
-- [ ] Zahlungsdaten + Steuernummer auf KDP hinterlegen
-- [ ] Canva-Account erstellen (kostenlos)
-- [ ] Entscheiden: ADHD Planner für Männer, Frauen oder Allgemein
+- [ ] KDP-Account erstellen: kdp.amazon.com (20 Min, kostenlos)
+- [ ] Inneninhalt als PDF exportieren (Browser → Datei → Drucken → PDF)
+- [ ] Cover-Bild (fertig in Canva) als PNG/JPG herunterladen
+- [ ] Beides bei KDP hochladen + Preis $14.99 setzen
+- [ ] Keywords + Kategorien eintragen (alle fertig in outputs/adhd-planner-komplett-paket.md)
+- [ ] Buchbeschreibung (HTML) einfügen
 
-## Demnächst (Woche 2–3)
+## Demnächst
 
-- [ ] Tagesseiten-Template in Canva bauen (1 Seite → 120× kopieren)
-- [ ] Wochenrückblick-Seite bauen
-- [ ] Intro-Seiten schreiben
-- [ ] PDF exportieren
-- [ ] ChatGPT Cover-Bild generieren (Prompts in outputs/adhd-planner-komplett-paket.md)
-- [ ] Cover in Canva finalisieren (8.5×11 KDP-Template)
-- [ ] Buch auf KDP hochladen, Preis $14.99, Keywords + Kategorien eintragen
-- [ ] Buchbeschreibung einfügen (HTML-Version im Paket-Dokument)
-
-## Launch (Woche 4)
-
+- [ ] ARC-Reader rekrutieren (ADHS-Facebook-Gruppen, BookFunnel)
 - [ ] Buch veröffentlichen
-- [ ] In ADHS-Facebook-Gruppen teilen → ARC-Reader finden
 - [ ] Amazon Ads starten: $5/Tag, Automatic Campaign
-- [ ] Nach 30 Tagen: Buch #2 planen (gleiche Vorlage, andere Zielgruppe)
+- [ ] Nach 30 Tagen: Buch #2 planen (ADHD Planner for College Students)
 
 ## Ideen / später
 
-- [ ] ADHD Planner for College Students (Buch #2, gleiche Vorlage)
-- [ ] ADHD Planner for Women (Buch #3)
-- [ ] Serie ausbauen: 5–10 Bücher in ADHD-Nische
+- [ ] Serie: ADHD Planner for Women (Buch #3)
+- [ ] Zweite Nische: Sobriety Journal oder Berufsgruppen-Planer
 - [ ] E-Mail-Liste für ARC-Reader aufbauen
 
 ---
 
 Alle Dokumente:
-- Komplette KDP-Anleitung: `outputs/amazon-kdp-komplett-anleitung.md`
-- Nischen-Recherche mit Zahlen: `outputs/nischen-recherche-amazon-kdp.md`
-- ADHD Planer Komplett-Paket: `outputs/adhd-planner-komplett-paket.md`
+- KDP Komplett-Anleitung: `outputs/amazon-kdp-komplett-anleitung.md`
+- Nischen-Recherche: `outputs/nischen-recherche-amazon-kdp.md`
+- ADHD Planer Paket (Titel, Keywords, Prompts): `outputs/adhd-planner-komplett-paket.md`
+- Inneninhalt HTML: `outputs/planner-interior/daily-page.html`

@@ -1,21 +1,33 @@
 # Mein Business
 
-Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content, Angebote und Texte wirklich in deinem Kontext bauen.
-
 ## Was ich anbiete
 
-Welche Produkte, Programme oder Leistungen? Was ist dein Hauptangebot?
+Amazon KDP (Kindle Direct Publishing) — Bücher verkaufen ohne Vorabkosten.
+Einstieg mit Low Content Books (Planer, Journals).
+
+**Erstes Produkt:** ADHD Daily Planner for Men (Undated)
+- Format: 8,5 × 11 Zoll, 130 Seiten, Schwarz-Weiss, Matt
+- Preis: $14.99 → ca. $6.58 Royalty pro Verkauf
+- Plattform: Amazon.com (US-Markt)
 
 ## Meine Zielgruppe
 
-Für wen ist das? Wer kauft bei dir, was beschäftigt diese Menschen?
+Männer mit ADHS / ADD — unterversorgtes Segment auf Amazon.
+Sekundär: Erwachsene allgemein mit ADHS.
 
 ## Meine Kanäle
 
-Wo findest du statt (Instagram, Newsletter, Podcast, was auch immer)?
+Amazon KDP (primär)
+Geplant: Amazon Ads nach Launch
 
-## Meine Angebote und Preise
+## Strategie
 
-Was kostet was? Grobe Preisspannen reichen.
+- Nische: ADHD Planner for Men — stärkste KDP-Nische 2026, kaum Konkurrenz für Männer
+- Skalierung: Buch #2 = ADHD Planner for College Students (gleiches Template)
+- Langfristig: 5–10 Bücher in ADHD-Nische + weitere Nischen
 
-Kurz halten. Genug damit Claude dich versteht, kein vollständiges Wiki.
+## Status
+
+- Cover: fertig (dunkelblau, Circuit-Brain, professionell)
+- Inneninhalt: HTML-Template fertig (outputs/planner-interior/daily-page.html)
+- KDP-Account: noch nicht erstellt (morgen)
