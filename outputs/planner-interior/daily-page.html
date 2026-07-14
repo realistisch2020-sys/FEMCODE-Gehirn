@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADHD Daily Planner for Men</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f5f5f5;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    background: white;
+    margin: 0 auto 40px auto;
+    padding: 0.55in 0.6in 0.45in 0.6in;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    page-break-after: always;
+  }
+
+  /* TOP BAR */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2.5px solid #0A1628;
+    padding-bottom: 6px;
+    margin-bottom: 9px;
+  }
+  .top-bar .date-field {
+    font-size: 11px;
+    font-weight: 700;
+    color: #0A1628;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .top-bar .date-line {
+    display: inline-block;
+    border-bottom: 1.5px solid #0A1628;
+    width: 130px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .top-bar .energy-mood {
+    font-size: 10px;
+    font-weight: 700;
+    color: #0A1628;
+    letter-spacing: 1px;
+    text-align: right;
+  }
+  .energy-mood span {
+    display: block;
+    font-size: 9px;
+    font-weight: 400;
+    color: #555;
+    margin-top: 2px;
+  }
+  .circles {
+    display: inline-flex;
+    gap: 4px;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid #0A1628;
+    display: inline-block;
+  }
+
+  /* SECTION HEADER */
+  .section-header {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    background: #0A1628;
+    padding: 4px 10px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-header.light {
+    background: #1a3a6b;
+  }
+
+  /* BRAIN DUMP */
+  .brain-dump {
+    margin-bottom: 9px;
+  }
+  .lined-area {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .line-row {
+    border-bottom: 1px solid #ddd;
+    height: 20px;
+    width: 100%;
+  }
+
+  /* TWO COLUMNS */
+  .two-col {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 9px;
+  }
+  .col {
+    flex: 1;
+  }
+
+  /* PRIORITIES */
+  .priority-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+  .priority-num {
+    font-size: 13px;
+    font-weight: 800;
+    color: #0A1628;
+    min-width: 18px;
+  }
+  .priority-line {
+    flex: 1;
+    border-bottom: 1.5px solid #bbb;
+    height: 18px;
+  }
+
+  /* TIME BLOCKS */
+  .time-block-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px 10px;
+  }
+  .time-slot {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+    height: 20px;
+  }
+  .time-label {
+    font-size: 8px;
+    font-weight: 700;
+    color: #0A1628;
+    min-width: 34px;
+    letter-spacing: 0.5px;
+  }
+  .time-line {
+    flex: 1;
+    border-bottom: 1px solid transparent;
+  }
+
+  /* HABIT TRACKER */
+  .habit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 12px;
+  }
+  .habit-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 9px;
+    font-weight: 600;
+    color: #222;
+    letter-spacing: 0.3px;
+  }
+  .checkbox {
+    width: 13px;
+    height: 13px;
+    border: 1.5px solid #0A1628;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* NOTES & WIN */
+  .notes-section {
+    margin-bottom: 8px;
+  }
+  .win-section {
+    background: #f0f4ff;
+    border-left: 3px solid #0A1628;
+    padding: 5px 10px;
+    margin-top: 4px;
+  }
+  .win-label {
+    font-size: 9px;
+    font-weight: 800;
+    color: #0A1628;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .win-line {
+    border-bottom: 1px solid #bbb;
+    height: 18px;
+    margin-bottom: 3px;
+  }
+
+  /* WEEKLY REVIEW PAGE */
+  .review-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0A1628;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .review-subtitle {
+    font-size: 10px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0A1628;
+  }
+  .review-section {
+    margin-bottom: 14px;
+  }
+  .review-q {
+    font-size: 10px;
+    font-weight: 800;
+    color: #0A1628;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .review-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .review-line {
+    border-bottom: 1px solid #ccc;
+    height: 22px;
+  }
+
+  /* HABIT TRACKER WEEKLY */
+  .weekly-habit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6px;
+  }
+  .weekly-habit-table th {
+    font-size: 9px;
+    font-weight: 800;
+    color: white;
+    background: #0A1628;
+    padding: 4px 6px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .weekly-habit-table td {
+    border: 1px solid #ddd;
+    padding: 6px 4px;
+    text-align: center;
+    font-size: 9px;
+  }
+  .weekly-habit-table td.habit-name {
+    text-align: left;
+    font-weight: 700;
+    padding-left: 8px;
+    color: #0A1628;
+  }
+  .weekly-habit-table .check-box {
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #0A1628;
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  /* INTRO PAGE */
+  .intro-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    gap: 20px;
+  }
+  .intro-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0A1628;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  .intro-sub {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .intro-divider {
+    width: 80px;
+    height: 3px;
+    background: #0A1628;
+  }
+  .intro-features {
+    text-align: left;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+  }
+  .intro-features li {
+    font-size: 12px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .intro-features li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #0A1628;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .how-to-box {
+    background: #f0f4ff;
+    border: 1.5px solid #0A1628;
+    border-radius: 6px;
+    padding: 20px 30px;
+    max-width: 480px;
+    text-align: left;
+  }
+  .how-to-box h3 {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0A1628;
+    margin-bottom: 12px;
+  }
+  .how-to-box p {
+    font-size: 11px;
+    color: #333;
+    line-height: 1.7;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { margin: 0; box-shadow: none; page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: TITLE PAGE -->
+<div class="page">
+  <div class="intro-page">
+    <div>
+      <div class="intro-title">ADHD Daily<br>Planner<br>for Men</div>
+      <div style="margin-top:12px" class="intro-sub">Undated · Start Any Day</div>
+    </div>
+    <div class="intro-divider"></div>
+    <ul class="intro-features">
+      <li>Daily Brain Dump — clear your mind first</li>
+      <li>Top 3 Priorities — focus on what matters</li>
+      <li>Hourly Time Blocking — 6am to 10pm</li>
+      <li>Mood &amp; Energy Check-In</li>
+      <li>Daily Habit Tracker</li>
+      <li>Win of the Day — celebrate progress</li>
+      <li>Weekly Review &amp; Reset</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PAGE 2: HOW TO USE -->
+<div class="page">
+  <div class="intro-page">
+    <div class="intro-title" style="font-size:22px">How to Use This Planner</div>
+    <div class="intro-divider"></div>
+    <div class="how-to-box">
+      <h3>Your Daily Rhythm</h3>
+      <p>
+        <strong>Morning (5 min):</strong> Start with the Brain Dump. Write everything that's in your head — tasks, worries, ideas. Then choose your Top 3 Priorities for the day. Fill in your Time Blocks.<br><br>
+        <strong>Throughout the day:</strong> Tick off Habits as you complete them. Check your Energy and Mood when you notice a shift.<br><br>
+        <strong>Evening (5 min):</strong> Write your Win of the Day — even small wins count. Note any overflow tasks.<br><br>
+        <strong>Every 7 days:</strong> Complete a Weekly Review page. Reflect, reset, plan the next week.
+      </p>
+    </div>
+    <div style="font-size:11px; color:#888; letter-spacing:1px; text-transform:uppercase; text-align:center;">
+      This planner is undated — start any day, any time.
+    </div>
+  </div>
+</div>
+
+<!-- DAILY PAGES: repeat this block (here shown 3x as example) -->
+
+<!-- DAILY PAGE TEMPLATE -->
+<div class="page">
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="date-field">
+      DATE <span class="date-line"></span>
+    </div>
+    <div class="energy-mood">
+      ENERGY <span class="circles">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </span>
+      <span>MOOD &nbsp; 😴 &nbsp; 😐 &nbsp; 🙂 &nbsp; ⚡ &nbsp; 🔥</span>
+    </div>
+  </div>
+
+  <!-- BRAIN DUMP -->
+  <div class="brain-dump">
+    <div class="section-header">🧠 &nbsp; Brain Dump — Get it out of your head</div>
+    <div class="lined-area">
+      <div class="line-row"></div>
+      <div class="line-row"></div>
+      <div class="line-row"></div>
+      <div class="line-row"></div>
+    </div>
+  </div>
+
+  <!-- TOP 3 + TIME BLOCKS -->
+  <div class="two-col">
+    <!-- TOP 3 PRIORITIES -->
+    <div class="col">
+      <div class="section-header">⭐ &nbsp; Top 3 Priorities</div>
+      <div class="priority-item"><span class="priority-num">1</span><div class="priority-line"></div></div>
+      <div style="height:4px"></div>
+      <div class="priority-item"><span class="priority-num">2</span><div class="priority-line"></div></div>
+      <div style="height:4px"></div>
+      <div class="priority-item"><span class="priority-num">3</span><div class="priority-line"></div></div>
+      <div style="height:10px"></div>
+      <div class="section-header light" style="font-size:8px">📋 &nbsp; Additional Tasks</div>
+      <div class="lined-area">
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+      </div>
+    </div>
+
+    <!-- TIME BLOCKS -->
+    <div class="col">
+      <div class="section-header">⏰ &nbsp; Time Blocks</div>
+      <div class="time-block-grid">
+        <div class="time-slot"><span class="time-label">6:00 AM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">7:00 AM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">8:00 AM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">9:00 AM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">10:00 AM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">11:00 AM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">12:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">1:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">2:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">3:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">4:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">5:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">6:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">7:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">8:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">9:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">10:00 PM</span><div class="time-line"></div></div>
+        <div class="time-slot"><span class="time-label">Evening</span><div class="time-line"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HABIT TRACKER -->
+  <div style="margin-bottom:8px">
+    <div class="section-header">✅ &nbsp; Daily Habits</div>
+    <div class="habit-grid">
+      <div class="habit-item"><span class="checkbox"></span> Medication / Supplements</div>
+      <div class="habit-item"><span class="checkbox"></span> 8 Glasses of Water</div>
+      <div class="habit-item"><span class="checkbox"></span> Movement / Exercise</div>
+      <div class="habit-item"><span class="checkbox"></span> Healthy Meal</div>
+      <div class="habit-item"><span class="checkbox"></span> Fresh Air / Outside</div>
+      <div class="habit-item"><span class="checkbox"></span> Sleep by 11pm</div>
+      <div class="habit-item"><span class="checkbox"></span> ______________________</div>
+      <div class="habit-item"><span class="checkbox"></span> ______________________</div>
+    </div>
+  </div>
+
+  <!-- NOTES + WIN OF THE DAY -->
+  <div class="two-col" style="margin-bottom:0">
+    <div class="col notes-section">
+      <div class="section-header" style="font-size:8px">📝 &nbsp; Notes / Overflow</div>
+      <div class="lined-area">
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+        <div class="line-row"></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="win-section">
+        <div class="win-label">🌟 Win of the Day</div>
+        <div class="win-line"></div>
+        <div class="win-line"></div>
+        <div class="win-line"></div>
+        <div style="font-size:8px; color:#888; margin-top:4px; font-style:italic">Even small wins count.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WEEKLY REVIEW PAGE -->
+<div class="page">
+  <div class="review-title">Weekly Review</div>
+  <div class="review-subtitle">Reflect · Reset · Recharge</div>
+
+  <div class="review-section">
+    <div class="review-q">📅 &nbsp; Week of ____________________</div>
+  </div>
+
+  <div class="review-section">
+    <div class="review-q">✅ &nbsp; What went well this week?</div>
+    <div class="review-lines">
+      <div class="review-line"></div>
+      <div class="review-line"></div>
+      <div class="review-line"></div>
+    </div>
+  </div>
+
+  <div class="review-section">
+    <div class="review-q">⚡ &nbsp; What was hard or draining?</div>
+    <div class="review-lines">
+      <div class="review-line"></div>
+      <div class="review-line"></div>
+      <div class="review-line"></div>
+    </div>
+  </div>
+
+  <div class="review-section">
+    <div class="review-q">🔄 &nbsp; What will I do differently next week?</div>
+    <div class="review-lines">
+      <div class="review-line"></div>
+      <div class="review-line"></div>
+      <div class="review-line"></div>
+    </div>
+  </div>
+
+  <div class="review-section">
+    <div class="review-q">🌟 &nbsp; Biggest win of the week</div>
+    <div class="review-lines">
+      <div class="review-line"></div>
+      <div class="review-line"></div>
+    </div>
+  </div>
+
+  <div class="review-section">
+    <div class="review-q">✅ &nbsp; Weekly Habit Tracker</div>
+    <table class="weekly-habit-table">
+      <thead>
+        <tr>
+          <th style="text-align:left; padding-left:8px">HABIT</th>
+          <th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th><th>SUN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="habit-name">Medication</td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td>
+        </tr>
+        <tr>
+          <td class="habit-name">Movement</td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td>
+        </tr>
+        <tr>
+          <td class="habit-name">Water</td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td>
+        </tr>
+        <tr>
+          <td class="habit-name">Sleep by 11pm</td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td>
+        </tr>
+        <tr>
+          <td class="habit-name">_______________</td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td><td><span class="check-box"></span></td>
+          <td><span class="check-box"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="review-section">
+    <div class="review-q">🎯 &nbsp; Top 3 Focus for Next Week</div>
+    <div class="priority-item" style="margin-bottom:6px"><span class="priority-num">1</span><div class="priority-line"></div></div>
+    <div class="priority-item" style="margin-bottom:6px"><span class="priority-num">2</span><div class="priority-line"></div></div>
+    <div class="priority-item"><span class="priority-num">3</span><div class="priority-line"></div></div>
+  </div>
+</div>
+
+</body>
+</html>
