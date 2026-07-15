@@ -63,6 +63,7 @@ Wenn ich `/shutdown` schreibe, mach Folgendes:
 - Tokenfreundlich: kurz, klar, keine Wiederholungen
 - Immer den einfachsten Weg wählen
 - Vor größeren Aufgaben kurz überlegen, wie der beste Output aussieht, und mir den Vorschlag nennen
+- **WICHTIG: Niemals Vorschläge machen ohne vorherige Recherche.** Keine Gruppen, Links, Namen, Plattformen oder Strategien nennen, die nicht zuerst recherchiert und verifiziert wurden. Wenn unsicher: erst recherchieren, dann antworten.
 
 ## Speichern (wichtig)
 
