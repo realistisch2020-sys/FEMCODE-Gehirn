@@ -17,9 +17,11 @@
 - [ ] Preis auf $12.99 erhöhen
 - [ ] Amazon Ads starten ($5/Tag Automatic) — Claude führt durch
 
-## Buch #2 (in Vorbereitung)
+## Buch #2: Sobriety Journal for Men (bereit für Upload)
 
-- [ ] Tiefe Marktrecherche für Buch #2 — was braucht der Markt? (nächste Session läuft)
+- [ ] Cover-PDF aus Canva herunterladen: https://www.canva.com/d/0hz8kCgmvPYOonP → Teilen → Herunterladen → PDF Druckqualität
+- [ ] Interior-PDF: `outputs/sobriety-interior/Sobriety-Journal-for-Men-INTERIOR.pdf` (fertig)
+- [ ] KDP-Upload (gleicher Prozess wie Buch #1) — alle Daten in `outputs/sobriety-journal-komplett-paket.md`
 
 ## Monat 2–3
 
