@@ -30,4 +30,13 @@ Geplant: Amazon Ads nach Launch
 
 - Cover: fertig (dunkelblau, Circuit-Brain, professionell)
 - Inneninhalt: HTML-Template fertig (outputs/planner-interior/daily-page.html)
-- KDP-Account: noch nicht erstellt (morgen)
+- KDP-Account: erstellt und vollständig eingerichtet (Bank: SGKB, Steuer: W-8BEN, 0% US-Einbehalt)
+- Buch #1: eingereicht bei Amazon, wird geprüft (24–72h), Preis $9.99, 112 Seiten, Schwarz-Weiss, Matt
+- Launch-Preis: $9.99 → nach 15 Reviews: $12.99 → nach 50 Reviews: $14.99
+
+## ARC-Reader Plan
+
+- Belegexemplare bestellen (in KDP unter Bücherregal → Belegexemplare) zu $2.90 + Versand
+- Amazon versendet direkt an ARC-Reader — kein eigener Versand nötig
+- Facebook-Gruppen beigetreten: ADHD Support Group FOR ADULTS WITH ADHD (12.951 M.), ADHD Adults Support & Advice Group (4.010 M.)
+- Post-Vorlage fertig: outputs/facebook-arc-post.md
