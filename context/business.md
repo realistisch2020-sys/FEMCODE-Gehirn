@@ -4,11 +4,14 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 
 ## Was ich anbiete
 
-Welche Produkte, Programme oder Leistungen? Was ist dein Hauptangebot?
+Bücher (Kalenderformat):
+- Buch 1: ADHD-Kalender für Männer
+- Buch 2: Sucht-Kalender für Männer
+- Buch 3: in Planung (Recherche läuft)
 
 ## Meine Zielgruppe
 
-Für wen ist das? Wer kauft bei dir, was beschäftigt diese Menschen?
+Männer — primär mit Herausforderungen wie ADHS, Sucht, mentale Gesundheit.
 
 ## Meine Kanäle
 

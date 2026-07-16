@@ -4,7 +4,8 @@ Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich ve
 
 ## Wer ich bin
 
-Wer bist du, was machst du, wie würdest du dich in zwei Sätzen vorstellen?
+Name: Petra Tanner
+Ich schreibe Bücher für Männer — bisher zu ADHS und Sucht, jeweils in Kalenderform.
 
 ## Mein Werdegang
 
