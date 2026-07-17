@@ -1,7 +1,7 @@
 # Inhaltsverzeichnis
 
 ## Wenn Beziehungen erschöpfen
-### Warum du immer gibst, nie genug bekommst — und wie du aufhörst, dich selbst zu verlieren
+### Warum du gibst, bis nichts mehr von dir übrig ist — und wie du dich zurückholst
 
 ---
 
