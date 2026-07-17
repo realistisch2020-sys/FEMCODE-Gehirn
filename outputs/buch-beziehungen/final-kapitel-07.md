@@ -32,7 +32,7 @@ Nicht mit den grossen Lebensveränderungen. Nicht damit, deiner Mutter oder dein
 
 Fang damit an, die Signale wahrzunehmen. Bevor du eine Grenze setzen kannst, musst du merken, wann sie überschritten wird. Dein Körper weiss das oft früher als dein Kopf. Eine Verspannung im Nacken. Ein Ziehen im Bauch. Das Gefühl, sich innerlich zusammenzuziehen. Das ist das Nein, das du überhört hast. Fang an, es zu hören. Ohne sofort zu handeln. Nur wahrnehmen.
 
-Dann die Pause vor dem Ja. Du musst nicht in dem Moment antworten, in dem jemand etwas von dir verlangt. „Ich schau, wie mein Tag aussieht, und melde mich." „Lass mich kurz überlegen." Das ist keine Aussrede. Es ist eine Pause. Diese Pause gibt dir Raum zu spüren, was du wirklich willst.
+Dann die Pause vor dem Ja. Du musst nicht in dem Moment antworten, in dem jemand etwas von dir verlangt. „Ich schau, wie mein Tag aussieht, und melde mich." „Lass mich kurz überlegen." Das ist keine Ausrede. Es ist eine Pause. Diese Pause gibt dir Raum zu spüren, was du wirklich willst.
 
 Dann das kleine Nein üben. Nein zum Restaurant, das du nicht willst. Nein zu einem Telefonat, wenn du müde bist. Nein zu einer Bitte, die du diese Woche nicht leisten kannst. Jedes kleine Nein ist ein Muskel. Muskeln wachsen durch Gebrauch.
 

@@ -24,7 +24,7 @@ Das Tragische daran: Von aussen wirken sie angenehm, zuverlässig, herzlich. Nie
 
 Und das Dritte, das ich ansprechen möchte, sind frühe Bindungserfahrungen. Dazu kommen wir im nächsten Kapitel ausführlich. Kurz gesagt: Wir lernen als Kinder, wie Beziehungen funktionieren. Wenn wir in einem Umfeld aufgewachsen sind, in dem Liebe an Bedingungen geknüpft war, an Leistung, an Anpassung, an das Unsichtbarsein der eigenen Bedürfnisse, dann tragen wir diese Überzeugungen ins Erwachsenenleben. Nicht weil unsere Eltern böse waren. Sondern weil auch sie ihre eigenen Wunden hatten.
 
-Bevor du weiterließt, möchte ich dir etwas sehr klar sagen.
+Bevor du weiterliest, möchte ich dir etwas sehr klar sagen.
 
 Diese Muster sind keine Charakterfehler. Sie sind keine Zeichen von Schwäche oder mangelnder Selbstachtung. Es sind Überlebensstrategien. Als Kind hast du gelernt: Wenn ich mich anpasse, ist Friede. Wenn ich keine Ansprüche stelle, werde ich nicht zurückgewiesen. Wenn ich für andere da bin, bin ich wertvoll. Diese Strategien haben dir damals geholfen. Vielleicht haben sie dein emotionales Überleben gesichert.
 
