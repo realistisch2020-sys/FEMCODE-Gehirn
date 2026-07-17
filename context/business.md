@@ -24,7 +24,13 @@ Primär Männer (Bücher 1+2). Buch 3 richtet sich an Frauen 30–55 — Frauen,
 
 ## Meine Kanäle
 
-Wo findest du statt (Instagram, Newsletter, Podcast, was auch immer)?
+Instagram: aktiv, postet regelmässig über den Monat verteilt.
+
+**Instagram-Stil für Buch 3 ("Kundisch"):**
+- Kurz, direkt in den Schmerz der Zielgruppe
+- Franzi-Energie: pfiffig, frech, von Frau zu Frau
+- Story vor Launch: Neugier wecken
+- Feed nach Launch: Link in Bio, klarer Kaufimpuls
 
 ## Meine Angebote und Preise
 

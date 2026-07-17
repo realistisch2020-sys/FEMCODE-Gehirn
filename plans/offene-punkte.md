@@ -10,6 +10,8 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Buch 3: Nach Veröffentlichung
 
+- Instagram Story jetzt posten (Text fertig in outputs/instagram-launch-posts.md)
+- Sobald live: Feed-Post mit Amazon-Link veröffentlichen
 - Erste Bewertungen organisieren (Lesergruppe, die Rezension schreibt)
 - Homepage / Landingpage für Safe to Thrive erstellen (aktuell keine vorhanden)
 - Taschenbuch auf KDP erstellen (Print-Manuskript + Cover mit Rücken)
