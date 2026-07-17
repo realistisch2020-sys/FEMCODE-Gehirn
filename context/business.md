@@ -7,7 +7,7 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 Bücher (Selfpublishing via Amazon KDP, Schweiz):
 - Buch 1: ADHD-Kalender für Männer
 - Buch 2: Sucht-Kalender für Männer
-- Buch 3: "Wenn Beziehungen erschöpfen" — Zielgruppe Frauen 30–55, Thema Co-Abhängigkeit / Selbstverlust in Beziehungen. 12 Kapitel + Abschlussbrief. Lektorat abgeschlossen. Nächster Schritt: KDP-Manuskript.
+- Buch 3: "Wenn Beziehungen erschöpfen — Warum du gibst, bis nichts mehr von dir übrig ist — und wie du dich zurückholst". Zielgruppe Frauen 30–55, Thema Co-Abhängigkeit / Selbstverlust in Beziehungen. 15 Kapitel + Einführung + Abschlussbrief + Backmatter. ~21.100 Wörter. Manuskript fertig, Gedankenstriche bereinigt, Impressum rechtssicher (CH+DE). KDP DOCX fertig. Nächster Schritt: Auf KDP hochladen + Klappentext/Keywords erstellen.
 
 ## Meine Zielgruppe
 

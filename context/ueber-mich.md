@@ -5,7 +5,7 @@ Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich ve
 ## Wer ich bin
 
 Name: Petra Tanner
-Ich schreibe Bücher für Männer — bisher zu ADHS und Sucht, jeweils in Kalenderform.
+Ich schreibe Bücher — für Männer (ADHS, Sucht in Kalenderform) und für Frauen (Buch 3: Beziehungserschöpfung). Ich bin Therapeutin und Coachin, arbeite unter dem Namen Safe to Thrive in der Schweiz. Kontakt: tanner.pe@bluewin.ch. Keine eigene Homepage (Stand 2026).
 
 ## Mein Werdegang
 
