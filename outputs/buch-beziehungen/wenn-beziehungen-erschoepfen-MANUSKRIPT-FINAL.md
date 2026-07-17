@@ -2145,7 +2145,7 @@ Gemeinsam mit anderen Frauen, die ähnliche Erfahrungen machen. In einem geschü
 
 Du musst diesen Weg nicht alleine gehen.
 
-Bei Interesse melde dich direkt per E-Mail: **tanner.pe@bluewin.ch**
+Bei Interesse melde dich direkt per E-Mail: **beyondlimitsnow25@gmail.com**
 
 ---
 
@@ -2194,4 +2194,4 @@ Alle Rechte vorbehalten. Das Werk einschliesslich aller seiner Teile ist urheber
 
 **Fallbeispiele:** Alle im Buch erwähnten Personen und Fallbeispiele sind anonymisiert oder als zusammengesetzte Composite-Fälle aus mehreren Situationen dargestellt. Sie dienen der Veranschaulichung und entsprechen keiner einzelnen realen Person. Ähnlichkeiten mit lebenden oder verstorbenen Personen sind rein zufällig und unbeabsichtigt.
 
-**Kontakt:** tanner.pe@bluewin.ch
+**Kontakt:** beyondlimitsnow25@gmail.com
