@@ -30,7 +30,7 @@ Und sie fragt sich, warum sie sich nie wirklich gesehen fühlt.
 
 Die Antwort ist einfach und schmerzhaft: Weil sie sich selbst nicht zeigt.
 
-Und dann, irgendwann, passiert etwas noch Schmerzhafteres. Sie wird unsichtbar — nicht nur für andere. Auch für sich selbst. Sie schaut in den Spiegel und weiss nicht mehr genau, wer da zurückschaut. Nicht weil sie sich verändert hat. Sondern weil sie aufgehört hat, sich zu suchen.
+Und dann, irgendwann, passiert etwas noch Schmerzhafteres. Sie wird unsichtbar, nicht nur für andere. Auch für sich selbst. Sie schaut in den Spiegel und weiss nicht mehr genau, wer da zurückschaut. Nicht weil sie sich verändert hat. Sondern weil sie aufgehört hat, sich zu suchen.
 
 Rollen entstehen aus dem Bedürfnis nach Sicherheit. Als Kinder nehmen wir die Rolle an, die uns in unserem System am sichersten erscheint. In einer Familie mit emotional überforderten Eltern lernt ein Kind, unsichtbar zu sein, weil das sicherer ist als Aufmerksamkeit zu erregen. Wo viel erwartet wird, wird ein Kind zur Retterin. Wo Selbstlosigkeit als höchste Tugend gilt, wird ein Kind zur Märtyrerin.
 
