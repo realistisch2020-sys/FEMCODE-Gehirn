@@ -20,7 +20,7 @@ Diese Lücke zwischen dem, was du sagst, und dem, was du wirklich fühlst, ist d
 
 Und am Ende des Tages bleibt nichts mehr übrig. Nicht für andere. Und schon gar nicht für dich.
 
-Ich sage dir jetzt etwas, das du dir merken sollst.
+Ich sage dir jetzt etwas, das ich dir mitgeben möchte.
 
 Echte Liebe erschöpft nicht.
 

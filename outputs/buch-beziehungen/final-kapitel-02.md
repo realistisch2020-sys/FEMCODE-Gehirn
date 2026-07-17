@@ -10,7 +10,7 @@ Ich möchte das heute mit dir tun.
 
 Was du erlebst, hat in der Psychologie mehrere Namen. Ich nenne sie dir nicht, um dich in eine Schublade zu stecken, sondern weil Benennen befreit. Wenn du einem Muster einen Namen gibst, hört es auf, ein diffuses, bedrohliches Etwas zu sein. Es wird greifbar. Und was greifbar ist, kann verändert werden.
 
-Das erste Wort, das du dir merken sollst, heisst Co-Abhängigkeit.
+Das erste Wort, das ich dir mitgeben möchte, heisst Co-Abhängigkeit.
 
 Ursprünglich kam dieser Begriff aus der Suchtforschung. Man beobachtete, dass die Angehörigen von Suchtkranken oft selbst in einem Muster feststeckten: Sie organisierten ihr Leben um den Süchtigen herum, deckten ihn, retteten, kontrollierten, und verloren dabei sich selbst. Heute wissen wir, dass Co-Abhängigkeit weit über Suchtfamilien hinausgeht. Sie zeigt sich überall dort, wo ein Mensch seine eigene emotionale Stabilität daran knüpft, wie es dem anderen geht.
 
