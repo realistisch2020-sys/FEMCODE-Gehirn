@@ -330,7 +330,7 @@ Eine Klientin erzählte mir einmal eine Geschichte, die mich nicht losgelassen h
 
 Sie heisst Franziska, ist jetzt zweiundvierzig. Als Kind hatte sie eine Mutter, die Stimmungsschwankungen hatte. Manche Abende war die Mutter warm, liebevoll, präsent. Andere Abende — und man wusste nie welche — war sie kalt, schweigend, nicht erreichbar.
 
-Franziska lernte, noch bevor sie das Haus betrat, ob es ein guter oder schlechter Abend war. Sie hörte, wie die Mutter in der Küche hantierte. Wie die Schranktüren klangen. Wie die Schritte klingen. „Ich konnte es an allem ablesen," sagte sie mir. „Der Ton, in dem sie Guten Abend sagte. Ob sie mich anschaute oder nicht."
+Franziska lernte, noch bevor sie das Haus betrat, ob es ein guter oder schlechter Abend war. Sie hörte, wie die Mutter in der Küche hantierte. Wie die Schranktüren klangen. Wie die Schritte klangen. „Ich konnte es an allem ablesen," sagte sie mir. „Der Ton, in dem sie Guten Abend sagte. Ob sie mich anschaute oder nicht."
 
 Franziska entwickelte ein fast übermenschliches Gespür für die Stimmungen anderer. Ein Sensorium, das ständig scannte: Wie ist die Lage? Bin ich sicher?
 
@@ -852,7 +852,7 @@ Bevor du eine Grenze setzen kannst, musst du merken, wann sie überschritten wir
 
 Du musst nicht in dem Moment antworten, in dem jemand etwas von dir verlangt. „Ich schau, wie mein Tag aussieht, und melde mich." „Lass mich kurz überlegen." Das ist keine Ausrede. Es ist eine Pause. Diese Pause gibt dir Raum zu spüren, was du wirklich willst.
 
-Frauen mit People-Pleasing-Muster sagen sehr oft Ja, bevor sie sich gefragt haben, ob sie das wollen. Das Ja kommt automatisch, bevor der Verstand überhaupt eingeschalten hat. Die Pause unterbricht das.
+Frauen mit People-Pleasing-Muster sagen sehr oft Ja, bevor sie sich gefragt haben, ob sie das wollen. Das Ja kommt automatisch, bevor der Verstand überhaupt eingeschaltet hat. Die Pause unterbricht das.
 
 **Schritt 3: Das kleine Nein üben.**
 
@@ -884,7 +884,7 @@ Menschen, die dich wirklich lieben, werden dein Nein akzeptieren — auch wenn s
 
 ---
 
-Eine letzte Gedanke zu Grenzen, der mir wichtig ist.
+Ein letzter Gedanke zu Grenzen, der mir wichtig ist.
 
 Grenzen zu setzen ist keine einmalige Handlung. Es ist eine Praxis. Du wirst es lernen, vergessen, wieder lernen. Du wirst Rückschritte haben — Momente, wo du wieder Ja sagst, obwohl du Nein meinst, und dann eine Stunde später weisst, dass du es bereust.
 
@@ -1116,7 +1116,7 @@ Freude ist kein Luxus. Sie ist ein Kompass.
 
 **Schritt 3: Die Identitätsfrage**
 
-Viele stellt die Frage, die irgendwann kommt, wenn man diesen Weg geht: Wenn ich aufhöre, die Retterin zu sein, die Märtyrerin — wer bin ich dann?
+Vielen stellt sich die Frage, die irgendwann kommt, wenn man diesen Weg geht: Wenn ich aufhöre, die Retterin zu sein, die Märtyrerin — wer bin ich dann?
 
 Ich sage dir die Wahrheit: Du weisst es noch nicht. Noch nicht.
 
@@ -1591,7 +1591,7 @@ Das ist das innere Kind in Aktion.
 
 ---
 
-**Die zweite Geschichte: wenn der Körper das weiß, was der Kopf verdrängt hat**
+**Die zweite Geschichte: wenn der Körper das weiss, was der Kopf verdrängt hat**
 
 Ich denke an Joana, siebenunddreissig, Wirtschaftsjuristin.
 
@@ -1759,7 +1759,7 @@ Wichtig ist: Das ist kein gelegentliches Missgeschick. Es ist ein Muster.
 
 **Deine Bedürfnisse gelten nicht.** Wenn du etwas brauchst, wird das als Anspruch definiert. Als Schwäche. Als Belastung. „Du hast immer Probleme." „Es reicht dir nie." „Andere Frauen wären froh um das, was ich dir gebe." Du hörst auf, Bedürfnisse zu äussern, weil es sich nicht lohnt. Weil du Angst hast vor der Reaktion.
 
-**Öffentlich anders als privat.** Nach aussen ist er charmant, beliebt, gut angesehen. Auf Partys hilft er, lacht, ist aufmerksam. Nur du siehst das andere Gesicht. Wenn du davon erzählst, glauben dir andere oft nicht. Das verstärkt deine Isolation: Du fühlst dich verrückt. Du fragst dich, ob du derjenigen bist, die das Problem ist.
+**Öffentlich anders als privat.** Nach aussen ist er charmant, beliebt, gut angesehen. Auf Partys hilft er, lacht, ist aufmerksam. Nur du siehst das andere Gesicht. Wenn du davon erzählst, glauben dir andere oft nicht. Das verstärkt deine Isolation: Du fühlst dich verrückt. Du fragst dich, ob du diejenige bist, die das Problem ist.
 
 **Reaktion auf Grenzen.** Wenn du eine Grenze setzt, kommt Wut. Oder tagelanges Schweigen. Oder Schuldgefühle, die du danach trägst: „Ich mache mir solche Sorgen um uns." „Ich wusste, dass du dich veränderst." Die Grenze wird so teuer gemacht, dass du aufhörst, sie zu setzen. Das ist kein Zufall. Das ist Absicht — auch wenn der andere das vielleicht nicht bewusst plant.
 
@@ -1965,7 +1965,7 @@ Nicht weil man immer nach Schema F vorgehen muss, sondern weil die Struktur hilf
 
 Vier Schritte:
 
-**Beobachtung statt Bewertung.** Nicht: „Du ignorierst mich immer." Das ist eine Bewertung, kein Beobachtung. Und sie löst sofort Widerstand aus. Stattdessen: „Gestern Abend hast du drei Stunden auf dein Handy geschaut, während wir zusammen waren."
+**Beobachtung statt Bewertung.** Nicht: „Du ignorierst mich immer." Das ist eine Bewertung, keine Beobachtung. Und sie löst sofort Widerstand aus. Stattdessen: „Gestern Abend hast du drei Stunden auf dein Handy geschaut, während wir zusammen waren."
 
 Konkret, beschreibend, ohne Verurteilung. Der andere kann das schwerer anfechten, weil es eine Beobachtung ist, keine Anklage.
 
