@@ -8,7 +8,7 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Demnächst
 
-- (noch nichts)
+- Buch-Empfehlung: 3 gelesene Bücher nennen → Trend erkennen → nächstes Buch empfehlen
 
 ## Ideen / später
 
