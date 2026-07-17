@@ -36,6 +36,8 @@ Das ist die Kindheitsstrategie. Liebe durch Leistung verdienen. Das Problem: Lie
 
 Ich gebe dir eine Frage mit, die ich für eine der kraftvollsten halte, die ich kenne. Stelle sie dir in Momenten, wo du wieder den Impuls spürst, mehr zu geben, mehr zu leisten, noch mehr zu schlucken:
 
+Ich habe Frauen diese Frage gestellt und danach Stille erlebt. Nicht Verlegenheit. Stille. Die Art von Stille, die entsteht, wenn etwas trifft, das man lange nicht gehört hat.
+
 „Was würde ich tun, wenn ich sicher wäre, dass ich trotzdem geliebt werde?"
 
 Diese Frage öffnet etwas. Weil die meiste Überanpassung aus Angst entsteht, der Angst, nicht zu genügen, verlassen zu werden, Liebe zu verlieren. Wenn du dir vorstellst, die Liebe wäre gesichert, unabhängig von dem, was du tust, was würdest du dann anders machen?

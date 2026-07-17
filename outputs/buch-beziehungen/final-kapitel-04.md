@@ -24,6 +24,8 @@ Das T체ckische: Es zeigt sich selten als direkte Wut. Es zeigt sich als Gleichg�
 
 Dann fragst du dich, warum du deinen Partner manchmal nicht mehr ausstehen kannst, obwohl er nichts Schlimmes getan hat. Es ist das Ressentiment. Die angestaute Wut 체ber all die Male, wo du nicht f체r dich eingetreten bist.
 
+Du bist nicht w체tend auf ihn. Du bist w체tend auf dich. Auf all die Male, wo du geschwiegen hast, wenn du h채ttest sprechen sollen. Auf all die Male, wo du Ja gesagt hast und innerlich Nein geschrien hast. Das Ressentiment ist keine Emotion 체ber den anderen. Es ist eine Rechnung, die du dir selbst schuldest.
+
 Noch etwas, das ich ansprechen muss, auch wenn es wehtut.
 
 Der Verlust des eigenen Ichs.
