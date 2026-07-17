@@ -78,10 +78,13 @@ van der Kolk, B. (2014). *Verkörperter Schrecken.* Probst Verlag.
 Warum du gibst, bis nichts mehr von dir übrig ist — und wie du dich zurückholst
 
 Autorin: Petra Tanner
-© 2025 Petra Tanner / Safe to Thrive
+© 2026 Petra Tanner / Safe to Thrive
+Schweiz
 
-Alle Rechte vorbehalten. Das Werk einschliesslich aller seiner Teile ist urheberrechtlich geschützt. Jede Verwertung ausserhalb der engen Grenzen des Urheberrechts ist ohne Zustimmung der Autorin unzulässig und strafbar.
+Alle Rechte vorbehalten. Das Werk einschliesslich aller seiner Teile ist urheberrechtlich geschützt. Jede Verwertung ausserhalb der engen Grenzen des Urheberrechtsgesetzes — insbesondere Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen — ist ohne ausdrückliche schriftliche Zustimmung der Autorin unzulässig.
 
-Die in diesem Buch enthaltenen Informationen ersetzen keine professionelle therapeutische oder medizinische Beratung. Bei ernsthaften psychischen Belastungen wird empfohlen, professionelle Unterstützung zu suchen.
+**Haftungsausschluss:** Die in diesem Buch enthaltenen Inhalte dienen ausschliesslich zu Informations- und Bildungszwecken. Sie ersetzen in keinem Fall professionelle therapeutische, psychologische oder medizinische Beratung, Diagnose oder Behandlung. Die Autorin übernimmt keine Haftung für Schäden, die direkt oder indirekt aus der Anwendung der in diesem Buch beschriebenen Inhalte entstehen. Bei ernsthaften psychischen Belastungen, Krisen oder Verdacht auf psychische Erkrankungen wird ausdrücklich empfohlen, qualifizierte professionelle Unterstützung zu suchen.
 
-Alle im Buch erwähnten Fallbeispiele sind anonymisiert oder als Composite-Fälle dargestellt. Ähnlichkeiten mit realen Personen sind rein zufällig.
+**Fallbeispiele:** Alle im Buch erwähnten Personen und Fallbeispiele sind anonymisiert oder als zusammengesetzte Composite-Fälle aus mehreren Situationen dargestellt. Sie dienen der Veranschaulichung und entsprechen keiner einzelnen realen Person. Ähnlichkeiten mit lebenden oder verstorbenen Personen sind rein zufällig und unbeabsichtigt.
+
+**Externe Links:** Hinweise auf Websites Dritter (z. B. www.safetothrive.ch) liegen ausserhalb des Verantwortungsbereichs der Autorin. Für deren Inhalte übernimmt die Autorin keine Haftung.
