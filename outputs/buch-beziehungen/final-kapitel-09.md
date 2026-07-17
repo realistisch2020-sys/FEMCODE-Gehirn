@@ -6,7 +6,7 @@ Ich habe bewusst gewartet. Ich habe erst acht Kapitel damit verbracht, dir zu ze
 
 Jetzt geht es darum, was du tust.
 
-Und ich sage dir von Anfang an: Es gibt keine Methode, die du heute anwendest und morgen ist alles anders. Wer dir das verspricht, lügt. Muster, die sich über Jahre oder Jahrzehnte aufgebaut haben, verändern sich nicht über Nacht. Aber sie verändern sich. Mit kleinen, konsequenten Schritten. Mit Geduld für dich selbst, besonders in den Momenten, wo du wieder in alte Muster fällst.
+Und ich sage dir von Anfang an: Es gibt keine Methode, die du heute anwendest und die morgen alles verändert. Wer dir das verspricht, lügt. Muster, die sich über Jahre oder Jahrzehnte aufgebaut haben, verändern sich nicht über Nacht. Aber sie verändern sich. Mit kleinen, konsequenten Schritten. Mit Geduld für dich selbst, besonders in den Momenten, wo du wieder in alte Muster fällst.
 
 Wenn ich Frauen frage „Was brauchst du?", bekomme ich fast immer eine von drei Antworten. „Ich weiss nicht." Oder: „Dass die anderen glücklicher sind." Oder: „Einfach mal Ruhe."
 

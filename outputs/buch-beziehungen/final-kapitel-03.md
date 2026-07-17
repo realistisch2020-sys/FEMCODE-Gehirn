@@ -18,7 +18,7 @@ Wenn ein Kind immer wieder erlebt, dass Zuwendung an Bedingungen geknüpft ist, 
 
 Die Bindungsforschung hat das sehr präzise beschrieben. John Bowlby, Mary Ainsworth und viele nach ihnen haben gezeigt, dass Kinder verschiedene Strategien entwickeln, um mit ihren Bezugspersonen umzugehen. Diese Strategien nennen wir Bindungsstile, und sie prägen uns weit ins Erwachsenenleben hinein.
 
-Der sicher gebundene Mensch hat erlebt: Wenn ich jemanden brauche, ist er da. Er kann weinen, wütend sein, Bedürfnisse zeigen, und wird trotzdem geliebt. Als Erwachsener geht er relativ entspannt mit Nähe und Distanz um. Er kann Zuwendung einfordern, ohne Angst vor Zurückweisung.
+Der sicher gebundene Mensch hat erlebt: Wenn ich jemanden brauche, ist er da. Er kann weinen, wütend sein, Bedürfnisse zeigen und wird trotzdem geliebt. Als Erwachsener geht er relativ entspannt mit Nähe und Distanz um. Er kann Zuwendung einfordern, ohne Angst vor Zurückweisung.
 
 Dann gibt es den ängstlich-ambivalenten Bindungsstil. Das Kind hatte eine Bezugsperson, die manchmal sehr liebevoll war und manchmal emotional abwesend, unberechenbar, in ihrer eigenen Welt. Das Kind lernt: Ich muss extra angepasst sein, damit ich Aufmerksamkeit bekomme. Als Erwachsener will man Nähe, traut ihr aber nicht. Man ist sehr fein abgestimmt auf die Stimmungen anderer. Man fragt sich ständig, ob man genug ist, ob man zu viel ist, ob man es richtig macht.
 

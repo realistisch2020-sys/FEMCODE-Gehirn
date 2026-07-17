@@ -1,6 +1,6 @@
 # Kapitel 4: Was du wirklich bezahlst
 
-Es gibt einen Satz, den ich manchmal sage und der die Menschen zuerst erschreckt: Du zahlst dafür. Jeden Tag.
+Es gibt einen Satz, mit dem ich manchmal anfange und der immer dieselbe Reaktion auslöst: Du zahlst dafür. Jeden Tag.
 
 Nicht mit Geld. Mit etwas, das sich nicht zurückgewinnen lässt: deiner Lebensenergie. Deiner Freude. Deiner Gesundheit. Mit der Zeit, die du hättest anders verbringen können.
 
