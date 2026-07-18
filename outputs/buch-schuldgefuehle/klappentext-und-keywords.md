@@ -82,7 +82,7 @@ Das entspricht dem Preispunkt erfolgreicher Bücher wie:
 Kopiere diesen Text direkt ins KDP-Beschreibungsfeld:
 
 ```
-<h2>Warum du dich ständig schuldig fühlst — und wie du aufhörst, dein Leben dafür zu bezahlen</h2>
+<h2>Warum du dich immer schuldig fühlst — und wie du damit aufhörst</h2>
 
 <p>Du entschuldigst dich, bevor du überhaupt weisst, wofür. Du sagst Ja, obwohl alles in dir Nein sagt. Du trägst die Schuld für die Stimmung anderer — auch dann, wenn du nichts getan hast.</p>
 
@@ -113,7 +113,7 @@ Kopiere diesen Text direkt ins KDP-Beschreibungsfeld:
 
 **Muss enthalten:**
 - Titel: "Das schlechte Gewissen"
-- Untertitel (kurz): "Warum du dich ständig schuldig fühlst — und wie du aufhörst, dein Leben dafür zu bezahlen"
+- Untertitel: "Warum du dich immer schuldig fühlst — und wie du damit aufhörst"
 - Autorin: Petra Tanner
 - Optional: "Safe to Thrive"
 

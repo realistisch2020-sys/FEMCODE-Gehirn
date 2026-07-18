@@ -1,6 +1,6 @@
 # Das schlechte Gewissen
 
-## Warum du dich ständig schuldig fühlst, obwohl du nichts falsch gemacht hast, und wie du aufhörst, dein Leben dafür zu bezahlen
+## Warum du dich immer schuldig fühlst — und wie du damit aufhörst
 
 **Petra Tanner**
 Safe to Thrive
