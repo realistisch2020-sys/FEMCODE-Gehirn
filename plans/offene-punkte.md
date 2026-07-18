@@ -2,6 +2,14 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## Buch 4 (Das schlechte Gewissen): KDP-Upload ausstehend
+
+- KDP-Upload durchführen: DOCX + Cover + Klappentext
+  - Manuskript: `outputs/buch-schuldgefuehle/das-schlechte-gewissen-KDP.docx`
+  - Cover: `outputs/buch-schuldgefuehle/cover-das-schlechte-gewissen-FINAL.png` (1600×2560px, KDP-ready)
+  - HTML-Klappentext + Keywords: `outputs/buch-schuldgefuehle/klappentext-und-keywords.md`
+- Nach Freigabe: Amazon-Link prüfen, Instagram Story + Feed-Post
+
 ## Buch 3: Warten auf KDP-Freigabe
 
 - E-Mail von KDP abwarten (kdp@amazon.com) — Buch 3 eBook eingereicht 17. Juli 2026, 24–72h Prüfzeit
@@ -22,16 +30,15 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Erledigte Punkte (diese Session)
 
-- ✅ Klappentext für Amazon-Produktseite geschrieben (Franzi NLS Energie)
-- ✅ 7 Keywords für KDP festgelegt
-- ✅ 2 KDP-Kategorien gewählt
-- ✅ Preis festgelegt: eBook $9.99 / 8.73 EUR, 70% Tantieme
-- ✅ KDP DOCX mit Titelseite + Inhaltsverzeichnis neu gebaut
-- ✅ Private E-Mail ersetzt durch beyondlimitsnow25@gmail.com im Buch
-- ✅ Buch 3 eBook auf KDP hochgeladen und eingereicht (17. Juli 2026)
-- ✅ DRM aktiviert, KI-Inhalt verneint, alle Preisfelder ausgefüllt
+- ✅ Buch 4 Manuskript vollständiges Lektorat: KI-Muster entfernt, Franzi-Stil, Swiss-Spelling
+- ✅ Untertitel gekürzt: "Warum du dich immer schuldig fühlst — und wie du damit aufhörst"
+- ✅ Cover finalisiert und auf 1600×2560px hochskaliert (KDP-Format)
+- ✅ DOCX neu gebaut mit aktualisiertem Untertitel
+- ✅ Klappentext HTML aktualisiert mit neuem Untertitel
+- ✅ Marktlücke bestätigt: tiefes psychologisches Segment (Bindungstheorie + Trauma-Ansatz) fehlt auf Amazon.de
+- ✅ Alle Dateien committed und gepusht (branch: claude/third-book-research-lig3co)
 
 ## Ideen / später
 
 - Newsletter aufbauen
-- Instagram-Content zu Buch 3 planen
+- Instagram-Content zu Buch 3 + 4 planen
