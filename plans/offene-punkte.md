@@ -2,6 +2,13 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## Buch 1 (ADHD Planner): Cover live, warten auf korrekte Anzeige
+
+- Cover wurde auf KDP hochgeladen (Full-Wrap 8.5×11", 5252×3376px, 300 DPI)
+- Cover in KDP-Vorschau korrekt — auf Amazon.de noch nicht aktualisiert (2–3 Tage warten)
+- Sobald Cover live: Facebook + Instagram Post mit Link amazon.de/dp/B0H9B3XZF8
+- Author Central eingerichtet (amazon.de + amazon.com) — Bio eingetragen
+
 ## Buch 4 (Das schlechte Gewissen): KDP-Upload ausstehend
 
 - KDP-Upload durchführen: DOCX + Cover + Klappentext
@@ -24,19 +31,11 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 - Homepage / Landingpage für Safe to Thrive erstellen (aktuell keine vorhanden)
 - Taschenbuch auf KDP erstellen (Print-Manuskript + Cover mit Rücken)
 
-## Buch 1 (ADHD Planner): Warten auf KDP-Freigabe
-
-- Eingereicht 15. Juli 2026, noch "Wird geprüft" — E-Mail abwarten
-
 ## Erledigte Punkte (diese Session)
 
-- ✅ Buch 4 Manuskript vollständiges Lektorat: KI-Muster entfernt, Franzi-Stil, Swiss-Spelling
-- ✅ Untertitel gekürzt: "Warum du dich immer schuldig fühlst — und wie du damit aufhörst"
-- ✅ Cover finalisiert und auf 1600×2560px hochskaliert (KDP-Format)
-- ✅ DOCX neu gebaut mit aktualisiertem Untertitel
-- ✅ Klappentext HTML aktualisiert mit neuem Untertitel
-- ✅ Marktlücke bestätigt: tiefes psychologisches Segment (Bindungstheorie + Trauma-Ansatz) fehlt auf Amazon.de
-- ✅ Alle Dateien committed und gepusht (branch: claude/third-book-research-lig3co)
+- ✅ Buch 1 Taschenbuch live auf Amazon: amazon.de/dp/B0H9B3XZF8
+- ✅ Buch 1 Cover Full-Wrap neu gebaut (8.5×11", korrekte KDP-Masse)
+- ✅ Author Central eingerichtet auf amazon.de + amazon.com (Bio + Buch beansprucht)
 
 ## Ideen / später
 
