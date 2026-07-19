@@ -86,7 +86,7 @@ Kopiere diesen Text direkt ins KDP-Beschreibungsfeld:
 
 <p>Du entschuldigst dich, bevor du überhaupt weisst, wofür. Du sagst Ja, obwohl alles in dir Nein sagt. Du trägst die Schuld für die Stimmung anderer — auch dann, wenn du nichts getan hast.</p>
 
-<p>Das kennt sich an wie du. Aber es ist nicht du. Es ist ein Muster, das du gelernt hast.</p>
+<p>Das kommt dir bekannt vor. Aber es ist nicht du. Es ist ein Muster, das du gelernt hast.</p>
 
 <p>Petra Tanner, Therapeutin und Coachin, begleitet seit vielen Jahren Frauen, die an einem Punkt ankommen, wo das Funktionieren nicht mehr funktioniert. Immer wieder sieht sie dasselbe: Frauen, die sich für Dinge schuldig fühlen, die keine Schuld verdienen.</p>
 
