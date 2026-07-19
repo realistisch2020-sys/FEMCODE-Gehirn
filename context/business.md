@@ -32,6 +32,11 @@ Instagram: aktiv, postet regelmässig über den Monat verteilt.
 - Story vor Launch: Neugier wecken
 - Feed nach Launch: Link in Bio, klarer Kaufimpuls
 
+## KDP KI-Angaben (Standard für alle Bücher)
+
+- Texte: **Gesamtes Werk, mit umfangreicher Bearbeitung**
+- Bilder: **Gesamtes Werk, mit minimaler oder keiner Bearbeitung**
+
 ## Meine Angebote und Preise
 
 Was kostet was? Grobe Preisspannen reichen.
