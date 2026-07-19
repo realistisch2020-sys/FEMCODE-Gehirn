@@ -17,19 +17,24 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 - Nach Freigabe: Amazon-Link prüfen, Instagram Story + Feed-Post
 - Taschenbuch noch nicht erstellt — kann separat nachgeholt werden
 
-## Buch 3: Warten auf KDP-Freigabe
+## Buch 3: Warten auf KDP-Freigabe (eBook)
 
 - E-Mail von KDP abwarten (kdp@amazon.com) — Buch 3 eBook eingereicht 17. Juli 2026, 24–72h Prüfzeit
 - Nach Freigabe: Link prüfen, ob Klappentext + Cover korrekt angezeigt werden
-- Taschenbuch noch nicht erstellt — kann separat nachgeholt werden (eigene Formatierung + Cover nötig)
+
+## Buch 3: Taschenbuch — bereit zum Upload
+
+- Manuskript: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.docx` (5.5×8.5", Georgia-Layout, 15 Kapitel, Fragen-Blöcke)
+- Cover Full-Wrap: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.jpg` (3474×2624px, 300 DPI)
+- **Wichtig:** Nach KDP-Manuskript-Upload → Seitenzahl ablesen → Rückenbreite prüfen. Aktuelle Schätzung: ~145 Seiten / 0.33" Rücken. Falls abweicht: neuen Cover generieren lassen.
+- KDP Print: Neues Taschenbuch-Projekt anlegen (separat vom eBook)
 
 ## Buch 3: Nach Veröffentlichung
 
-- Instagram Story jetzt posten (Text fertig in outputs/instagram-launch-posts.md)
+- Instagram Story posten (Text fertig in outputs/instagram-launch-posts.md)
 - Sobald live: Feed-Post mit Amazon-Link veröffentlichen
-- Erste Bewertungen organisieren (Lesergruppe, die Rezension schreibt)
+- Erste Bewertungen organisieren
 - Homepage / Landingpage für Safe to Thrive erstellen (aktuell keine vorhanden)
-- Taschenbuch auf KDP erstellen (Print-Manuskript + Cover mit Rücken)
 
 ## Erledigte Punkte (diese Session)
 
@@ -37,6 +42,8 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 - ✅ Buch 4 DOCX neu gebaut: Georgia-Layout, Rose-Akzente, Fragenblöcke, Herz-Divider, Inhaltsverzeichnis
 - ✅ Buch 4 eBook auf KDP hochgeladen (Manuskript + Cover + Klappentext + Keywords + Kategorien)
 - ✅ Author Central eingerichtet auf amazon.de + amazon.com (Bio + Buch beansprucht)
+- ✅ Buch 3 Taschenbuch-DOCX erstellt (5.5×8.5", Georgia, 15 Kapitel, 54 Fragen-Blöcke)
+- ✅ Buch 3 Full-Wrap Print-Cover erstellt (3474×2624px, 300 DPI, Rücken + Rückentext + Vorderseite)
 
 ## Ideen / später
 
