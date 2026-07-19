@@ -1591,7 +1591,7 @@ Das ist das innere Kind in Aktion.
 
 ---
 
-**Die zweite Geschichte: wenn der Körper das weiß, was der Kopf verdrängt hat**
+**Die zweite Geschichte: wenn der Körper das weiss, was der Kopf verdrängt hat**
 
 Ich denke an Joana, siebenunddreissig, Wirtschaftsjuristin.
 
