@@ -401,7 +401,7 @@ Und beim Nein bleiben, auch wenn das Schuldgefühl sich meldet. Das Nein zurück
 
 Und dann warten und beobachten. Was passiert wirklich, wenn du Nein sagst? Ist die Freundschaft tatsächlich anders? Wurde die Freundin tatsächlich wütend? Hat die Mutter aufgehört, dich zu lieben? Sehr oft ist die Antwort: Nein. Die befürchtete Katastrophe ist ausgeblieben. Und jede Erfahrung, in der das Nein keine Katastrophe ausgelöst hat, schreibt sich ins Nervensystem ein. Langsam, aber real.
 
-Karin hat beim Nein geblieben. Das Wochenende war gut. Die Freundschaft ist die gleiche. Und sie weiss: Das nächste Nein wird ein bisschen leichter sein. Nicht einfach, aber leichter.
+Karin ist beim Nein geblieben. Das Wochenende war gut. Die Freundschaft ist die gleiche. Und sie weiss: Das nächste Nein wird ein bisschen leichter sein. Nicht einfach, aber leichter.
 
 Nein sagen und trotzdem schlafen ist kein Versprechen. Es ist ein Prozess. Aber er beginnt mit dem ersten Nein, das du trotz des Schuldgefühls stehen lässt.
 
@@ -699,7 +699,7 @@ Renate kann nicht durch ewige Reue etwas zurückzahlen. Es gibt nichts zurückzu
 
 Das ist die eigentliche Entscheidung.
 
-*Gibt es etwas, für das du dich nie vergeben hast?*
+*Gibt es etwas, für das du dir nie vergeben hast?*
 
 *Was wäre der Unterschied zwischen Reue, die lehrt, und Schuld, die lähmt?*
 
