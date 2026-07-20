@@ -818,7 +818,7 @@ Petra Tanner ist Therapeutin und Coachin und begleitet seit vielen Jahren Frauen
 
 Sie glaubt daran, dass Verstehen der Anfang von Veränderung ist. Und dass jede Frau das Recht hat, ihr Leben ohne chronisches Schuldgefühl zu leben, nicht weil sie es sich verdient hat, sondern weil sie es schlicht darf.
 
-„Das schlechte Gewissen" ist ihr viertes Buch.
+„Das schlechte Gewissen" ist ihr zweites Buch.
 
 Kontakt: beyondlimitsnow25@gmail.com
 
