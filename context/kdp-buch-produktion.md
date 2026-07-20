@@ -142,3 +142,4 @@ canvas.paste(spine_rotated, (spine_x, BLEED))
 |---|---|---|---|---|---|---|
 | Buch 3 | Wenn Beziehungen erschöpfen | 123 | 83px | outputs/buch-beziehungen/…-Taschenbuch.pdf | outputs/buch-beziehungen/…-FullWrap.pdf | In Vorbereitung |
 | Buch 4 | Das schlechte Gewissen | 72 | 49px | outputs/buch-schuldgefuehle/…-Taschenbuch.pdf | outputs/buch-schuldgefuehle/…-FullWrap.pdf | In Vorbereitung |
+| Buch 5 | Niemand hat dich gefragt, wie es dir geht | 61 | 41px | outputs/buch-niemand-gefragt/niemand-hat-dich-gefragt-Taschenbuch.pdf | — | Cover ausstehend |
