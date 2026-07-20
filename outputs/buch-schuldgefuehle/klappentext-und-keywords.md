@@ -8,7 +8,7 @@ Du entschuldigst dich, bevor du überhaupt weisst, wofür.
 Du sagst Ja, obwohl alles in dir Nein sagt.
 Du trägst die Schuld für die Stimmung anderer — auch dann, wenn du nichts getan hast.
 
-Das kennt sich an wie du. Aber es ist nicht du.
+Das kommt dir bekannt vor. Aber das bist nicht du.
 
 Es ist ein Muster, das du gelernt hast. Tief drin, lange bevor du alt genug warst, um darüber nachzudenken.
 
@@ -21,7 +21,7 @@ Du erfährst:
 – Was der Unterschied ist zwischen echter Schuld und dem falschen Gewissen, das dein Leben regiert
 – Wie das Schuldgefühl deine Entscheidungen, deine Beziehungen und deinen Körper beeinflusst
 – Wie du anfängst, Verantwortung zu übernehmen — ohne dabei jede Schuld auf dich zu laden
-– Was es bedeutet, Nein zu sagen, Grenzen zu setzen und dich selbst zu vergeben
+– Was es bedeutet, Nein zu sagen, Grenzen zu setzen und dir selbst zu vergeben
 
 Keine leeren Versprechen. Keine drei Atemübungen, die alles lösen. Sondern tiefes Verstehen — und der Anfang eines anderen Umgangs mit dir selbst.
 
@@ -86,7 +86,7 @@ Kopiere diesen Text direkt ins KDP-Beschreibungsfeld:
 
 <p>Du entschuldigst dich, bevor du überhaupt weisst, wofür. Du sagst Ja, obwohl alles in dir Nein sagt. Du trägst die Schuld für die Stimmung anderer — auch dann, wenn du nichts getan hast.</p>
 
-<p>Das kommt dir bekannt vor. Aber es ist nicht du. Es ist ein Muster, das du gelernt hast.</p>
+<p>Das kommt dir bekannt vor. Aber das bist nicht du. Es ist ein Muster, das du gelernt hast.</p>
 
 <p>Petra Tanner, Therapeutin und Coachin, begleitet seit vielen Jahren Frauen, die an einem Punkt ankommen, wo das Funktionieren nicht mehr funktioniert. Immer wieder sieht sie dasselbe: Frauen, die sich für Dinge schuldig fühlen, die keine Schuld verdienen.</p>
 
@@ -95,7 +95,7 @@ Kopiere diesen Text direkt ins KDP-Beschreibungsfeld:
 <li>Woher das chronische Schuldgefühl wirklich kommt</li>
 <li>Was der Unterschied ist zwischen echter Schuld und dem falschen Gewissen</li>
 <li>Wie das Schuldgefühl deine Entscheidungen und deinen Körper beeinflusst</li>
-<li>Wie du Nein sagst, Grenzen setzt und dich selbst vergibst</li>
+<li>Wie du Nein sagst, Grenzen setzt und dir selbst vergibst</li>
 </ul>
 
 <p>Keine leeren Versprechen. Sondern tiefes Verstehen — und der Anfang eines anderen Umgangs mit dir selbst.</p>
