@@ -141,6 +141,22 @@ canvas.paste(spine_rotated, (spine_x, BLEED))
 
 ---
 
+## KDP Preisaktionen
+
+### eBook — Kindle Countdown Deal (Aktionspreis möglich)
+
+1. kdp.amazon.com → eBook → "Buch bearbeiten"
+2. Reiter **KDP Select** aktivieren (Buch muss 90 Tage exklusiv bei Amazon sein)
+3. Danach unter **"Werbung"** → **"Kindle Countdown Deal"**
+4. Datum + Aktionspreis setzen (mind. 20% unter Normalpreis, mind. $0.99)
+5. Vorteil: 70% Tantieme bleibt auch während des Deals erhalten
+
+### Taschenbuch — KEIN Aktionspreis möglich
+
+KDP bietet für Print-Bücher keine Countdown Deals oder zeitlich begrenzte Aktionspreise an. Einzige Möglichkeit: den Listenpreis dauerhaft senken. Für Aktionen daher immer das eBook nutzen, nicht das Taschenbuch.
+
+---
+
 ## KDP-Einreichung Reihenfolge
 
 1. Manuskript-PDF hochladen → Seitenanzahl notieren
