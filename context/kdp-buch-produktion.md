@@ -202,6 +202,39 @@ Jedes neue Buch verweist am Ende auf die anderen Bücher der Reihe — im Abschn
 
 ---
 
+## Amazon Keywords (7 Felder pro Buch, je max. 50 Zeichen)
+
+KDP → Buchdetails bearbeiten → "Schlüsselwörter". Phrasen statt Einzelwörter.
+
+### Buch 3 — Wenn Beziehungen erschöpfen
+1. `Beziehungen erschöpfen sich auflösen`
+2. `zu viel geben in Beziehungen Frauen`
+3. `emotionale Erschöpfung Partnerschaft`
+4. `Grenzen setzen Beziehung lernen`
+5. `für andere da sein eigene Bedürfnisse`
+6. `Selbstfürsorge Frauen Ratgeber`
+7. `toxische Beziehungsmuster erkennen`
+
+### Buch 4 — Das schlechte Gewissen
+1. `schlechtes Gewissen loswerden Frauen`
+2. `Schuldgefühle überwinden Ratgeber`
+3. `immer schuldig fühlen warum`
+4. `Nein sagen lernen ohne Schuldgefühle`
+5. `Schuldgefühle aus der Kindheit`
+6. `sich entschuldigen aufhören`
+7. `emotionale Unabhängigkeit Selbstwert`
+
+### Buch 5 — Niemand hat dich gefragt, wie es dir geht
+1. `eigene Gefühle nicht kennen Frauen`
+2. `emotionale Vernachlässigung Kindheit`
+3. `Gefühle wahrnehmen lernen`
+4. `innere Leere Ursache überwinden`
+5. `sich selbst finden nach Kindheit`
+6. `funktionieren statt leben Frauen`
+7. `Selbstwahrnehmung stärken Ratgeber`
+
+---
+
 ## Fertige Bücher
 
 | Buch | Titel | Seiten | Spine | Manuskript-PDF | Cover-PDF | KDP-Status |
