@@ -28,13 +28,13 @@ Was dir fehlte, war nicht das Äussere.
 Es war das Innere.
 Die Frage, die nie gestellt wurde.
 
-Der Abend, an dem du traurig nach Hause kamst — und niemand fragte, was passiert ist.
-Der Moment, in dem du wütend warst — und jemand sagte: Hör auf zu übertreiben.
-Der Nachmittag, an dem du Angst hattest — und niemand sagte: Ich bin da.
+Der Abend, an dem du traurig nach Hause kamst. Und niemand fragte, was passiert ist.
+Der Moment, in dem du wütend warst. Und jemand sagte: Hör auf zu übertreiben.
+Der Nachmittag, an dem du Angst hattest. Und niemand sagte: Ich bin da.
 
 Deine Gefühle wurden nicht gespiegelt.
 
-Und wenn das passiert — wieder und wieder — lernt ein Kind etwas.
+Und wenn das passiert, wieder und wieder, lernt ein Kind etwas.
 Meine Gefühle sind nicht wichtig.
 Meine Gefühle stören.
 Also lasse ich sie besser verschwinden.
@@ -49,17 +49,20 @@ Du gibst. Du trägst. Du funktionierst.
 Und manchmal, in einem stillen Moment, fragst du dich:
 Wann war das zuletzt ich?
 
+Wann hat dich zuletzt jemand wirklich gefragt?
+
 Dieses Buch ist die Antwort.
 
 Nicht die schnelle. Nicht die schöne.
 Die ehrliche.
 
 Ich bin Therapeutin. Aber das sage ich nicht, damit du mir mehr glaubst.
-Ich sage es, weil ich weiss, was ich sehe — wenn eine Frau sich mir gegenübersetzt, die alles im Griff hat und trotzdem etwas verloren fühlt.
+Ich sage es, weil ich weiss, was ich sehe.
+Wenn eine Frau sich mir gegenübersetzt, die alles im Griff hat und trotzdem etwas verloren fühlt.
 
 Frauen, die für jeden da sind und nicht wissen, was sie für sich brauchen.
 Frauen, die Beziehungen eingehen und sich darin auflösen.
-Frauen, die ein schlechtes Gewissen kennen wie einen alten Bekannten — aber nicht wissen, woher er kommt.
+Frauen, die ein schlechtes Gewissen kennen wie einen alten Bekannten, aber nicht wissen, woher er kommt.
 
 Was ich in diesen Frauen sehe, hat einen Namen.
 Auf Englisch: Childhood Emotional Neglect.
@@ -67,15 +70,15 @@ Emotionale Vernachlässigung in der Kindheit.
 
 Nicht die dramatische Art.
 Die stille Art.
-Die Art, bei der niemand etwas Böses wollte — und trotzdem etwas fehlte, das hätte da sein sollen.
+Die Art, bei der niemand etwas Böses wollte, und trotzdem etwas fehlte, das hätte da sein sollen.
 
 Dieses Fehlende hat Konsequenzen.
 Nicht für das Kind, das du warst.
 Für die Frau, die du geworden bist.
 
-Du bist nicht kaputt.
+DU BIST NICHT KAPUTT.
 Du bist nicht zu wenig.
-Du hast dich angepasst — wie Kinder es tun.
+Du hast dich angepasst, wie Kinder es tun.
 
 Kinder sind genial darin, zu überleben.
 Aber manche Überlebensstrategien behindern dich später.
@@ -89,11 +92,13 @@ Durch Verstehen. Durch Mitgefühl. Durch das Wiederfinden von etwas, das du nie 
 Du warst die ganze Zeit da.
 
 Ich schreibe das nicht aus sicherer Distanz.
-Ich kenne den Moment, in dem jemand fragt: "Wie geht es dir?" — und ich antworte "Gut", weil ich keine Ahnung habe, was die ehrliche Antwort wäre.
+Ich kenne den Moment, in dem jemand fragt: "Wie geht es dir?", und ich antworte "Gut", weil ich keine Ahnung habe, was die ehrliche Antwort wäre.
 Ich kenne das Unbehagen, wenn jemand wirklich fragt.
 Wenn jemand auf die echte Antwort warten würde.
 
 Es ist möglich, das zu verändern.
+
+Bereit?
 
 Petra Tanner
 
@@ -174,17 +179,26 @@ Sie ist das, was NICHT passiert ist.
 
 Kein Schlagen. Kein Schreien.
 Nur das Schweigen, wenn du traurig warst.
-Der Blick, der nicht auf dich fiel — sondern durch dich hindurch.
+Der Blick, der nicht auf dich fiel, sondern durch dich hindurch.
 Der Satz "Es ist ja nichts passiert", wenn doch etwas passiert war.
 Die Reaktion, die ausblieb.
 Die Frage, die nie gestellt wurde.
 
 Wie geht es dir?
-Wirklich — wie geht es dir?
+Wirklich, wie geht es dir?
+
+Kannst du dich erinnern, wann du als Kind das letzte Mal wirklich getröstet wurdest?
 
 Diese unsichtbare Verletzung hat einen Namen.
 Emotionale Vernachlässigung in der Kindheit.
 Childhood Emotional Neglect. CEN.
+
+CEN ist anders als andere Verletzungen.
+Andere Verletzungen hinterlassen Bilder. Momente. Erinnerungen, auf die man zeigen kann.
+CEN hinterlässt Stille.
+Du kannst nicht auf einen Moment zeigen.
+Nur sagen: Es war nichts da.
+Und genau das war das Problem.
 
 Die Wunde entsteht nicht durch das, was deine Eltern taten.
 Sie entsteht durch das, was sie nicht taten.
@@ -193,7 +207,7 @@ Emotional vernachlässigt zu sein bedeutet nicht, dass niemand für dich da war.
 Es bedeutet, dass niemand für deine GEFÜHLSWELT da war.
 Für das Innere.
 Für das, was in dir vorging, wenn etwas schief lief.
-Für das, was du brauchtest — das nicht materiell war.
+Für das, was du brauchtest, das nicht materiell war.
 
 ---
 
@@ -209,15 +223,21 @@ In einer Welt mit emotionaler Fürsorge setzt sich jemand zu dir.
 Fragt, was passiert ist.
 Hört zu.
 Sagt: "Das klingt wirklich schwierig. Kein Wunder, dass dich das verletzt hat."
-Hält aus, dass du weinst — ohne dich sofort zu beruhigen.
+Hält aus, dass du weinst, ohne dich sofort zu beruhigen.
 
-Durch diese Momente lernst du: Meine Gefühle sind wirklich. Meine Gefühle werden gesehen. Meine Gefühle dürfen sein.
+Durch diese Momente lernst du etwas.
+Meine Gefühle sind wirklich.
+Sie werden gesehen.
+Ich darf sie haben.
+
+Das klingt selbstverständlich.
+IST ES NICHT.
 
 Jetzt dieselbe Situation. Aber anders.
 
 Du kommst nach Hause. In dir tobt dasselbe.
 Aber niemand fragt.
-Oder du sagst etwas — und die Antwort ist:
+Oder du sagst etwas, und die Antwort ist:
 "Ach komm, das war doch nicht so schlimm."
 "Jetzt nicht, ich bin beschäftigt."
 "Du bist zu empfindlich."
@@ -228,7 +248,7 @@ Meine Gefühle stören.
 Wenn ich etwas fühle und es zeige, passiert nichts Gutes.
 Also zeige ich nichts mehr.
 
-Und dann — das ist das Bemerkenswerte — lernst du irgendwann, es nicht mehr zu fühlen.
+Und dann, das ist das Bemerkenswerte, lernst du irgendwann, es nicht mehr zu fühlen.
 Oder du fühlst es, aber du hast keinen Zugang mehr.
 
 Das Kind, das du warst, hat sich angepasst.
@@ -238,7 +258,7 @@ Und die Frau, die du geworden bist, trägt dieses Muster noch.
 
 ---
 
-Etwas ist mir wichtig — und ich sage es klar:
+Etwas ist mir wichtig, und ich sage es klar:
 
 Emotionale Vernachlässigung bedeutet fast nie, dass deine Eltern böse waren.
 Fast nie, dass sie dich nicht liebten.
@@ -254,6 +274,8 @@ Aber die Schuldfrage wird komplizierter.
 
 Es gibt keine Bösen in dieser Geschichte.
 Es gibt Menschen, die weitergegeben haben, was sie bekommen haben.
+
+DAS WAR NICHT DEINE SCHULD.
 
 Diese Kette kannst du unterbrechen.
 Für dich.
@@ -276,14 +298,14 @@ Und dann sagte sie: "Wann hat mich zuletzt jemand wirklich gefragt, wie es mir g
 
 Sie konnte sich nicht erinnern.
 
-Niemand hat dich gefragt, wie es dir geht.
+NIEMAND HAT DICH GEFRAGT, WIE ES DIR GEHT.
 
 Aber jetzt fragen wir.
-Und — zum ersten Mal — kannst du anfangen zu antworten.
+Und, zum ersten Mal, kannst du anfangen zu antworten.
 
 *Was hättest du dir als Kind am meisten gewünscht, das dir niemand gegeben hat?*
 
-*Wenn du dir vorstellst, ein kleines Mädchen kommt mit einem Gefühl zu dir — was sagst du ihr?*
+*Wenn du dir vorstellst, ein kleines Mädchen kommt mit einem Gefühl zu dir, was sagst du ihr?*
 
 *Was wäre passiert, wenn du als Kind öfter gezeigt hättest, was du wirklich fühlst?*
 
@@ -296,10 +318,10 @@ Wer hat dir als Kind beigebracht, was du fühlst?
 Nicht: Wer hat dir erklärt, was ein Gefühl ist.
 Ich meine etwas anderes.
 
-Wer war es, der sagte: "Du wirkst traurig heute — was ist passiert?"
+Wer war es, der sagte: "Du wirkst traurig heute, was ist passiert?"
 Wer erkannte, wenn du wütend warst, noch bevor du es selbst wusstest?
 Wer sass bei dir, wenn du ängstlich warst, und liess das Gefühl einfach da sein?
-Wer nannte dein Erleben mit einem Namen — damit du lerntest, was in dir vorgeht?
+Wer nannte dein Erleben mit einem Namen, damit du lerntest, was in dir vorgeht?
 
 Für die meisten Frauen, die dieses Buch lesen, ist die ehrliche Antwort:
 Niemand.
@@ -326,12 +348,24 @@ Sie spiegelt zurück.
 Sie benennt, was das Kind fühlt.
 Sie gibt dem Empfinden ein Gesicht. Eine Stimme. Einen Namen.
 
-Durch tausende solcher Momente, über Monate und Jahre, lernt das Kind:
-Ich habe etwas in mir, das Gefühle heisst.
-Diese Gefühle sind real.
-Diese Gefühle darf ich haben.
+Das ist kein emotionaler Luxus.
+Das ist, wie das Gehirn in diesen Jahren buchstäblich verdrahtet wird.
+Was wieder und wieder geübt wird, wird zur Autobahn.
+Was nicht geübt wird, bleibt ein Feldweg.
 
-Und wenn diese Spiegelung ausbleibt?
+Die emotionale Sprache war kein Feldweg.
+Sie wurde gar nicht angelegt.
+
+Durch tausende solche Momente lernt das Kind etwas.
+Ich habe Gefühle.
+Sie sind real.
+Ich darf sie haben.
+
+DAS NERVENSYSTEM VERGISST NICHTS.
+Es speichert jede Erfahrung.
+Die, die da waren. Und die, die nicht da waren.
+
+Wenn diese Spiegelung ausbleibt?
 
 Das Kind lernt trotzdem.
 Aber es lernt etwas anderes.
@@ -342,7 +376,10 @@ Also behalte ich sie besser für mich.
 
 Irgendwann hörst du auf zu fühlen.
 Nicht weil du es willst.
-Sondern weil es einfacher ist.
+Weil es einfacher ist.
+WEIL DU GELERNT HAST ZU ÜBERLEBEN.
+
+Wer hat dich gesehen, wenn du nicht funktioniert hast?
 
 ---
 
@@ -359,7 +396,7 @@ Julia lernte früh, dass ihre Bedürfnisse nicht willkommen waren.
 Nicht weil ihre Eltern das sagten.
 Sondern weil, wenn sie weinte, die Atmosphäre im Haus schwerer wurde.
 Weil, wenn sie etwas wollte, ihre Mutter eine angespannte Miene bekam.
-Weil, wenn sie traurig war — niemand darauf einging.
+Weil, wenn sie traurig war, niemand darauf einging.
 
 Julia passte sich an.
 Sie hörte auf zu fordern. Hörte auf zu zeigen.
@@ -375,7 +412,7 @@ Wenn jemand sie fragt, wie es ihr geht, antwortet sie automatisch: "Gut."
 
 Sie ist Julia.
 Sie ist die Pflegeleichte.
-Sie weiss nicht mehr, wie das Leben wäre — wenn man Probleme machen würde.
+Sie weiss nicht mehr, wie das Leben wäre, wenn man Probleme machen würde.
 
 ---
 
@@ -383,7 +420,7 @@ Das Abwesende hinterlässt keine Spuren.
 
 Das ist das Tückische.
 Man kann nicht zeigen, was nicht da war.
-Man kann sich nicht an den Moment erinnern, in dem niemand fragte — weil solche Momente keine Bilder hinterlassen.
+Man kann sich nicht an den Moment erinnern, in dem niemand fragte, weil solche Momente keine Bilder hinterlassen.
 
 Sie wurden zur Normalität.
 Zur Stille, die irgendwann keine Stille mehr war.
@@ -402,7 +439,7 @@ Die Stille zwischen den Antworten wird länger.
 Und irgendwann sagt jemand: "Eigentlich... weiss ich das gar nicht. Ich kann mich nicht erinnern."
 
 Das Nicht-Erinnern ist Information.
-Das Abwesende hat keine Bilder hinterlassen — weil es keine Ausnahmemomente waren.
+Das Abwesende hat keine Bilder hinterlassen, weil es keine Ausnahmemomente waren.
 Es war einfach: das, was immer so war.
 
 ---
@@ -411,7 +448,7 @@ Lies diese Liste langsam.
 Keine Checkliste. Nur hinschauen.
 
 In einer emotional fürsorglichen Kindheit passiert Folgendes:
-Jemand fragte, wie dein Tag war — und meinte es wirklich.
+Jemand fragte, wie dein Tag war, und meinte es wirklich.
 Jemand bemerkte, wenn du traurig warst, ohne dass du es sagen musstest.
 Jemand sass bei dir, wenn du weintest, ohne dich zu drängen, aufzuhören.
 Jemand sagte dir, dass deine Wut verständlich ist.
@@ -468,7 +505,7 @@ Du hast erspürt, was willkommen ist und was nicht.
 Du hast dich angepasst.
 Du hast überlebt.
 
-Das ist keine Tragödie. Das ist menschliche Resilienz.
+DU HAST ÜBERLEBT. DAS IST NICHT WENIG.
 
 Die Tragödie ist, dass die Strategien, die dich als Kind beschützt haben, dich jetzt einschränken.
 
@@ -481,12 +518,14 @@ Jedes Mal, wenn ein Gefühl keine Resonanz bekommt, lernt das Nervensystem: Dies
 
 Nach genug Wiederholungen wird das automatisch.
 Du fühlst tatsächlich weniger.
-Oder du fühlst, aber der Zugang ist unterbrochen — wie ein Fluss, der unter die Erde gelenkt wurde.
+Oder du fühlst es, aber der Zugang ist unterbrochen. Wie ein Fluss, der unter die Erde gelenkt wurde.
 
 Als Erwachsene merkst du das so:
 Du weisst nicht, was du fühlst.
 Du fragst dich, ob du überhaupt Gefühle hast.
-Manchmal bricht etwas durch — und du weisst nicht, woher es kommt.
+Manchmal bricht etwas durch, und du weisst nicht, woher es kommt.
+
+Was wäre, wenn diese Stille kein Defizit ist, sondern eine alte Schutzschicht?
 
 ---
 
@@ -494,7 +533,7 @@ Dann ist da die zweite Sache, die du gelernt hast:
 Für andere sorgen. Nicht für dich.
 
 Deine eigene emotionale Welt wurde nicht gesehen.
-Aber die emotionale Welt der Erwachsenen um dich herum — die war sehr wohl vorhanden.
+Aber die emotionale Welt der Erwachsenen um dich herum war sehr wohl vorhanden.
 
 Und du hast entdeckt:
 Wenn ich für die Stimmung der Erwachsenen sorge.
@@ -506,7 +545,7 @@ Als Erwachsene merkst du das so:
 Du weisst genau, wie andere fühlen.
 Du merkst, wenn jemand unzufrieden ist, bevor er es sagt.
 Du sorgst für Harmonie.
-Du bist erschöpft davon — aber du weisst nicht, wie man damit aufhört.
+Du bist erschöpft davon, aber du weisst nicht, wie man damit aufhört.
 Du weisst nicht mal, wann es angefangen hat.
 
 ---
@@ -532,7 +571,7 @@ Also wirst du klein. Nimmst wenig Platz ein. Störst nicht. Forderst nicht.
 
 Als Erwachsene entschuldigst du dich für deine Anwesenheit.
 Du machst dich kleiner als du bist.
-Du nimmst im Zweifelsfall weniger — auch wenn mehr zur Verfügung steht.
+Du nimmst im Zweifelsfall weniger, auch wenn mehr zur Verfügung steht.
 
 ---
 
@@ -556,7 +595,7 @@ Das ist ein Zeichen, dass du gerade etwas Wichtiges siehst.
 
 Diese Strategien haben funktioniert.
 Sie haben dir geholfen, durch eine Kindheit zu kommen, in der deine emotionale Welt nicht willkommen war.
-Das war mutig — auch wenn es sich nicht so angefühlt hat.
+Das war mutig, auch wenn es sich nicht so angefühlt hat.
 
 Jetzt brauchst du sie nicht mehr so.
 
@@ -568,7 +607,7 @@ Du kannst dir selbst begegnen auf eine Art, die damals nicht möglich war.
 
 Die Einladung ist nicht: Werde eine andere Person.
 Sie ist: Entdecke, wer du ohne diese Strategien bist.
-Wer du warst — bevor du gelernt hast, dich zu verstecken.
+Wer du warst, bevor du gelernt hast, dich zu verstecken.
 
 Diese Person ist immer noch da.
 Sie wartet.
@@ -605,20 +644,24 @@ Aus dem Griechischen: ohne Worte für Gefühle.
 
 Das ist kein seltenes Phänomen.
 Und es entsteht nicht immer durch Trauma im dramatischen Sinn.
-Es entsteht durch das, was wir gerade besprochen haben — eine Kindheit, in der Gefühle nicht gespiegelt, nicht benannt, nicht ernst genommen wurden.
+Es entsteht durch das, was wir gerade besprochen haben. Eine Kindheit, in der Gefühle nicht gespiegelt, nicht benannt, nicht ernst genommen wurden.
 
 Manche Frauen beschreiben eine emotionale Leere.
 Ein Nichts dort, wo sie ein Gefühl erwarten würden.
 
 Andere beschreiben körperliche Symptome:
-Enge in der Brust. Druck im Bauch. Ein Zittern, das kommt und geht.
-Ohne dass sie wüssten, was dahintersteckt.
+Enge in der Brust, die sie nicht zuordnen können.
+Druck im Bauch vor einem Gespräch, das sie nicht einmal als schwierig eingestuft hätten.
+Ein Zittern in den Händen. Ein Engegefühl im Hals.
+Der Körper spricht. Aber die Übersetzung fehlt.
 
 Und dann gibt es Frauen, die mir sagen:
-"Bei anderen merke ich immer sofort, was sie fühlen. Aber bei mir selbst — keine Ahnung."
+"Bei anderen merke ich immer sofort, was sie fühlen. Aber bei mir selbst, keine Ahnung."
 
 Das ist kein Zufall.
-Das ist das Ergebnis einer Kindheit, in der das Lauschen nach aussen überlebensnotwendig war — und das Lauschen nach innen nie geübt wurde.
+Das ist das Ergebnis einer Kindheit, in der das Lauschen nach aussen überlebensnotwendig war, und das Lauschen nach innen nie geübt wurde.
+
+Wann hast du deinem Körper zuletzt wirklich zugehört?
 
 ---
 
@@ -630,7 +673,7 @@ Wenn jemand fragt "Was möchtest du?" springst du reflexartig zu: Was will der a
 Du weisst nicht immer, warum du erschöpft bist.
 Keine Situation, die du benennen könntest.
 Und trotzdem sitzt die Müdigkeit tief.
-Weil Erschöpfung manchmal kein äusseres Ereignis als Ursache hat — sondern das jahrelange Ignorieren innerer Signale.
+Weil Erschöpfung manchmal kein äusseres Ereignis als Ursache hat, sondern das jahrelange Ignorieren innerer Signale.
 
 Du merkst Unbehagen im Körper, aber kannst es nicht zuordnen.
 Ein Ziehen im Magen vor einem Treffen.
@@ -645,7 +688,7 @@ WIRKLICH glücklich. Von innen heraus. Als wärst du am richtigen Ort.
 Das ist keine Schwäche.
 Das ist kein Fehler in dir.
 
-Das ist eine Fähigkeit, die nie entwickelt werden konnte — weil die Umgebung dafür nicht da war.
+Das ist eine Fähigkeit, die nie entwickelt werden konnte, weil die Umgebung dafür nicht da war.
 
 Fähigkeiten, die nicht entwickelt wurden, können entwickelt werden.
 Auch im Erwachsenenalter. Das Gehirn ist plastisch. Das Nervensystem lernt.
@@ -661,6 +704,10 @@ Gefühle leben nicht im Kopf.
 Das ist eine weit verbreitete Idee, die falsch ist.
 Gefühle sind körperliche Zustände.
 Sie entstehen im Körper, bevor der Kopf sie verarbeitet.
+
+Zuerst ist da die Enge. Die Weite. Der Druck. Die Wärme.
+Dann erst kommt das Wort.
+Dann erst kommt das Verstehen.
 
 Der Weg zu deinen Gefühlen führt über deinen Körper.
 
@@ -691,20 +738,20 @@ Eine einzige Frage: Wie geht es mir gerade wirklich?
 Warte auf die Antwort. Nicht im Kopf. Im Körper.
 Was ist gerade da?
 
-Wenn nichts kommt — das ist okay.
-Wenn etwas kommt und du keinen Namen hast — das ist okay.
-Wenn etwas kommt und du erschrickst — das ist okay.
+Wenn nichts kommt, das ist okay.
+Wenn etwas kommt und du keinen Namen hast, das ist okay.
+Wenn etwas kommt und du erschrickst, das ist okay.
 
 Du übst etwas, das du nie geübt hast.
 Niemand ist darin sofort gut.
 
 Aber jede Frau, die diesen Weg gegangen ist, sagt dasselbe:
-Der erste Mal, dass jemand wirklich fragt, wie es ihr geht — und diese Person sie selbst ist.
+Der erste Mal, dass jemand wirklich fragt, wie es ihr geht, und diese Person sie selbst ist.
 Das ist ein Anfang, der etwas verändert.
 
 *Was spürst du gerade im Körper, in diesem Moment, während du das liest?*
 
-*Wann hast du dich zuletzt selbst gefragt, wie es dir wirklich geht — und mit der ehrlichen Antwort gewartet?*
+*Wann hast du dich zuletzt selbst gefragt, wie es dir wirklich geht, und mit der ehrlichen Antwort gewartet?*
 
 *Welche Gefühle konntest du als Kind zeigen? Welche nicht?*
 
@@ -712,7 +759,7 @@ Das ist ein Anfang, der etwas verändert.
 
 # Kapitel 5: Warum du so gut für andere sorgst
 
-Sie kann noch genau sagen, wie die Atmosphäre im Raum war — noch bevor ihre Mutter ein Wort gesagt hatte.
+Sie kann noch genau sagen, wie die Atmosphäre im Raum war, noch bevor ihre Mutter ein Wort gesagt hatte.
 
 Die Art, wie die Mutter die Tür öffnete.
 Die Haltung der Schultern.
@@ -725,11 +772,13 @@ Schnell. Intuitiv. Als wäre es Muttersprache.
 Und sie handelte entsprechend.
 Wenn die Mutter müde wirkte, wurde sie besonders leise.
 Wenn die Stimmung gedrückt war, war sie extra fröhlich.
-Wenn Spannungen im Haus lagen, war sie besonders pflegeleicht — damit niemand sich auch noch um sie kümmern musste.
+Wenn Spannungen im Haus lagen, war sie besonders pflegeleicht, damit niemand sich auch noch um sie kümmern musste.
 
 Sie war sieben Jahre alt.
 
-Sie war — ohne dass sie es so genannt hätte — die emotionale Barometerin des Hauses.
+Sie war, ohne dass sie es so genannt hätte, die emotionale Barometerin des Hauses.
+
+Wer bist du, wenn niemand etwas von dir braucht?
 
 ---
 
@@ -752,7 +801,7 @@ Aber sie hat einen hohen Preis.
 
 ---
 
-Du bist so beschäftigt damit, die Gefühle anderer zu registrieren — dass keine Kapazität übrig bleibt für deine eigenen.
+Du bist so beschäftigt damit, die Gefühle anderer zu registrieren, dass keine Kapazität übrig bleibt für deine eigenen.
 
 Du merkst, wenn deine Freundin traurig ist.
 Du merkst nicht, dass du selbst erschöpft bist.
@@ -765,6 +814,8 @@ Du hast keine Ahnung, was du selbst von der Situation hältst.
 
 Du bist ein Experte für andere Menschen.
 Für dich selbst bist du fast eine Fremde.
+
+DU BIST MEHR ALS DEINE FÜRSORGE.
 
 ---
 
@@ -803,7 +854,7 @@ Leer geben kannst du nicht.
 
 Hier ist eine Frage, die manche Frauen schockiert:
 
-Wenn du nicht für andere sorgst — wer bist du dann?
+Wenn du nicht für andere sorgst, wer bist du dann?
 
 Wenn deine Identität eng verknüpft ist mit dem Sorgen. Dem Geben. Dem Nützlichsein.
 Dann ist diese Frage bedrohlich.
@@ -819,9 +870,9 @@ Mit eigenen Gefühlen. Eigenen Wünschen. Eigenen Grenzen. Eigener Geschichte.
 
 Diese Person kennenzulernen ist das Ziel.
 Nicht das Sorgen aufzugeben.
-Sondern das Sorgen zu ergänzen — um dich selbst auch.
+Sondern das Sorgen zu ergänzen, um dich selbst auch.
 
-*Wann hast du zuletzt für dich selbst gesorgt — nicht als Reaktion auf Erschöpfung, sondern aus echter Zuwendung?*
+*Wann hast du zuletzt für dich selbst gesorgt, nicht als Reaktion auf Erschöpfung, sondern aus echter Zuwendung?*
 
 *Kannst du merken, wenn du zu viel gibst? Was ist das Signal?*
 
@@ -838,7 +889,7 @@ Eine echte Bitte.
 Ich brauche Unterstützung. Ich komme gerade nicht alleine durch. Ich brauche dich.
 
 Die meisten Frauen, die ich kenne, können sich kaum erinnern.
-Oder sie können sich erinnern — aber es hat sich falsch angefühlt.
+Oder sie können sich erinnern, aber es hat sich falsch angefühlt.
 Schuldig. Aufdringlich. Wie eine Schwäche.
 
 Das ist kein Zufall.
@@ -905,6 +956,8 @@ Ich bin zu viel.
 Meine Bedürfnisse sind zu viel.
 Was ich brauche, ist zu viel.
 
+DU BIST NICHT ZU VIEL.
+
 Woher kommt dieses "zu viel"?
 
 Es kommt aus frühen Erfahrungen, in denen Bedürfnisse tatsächlich zu viel waren.
@@ -919,6 +972,8 @@ Die Menschen um dich herum sind nicht deine Eltern.
 
 Und "zu viel" ist eine Beurteilung, die jemand anders über deine Bedürfnisse getroffen hat.
 Nicht die Wahrheit über deine Bedürfnisse.
+
+Was wäre, wenn du doch nicht zu viel bist?
 
 ---
 
@@ -936,7 +991,7 @@ Gesehen zu werden bedeutet, auch mit dem gesehen zu werden, was nicht funktionie
 Mit dem, was schwer ist.
 Mit dem, was du brauchst.
 
-Wirkliche Intimität entsteht dort, wo jemand weiss, was du wirklich brauchst — und dich trotzdem mag.
+Wirkliche Intimität entsteht dort, wo jemand weiss, was du wirklich brauchst, und dich trotzdem mag.
 
 *Was wäre das Schlimmste, das passieren könnte, wenn du jetzt um Hilfe bittest?*
 
@@ -954,7 +1009,7 @@ Oft ist er abends.
 Oder am Wochenende, wenn eine Stunde frei ist.
 Oder nach einem langen Ereignis, das hinter dir liegt.
 
-Du bist allein. Oder du bist mit anderen — aber innerlich allein.
+Du bist allein. Oder du bist mit anderen, aber innerlich allein.
 Und da ist dieses Gefühl.
 
 Nicht Traurigkeit. Nicht Schmerz.
@@ -967,6 +1022,9 @@ Als Frage ohne Sprache: Ist das alles?
 
 Wenn du das kennst, bist du nicht allein damit.
 Und du bist auch nicht kaputt.
+
+DU BIST NICHT LEER.
+Du bist noch nicht angekommen.
 
 ---
 
@@ -991,7 +1049,9 @@ Andere scheinen eine Verbindung zu sich selbst zu haben, die ich nicht spüre.
 
 Das ist die Leere.
 Sie ist kein Charakter.
-Sie ist eine Lücke, die entstanden ist — weil das Innere nie bewohnt wurde.
+Sie ist eine Lücke, die entstanden ist, weil das Innere nie bewohnt wurde.
+
+Was würdest du tun, wenn die Leere keine Bedrohung wäre, sondern eine Einladung?
 
 ---
 
@@ -1009,7 +1069,7 @@ Nicht sofort. Nicht dramatisch.
 Aber es gibt Momente, in denen du etwas spürst, das sich anfühlt wie: Ah. Da bin ich.
 
 Kurze Momente des Erkennens.
-Momente, in denen etwas stimmt — nicht weil die äusseren Umstände perfekt sind.
+Momente, in denen etwas stimmt, nicht weil die äusseren Umstände perfekt sind.
 Sondern weil du bei dir bist.
 
 Diese Momente werden mehr. Länger. Vertrauter.
@@ -1023,7 +1083,7 @@ Du kannst einziehen.
 
 *Was tust du normalerweise, wenn sie auftaucht?*
 
-*Was wäre, wenn du einmal nicht wegläufst — sondern bleibst und horchst?*
+*Was wäre, wenn du einmal nicht wegläufst, sondern bleibst und horchst?*
 
 ---
 
@@ -1037,7 +1097,9 @@ Das Ziehen im Bauch. Die Erschöpfung, die nicht weicht.
 Die chronischen Beschwerden, für die die Ärzte keine klare Ursache finden.
 
 Das ist kein Versagen deines Körpers.
-Das ist dein Körper, der laut sagt — was du leise ignoriert hast.
+Das ist dein Körper, der laut sagt, was du leise ignoriert hast.
+
+DEIN KÖRPER LÜGT NICHT.
 
 ---
 
@@ -1049,20 +1111,35 @@ Jedes Mal, wenn du als Kind ein Gefühl unterdrückt hast, war das nicht einfach
 Es wurde gespeichert.
 Im Nervensystem. In den Muskeln. In der Art, wie dein Atem fliesst oder stockt.
 
+Das Nervensystem kennt keinen Unterschied zwischen damals und jetzt.
+Es weiss nicht, dass die Kindheit vorbei ist.
+Es reagiert auf heutige Situationen mit uralten Mustern.
+Weil es das einzige kennt, was damals sicher war.
+
+Schultern hochziehen. Atem anhalten. Kleiner werden.
+Das war damals Schutz.
+Heute ist es Erschöpfung.
+
 Dein Körper hat alles aufgezeichnet, was dein Geist weggepackt hat.
 
 Und der Körper versucht immer, ins Gleichgewicht zu kommen.
-Er tut das auf die einzige Art, die ihm bleibt — wenn du nicht zuhörst:
+Er tut das auf die einzige Art, die ihm bleibt, wenn du nicht zuhörst:
 Er wird lauter.
+
+Was will dein Körper dir gerade sagen?
 
 ---
 
-Das erklärt, warum viele Frauen körperliche Symptome haben — ohne einen klar erkennbaren äusseren Stressor.
+Das erklärt, warum viele Frauen körperliche Symptome haben ohne einen klar erkennbaren äusseren Stressor.
 
 Der Stressor ist innen.
 Das jahrelange Ignorieren der eigenen Signale ist ein chronischer, leiser Stress.
 Nicht dramatisch. Nicht erkennbar.
 Aber real.
+
+Wenn das Nervensystem dauerhaft in Alarmbereitschaft ist, weil es nie gelernt hat, dass es sicher ist zu fühlen, dann kostet das Energie.
+Tag für Tag. Ohne Unterlass.
+Das spürt man irgendwann im Körper.
 
 Stress, der nicht bearbeitet wird, muss irgendwo hin.
 Er geht in den Körper.
@@ -1072,20 +1149,20 @@ Er geht in den Körper.
 Das sage ich nicht, um dich zu beunruhigen.
 Das ist befreiend.
 
-Wenn dein Körper antwortet auf das, was du jahrelang nicht gehört hast — dann wartet er auf dich.
+Wenn dein Körper antwortet auf das, was du jahrelang nicht gehört hast, dann wartet er auf dich.
 Er kommuniziert.
 Er hat nicht aufgehört zu sprechen, auch wenn du aufgehört hast zuzuhören.
 
 Körperliche Symptome können der Beginn von etwas sein.
 Nicht das Ende.
 Der Beginn davon, hinzuhören.
-Den Körper als Verbündeten zu sehen — nicht als Maschine, die wieder funktionieren soll.
+Den Körper als Verbündeten zu sehen, nicht als Maschine, die wieder funktionieren soll.
 
 *Welche körperlichen Symptome begleiten dich in letzter Zeit?*
 
 *Was könnte dein Körper dir damit sagen wollen?*
 
-*Wann hat dein Körper zuletzt signalisiert, dass etwas nicht stimmt — und du hast es gehört?*
+*Wann hat dein Körper zuletzt signalisiert, dass etwas nicht stimmt, und du hast es gehört?*
 
 ---
 
@@ -1097,9 +1174,14 @@ Nicht weil du Pech hast.
 Nicht weil die falschen Menschen in dein Leben kommen.
 Sondern weil du unbewusst das wählst, was sich vertraut anfühlt.
 
-Und vertraut und gut — das ist nicht dasselbe.
+Und vertraut und gut, das ist nicht dasselbe.
 
-Was sich in der Kindheit normal angefühlt hat — das Innere zurückzuhalten, für andere zu sorgen, nicht zu stören, unsichtbar zu sein — das fühlt sich auch in erwachsenen Beziehungen normal an.
+Was sich in der Kindheit normal angefühlt hat.
+Das Innere zurückzuhalten.
+Für andere sorgen.
+Nicht stören.
+Unsichtbar sein.
+Das fühlt sich auch in erwachsenen Beziehungen normal an.
 
 Du wählst Beziehungen, in denen dieses Muster Platz hat.
 Manchmal sogar Beziehungen, in denen es gefordert wird.
@@ -1115,6 +1197,8 @@ Die Antwort ist oft: selten.
 Oder: wenn jemand fragt, kannst du nicht antworten.
 Weil du nicht weisst, was du antworten sollst.
 
+Was wäre, wenn du dir erlaubst, gesehen zu werden?
+
 ---
 
 Beziehungen sind Spiegel.
@@ -1123,7 +1207,7 @@ Sie zeigen uns, was wir von uns selbst halten.
 Wie viel Raum wir uns erlauben.
 Was wir für verdient halten.
 
-Wenn du nicht glaubst, dass deine Gefühle wichtig sind — wählst du Menschen, die deine Gefühle nicht wichtig nehmen.
+Wenn du nicht glaubst, dass deine Gefühle wichtig sind, wählst du Menschen, die deine Gefühle nicht wichtig nehmen.
 Nicht weil sie böse sind.
 Weil die Übereinstimmung stimmt.
 Das Nervensystem erkennt das Vertraute, und das Vertraute fühlt sich wie Sicherheit an.
@@ -1169,7 +1253,7 @@ Sie entsteht, wenn du SICHTBAR wirst.
 
 Das schlechte Gewissen war deine Sicherheit.
 
-Als Kind, in einem Umfeld, in dem deine eigenen Gefühle nicht gesehen wurden — aber die Erwartungen der Erwachsenen sehr wohl eine Rolle spielten — hast du gelernt:
+Als Kind, in einem Umfeld, in dem deine eigenen Gefühle nicht gesehen wurden, aber die emotionale Welt der Erwachsenen um dich herum sehr wohl vorhanden war, hast du gelernt:
 
 Wenn ich ihr Unbehagen antizipiere und vermeide, bin ich sicher.
 Wenn ich nie das tue, was jemanden enttäuschen könnte, bin ich sicher.
@@ -1178,16 +1262,22 @@ Das Schuldgefühl war das Instrument dafür.
 Es meldete sich immer dann, wenn du im Begriff warst, etwas für dich zu tun.
 Etwas zu wollen. Eine Grenze zu setzen. Nein zu sagen.
 
-Es war der innere Wächter — der dafür sorgte, dass du nie zu viel Raum nimmst.
+Es war der innere Wächter, der dafür sorgte, dass du nie zu viel Raum nimmst.
 
 Als Kind hat das funktioniert.
 Als Erwachsene macht es dich unfrei.
+
+DAS SCHLECHTE GEWISSEN LÜGT.
+
+Es sagt: Du bist falsch.
+Die Wahrheit ist: Du bist anders als damals erwartet.
+Das ist nicht dasselbe.
 
 Das Schuldgefühl ist kein Zeichen, dass du etwas falsch gemacht hast.
 Es ist ein Echo der Vergangenheit.
 Die Stimme des Systems, das dich damals formen musste.
 
-Du kannst dieses Echo hören — ohne ihm zu glauben.
+Du kannst dieses Echo hören, ohne ihm zu glauben.
 
 Das ist die Übung.
 Nicht: Das Schuldgefühl wegmachen.
@@ -1213,7 +1303,7 @@ Und dieses Jahr war lang.
 Sie hat funktioniert. Die Kiste weggepackt. Weitergemacht. Was sonst.
 
 An diesem Abend sitzt sie bei ihrer Freundin Karin in der Küche.
-Karin hat Tee gemacht — nicht gefragt, ob Sara Tee will. Einfach gemacht.
+Karin hat Tee gemacht, nicht gefragt, ob Sara Tee will. Einfach gemacht.
 Sara erzählt von der Woche.
 
 Irgendwann bricht etwas in ihr auf.
@@ -1246,23 +1336,29 @@ Sara sagt, sie sei nach Hause gegangen und habe das erste Mal seit Wochen gut ge
 Was Karin an diesem Abend gemacht hat, klingt nicht nach viel.
 Tee kochen. Zuhören. Aushalten.
 
-Aber wenn du nie erlebt hast, wie das ist — wenn jemand wirklich aushält — dann weisst du, wie viel das ist.
+Wenn du nie erlebt hast, wie das ist, wenn jemand wirklich aushält, dann weisst du, wie viel das ist.
+
+Wann hast du zuletzt etwas nur für dich getan?
 
 Echte emotionale Fürsorge ist kein Grossereignis.
 Sie passiert in kleinen Momenten.
 
-Jemand, der fragt, wie dein Tag war — und mit der Antwort wartet, auch wenn sie länger dauert.
+Jemand, der fragt, wie dein Tag war, und mit der Antwort wartet, auch wenn sie länger dauert.
 Jemand, der dich nicht sofort repariert, wenn etwas schwer ist.
 Jemand, der einfach sagt: Ich höre zu. Ich bin hier.
-Jemand, der sich erinnert. Nicht ans Grosse — ans Kleine.
-"Und das Gespräch mit deiner Schwester — wie ist das gelaufen?" Eine Woche später.
+Jemand, der sich erinnert. Nicht ans Grosse, ans Kleine.
+"Und das Gespräch mit deiner Schwester, wie ist das gelaufen?" Eine Woche später.
 Jemand, der Nein sagen kann. Weil das zeigt: Wenn dieser Mensch Ja sagt, meint er es wirklich.
-Jemand, der merkt, wenn etwas mit dir nicht stimmt — ohne dass du es sagst.
+Jemand, der merkt, wenn etwas mit dir nicht stimmt, ohne dass du es sagst.
+
+DU VERDIENST DAS.
+
+Nicht irgendwann. Jetzt.
 
 ---
 
 Kommt dir das bekannt vor?
-Oder fühlt es sich fremd an — wie etwas aus einem Buch?
+Oder fühlt es sich fremd an, wie etwas aus einem Buch?
 
 Wenn es fremd klingt, ist das Information.
 Dann hast du das bisher selten oder nie erlebt.
@@ -1286,17 +1382,17 @@ Echte emotionale Fürsorge beginnt bei dir selbst.
 Du kannst nicht nur warten, bis die Welt anfängt, dich so zu behandeln.
 Du musst anfangen, es dir selbst zu geben.
 
-Kannst du dir zuhören — ohne dich sofort zu korrigieren?
-Kannst du bemerken, wenn etwas schwer ist — ohne es wegzuschieben?
-Kannst du dir sagen: Das glaube ich dir — zu dir selbst, wenn du müde bist, wenn du traurig bist, wenn etwas zu viel ist?
+Kannst du dir zuhören, ohne dich sofort zu korrigieren?
+Kannst du bemerken, wenn etwas schwer ist, ohne es wegzuschieben?
+Kannst du dir sagen: Das glaube ich dir, zu dir selbst, wenn du müde bist, wenn du traurig bist, wenn etwas zu viel ist?
 
 Das klingt seltsam.
 Aber das ist der Anfang.
 Du wirst die erste Person, die dir wirklich zuhört.
 
-Und dann, wenn du weisst, wie sich das anfühlt — bei dir selbst — erkennst du es auch bei anderen.
+Und dann, wenn du weisst, wie sich das anfühlt bei dir selbst, erkennst du es auch bei anderen.
 Dann kannst du es annehmen, wenn es jemand gibt.
-Dann kannst du sagen, was du brauchst — weil du weisst, was das ist.
+Dann kannst du sagen, was du brauchst, weil du weisst, was das ist.
 
 *Was von dem, was ich beschrieben habe, hast du bisher in deinem Leben erfahren?*
 
@@ -1345,7 +1441,7 @@ Eine der wirksamsten Methoden, Gefühle zugänglich zu machen.
 Nicht für andere. Nur für dich.
 Kein gutes Schreiben. Kein lesbares Schreiben.
 Nur das, was da ist, auf Papier.
-Manchmal fängt man einen Satz an — und ist überrascht, was danach kommt.
+Manchmal fängt man einen Satz an, und ist überrascht, was danach kommt.
 
 Das Gespräch mit jemandem, dem du vertraust.
 Nicht um Lösungen zu finden.
@@ -1380,7 +1476,7 @@ Was du dann mit diesem Hinweis machst, liegt bei dir.
 
 *Welches Gefühl hat dich in den letzten Tagen am meisten begleitet?*
 
-*Hast du ihm Raum gegeben — oder hast du es weggeschoben?*
+*Hast du ihm Raum gegeben, oder hast du es weggeschoben?*
 
 *Was würde es bedeuten, diesem Gefühl gegenüber neugierig zu sein, anstatt es loszuwerden?*
 
@@ -1447,7 +1543,7 @@ Mit etwas, das sich überschaubar anfühlt.
 
 Sage jemandem, wenn du müde bist.
 Bitte jemanden um fünf Minuten, nur zum Zuhören.
-Sage, was du zum Abendessen möchtest — anstatt zu sagen: "Ist mir egal."
+Sage, was du zum Abendessen möchtest, anstatt zu sagen: "Ist mir egal."
 
 Das sind keine grossen Schritte.
 Aber kleine Schritte, die du wirklich machst, sind wertvoller als grosse Schritte, die du dir nur vorstellst.
@@ -1477,8 +1573,8 @@ Jemand, der schon immer da war.
 Der bestimmte Dinge mag und andere nicht.
 Der bei bestimmten Menschen aufblüht und bei anderen innerlich abschaltet.
 Der in bestimmten Momenten leuchtet und in anderen erlischt.
-Der Wünsche hat — auch wenn er sie nicht kennt.
-Der Bedürfnisse hat — auch wenn er sie nicht ausspricht.
+Der Wünsche hat, auch wenn er sie nicht kennt.
+Der Bedürfnisse hat, auch wenn er sie nicht ausspricht.
 
 DAS BIST DU.
 
@@ -1493,11 +1589,11 @@ Du.
 ---
 
 Es gibt Frauen, die dieses Du so beschreiben:
-Ein Gefühl, das sie manchmal kurz haben — und dann wieder verschwindet.
+Ein Gefühl, das sie manchmal kurz haben, und dann wieder verschwindet.
 
 Ein Moment beim Spazieren, wo sie plötzlich denken: Das gefällt mir. Einfach so.
 Ein Lied, das etwas in ihnen aufmacht.
-Ein Gespräch, wo sie vergessen, vorsichtig zu sein — und einfach reden.
+Ein Gespräch, wo sie vergessen, vorsichtig zu sein, und einfach reden.
 Und hinterher denken: Wer war das gerade?
 
 Das war sie.
@@ -1513,9 +1609,9 @@ Sie warten nur.
 
 Wer bist du?
 
-Was macht dir wirklich Freude? Nicht was du schön findest, nicht was andere schön finden — sondern was in dir etwas aufflammen lässt?
+Was macht dir wirklich Freude? Nicht was du schön findest, nicht was andere schön finden. Sondern was in dir etwas aufflammen lässt?
 
-Mit wem bist du am liebsten? Bei wem kannst du ganz sein — ohne etwas wegzumachen?
+Mit wem bist du am liebsten? Bei wem kannst du ganz sein, ohne etwas wegzumachen?
 
 Was würdest du tun, wenn niemand ein Urteil fällen würde?
 
@@ -1533,9 +1629,9 @@ Du weisst mehr, als du denkst.
 
 Ich höre immer wieder: Ich kenne mich selbst nicht. Ich weiss nicht, wer ich bin. Ich weiss nicht, was ich will.
 
-Und gleichzeitig — wenn ich die richtigen Fragen stelle — kommen Antworten.
+Und gleichzeitig, wenn ich die richtigen Fragen stelle, kommen Antworten.
 Manchmal langsam. Manchmal überraschend präzise.
-Manchmal mit Tränen, weil es das erste Mal ist, dass jemand ausspricht, was sie schon lange weiss — aber nie sagen durfte.
+Manchmal mit Tränen, weil es das erste Mal ist, dass jemand ausspricht, was sie schon lange weiss, aber nie sagen durfte.
 
 Du weisst.
 Du hast nur nicht gelernt, dir selbst zu glauben.
@@ -1547,7 +1643,7 @@ Zuerst in dich.
 
 Das Vertrauen, dass das, was du fühlst, real ist.
 Dass das, was du brauchst, legitim ist.
-Dass die Stimme, die manchmal ganz leise sagt: Das stimmt nicht. Das bin nicht ich. Das will ich nicht — dass DIESE STIMME recht hat.
+Dass die Stimme, die manchmal ganz leise sagt: Das stimmt nicht. Das bin nicht ich. Das will ich nicht, dass DIESE STIMME recht hat.
 
 Sie hatte immer recht.
 Du hast nur gelernt, sie zu überhören.
@@ -1556,7 +1652,7 @@ Du hast nur gelernt, sie zu überhören.
 
 Ich will dir von einem Moment erzählen, den ich nie vergessen habe.
 
-Eine Frau — nennen wir sie Maria — kam nach ungefähr acht Monaten Therapie zu einer Stunde, setzte sich hin, und sagte nichts.
+Eine Frau, nennen wir sie Maria, kam nach ungefähr acht Monaten Therapie zu einer Stunde, setzte sich hin, und sagte nichts.
 Nur sass sie da.
 
 Und dann: "Ich glaube, ich weiss jetzt, was mir Freude macht."
@@ -1572,7 +1668,7 @@ Weil niemand je gefragt hatte.
 
 Was ihr Freude macht: Singen.
 Allein in der Küche, wenn niemand zuhört.
-Sie hatte als Kind eine Stimme gehabt — aber irgendwann hatte jemand etwas gesagt, das sie klein gemacht hatte.
+Sie hatte als Kind eine Stimme gehabt, aber irgendwann hatte jemand etwas gesagt, das sie klein gemacht hatte.
 Und sie hatte aufgehört.
 Für dreissig Jahre.
 
@@ -1592,11 +1688,11 @@ Er passiert nicht in einem einzigen Moment der Erleuchtung.
 Er passiert in kleinen Entscheidungen.
 
 In dem Moment, wo du inne hältst und wirklich fragst: Was brauche ich gerade?
-In dem Moment, wo du Nein sagst — obwohl das schlechte Gewissen kommt — und du es trotzdem sagst.
+In dem Moment, wo du Nein sagst, obwohl das schlechte Gewissen kommt, und du es trotzdem sagst.
 In dem Moment, wo jemand fragt, wie es dir geht, und du fünf Sekunden länger nachdenkst, bevor du "Gut" sagst.
 
 In dem Moment, wo du merkst: Das gefällt mir.
-Und du bleibst dabei — anstatt weiterzugehen.
+Und du bleibst dabei, anstatt weiterzugehen.
 
 Diese Momente addieren sich.
 Nicht schnell. Aber sicher.
@@ -1632,7 +1728,7 @@ Liebe Frau,
 du hast lange für andere gesorgt.
 
 Du hast aufgepasst, dass alle glücklich sind.
-Du hast gespürt, wenn die Stimmung kippte — und du hast etwas dagegen getan.
+Du hast gespürt, wenn die Stimmung kippte, und du hast etwas dagegen getan.
 Du hast gegeben. Getragen. Ausgehalten. Funktioniert.
 Du hast dich entschuldigt, bevor du gebeten wurdest.
 Du hast kleiner gemacht, was du brauchtest.
@@ -1645,7 +1741,7 @@ Aber jetzt.
 
 Jetzt darfst du wissen, dass du Gefühle hast.
 Dass diese Gefühle zählen.
-Dass "Wie geht es dir?" nicht mit "Gut" beantwortet werden muss — wenn die ehrliche Antwort eine andere ist.
+Dass "Wie geht es dir?" nicht mit "Gut" beantwortet werden muss, wenn die ehrliche Antwort eine andere ist.
 
 Du darfst leer sein.
 Du darfst erschöpft sein.
@@ -1686,7 +1782,7 @@ Petra Tanner
 
 Petra Tanner ist Therapeutin und Coachin.
 
-Sie begleitet Frauen, die sich in Beziehungen verlieren, die zu viel geben und nicht wissen, was sie selbst brauchen — und die lernen wollen, sich selbst zu finden.
+Sie begleitet Frauen, die sich in Beziehungen verlieren, die zu viel geben und nicht wissen, was sie selbst brauchen, und die lernen wollen, sich selbst zu finden.
 
 Unter dem Namen Safe to Thrive arbeitet sie in der Schweiz.
 
@@ -1698,7 +1794,7 @@ Kontakt: beyondlimitsnow25@gmail.com
 
 Dieses Buch ist der Anfang einer Reihe.
 
-**"Wenn Beziehungen erschöpfen"** erklärt, warum du in Beziehungen immer gibst, bis nichts mehr von dir übrig ist — und wie du dich zurückholst.
+**"Wenn Beziehungen erschöpfen"** erklärt, warum du in Beziehungen immer gibst, bis nichts mehr von dir übrig ist, und wie du dich zurückholst.
 
 **"Das schlechte Gewissen"** erklärt, woher das chronische Schuldgefühl wirklich kommt und wie du aufhörst, es dein Leben regieren zu lassen.
 
