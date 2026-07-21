@@ -157,6 +157,29 @@ KDP bietet für Print-Bücher keine Countdown Deals oder zeitlich begrenzte Akti
 
 ---
 
+## Cross-Promotion zwischen den Büchern (ab Buch 5 Standard)
+
+Jedes neue Buch verweist am Ende auf die anderen Bücher der Reihe — im Abschnitt "Wenn du mehr möchtest".
+
+**Pflicht-Elemente im Backmatter:**
+- Kurze Beschreibung jedes anderen Buches (1–2 Sätze, Titel fett)
+- Amazon-Link oder QR-Code zur Buchseite (sobald ISBN/ASIN bekannt)
+- Hinweis: "Alle Bücher sind auch als eBook erhältlich"
+
+**QR-Code generieren:**
+- Kostenlos auf qr-code-generator.com oder ähnlich
+- URL: amazon.de/dp/[ASIN] des jeweiligen Buches
+- Als PNG einbetten — im ReportLab-Script mit `Image()` einfügen
+
+**Reihenfolge der Bücher (für Backmatter-Text):**
+1. "Wenn Beziehungen erschöpfen" — Warum du gibst, bis nichts mehr von dir übrig ist
+2. "Das schlechte Gewissen" — Warum du dich immer schuldig fühlst
+3. "Niemand hat dich gefragt, wie es dir geht" — Warum du nicht weisst, was du fühlst
+
+**Buch 5 Manuskript noch anpassen:** Abschnitt "Wenn du mehr möchtest" bereits vorhanden — QR-Codes ergänzen sobald ASINs bekannt sind.
+
+---
+
 ## KDP-Einreichung Reihenfolge
 
 1. Manuskript-PDF hochladen → Seitenanzahl notieren
