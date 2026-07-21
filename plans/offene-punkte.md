@@ -2,50 +2,45 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
-## Buch 1 (ADHD Planner): Cover live, warten auf korrekte Anzeige
+## Buch 4 (Das schlechte Gewissen): Taschenbuch Cover neu einreichen
 
-- Cover wurde auf KDP hochgeladen (Full-Wrap 8.5×11", 5252×3376px, 300 DPI)
-- Cover in KDP-Vorschau korrekt — auf Amazon.de noch nicht aktualisiert (2–3 Tage warten)
-- Sobald Cover live: Facebook + Instagram Post mit Link amazon.de/dp/B0H9B3XZF8
-- KI-Angabe in KDP nachträglich auf "Ja" korrigieren (Buchdetails bearbeiten)
+- Cover wurde von KDP abgelehnt: Spine-Text zu nah an Rändern + unter 79 Seiten (kein Spine-Text erlaubt)
+- ✅ Fix: Spine leer, SAFE=0.5", ReportLab PDF neu generiert
+- **Jetzt:** Neues Cover PDF bei KDP hochladen → `outputs/buch-schuldgefuehle/das-schlechte-gewissen-Cover-Print-FullWrap.pdf`
+- Nach Freigabe: Taschenbuch-Link prüfen, Instagram Post
 
-## Buch 4 (Das schlechte Gewissen): Warten auf KDP-Freigabe
+## Buch 3 (Wenn Beziehungen erschöpfen): Taschenbuch Upload ausstehend
 
-- eBook eingereicht — warten auf KDP-Freigabe (24–72h)
-- Manuskript: `outputs/buch-schuldgefuehle/das-schlechte-gewissen-KDP.docx` (mit Inhaltsverzeichnis, Herz-Divider, Georgia-Layout)
-- Cover: `outputs/buch-schuldgefuehle/cover-das-schlechte-gewissen-FINAL.jpg`
-- Nach Freigabe: Amazon-Link prüfen, Instagram Story + Feed-Post
-- Taschenbuch noch nicht erstellt — kann separat nachgeholt werden
+- Manuskript PDF: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.pdf` (123 Seiten)
+- Cover Full-Wrap PDF: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.pdf`
+- Spine: 83px (123 Seiten × 0.002252 × 300) — Spine-Text erlaubt (>79 Seiten)
+- Empfohlener Preis: $13.99
+- KDP Print: Neues Taschenbuch-Projekt anlegen
 
-## Buch 3: Warten auf KDP-Freigabe (eBook)
+## Buch 5 (Niemand hat dich gefragt, wie es dir geht): Cover fertigstellen
 
-- E-Mail von KDP abwarten (kdp@amazon.com) — Buch 3 eBook eingereicht 17. Juli 2026, 24–72h Prüfzeit
-- Nach Freigabe: Link prüfen, ob Klappentext + Cover korrekt angezeigt werden
+- Manuskript PDF: `outputs/buch-niemand-gefragt/niemand-hat-dich-gefragt-Taschenbuch.pdf` (61 Seiten)
+- Vordercover PNG erstellt: `outputs/buch-niemand-gefragt/cover-niemand-FRONT.png` (Petrol & Gold, abstraktes Bild)
+- **Offen:** Manuskript überarbeiten — KI-typische Stellen raus (Kap. 11, 14 zu dünn, "Ich möchte dir sagen" zu oft)
+- **Offen:** Full-Wrap Cover (Rückseite + Spine) generieren → dann KDP Upload
+- Spine: 41px (61 Seiten) — KEIN Spine-Text (unter 79 Seiten)
+- Empfohlener Preis: $12.99
 
-## Buch 3: Taschenbuch — bereit zum Upload
+## Buch 1 (ADHD Planner): Cover-Anzeige prüfen
 
-- Manuskript: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.docx` (5.5×8.5", Georgia-Layout, 15 Kapitel, Fragen-Blöcke)
-- Cover Full-Wrap: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.jpg` (3474×2624px, 300 DPI)
-- **Wichtig:** Nach KDP-Manuskript-Upload → Seitenzahl ablesen → Rückenbreite prüfen. Aktuelle Schätzung: ~145 Seiten / 0.33" Rücken. Falls abweicht: neuen Cover generieren lassen.
-- KDP Print: Neues Taschenbuch-Projekt anlegen (separat vom eBook)
+- Cover auf KDP hochgeladen — auf Amazon.de noch nicht aktualisiert
+- Sobald live: Facebook + Instagram Post mit Link amazon.de/dp/B0H9B3XZF8
+- KI-Angabe in KDP auf "Ja" korrigieren
 
-## Buch 3: Nach Veröffentlichung
+## Nach Veröffentlichung (alle Bücher)
 
-- Instagram Story posten (Text fertig in outputs/instagram-launch-posts.md)
-- Sobald live: Feed-Post mit Amazon-Link veröffentlichen
+- Instagram Story + Feed-Post pro Buch
 - Erste Bewertungen organisieren
 - Homepage / Landingpage für Safe to Thrive erstellen (aktuell keine vorhanden)
-
-## Erledigte Punkte (diese Session)
-
-- ✅ Buch 4 Manuskript lektoriert (Schweizer Rechtschreibung geprüft, keine ß-Fehler)
-- ✅ Buch 4 DOCX neu gebaut: Georgia-Layout, Rose-Akzente, Fragenblöcke, Herz-Divider, Inhaltsverzeichnis
-- ✅ Buch 4 eBook auf KDP hochgeladen (Manuskript + Cover + Klappentext + Keywords + Kategorien)
-- ✅ Author Central eingerichtet auf amazon.de + amazon.com (Bio + Buch beansprucht)
-- ✅ Buch 3 Taschenbuch-DOCX erstellt (5.5×8.5", Georgia, 15 Kapitel, 54 Fragen-Blöcke)
-- ✅ Buch 3 Full-Wrap Print-Cover erstellt (3474×2624px, 300 DPI, Rücken + Rückentext + Vorderseite)
+- Newsletter aufbauen
 
 ## Ideen / später
 
-- Newsletter aufbauen
-- Instagram-Content zu Buch 3 + 4 planen
+- Instagram-Content zu Buch 3, 4, 5 planen
+- eBook für Buch 5 erstellen (nach Taschenbuch)
+- Aktionspreise: nur über eBook möglich (Kindle Countdown Deal, KDP Select)
