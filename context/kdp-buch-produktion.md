@@ -4,6 +4,33 @@ Alles, was beim Erstellen von Buch 3 und Buch 4 sehr viel Zeit gekostet hat. Die
 
 ---
 
+## Cover-Gestaltung — Titelstruktur
+
+**Bewährtes Layout (ab Buch 5):**
+
+Kurze, kraftvolle Zeilen — das erste/stärkste Wort riesig (200px Bold), dann Folgezeilen gross (130px Bold), und den letzten Teil des Titels klein kursiv darunter — wie geflüstert.
+
+Beispiel Buch 5:
+```
+NIEMAND          ← riesig, weiss (200px Bold)
+HAT DICH         ← gross, Gold  (130px Bold)
+GEFRAGT          ← gross, Gold  (130px Bold)
+wie es dir geht  ← klein kursiv, Cream (62px Italic)
+```
+
+**Regel:** Langen Titel nie komplett in Grossbuchstaben und gleicher Grösse durchziehen. Das kämpft mit dem Bild. Stattdessen: Hierarchie durch Grösse + Stil.
+
+**Untertitel:** Mit Vertikallinie links (4px, Gold), Caps Regular + Kursiv Gold.
+
+**Autor-Block unten:** Zentriert, Trennlinie Gold, Punkt als Trenner zwischen Name und Publisher.
+
+**Kein Bild mit Person nötig** — abstrakte Bilder (fliessende Formen, organische Strukturen) funktionieren stärker, weil sich jede Leserin selbst darin sehen kann.
+
+**ChatGPT-Prompt-Formel für abstrakte Cover:**
+> Abstract book cover art, flowing organic 3D shapes like liquid silk or draped fabric. Colors: [Hauptfarbe] background, [Kontrastfarbe] flowing forms, [Akzent] gold lines and sphere focal point. Left side slightly darker for text overlay. No text, no people. Mood: [Emotion].
+
+---
+
 ## Manuskript-Format (PDF, nicht DOCX)
 
 **Problem:** DOCX mit Georgia/benutzerdefinierten Fonts wird von KDP auf Linux gerendert. Da Georgia nicht eingebettet ist, substituiert KDP einen riesigen Fallback-Font → 800+ Seiten statt 70–130.
