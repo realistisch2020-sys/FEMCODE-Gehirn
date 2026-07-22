@@ -62,6 +62,31 @@ Das ist Franzis Welt — nicht Petras. Petra ist Therapeutin. Die Energie wird �
 
 ---
 
+## Was NIE drin sein darf — KI/Selfhelp-Floskeln
+
+Diese Sätze klingen generisch und aufgesetzt — raus:
+- "Du bist nicht kaputt."
+- "Du bist nicht allein."
+- "Du bist genug."
+- "Du verdienst das."
+- "Du bist auf dem richtigen Weg."
+- "Das ist völlig normal." → stattdessen: "Das kennen viele."
+- "Du bist wertvoll."
+
+Statt aufmuntern: benennen. Nicht erklären, zeigen.
+
+---
+
+## Zielgruppe — alle Geschlechter
+
+Bücher werden geschlechtsneutral geschrieben:
+- "Frauen" → "Menschen" oder einfach "du"
+- "Viele Frauen kennen das." → "Viele kennen das."
+- Fallgeschichten dürfen weibliche Namen behalten
+- Kein explizites Gendern mit Sternchen/Doppelpunkt
+
+---
+
 ## Petras eigene Stimme
 
 - Warm, aber direkt
