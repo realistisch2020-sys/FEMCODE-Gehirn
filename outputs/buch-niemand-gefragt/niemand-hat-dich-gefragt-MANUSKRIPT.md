@@ -483,6 +483,11 @@ Das Vorbild.
 Du darfst trotzdem Schmerz haben über das, was nicht da war.
 Das ist dein Recht. Das ist sogar wichtig.
 
+Es ist möglich, deine Eltern zu verstehen und gleichzeitig traurig zu sein über das, was sie dir nicht geben konnten.
+Beides gleichzeitig.
+Das ist kein Widerspruch.
+Das ist Ehrlichkeit.
+
 Aber die Geschichte ist komplizierter als Täter und Opfer.
 Sie ist trauriger.
 Und sie endet nicht mit dir.
@@ -867,6 +872,12 @@ Das ist ein Schutzmechanismus, der sich so gut etabliert hat, dass er sich einfa
 Manchmal ist er das auch.
 Beides gleichzeitig. Echte Sorge um andere. Und Flucht vor dir selbst.
 
+Manchmal sorgst du für andere, weil du nicht weisst, was du mit dir selbst anfangen sollst.
+Nicht aus Liebe allein.
+Aus Angst vor der Stille, die wartet, wenn du aufhörst.
+Das ist kein Vorwurf.
+Das ist einfach, was ist.
+
 ---
 
 Fürsorge ist schön.
@@ -1060,6 +1071,11 @@ Das kennen viele.
 DU BIST NICHT LEER.
 Du bist noch nicht angekommen.
 
+Manches wird nicht besser.
+Es wird klarer.
+Das ist nicht dasselbe.
+Und klarer ist manchmal zuerst schwerer.
+
 ---
 
 Du hast jahrelang funktioniert.
@@ -1222,6 +1238,12 @@ Das fühlt sich auch in erwachsenen Beziehungen normal an.
 Du wählst Beziehungen, in denen dieses Muster Platz hat.
 Manchmal sogar Beziehungen, in denen es gefordert wird.
 
+Manchmal suchst du dir jemanden aus, der dir genau das gibt, was du als Kind bekommen hast.
+Nicht böse. Nicht laut.
+Einfach: nicht wirklich da.
+Und das fühlt sich normal an.
+Weil es das ist.
+
 Du kennst das:
 Du bist immer die Gebende.
 Immer die, die fragt, wie es dem anderen geht.
@@ -1265,6 +1287,12 @@ Wenn du anfängst, Raum für dich zu nehmen.
 Manche Menschen reagieren nicht gut darauf.
 Das liegt nicht daran, dass Grenzen falsch sind.
 Es liegt daran, dass manche Menschen in deinem Leben von deiner Grenzenlosigkeit profitiert haben.
+
+Du wirst Menschen verlieren, wenn du anfängst, für dich zu sorgen.
+Nicht weil du falsch bist.
+Sondern weil manche von deiner Selbstverlorenheit gelebt haben.
+Das ist eine der schwierigeren Wahrheiten.
+Und sie ist trotzdem wahr.
 
 Aber es verändert sich auch etwas Schönes.
 
