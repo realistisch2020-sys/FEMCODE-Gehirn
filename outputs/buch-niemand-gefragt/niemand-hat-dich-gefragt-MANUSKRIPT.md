@@ -98,7 +98,7 @@ Wenn jemand auf die echte Antwort warten würde.
 
 Es ist möglich, das zu verändern.
 
-Bereit?
+Ready?
 
 Petra Tanner
 
@@ -269,6 +269,12 @@ Die häufigste Ursache: Eltern, die selbst nie gelernt haben, mit Gefühlen umzu
 Die selbst emotional vernachlässigt wurden.
 Eine Kette.
 
+Und hier ist etwas, das ich immer wieder sage, weil es trägt:
+
+Es ist nicht das, was es für dich ist.
+Es ist deren Geschichte.
+Und sie bleibt deren Geschichte, bis du aufhörst, sie zu deiner zu machen.
+
 Dein Schmerz wird dadurch nicht kleiner.
 Aber die Schuldfrage wird komplizierter.
 
@@ -302,6 +308,8 @@ NIEMAND HAT DICH GEFRAGT, WIE ES DIR GEHT.
 
 Aber jetzt fragen wir.
 Und, zum ersten Mal, kannst du anfangen zu antworten.
+
+Anfangen.
 
 *Was hättest du dir als Kind am meisten gewünscht, das dir niemand gegeben hat?*
 
@@ -405,6 +413,8 @@ Wurde ruhig. Selbstständig. Pflegeleicht.
 Ihre Eltern liebten sie.
 Sie liebte ihre Eltern.
 Nichts war schlimm. Nichts war gut.
+
+Stille.
 
 Mit vierzig weiss Julia nicht, was sie vom Partner in einer Beziehung erwartet.
 Sie kann nicht sagen, was sie braucht, wenn sie erschöpft ist.
@@ -520,6 +530,11 @@ Nach genug Wiederholungen wird das automatisch.
 Du fühlst tatsächlich weniger.
 Oder du fühlst es, aber der Zugang ist unterbrochen. Wie ein Fluss, der unter die Erde gelenkt wurde.
 
+Du hast gegeben. Getragen. Ausgehalten.
+Und irgendwann war da nichts mehr.
+Nicht Traurigkeit. Nicht Schmerz.
+Einfach: Stille.
+
 Als Erwachsene merkst du das so:
 Du weisst nicht, was du fühlst.
 Du fragst dich, ob du überhaupt Gefühle hast.
@@ -573,6 +588,8 @@ Als Erwachsene entschuldigst du dich für deine Anwesenheit.
 Du machst dich kleiner als du bist.
 Du nimmst im Zweifelsfall weniger, auch wenn mehr zur Verfügung steht.
 
+Klein.
+
 ---
 
 Und zuletzt: das Perfektsein.
@@ -601,9 +618,9 @@ Jetzt brauchst du sie nicht mehr so.
 
 Du lebst nicht mehr als Kind in dem Haus, in dem es nicht sicher war zu fühlen.
 Du bist eine erwachsene Frau.
-Du kannst wählen.
-Du kannst lernen.
-Du kannst dir selbst begegnen auf eine Art, die damals nicht möglich war.
+Und du kannst wählen.
+Und du kannst lernen.
+Und du kannst dir selbst begegnen auf eine Art, die damals nicht möglich war.
 
 Die Einladung ist nicht: Werde eine andere Person.
 Sie ist: Entdecke, wer du ohne diese Strategien bist.
@@ -749,6 +766,8 @@ Aber jede Frau, die diesen Weg gegangen ist, sagt dasselbe:
 Der erste Mal, dass jemand wirklich fragt, wie es ihr geht, und diese Person sie selbst ist.
 Das ist ein Anfang, der etwas verändert.
 
+Etwas.
+
 *Was spürst du gerade im Körper, in diesem Moment, während du das liest?*
 
 *Wann hast du dich zuletzt selbst gefragt, wie es dir wirklich geht, und mit der ehrlichen Antwort gewartet?*
@@ -816,6 +835,22 @@ Du bist ein Experte für andere Menschen.
 Für dich selbst bist du fast eine Fremde.
 
 DU BIST MEHR ALS DEINE FÜRSORGE.
+
+---
+
+Und hier ist etwas, das ich dir klar sagen will:
+
+Ohne Schuld. Ohne Scham. Ohne Rechtfertigung.
+Du hast das gelernt, weil du musstest.
+
+Das war nicht Schwäche.
+Das war Intelligenz. Das war Anpassung. Das war das Einzige, was damals funktioniert hat.
+
+Und egal, wie das aussehen darf, in welcher Form dieses Sorgen bei dir aussieht, es war nie falsch von dir.
+Es war die Antwort auf eine Umgebung, die nicht anders konnte.
+
+Du darfst das jetzt sehen.
+Und du darfst neu wählen.
 
 ---
 
@@ -993,6 +1028,8 @@ Mit dem, was du brauchst.
 
 Wirkliche Intimität entsteht dort, wo jemand weiss, was du wirklich brauchst, und dich trotzdem mag.
 
+Trotzdem.
+
 *Was wäre das Schlimmste, das passieren könnte, wenn du jetzt um Hilfe bittest?*
 
 *Wen in deinem Leben könntest du bitten? Was hält dich davon ab?*
@@ -1158,6 +1195,8 @@ Nicht das Ende.
 Der Beginn davon, hinzuhören.
 Den Körper als Verbündeten zu sehen, nicht als Maschine, die wieder funktionieren soll.
 
+Verbündeten.
+
 *Welche körperlichen Symptome begleiten dich in letzter Zeit?*
 
 *Was könnte dein Körper dir damit sagen wollen?*
@@ -1215,7 +1254,7 @@ Das Nervensystem erkennt das Vertraute, und das Vertraute fühlt sich wie Sicher
 Das ist nicht deine Schuld.
 Es ist ein Muster.
 
-Muster können unterbrochen werden.
+Und Muster können unterbrochen werden.
 
 ---
 
@@ -1285,6 +1324,11 @@ Sondern: Es bemerken. Benennen. Als das sehen, was es ist.
 
 Ein altes Signal.
 Kein aktuelles Urteil.
+
+Und wenn du das erkennst, dann WÄHLE NEU.
+Ohne Schuld. Ohne Scham. Ohne Rechtfertigung.
+
+DU DARFST DAS.
 
 *Wann meldet sich das schlechte Gewissen am lautesten in dir?*
 
@@ -1474,6 +1518,8 @@ Sie sagen dir: Hier ist etwas. Schau hin.
 
 Was du dann mit diesem Hinweis machst, liegt bei dir.
 
+Alles.
+
 *Welches Gefühl hat dich in den letzten Tagen am meisten begleitet?*
 
 *Hast du ihm Raum gegeben, oder hast du es weggeschoben?*
@@ -1547,6 +1593,8 @@ Sage, was du zum Abendessen möchtest, anstatt zu sagen: "Ist mir egal."
 
 Das sind keine grossen Schritte.
 Aber kleine Schritte, die du wirklich machst, sind wertvoller als grosse Schritte, die du dir nur vorstellst.
+
+Genug.
 
 *Was hast du heute gebraucht, das du nicht bekommen hast?*
 
@@ -1690,7 +1738,6 @@ Er passiert in kleinen Entscheidungen.
 In dem Moment, wo du inne hältst und wirklich fragst: Was brauche ich gerade?
 In dem Moment, wo du Nein sagst, obwohl das schlechte Gewissen kommt, und du es trotzdem sagst.
 In dem Moment, wo jemand fragt, wie es dir geht, und du fünf Sekunden länger nachdenkst, bevor du "Gut" sagst.
-
 In dem Moment, wo du merkst: Das gefällt mir.
 Und du bleibst dabei, anstatt weiterzugehen.
 
@@ -1698,6 +1745,17 @@ Diese Momente addieren sich.
 Nicht schnell. Aber sicher.
 
 ---
+
+Und jetzt kommt die Frage, die ich dir mitgeben will.
+
+Wer wählst du zu sein?
+JETZT.
+Nicht morgen. Nicht wenn alles besser ist.
+JETZT.
+
+Nicht weil es einfach ist.
+Nicht weil du bereit bist.
+Sondern weil du es dir wert bist.
 
 Niemand hat dich gefragt, wie es dir geht.
 
@@ -1712,6 +1770,9 @@ Mit echter Bereitschaft, auf die Antwort zu warten.
 Weil du es wert bist, dass jemand fragt.
 
 Auch wenn dieser jemand erst einmal du selbst bist.
+
+Es ist DEINE Geschichte.
+Und sie gehört dir.
 
 *Wer warst du, bevor du gelernt hast, wer du sein solltest?*
 
