@@ -554,7 +554,7 @@ Wenn ich die Atmosphäre halte.
 Wenn ich nicht störe und gleichzeitig nützlich bin.
 Dann gehöre ich dazu. Dann bin ich sicher.
 
-Als Erwachsene merkst du das so:
+Heute zeigt sich das so:
 Du weisst genau, wie andere fühlen.
 Du merkst, wenn jemand unzufrieden ist, bevor er es sagt.
 Du sorgst für Harmonie.
@@ -569,7 +569,7 @@ Du hast gelernt, dass das zählt, was man sehen kann.
 Die Note. Das Verhalten. Die Leistung.
 Nicht das Erleben dahinter.
 
-Als Erwachsene weisst du, was auf deiner To-do-Liste steht.
+Heute weisst du, was auf deiner To-do-Liste steht.
 Du weisst nicht, was du brauchst.
 Du fühlst dich gut, wenn du produktiv bist.
 Verloren, wenn du nichts tust.
@@ -582,7 +582,7 @@ Und dann ist da das Unsichtbarwerden.
 Du hast gelernt, dass sichtbar sein riskant ist.
 Also wirst du klein. Nimmst wenig Platz ein. Störst nicht. Forderst nicht.
 
-Als Erwachsene entschuldigst du dich für deine Anwesenheit.
+Heute entschuldigst du dich für deine Anwesenheit.
 Du machst dich kleiner als du bist.
 Du nimmst im Zweifelsfall weniger, auch wenn mehr zur Verfügung steht.
 
@@ -597,7 +597,7 @@ Also dürfen keine Fehler passieren.
 Nicht aus Freude an Qualität.
 Aus Angst vor dem, was Unvollkommenheit bedeutet.
 
-Als Erwachsene erinnerst du dich länger an das, was schief lief, als an das, was gut war.
+Heute erinnerst du dich länger an das, was schief lief, als an das, was gut war.
 Du kannst dich schlecht entspannen.
 Weil immer noch etwas besser sein könnte.
 
@@ -615,7 +615,7 @@ Das war mutig, auch wenn es sich nicht so angefühlt hat.
 Jetzt brauchst du sie nicht mehr so.
 
 Du lebst nicht mehr als Kind in dem Haus, in dem es nicht sicher war zu fühlen.
-Du bist eine erwachsene Frau.
+Du bist erwachsen.
 Und du kannst wählen.
 Und du kannst lernen.
 Und du kannst dir selbst begegnen auf eine Art, die damals nicht möglich war.
@@ -643,7 +643,7 @@ Du weisst, dass um dich herum kommuniziert wird.
 Du siehst es. Du hörst es.
 Aber du hast keinen Zugang.
 
-So fühlt es sich für viele Frauen an, wenn sie versuchen, auf ihre eigenen Gefühle zuzugreifen.
+So fühlt es sich für viele an, wenn sie versuchen, auf ihre eigenen Gefühle zuzugreifen.
 
 Da ist etwas.
 Irgendwo.
@@ -661,7 +661,7 @@ Das ist kein seltenes Phänomen.
 Und es entsteht nicht immer durch Trauma im dramatischen Sinn.
 Es entsteht durch das, was wir gerade besprochen haben. Eine Kindheit, in der Gefühle nicht gespiegelt, nicht benannt, nicht ernst genommen wurden.
 
-Manche Frauen beschreiben eine emotionale Leere.
+Manche beschreiben eine emotionale Leere.
 Ein Nichts dort, wo sie ein Gefühl erwarten würden.
 
 Andere beschreiben körperliche Symptome:
@@ -670,7 +670,7 @@ Druck im Bauch vor einem Gespräch, das sie nicht einmal als schwierig eingestuf
 Ein Zittern in den Händen. Ein Engegefühl im Hals.
 Der Körper spricht. Aber die Übersetzung fehlt.
 
-Und dann gibt es Frauen, die mir sagen:
+Und dann gibt es Menschen, die mir sagen:
 "Bei anderen merke ich immer sofort, was sie fühlen. Aber bei mir selbst, keine Ahnung."
 
 Das ist kein Zufall.
@@ -760,8 +760,8 @@ Wenn etwas kommt und du erschrickst, das ist okay.
 Du übst etwas, das du nie geübt hast.
 Niemand ist darin sofort gut.
 
-Aber jede Frau, die diesen Weg gegangen ist, sagt dasselbe:
-Der erste Mal, dass jemand wirklich fragt, wie es ihr geht, und diese Person sie selbst ist.
+Aber alle, die diesen Weg gegangen sind, sagen dasselbe:
+Das erste Mal, dass jemand wirklich fragt, wie es einem geht, und diese Person man selbst ist.
 Das ist ein Anfang, der etwas verändert.
 
 Etwas.
@@ -885,7 +885,7 @@ Leer geben kannst du nicht.
 
 ---
 
-Hier ist eine Frage, die manche Frauen schockiert:
+Hier ist eine Frage, die manche schockiert:
 
 Wenn du nicht für andere sorgst, wer bist du dann?
 
@@ -921,7 +921,7 @@ Nicht um eine kleine Bitte.
 Eine echte Bitte.
 Ich brauche Unterstützung. Ich komme gerade nicht alleine durch. Ich brauche dich.
 
-Die meisten Frauen, die ich kenne, können sich kaum erinnern.
+Die meisten, die ich kenne, können sich kaum erinnern.
 Oder sie können sich erinnern, aber es hat sich falsch angefühlt.
 Schuldig. Aufdringlich. Wie eine Schwäche.
 
@@ -937,7 +937,7 @@ Andere Menschen sind bereit, mir zu helfen.
 Wenn ich bitte und Ja bekomme, ist das keine Last für den anderen.
 Wenn ich bitte und Nein bekomme, überlebe ich das.
 
-Jeder dieser Sätze ist für eine Frau, die emotional vernachlässigt aufgewachsen ist, unglaubwürdig.
+Jeder dieser Sätze ist für jemanden, der emotional vernachlässigt aufgewachsen ist, unglaubwürdig.
 Nicht weil sie es nicht rational versteht.
 Sondern weil das Nervensystem eine andere Geschichte gespeichert hat.
 
@@ -1038,7 +1038,7 @@ Trotzdem.
 
 # Kapitel 7: Die Leere, die du nicht benennen kannst
 
-Es gibt einen Moment, den viele Frauen kennen.
+Es gibt einen Moment, den viele kennen.
 
 Oft ist er abends.
 Oder am Wochenende, wenn eine Stunde frei ist.
@@ -1052,11 +1052,10 @@ Eher eine Stille, die sich schwer anfühlt.
 Eine Abwesenheit, die Raum einnimmt.
 Als wäre etwas nicht da, das da sein sollte.
 
-Viele Frauen beschreiben das als Leere.
+Viele beschreiben das als Leere.
 Als Frage ohne Sprache: Ist das alles?
 
-Wenn du das kennst, bist du nicht allein damit.
-Und du bist auch nicht kaputt.
+Das kennen viele.
 
 DU BIST NICHT LEER.
 Du bist noch nicht angekommen.
@@ -1078,7 +1077,7 @@ Es ist etwas anderes.
 
 Die Stille des Selbsts, das nie wirklich bewohnt wurde.
 
-Viele Frauen, die emotional vernachlässigt aufgewachsen sind, beschreiben ein Gefühl, das sie von anderen unterscheidet.
+Viele, die emotional vernachlässigt aufgewachsen sind, beschreiben ein Gefühl, das sie von anderen unterscheidet.
 Andere scheinen wirklicher zu leben.
 Andere scheinen eine Verbindung zu sich selbst zu haben, die ich nicht spüre.
 
@@ -1165,7 +1164,7 @@ Was will dein Körper dir gerade sagen?
 
 ---
 
-Das erklärt, warum viele Frauen körperliche Symptome haben ohne einen klar erkennbaren äusseren Stressor.
+Das erklärt, warum viele körperliche Symptome haben ohne einen klar erkennbaren äusseren Stressor.
 
 Der Stressor ist innen.
 Das jahrelange Ignorieren der eigenen Signale ist ein chronischer, leiser Stress.
@@ -1393,8 +1392,6 @@ Jemand, der sich erinnert. Nicht ans Grosse, ans Kleine.
 Jemand, der Nein sagen kann. Weil das zeigt: Wenn dieser Mensch Ja sagt, meint er es wirklich.
 Jemand, der merkt, wenn etwas mit dir nicht stimmt, ohne dass du es sagst.
 
-DU VERDIENST DAS.
-
 Nicht irgendwann. Jetzt.
 
 ---
@@ -1458,7 +1455,7 @@ Trauer, die du nicht erwartet hast.
 Wut, die dich erschreckt.
 Eine Sehnsucht, die so gross ist, dass du nicht wusstest, dass sie da ist.
 
-Das ist normal.
+Das kennen viele.
 Das ist das Auftauen.
 
 ---
@@ -1532,7 +1529,7 @@ DU DARFST BEDÜRFNISSE HABEN.
 
 Das klingt so selbstverständlich, dass man es kaum schreiben müsste.
 Und doch.
-Für viele Frauen, die ich kenne, ist dieser Satz alles andere als selbstverständlich.
+Für viele, die ich kenne, ist dieser Satz alles andere als selbstverständlich.
 Er fühlt sich an wie eine Erlaubnis, die sie noch nie bekommen haben.
 
 Du darfst Bedürfnisse haben.
@@ -1556,7 +1553,7 @@ Das ist handfester. Es geht um heute. Um etwas Konkretes.
 
 Und dann kommen Antworten.
 Manchmal langsam.
-Manchmal überrascht sich die Frau selbst mit dem, was kommt.
+Manchmal überrascht sich die Person selbst mit dem, was kommt.
 
 Eine Stunde Stille.
 Das Gefühl, dass mir jemand wirklich zuhört.
@@ -1634,7 +1631,7 @@ Du.
 
 ---
 
-Es gibt Frauen, die dieses Du so beschreiben:
+Es gibt Menschen, die dieses Du so beschreiben:
 Ein Gefühl, das sie manchmal kurz haben, und dann wieder verschwindet.
 
 Ein Moment beim Spazieren, wo sie plötzlich denken: Das gefällt mir. Einfach so.
@@ -1698,7 +1695,7 @@ Du hast nur gelernt, sie zu überhören.
 
 Ich will dir von einem Moment erzählen, den ich nie vergessen habe.
 
-Eine Frau, nennen wir sie Maria, kam nach ungefähr acht Monaten Therapie zu einer Stunde, setzte sich hin, und sagte nichts.
+Eine Person, nennen wir sie Maria, kam nach ungefähr acht Monaten Therapie zu einer Stunde, setzte sich hin, und sagte nichts.
 Nur sass sie da.
 
 Und dann: "Ich glaube, ich weiss jetzt, was mir Freude macht."
@@ -1782,7 +1779,7 @@ Und sie gehört dir.
 
 # Ein Brief an dich
 
-Liebe Frau,
+Lieber Mensch,
 
 du hast lange für andere gesorgt.
 
@@ -1841,7 +1838,7 @@ Petra Tanner
 
 Petra Tanner ist Therapeutin und Coachin.
 
-Sie begleitet Frauen, die sich in Beziehungen verlieren, die zu viel geben und nicht wissen, was sie selbst brauchen, und die lernen wollen, sich selbst zu finden.
+Sie begleitet Menschen, die sich in Beziehungen verlieren, die zu viel geben und nicht wissen, was sie selbst brauchen, und die lernen wollen, sich selbst zu finden.
 
 Unter dem Namen Safe to Thrive arbeitet sie in der Schweiz.
 
