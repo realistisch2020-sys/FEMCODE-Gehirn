@@ -483,10 +483,9 @@ Das Vorbild.
 Du darfst trotzdem Schmerz haben über das, was nicht da war.
 Das ist dein Recht. Das ist sogar wichtig.
 
-Es ist möglich, deine Eltern zu verstehen und gleichzeitig traurig zu sein über das, was sie dir nicht geben konnten.
-Beides gleichzeitig.
-Das ist kein Widerspruch.
-Das ist Ehrlichkeit.
+Du kannst deine Eltern lieben.
+Und trotzdem trauern.
+BEIDES IST WAHR.
 
 Aber die Geschichte ist komplizierter als Täter und Opfer.
 Sie ist trauriger.
@@ -872,11 +871,11 @@ Das ist ein Schutzmechanismus, der sich so gut etabliert hat, dass er sich einfa
 Manchmal ist er das auch.
 Beides gleichzeitig. Echte Sorge um andere. Und Flucht vor dir selbst.
 
-Manchmal sorgst du für andere, weil du nicht weisst, was du mit dir selbst anfangen sollst.
-Nicht aus Liebe allein.
-Aus Angst vor der Stille, die wartet, wenn du aufhörst.
+Manchmal ist das Sorgen für andere eine Flucht.
+Vor dem, was wartet, wenn du aufhörst.
+Vor dir.
 Das ist kein Vorwurf.
-Das ist einfach, was ist.
+Das ist, was ist.
 
 ---
 
@@ -1074,7 +1073,8 @@ Du bist noch nicht angekommen.
 Manches wird nicht besser.
 Es wird klarer.
 Das ist nicht dasselbe.
-Und klarer ist manchmal zuerst schwerer.
+Klarer ist manchmal zuerst schwerer.
+Aber es ist ehrlicher.
 
 ---
 
@@ -1241,8 +1241,8 @@ Manchmal sogar Beziehungen, in denen es gefordert wird.
 Manchmal suchst du dir jemanden aus, der dir genau das gibt, was du als Kind bekommen hast.
 Nicht böse. Nicht laut.
 Einfach: nicht wirklich da.
-Und das fühlt sich normal an.
-Weil es das ist.
+Und das fühlt sich vertraut an.
+Vertraut ist nicht dasselbe wie gut.
 
 Du kennst das:
 Du bist immer die Gebende.
@@ -1289,10 +1289,9 @@ Das liegt nicht daran, dass Grenzen falsch sind.
 Es liegt daran, dass manche Menschen in deinem Leben von deiner Grenzenlosigkeit profitiert haben.
 
 Du wirst Menschen verlieren, wenn du anfängst, für dich zu sorgen.
-Nicht weil du falsch bist.
-Sondern weil manche von deiner Selbstverlorenheit gelebt haben.
-Das ist eine der schwierigeren Wahrheiten.
-Und sie ist trotzdem wahr.
+Manche brauchen dich grenzenlos.
+Das sagt nichts über dich aus.
+Nur über sie.
 
 Aber es verändert sich auch etwas Schönes.
 
