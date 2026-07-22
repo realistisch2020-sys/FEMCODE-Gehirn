@@ -58,7 +58,7 @@ Die ehrliche.
 
 Ich bin Therapeutin. Aber das sage ich nicht, damit du mir mehr glaubst.
 Ich sage es, weil ich weiss, was ich sehe.
-Wenn jemand sich mir gegenübersetzt, der alles im Griff hat und trotzdem etwas verloren fühlt.
+Wenn jemand sich mir gegenübersetzt, der alles im Griff hat und sich trotzdem verloren fühlt.
 
 Menschen, die für jeden da sind und nicht wissen, was sie für sich brauchen.
 Menschen, die Beziehungen eingehen und sich darin auflösen.
@@ -94,7 +94,7 @@ Ich kenne den Moment, in dem jemand fragt: "Wie geht es dir?", und ich antworte 
 Ich kenne das Unbehagen, wenn jemand wirklich fragt.
 Wenn jemand auf die echte Antwort warten würde.
 
-Es ist möglich, das zu verändern.
+Das kann sich verändern.
 
 Ready?
 
@@ -256,8 +256,6 @@ Und die Person, die du geworden bist, trägt dieses Muster noch.
 
 ---
 
-Etwas ist mir wichtig, und ich sage es klar:
-
 Emotionale Vernachlässigung bedeutet fast nie, dass deine Eltern böse waren.
 Fast nie, dass sie dich nicht liebten.
 Sie gaben dir, was sie hatten.
@@ -266,8 +264,6 @@ Sie hatten nicht das, was du gebraucht hättest.
 Die häufigste Ursache: Eltern, die selbst nie gelernt haben, mit Gefühlen umzugehen.
 Die selbst emotional vernachlässigt wurden.
 Eine Kette.
-
-Und hier ist etwas, das ich immer wieder sage, weil es trägt:
 
 Es ist nicht das, was es für dich ist.
 Es ist deren Geschichte.
@@ -481,7 +477,7 @@ Die Sprache.
 Das Vorbild.
 
 Du darfst trotzdem Schmerz haben über das, was nicht da war.
-Das ist dein Recht. Das ist sogar wichtig.
+Das ist dein Recht.
 
 Du kannst deine Eltern lieben.
 Und trotzdem trauern.
@@ -507,10 +503,7 @@ Durch das Erwachsenenleben, das du noch vor dir hast.
 
 # Kapitel 3: Du hast überlebt. Hier ist, wie.
 
-Du bist nicht beschädigt.
-
-Das sage ich nicht als Trost.
-Als Feststellung.
+Das sage ich klar:
 
 Du hast als Kind etwas Ausserordentliches getan.
 Du hast erspürt, was willkommen ist und was nicht.
@@ -537,7 +530,6 @@ Und irgendwann war da nichts mehr.
 Nicht Traurigkeit. Nicht Schmerz.
 Einfach: Stille.
 
-Heute zeigt sich das so:
 Du weisst nicht, was du fühlst.
 Du fragst dich, ob du überhaupt Gefühle hast.
 Manchmal bricht etwas durch, und du weisst nicht, woher es kommt.
@@ -558,7 +550,6 @@ Wenn ich die Atmosphäre halte.
 Wenn ich nicht störe und gleichzeitig nützlich bin.
 Dann gehöre ich dazu. Dann bin ich sicher.
 
-Heute zeigt sich das so:
 Du weisst genau, wie andere fühlen.
 Du merkst, wenn jemand unzufrieden ist, bevor er es sagt.
 Du sorgst für Harmonie.
@@ -567,7 +558,7 @@ Du weisst nicht mal, wann es angefangen hat.
 
 ---
 
-Dann ist da das Funktionieren.
+Und dann das Funktionieren.
 
 Du hast gelernt, dass das zählt, was man sehen kann.
 Die Note. Das Verhalten. Die Leistung.
@@ -581,7 +572,7 @@ Stille macht dir Angst. Pause fühlt sich falsch an.
 
 ---
 
-Und dann ist da das Unsichtbarwerden.
+Und das Unsichtbarwerden.
 
 Du hast gelernt, dass sichtbar sein riskant ist.
 Also wirst du klein. Nimmst wenig Platz ein. Störst nicht. Forderst nicht.
@@ -594,7 +585,7 @@ Klein.
 
 ---
 
-Und zuletzt: das Perfektsein.
+Und das Perfektsein.
 
 Du hast gelernt: Wenn ich perfekt genug bin, schaut endlich jemand wirklich hin.
 Also dürfen keine Fehler passieren.
@@ -663,7 +654,7 @@ Aus dem Griechischen: ohne Worte für Gefühle.
 
 Das ist kein seltenes Phänomen.
 Und es entsteht nicht immer durch Trauma im dramatischen Sinn.
-Es entsteht durch das, was wir gerade besprochen haben. Eine Kindheit, in der Gefühle nicht gespiegelt, nicht benannt, nicht ernst genommen wurden.
+Es entsteht durch eine Kindheit, in der Gefühle nicht gespiegelt, nicht benannt, nicht ernst genommen wurden.
 
 Manche beschreiben eine emotionale Leere.
 Ein Nichts dort, wo sie ein Gefühl erwarten würden.
@@ -709,8 +700,8 @@ Das ist kein Fehler in dir.
 
 Das ist eine Fähigkeit, die nie entwickelt werden konnte, weil die Umgebung dafür nicht da war.
 
-Fähigkeiten, die nicht entwickelt wurden, können entwickelt werden.
-Auch im Erwachsenenalter. Das Gehirn ist plastisch. Das Nervensystem lernt.
+Das Gehirn ist plastisch. Das Nervensystem lernt.
+Auch im Erwachsenenalter.
 
 Nicht schnell. Nicht einfach.
 Aber es geht.
@@ -813,7 +804,7 @@ Das ist Überleben.
 
 Wenn deine eigenen Bedürfnisse keine Resonanz erzeugen, richtest du die ganze Aufmerksamkeit nach aussen.
 Du wirst zum Spezialisten für andere.
-Du kannst in Sekundenbruchteilen erspüren, ob jemand unzufrieden. Verletzt. Frustriert. Glücklich.
+Du kannst in Sekundenbruchteilen erspüren, ob jemand unzufrieden ist. Verletzt. Frustriert. Glücklich.
 
 Das macht dich zu einer ausserordentlich empathischen Person.
 Das ist eine echte Stärke.
@@ -839,8 +830,6 @@ Für dich selbst bist du fast eine Fremde.
 DU BIST MEHR ALS DEINE FÜRSORGE.
 
 ---
-
-Und hier ist etwas, das ich dir klar sagen will:
 
 Ohne Schuld. Ohne Scham. Ohne Rechtfertigung.
 Du hast das gelernt, weil du musstest.
@@ -894,8 +883,6 @@ Wenn du immer aus der zweiten gibst, wirst du irgendwann leer sein.
 Leer geben kannst du nicht.
 
 ---
-
-Hier ist eine Frage, die manche schockiert:
 
 Wenn du nicht für andere sorgst, wer bist du dann?
 
@@ -1021,8 +1008,6 @@ Was wäre, wenn du doch nicht zu viel bist?
 ---
 
 Menschen, die dich wirklich mögen oder lieben, wollen dir helfen.
-
-Das ist keine Übertreibung. Das ist, wie Beziehungen funktionieren, wenn sie gesund sind.
 
 Wenn du nie bittest, nimmst du den Menschen in deinem Leben diese Möglichkeit weg.
 Du lässt sie nicht Teil deines wirklichen Lebens sein.
@@ -1196,7 +1181,6 @@ Er geht in den Körper.
 
 ---
 
-Das sage ich nicht, um dich zu beunruhigen.
 Das ist befreiend.
 
 Wenn dein Körper antwortet auf das, was du jahrelang nicht gehört hast, dann wartet er auf dich.
@@ -1360,7 +1344,7 @@ DU DARFST DAS.
 
 ---
 
-# Kapitel 11: Was echte emotionale Fürsorge aussieht
+# Kapitel 11: Wie echte emotionale Fürsorge aussieht
 
 Ich erzähle dir von einem Abend.
 
@@ -1507,7 +1491,7 @@ Eine der wirksamsten Methoden, Gefühle zugänglich zu machen.
 Nicht für andere. Nur für dich.
 Kein gutes Schreiben. Kein lesbares Schreiben.
 Nur das, was da ist, auf Papier.
-Manchmal fängt man einen Satz an, und ist überrascht, was danach kommt.
+Manchmal fängt man einen Satz an und ist überrascht, was danach kommt.
 
 Das Gespräch mit jemandem, dem du vertraust.
 Nicht um Lösungen zu finden.
@@ -1757,7 +1741,7 @@ Der Weg zu dir selbst ist nicht dramatisch.
 Er passiert nicht in einem einzigen Moment der Erleuchtung.
 Er passiert in kleinen Entscheidungen.
 
-In dem Moment, wo du inne hältst und wirklich fragst: Was brauche ich gerade?
+In dem Moment, wo du innehältst und wirklich fragst: Was brauche ich gerade?
 In dem Moment, wo du Nein sagst, obwohl das schlechte Gewissen kommt, und du es trotzdem sagst.
 In dem Moment, wo jemand fragt, wie es dir geht, und du fünf Sekunden länger nachdenkst, bevor du "Gut" sagst.
 In dem Moment, wo du merkst: Das gefällt mir.
@@ -1768,16 +1752,14 @@ Nicht schnell. Aber sicher.
 
 ---
 
-Und jetzt kommt die Frage, die ich dir mitgeben will.
-
 Wer wählst du zu sein?
 JETZT.
 Nicht morgen. Nicht wenn alles besser ist.
 JETZT.
 
 Nicht weil es einfach ist.
-Nicht weil du bereit bist.
-Sondern weil du es dir wert bist.
+Nicht weil es einfach ist.
+Weil du es kannst.
 
 Niemand hat dich gefragt, wie es dir geht.
 
@@ -1789,9 +1771,7 @@ Täglich. Mehrmals täglich.
 Mit echter Neugier.
 Mit echter Bereitschaft, auf die Antwort zu warten.
 
-Weil du es wert bist, dass jemand fragt.
-
-Auch wenn dieser jemand erst einmal du selbst bist.
+Und dieser jemand bist du selbst.
 
 Es ist DEINE Geschichte.
 Und sie gehört dir.
