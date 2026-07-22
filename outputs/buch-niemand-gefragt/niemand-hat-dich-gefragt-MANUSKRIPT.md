@@ -58,13 +58,13 @@ Die ehrliche.
 
 Ich bin Therapeutin. Aber das sage ich nicht, damit du mir mehr glaubst.
 Ich sage es, weil ich weiss, was ich sehe.
-Wenn eine Frau sich mir gegenübersetzt, die alles im Griff hat und trotzdem etwas verloren fühlt.
+Wenn jemand sich mir gegenübersetzt, der alles im Griff hat und trotzdem etwas verloren fühlt.
 
-Frauen, die für jeden da sind und nicht wissen, was sie für sich brauchen.
-Frauen, die Beziehungen eingehen und sich darin auflösen.
-Frauen, die ein schlechtes Gewissen kennen wie einen alten Bekannten, aber nicht wissen, woher er kommt.
+Menschen, die für jeden da sind und nicht wissen, was sie für sich brauchen.
+Menschen, die Beziehungen eingehen und sich darin auflösen.
+Menschen, die ein schlechtes Gewissen kennen wie einen alten Bekannten, aber nicht wissen, woher er kommt.
 
-Was ich in diesen Frauen sehe, hat einen Namen.
+Was ich in diesen Menschen sehe, hat einen Namen.
 Auf Englisch: Childhood Emotional Neglect.
 Emotionale Vernachlässigung in der Kindheit.
 
@@ -74,11 +74,9 @@ Die Art, bei der niemand etwas Böses wollte, und trotzdem etwas fehlte, das hä
 
 Dieses Fehlende hat Konsequenzen.
 Nicht für das Kind, das du warst.
-Für die Frau, die du geworden bist.
+Für die Person, die du geworden bist.
 
-DU BIST NICHT KAPUTT.
-Du bist nicht zu wenig.
-Du hast dich angepasst, wie Kinder es tun.
+Du hast dich angepasst. Das ist etwas anderes.
 
 Kinder sind genial darin, zu überleben.
 Aber manche Überlebensstrategien behindern dich später.
@@ -136,7 +134,7 @@ Lena ist achtundvierzig.
 
 Ärztin. Mutter. Tochter. Freundin.
 Sie funktioniert gut. Sehr gut, eigentlich.
-Leute beschreiben sie als "so unglaublich kompetent". Als "die Stärkste im Raum".
+Leute beschreiben sie als "so unglaublich kompetent". Als "die stärkste Person im Raum".
 
 Sie hat nie Hilfe gebeten.
 Sie wusste nie, wie das geht.
@@ -254,7 +252,7 @@ Oder du fühlst es, aber du hast keinen Zugang mehr.
 Das Kind, das du warst, hat sich angepasst.
 Brillant. Mutig. Notgedrungen.
 
-Und die Frau, die du geworden bist, trägt dieses Muster noch.
+Und die Person, die du geworden bist, trägt dieses Muster noch.
 
 ---
 
@@ -331,7 +329,7 @@ Wer erkannte, wenn du wütend warst, noch bevor du es selbst wusstest?
 Wer sass bei dir, wenn du ängstlich warst, und liess das Gefühl einfach da sein?
 Wer nannte dein Erleben mit einem Namen, damit du lerntest, was in dir vorgeht?
 
-Für die meisten Frauen, die dieses Buch lesen, ist die ehrliche Antwort:
+Für die meisten, die dieses Buch lesen, ist die ehrliche Antwort:
 Niemand.
 Oder: Ich weiss es nicht mehr.
 
@@ -436,7 +434,7 @@ Sie wurden zur Normalität.
 Zur Stille, die irgendwann keine Stille mehr war.
 Einfach: der Alltag.
 
-Genau deshalb sagen viele Frauen zuerst: Nein. Meine Kindheit war normal. Meine Eltern waren da. Ich hatte alles.
+Genau deshalb sagen viele zuerst: Nein. Meine Kindheit war normal. Meine Eltern waren da. Ich hatte alles.
 
 Dann frage ich: Wann hast du zuletzt jemanden in deiner Familie weinen sehen?
 
@@ -535,7 +533,7 @@ Und irgendwann war da nichts mehr.
 Nicht Traurigkeit. Nicht Schmerz.
 Einfach: Stille.
 
-Als Erwachsene merkst du das so:
+Heute zeigt sich das so:
 Du weisst nicht, was du fühlst.
 Du fragst dich, ob du überhaupt Gefühle hast.
 Manchmal bricht etwas durch, und du weisst nicht, woher es kommt.
