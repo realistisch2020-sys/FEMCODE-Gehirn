@@ -2,8 +2,11 @@
 
 ---
 
+## Gruppenlink
+https://www.facebook.com/share/g/1HA553ppVZ/?mibextid=wwXIfr
+
 ## Gruppenname
-**Safe to Thrive — Du darfst du sein**
+**Safe to Thrive — Genug gegeben. Jetzt du.**
 
 ## Gruppentyp
 Geschlossen (Beitrittsanfragen genehmigen)
