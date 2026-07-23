@@ -3,7 +3,7 @@
 ---
 
 ## Gruppenname
-**Safe to Thrive — Für Menschen, die sich selbst zurückfinden**
+**Safe to Thrive — Du darfst du sein**
 
 ## Gruppentyp
 Geschlossen (Beitrittsanfragen genehmigen)
@@ -178,7 +178,7 @@ Petra
 **Text für "Wenn du mehr möchtest" im Buch:**
 
 **Komm in die Community.**
-Auf Facebook gibt es eine geschlossene Gruppe für alle, die diesen Weg weitergehen wollen: "Safe to Thrive — Für Menschen, die sich selbst zurückfinden."
+Auf Facebook gibt es eine geschlossene Gruppe für alle, die diesen Weg weitergehen wollen: "Safe to Thrive — Du darfst du sein."
 
 Suche auf Facebook nach: Safe to Thrive Petra Tanner
 
@@ -192,7 +192,7 @@ Du bist willkommen.
 # Einrichten — Schritt für Schritt
 
 1. Facebook aufmachen → "Gruppen" → "Neue Gruppe erstellen"
-2. Gruppenname eingeben: Safe to Thrive — Für Menschen, die sich selbst zurückfinden
+2. Gruppenname eingeben: Safe to Thrive — Du darfst du sein
 3. Datenschutz: Geschlossen
 4. Gruppe erstellen
 5. Beschreibung einfügen (oben)
