@@ -99,6 +99,43 @@ Bücher werden geschlechtsneutral geschrieben:
 
 ---
 
+---
+
+## KI-Sätze und KI-Wörter — diese IMMER ersetzen
+
+Diese Sätze und Muster verraten KI-Herkunft. Nicht subtil — sofort erkennbar.
+
+**Verbotene Satz-Eröffnungen (wenn sie häufen):**
+- "Das ist kein Versagen." → besser: konkret benennen, was es stattdessen ist
+- "Das ist kein Zufall." → einfach weglassen, oder: "Dafür gibt es einen Grund."
+- "Das ist nicht deine Schuld." → zu floskelhaft; stattdessen erklären, warum es so kam
+- "Das ist ein Muster." / "Und Muster können unterbrochen werden." → zu ordentlich, zu fertig
+- "Das ist Information." → nie. Einfach nie.
+- "Das erklärt vieles:" → klingt nach Schulvortrag
+- "Das klingt klein. Es war nicht klein." → KI-Spiegelstruktur; stattdessen zeigen, nicht sagen
+
+**Verbotene Wörter und Phrasen:**
+- "Jeder dieser Sätze ist..." → KI-Listenabschluss
+- "Neurobiologisch betrachtet" / "Neurobiologisch gesehen" → zu akademisch; umschreiben
+- "Das nennt man nicht X. Das ist Y." → zu aufgeräumt; Varianten nutzen
+- "Beides ist Information." → KI-Therapiesprech
+- "Das war mutig. Auch wenn es sich nicht so angefühlt hat." → zu geglättet
+- "Das ist der Anfang." → am Satzende als runde Schlussformel vermeiden
+- "Und Muster können unterbrochen werden." → als Floskel zu abgedroschen
+
+**Verbotenes Satzmuster:**
+- "Nicht X. Nicht Y. Sondern Z." mehr als zweimal pro Kapitel → KI-Signatur
+- Drei aufeinanderfolgende Absätze, die alle mit "Das ist..." beginnen → sofort variieren
+- Sehr glatte Übergänge ("Das erklärt, warum..." / "Das zeigt sich so:") wenn sie zu häufig vorkommen
+
+**Stattdessen:**
+- Unrund lassen, was unrund ist
+- Satzlänge variieren — nicht alles in Dreier-Rhythmus
+- Manchmal einfach aufhören, ohne runden Abschluss
+- Menschliche Unglätte: ein Satz, der nicht perfekt sitzt, wirkt echter als zehn perfekte
+
+---
+
 ## Transformations-Beispiel
 
 **Vorher (KI/Therapie-Sprache):**
