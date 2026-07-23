@@ -89,12 +89,17 @@ Durch Verstehen. Durch Mitgefühl. Durch das Wiederfinden von etwas, das du nie 
 
 Du warst die ganze Zeit da.
 
-Ich schreibe das nicht aus sicherer Distanz.
-Ich kenne den Moment, in dem jemand fragt: "Wie geht es dir?", und ich antworte "Gut", weil ich keine Ahnung habe, was die ehrliche Antwort wäre.
-Ich kenne das Unbehagen, wenn jemand wirklich fragt.
-Wenn jemand auf die echte Antwort warten würde.
+Jemand fragt: "Wie geht es dir?"
 
-Das kann sich verändern.
+Und du sagst: "Gut."
+
+Nicht weil es stimmt.
+Weil du nicht weisst, was die ehrliche Antwort wäre.
+Weil es einfacher ist.
+Weil du dir nicht sicher bist, ob jemand wirklich auf die Antwort wartet.
+
+Das kennen viele.
+Und es muss nicht so bleiben.
 
 Ready?
 
