@@ -141,7 +141,6 @@ Lena ist achtundvierzig.
 Sie funktioniert gut. Sehr gut, eigentlich.
 Leute beschreiben sie als "so unglaublich kompetent". Als "die stärkste Person im Raum".
 
-Sie hat nie Hilfe gebeten.
 Sie wusste nie, wie das geht.
 
 Lena kam zu mir, weil ihr Mann sie geschickt hatte.
