@@ -1364,6 +1364,12 @@ Kontakt: beyondlimitsnow25@gmail.com
 
 # Wenn du mehr möchtest
 
+**Ein Geschenk für dich.**
+
+Schreib mir eine Mail mit dem Betreff "Begleit-PDF" — und du bekommst kostenlos ein druckbares Arbeitsblatt mit den fünf Übungen aus diesem Buch.
+
+beyondlimitsnow25@gmail.com
+
 Dieses Buch ist Teil einer Reihe.
 
 **"Wenn Beziehungen erschöpfen"**
