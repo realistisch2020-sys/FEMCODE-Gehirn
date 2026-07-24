@@ -70,18 +70,18 @@ Das fehlt beiden Konkurrenz-Büchern.
 
 ---
 
-## Titel-Optionen
+## Titel (FINAL)
 
-1. "Ich bin so müde. Und niemand fragt mich warum." ← emotional, sofort erkennbar
-2. "Du darfst aufhören, für alle stark zu sein." ← Erlaubnis, direkt
-3. "Stark sein war nie meine Wahl." ← provokativ, stark
+**"Ich bin so müde. Und niemand fragt mich warum."**
+**Untertitel:** Wie du aufhörst, für alle stark zu sein — und endlich wieder du selbst wirst
 
 ---
 
 ## Nächste Schritte
 
-- [ ] Titel final festlegen
-- [ ] Titel + Untertitel + Keywords strategisch aufbauen
-- [ ] Cover-Konzept entwickeln
-- [ ] Kapitelstruktur erstellen
-- [ ] Schreiben beginnen (Ziel: fertig in 6-8 Wochen)
+- [x] Titel final festlegen
+- [x] Titel + Untertitel + Keywords strategisch aufbauen
+- [x] Kapitelstruktur erstellen → siehe buch6-kapitelstruktur.md
+- [ ] Schreiben beginnen (Ziel: fertig in 6 Wochen)
+- [ ] Cover-Konzept entwickeln (Ideogram → Canva)
+- [ ] KDP Upload vorbereiten
