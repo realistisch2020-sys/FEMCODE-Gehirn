@@ -40,8 +40,6 @@ Die stark sind. Die geben. Die aushalten.
 Und die irgendwann in meiner Praxis sitzen und sagen:
 "Ich weiss gar nicht mehr, wer ich bin."
 
-Was ich in diesen Jahren gelernt habe, werde ich dir jetzt sagen.
-
 Nicht sanft.
 Ehrlich.
 
@@ -322,7 +320,7 @@ Schreib, was kommt. Ohne Zensur. Ohne Rücksicht.
 Nur du und die Stimme.
 
 Was auch immer dabei auftaucht: nimm es ernst.
-Das ist kein Selbstmitleid.
+Ehrlichkeit, nicht Selbstmitleid.
 Das ist das erste Mal, dass du wirklich hinhörst.
 
 
@@ -459,7 +457,6 @@ Und solange du perfekt sein musst, hast du keine Zeit, hinzuhören.
 
 Erkennst du dich?
 
-Das ist kein Grund zur Scham.
 Diese Strategien haben dich durch eine Kindheit getragen, in der deine emotionale Welt keinen sicheren Platz hatte.
 
 Jetzt brauchst du sie nicht mehr so.
@@ -497,7 +494,7 @@ Und dann, ganz leise:
 "Gibt es das? Dass man sich selbst gar nicht kennt?"
 
 Es gibt das.
-Und es ist häufiger als du denkst.
+Viele kennen dieses Nicht-Wissen.
 
 Claudia hatte jahrelang funktioniert.
 Hatte gegeben, bis nichts mehr da war.
@@ -585,9 +582,11 @@ Um zu sehen, wo die Energie fliesst. Und wohin sie nicht fliesst.
 
 **Was sich verändert, wenn du das siehst**
 
-Wenn du siehst, dass deine Strategien einmal Sinn ergaben, dass sie dich durch etwas getragen haben, das wirklich schwierig war, verändert sich die Art, wie du dich selbst siehst.
+Wenn du siehst, dass deine Strategien einmal Sinn ergaben.
+Dass sie dich durch etwas getragen haben, das wirklich schwierig war.
+Verändert sich die Art, wie du dich selbst siehst.
 
-Du wirst dir freundlicher.
+Du wirst freundlicher zu dir.
 
 Und du fängst an zu fragen: Brauche ich das hier gerade? Oder ist das Automatismus?
 
@@ -653,7 +652,7 @@ Er ist das ehrlichste Protokoll deines Lebens.
 
 Das Nervensystem hat drei Zustände
 
-Der Neurologe Stephen Porges hat jahrzehntelang erforscht, wie das Nervensystem auf Sicherheit und Gefahr reagiert.
+Der Neurowissenschaftler Stephen Porges hat jahrzehntelang erforscht, wie das Nervensystem auf Sicherheit und Gefahr reagiert.
 
 **Erster Zustand: Sicherheit.**
 Du bist entspannt, verbunden, offen. Du kannst denken, fühlen, sprechen. Du bist wirklich da.
@@ -680,8 +679,8 @@ Und das Nervensystem: das kann sich verändern.
 
 Ohne Worte für Gefühle
 
-Es gibt einen Begriff: Alexithymie.
-Aus dem Griechischen: ohne Worte für Gefühle.
+Es gibt einen Begriff dafür: Alexithymie.
+Ohne Worte für das, was man fühlt.
 
 Das Ergebnis von Jahren, in denen Gefühle nicht gespiegelt, nicht benannt, nicht ernst genommen wurden.
 
@@ -836,8 +835,8 @@ Du hörst hin.
 Wenn du anfängst zu fühlen, wirst du zuerst traurig sein.
 Nicht wegen heute.
 Wegen allem, was du nie gefühlt hast.
-Das ist keine Krise.
-Das ist Nachholen.
+Kein Rückschritt.
+Nachholen.
 Und Nachholen ist der Beweis, dass etwas aufgeht.
 
 
@@ -892,7 +891,7 @@ Sara ist nach Hause gegangen und hat das erste Mal seit Wochen gut geschlafen.
 Was Karin getan hat, klingt unscheinbar.
 Tee kochen. Zuhören. Aushalten.
 
-Aber für Sara war das der Moment, in dem die Stimme durch kam.
+Aber für Sara war das der Moment, in dem die Stimme durchkam.
 
 
 Was echte Fürsorge ist. Und was nicht.
@@ -979,7 +978,6 @@ Fühlen lernen geht nicht gerade
 Es gibt Tage, an denen du mehr fühlst.
 Tage, an denen alles wieder zu ist.
 
-Das ist kein Rückfall.
 Das ist, wie Veränderung funktioniert.
 Nicht gerade. Spiralförmig.
 
