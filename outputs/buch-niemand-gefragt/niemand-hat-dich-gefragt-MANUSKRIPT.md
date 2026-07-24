@@ -598,11 +598,11 @@ Um zu sehen, wo die Energie fliesst — und wohin sie nicht fliesst.
 
 **Was sich verändert, wenn du das siehst**
 
-Wenn du siehst, dass deine Strategien einmal Sinn ergaben — dass sie dich durch etwas gebracht haben, das wirklich schwierig war — verändert sich die Art, wie du dich selbst siehst.
+Wenn du siehst, dass deine Strategien einmal Sinn ergaben, dass sie dich durch etwas getragen haben, das wirklich schwierig war, verändert sich die Art, wie du dich selbst siehst.
 
 Du wirst dir freundlicher.
 
-Und du fängst an zu fragen: Brauche ich das hier gerade — oder ist das Automatismus?
+Und du fängst an zu fragen: Brauche ich das hier gerade? Oder ist das Automatismus?
 
 Diese Frage klingt klein.
 Aber sie ist der Anfang davon, nicht mehr automatisch an der Tür vorbeizugehen.
@@ -639,8 +639,8 @@ Dann lauter.
 Die Verspannungen. Das Herzrasen. Die Erschöpfung, die nicht weicht.
 Der Schmerz, für den kein Arzt eine Erklärung findet.
 
-Das ist kein Versagen deines Körpers.
-Das ist Kommunikation.
+Dein Körper versagt nicht.
+Er spricht.
 
 DEIN KÖRPER LÜGT NICHT.
 
@@ -740,7 +740,7 @@ Sie überlegte.
 "Bereit?"
 "Ja. Bereit für den Tag. Für das, was kommt."
 
-Ich fragte: "Und wenn du das wegdenkst — das Bereit-Sein. Was ist da?"
+Ich fragte: "Und wenn du das wegdenkst. Das Bereit-Sein. Was ist da?"
 
 Lange Pause.
 
@@ -822,7 +822,7 @@ Ohne Zensur.
 
 Dein Körper weiss mehr als dein Kopf.
 Er klopft seit Jahren.
-Das ist die erste Mal, dass du aufmachst.
+Das ist das erste Mal, dass du aufmachst.
 
 ---
 
@@ -961,7 +961,7 @@ DU BIST NICHT ZU VIEL.
 Wahrscheinlich jemand, dessen eigene Bedürfnisse auch nie Platz hatten.
 
 Was wäre, wenn du nie zu viel warst?
-Was wäre, wenn du genau richtig warst — für ein Umfeld, das dich nicht tragen konnte?
+Was wäre, wenn du genau richtig warst. Für ein Umfeld, das dich nicht tragen konnte.
 
 Das ist nicht dasselbe.
 
@@ -1153,8 +1153,7 @@ Nur sass sie da.
 
 Und dann: "Ich glaube, ich weiss jetzt, was mir Freude macht."
 
-Das klingt nach wenig.
-Es war alles andere als wenig.
+Wer das nicht kennt, unterschätzt diesen Moment.
 
 Maria hatte acht Monate gebraucht, um diese Antwort zu finden.
 Nicht weil sie schwierig ist.
