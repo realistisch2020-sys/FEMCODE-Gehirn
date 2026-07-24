@@ -65,30 +65,30 @@ Petra Tanner
 **Bevor du weiterliest**
 Warum du automatisch "Gut" sagst. Und was das über dich verrät.
 
-**Station 1: Das Schweigen**
+**Kapitel 1: Das Schweigen**
 Was in deiner Kindheit fehlte. Nicht das Böse, das passiert ist. Das Gute, das ausblieb. Und warum das die stillste, schwerste Art von Verletzung ist.
 
-**Station 2: Die Anpassung**
+**Kapitel 2: Die Anpassung**
 Wie du dich damals gerettet hast. Die Strategien, die du entwickelt hast, um durchzukommen. Und warum du sie heute noch trägst, obwohl du sie längst nicht mehr brauchst.
 
-**Station 3: Der Körper weiss es**
-Dein Körper hat nie gelogen. Er spricht seit Jahren. Die Verspannungen, die Erschöpfung, das Herzrasen. In dieser Station lernst du, seine Sprache wieder zu verstehen.
+**Kapitel 3: Der Körper weiss es**
+Dein Körper hat nie gelogen. Er spricht seit Jahren. Die Verspannungen, die Erschöpfung, das Herzrasen. In diesem Kapitel lernst du, seine Sprache wieder zu verstehen.
 
-**Station 4: Das Auftauen**
+**Kapitel 4: Das Auftauen**
 Was passiert, wenn du anfängst hinzuhören. Und warum es sich zuerst falsch anfühlt. Das Auftauen tut weh. Und es ist der Beweis, dass etwas aufgeht.
 
-**Station 5: Du**
-Hinter allem Funktionieren, allem Anpassen, allem Geben wartet jemand. Diese Person kennt bestimmte Dinge, will bestimmte Dinge, braucht bestimmte Dinge. Diese Station führt dich zu ihr.
+**Kapitel 5: Du**
+Hinter allem Funktionieren, allem Anpassen, allem Geben wartet jemand. Diese Person kennt bestimmte Dinge, will bestimmte Dinge, braucht bestimmte Dinge. Dieses Kapitel führt dich zu ihr.
 
 **Ein Brief an dich**
 Für den Weg danach.
 
 
-# Station 1: Das Schweigen
+# Kapitel 1: Das Schweigen
 
 ## Was fehlte. Und was das bis heute macht.
 
-**Die unbequeme Wahrheit dieser Station:**
+**Die unbequeme Wahrheit dieses Kapitels:**
 
 Deine Eltern haben dich geliebt.
 Und sie haben dir trotzdem geschadet.
@@ -345,11 +345,11 @@ Und was gelernt wurde, kann umgelernt werden.
 *Was passierte bei euch zu Hause, wenn jemand weinte oder wütend war?*
 
 
-# Station 2: Die Anpassung
+# Kapitel 2: Die Anpassung
 
 ## Was du daraus wurdest. Und wie brilliant das war.
 
-**Die unbequeme Wahrheit dieser Station:**
+**Die unbequeme Wahrheit dieses Kapitels:**
 
 Du glaubst, du bist erschöpft, weil du zu viel gibst.
 Das ist nicht der ganze Satz.
@@ -602,11 +602,11 @@ Aber sie ist der Anfang davon, nicht mehr automatisch an der eigenen Stimme vorb
 *Was wäre, wenn du heute kurz innehältst und hinhörst, was die Stimme sagt?*
 
 
-# Station 3: Der Körper weiss es
+# Kapitel 3: Der Körper weiss es
 
 ## Was er die ganze Zeit gesagt hat. Und du nicht gehört hast.
 
-**Die unbequeme Wahrheit dieser Station:**
+**Die unbequeme Wahrheit dieses Kapitels:**
 
 Dein Körper hat nie gelogen.
 Du hast ihm nur so lange nicht zugehört, bis du seine Sprache vergessen hast.
@@ -827,11 +827,11 @@ Du hörst hin.
 *Wann hat dein Körper zuletzt etwas gesagt? Und du hast weitergetan, als wäre nichts.*
 
 
-# Station 4: Das Auftauen
+# Kapitel 4: Das Auftauen
 
 ## Was passiert, wenn du anfängst. Und warum es sich zuerst falsch anfühlt.
 
-**Die unbequeme Wahrheit dieser Station:**
+**Die unbequeme Wahrheit dieses Kapitels:**
 
 Wenn du anfängst zu fühlen, wirst du zuerst traurig sein.
 Nicht wegen heute.
@@ -1042,11 +1042,11 @@ Die Stimme ist nicht mehr ganz still.
 *Gibt es jemanden in deinem Leben, dem du heute etwas Wahres sagen könntest?*
 
 
-# Station 5: Du
+# Kapitel 5: Du
 
 ## Wer da wartet. Und was jetzt möglich ist.
 
-**Die unbequeme Wahrheit dieser Station:**
+**Die unbequeme Wahrheit dieses Kapitels:**
 
 Du hast Angst davor, wer du wirklich bist.
 Nicht weil diese Person schlimm ist.
