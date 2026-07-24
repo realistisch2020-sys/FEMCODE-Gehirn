@@ -39,6 +39,15 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 - Homepage / Landingpage für Safe to Thrive erstellen (aktuell keine vorhanden)
 - Newsletter aufbauen
 
+## TikTok-Automation-Workflow aufbauen
+
+- Vollautomatischer Content-Workflow nach Kupka-System (jeden Montag 08:00 Uhr)
+- Schritte: Online-Recherche → Content-Plan → Ideogram-Prompts → Bilder + Text-Overlay → Google Drive
+- Ergebnis: 7-10 fertige Clips / 70-100 Bilder + Captions + Hashtags pro Woche
+- Kosten: ca. 3€/Woche
+- **Einmalig aufbauen — dann läuft es selbst**
+- Tools: KI (Claude) + Ideogram + automatisches Text-Overlay + Google Drive
+
 ## Ideen / später
 
 - Instagram-Content zu Buch 3, 4, 5 planen
