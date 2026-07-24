@@ -1,6 +1,6 @@
 # Niemand hat dich gefragt, wie es dir geht
 
-## Du schwörst dir: Was jetzt kommt — dafür bist du nicht bereit.
+## Du schwörst dir: Was jetzt kommt. Dafür bist du nicht bereit.
 
 **Petra Tanner**
 Safe to Thrive
@@ -60,9 +60,33 @@ Petra Tanner
 
 
 
+# Inhalt
+
+**Bevor du weiterliest**
+Warum du automatisch "Gut" sagst. Und was das über dich verrät.
+
+**Station 1: Das Schweigen**
+Was in deiner Kindheit fehlte. Nicht das Böse, das passiert ist. Das Gute, das ausblieb. Und warum das die stillste, schwerste Art von Verletzung ist.
+
+**Station 2: Die Anpassung**
+Wie du dich damals gerettet hast. Die Strategien, die du entwickelt hast, um durchzukommen. Und warum du sie heute noch trägst, obwohl du sie längst nicht mehr brauchst.
+
+**Station 3: Der Körper weiss es**
+Dein Körper hat nie gelogen. Er spricht seit Jahren. Die Verspannungen, die Erschöpfung, das Herzrasen. In dieser Station lernst du, seine Sprache wieder zu verstehen.
+
+**Station 4: Das Auftauen**
+Was passiert, wenn du anfängst hinzuhören. Und warum es sich zuerst falsch anfühlt. Das Auftauen tut weh. Und es ist der Beweis, dass etwas aufgeht.
+
+**Station 5: Du**
+Hinter allem Funktionieren, allem Anpassen, allem Geben wartet jemand. Diese Person kennt bestimmte Dinge, will bestimmte Dinge, braucht bestimmte Dinge. Diese Station führt dich zu ihr.
+
+**Ein Brief an dich**
+Für den Weg danach.
+
+
 # Station 1: Das Schweigen
 
-## Was fehlte — und was das bis heute macht
+## Was fehlte. Und was das bis heute macht.
 
 **Die unbequeme Wahrheit dieser Station:**
 
@@ -70,7 +94,7 @@ Deine Eltern haben dich geliebt.
 Und sie haben dir trotzdem geschadet.
 Nicht weil sie böse waren.
 Weil niemand ihnen je gezeigt hat, wie man ein Kind emotional hält.
-Diese Kette geht weiter — bis jemand sie unterbricht.
+Diese Kette geht weiter. Bis jemand sie unterbricht.
 Du bist dieser Jemand.
 
 
@@ -81,7 +105,7 @@ Du hast sie immer gewusst.
 Es ist die Stimme, die sagt: Wie geht es mir wirklich?
 Die Raum einfordert.
 Die weinen darf, ohne dass jemand sagt: Hör auf.
-Die sagt, was sie braucht — und sich nicht dafür entschuldigt.
+Die sagt, was sie braucht. Und sich nicht dafür entschuldigt.
 
 Du hast diese Stimme lange nicht gehört.
 Nicht weil sie weg war.
@@ -118,13 +142,13 @@ Die Stimme wurde still.
 Schon früh.
 
 
-Was in einer emotionalen Kindheit passiert — und was nicht
+Was in einer emotionalen Kindheit passiert. Und was nicht.
 
 Stell dir vor, du bist sieben Jahre alt.
 
 Du hattest einen schwierigen Tag.
 In dir tobt etwas.
-Du weisst nicht mal, was — du bist sieben, du hast keine Worte dafür.
+Du weisst nicht mal, was. Du bist sieben, du hast keine Worte dafür.
 Aber da ist etwas. Schwer. Drückend.
 
 Du kommst nach Hause.
@@ -232,7 +256,7 @@ Zum ersten Mal seit Jahrzehnten.
 Lies diese Liste. Ohne Bewertung.
 
 In einer emotional fürsorglichen Kindheit passiert das:
-Jemand fragte, wie dein Tag war — und meinte es wirklich.
+Jemand fragte, wie dein Tag war. Und meinte es wirklich.
 Jemand bemerkte, wenn du traurig warst, ohne dass du es sagen musstest.
 Jemand sass bei dir, wenn du weintest, ohne dich zu drängen aufzuhören.
 Jemand sagte dir, dass deine Wut verständlich ist.
@@ -297,14 +321,14 @@ Was würde sie sagen, wenn du jetzt zuhörst?
 Schreib, was kommt. Ohne Zensur. Ohne Rücksicht.
 Nur du und die Stimme.
 
-Was auch immer dabei auftaucht — nimm es ernst.
+Was auch immer dabei auftaucht: nimm es ernst.
 Das ist kein Selbstmitleid.
 Das ist das erste Mal, dass du wirklich hinhörst.
 
 
 **Was sich verändert, wenn du hinschaust**
 
-Wenn du anfängst zu verstehen, was fehlte — nicht dramatisiert, nicht verleugnet — verändert sich die Art, wie du dich selbst siehst.
+Wenn du anfängst zu verstehen, was fehlte. Wirklich verstehst. Dann verändert sich die Art, wie du dich selbst siehst.
 
 Das Verhalten, das dich an dir stört, bekommt plötzlich einen Ursprung.
 
@@ -314,16 +338,16 @@ Es wurde so.
 Und was gelernt wurde, kann umgelernt werden.
 
 
-*Wann hat dich zuletzt jemand wirklich gefragt, wie es dir geht — und du hast die echte Antwort gesagt?*
+*Wann hat dich zuletzt jemand wirklich gefragt, wie es dir geht? Und du hast die echte Antwort gesagt?*
 
-*Was würde die ehrliche Antwort sein — jetzt, in diesem Moment?*
+*Was würde die ehrliche Antwort sein? Jetzt, in diesem Moment.*
 
 *Was passierte bei euch zu Hause, wenn jemand weinte oder wütend war?*
 
 
 # Station 2: Die Anpassung
 
-## Was du daraus wurdest — und wie brilliant das war
+## Was du daraus wurdest. Und wie brilliant das war.
 
 **Die unbequeme Wahrheit dieser Station:**
 
@@ -351,7 +375,7 @@ Du hast dich angepasst.
 
 DAS WAR BRILLANT.
 
-Die Strategien, die ein Kind entwickelt, wenn Gefühle nicht sicher sind — das ist Intelligenz.
+Die Strategien, die ein Kind entwickelt, wenn Gefühle nicht sicher sind: das ist Intelligenz.
 Das ist Kreativität.
 Das ist pures Überleben.
 
@@ -395,7 +419,7 @@ Und du bist erschöpft davon.
 Aber hier ist, was keiner sagt:
 Das Sorgen für andere hält dich beschäftigt.
 Solange du für alle da bist, musst du nicht für dich da sein.
-Du gehst an ihr vorbei — und hast immer einen guten Grund dafür.
+Du gehst an ihr vorbei. Und hast immer einen guten Grund dafür.
 
 DU BIST MEHR ALS DEINE FÜRSORGE.
 
@@ -409,7 +433,7 @@ Du weisst nicht, was du brauchst.
 Stille macht dir Angst.
 Pause fühlt sich falsch an.
 
-Weil in der Stille — da meldet sie sich wieder.
+Weil in der Stille sie sich wieder meldet.
 Und was dahinter ist, kennst du nicht.
 
 **Vier: Du wirst klein.**
@@ -461,7 +485,7 @@ Lange.
 "Dass ich zuverlässig bin", sagte sie schliesslich.
 "Dass ich nie jemanden hängen lasse."
 
-Ich fragte: "Und was magst du an dir — jenseits davon, was du für andere tust?"
+Ich fragte: "Und was magst du an dir? Jenseits davon, was du für andere tust."
 
 Stille.
 
@@ -485,7 +509,7 @@ Das Geben war ihr Weg, die eigene Stimme zu übertönen.
 
 Was Anpassung mit der Identität macht
 
-Wenn du jahrelang nicht weisst, was du fühlst, was du brauchst, was du willst — was passiert dann mit dem Bild, das du von dir selbst hast?
+Wenn du jahrelang nicht weisst, was du fühlst, was du brauchst, was du willst. Was passiert dann mit dem Bild, das du von dir selbst hast?
 
 Es wird dünn.
 
@@ -501,7 +525,7 @@ Du hast Bedürfnisse.
 Du hast nur so lange weggeschaut, bis das Wegsehen automatisch wurde.
 
 
-Das schlechte Gewissen — der innere Lärm
+Das schlechte Gewissen als innerer Lärm
 
 Es meldet sich, wenn du Nein sagst.
 Wenn du etwas für dich willst.
@@ -541,7 +565,7 @@ DU DARFST DAS.
 
 Nimm zwanzig Minuten. Schreib, ohne nachzudenken.
 
-*Was tue ich regelmässig — obwohl ich es nicht will?*
+*Was tue ich regelmässig, obwohl ich es nicht will?*
 Liste alles auf. Gross und klein. Ohne Bewertung.
 
 *Warum tue ich es trotzdem?*
@@ -550,13 +574,13 @@ Nicht die höfliche Antwort. Die echte. Angst? Schuld? Gewohnheit? Weil ich nich
 *Was würde passieren, wenn ich es nicht täte?*
 Wirklich. Was wäre das Schlimmste? Schreib es.
 
-*Was tue ich NIE — obwohl ich es wollen würde?*
+*Was tue ich NIE, obwohl ich es wollen würde?*
 Was bleibt immer auf der Wunschliste? Was schiebst du auf?
 
 Lies, was du geschrieben hast.
 Das ist deine Anpassungslandkarte.
 Nicht um dich zu verurteilen.
-Um zu sehen, wo die Energie fliesst — und wohin sie nicht fliesst.
+Um zu sehen, wo die Energie fliesst. Und wohin sie nicht fliesst.
 
 
 **Was sich verändert, wenn du das siehst**
@@ -575,18 +599,18 @@ Aber sie ist der Anfang davon, nicht mehr automatisch an der eigenen Stimme vorb
 
 *Wann ist es heute noch am lautesten?*
 
-*Was wäre, wenn du heute kurz innehältst — und hinhörst, was die Stimme sagt?*
+*Was wäre, wenn du heute kurz innehältst und hinhörst, was die Stimme sagt?*
 
 
 # Station 3: Der Körper weiss es
 
-## Was er die ganze Zeit gesagt hat — und du nicht gehört hast
+## Was er die ganze Zeit gesagt hat. Und du nicht gehört hast.
 
 **Die unbequeme Wahrheit dieser Station:**
 
 Dein Körper hat nie gelogen.
 Du hast ihm nur so lange nicht zugehört, bis du seine Sprache vergessen hast.
-Die Verspannungen, das Herzrasen, die Erschöpfung ohne Grund — das ist kein Angriff.
+Die Verspannungen, das Herzrasen, die Erschöpfung ohne Grund. Kein Angriff.
 Das ist dein Körper, der spricht. Der schon immer gesprochen hat.
 
 
@@ -647,11 +671,11 @@ Nicht auf Ruhe.
 
 Deshalb kannst du nicht abschalten.
 Deshalb fühlt sich Stille unangenehm an.
-Deshalb weisst du, dass alles gut ist — und fühlst dich trotzdem nicht gut.
+Deshalb weisst du, dass alles gut ist. Und fühlst dich trotzdem nicht gut.
 
 Das sitzt nicht im Kopf.
 Das sitzt im Nervensystem.
-Und das Nervensystem — das kann sich verändern.
+Und das Nervensystem: das kann sich verändern.
 
 
 Ohne Worte für Gefühle
@@ -673,7 +697,7 @@ Der Körper spricht.
 Die Übersetzung fehlt.
 
 Und dann gibt es Menschen, die sagen:
-"Bei anderen merke ich sofort, was sie fühlen. Aber bei mir — keine Ahnung."
+"Bei anderen merke ich sofort, was sie fühlen. Aber bei mir? Keine Ahnung."
 
 Das ist das Ergebnis einer Kindheit, in der das Lauschen nach aussen überlebensnotwendig war.
 Und das Lauschen nach innen nie geübt wurde.
@@ -760,7 +784,7 @@ Eine Verspannung. Ein Druck. Eine Enge. Kribbeln. Was auch immer sich meldet.
 
 Leg die Hand dort hin.
 
-Und dann — das klingt seltsam, aber tu es — frag die Körperstelle:
+Und dann, das klingt seltsam, aber tu es: frag die Körperstelle:
 *Was willst du mir sagen?*
 
 Warte.
@@ -800,12 +824,12 @@ Du hörst hin.
 
 *Was könnte dein Körper dir damit sagen wollen?*
 
-*Wann hat dein Körper zuletzt etwas gesagt — und du hast weitergetan als wäre nichts?*
+*Wann hat dein Körper zuletzt etwas gesagt? Und du hast weitergetan, als wäre nichts.*
 
 
 # Station 4: Das Auftauen
 
-## Was passiert, wenn du anfängst — und warum es sich zuerst falsch anfühlt
+## Was passiert, wenn du anfängst. Und warum es sich zuerst falsch anfühlt.
 
 **Die unbequeme Wahrheit dieser Station:**
 
@@ -825,7 +849,7 @@ Du beginnst, sie ernst zu nehmen.
 
 Und dann passiert etwas, das niemand dir sagt:
 
-Wenn du anfängst hinzuhören — wirklich hinzuhören — dann ist das erste, was kommt, oft nicht Erleichterung.
+Wenn du anfängst hinzuhören. Wirklich hinzuhören. Das erste, was kommt, ist oft nicht Erleichterung.
 
 Es ist Schmerz.
 Und Trauer.
@@ -871,7 +895,7 @@ Tee kochen. Zuhören. Aushalten.
 Aber für Sara war das der Moment, in dem die Stimme durch kam.
 
 
-Was echte Fürsorge ist — und was nicht
+Was echte Fürsorge ist. Und was nicht.
 
 Echte emotionale Fürsorge ist kein Grossereignis.
 Sie passiert in kleinen Momenten.
@@ -879,7 +903,7 @@ Sie passiert in kleinen Momenten.
 Jemand, der fragt, wie dein Tag war, und mit der Antwort wartet.
 Jemand, der dich nicht sofort repariert, wenn etwas schwer ist.
 Jemand, der sagt: Ich bin hier.
-Jemand, der Nein sagen kann — weil das zeigt, dass sein Ja echt ist.
+Jemand, der Nein sagen kann. Weil das zeigt, dass sein Ja echt ist.
 
 Kommt dir das bekannt vor?
 Oder fühlt es sich fremd an?
@@ -935,7 +959,7 @@ Das ist keine Wahrheit.
 Aber es fühlt sich an wie eine.
 
 
-Fürsorge für dich selbst — der erste Schritt
+Fürsorge für dich selbst: der erste Schritt
 
 Du kannst nicht nur warten, bis jemand anfängt, so mit dir zu sein.
 Du musst anfangen, es dir selbst zu geben.
@@ -946,7 +970,7 @@ Kannst du dir selbst sagen: Das glaube ich dir?
 
 Du wirst die erste Person, die dir wirklich zuhört.
 
-Und dann, wenn du weisst, wie sich das anfühlt — bei dir selbst — erkennst du es auch bei anderen.
+Und dann, wenn du weisst, wie sich das anfühlt, wirklich bei dir selbst, erkennst du es auch bei anderen.
 Dann kannst du es annehmen, wenn jemand es dir gibt.
 
 
@@ -968,14 +992,14 @@ Und ehrlicher ist echter.
 Und echter ist das, was du wirklich willst.
 
 
-**Übung: Das Auftau-Tagebuch — sieben Tage**
+**Übung: Das Auftau-Tagebuch. Sieben Tage.**
 
 Fünf Minuten pro Tag. Sieben Tage.
 
 Jeden Abend, bevor du schläfst:
 
 *Was hat mich heute bewegt?*
-Nicht was schön oder schlimm war. Was hat etwas in dir berührt — positiv, negativ, oder auch nur leise.
+Nicht was schön oder schlimm war. Was hat etwas in dir berührt, positiv, negativ, oder auch nur leise.
 
 *Was habe ich heute für mich getan?*
 Auch Kleinigkeiten zählen. Eine Pause. Ein Nein. Etwas Gutes essen.
@@ -983,7 +1007,7 @@ Auch Kleinigkeiten zählen. Eine Pause. Ein Nein. Etwas Gutes essen.
 *Was hätte ich heute gebraucht, das ich nicht hatte?*
 Ohne Urteil. Nur benennen.
 
-*Hat sich die Stimme heute gemeldet — auch nur leise?*
+*Hat sich die Stimme heute gemeldet, auch nur leise?*
 Was hat sie gesagt?
 
 Nach sieben Tagen lies, was du geschrieben hast.
@@ -999,7 +1023,7 @@ Es ist das Protokoll des Auftauens.
 Das Auftauen ist nicht das Ziel.
 Es ist der Weg.
 
-Wenn du anfängst, wieder zu fühlen — auch wenn es zuerst Schmerz ist — bist du echter.
+Wenn du anfängst, wieder zu fühlen, auch wenn es zuerst Schmerz ist, bist du echter.
 
 Echter als das Funktionieren.
 Echter als das Nicht-Fühlen.
@@ -1011,7 +1035,7 @@ Leben.
 Die Stimme ist nicht mehr ganz still.
 
 
-*Wann hast du dich zuletzt selbst gefragt, wie es dir wirklich geht — und auf die Antwort gewartet?*
+*Wann hast du dich zuletzt selbst gefragt, wie es dir wirklich geht? Und auf die Antwort gewartet?*
 
 *Was wäre das Schlimmste, das passieren könnte, wenn du jetzt um Hilfe bittest?*
 
@@ -1020,7 +1044,7 @@ Die Stimme ist nicht mehr ganz still.
 
 # Station 5: Du
 
-## Wer da wartet — und was jetzt möglich ist
+## Wer da wartet. Und was jetzt möglich ist.
 
 **Die unbequeme Wahrheit dieser Station:**
 
@@ -1067,7 +1091,7 @@ Es gibt Menschen, die das Du so beschreiben:
 
 Ein Moment beim Spazieren, wo sie plötzlich denken: Das gefällt mir. Einfach so.
 Ein Lied, das etwas in ihnen aufmacht.
-Ein Gespräch, wo sie vergessen, vorsichtig zu sein — und einfach reden.
+Ein Gespräch, wo sie vergessen, vorsichtig zu sein. Und einfach reden.
 Und hinterher denken: Wer war das gerade?
 
 Das war sie.
@@ -1078,7 +1102,7 @@ Das sind Risse im Angepasstsein.
 Momente, in denen das Echte durch die Rüstung bricht.
 
 Wenn du solche Momente kennst, weisst du, wovon ich rede.
-Wenn du sie nicht kennst — sie sind trotzdem da.
+Wenn du sie nicht kennst: sie sind trotzdem da.
 Sie warten nur.
 In dir.
 
@@ -1098,7 +1122,7 @@ Weil niemand je gefragt hatte.
 
 Was ihr Freude macht: Singen.
 Allein in der Küche, wenn niemand zuhört.
-Sie hatte als Kind eine Stimme gehabt — und irgendwann hatte jemand etwas gesagt, das sie kleingemacht hatte.
+Sie hatte als Kind eine Stimme gehabt. Und irgendwann hatte jemand etwas gesagt, das sie kleingemacht hatte.
 Also hatte sie aufgehört.
 Für dreissig Jahre.
 
@@ -1118,7 +1142,7 @@ Ich höre immer wieder: Ich kenne mich selbst nicht. Ich weiss nicht, wer ich bi
 
 Und gleichzeitig, wenn die richtigen Fragen kommen, kommen Antworten.
 Manchmal langsam. Manchmal überraschend präzise.
-Manchmal mit Tränen — weil es das erste Mal ist, dass jemand ausspricht, was du schon lange weisst, aber nie sagen durftest.
+Manchmal mit Tränen. Weil es das erste Mal ist, dass jemand ausspricht, was du schon lange weisst, aber nie sagen durftest.
 
 Du weisst.
 Du hast nur nicht gelernt, dir selbst zu glauben.
@@ -1165,7 +1189,7 @@ Er passiert nicht in einem einzigen Moment.
 Er passiert in kleinen Entscheidungen.
 
 In dem Moment, wo du innehältst und fragst: Was brauche ich gerade?
-In dem Moment, wo du Nein sagst — und das schlechte Gewissen kommt — und du es trotzdem sagst.
+In dem Moment, wo du Nein sagst. Das schlechte Gewissen kommt. Und du sagst es trotzdem.
 In dem Moment, wo jemand fragt, wie es dir geht, und du fünf Sekunden länger nachdenkst.
 In dem Moment, wo du merkst: Das gefällt mir.
 Und du bleibst dabei, anstatt weiterzugehen.
@@ -1173,7 +1197,7 @@ Und du bleibst dabei, anstatt weiterzugehen.
 Diese Momente addieren sich.
 Nicht schnell. Aber sicher.
 
-Jedes Mal, wenn du hinhörst — statt weiterzugehen — wird die Stimme ein bisschen lauter.
+Jedes Mal, wenn du hinhörst statt weiterzugehen, wird die Stimme ein bisschen lauter.
 
 
 Selbstkenntnis heisst nicht: du weisst, wer du bist.
@@ -1222,7 +1246,7 @@ Schreib, ohne aufzuhören:
 
 *Wer bin ich, wenn niemand etwas von mir braucht?*
 
-*Was mag ich wirklich — nicht was ich machen sollte. Was mir wirklich gefällt.*
+*Was mag ich wirklich? Nicht was ich machen sollte. Was mir wirklich gefällt.*
 
 *Was brauche ich, um mich gut zu fühlen? Konkret. Heute.*
 
@@ -1244,7 +1268,7 @@ Und ein Anfang ist alles.
 
 **Was sich verändert, wenn du drin bist**
 
-Wenn du anfängst, dich selbst zu kennen — wirklich, nicht als Funktion — wird etwas leichter.
+Wenn du anfängst, dich selbst zu kennen, wirklich und nicht als Funktion, wird etwas leichter.
 
 Nicht das Leben.
 Die Entscheidungen.
@@ -1344,14 +1368,17 @@ Kontakt: beyondlimitsnow25@gmail.com
 
 Dieses Buch ist Teil einer Reihe.
 
-**"Wenn Beziehungen erschöpfen"** — Warum du gibst, bis nichts mehr von dir übrig ist. Und wie du dich zurückholst.
+**"Wenn Beziehungen erschöpfen"**
+Warum du gibst, bis nichts mehr von dir übrig ist. Und wie du dich zurückholst.
 
-**"Das schlechte Gewissen"** — Woher das chronische Schuldgefühl wirklich kommt. Und wie du aufhörst, es dein Leben regieren zu lassen.
+**"Das schlechte Gewissen"**
+Woher das chronische Schuldgefühl wirklich kommt. Und wie du aufhörst, es dein Leben regieren zu lassen.
 
-**"Niemand hat dich gefragt, wie es dir geht"** — das Buch, das du gerade gelesen hast — geht einen Schritt tiefer: zur Wurzel, aus der alles wächst.
+**"Niemand hat dich gefragt, wie es dir geht"**
+Das Buch, das du gerade gelesen hast. Es geht einen Schritt tiefer: zur Wurzel, aus der alles wächst.
 
 Komm in die Community:
-**Safe to Thrive — Genug gegeben. Jetzt du.**
+**Safe to Thrive. Genug gegeben. Jetzt du.**
 Suche auf Facebook nach: Safe to Thrive Petra Tanner
 Oder direkt: https://www.facebook.com/share/g/1HA553ppVZ/?mibextid=wwXIfr
 
