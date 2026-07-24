@@ -5,7 +5,6 @@
 **Petra Tanner**
 Safe to Thrive
 
----
 
 # Bevor du weiterliest
 
@@ -49,9 +48,9 @@ Ehrlich.
 Denn du verdienst nicht die aufgemöbelte Version.
 Du verdienst die echte.
 
-In dir gibt es ein Zimmer.
-Du weisst, dass es da ist.
-Du warst noch nie drin.
+In dir gibt es eine Stimme.
+Du weisst, dass sie da ist.
+Du hast sie lange nicht gehört.
 
 Dieses Buch führt dich dahin.
 
@@ -59,7 +58,6 @@ Ready?
 
 Petra Tanner
 
----
 
 
 # Station 1: Das Schweigen
@@ -75,29 +73,27 @@ Weil niemand ihnen je gezeigt hat, wie man ein Kind emotional hält.
 Diese Kette geht weiter — bis jemand sie unterbricht.
 Du bist dieser Jemand.
 
----
 
-In dir gibt es ein Zimmer.
+In dir gibt es eine Stimme.
 
-Du weisst, dass es da ist.
-Du hast es immer gewusst.
-Es ist das Zimmer, in dem jemand fragt: Wie geht es dir — wirklich?
-In dem deine Wut willkommen ist.
-In dem du weinen darfst, ohne dass jemand sagt: Hör auf.
-In dem jemand neben dir sitzt und einfach aushält, was du fühlst.
+Du weisst, dass sie da ist.
+Du hast sie immer gewusst.
+Es ist die Stimme, die sagt: Wie geht es mir wirklich?
+Die Raum einfordert.
+Die weinen darf, ohne dass jemand sagt: Hör auf.
+Die sagt, was sie braucht — und sich nicht dafür entschuldigt.
 
-Du hast dieses Zimmer noch nie betreten.
-Nicht weil es verboten war.
-Weil es nie geöffnet wurde.
+Du hast diese Stimme lange nicht gehört.
+Nicht weil sie weg war.
+Weil niemand ihr je zugehört hat.
 
-Und irgendwann — das ist das Entscheidende — hast du aufgehört, davor zu stehen.
-Du bist einfach weitergegangen.
-Hast gelernt, so zu leben, als wäre das Zimmer nicht da.
+Und irgendwann hast du aufgehört hinzuhören.
+Du bist weitergegangen.
+Hast gelernt, so zu leben, als wäre sie nicht da.
 
-Aber es ist da.
-Es war immer da.
+Aber sie ist da.
+Sie war immer da.
 
----
 
 Die unsichtbare Verletzung
 
@@ -118,10 +114,9 @@ Und trotzdem.
 Trotzdem dieses Gefühl, das du nie benennen konntest.
 Als wäre etwas nicht da gewesen, das da hätte sein sollen.
 
-Das Zimmer war verschlossen.
-Immer.
+Die Stimme wurde still.
+Schon früh.
 
----
 
 Was in einer emotionalen Kindheit passiert — und was nicht
 
@@ -166,14 +161,13 @@ Also zeige ich nichts mehr.
 
 Und irgendwann lernst du, es nicht mehr zu fühlen.
 Oder du fühlst es, aber der Zugang schliesst sich.
-Wie eine Tür, die so oft nicht geöffnet wurde, dass das Schloss einrostet.
+Wie eine Stimme, auf die so lange niemand reagiert hat, dass sie aufhört zu rufen.
 
 Das Kind, das du warst, hat sich angepasst.
 Klug. Mutig. Notgedrungen.
 
-Und die Person, die du geworden bist, trägt dieses verrostete Schloss noch.
+Und die Person, die du geworden bist, hat verlernt, ihr zuzuhören.
 
----
 
 Das nennt sich Childhood Emotional Neglect.
 Emotionale Vernachlässigung in der Kindheit.
@@ -199,7 +193,6 @@ Weitergegeben von Generation zu Generation.
 Bis jemand stehen bleibt.
 Bis jemand sagt: Mit mir endet das.
 
----
 
 Thomas ist zweiundfünfzig.
 
@@ -232,10 +225,9 @@ Wegen sich selbst.
 Wegen dem Kind, das er gewesen war.
 Das auch nicht gewusst hatte, wohin mit dem Schmerz.
 
-Das war der Moment, in dem er anfing, das Zimmer zu sehen.
-Zum ersten Mal.
+Das war der Moment, in dem er anfing, die Stimme zu hören.
+Zum ersten Mal seit Jahrzehnten.
 
----
 
 Lies diese Liste. Ohne Bewertung.
 
@@ -263,7 +255,6 @@ Und eine Wunde benennen bedeutet nicht, jemanden zu beschuldigen.
 Es bedeutet: anfangen zu verstehen.
 Und die Kette zu unterbrechen.
 
----
 
 Die innere Stimme
 
@@ -282,36 +273,34 @@ Aber sie ist nicht von dir.
 Du hast sie übernommen.
 Von einem Umfeld, das deine Gefühle immer wieder kleingemacht hat.
 
-Es ist die Stimme des verschlossenen Zimmers.
-Die sagt: Geh weiter. Hier gibt es nichts.
+Es ist eine Stimme, die du übernommen hast.
+Die sagt: Geh weiter. Da ist nichts.
 
-Du kannst stehen bleiben.
+Aber da ist etwas.
+Du kannst innehalten.
 
----
 
-**Übung: Ein Brief an das Zimmer**
+**Übung: Ein Brief an deine Stimme**
 
 Nimm Stift und Papier. Zehn Minuten.
 
-Schreib einen Brief an das verschlossene Zimmer in dir.
+Schreib einen Brief an die Stimme in dir, die so lange nicht gehört wurde.
 
 Nicht an deine Eltern.
 Nicht an die Vergangenheit.
-An das Zimmer selbst.
+An die Stimme selbst.
 
-Was steht darin?
+Was wollte sie dir sagen?
 Was hättest du gebraucht, das du nicht bekommen hast?
-Was würde passieren, wenn du die Tür jetzt öffnest?
+Was würde sie sagen, wenn du jetzt zuhörst?
 
 Schreib, was kommt. Ohne Zensur. Ohne Rücksicht.
-Nur du und das Zimmer.
+Nur du und die Stimme.
 
 Was auch immer dabei auftaucht — nimm es ernst.
 Das ist kein Selbstmitleid.
-Das ist Ehrlichkeit.
-Und Ehrlichkeit ist der einzige Schlüssel, der dieses Schloss öffnet.
+Das ist das erste Mal, dass du wirklich hinhörst.
 
----
 
 **Was sich verändert, wenn du hinschaust**
 
@@ -324,7 +313,6 @@ Es wurde so.
 
 Und was gelernt wurde, kann umgelernt werden.
 
----
 
 *Wann hat dich zuletzt jemand wirklich gefragt, wie es dir geht — und du hast die echte Antwort gesagt?*
 
@@ -332,7 +320,6 @@ Und was gelernt wurde, kann umgelernt werden.
 
 *Was passierte bei euch zu Hause, wenn jemand weinte oder wütend war?*
 
----
 
 # Station 2: Die Anpassung
 
@@ -346,16 +333,15 @@ Du bist erschöpft, weil du gibst, um nicht zu spüren, was passiert, wenn du au
 Das Geben ist nicht deine Stärke.
 Es ist dein Schutzschild.
 
----
 
-Du hast das Zimmer nicht vergessen.
+Du hast deine Stimme nicht vergessen.
 
-Du hast gelernt, daran vorbeizugehen.
+Du hast gelernt, sie zu überstimmen.
 
 Jeden Tag. Mehrmals täglich.
-An der verschlossenen Tür vorbei.
-Ohne stehen zu bleiben.
-Ohne zu fragen, was dahinter ist.
+Mit Aufgaben. Mit Sorgen. Mit Lärm.
+Ohne innezuhalten.
+Ohne hinzuhören.
 
 Das war nicht Schwäche.
 Das war Überleben.
@@ -373,9 +359,8 @@ Das Problem ist nicht die Strategie.
 Das Problem ist, dass du sie noch trägst.
 Obwohl der Grund für sie längst weg ist.
 
----
 
-Die fünf Wege, wie Menschen an der Tür vorbeigehen
+Die fünf Wege, wie Menschen an ihrer eigenen Stimme vorbeigehen
 
 Fast alle, die ich begleite, kennen diese Muster.
 Manchmal alle fünf. Manchmal eines, das laut ist, und die anderen leise.
@@ -391,9 +376,9 @@ Du fühlst tatsächlich weniger.
 Oder du fühlst es, aber der Zugang ist unterbrochen.
 Wie ein Fluss, der unter die Erde gelenkt wurde.
 
-Du gehst an der Tür vorbei.
+Du gehst an ihr vorbei.
 Wieder und wieder.
-Bis du vergisst, dass sie da ist.
+Bis du vergisst, dass sie spricht.
 
 **Zwei: Du sorgst für andere. Nicht für dich.**
 
@@ -410,7 +395,7 @@ Und du bist erschöpft davon.
 Aber hier ist, was keiner sagt:
 Das Sorgen für andere hält dich beschäftigt.
 Solange du für alle da bist, musst du nicht für dich da sein.
-Du gehst an der Tür vorbei — und hast immer einen guten Grund dafür.
+Du gehst an ihr vorbei — und hast immer einen guten Grund dafür.
 
 DU BIST MEHR ALS DEINE FÜRSORGE.
 
@@ -424,7 +409,7 @@ Du weisst nicht, was du brauchst.
 Stille macht dir Angst.
 Pause fühlt sich falsch an.
 
-Weil in der Stille — da ist die Tür.
+Weil in der Stille — da meldet sie sich wieder.
 Und was dahinter ist, kennst du nicht.
 
 **Vier: Du wirst klein.**
@@ -434,7 +419,7 @@ Du entschuldigst dich für deine Anwesenheit.
 Du nimmst im Zweifelsfall weniger, auch wenn mehr zur Verfügung steht.
 
 Klein sein bedeutet: nicht auffallen.
-Nicht auffallen bedeutet: nicht vor der Tür stehen.
+Nicht auffallen bedeutet: nicht auf die eigene Stimme hören.
 
 **Fünf: Du wirst perfekt.**
 
@@ -445,9 +430,8 @@ Heute erinnerst du dich länger an das, was schief lief, als an das, was gut war
 Du kannst dich schlecht entspannen.
 Weil immer noch etwas besser sein könnte.
 
-Und solange du perfekt sein musst, hast du keine Zeit, vor dem Zimmer zu stehen.
+Und solange du perfekt sein musst, hast du keine Zeit, hinzuhören.
 
----
 
 Erkennst du dich?
 
@@ -460,7 +444,6 @@ Du lebst nicht mehr als Kind in dem Haus, in dem es nicht sicher war zu fühlen.
 Du bist erwachsen.
 Du kannst wählen.
 
----
 
 Claudia ist sechsunddreissig.
 
@@ -497,9 +480,8 @@ Hatte gegeben, bis nichts mehr da war.
 Nicht weil sie stark war.
 Weil das Geben sie davon abhielt, sich selbst zu begegnen.
 
-Das Geben war ihr Weg an der Tür vorbei.
+Das Geben war ihr Weg, die eigene Stimme zu übertönen.
 
----
 
 Was Anpassung mit der Identität macht
 
@@ -518,17 +500,16 @@ Die grösste Lüge: "Ich habe keine Bedürfnisse."
 Du hast Bedürfnisse.
 Du hast nur so lange weggeschaut, bis das Wegsehen automatisch wurde.
 
----
 
-Das schlechte Gewissen — der Wächter an der Tür
+Das schlechte Gewissen — der innere Lärm
 
 Es meldet sich, wenn du Nein sagst.
 Wenn du etwas für dich willst.
 Wenn du aufhörst zu geben.
 
-Das Schuldgefühl ist der innere Wächter.
-Er steht vor dem Zimmer.
-Er sorgt dafür, dass du nicht stehen bleibst.
+Das Schuldgefühl ist der innere Lärm.
+Er übertönt die Stimme.
+Er sorgt dafür, dass du nicht hinhörst.
 Dass du weitergehst.
 Immer weitergehst.
 
@@ -546,16 +527,15 @@ Die Wahrheit: Du bist anders als damals erwartet.
 Das ist nicht dasselbe.
 
 Du kannst das Schuldgefühl hören.
-Und trotzdem stehen bleiben.
-Vor der Tür.
-Und fragen, was dahinter ist.
+Und trotzdem innehalten.
+Und der anderen Stimme zuhören.
+Der echten.
 
 WÄHLE NEU.
 Ohne Schuld. Ohne Scham. Ohne Rechtfertigung.
 
 DU DARFST DAS.
 
----
 
 **Übung: Die ehrliche Bestandsaufnahme**
 
@@ -578,7 +558,6 @@ Das ist deine Anpassungslandkarte.
 Nicht um dich zu verurteilen.
 Um zu sehen, wo die Energie fliesst — und wohin sie nicht fliesst.
 
----
 
 **Was sich verändert, wenn du das siehst**
 
@@ -589,17 +568,15 @@ Du wirst dir freundlicher.
 Und du fängst an zu fragen: Brauche ich das hier gerade? Oder ist das Automatismus?
 
 Diese Frage klingt klein.
-Aber sie ist der Anfang davon, nicht mehr automatisch an der Tür vorbeizugehen.
+Aber sie ist der Anfang davon, nicht mehr automatisch an der eigenen Stimme vorbeizugehen.
 
----
 
 *Welches Muster kennst du am stärksten in dir?*
 
 *Wann ist es heute noch am lautesten?*
 
-*Was wäre, wenn du heute kurz stehen bleibst — vor dem Zimmer — ohne reinzugehen?*
+*Was wäre, wenn du heute kurz innehältst — und hinhörst, was die Stimme sagt?*
 
----
 
 # Station 3: Der Körper weiss es
 
@@ -610,14 +587,13 @@ Aber sie ist der Anfang davon, nicht mehr automatisch an der Tür vorbeizugehen.
 Dein Körper hat nie gelogen.
 Du hast ihm nur so lange nicht zugehört, bis du seine Sprache vergessen hast.
 Die Verspannungen, das Herzrasen, die Erschöpfung ohne Grund — das ist kein Angriff.
-Das ist dein Körper, der vor dem Zimmer steht und klopft.
+Das ist dein Körper, der spricht. Der schon immer gesprochen hat.
 
----
 
-Dein Körper steht vor dem Zimmer.
+Dein Körper spricht noch.
 
 Seit Jahren.
-Er klopft.
+Er hat nie aufgehört.
 Leise zuerst.
 Dann lauter.
 Die Verspannungen. Das Herzrasen. Die Erschöpfung, die nicht weicht.
@@ -628,11 +604,10 @@ Er spricht.
 
 DEIN KÖRPER LÜGT NICHT.
 
-Er zeigt dir, was dein Kopf seit Jahren wegleugnet:
-Da ist eine Tür.
-Und da ist etwas dahinter.
+Er sagt dir, was du längst weisst:
+Die Stimme ist noch da.
+Sie hat nie aufgehört.
 
----
 
 Alles ist gespeichert
 
@@ -651,7 +626,6 @@ Heute ist es Erschöpfung.
 Der Körper hat alles aufgezeichnet, was der Geist weggepackt hat.
 Er ist das ehrlichste Protokoll deines Lebens.
 
----
 
 Das Nervensystem hat drei Zustände
 
@@ -679,7 +653,6 @@ Das sitzt nicht im Kopf.
 Das sitzt im Nervensystem.
 Und das Nervensystem — das kann sich verändern.
 
----
 
 Ohne Worte für Gefühle
 
@@ -705,7 +678,6 @@ Und dann gibt es Menschen, die sagen:
 Das ist das Ergebnis einer Kindheit, in der das Lauschen nach aussen überlebensnotwendig war.
 Und das Lauschen nach innen nie geübt wurde.
 
----
 
 Nadia ist vierundvierzig.
 
@@ -735,13 +707,12 @@ Es ist Gefühl.
 Schwere ist Gefühl.
 
 Nadia hatte sich so lange darauf trainiert, für andere bereit zu sein, dass sie ihren eigenen Zustand nicht mehr wahrnahm.
-Ihr Körper sagte es durch die Schlaflosigkeit.
-Er klopfte seit drei Jahren.
+Ihr Körper sprach durch die Schlaflosigkeit.
+Seit drei Jahren.
 
 In dem Moment, in dem sie "Schwere" sagte, wurde ihr Gesicht weich.
 Als hätte jemand etwas benannt, das schon sehr lange wartet.
 
----
 
 Im Alltag zeigt sich das so
 
@@ -758,7 +729,6 @@ Du weisst nicht, was dich wirklich glücklich macht.
 Nicht was dich ablenkt.
 WIRKLICH glücklich. Von innen heraus.
 
----
 
 Der Weg zurück führt durch den Körper
 
@@ -774,10 +744,9 @@ DAS BENENNEN IST KRAFTVOLL.
 
 Es ist der Moment, in dem du deinem Körper sagst:
 Ich höre dich.
-Ich weiss, dass du klopfst.
-Ich stehe jetzt vor der Tür.
+Ich höre euch beide.
+Den Körper. Und die Stimme dahinter.
 
----
 
 **Übung: Der Körperdialog**
 
@@ -805,10 +774,9 @@ Schreib es auf.
 Ohne Zensur.
 
 Dein Körper weiss mehr als dein Kopf.
-Er klopft seit Jahren.
-Das ist das erste Mal, dass du aufmachst.
+Er spricht seit Jahren.
+Das ist das erste Mal, dass du wirklich hinhörst.
 
----
 
 **Was sich verändert, wenn du hinzuhören anfängst**
 
@@ -824,10 +792,9 @@ Bevor es ein Sturm wird.
 Das ist keine Kontrolle.
 Das ist Fürsorge.
 
-Dein Körper klopft.
-Du beginnst aufzumachen.
+Dein Körper spricht.
+Du hörst hin.
 
----
 
 *Welche körperlichen Signale begleiten dich in letzter Zeit?*
 
@@ -835,7 +802,6 @@ Du beginnst aufzumachen.
 
 *Wann hat dein Körper zuletzt etwas gesagt — und du hast weitergetan als wäre nichts?*
 
----
 
 # Station 4: Das Auftauen
 
@@ -850,17 +816,16 @@ Das ist keine Krise.
 Das ist Nachholen.
 Und Nachholen ist der Beweis, dass etwas aufgeht.
 
----
 
-Die Tür ist nicht mehr ganz zu.
+Die Stimme ist nicht mehr ganz still.
 
-Du stehst davor.
-Du hörst, dass dein Körper klopft.
-Du beginnst, es ernst zu nehmen.
+Du hörst sie.
+Leise. Aber da.
+Du beginnst, sie ernst zu nehmen.
 
 Und dann passiert etwas, das niemand dir sagt:
 
-Wenn die Tür anfängt, sich zu öffnen — auch nur einen Spalt — dann ist das erste, was herauskommt, oft nicht Erleichterung.
+Wenn du anfängst hinzuhören — wirklich hinzuhören — dann ist das erste, was kommt, oft nicht Erleichterung.
 
 Es ist Schmerz.
 Und Trauer.
@@ -871,9 +836,8 @@ Sondern weil da etwas aufgetaut wird, das lange gefroren war.
 
 Auftauen tut weh.
 Das ist kein Rückschritt.
-Das ist der Beweis, dass die Tür aufgeht.
+Das ist der Beweis, dass etwas aufgeht.
 
----
 
 Sara ist zweiunddreissig.
 
@@ -904,9 +868,8 @@ Sara ist nach Hause gegangen und hat das erste Mal seit Wochen gut geschlafen.
 Was Karin getan hat, klingt unscheinbar.
 Tee kochen. Zuhören. Aushalten.
 
-Aber für Sara war das der Moment, in dem die Tür einen Spalt aufging.
+Aber für Sara war das der Moment, in dem die Stimme durch kam.
 
----
 
 Was echte Fürsorge ist — und was nicht
 
@@ -926,11 +889,10 @@ Und dann ist da ein Teil in dir, der nicht weiss, wie man das annimmt.
 Der es wegschiebt.
 Der sagt: Das brauche ich nicht.
 
-Das ist das Schloss, das eingerostet ist.
+Das ist das Muster, das sitzt.
 Es lässt Fürsorge nicht rein.
-Weil es nie gelernt hat, wie.
+Weil es nie gelernt hat, wie sich das anfühlt.
 
----
 
 Zu viel
 
@@ -949,7 +911,6 @@ Was wäre, wenn du genau richtig warst. Für ein Umfeld, das dich nicht tragen k
 
 Das ist nicht dasselbe.
 
----
 
 Nicht um Hilfe bitten können
 
@@ -973,7 +934,6 @@ Du schaffst das alleine.
 Das ist keine Wahrheit.
 Aber es fühlt sich an wie eine.
 
----
 
 Fürsorge für dich selbst — der erste Schritt
 
@@ -989,7 +949,6 @@ Du wirst die erste Person, die dir wirklich zuhört.
 Und dann, wenn du weisst, wie sich das anfühlt — bei dir selbst — erkennst du es auch bei anderen.
 Dann kannst du es annehmen, wenn jemand es dir gibt.
 
----
 
 Fühlen lernen geht nicht gerade
 
@@ -1008,7 +967,6 @@ Aber es ist ehrlicher.
 Und ehrlicher ist echter.
 Und echter ist das, was du wirklich willst.
 
----
 
 **Übung: Das Auftau-Tagebuch — sieben Tage**
 
@@ -1025,8 +983,8 @@ Auch Kleinigkeiten zählen. Eine Pause. Ein Nein. Etwas Gutes essen.
 *Was hätte ich heute gebraucht, das ich nicht hatte?*
 Ohne Urteil. Nur benennen.
 
-*Hat sich die Tür heute geöffnet — auch nur einen Spalt?*
-Was kam heraus?
+*Hat sich die Stimme heute gemeldet — auch nur leise?*
+Was hat sie gesagt?
 
 Nach sieben Tagen lies, was du geschrieben hast.
 Was wiederholt sich?
@@ -1035,7 +993,6 @@ Was überrascht dich?
 Das Tagebuch ist kein Leistungsnachweis.
 Es ist das Protokoll des Auftauens.
 
----
 
 **Was sich verändert**
 
@@ -1051,9 +1008,8 @@ Und echt sein ist das, was du wirklich willst.
 Nicht Gleichgültigkeit.
 Leben.
 
-Die Tür ist nicht mehr ganz zu.
+Die Stimme ist nicht mehr ganz still.
 
----
 
 *Wann hast du dich zuletzt selbst gefragt, wie es dir wirklich geht — und auf die Antwort gewartet?*
 
@@ -1061,7 +1017,6 @@ Die Tür ist nicht mehr ganz zu.
 
 *Gibt es jemanden in deinem Leben, dem du heute etwas Wahres sagen könntest?*
 
----
 
 # Station 5: Du
 
@@ -1075,17 +1030,16 @@ Sondern weil diese Person Raum braucht.
 Und du hast gelernt, keinen Raum einzunehmen.
 Aber was, wenn der Raum, den du brauchst, genau der ist, der dir immer zugestanden hat?
 
----
 
-Du stehst jetzt vor dem Zimmer.
+Du hörst jetzt hin.
 
-Nicht mehr automatisch vorbeigehend.
-Nicht mehr weghörend, wenn dein Körper klopft.
+Nicht mehr automatisch weiter.
+Nicht mehr den Körper überhörend.
 Nicht mehr überzeugend, dass da nichts ist.
 
-Du stehst davor.
+Du hörst hin.
 
-Und hinter dieser Tür?
+Und was du hörst?
 
 Jemand.
 
@@ -1106,7 +1060,6 @@ Nicht das, was von dir erwartet wurde.
 
 Du.
 
----
 
 Die Risse im Angepasstsein
 
@@ -1127,9 +1080,8 @@ Momente, in denen das Echte durch die Rüstung bricht.
 Wenn du solche Momente kennst, weisst du, wovon ich rede.
 Wenn du sie nicht kennst — sie sind trotzdem da.
 Sie warten nur.
-Hinter der Tür.
+In dir.
 
----
 
 Maria kam nach acht Monaten Therapie zu einer Sitzung.
 Setzte sich hin. Sagte nichts.
@@ -1156,10 +1108,9 @@ Nur in der Küche.
 Nur für sich.
 
 Wenn du Maria fragst, was sich verändert hat, sagt sie:
-"Ich habe das Zimmer aufgemacht.
+"Ich habe aufgehört, mich selbst zu überstimmen.
 Und da war ich."
 
----
 
 Du weisst mehr, als du glaubst
 
@@ -1184,7 +1135,6 @@ Du hast nur gelernt, sie zu überhören.
 
 Jetzt hörst du hin.
 
----
 
 DU DARFST BEDÜRFNISSE HABEN.
 
@@ -1208,7 +1158,6 @@ Dass jemand merkt, dass du erschöpft bist.
 Das ist nicht wenig.
 Das ist alles.
 
----
 
 Der Weg zu dir kommt leise
 
@@ -1224,9 +1173,8 @@ Und du bleibst dabei, anstatt weiterzugehen.
 Diese Momente addieren sich.
 Nicht schnell. Aber sicher.
 
-Jedes Mal, wenn du stehen bleibst — statt an der Tür vorbeizugehen — öffnet sich das Schloss ein bisschen mehr.
+Jedes Mal, wenn du hinhörst — statt weiterzugehen — wird die Stimme ein bisschen lauter.
 
----
 
 Selbstkenntnis heisst nicht: du weisst, wer du bist.
 Nicht perfekt. Nicht endgültig.
@@ -1237,7 +1185,6 @@ Du fragst. Du hörst zu. Du nimmst die Antworten ernst.
 Du bist der interessanteste Mensch, den du kennen kannst.
 Wenn du anfängst, dich wirklich kennenlernen zu wollen.
 
----
 
 Wer wählst du zu sein?
 JETZT.
@@ -1256,16 +1203,15 @@ Aber jetzt fängst du an, dich selbst zu fragen.
 Mit echter Neugier.
 Mit echter Bereitschaft, auf die Antwort zu warten.
 
-Das Zimmer ist offen.
-Du bist reingegangen.
-Und da warst du.
+Du hörst sie jetzt.
+Deine Stimme.
+Sie war immer da.
 
 Es ist DEINE Geschichte.
 Und sie gehört dir.
 
----
 
-**Übung: Das Zimmer betreten**
+**Übung: Deiner Stimme zuhören**
 
 Das ist die letzte Übung.
 Und die wichtigste.
@@ -1288,14 +1234,13 @@ Lies, was du geschrieben hast.
 Ohne Kommentar. Ohne Korrektur.
 Nur lesen.
 
-Das ist das Zimmer.
+Das ist deine Stimme.
 Das bist du.
 
 Nicht alles auf einmal.
 Aber ein Anfang.
 Und ein Anfang ist alles.
 
----
 
 **Was sich verändert, wenn du drin bist**
 
@@ -1316,7 +1261,6 @@ Das ist Freiheit.
 Die Art, die nicht laut kommt.
 Die leise kommt und bleibt.
 
----
 
 *Wer warst du, bevor du gelernt hast, wer du sein solltest?*
 
@@ -1324,7 +1268,6 @@ Die leise kommt und bleibt.
 
 *Was weisst du jetzt über dich, das du vorher nicht so klar gesehen hast?*
 
----
 
 # Ein Brief an dich
 
@@ -1339,7 +1282,7 @@ Du hast dich entschuldigt, bevor du gebeten wurdest.
 Du hast kleiner gemacht, was du brauchtest.
 Du hast grösser gemacht, was andere brauchen.
 
-Und du bist dabei an einem Zimmer vorbeigegangen.
+Und du bist dabei an deiner eigenen Stimme vorbeigegangen.
 Immer wieder.
 Täglich.
 
@@ -1348,9 +1291,9 @@ Das war, wie du überlebt hast.
 
 Aber jetzt.
 
-Jetzt weisst du, dass das Zimmer da ist.
-Jetzt stehst du davor.
-Jetzt öffnet sich die Tür.
+Jetzt weisst du, dass die Stimme da ist.
+Jetzt hörst du hin.
+Jetzt antwortest du ihr.
 
 Du darfst leer sein.
 Du darfst erschöpft sein.
@@ -1379,13 +1322,12 @@ Das ist, was ich brauche.
 Das ist nicht das Ende.
 Das ist die Ankunft.
 
-Du warst immer hinter der Tür.
-Jetzt findest du dich.
+Die Stimme war immer da.
+Jetzt hörst du sie.
 
 In Wärme,
 Petra Tanner
 
----
 
 # Über die Autorin
 
@@ -1397,7 +1339,6 @@ Unter dem Namen Safe to Thrive arbeitet sie in der Schweiz.
 
 Kontakt: beyondlimitsnow25@gmail.com
 
----
 
 # Wenn du mehr möchtest
 
@@ -1418,7 +1359,6 @@ Wenn du Unterstützung möchtest auf dem Weg, den wir hier begonnen haben, melde
 
 beyondlimitsnow25@gmail.com
 
----
 
 # Impressum
 
