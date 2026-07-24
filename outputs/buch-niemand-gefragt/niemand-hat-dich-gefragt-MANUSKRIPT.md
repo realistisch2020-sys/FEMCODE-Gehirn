@@ -38,7 +38,7 @@ Ein echtes Nicht-Wissen.
 
 Ich arbeite seit Jahren mit Menschen, die funktionieren.
 Die stark sind. Die geben. Die aushalten.
-Und die irgendwann in meinem Büro sitzen und sagen:
+Und die irgendwann in meiner Praxis sitzen und sagen:
 "Ich weiss gar nicht mehr, wer ich bin."
 
 Was ich in diesen Jahren gelernt habe, werde ich dir jetzt sagen.
@@ -61,22 +61,6 @@ Petra Tanner
 
 ---
 
-# Inhalt
-
-Bevor du weiterliest
-
-Station 1: Das Schweigen
-Station 2: Die Anpassung
-Station 3: Der Körper weiss es
-Station 4: Das Auftauen
-Station 5: Du
-
-Ein Brief an dich
-Über die Autorin
-Wenn du mehr möchtest
-Impressum
-
----
 
 # Station 1: Das Schweigen
 
