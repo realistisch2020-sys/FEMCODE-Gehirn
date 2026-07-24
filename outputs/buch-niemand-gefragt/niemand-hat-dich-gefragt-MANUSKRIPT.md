@@ -347,7 +347,7 @@ Und was gelernt wurde, kann umgelernt werden.
 
 # Kapitel 2: Die Anpassung
 
-## Was du daraus wurdest. Und wie brilliant das war.
+## Was du daraus wurdest. Und wie brillant das war.
 
 **Die unbequeme Wahrheit dieses Kapitels:**
 
@@ -392,7 +392,7 @@ Manchmal alle fünf. Manchmal eines, das laut ist, und die anderen leise.
 Kein Spiegel, um dich darin zu schämen.
 Ein Spiegel, um zu sehen.
 
-**Eins: Du hörst auf zu fühlen.**
+**1. Du hörst auf zu fühlen.**
 
 Jedes Mal, wenn ein Gefühl keine Resonanz bekommt, lernt das Nervensystem: Dieses Signal blockieren.
 Nach genug Wiederholungen wird das automatisch.
@@ -404,7 +404,7 @@ Du gehst an ihr vorbei.
 Wieder und wieder.
 Bis du vergisst, dass sie spricht.
 
-**Zwei: Du sorgst für andere. Nicht für dich.**
+**2. Du sorgst für andere. Nicht für dich.**
 
 Du hast früh entdeckt:
 Wenn ich für die Stimmung der Erwachsenen sorge, bin ich sicher.
@@ -423,7 +423,7 @@ Du gehst an ihr vorbei. Und hast immer einen guten Grund dafür.
 
 DU BIST MEHR ALS DEINE FÜRSORGE.
 
-**Drei: Du funktionierst.**
+**3. Du funktionierst.**
 
 Die Leistung. Das Ergebnis. Die Note.
 Was man sehen, messen, bewerten kann.
@@ -436,7 +436,7 @@ Pause fühlt sich falsch an.
 Weil in der Stille sie sich wieder meldet.
 Und was dahinter ist, kennst du nicht.
 
-**Vier: Du wirst klein.**
+**4. Du wirst klein.**
 
 Du nimmst wenig Platz ein. Störst nicht. Forderst nicht.
 Du entschuldigst dich für deine Anwesenheit.
@@ -445,7 +445,7 @@ Du nimmst im Zweifelsfall weniger, auch wenn mehr zur Verfügung steht.
 Klein sein bedeutet: nicht auffallen.
 Nicht auffallen bedeutet: nicht auf die eigene Stimme hören.
 
-**Fünf: Du wirst perfekt.**
+**5. Du wirst perfekt.**
 
 Wenn ich perfekt genug bin, schaut endlich jemand wirklich hin.
 Also dürfen keine Fehler passieren.
