@@ -117,3 +117,67 @@ Erst wenn alle Fragen mit Ja beantwortet sind, geht das Buch raus:
 
 Kontakt in allen Büchern: **beyondlimitsnow25@gmail.com**
 Niemals die private Adresse.
+
+---
+
+## 8. Technische Regeln aus der Produktion von Buch 6
+
+Gelernt im Juli 2026, gilt für jedes weitere Buch.
+
+### Der Ablauf
+
+Die **Word-Datei ist die Quelle**, das PDF wird immer neu erzeugt.
+Petra korrigiert im Word, `tools/buch6-word2pdf.py` setzt daraus das Taschenbuch.
+Niemals direkt im PDF arbeiten.
+
+### Satzregeln, die im Skript stecken
+
+- Kapitel beginnen 1,9 cm tiefer auf der Seite, nie an der Oberkante
+- Jedes Kapitel und jeder Abschnitt braucht einen eigenen Seitenumbruch
+- Fette Zwischentitel dürfen nie allein am Seitenfuss stehen
+- Reflexionsblöcke werden nie über den Seitenrand gerissen
+- Zusammenhängende kurze Zeilen bleiben zusammen
+- Schrift 11,5 Punkt bei 19,5 Zeilenabstand. Grosszügiger als üblich, weil die
+  Zielgruppe abends müde liest.
+
+### Typografie, immer prüfen
+
+- Kein ß, durchgehend ss
+- Keine Gedankenstriche im Fliesstext. Bindestriche nur in Wörtern wie Funktions-Ich
+- Anführungszeichen `„` und `“`, niemals gerade Zollzeichen. Zählen, ob sie paarig sind
+- Keine doppelten Leerzeichen, keine Auslassungspunkte
+- Kein Leerzeichen vor Satzzeichen
+
+### Fallen, die zweimal aufgetreten sind
+
+- **Seitenumbruch im Absatz.** Wenn ein Umbruch im selben Absatz wie der Text
+  steckt, rutscht der Text auf die neue Seite. Umbruch gehört in einen eigenen Absatz.
+- **Verlorene Umbrüche beim Einfügen.** Wird ein neues Kapitel vor ein bestehendes
+  gesetzt, erbt das neue den Umbruch und das alte hat keinen mehr. Nach jeder
+  Einfügung alle Kapitel prüfen.
+- **Fettschrift geht verloren**, wenn Word neu speichert. Nach jedem Durchgang von
+  Petra prüfen, ob Zwischentitel noch fett sind.
+- **Gerade Anführungszeichen** schleichen sich mit jedem neu geschriebenen Absatz ein.
+
+### Cover
+
+```
+Rückenbreite = Seitenzahl × 0,0025 Zoll × 25,4     (Papier Creme)
+Coverbreite  = 3,2 + 148 + Rücken + 148 + 3,2      (mm)
+Coverhöhe    = 216,4                                (mm)
+```
+
+- Vorderseite braucht mindestens 300 dpi, also etwa 1786 × 2556 Pixel
+- Seitenverhältnis 0,7 zu 1, nicht 2:3. Sonst wird oben und unten beschnitten
+- Mindestens 6 mm Abstand zu allen Schnittkanten
+- Barcode-Feld unten rechts freihalten, etwa 52 × 32 mm
+- Kontrast messen, nicht schätzen. Titelschrift auf dunklem Grund sollte über
+  10 zu 1 liegen. Alles unter 6 zu 1 bricht im Druck und im Thumbnail weg.
+- Thumbnail-Test: auf 160 Pixel Breite verkleinern. Was dann noch lesbar ist, zählt.
+- Bei dunklen Covern **Glanz statt Matt** wählen, sonst Scheuerstellen an den Kanten
+
+### Markenzeichen der Reihe
+
+Auf jedem Cover unten mittig, zweizeilig und gesperrt:
+PETRA TANNER, darunter SAFE TO THRIVE, dazwischen ein feiner goldener Trenner.
+Gold bleibt die Akzentfarbe. Der Konzeptbegriff steht in goldener Serifenschrift.
