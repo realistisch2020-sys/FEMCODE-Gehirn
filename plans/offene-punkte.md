@@ -2,6 +2,59 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## Rückwirkende Angleichung der älteren Bücher (nach Buch 6, ab August 2026)
+
+Bei Buch 6 haben wir zwei Dinge festgelegt, die den anderen Büchern noch fehlen.
+Beides lässt sich bei KDP jederzeit nachträglich ändern, Titel und Untertitel bleiben unangetastet.
+
+### 1. Impressum: ladungsfähige Anschrift ergänzen
+
+In Buch 3, 4 und 5 steht nur „Safe to Thrive, Schweiz" plus E-Mail. Keine Adresse.
+Die deutschen Landespressegesetze verlangen bei gedruckten Werken Name und Anschrift
+des Verlegers, bei Selfpublishing also Petra selbst.
+
+Neuer Block, wie in Buch 6:
+
+```
+© 2026 Petra Tanner
+Alle Rechte vorbehalten.
+
+Petra Tanner
+Wiesentalstrasse 68
+9240 Uzwil, Schweiz
+
+Selbstverlag
+Unabhängig veröffentlicht über Amazon Kindle Direct Publishing
+
+Kontakt: beyondlimitsnow25@gmail.com
+```
+
+Betrifft:
+- `outputs/buch-beziehungen/` (Wenn Beziehungen erschöpfen)
+- `outputs/buch-schuldgefuehle/` (Das schlechte Gewissen)
+- `outputs/buch-niemand-gefragt/` (Niemand hat dich gefragt, wie es dir geht)
+
+Achtung: Das Impressum steht im Buchblock. Änderung heisst neues Manuskript-PDF
+hochladen. Seitenzahl prüfen, danach stimmt eventuell die Rückenbreite nicht mehr
+und das Cover muss neu gerechnet werden.
+
+### 2. Cover auf die Bildsprache von Buch 6 umstellen
+
+Die drei alten Cover sind elegant, aber im Amazon-Thumbnail bei 160 Pixel Breite
+kaum lesbar. Für TikTok, wo das Buch fingernagelgross am Clipende erscheint,
+erst recht nicht.
+
+Buch 6 löst das: grosse fette Groteske, hoher Kontrast, ein Gesicht, Kintsugi-Gold.
+
+Was von der alten Reihe erhalten bleiben muss:
+- Autorinnenblock unten mittig, zweizeilig: PETRA TANNER über SAFE TO THRIVE,
+  gesperrt, mit feinem goldenem Trenner
+- Gold als Akzentfarbe
+- Der Konzeptbegriff in goldener Serifenschrift
+
+Reihenfolge: erst schauen, ob Buch 6 läuft. Wenn ja, die anderen nachziehen.
+Nicht umgekehrt, und nicht bevor Buch 6 draussen ist.
+
 ## Buch 4 (Das schlechte Gewissen): Taschenbuch Cover neu einreichen
 
 - Cover wurde von KDP abgelehnt: Spine-Text zu nah an Rändern + unter 79 Seiten (kein Spine-Text erlaubt)
