@@ -30,18 +30,38 @@ Und denkst: Wie lange noch?
 Nicht "Wie lange noch bis zum Urlaub."
 Wie lange noch BIS ICH NICHT MEHR KANN.
 
-Dieser Satz macht Angst.
-Weil du nicht weisst, was danach kommt.
-Weil stark sein das Einzige ist, was du kennst.
+---
 
-Dieses Buch ist keine Therapie.
-Kein Programm.
+Ich habe einen Namen für das was du gerade lebst.
+
+**Das Funktions-Ich.**
+
+Das ist der Teil von dir der aufsteht. Kaffee macht. Termine hält. Lächelt. Liefert.
+Der für alle da ist.
+Der nie Nein sagt.
+Der immer weiss was die anderen brauchen.
+
+Aber der nicht mehr weiss was ER braucht.
+
+Das Funktions-Ich ist nicht schwach.
+Es ist erschöpft.
+
+Es hat jahrelang geleistet.
+Für die Familie. Für den Job. Für alle.
+Und niemand hat gefragt wie es IHM dabei geht.
+
+Dieses Buch ist kein Programm.
+Keine Checkliste.
 Kein Wochenplan.
 
-Es ist eine ehrliche Unterhaltung.
-Ich erzähle dir, was ich gesehen habe.
-Bei Frauen, die funktioniert haben bis sie nicht mehr konnten.
-Und bei mir selbst.
+Es ist ein Weg. In fünf Schritten.
+
+**SEHEN. VERSTEHEN. ERLAUBEN. LERNEN. WERDEN.**
+
+Du musst das nicht auf einmal.
+Du musst das nicht perfekt.
+
+Du musst nur anfangen.
 
 Bereit?
 
@@ -50,11 +70,15 @@ beyondlimitsnow25@gmail.com
 
 ---
 
-# TEIL 1 — ICH SEHE DICH
+# STUFE 1 — SEHEN
+
+*Du siehst dich. Vielleicht zum ersten Mal.*
 
 ---
 
 # Kapitel 1: Ich funktioniere. Aber ich lebe nicht.
+
+> *„Du funktionierst. Aber du lebst nicht. Das ist kein Burnout. Das ist das Funktions-Ich."*
 
 Du stehst morgens auf.
 Machst Kaffee.
@@ -124,7 +148,6 @@ Ohne dass du weisst wann es passiert ist.
 Das ist kein Versagen.
 Du hast getan was du gelernt hast.
 Was von dir erwartet wurde.
-Was sich richtig angefühlt hat.
 
 Stark zu sein hat dich lange beschützt.
 Nur: Die Rechnung liegt jetzt auf dem Tisch.
@@ -142,6 +165,8 @@ Vor allem dann.
 ---
 
 # Kapitel 2: Keiner fragt mich, wie es mir geht.
+
+> *„Wer immer stark ist, wird irgendwann unsichtbar."*
 
 Es gibt eine Einsamkeit, über die kaum jemand spricht.
 
@@ -221,13 +246,15 @@ Was wäre die ehrliche Antwort gewesen?
 
 # Kapitel 3: Stark sein war nie meine Wahl. Es war meine Pflicht.
 
+> *„Stark sein war nie deine Persönlichkeit. Es war deine Überlebensstrategie."*
+
 "Ich bin halt so."
 
 Diesen Satz höre ich oft.
 Als wäre Stärke eine Persönlichkeitseigenschaft.
 Angeboren. Unveränderlich.
 
-Ich glaube das nicht.
+Das glaube ich nicht.
 
 Stark sein war eine Überlebensstrategie.
 Und Überlebensstrategien entstehen aus Notwendigkeit.
@@ -298,11 +325,15 @@ Oder darf es sein, dass du stark sein KANNST, wenn du willst?
 
 ---
 
-# TEIL 2 — WIE ES DAZU KAM
+# STUFE 2 — VERSTEHEN
+
+*Du weisst jetzt wo es herkommt.*
 
 ---
 
 # Kapitel 4: Ich weiss gar nicht mehr, was ich will.
+
+> *„Wenn du so lange für andere gelebt hast, vergisst du irgendwann wer du bist."*
 
 Jemand fragt dich: Was willst du?
 Eine Kleinigkeit. Was essen. Wohin fahren. Was du am Wochenende möchtest.
@@ -331,6 +362,9 @@ Kleiner. Kleiner. Kleiner.
 
 Bis du eines Tages merkst:
 Ich weiss nicht mehr wer ich bin wenn niemand etwas von mir braucht.
+
+Das Funktions-Ich hat kein eigenes Gesicht.
+Es hat nur die Gesichter die andere von ihm erwarten.
 
 Sandra, dreiunddreissig.
 Ihre Beziehung war auseinandergegangen.
@@ -380,6 +414,8 @@ Wann hast du es zuletzt getan?
 ---
 
 # Kapitel 5: Ich weine im Auto. Damit niemand es sieht.
+
+> *„Du weinst im Auto. Damit niemand es sieht. Das sagt alles."*
 
 Das Auto ist ein seltsamer Ort.
 
@@ -453,6 +489,8 @@ Schreib es auf. Nur für dich.
 ---
 
 # Kapitel 6: Schuldgefühle wenn ich Nein sage.
+
+> *„Das Nein das sich falsch anfühlt ist meistens das richtigste das du sagen kannst."*
 
 Stell dir vor jemand bittet dich um etwas.
 Du kannst es nicht. Willst es nicht. Hast keine Kraft dafür.
@@ -532,39 +570,54 @@ Nur sehen dass es da ist.
 
 ---
 
-# TEIL 3 — DER WENDEPUNKT
+# STUFE 3 — ERLAUBEN
+
+*Die Erlaubnis kommt von innen. Von nirgends sonst.*
 
 ---
 
 # Kapitel 7: Der Tag an dem ich aufgehört habe, stark zu sein.
 
-Es gibt einen Moment.
+> *„Der mutigste Moment ist nicht der Zusammenbruch. Es ist der Satz danach: So nicht mehr."*
 
-Nicht immer dramatisch.
-Manchmal ganz still.
+Ich rede über meine Klientinnen.
+Ich rede über Frauen die ich begleite.
+Aber selten über mich selbst.
 
-Einen Moment in dem etwas in dir sagt:
-So geht es nicht weiter.
+Heute mache ich das.
 
-Meiner kam an einem Dienstag.
-Nichts Besonderes.
+Ich war lange das Funktions-Ich.
+Nicht als Klientin. Als Therapeutin. Als Frau. Als Mensch.
 
-Ich sass im Auto.
-Nach einem langen Tag. Vor einem langen Abend.
+Ich wusste wie man für andere da ist.
+Ich hatte die Theorie.
+Ich kannte die Konzepte.
 
-Und ich konnte nicht rausgehen.
-Sass da.
-Und dachte: Ich kann nicht mehr.
+Und trotzdem.
 
-Nicht "ich bin müde".
-Nicht "ich brauche Urlaub".
+Es gab einen Abend. Ich kam nach Hause nach einem langen Tag.
+Hatte sechs Menschen zugehört. Sechs Stunden. Sechs Geschichten.
 
-ICH KANN NICHT MEHR.
+Stand in der Küche.
+Konnte nicht kochen.
+Konnte nicht sitzen.
+Konnte nicht weinen.
 
-Zum ersten Mal liess ich diesen Satz wirklich landen.
-Nicht wegräumen. Nicht umformulieren. Nicht lösen.
+Ich stand einfach da.
 
-Nur dasitzen. Damit sein.
+Und dachte: Ich weiss nicht mehr wer hier kocht.
+Nicht weil ich hungrig war.
+Ich wusste nicht mehr WER ich bin ausserhalb dieser Arbeit.
+
+Das war kein Burnout.
+Das war der Moment in dem ich mein eigenes Funktions-Ich gesehen habe.
+
+Ich half Menschen herauszufinden was sie brauchen.
+Und hatte keine Ahnung was ICH brauchte.
+
+Ich setzte mich auf den Boden.
+Mitte der Küche.
+Und liess es einfach sein.
 
 Dann habe ich geweint.
 Nicht ein bisschen.
@@ -573,6 +626,10 @@ Richtig.
 Danach war ich nicht geheilt.
 Aber irgendetwas hatte sich verschoben.
 Weil ich aufgehört hatte gegen mich selbst zu kämpfen.
+
+Das ist der Wendepunkt.
+Nicht der Moment wo alles zusammenbricht.
+Der Moment wo du aufhörst so zu tun als wäre alles in Ordnung.
 
 Silvia bekam es von ihrem Arzt gesagt:
 "Ihr Körper macht das nicht mehr mit."
@@ -611,6 +668,8 @@ Was hat er ausgelöst?
 ---
 
 # Kapitel 8: Du darfst aufhören.
+
+> *„Die Erlaubnis aufzuhören bekommst du von niemandem. Ausser von dir selbst."*
 
 Das ist der Satz auf den du gewartet hast.
 
@@ -691,11 +750,15 @@ Aber schreib es auf.
 
 ---
 
-# TEIL 4 — DER WEG ZURÜCK ZU DIR
+# STUFE 4 — LERNEN
+
+*Das sind konkrete Schritte. Klein. Machbar. Heute.*
 
 ---
 
 # Kapitel 9: Was ich wirklich brauche und wie ich lerne es zu sagen.
+
+> *„Bedürfnisse zu haben ist kein Egoismus. Es ist Biologie."*
 
 Ich spreche nicht gerne von "Bedürfnissen".
 Das Wort klingt gross. Fast medizinisch.
@@ -772,6 +835,8 @@ Oder kannst du es jemandem sagen?
 
 # Kapitel 10: Nein sagen ohne Erklärung.
 
+> *„Du brauchst keinen Grund. Kein Aber. Kein Weil. Nein ist ein vollständiger Satz."*
+
 Es gibt ein Nein das ich dir zeigen möchte.
 
 Kurz. Ohne Geschichte dahinter. Ohne Entschuldigung.
@@ -847,6 +912,8 @@ Ist dieser schlimmste Fall wirklich so schlimm?
 
 # Kapitel 11: Wenn andere enttäuscht sind und das okay ist.
 
+> *„Wenn jemand geht weil du Grenzen setzt, hat er nie dich geliebt. Nur was du geleistet hast."*
+
 Hier ist die Frage die alles blockiert:
 
 Was wenn sie enttäuscht sind?
@@ -911,11 +978,15 @@ Wenn nein: Das ist eine wichtige Information.
 
 ---
 
-# TEIL 5 — DAS NEUE ICH
+# STUFE 5 — WERDEN
+
+*Du wirst wieder du. Nicht die alte du. Besser.*
 
 ---
 
 # Kapitel 12: Ich bin so müde. Und ich erlaube mir, es zu sein.
+
+> *„Erschöpft zu sein ist keine Schwäche. Es ist die ehrlichste Wahrheit die du über dich kennst."*
 
 Du hast dieses Buch bis hierhin gelesen.
 
@@ -926,6 +997,27 @@ Sondern weil es manchmal wehtut sich selbst anzuschauen.
 Ehrlich. Ohne Ausreden. Ohne Beschönigung.
 
 Du hast hingeschaut.
+
+Das Funktions-Ich hat dich lange begleitet.
+Es hat dich beschützt.
+Es hat dich funktionieren lassen als alles andere zusammenbrach.
+
+Du schuldest ihm nichts mehr.
+
+Jetzt kommt das wirkliche Ich zurück.
+
+Nicht das perfekte Ich.
+Nicht das Ich das nie müde ist.
+Das echte Ich.
+
+Das Ich das manchmal keine Ahnung hat was es will.
+Das manchmal weint ohne Grund.
+Das manchmal Hilfe braucht und es sagt.
+Das Nein sagt und sich trotzdem kurz schlecht fühlt.
+Das trotzdem weitermacht.
+
+Das ist kein Versagen.
+Das ist Menschsein.
 
 Und jetzt die Frage die bleibt:
 
@@ -999,6 +1091,18 @@ Weil dieses Buch manchmal wehtut.
 Weil sich selbst anzuschauen nicht einfach ist.
 
 Du hast es trotzdem getan.
+
+Du hast dein Funktions-Ich gesehen.
+Du weisst jetzt wo es herkommt.
+Du hast die Erlaubnis bekommen. Von dir selbst.
+Du hast erste Schritte bekommen.
+Und du weisst: Du wirst wieder du.
+
+SEHEN. VERSTEHEN. ERLAUBEN. LERNEN. WERDEN.
+
+Das ist nicht ein Programm.
+Das ist ein Weg.
+Dein Weg.
 
 Was jetzt passiert, bestimmst du.
 
