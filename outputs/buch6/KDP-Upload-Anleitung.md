@@ -250,8 +250,50 @@ Preis und Wahrnehmung zusammenpassen.
 
 ---
 
+## Schritt 9: Das eBook (Kindle)
+
+Taschenbuch und eBook sind bei KDP zwei getrennte Veröffentlichungen, die du
+später zu einer Produktseite verbinden kannst ("Kindle eBook" beim Taschenbuch
+verlinken). Bereit dafür:
+
+| | |
+|---|---|
+| Manuskript | `buch6-eBook.epub` |
+| Cover | `buch6-eBook-Cover.png`, 2042 × 3267 px, Verhältnis 1,6:1 |
+
+Neu bauen lässt sich beides mit:
+
+```bash
+python3 tools/buch6-ebook.py
+```
+
+**Wichtigster Unterschied zum Taschenbuch:** Kindle-Text fliesst, es gibt keine
+festen Seiten. Deshalb hat das eBook kein Inhaltsverzeichnis mit Seitenzahlen
+mehr, sondern eine anklickbare Navigation, die jeder eReader automatisch
+anzeigt. Das Cover hat keinen Rücken und keine Rückseite, nur die Vorderseite,
+zugeschnitten auf Amazons empfohlenes Verhältnis 1,6 zu 1.
+
+**Bookshelf → Create → Create Kindle eBook**
+
+- **Language / Title / Subtitle / Author:** identisch zum Taschenbuch, Schritt 2
+- **Manuscript:** `buch6-eBook.epub` hochladen, Previewer starten und durchklicken
+- **eBook Cover:** `buch6-eBook-Cover.png`
+- **Kindle-eBook-Vorschau prüfen:** Titelseite, Widmung, Einleitung, erstes
+  Kapitel, Krisennummern-Seite, Rechtliche Hinweise am Schluss
+- **KDP Select:** an dir. Bindet das Buch 90 Tage exklusiv an Amazon, dafür
+  Kindle Unlimited und Countdown-Deals möglich. Bei einem Erstlingsbuch in
+  einer Nische meist sinnvoll, um die Reichweite von KU mitzunehmen
+- **Preis:** eBooks liegen meist 30 bis 40 % unter dem Taschenbuchpreis,
+  also etwa 7,99 bis 8,99 EUR, damit 70 % Tantieme greifen (zwischen 2,99
+  und 9,99 EUR Voraussetzung dafür)
+
+Geprüft am erzeugten eBook: keine private Mailadresse, keine Bezeichnung
+"Heilerin", Kontaktadresse korrekt vorhanden, Krisennummer liegt bei rund
+9 % der Textlänge, also weit vorne.
+
+---
+
 ## Was noch offen ist
 
-- Cover-Datei, der einzige echte Blocker
-- Neue TikTok- und Instagram-Konten
 - Rückwirkend: Rechtssicherheit, Impressum und Cover bei Buch 3, 4 und 5
+- Neue TikTok- und Instagram-Konten

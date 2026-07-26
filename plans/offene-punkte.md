@@ -20,24 +20,44 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 Dateien: `outputs/buch6/buch6-MANUSKRIPT.docx` und `buch6-Taschenbuch.pdf`
 Skripte: `tools/buch6-word2pdf.py` und `tools/buch6-cover.py`
 
-### Cover: fertig
+### Cover: fertig (Stand Abend 26. Juli 2026, finale Entscheidung)
 
 `outputs/buch6/buch6-Cover-FullWrap.pdf`, 293,80 × 222,30 mm, Rücken 8,00 mm.
 
-Petras Bild aus ChatGPT liegt als `cover-entwuerfe/cover-front-druckfertig.png`.
-Es wurde auf das Seitenverhältnis 142,9 : 222,3 gebracht, indem das Motiv auf
-95,5 % verkleinert und auf schwarzem Grund zentriert wurde. Nicht beschnitten,
-sonst wäre unten „SAFE TO THRIVE" in die Schnittzone geraten.
+Finales Motiv: Kintsugi-Riss mit Foto einer Frau, die sich erschöpft den Kopf
+hält (schwarzer Blazer). Quelle `cover-entwuerfe/cover-front-kintsugi-frau-hires.png`,
+Originalauflösung 2100×3267 px (nicht hochskaliert) → 373 dpi. Störer-Kreis
+unten links direkt ins Bild eingebaut, Text korrigiert auf „MIT SELBSTTEST UND
+DEN SÄTZEN FÜR 9 KONKRETE SITUATIONEN" (nicht „DIE DU WIRKLICH SAGST").
 
-Gemessen: 364 dpi, kein Textblock unter 6 mm Sicherheitsabstand, alle Schriften
-eingebettet, Thumbnail-Test bei 160 Pixel bestanden. Kontrast Titel 18,6 zu 1,
-Rosé-Zeilen 6,7 zu 1. Das Rosé ist die einzige weiche Stelle, im Thumbnail aber
-noch klar lesbar.
+Geprüft: 373 dpi, alle Schriften eingebettet, kein „bluewin", Gesamtmass exakt.
+Verworfene Varianten (Marmor ohne Gesicht, Ganzkörperfoto bei 187 dpi, Träne,
+graues T-Shirt/rote Schrift) liegen zur Referenz noch in `cover-entwuerfe/`.
 
-Neu erzeugen nach jeder Änderung der Seitenzahl:
+Neu erzeugen, falls nötig:
 ```bash
-python3 tools/buch6-cover.py outputs/buch6/cover-entwuerfe/cover-front-druckfertig.png
+python3 tools/buch6-cover.py outputs/buch6/cover-entwuerfe/cover-front-kintsugi-frau-hires.png
 ```
+
+**Achtung:** Druckausführung ist **Matt**, nicht Glanz (Serienkonsistenz mit
+Petras drei anderen Büchern) — siehe KDP-Upload-Anleitung.md Schritt 6.
+
+### eBook: fertig
+
+`outputs/buch6/buch6-eBook.epub` + `outputs/buch6/buch6-eBook-Cover.png`
+(2042×3267 px, Verhältnis 1,6:1, nur Vorderseite ohne Rücken/Rückseite).
+
+Gebaut direkt aus der massgeblichen `buch6-MANUSKRIPT.docx` (nicht aus der
+älteren `.md`-Datei), mit anklickbarer Navigation statt Seitenzahlen-TOC.
+Geprüft: keine private Mailadresse, keine „Heilerin", Kontaktadresse korrekt,
+Krisennummer bei ca. 9 % der Textlänge.
+
+Neu erzeugen:
+```bash
+python3 tools/buch6-ebook.py
+```
+
+Upload-Schritte stehen in `KDP-Upload-Anleitung.md`, Schritt 9.
 
 ### Danach: KDP-Upload
 
