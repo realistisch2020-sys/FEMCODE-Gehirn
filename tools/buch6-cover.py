@@ -252,6 +252,12 @@ if STOERER_NEU:
         gesperrt(bx, by + 4.6 * mm - i * 4.1 * mm, t, 'SansB', 6.6, SCHRIFT, 0.35, mitte=True)
 
 
+if AUGE:
+    # Versprechen lesbar, rechts unter dem Untertitel
+    vy = BLEED + 46 * mm
+    gesperrt(FRONT_X + SAFE + 4 * mm, vy, 'MIT DEN SÄTZEN', 'SansB', 11.5, ROSE, 2.1)
+    gesperrt(FRONT_X + SAFE + 4 * mm, vy - 6.2 * mm, 'FÜR 9 SITUATIONEN', 'SansB', 11.5, ROSE, 2.1)
+
 if ZEHN:
     # ── Eine kräftige Goldader, damit sie im Thumbnail als Form lesbar ist ──
     c.saveState()
