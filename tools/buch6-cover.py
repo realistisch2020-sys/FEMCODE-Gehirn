@@ -14,7 +14,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 OUT = '/home/user/FEMCODE-Gehirn/outputs/buch6/buch6-Cover-FullWrap.pdf'
 # Optional: fertiges Vorderseiten-Bild als Argument. Dann entfaellt meine Typografie.
 BILD = sys.argv[1] if len(sys.argv) > 1 and os.path.exists(sys.argv[1]) else None
-MITTEXT = len(sys.argv) > 2 and sys.argv[2] == 'mit-text'
+MITTEXT = len(sys.argv) > 2 and sys.argv[2] in ('mit-text', 'mit-text-hell')
+HELL    = len(sys.argv) > 2 and sys.argv[2] == 'mit-text-hell'
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
 SEITEN   = 126
@@ -176,6 +177,12 @@ def fit(text, font, breite, max_pt=200):
 
 
 if (not BILD) or MITTEXT:
+    # Helles Foto: dunkle Schrift statt heller
+    T_HAUPT = colors.HexColor('#1A1512') if HELL else CREME
+    T_ZWEIT = colors.HexColor('#B06E52') if HELL else ROSE
+    T_GOLD  = colors.HexColor('#9A7B1F') if HELL else GOLD_H
+    T_TEXT  = colors.HexColor('#2A231E') if HELL else CREME
+    L_GOLD  = colors.HexColor('#9A7B1F') if HELL else GOLD
     innen = TRIM_B - (SAFE + 4 * mm) - (SAFE + 3 * mm)   # nutzbare Breite
 
     # ─── Titel: eine Grösse pro Gruppe, an der längsten Zeile bemessen ─────
@@ -187,23 +194,23 @@ if (not BILD) or MITTEXT:
         return ty
 
     ty = H - BLEED - 32 * mm
-    ty = gruppe(['ICH BIN', 'SO MÜDE.'], innen * 0.88, CREME, ty, 1.02)
-    ty -= 6 * mm
-    ty = gruppe(['UND NIEMAND', 'FRAGT MICH', 'WARUM.'], innen * 0.74, ROSE, ty, 1.06)
+    ty = gruppe(['ICH BIN', 'SO MÜDE.'], innen * (0.78 if HELL else 0.88), T_HAUPT, ty, 1.02)
+    ty -= (5 if HELL else 6) * mm
+    ty = gruppe(['UND NIEMAND', 'FRAGT MICH', 'WARUM.'], innen * (0.66 if HELL else 0.74), T_ZWEIT, ty, 1.06)
 
     # ─── Goldlinie und Konzept ──────────────────────────────────────────────
-    ty -= 9 * mm
-    c.setStrokeColor(GOLD); c.setLineWidth(1.0)
+    ty -= (6 if HELL else 9) * mm
+    c.setStrokeColor(L_GOLD); c.setLineWidth(1.0)
     c.line(fx, ty, fx + 30 * mm, ty)
 
-    ty -= 12.5 * mm
-    zeile(fx, ty, 'Das Funktions-Ich', 'SerifB', 23, GOLD_H)
+    ty -= (10 if HELL else 12.5) * mm
+    zeile(fx, ty, 'Das Funktions-Ich', 'SerifB', 23, T_GOLD)
     ty -= 9.5 * mm
     block(fx, ty, ['Wenn du für alle stark bist',
-                   'und dich dabei verlierst'], 'Serif', 13.2, CREME, 6.6 * mm)
+                   'und dich dabei verlierst'], 'Serif', 13.2, T_TEXT, 6.6 * mm)
 
     # ─── Störer, unten rechts über der Signatur ─────────────────────────────
-    bx, by, br = FRONT_X + TRIM_B - 30 * mm, BLEED + 44 * mm, 18.5 * mm
+    bx, by, br = FRONT_X + TRIM_B - 30 * mm, BLEED + (52 if HELL else 44) * mm, 18.5 * mm
     c.setFillColor(ROSE)
     c.circle(bx, by, br, fill=1, stroke=0)
     c.setStrokeColor(NACHT); c.setLineWidth(0.7)
@@ -213,10 +220,10 @@ if (not BILD) or MITTEXT:
 
     # ─── Signatur der Reihe, unten mittig ───────────────────────────────────
     sy = BLEED + 20 * mm
-    gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, CREME, 3.6, mitte=True)
-    c.setStrokeColor(GOLD); c.setLineWidth(0.7)
+    gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, T_HAUPT, 3.6, mitte=True)
+    c.setStrokeColor(L_GOLD); c.setLineWidth(0.7)
     c.line(fm - 26 * mm, sy - 5.2 * mm, fm + 26 * mm, sy - 5.2 * mm)
-    gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2, GOLD, 3.8, mitte=True)
+    gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2, L_GOLD, 3.8, mitte=True)
 
 
 # ════════════════════════════════════════════════════════════════════════════
