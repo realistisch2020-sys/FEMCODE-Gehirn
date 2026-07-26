@@ -18,6 +18,7 @@ MODUS   = sys.argv[2] if len(sys.argv) > 2 else ''
 MITTEXT = MODUS.startswith('mit-text')
 HELL    = MODUS in ('mit-text-hell', 'mit-text-hell-fuss')
 FUSS_HELL = MODUS == 'mit-text-hell-fuss'   # Signatur in Creme auf dunklem Fuss
+NUR_STOERER = MODUS == 'nur-stoerer'        # Bild bringt den Text mit, nur der Störer fehlt
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
 SEITEN   = 126
@@ -211,15 +212,6 @@ if (not BILD) or MITTEXT:
     block(fx, ty, ['Wenn du für alle stark bist',
                    'und dich dabei verlierst'], 'Serif', 13.2, T_TEXT, 6.6 * mm)
 
-    # ─── Störer, unten rechts über der Signatur ─────────────────────────────
-    bx, by, br = FRONT_X + TRIM_B - 30 * mm, BLEED + (52 if HELL else 44) * mm, 18.5 * mm
-    c.setFillColor(ROSE)
-    c.circle(bx, by, br, fill=1, stroke=0)
-    c.setStrokeColor(NACHT); c.setLineWidth(0.7)
-    c.circle(bx, by, br - 2.2 * mm, fill=0, stroke=1)
-    for i, t in enumerate(['MIT SELBSTTEST', 'UND DEN SÄTZEN,', 'DIE DU WIRKLICH', 'SAGST']):
-        gesperrt(bx, by + 5.4 * mm - i * 3.9 * mm, t, 'SansB', 6.4, NACHT, 0.4, mitte=True)
-
     # ─── Signatur der Reihe, unten mittig ───────────────────────────────────
     sy = BLEED + 20 * mm
     T_SIG = CREME if FUSS_HELL else T_HAUPT
@@ -228,6 +220,19 @@ if (not BILD) or MITTEXT:
     c.line(fm - 26 * mm, sy - 5.2 * mm, fm + 26 * mm, sy - 5.2 * mm)
     gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2,
              GOLD_H if FUSS_HELL else L_GOLD, 3.8, mitte=True)
+
+
+if (not BILD) or MITTEXT or NUR_STOERER:
+    # Störer, unten rechts, mit sicherem Abstand zur Schnittkante
+    br = 18.5 * mm
+    bx = FRONT_X + TRIM_B - (SAFE + 4 * mm) - br
+    by = BLEED + (SAFE + 6 * mm) + br
+    c.setFillColor(ROSE)
+    c.circle(bx, by, br, fill=1, stroke=0)
+    c.setStrokeColor(NACHT); c.setLineWidth(0.7)
+    c.circle(bx, by, br - 2.2 * mm, fill=0, stroke=1)
+    for i, t in enumerate(['MIT SELBSTTEST', 'UND DEN SÄTZEN,', 'DIE DU WIRKLICH', 'SAGST']):
+        gesperrt(bx, by + 5.4 * mm - i * 3.9 * mm, t, 'SansB', 6.4, NACHT, 0.4, mitte=True)
 
 
 # ════════════════════════════════════════════════════════════════════════════
