@@ -236,21 +236,18 @@ if (not BILD) or MITTEXT or NUR_STOERER:
         gesperrt(bx, by + 5.4 * mm - i * 3.9 * mm, t, 'SansB', 6.4, NACHT, 0.4, mitte=True)
 
 if STOERER_NEU:
-    # Deckt die Ellipse aus Petras Entwurf passgenau ab und setzt den Text neu.
-    # Masse gemessen an cover-front-final.png
-    ex = FRONT_X + 114.55 * mm
-    ey = 44.04 * mm
-    ea, eb = 20.40 * mm, 32.90 * mm          # Halbachsen, minimal grösser als das Original
-    ROSE_ORIG = colors.Color(174 / 255, 104 / 255, 87 / 255)
-    c.setFillColor(ROSE_ORIG)
-    c.ellipse(ex - ea, ey - eb, ex + ea, ey + eb, fill=1, stroke=0)
-    c.setStrokeColor(colors.HexColor('#241713')); c.setLineWidth(0.8)
-    c.ellipse(ex - ea + 2.4 * mm, ey - eb + 2.4 * mm,
-              ex + ea - 2.4 * mm, ey + eb - 2.4 * mm, fill=0, stroke=1)
-    ZEILEN = ['MIT SELBSTTEST', 'UND DEN SÄTZEN', 'FÜR 9 KONKRETE', 'SITUATIONEN']
-    for i, t in enumerate(ZEILEN):
-        gesperrt(ex, ey + 6.6 * mm - i * 4.4 * mm, t, 'SansB', 7.0,
-                 colors.HexColor('#241713'), 0.35, mitte=True)
+    # Runder Störer, unten rechts, sicherer Abstand zu allen Schnittkanten
+    br = 21.0 * mm
+    bx = FRONT_X + TRIM_B - (SAFE + 5 * mm) - br
+    by = BLEED + (SAFE + 7 * mm) + br
+    ROSE_H = colors.HexColor('#E8B49B')          # das hellere Rosé der Reihe
+    SCHRIFT = colors.HexColor('#4A2E24')         # warmes Dunkelbraun statt Schwarz
+    c.setFillColor(ROSE_H)
+    c.circle(bx, by, br, fill=1, stroke=0)
+    c.setStrokeColor(SCHRIFT); c.setLineWidth(0.6)
+    c.circle(bx, by, br - 2.6 * mm, fill=0, stroke=1)
+    for i, t in enumerate(['MIT SELBSTTEST', 'UND DEN SÄTZEN', 'FÜR 9 KONKRETE', 'SITUATIONEN']):
+        gesperrt(bx, by + 4.6 * mm - i * 4.1 * mm, t, 'SansB', 6.6, SCHRIFT, 0.35, mitte=True)
 
 
 # ════════════════════════════════════════════════════════════════════════════
