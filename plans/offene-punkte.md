@@ -4,7 +4,7 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Buch 6 (Ich bin so müde. Und niemand fragt mich warum): kurz vor dem Upload
 
-**Stand 25. Juli 2026.** Manuskript ist fertig und geprüft. Es fehlt nur das Cover.
+**Stand 26. Juli 2026.** Manuskript und Cover sind fertig. Bereit für den Upload.
 
 ### Was fertig ist
 
@@ -20,24 +20,23 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 Dateien: `outputs/buch6/buch6-MANUSKRIPT.docx` und `buch6-Taschenbuch.pdf`
 Skripte: `tools/buch6-word2pdf.py` und `tools/buch6-cover.py`
 
-### Der einzige Blocker: die Cover-Datei
+### Cover: fertig
 
-Petra erzeugt das Cover mit ChatGPT. Zwei Dinge fehlen noch:
+`outputs/buch6/buch6-Cover-FullWrap.pdf`, 293,80 × 222,30 mm, Rücken 8,00 mm.
 
-1. **Rosé aufhellen.** Die Zeilen „UND NIEMAND FRAGT MICH WARUM" stehen aktuell
-   auf `#AA6E5A`, das ergibt nur 5,1 zu 1 Kontrast. Die Creme-Zeilen darüber haben
-   14 zu 1. Zielfarbe `#E8B49B`, das ergibt 11,4 zu 1. Im Druck und im Thumbnail
-   fällt der schwache Kontrast sonst auseinander.
+Petras Bild aus ChatGPT liegt als `cover-entwuerfe/cover-front-druckfertig.png`.
+Es wurde auf das Seitenverhältnis 142,9 : 222,3 gebracht, indem das Motiv auf
+95,5 % verkleinert und auf schwarzem Grund zentriert wurde. Nicht beschnitten,
+sonst wäre unten „SAFE TO THRIVE" in die Schnittzone geraten.
 
-2. **Seitenverhältnis 0,7 zu 1**, zum Beispiel 2100 × 3000 Pixel. Die bisherige
-   Datei ist 2:3, dabei würden oben und unten je 5 mm abgeschnitten, und unten
-   steht „SAFE TO THRIVE".
+Gemessen: 364 dpi, kein Textblock unter 6 mm Sicherheitsabstand, alle Schriften
+eingebettet, Thumbnail-Test bei 160 Pixel bestanden. Kontrast Titel 18,6 zu 1,
+Rosé-Zeilen 6,7 zu 1. Das Rosé ist die einzige weiche Stelle, im Thumbnail aber
+noch klar lesbar.
 
-Aktueller Entwurf liegt in `outputs/buch6/cover-entwuerfe/cover-v3-dunkles-rose.png`.
-
-Sobald die Datei da ist:
+Neu erzeugen nach jeder Änderung der Seitenzahl:
 ```bash
-python3 tools/buch6-cover.py pfad/zur/datei.png
+python3 tools/buch6-cover.py outputs/buch6/cover-entwuerfe/cover-front-druckfertig.png
 ```
 
 ### Danach: KDP-Upload

@@ -10,7 +10,7 @@ Nichts davon muss noch entschieden werden.
 | | |
 |---|---|
 | Manuskript | `buch6-Taschenbuch.pdf`, 126 Seiten |
-| Cover | `buch6-Cover-FullWrap.pdf` **fehlt noch** |
+| Cover | `buch6-Cover-FullWrap.pdf`, 293,80 × 222,30 mm |
 | Format | 5,5 x 8,5 Zoll (13,97 × 21,59 cm) |
 | Papier | Creme |
 | Rückenbreite | 8,00 mm |
@@ -19,14 +19,11 @@ Nichts davon muss noch entschieden werden.
 Das Manuskript ist fertig geprüft: Schriften eingebettet, Seitenmass stimmt,
 keine leere Seite, alle Seitenzahlen im Inhaltsverzeichnis korrekt.
 
-**Ohne Cover geht es nicht weiter.** Sobald die Vorderseite von ChatGPT da ist:
+Beide Dateien sind fertig und geprüft. Neu bauen lässt sich das Cover mit:
 
 ```bash
-python3 tools/buch6-cover.py pfad/zur/vorderseite.png
+python3 tools/buch6-cover.py outputs/buch6/cover-entwuerfe/cover-front-druckfertig.png
 ```
-
-Anforderungen an die Vorderseite: mindestens 2100 × 3000 Pixel,
-Seitenverhältnis 0,7 zu 1, kein Text am Rand.
 
 ---
 
@@ -190,7 +187,7 @@ aber genau dieses Problem googeln.
 - Ink and Paper: `Black & white interior with cream paper`
 - Format: `5,5 x 8,5 Zoll`
 - Bleed: `No Bleed`
-- Cover Finish: `Glossy`
+- Cover-Ausführung: `Matt`
 
 > Glanz, nicht Matt. Bei dunklen Covern entstehen auf mattem Papier
 > Scheuerstellen an den Kanten.

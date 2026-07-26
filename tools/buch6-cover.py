@@ -41,11 +41,16 @@ GRAU   = colors.HexColor('#9A8F8A')
 
 # ─── Schriften ──────────────────────────────────────────────────────────────
 F = '/usr/share/fonts/truetype/liberation/'
+from reportlab import rl_config
 pdfmetrics.registerFont(TTFont('Sans',   F + 'LiberationSans-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('SansB',  F + 'LiberationSans-Bold.ttf'))
 pdfmetrics.registerFont(TTFont('Serif',  F + 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('SerifI', F + 'LiberationSerif-Italic.ttf'))
 pdfmetrics.registerFont(TTFont('SerifB', F + 'LiberationSerif-Bold.ttf'))
+
+# Grundschrift setzen, sonst schreibt ReportLab eine tote Helvetica-Referenz
+# in die Datei und KDP meldet eine nicht eingebettete Schrift
+rl_config.canvas_basefontname = 'Sans'
 
 c = rl.Canvas(OUT, pagesize=(W, H))
 
@@ -272,7 +277,7 @@ for t in ('Du darfst aufhören.', 'Du darfst müde sein.', 'Du darfst du sein.')
 
 # Vita unten links, neben dem Barcodefeld
 vy = BLEED + SAFE + 12 * mm
-block(rx, vy, ['Petra Tanner, Therapeutin und Coachin.',
+block(rx, vy, ['Petra Tanner, Coachin.',
                'Seit 26 Jahren in eigener Praxis.'], 'SerifI', 9.2, GRAU, 5.0 * mm)
 
 # Barcodefeld freihalten (KDP druckt ihn selbst)
