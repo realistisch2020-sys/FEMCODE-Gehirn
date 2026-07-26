@@ -152,3 +152,17 @@ Pflicht bei Eigenverlag, daran führt kein Weg vorbei.
 - [ ] Fallfiguren zusammengesetzt, mindestens drei Details verändert
 - [ ] Pflichtteil vollständig, alle acht Punkte aus Abschnitt 7
 - [ ] Nur beyondlimitsnow25@gmail.com als Kontakt
+
+---
+
+## 10. Prüfen, nicht erinnern
+
+Die Punkte oben werden nicht aus dem Kopf geprüft, sondern gemessen:
+
+```bash
+python3 tools/buch-pruefen.py <manuskript.docx> <taschenbuch.pdf>
+```
+
+Nach **jeder** Änderung, nicht nur am Schluss. Wer nur die Stelle kontrolliert,
+die er gerade geändert hat, findet die Fehler von letzter Woche nie.
+Und wer prüft, *ob* etwas im Dokument steht, hat noch nicht geprüft, *wo*.

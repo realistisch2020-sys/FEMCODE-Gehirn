@@ -70,3 +70,36 @@ Bei 126 Seiten: Rücken 8,00 mm, Cover 310,40 × 216,40 mm.
 Ab 79 Seiten erlaubt KDP Text auf dem Buchrücken.
 Sicherheitsabstand zu allen Schnittkanten: mindestens 6 mm.
 Barcode-Feld unten rechts auf der Rückseite freihalten, etwa 52 × 32 mm.
+
+---
+
+## buch-pruefen.py
+
+Prüft ein Manuskript und sein PDF gegen alle Regeln, die je aufgefallen sind.
+
+```bash
+python3 tools/buch-pruefen.py outputs/buch6/buch6-MANUSKRIPT.docx \
+                              outputs/buch6/buch6-Taschenbuch.pdf
+```
+
+Läuft **nach jeder Änderung**, nicht nur am Schluss. Genau da sind bisher die
+Fehler entstanden: geprüft wurde immer nur die eine Stelle, die gerade geändert
+wurde, und die Fehler von letzter Woche lagen weiter da.
+
+Was geprüft wird:
+
+- Typografie: ß, Gedankenstriche, gerade Anführungszeichen und Apostrophe,
+  doppelte Leerzeichen, Leerzeichen vor Satzzeichen, Auslassungspunkte,
+  Anführungszeichen paarig gezählt
+- **Fehlende Kommas** vor Relativ- und Nebensätzen
+- Rechtssicherheit nach `context/rechtssicherheit.md`: private Mailadresse,
+  Bezeichnung Heilerin, Therapeutin über die Autorin, Ausschlussdiagnosen,
+  Heilversprechen, alle acht Punkte des Pflichtteils
+- Kapitelnummern lückenlos, kein Kapiteltitel mit Schlusspunkt
+- Im PDF: leere und fast leere Seiten, **jede Seitenzahl im Inhaltsverzeichnis
+  gegen die tatsächliche Seite**, Krisennummern im vorderen Drittel
+- Rückenbreite und Covermass aus der tatsächlichen Seitenzahl
+
+Das Skript endet mit einem Fehlercode, wenn es etwas gefunden hat.
+Nicht jeder Treffer ist ein Fehler, Vergleichssätze werden mitgemeldet.
+Aber jeder Treffer muss angeschaut werden.
