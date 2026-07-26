@@ -20,6 +20,7 @@ HELL    = MODUS in ('mit-text-hell', 'mit-text-hell-fuss')
 FUSS_HELL = MODUS == 'mit-text-hell-fuss'   # Signatur in Creme auf dunklem Fuss
 NUR_STOERER = MODUS == 'nur-stoerer'        # Bild bringt den Text mit, nur der Störer fehlt
 ZEHN = MODUS == 'zehn'                      # Goldadern gross, Versprechen lesbar
+AUGE = MODUS == 'auge'                      # Bild ohne Typografie, alles wird gesetzt
 STOERER_NEU = MODUS == 'stoerer-neu'        # Störer im Bild wird passgenau überdeckt
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
@@ -181,7 +182,7 @@ def fit(text, font, breite, max_pt=200):
     return min(max_pt, g * breite / max(w, 0.01))
 
 
-if (not BILD) or MITTEXT:
+if (not BILD) or MITTEXT or AUGE:
     # Helles Foto: dunkle Schrift statt heller
     T_HAUPT = colors.HexColor('#1A1512') if HELL else CREME
     T_ZWEIT = colors.HexColor('#5A2A1B') if HELL else ROSE
