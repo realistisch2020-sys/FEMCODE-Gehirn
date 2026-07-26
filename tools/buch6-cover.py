@@ -100,16 +100,13 @@ c.saveState()
 p = c.beginPath()
 p.rect(FRONT_X, 0, TRIM_B + BLEED, H)
 c.clipPath(p, stroke=0)
-c.setStrokeAlpha(0.0 if BILD else 0.55)
-# ein durchgehender Bruch von oben rechts nach unten, mit wenigen Abzweigen
-ader(FRONT_X + TRIM_B + 2 * mm, H - 8 * mm, 60 * mm, math.radians(249),
-     breite=1.15, seed=3)
-c.setStrokeAlpha(0.34)
-ader(FRONT_X + TRIM_B + 2 * mm, H * 0.42, 42 * mm, math.radians(205),
-     breite=0.85, seed=17)
-c.setStrokeAlpha(0.22)
-ader(FRONT_X + TRIM_B * 0.62, BLEED - 2 * mm, 34 * mm, math.radians(78),
-     breite=0.7, seed=29)
+c.setStrokeAlpha(0.0 if BILD else 0.5)
+# ein durchgehender Riss von oben rechts nach unten, ruhig und lang
+ader(FRONT_X + TRIM_B - 16 * mm, H - BLEED + 2 * mm, 118 * mm, math.radians(255),
+     breite=1.25, seed=3)
+c.setStrokeAlpha(0.26)
+ader(FRONT_X + TRIM_B - 40 * mm, BLEED - 3 * mm, 52 * mm, math.radians(72),
+     breite=0.8, seed=17)
 c.restoreState()
 
 
@@ -170,44 +167,55 @@ if BILD:
 fx = FRONT_X + SAFE + 4 * mm
 fm = FRONT_X + TRIM_B / 2          # Mitte der Vorderseite
 
+def fit(text, font, breite, max_pt=200):
+    """Schriftgroesse, bei der die Zeile genau die gewuenschte Breite hat."""
+    g = 10.0
+    w = pdfmetrics.stringWidth(text, font, g)
+    return min(max_pt, g * breite / max(w, 0.01))
+
+
 if not BILD:
-    # Kopfzeile: Marke
-    gesperrt(fx, H - BLEED - 20 * mm, 'SAFE TO THRIVE', 'Sans', 8.6, GOLD, 3.4)
-    gesperrt(fx, H - BLEED - 26.5 * mm, 'PETRA TANNER', 'Sans', 6.6, GRAU, 2.6)
+    innen = TRIM_B - (SAFE + 4 * mm) - (SAFE + 3 * mm)   # nutzbare Breite
 
-    # Titel
-    ty = H - BLEED - 46 * mm
-    for t in ('ICH BIN', 'SO MÜDE.'):
-        zeile(fx, ty, t, 'SansB', 40, CREME)
-        ty -= 13.6 * mm
-    for t in ('UND NIEMAND', 'FRAGT MICH', 'WARUM.'):
-        zeile(fx, ty, t, 'SansB', 29, ROSE)
-        ty -= 10.2 * mm
+    # ─── Titel: eine Grösse pro Gruppe, an der längsten Zeile bemessen ─────
+    def gruppe(zeilen, breite, farbe, ty, durchschuss=1.03):
+        g = min(fit(t, 'SansB', breite) for t in zeilen)
+        for t in zeilen:
+            zeile(fx, ty, t, 'SansB', g, farbe)
+            ty -= g * durchschuss
+        return ty
 
-    # Goldlinie
-    ty -= 5 * mm
-    c.setStrokeColor(GOLD)
-    c.setLineWidth(0.9)
-    c.line(fx, ty, fx + 34 * mm, ty)
+    ty = H - BLEED - 32 * mm
+    ty = gruppe(['ICH BIN', 'SO MÜDE.'], innen * 0.88, CREME, ty, 1.02)
+    ty -= 6 * mm
+    ty = gruppe(['UND NIEMAND', 'FRAGT MICH', 'WARUM.'], innen * 0.74, ROSE, ty, 1.06)
 
-    # Konzept
-    ty -= 11 * mm
-    zeile(fx, ty, 'Das Funktions-Ich', 'SerifB', 21, GOLD_H)
-    ty -= 8.6 * mm
+    # ─── Goldlinie und Konzept ──────────────────────────────────────────────
+    ty -= 9 * mm
+    c.setStrokeColor(GOLD); c.setLineWidth(1.0)
+    c.line(fx, ty, fx + 30 * mm, ty)
+
+    ty -= 12.5 * mm
+    zeile(fx, ty, 'Das Funktions-Ich', 'SerifB', 23, GOLD_H)
+    ty -= 9.5 * mm
     block(fx, ty, ['Wenn du für alle stark bist',
-                   'und dich dabei selbst verlierst'], 'Serif', 12.6, CREME, 6.2 * mm)
+                   'und dich dabei verlierst'], 'Serif', 13.2, CREME, 6.6 * mm)
 
-    # Autorin unten
-    zeile(fx, BLEED + 17 * mm, 'PETRA TANNER', 'SansB', 15, CREME)
-
-    # Störer: das Alleinstellungsmerkmal
-    bx, by, br = FRONT_X + TRIM_B - 29 * mm, BLEED + 40 * mm, 19.5 * mm
+    # ─── Störer, unten rechts über der Signatur ─────────────────────────────
+    bx, by, br = FRONT_X + TRIM_B - 30 * mm, BLEED + 44 * mm, 18.5 * mm
     c.setFillColor(ROSE)
     c.circle(bx, by, br, fill=1, stroke=0)
     c.setStrokeColor(NACHT); c.setLineWidth(0.7)
     c.circle(bx, by, br - 2.2 * mm, fill=0, stroke=1)
     for i, t in enumerate(['MIT SELBSTTEST', 'UND DEN SÄTZEN,', 'DIE DU WIRKLICH', 'SAGST']):
-        gesperrt(bx, by + 5.8 * mm - i * 4.1 * mm, t, 'SansB', 6.6, NACHT, 0.4, mitte=True)
+        gesperrt(bx, by + 5.4 * mm - i * 3.9 * mm, t, 'SansB', 6.4, NACHT, 0.4, mitte=True)
+
+    # ─── Signatur der Reihe, unten mittig ───────────────────────────────────
+    sy = BLEED + 20 * mm
+    gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, CREME, 3.6, mitte=True)
+    c.setStrokeColor(GOLD); c.setLineWidth(0.7)
+    c.line(fm - 26 * mm, sy - 5.2 * mm, fm + 26 * mm, sy - 5.2 * mm)
+    gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2, GOLD, 3.8, mitte=True)
 
 
 # ════════════════════════════════════════════════════════════════════════════
