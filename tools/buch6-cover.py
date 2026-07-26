@@ -21,6 +21,7 @@ FUSS_HELL = MODUS == 'mit-text-hell-fuss'   # Signatur in Creme auf dunklem Fuss
 NUR_STOERER = MODUS == 'nur-stoerer'        # Bild bringt den Text mit, nur der Störer fehlt
 ZEHN = MODUS == 'zehn'                      # Goldadern gross, Versprechen lesbar
 AUGE = MODUS == 'auge'                      # Bild ohne Typografie, alles wird gesetzt
+TRAENE = MODUS == 'traene'                  # Petras Traenen-Cover, nur der Störer wird ersetzt
 STOERER_NEU = MODUS == 'stoerer-neu'        # Störer im Bild wird passgenau überdeckt
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
@@ -276,6 +277,23 @@ if ZEHN:
     for i, t in enumerate(['MIT DEN SÄTZEN', 'FÜR 9 SITUATIONEN']):
         breite = sum(pdfmetrics.stringWidth(z, 'SansB', 11.0) + 2.0 for z in t) - 2.0
         gesperrt(zx - breite, zy - i * 6.4 * mm, t, 'SansB', 11.0, ROSE, 2.0)
+
+
+if TRAENE:
+    # Deckt Petras Störer passgenau ab und setzt den richtigen Text.
+    # Masse an cover-front-traene.png gemessen: Kreis 33,5 mm,
+    # Mitte 114,0 mm von links und 52,6 mm von unten.
+    ex = FRONT_X + 113.6 * mm
+    ey = 51.9 * mm
+    er = 18.7 * mm
+    ROSE_P = colors.Color(182 / 255, 114 / 255, 95 / 255)
+    SCHRIFT = colors.HexColor('#2A1710')
+    c.setFillColor(ROSE_P)
+    c.circle(ex, ey, er, fill=1, stroke=0)
+    c.setStrokeColor(SCHRIFT); c.setLineWidth(0.6)
+    c.circle(ex, ey, er - 2.0 * mm, fill=0, stroke=1)
+    for i, t in enumerate(['MIT SELBSTTEST', 'UND DEN SÄTZEN', 'FÜR 9 KONKRETE', 'SITUATIONEN']):
+        gesperrt(ex, ey + 4.6 * mm - i * 3.7 * mm, t, 'SansB', 5.9, SCHRIFT, 0.3, mitte=True)
 
 
 # ════════════════════════════════════════════════════════════════════════════
