@@ -10,6 +10,31 @@ DOCX = sys.argv[1] if len(sys.argv) > 1 else \
     "/home/user/FEMCODE-Gehirn/outputs/buch6/buch6-MANUSKRIPT.docx"
 OUT = "/home/user/FEMCODE-Gehirn/outputs/buch6/buch6-Taschenbuch.pdf"
 
+# ─── Schriften einbetten ─────────────────────────────────────────────────────
+# KDP lehnt PDFs ab, in denen Schriften nicht eingebettet sind. Die eingebauten
+# Times-Schriften von ReportLab werden nur referenziert, nicht eingebettet.
+# Liberation Serif ist masshaltig zu Times, der Satz bleibt also gleich.
+
+from reportlab import rl_config
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.lib.fonts import addMapping
+
+_FONTDIR = '/usr/share/fonts/truetype/liberation/'
+for _name, _datei in (('Times-Roman',      'LiberationSerif-Regular.ttf'),
+                      ('Times-Bold',       'LiberationSerif-Bold.ttf'),
+                      ('Times-Italic',     'LiberationSerif-Italic.ttf'),
+                      ('Times-BoldItalic', 'LiberationSerif-BoldItalic.ttf')):
+    pdfmetrics.registerFont(TTFont(_name, _FONTDIR + _datei))
+pdfmetrics.registerFontFamily('Times-Roman', normal='Times-Roman', bold='Times-Bold',
+                              italic='Times-Italic', boldItalic='Times-BoldItalic')
+for _i, _b, _n in ((0, 0, 'Times-Roman'), (1, 0, 'Times-Bold'),
+                   (0, 1, 'Times-Italic'), (1, 1, 'Times-BoldItalic')):
+    addMapping('Times-Roman', _i, _b, _n)
+
+# Grundschrift der Leinwand, sonst landet Helvetica als tote Referenz auf jeder Seite
+rl_config.canvas_basefontname = 'Times-Roman'
+
 from docx import Document
 from docx.shared import Pt
 from reportlab.platypus import (BaseDocTemplate, Frame, PageTemplate, Paragraph,

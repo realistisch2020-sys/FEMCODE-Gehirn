@@ -140,6 +140,19 @@ def pruefe_pdf(pfad):
            for i, s in enumerate(doc)
            if 6 <= len(s.get_text().strip()) < 100 and i > 2])
 
+    # KDP lehnt PDFs ab, in denen eine Schrift nicht eingebettet ist
+    schriften = set()
+    for s in doc:
+        schriften |= {(f[3], f[1]) for f in s.get_fonts()}
+    melde('Schriften eingebettet',
+          ['%s ist nur referenziert' % n for n, art in schriften if art == 'n/a'])
+
+    # Seitenmass muss zum bestellten Format passen
+    r = doc[0].rect
+    mass = '%.1f x %.1f mm' % (r.width / 72 * 25.4, r.height / 72 * 25.4)
+    melde('Seitenmass A5 (148,0 x 210,0 mm)',
+          [] if mass == '148.0 x 210.0 mm' else [mass])
+
     # Inhaltsverzeichnis gegen die echten Seitenzahlen
     zei = []
     for i in range(min(6, len(doc))):

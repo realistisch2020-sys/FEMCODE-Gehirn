@@ -42,19 +42,16 @@ python3 tools/buch6-cover.py pfad/zur/datei.png
 
 ### Danach: KDP-Upload
 
-Noch nicht gemacht, muss vorbereitet werden:
+**Vollständige Anleitung liegt in `outputs/buch6/KDP-Upload-Anleitung.md`.**
+Titel, Untertitel, Beschreibung, drei Kategorien, die sieben Keywords,
+alle Druckeinstellungen und der Preis stehen dort fertig zum Kopieren.
 
-- Titel: `Ich bin so müde. Und niemand fragt mich warum`
-- Untertitel: `Das Funktions-Ich: Wenn du für alle stark bist und dich dabei verlierst`
-  (Wort für Wort wie auf dem Cover, Amazon gleicht das ab. Nach dem Upload für immer fix.)
-- Seitenzahl 126, Papier Creme, Format A5
-- **Die sieben Keywords fehlen noch.** Petra hat ausdrücklich die bestmöglichen
-  verlangt, nicht nur plausible. Muss noch recherchiert werden.
-  Erste Kandidaten: Mental Load Mutter, erschöpfte Frauen keine Kraft,
-  Nein sagen lernen Frauen, Grenzen setzen Buch Frauen, immer für alle da sein,
-  emotionale Erschöpfung Alltag, Selbstfürsorge für Frauen Buch
-- Produktbeschreibung fehlt noch
-- Kategorien fehlen noch
+Kurzfassung der Eckdaten:
+
+- 126 Seiten, A5, Papier Creme, kein Bleed, Cover Glanz
+- Listenpreis 12,99 EUR, Tantieme ca. 5,17 EUR
+- Kostenlose KDP-ISBN, Expanded Distribution aus
+- Nach dem Upload 72 Stunden Indexierung abwarten
 
 ### Reihenfolge beim Start, so besprochen
 
