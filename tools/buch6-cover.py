@@ -14,6 +14,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 OUT = '/home/user/FEMCODE-Gehirn/outputs/buch6/buch6-Cover-FullWrap.pdf'
 # Optional: fertiges Vorderseiten-Bild als Argument. Dann entfaellt meine Typografie.
 BILD = sys.argv[1] if len(sys.argv) > 1 and os.path.exists(sys.argv[1]) else None
+MITTEXT = len(sys.argv) > 2 and sys.argv[2] == 'mit-text'
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
 SEITEN   = 126
@@ -174,7 +175,7 @@ def fit(text, font, breite, max_pt=200):
     return min(max_pt, g * breite / max(w, 0.01))
 
 
-if not BILD:
+if (not BILD) or MITTEXT:
     innen = TRIM_B - (SAFE + 4 * mm) - (SAFE + 3 * mm)   # nutzbare Breite
 
     # ─── Titel: eine Grösse pro Gruppe, an der längsten Zeile bemessen ─────
