@@ -50,7 +50,7 @@ Ergebnis: `outputs/buch6/buch6-Cover-FullWrap.pdf`
 Das Skript sagt beim Ausführen, wie viele dpi das eingesetzte Bild erreicht,
 und warnt, wenn es unter 300 liegt.
 
-**Wichtig:** Oben im Skript steht `SEITEN = 125`. Ändert sich der Umfang des
+**Wichtig:** Oben im Skript steht `SEITEN = 126`. Ändert sich der Umfang des
 Manuskripts, muss diese Zahl angepasst werden, sonst stimmt die Rückenbreite nicht.
 
 ---
@@ -65,7 +65,7 @@ Coverbreite   = 3,2 + 148 + Rücken + 148 + 3,2   (mm)
 Coverhöhe     = 3,2 + 210 + 3,2 = 216,4          (mm)
 ```
 
-Bei 125 Seiten: Rücken 7,94 mm, Cover 310,34 × 216,40 mm.
+Bei 126 Seiten: Rücken 8,00 mm, Cover 310,40 × 216,40 mm.
 
 Ab 79 Seiten erlaubt KDP Text auf dem Buchrücken.
 Sicherheitsabstand zu allen Schnittkanten: mindestens 6 mm.

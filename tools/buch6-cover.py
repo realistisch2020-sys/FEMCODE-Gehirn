@@ -16,7 +16,7 @@ OUT = '/home/user/FEMCODE-Gehirn/outputs/buch6/buch6-Cover-FullWrap.pdf'
 BILD = sys.argv[1] if len(sys.argv) > 1 and os.path.exists(sys.argv[1]) else None
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
-SEITEN   = 125
+SEITEN   = 126
 TRIM_B   = 148.0 * mm
 TRIM_H   = 210.0 * mm
 RUECKEN  = SEITEN * 0.0025 * 25.4 * mm     # Creme

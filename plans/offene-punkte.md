@@ -8,7 +8,7 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ### Was fertig ist
 
-- 125 Seiten, 19 Kapitel, 5 Schritte
+- 126 Seiten, 19 Kapitel, 5 Schritte
 - Alleinstellungsmerkmal drin: Selbsttest vorne, Notfall-Seiten vorne, Satz-Sammlung hinten
 - Claudia zieht sich als roter Faden durch fünf Stellen
 - 21 TikTok-Zeilen in grauen Kästen
@@ -47,7 +47,7 @@ Noch nicht gemacht, muss vorbereitet werden:
 - Titel: `Ich bin so müde. Und niemand fragt mich warum`
 - Untertitel: `Das Funktions-Ich: Wenn du für alle stark bist und dich dabei verlierst`
   (Wort für Wort wie auf dem Cover, Amazon gleicht das ab. Nach dem Upload für immer fix.)
-- Seitenzahl 125, Papier Creme, Format A5
+- Seitenzahl 126, Papier Creme, Format A5
 - **Die sieben Keywords fehlen noch.** Petra hat ausdrücklich die bestmöglichen
   verlangt, nicht nur plausible. Muss noch recherchiert werden.
   Erste Kandidaten: Mental Load Mutter, erschöpfte Frauen keine Kraft,

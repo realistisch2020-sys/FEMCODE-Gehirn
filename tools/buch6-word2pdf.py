@@ -163,6 +163,10 @@ for p in docx.paragraphs:
     size = fontsize(p)
 
     if has_pagebreak(p):
+        # Leerraum direkt vor einem Umbruch wegwerfen, sonst rutscht er auf die
+        # neue Seite und erzeugt eine leere Seite
+        while story and isinstance(story[-1], Spacer):
+            story.pop()
         story.append(PageBreak())
         if not text:
             continue
