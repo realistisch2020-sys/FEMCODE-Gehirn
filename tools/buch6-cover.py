@@ -14,8 +14,10 @@ from reportlab.pdfbase.ttfonts import TTFont
 OUT = '/home/user/FEMCODE-Gehirn/outputs/buch6/buch6-Cover-FullWrap.pdf'
 # Optional: fertiges Vorderseiten-Bild als Argument. Dann entfaellt meine Typografie.
 BILD = sys.argv[1] if len(sys.argv) > 1 and os.path.exists(sys.argv[1]) else None
-MITTEXT = len(sys.argv) > 2 and sys.argv[2] in ('mit-text', 'mit-text-hell')
-HELL    = len(sys.argv) > 2 and sys.argv[2] == 'mit-text-hell'
+MODUS   = sys.argv[2] if len(sys.argv) > 2 else ''
+MITTEXT = MODUS.startswith('mit-text')
+HELL    = MODUS in ('mit-text-hell', 'mit-text-hell-fuss')
+FUSS_HELL = MODUS == 'mit-text-hell-fuss'   # Signatur in Creme auf dunklem Fuss
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
 SEITEN   = 126
@@ -179,8 +181,8 @@ def fit(text, font, breite, max_pt=200):
 if (not BILD) or MITTEXT:
     # Helles Foto: dunkle Schrift statt heller
     T_HAUPT = colors.HexColor('#1A1512') if HELL else CREME
-    T_ZWEIT = colors.HexColor('#B06E52') if HELL else ROSE
-    T_GOLD  = colors.HexColor('#9A7B1F') if HELL else GOLD_H
+    T_ZWEIT = colors.HexColor('#5A2A1B') if HELL else ROSE
+    T_GOLD  = colors.HexColor('#8A6A12') if HELL else GOLD_H
     T_TEXT  = colors.HexColor('#2A231E') if HELL else CREME
     L_GOLD  = colors.HexColor('#9A7B1F') if HELL else GOLD
     innen = TRIM_B - (SAFE + 4 * mm) - (SAFE + 3 * mm)   # nutzbare Breite
@@ -220,10 +222,12 @@ if (not BILD) or MITTEXT:
 
     # ─── Signatur der Reihe, unten mittig ───────────────────────────────────
     sy = BLEED + 20 * mm
-    gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, T_HAUPT, 3.6, mitte=True)
-    c.setStrokeColor(L_GOLD); c.setLineWidth(0.7)
+    T_SIG = CREME if FUSS_HELL else T_HAUPT
+    gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, T_SIG, 3.6, mitte=True)
+    c.setStrokeColor(GOLD_H if FUSS_HELL else L_GOLD); c.setLineWidth(0.7)
     c.line(fm - 26 * mm, sy - 5.2 * mm, fm + 26 * mm, sy - 5.2 * mm)
-    gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2, L_GOLD, 3.8, mitte=True)
+    gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2,
+             GOLD_H if FUSS_HELL else L_GOLD, 3.8, mitte=True)
 
 
 # ════════════════════════════════════════════════════════════════════════════
