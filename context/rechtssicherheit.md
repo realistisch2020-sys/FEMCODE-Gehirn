@@ -11,13 +11,13 @@ Abmahnungen führen. **Nicht nachträglich prüfen. Von der ersten Fassung an so
 
 **Immer und ausschliesslich:**
 
-> Petra Tanner ist Coachin und geistige Heilerin in der Schweiz.
+> Petra Tanner ist Coachin in der Schweiz.
 
 - **Niemals** Therapeutin, Psychotherapeutin, Psychologin, Ärztin,
   Heilpraktikerin, Naturheilpraktikerin
-- **Niemals** „Heilerin" ohne das Wort *geistig*. Erst *geistig* grenzt
-  eindeutig gegen die Heilkunde ab
-- „Coachin" ist frei und ungeschützt, das ist der sichere Teil
+- **Niemals** „Heilerin", auch nicht mit Zusatz. Petra will das nicht, und das
+  Wort *heil* zieht die Heilmittelwerbung an. Entschieden im Juli 2026
+- „Coachin" allein ist frei, ungeschützt und reicht vollständig aus
 - Selbstbeschreibungen im Fliesstext ebenso: „als Begleiterin", nicht „als Therapeutin"
 
 **Ausnahme:** Wenn die Leserin an Fachleute verwiesen wird, ist „sprich mit
@@ -118,7 +118,7 @@ In dieser Reihenfolge:
    psychotherapeutische oder heilkundliche Beratung, Diagnose oder Behandlung.
    Keine Haftung. Jede Leserin handelt auf eigene Verantwortung.
 2. **Zur Autorin** — keine Ärztin, Psychologin oder Psychotherapeutin,
-   arbeitet als Coachin und geistige Heilerin, übt keine Heilkunde im
+   arbeitet als Coachin, übt keine Heilkunde im
    medizinischen Sinn aus, ersetzt keine Behandlung
 3. **Notfall und professionelle Hilfe** mit allen drei Krisennummern
 4. **Fallbeispiele und Anonymisierung**

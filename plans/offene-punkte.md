@@ -107,7 +107,7 @@ Alles lässt sich bei KDP jederzeit nachträglich ändern, Titel und Untertitel 
 
 `context/rechtssicherheit.md` gilt rückwirkend. In Buch 3, 4 und 5 prüfen und korrigieren:
 
-- Steht irgendwo „Therapeutin" über Petra? Ersetzen durch „Coachin und geistige Heilerin"
+- Steht irgendwo „Therapeutin" über Petra? Ersetzen durch „Coachin"
 - Sagt ein Satz der Leserin, was sie hat oder nicht hat? Umformulieren auf
   „Es fühlt sich an wie … Ich nenne es …"
 - Selbsttests ohne Einordnung? Absatz „kein Test im medizinischen Sinn" davorsetzen
