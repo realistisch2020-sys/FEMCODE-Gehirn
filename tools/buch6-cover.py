@@ -19,6 +19,7 @@ MITTEXT = MODUS.startswith('mit-text')
 HELL    = MODUS in ('mit-text-hell', 'mit-text-hell-fuss')
 FUSS_HELL = MODUS == 'mit-text-hell-fuss'   # Signatur in Creme auf dunklem Fuss
 NUR_STOERER = MODUS == 'nur-stoerer'        # Bild bringt den Text mit, nur der Störer fehlt
+ZEHN = MODUS == 'zehn'                      # Goldadern gross, Versprechen lesbar
 STOERER_NEU = MODUS == 'stoerer-neu'        # Störer im Bild wird passgenau überdeckt
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
@@ -248,6 +249,26 @@ if STOERER_NEU:
     c.circle(bx, by, br - 2.6 * mm, fill=0, stroke=1)
     for i, t in enumerate(['MIT SELBSTTEST', 'UND DEN SÄTZEN', 'FÜR 9 KONKRETE', 'SITUATIONEN']):
         gesperrt(bx, by + 4.6 * mm - i * 4.1 * mm, t, 'SansB', 6.6, SCHRIFT, 0.35, mitte=True)
+
+
+if ZEHN:
+    # ── Eine kräftige Goldader, damit sie im Thumbnail als Form lesbar ist ──
+    c.saveState()
+    pf = c.beginPath(); pf.rect(FRONT_X, 0, TRIM_B + BLEED, H); c.clipPath(pf, stroke=0)
+    c.setStrokeAlpha(0.92)
+    ader(FRONT_X + TRIM_B * 0.90, H + 4 * mm, 158 * mm, math.radians(258),
+         breite=2.6, seed=11)
+    c.setStrokeAlpha(0.42)
+    ader(FRONT_X + TRIM_B * 0.99, H * 0.62, 40 * mm, math.radians(200),
+         breite=1.1, seed=17)
+    c.restoreState()
+
+    # ── Versprechen lesbar, unten rechts in der ruhigen dunklen Fläche ─────
+    zx = FRONT_X + TRIM_B - (SAFE + 5 * mm)
+    zy = BLEED + 26 * mm
+    for i, t in enumerate(['MIT DEN SÄTZEN', 'FÜR 9 SITUATIONEN']):
+        breite = sum(pdfmetrics.stringWidth(z, 'SansB', 11.0) + 2.0 for z in t) - 2.0
+        gesperrt(zx - breite, zy - i * 6.4 * mm, t, 'SansB', 11.0, ROSE, 2.0)
 
 
 # ════════════════════════════════════════════════════════════════════════════
