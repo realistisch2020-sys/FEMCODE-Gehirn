@@ -39,10 +39,10 @@ SAFE     = 6 * mm                # Sicherheitsabstand zur Schnittkante
 # ─── Farben ─────────────────────────────────────────────────────────────────
 NACHT  = colors.HexColor('#14100E')
 TIEFE  = colors.HexColor('#0C0908')
-CREME  = colors.HexColor('#F4EFE8')
-ROSE   = colors.HexColor('#E8B49B')
-GOLD   = colors.HexColor('#C9A227')
-GOLD_H = colors.HexColor('#E3C766')
+CREME  = colors.HexColor('#FAF6F0')
+ROSE   = colors.HexColor('#F0C3AC')
+GOLD   = colors.HexColor('#DCB84A')
+GOLD_H = colors.HexColor('#F0D888')
 GRAU   = colors.HexColor('#9A8F8A')
 
 # ─── Schriften ──────────────────────────────────────────────────────────────
