@@ -17,6 +17,23 @@ Mehr in `context/ueber-mich.md` und `context/business.md`.
 - `outputs/` fertige Ergebnisse (Texte, Posts, Mails, Bilder)
 - `reference/` Vorlagen und Beispiele
 
+## Regeln, die immer gelten
+
+Diese drei Punkte gelten ohne Nachfrage, bei jedem Buch, jedem Post, jeder Mail.
+Petra muss mich nie daran erinnern.
+
+1. **Rechtssicherheit von der ersten Fassung an.** `context/rechtssicherheit.md`
+   ist verbindlich, nicht beratend. Sie heisst Coachin, nie Therapeutin, nie
+   Heilerin. Keine Aussage darüber, was die Leserin hat oder nicht hat.
+   Krisennummern gehören ins vordere Drittel, nicht nur ins Kleingedruckte.
+2. **Kontakt ist immer beyondlimitsnow25@gmail.com.** Die private Adresse steht
+   nie in veröffentlichtem Material.
+3. **Nach jeder Änderung an einem Buch messen, nicht erinnern:**
+   `python3 tools/buch-pruefen.py <manuskript.docx> <taschenbuch.pdf>`
+   Und danach das fertige PDF anschauen, nicht nur den Text abfragen.
+   Ob etwas im Dokument steht, ist noch nicht geprüft, ob es an der
+   richtigen Stelle steht.
+
 ## Befehle
 
 ### /start
