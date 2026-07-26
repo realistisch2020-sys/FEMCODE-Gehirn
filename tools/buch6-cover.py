@@ -22,6 +22,7 @@ NUR_STOERER = MODUS == 'nur-stoerer'        # Bild bringt den Text mit, nur der 
 ZEHN = MODUS == 'zehn'                      # Goldadern gross, Versprechen lesbar
 AUGE = MODUS == 'auge'                      # Bild ohne Typografie, alles wird gesetzt
 TRAENE = MODUS == 'traene'                  # Petras Traenen-Cover, nur der Störer wird ersetzt
+FRAU2 = MODUS == 'frau2'                    # Ganzkoerper-Cover, nur der Störer wird ersetzt
 STOERER_NEU = MODUS == 'stoerer-neu'        # Störer im Bild wird passgenau überdeckt
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
@@ -294,6 +295,23 @@ if TRAENE:
     c.circle(ex, ey, er - 2.0 * mm, fill=0, stroke=1)
     for i, t in enumerate(['MIT SELBSTTEST', 'UND DEN SÄTZEN', 'FÜR 9 KONKRETE', 'SITUATIONEN']):
         gesperrt(ex, ey + 4.6 * mm - i * 3.7 * mm, t, 'SansB', 5.9, SCHRIFT, 0.3, mitte=True)
+
+
+if FRAU2:
+    # Deckt den vorhandenen Stoerer passgenau ab, Text korrigiert.
+    # Masse an cover-front-frau2.png gemessen: Mitte 118,4 mm von links,
+    # 61,3 mm von unten, Durchmesser rund 52 mm.
+    ex = FRONT_X + 118.4 * mm
+    ey = 61.3 * mm
+    er = 26.5 * mm
+    ROSE_P = colors.Color(213 / 255, 148 / 255, 137 / 255)
+    SCHRIFT = colors.HexColor('#3A1D14')
+    c.setFillColor(ROSE_P)
+    c.circle(ex, ey, er, fill=1, stroke=0)
+    c.setStrokeColor(SCHRIFT); c.setLineWidth(0.6)
+    c.circle(ex, ey, er - 2.4 * mm, fill=0, stroke=1)
+    for i, t in enumerate(['MIT SELBSTTEST', 'UND DEN SÄTZEN', 'FÜR 9 KONKRETE', 'SITUATIONEN']):
+        gesperrt(ex, ey + 6.6 * mm - i * 4.4 * mm, t, 'SansB', 7.6, SCHRIFT, 0.35, mitte=True)
 
 
 # ════════════════════════════════════════════════════════════════════════════
