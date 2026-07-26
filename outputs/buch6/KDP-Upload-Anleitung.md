@@ -134,16 +134,26 @@ Du darfst müde sein. Das ist der Anfang.
 
 ## Schritt 4: Kategorien
 
-Bis zu drei, in dieser Reihenfolge:
+**Achtung:** KDP hat einen eigenen Kategoriebaum, nicht den von Amazon.de.
+Ein Oberbegriff „Ratgeber" existiert dort nicht. Der richtige heisst **Selbsthilfe**.
 
-1. `Ratgeber > Lebensführung & Persönliche Entwicklung > Selbsthilfe`
-2. `Ratgeber > Gesundheit & Fitness > Stressbewältigung`
-3. `Sachbücher > Psychologie > Angewandte Psychologie`
+Vorher unbedingt den primären Marketplace auf **Amazon.de** stellen. Bei
+Amazon.com landet das Buch im falschen Shop, und die deutschen Suchbegriffe
+laufen ins Leere.
 
-Falls Amazon die Bezeichnungen leicht anders anzeigt, das Nächstliegende nehmen.
-Kategorien lassen sich später jederzeit ändern, ohne Neuveröffentlichung.
+Dann unter `Bücher > Selbsthilfe` genau drei Häkchen:
 
----
+```
+Stress & Stressbewältigung
+Emotionen
+Selbstachtung
+```
+
+- **Stress & Stressbewältigung** ist der direkte Treffer für Erschöpfung
+- **Emotionen** deckt Schuldgefühle und schlechtes Gewissen ab
+- **Selbstachtung** trifft Grenzen setzen und Nein sagen
+
+Nicht „Allgemein" nehmen. Grösste Kategorie, keine Chance auf eine Liste.
 
 ## Schritt 5: Die sieben Keywords
 

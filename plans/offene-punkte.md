@@ -52,6 +52,9 @@ Kurzfassung der Eckdaten:
 - Listenpreis 12,99 EUR, Tantieme ca. 5,17 EUR
 - Kostenlose KDP-ISBN, Expanded Distribution aus
 - Nach dem Upload 72 Stunden Indexierung abwarten
+- Primärer Marketplace muss Amazon.de sein, nicht Amazon.com
+- Kategorien: KDP hat einen eigenen Baum, kein „Ratgeber". Richtig ist
+  `Bücher > Selbsthilfe` mit Stress & Stressbewältigung, Emotionen, Selbstachtung
 
 ### Reihenfolge beim Start, so besprochen
 
