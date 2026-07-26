@@ -114,9 +114,15 @@ Erst wenn alle Fragen mit Ja beantwortet sind, geht das Buch raus:
 - [ ] Jedes Kapitel hat eine TikTok-Zeile, die für sich steht
 - [ ] Keine KI-Handschrift, kein ß, keine leeren Seiten
 - [ ] Impressum, Rechtliches, Krisennummern, Inhaltsverzeichnis vollständig
+- [ ] Die Checkliste aus `context/rechtssicherheit.md` ist abgehakt
 
 Kontakt in allen Büchern: **beyondlimitsnow25@gmail.com**
 Niemals die private Adresse.
+
+**Rechtssicherheit ist keine Nacharbeit.** `context/rechtssicherheit.md` gilt ab
+der ersten Fassung: Berufsbezeichnung, keine Diagnosen, Selbsttest einordnen,
+Krisennummern nach vorne, Fallfiguren zusammensetzen, Pflichtteil hinten.
+Petra muss nicht danach fragen.
 
 ---
 

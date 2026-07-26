@@ -100,8 +100,20 @@ Beleg für das Problem: 5'819 Aufrufe in 30 Tagen bei 3'379 Followern. Das ist w
 
 ## Rückwirkende Angleichung der älteren Bücher (nach Buch 6, ab August 2026)
 
-Bei Buch 6 haben wir zwei Dinge festgelegt, die den anderen Büchern noch fehlen.
-Beides lässt sich bei KDP jederzeit nachträglich ändern, Titel und Untertitel bleiben unangetastet.
+Bei Buch 6 haben wir drei Dinge festgelegt, die den anderen Büchern noch fehlen.
+Alles lässt sich bei KDP jederzeit nachträglich ändern, Titel und Untertitel bleiben unangetastet.
+
+### 0. Rechtssicherheit nachziehen (zuerst, weil es das Risiko ist)
+
+`context/rechtssicherheit.md` gilt rückwirkend. In Buch 3, 4 und 5 prüfen und korrigieren:
+
+- Steht irgendwo „Therapeutin" über Petra? Ersetzen durch „Coachin und geistige Heilerin"
+- Sagt ein Satz der Leserin, was sie hat oder nicht hat? Umformulieren auf
+  „Es fühlt sich an wie … Ich nenne es …"
+- Selbsttests ohne Einordnung? Absatz „kein Test im medizinischen Sinn" davorsetzen
+- Krisennummern nur im Rechtlichen? Zusätzlich ins vordere Drittel
+- Fehlt der Abschnitt „Zur Autorin" im Rechtlichen? Ergänzen
+
 
 ### 1. Impressum: ladungsfähige Anschrift ergänzen
 
