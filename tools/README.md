@@ -19,7 +19,7 @@ Die Word-Datei ist die Quelle, das PDF wird immer neu erzeugt und nie von Hand b
 
 Was das Skript automatisch macht:
 
-- A5, Ränder 1,9 cm seitlich und 2,2 cm oben/unten
+- 5,5 x 8,5 Zoll, Ränder 1,9 cm seitlich und 2,2 cm oben/unten
 - Seitenzahl mittig unten, kleines Herz unten rechts
 - Vorspann ohne Seitenzahlen, Hauptteil nummeriert
 - Inhaltsverzeichnis mit echten Seitenzahlen, in zwei Durchgängen berechnet
@@ -57,15 +57,15 @@ Manuskripts, muss diese Zahl angepasst werden, sonst stimmt die Rückenbreite ni
 
 ## Die Formeln, falls von Hand gerechnet wird
 
-Papier Creme, A5:
+Papier Creme, 5,5 x 8,5 Zoll (139,7 × 215,9 mm):
 
 ```
 Rückenbreite  = Seitenzahl × 0,0025 Zoll × 25,4
-Coverbreite   = 3,2 + 148 + Rücken + 148 + 3,2   (mm)
-Coverhöhe     = 3,2 + 210 + 3,2 = 216,4          (mm)
+Coverbreite   = 3,2 + 139,7 + Rücken + 139,7 + 3,2   (mm)
+Coverhöhe     = 3,2 + 215,9 + 3,2 = 222,3            (mm)
 ```
 
-Bei 126 Seiten: Rücken 8,00 mm, Cover 310,40 × 216,40 mm.
+Bei 126 Seiten: Rücken 8,00 mm, Cover 293,80 × 222,30 mm.
 
 Ab 79 Seiten erlaubt KDP Text auf dem Buchrücken.
 Sicherheitsabstand zu allen Schnittkanten: mindestens 6 mm.

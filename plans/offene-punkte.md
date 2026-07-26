@@ -48,7 +48,7 @@ alle Druckeinstellungen und der Preis stehen dort fertig zum Kopieren.
 
 Kurzfassung der Eckdaten:
 
-- 126 Seiten, A5, Papier Creme, kein Bleed, Cover Glanz
+- 126 Seiten, 5,5 x 8,5 Zoll, Papier Creme, kein Bleed, Cover Glanz
 - Listenpreis 12,99 EUR, Tantieme ca. 5,17 EUR
 - Kostenlose KDP-ISBN, Expanded Distribution aus
 - Nach dem Upload 72 Stunden Indexierung abwarten

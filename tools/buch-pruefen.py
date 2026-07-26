@@ -150,8 +150,8 @@ def pruefe_pdf(pfad):
     # Seitenmass muss zum bestellten Format passen
     r = doc[0].rect
     mass = '%.1f x %.1f mm' % (r.width / 72 * 25.4, r.height / 72 * 25.4)
-    melde('Seitenmass A5 (148,0 x 210,0 mm)',
-          [] if mass == '148.0 x 210.0 mm' else [mass])
+    melde('Seitenmass 5,5 x 8,5 Zoll (139,7 x 215,9 mm)',
+          [] if mass == '139.7 x 215.9 mm' else [mass])
 
     # Inhaltsverzeichnis gegen die echten Seitenzahlen
     zei = []
@@ -179,8 +179,8 @@ def pruefe_pdf(pfad):
           [] if vorne else ['nur hinten im Rechtlichen'])
 
     ruecken = len(doc) * 0.0025 * 25.4
-    print('      Umfang %d Seiten, Rücken %.2f mm, Cover %.2f x 216,40 mm'
-          % (len(doc), ruecken, 3.2 + 148 + ruecken + 148 + 3.2))
+    print('      Umfang %d Seiten, Rücken %.2f mm, Cover %.2f x 222,30 mm'
+          % (len(doc), ruecken, 3.2 + 139.7 + ruecken + 139.7 + 3.2))
 
 
 if __name__ == '__main__':

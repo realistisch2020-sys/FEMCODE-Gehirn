@@ -17,8 +17,8 @@ BILD = sys.argv[1] if len(sys.argv) > 1 and os.path.exists(sys.argv[1]) else Non
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
 SEITEN   = 126
-TRIM_B   = 148.0 * mm
-TRIM_H   = 210.0 * mm
+TRIM_B   = 139.7 * mm     # 5,5 Zoll
+TRIM_H   = 215.9 * mm     # 8,5 Zoll
 RUECKEN  = SEITEN * 0.0025 * 25.4 * mm     # Creme
 BLEED    = 3.2 * mm
 W = BLEED + TRIM_B + RUECKEN + TRIM_B + BLEED

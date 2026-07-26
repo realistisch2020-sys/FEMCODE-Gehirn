@@ -169,8 +169,8 @@ Niemals direkt im PDF arbeiten.
 
 ```
 Rückenbreite = Seitenzahl × 0,0025 Zoll × 25,4     (Papier Creme)
-Coverbreite  = 3,2 + 148 + Rücken + 148 + 3,2      (mm)
-Coverhöhe    = 216,4                                (mm)
+Coverbreite  = 3,2 + 139,7 + Rücken + 139,7 + 3,2  (mm)
+Coverhöhe    = 222,3                               (mm)
 ```
 
 - Vorderseite braucht mindestens 300 dpi, also etwa 1786 × 2556 Pixel

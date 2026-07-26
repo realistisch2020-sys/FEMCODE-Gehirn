@@ -45,9 +45,12 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import cm
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
-from reportlab.lib.pagesizes import A5
+from reportlab.lib.pagesizes import inch
 
-W, H = A5
+# 5,5 x 8,5 Zoll = 139,7 x 215,9 mm. Standardformat bei KDP und das Format
+# der ganzen Reihe. A5 steht bei KDP nicht zur Auswahl.
+SEITE = (5.5 * inch, 8.5 * inch)
+W, H = SEITE
 LM = RM = 1.9 * cm
 TM = BM = 2.2 * cm
 
@@ -81,7 +84,7 @@ def numbered_page(canvas, doc):
 class BookDoc(BaseDocTemplate):
     def __init__(self, filename):
         BaseDocTemplate.__init__(
-            self, filename, pagesize=A5,
+            self, filename, pagesize=SEITE,
             leftMargin=LM, rightMargin=RM, topMargin=TM, bottomMargin=BM,
             title="Ich bin so muede. Und niemand fragt mich warum",
             author="Petra Tanner")
@@ -132,7 +135,7 @@ refl_s   = ps('Refl', fontName='Times-Italic', fontSize=10.5, leading=15.5,
 imp_s    = ps('Imp',     fontName='Times-Roman', fontSize=8.5, leading=12.5, spaceAfter=2)
 imp_bold = ps('ImpBold', fontName='Times-Bold',  fontSize=8.5, leading=12.5, spaceAfter=6)
 toc_l0   = ps('TOC0', fontName='Times-Bold',  fontSize=10.5, leading=16, spaceAfter=2)
-toc_l1   = ps('TOC1', fontName='Times-Roman', fontSize=10,   leading=15, spaceAfter=1, leftIndent=14)
+toc_l1   = ps('TOC1', fontName='Times-Roman', fontSize=9.3, leading=14.5, spaceAfter=1, leftIndent=12)
 
 esc = lambda s: s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 

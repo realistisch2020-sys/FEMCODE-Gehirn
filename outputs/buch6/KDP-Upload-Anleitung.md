@@ -11,10 +11,10 @@ Nichts davon muss noch entschieden werden.
 |---|---|
 | Manuskript | `buch6-Taschenbuch.pdf`, 126 Seiten |
 | Cover | `buch6-Cover-FullWrap.pdf` **fehlt noch** |
-| Format | A5, 14,8 × 21 cm |
+| Format | 5,5 x 8,5 Zoll (13,97 × 21,59 cm) |
 | Papier | Creme |
 | Rückenbreite | 8,00 mm |
-| Covermass gesamt | 310,40 × 216,40 mm |
+| Covermass gesamt | 293,80 × 222,30 mm |
 
 Das Manuskript ist fertig geprüft: Schriften eingebettet, Seitenmass stimmt,
 keine leere Seite, alle Seitenzahlen im Inhaltsverzeichnis korrekt.
@@ -188,7 +188,7 @@ aber genau dieses Problem googeln.
 
 **Print Options**
 - Ink and Paper: `Black & white interior with cream paper`
-- Trim Size: `14.8 x 21 cm`
+- Format: `5,5 x 8,5 Zoll`
 - Bleed: `No Bleed`
 - Cover Finish: `Glossy`
 
