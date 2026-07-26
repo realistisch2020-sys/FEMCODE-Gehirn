@@ -56,11 +56,18 @@ flaeche = maske > 0.05
 print('bearbeitete Fläche: %.1f %% des Bildes' % (100 * maske.mean()))
 
 # ─── Altes Muster weg, Falten behalten ──────────────────────────────────────
-glatt = img.copy()
-for sc, ss in ((0.11, 25), (0.09, 21), (0.07, 17)):
-    glatt = cv2.bilateralFilter(glatt, 13, sc, ss)
+# Non-Local-Means ist genau dafür gebaut: es erkennt sich wiederholende
+# Strukturen und mittelt sie weg, während einmalige Strukturen wie Falten
+# stehen bleiben. Nur auf dem Gesichtsfeld gerechnet, das reicht und ist schnell.
+y0, y1 = int(h * 0.02), int(h * 0.47)
+x0, x1 = int(w * 0.46), w
+entrastert = img.copy()
+teil = cv2.fastNlMeansDenoisingColored(u8[y0:y1, x0:x1], None, 5, 5, 7, 21)
+entrastert[y0:y1, x0:x1] = teil.astype(np.float32) / 255.0
+
+# Falten im Bereich von etwa 6 bis 30 Pixeln wieder verstärken
 falten = cv2.GaussianBlur(img, (0, 0), 3.2) - cv2.GaussianBlur(img, (0, 0), 11.0)
-basis = glatt + falten * 1.05
+basis = entrastert + falten * 0.45
 
 # ─── 1. Poren, in drei Grössen überlagert ──────────────────────────────────
 # Bandbegrenztes Rauschen statt einzelner Punkte. Punkte werden im Druck zu
@@ -95,7 +102,7 @@ glanz = np.clip(glanzrausch, 0, None) * licht * 0.030
 # ─── Zusammensetzen ─────────────────────────────────────────────────────────
 # Struktur folgt dem Licht: im Schatten sieht man kaum Poren
 sichtbar = np.clip((lum - 0.06) * 1.7, 0, 1.3)
-struktur = (poren * 0.0130 + pigment * 0.0060 + sprenkel * 0.030) * sichtbar
+struktur = (poren * 0.0105 + pigment * 0.0055 + sprenkel * 0.026) * sichtbar
 
 lab_img = cv2.cvtColor(np.clip(basis, 0, 1), cv2.COLOR_BGR2LAB)
 lab_img[..., 0] = np.clip(lab_img[..., 0] + (struktur + glanz) * 255 * 0.9, 0, 255)
