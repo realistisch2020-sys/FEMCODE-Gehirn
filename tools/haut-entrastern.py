@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
-"""Ersetzt das künstliche Netzmuster auf KI-Haut durch echte Hautstruktur.
+"""Ersetzt künstliche KI-Haut durch aufgebaute, echte Hautstruktur.
 
     python3 tools/haut-entrastern.py <roh.png> <ergebnis.png> [staerke]
 
 Bildgeneratoren legen auf Haut ein gleichmässiges Gitter, das aus der Nähe wie
-Stoff oder Reptilhaut aussieht. Dämpfen allein reicht nicht, weil Muster und
-Falten die gleiche Amplitude haben. Deshalb wird die feine Schicht ganz
-entfernt und durch unregelmässiges Porenrauschen ersetzt.
+Stoff aussieht. Dämpfen reicht nicht, weil Muster und Falten gleich stark sind.
+Deshalb wird die feine Schicht entfernt und neu aufgebaut, aus vier Teilen:
 
-Erhalten bleiben: Gesichtsform, grosse Falten, Rötungen, Licht und Schatten.
-Geschützt über eine Kanten- und Helligkeitsmaske: Augen, Brauen, Lippen,
-Nasenlöcher, Haare und die Goldadern.
+1. Poren       runde Vertiefungen in zufälligen Grössen, wie in echter Haut
+2. Pigment     unregelmässige Farbflecken, ganz schwach
+3. Sprenkel    einzelne dunklere Punkte, Sommersprossen und kleine Male
+4. Glanz       leichter Schimmer dort, wo das Licht auf die Haut trifft
+
+Erhalten bleiben Gesichtsform, grosse Falten, Rötungen, Licht und Schatten.
+Geschützt: Augen, Brauen, Lippen, Nasenlöcher, Haare und die Goldadern.
 """
 import sys
 
@@ -23,6 +26,7 @@ STAERKE = float(sys.argv[3]) if len(sys.argv) > 3 else 1.0
 img = cv2.imread(SRC, cv2.IMREAD_COLOR).astype(np.float32) / 255.0
 h, w = img.shape[:2]
 u8 = (img * 255).astype(np.uint8)
+rng = np.random.default_rng(23)
 
 # ─── Hautmaske ──────────────────────────────────────────────────────────────
 hsv = cv2.cvtColor(u8, cv2.COLOR_BGR2HSV)
@@ -48,33 +52,56 @@ schutz = np.clip(kante * 1.9, 0, 1)
 schutz = np.maximum(schutz, cv2.GaussianBlur(np.clip((V - 195) / 40.0, 0, 1), (0, 0), 4))
 
 maske = haut * (1 - schutz) * STAERKE
+flaeche = maske > 0.05
 print('bearbeitete Fläche: %.1f %% des Bildes' % (100 * maske.mean()))
 
-# ─── Feine Schicht entfernen, mittlere Falten behalten ──────────────────────
-# kräftig kantenerhaltend glätten, das nimmt das Gitter vollständig weg
+# ─── Altes Muster weg, Falten behalten ──────────────────────────────────────
 glatt = img.copy()
 for sc, ss in ((0.11, 25), (0.09, 21), (0.07, 17)):
     glatt = cv2.bilateralFilter(glatt, 13, sc, ss)
-
-# Falten im Bereich von etwa 6 bis 30 Pixeln wieder dazugeben
 falten = cv2.GaussianBlur(img, (0, 0), 3.2) - cv2.GaussianBlur(img, (0, 0), 11.0)
-ergebnis = glatt + falten * 1.05
+basis = glatt + falten * 1.05
 
-# ─── Echte Hautstruktur erzeugen ───────────────────────────────────────────
-# unregelmässiges Rauschen in zwei Grössen: feine Poren und gröbere Unruhe
-rng = np.random.default_rng(11)
-r = rng.normal(0, 1, (h, w)).astype(np.float32)
-poren = cv2.GaussianBlur(r, (0, 0), 0.8) - cv2.GaussianBlur(r, (0, 0), 1.9)
-unruhe = cv2.GaussianBlur(r, (0, 0), 2.6) - cv2.GaussianBlur(r, (0, 0), 6.0)
+# ─── 1. Poren, in drei Grössen überlagert ──────────────────────────────────
+# Bandbegrenztes Rauschen statt einzelner Punkte. Punkte werden im Druck zu
+# schwarzem Pfeffer, überlagerte Bänder ergeben organische Struktur.
+def band(sig_klein, sig_gross, seed):
+    r = np.random.default_rng(seed).normal(0, 1, (h, w)).astype(np.float32)
+    b = cv2.GaussianBlur(r, (0, 0), sig_klein) - cv2.GaussianBlur(r, (0, 0), sig_gross)
+    return b / (b.std() + 1e-6)
+
+poren = (band(0.7, 1.5, 31) * 0.55
+         + band(1.2, 2.6, 37) * 0.30
+         + band(2.2, 4.8, 41) * 0.15)
+poren = np.clip(poren, -2.2, 2.2)
 poren /= (poren.std() + 1e-6)
-unruhe /= (unruhe.std() + 1e-6)
-struktur = poren * 0.0145 + unruhe * 0.0085
 
-# in den Lichtern kräftiger, in tiefen Schatten fast nichts, wie in echt
-lum = cv2.GaussianBlur(grau / 255.0, (0, 0), 8)
-struktur = struktur * np.clip((lum - 0.08) * 1.8, 0, 1.25)
+# ─── 2. Pigment: unregelmässige Farbflecken ─────────────────────────────────
+pigment = np.clip(band(9.0, 26.0, 53), -2.5, 2.5)
 
-ergebnis = ergebnis + struktur[..., None]
+# ─── 3. Sprenkel: ganz wenige, weiche dunklere Stellen ─────────────────────
+fleck = band(2.6, 7.0, 67)
+sprenkel = -np.clip(fleck - 1.35, 0, None)      # nur die stärksten Ausschläge
+sprenkel = cv2.GaussianBlur(sprenkel, (0, 0), 1.6)
+sprenkel /= (np.abs(sprenkel).max() + 1e-6)
+
+# ─── 4. Glanz dort, wo Licht auf die Haut trifft ────────────────────────────
+lum = cv2.GaussianBlur(grau / 255.0, (0, 0), 7)
+licht = np.clip((lum - 0.30) / 0.45, 0, 1) ** 1.6
+glanzrausch = cv2.GaussianBlur(rng.normal(0, 1, (h, w)).astype(np.float32), (0, 0), 3.5)
+glanzrausch /= (glanzrausch.std() + 1e-6)
+glanz = np.clip(glanzrausch, 0, None) * licht * 0.030
+
+# ─── Zusammensetzen ─────────────────────────────────────────────────────────
+# Struktur folgt dem Licht: im Schatten sieht man kaum Poren
+sichtbar = np.clip((lum - 0.06) * 1.7, 0, 1.3)
+struktur = (poren * 0.0130 + pigment * 0.0060 + sprenkel * 0.030) * sichtbar
+
+lab_img = cv2.cvtColor(np.clip(basis, 0, 1), cv2.COLOR_BGR2LAB)
+lab_img[..., 0] = np.clip(lab_img[..., 0] + (struktur + glanz) * 255 * 0.9, 0, 255)
+# Pigment leicht ins Rötliche, sonst wirken die Flecken grau
+lab_img[..., 1] = np.clip(lab_img[..., 1] + pigment * sichtbar * 1.7, 0, 255)
+ergebnis = cv2.cvtColor(lab_img, cv2.COLOR_LAB2BGR)
 
 m = maske[..., None]
 out = img * (1 - m) + np.clip(ergebnis, 0, 1) * m
