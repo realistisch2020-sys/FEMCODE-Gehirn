@@ -103,3 +103,25 @@ Was geprüft wird:
 Das Skript endet mit einem Fehlercode, wenn es etwas gefunden hat.
 Nicht jeder Treffer ist ein Fehler, Vergleichssätze werden mitgemeldet.
 Aber jeder Treffer muss angeschaut werden.
+
+---
+
+## haut-entrastern.py
+
+Nimmt das regelmässige Netzmuster aus KI-erzeugter Gesichtshaut.
+
+```bash
+python3 tools/haut-entrastern.py cover-front-roh.png cover-front-druckfertig.png 1.0
+```
+
+Bildgeneratoren legen auf Haut oft eine gleichmässige feine Struktur, die aus
+der Nähe wie Stoff oder Reptilhaut aussieht. Das ist nicht dasselbe wie zu
+glatte Haut, es ist zu viel gleichförmige Textur.
+
+Das Skript dämpft genau diese hochfrequente Schicht und lässt Falten, Poren
+und Formen stehen. Geschützt werden über eine Kanten- und Helligkeitsmaske:
+Augen, Brauen, Lippen, Nasenlöcher, Haare und die Goldadern. Zum Schluss
+kommt feines Filmkorn dazu, sonst wirkt die Fläche tot.
+
+Die letzte Zahl ist die Stärke, 0 bis 1. Bei 1 wird am meisten gedämpft.
+Die Rohdatei immer aufheben, das Skript arbeitet nicht rückwärts.
