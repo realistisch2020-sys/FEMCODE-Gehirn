@@ -22,7 +22,7 @@ keine leere Seite, alle Seitenzahlen im Inhaltsverzeichnis korrekt.
 Beide Dateien sind fertig und geprüft. Neu bauen lässt sich das Cover mit:
 
 ```bash
-python3 tools/buch6-cover.py outputs/buch6/cover-entwuerfe/cover-front-druckfertig.png
+python3 tools/buch6-cover.py outputs/buch6/cover-entwuerfe/cover-front-kintsugi-frau-hires.png
 ```
 
 ---
