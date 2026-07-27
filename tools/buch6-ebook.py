@@ -125,6 +125,13 @@ def baue():
         else:
             if not text:
                 continue
+            # Diese Unterschrift steht schon dreimal vorschriftsmaessig im
+            # Rechtlichen (Zur Autorin, Notfall, Rechtliche Hinweise). Am Ende
+            # der Einleitung sorgt sie nur dafuer, dass mancher eReader eine
+            # Seite anzeigt, auf der ausser der Mailadresse nichts mehr steht.
+            if aktuelle_seite is not None and aktuelle_seite.title == 'Einleitung' \
+               and text in ('Petra Tanner', KONTAKT):
+                continue
             html_buffer.append('<p>%s</p>' % laufweite_html(p))
 
     if aktuelle_seite is not None:
@@ -134,7 +141,9 @@ def baue():
     # ─── CSS ────────────────────────────────────────────────────────────────
     css = '''
     body { font-family: serif; line-height: 1.5; }
-    h1 { text-align:center; margin-top:2em; }
+    /* Gleicher Abstand von oben fuer SCHRITT-Trennseiten (h1) und
+       Kapitelseiten (h2), sonst beginnt eine Sorte sichtbar hoeher */
+    h1 { text-align:center; margin-top:1.5em; }
     h2 { text-align:center; margin-top:1.5em; }
     p { margin: 0 0 0.8em 0; text-indent: 0; }
     '''
