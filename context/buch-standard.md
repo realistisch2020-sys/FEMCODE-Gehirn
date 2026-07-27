@@ -138,13 +138,36 @@ Niemals direkt im PDF arbeiten.
 
 ### Satzregeln, die im Skript stecken
 
-- Kapitel beginnen 1,9 cm tiefer auf der Seite, nie an der Oberkante
+- **Kapitel und Trennseiten beginnen auf derselben Höhe wie jede normale
+  Fliesstext-Seite.** Keine zusätzliche Einrückung von oben mehr (Petras
+  Entscheidung, Ende Juli 2026 — widerruft die ältere Regel „1,9 cm tiefer").
+  Wichtig ist nicht die Höhe an sich, sondern dass **alle Seiten gleich
+  anfangen**, egal ob Kapitelstart oder Fortsetzung.
 - Jedes Kapitel und jeder Abschnitt braucht einen eigenen Seitenumbruch
 - Fette Zwischentitel dürfen nie allein am Seitenfuss stehen
 - Reflexionsblöcke werden nie über den Seitenrand gerissen
 - Zusammenhängende kurze Zeilen bleiben zusammen
 - Schrift 11,5 Punkt bei 19,5 Zeilenabstand. Grosszügiger als üblich, weil die
   Zielgruppe abends müde liest.
+- Seitenzahl und Fuss-Herz mindestens 1,4 cm von der Schnittkante, nie
+  näher als 0,9 cm — sonst zu nah am Beschnitt
+
+### Leerzeilen erzeugen nie einen eigenen Spacer
+
+Grösster Layout-Fehler bei Buch 6: jede Leerzeile aus Word wurde als eigener,
+fest bemessener Spacer gerendert. Landete ein solcher Spacer durch Zufall
+der Seiten-Paginierung ganz oben auf einer neuen Seite, blieb er dort
+sichtbar — und Word speichert bei Leerzeilen oft völlig zufällige, teils
+massiv überzogene Abstandswerte (schon einmal 3,5 cm bei einer einzigen
+leeren Zeile). Das erzeugte ungleiche Seitenanfänge im ganzen Buch, nicht
+nur bei Kapiteln.
+
+Richtig gelöst: der Leerzeilen-Abstand wird gesammelt und dem nächsten
+echten Absatz als `spaceBefore` mitgegeben, nie als eigener `Spacer`.
+ReportLab verwirft `spaceBefore` automatisch, wenn ein Absatz ganz oben in
+einem neuen Rahmen landet (`Frame._add`, `self._atTop`) — ein `Spacer`-Objekt
+zeigt dagegen immer seine volle Höhe, egal wo er hinrutscht. Diese Regel gilt
+für jedes künftige Buchskript, nicht nur für Buch 6.
 
 ### Typografie, immer prüfen
 
@@ -180,10 +203,40 @@ Coverhöhe    = 222,3                               (mm)
 - Kontrast messen, nicht schätzen. Titelschrift auf dunklem Grund sollte über
   10 zu 1 liegen. Alles unter 6 zu 1 bricht im Druck und im Thumbnail weg.
 - Thumbnail-Test: auf 160 Pixel Breite verkleinern. Was dann noch lesbar ist, zählt.
-- Bei dunklen Covern **Glanz statt Matt** wählen, sonst Scheuerstellen an den Kanten
+- **Matt**, nicht Glanz — Serienkonsistenz mit Petras anderen Büchern
+- **Text im Störer-Kreis per Pixel messen, nicht nur anschauen:** Schrift so
+  gross wählen, dass sie sicher innerhalb des inneren Rings bleibt, mit
+  numpy/PIL nachmessen statt nur im Vorschaubild zu schätzen
+- **Jede Textzeile nahe einer Kante per Pixel-Abstand zur Bildunterkante
+  nachmessen**, nicht nur im Vorschaubild beurteilen. Ziel: mindestens 9,2 mm
+  vom rohen Bildrand (= 6 mm Sicherheitsabstand + 3,2 mm Beschnitt)
+- Bei KI-generierten oder hochskalierten Fotos: Auflösung direkt in Pixel
+  nachrechnen (Ziel-mm × dpi / 25,4), nicht dem Tool-Export vertrauen
 
 ### Markenzeichen der Reihe
 
 Auf jedem Cover unten mittig, zweizeilig und gesperrt:
 PETRA TANNER, darunter SAFE TO THRIVE, dazwischen ein feiner goldener Trenner.
 Gold bleibt die Akzentfarbe. Der Konzeptbegriff steht in goldener Serifenschrift.
+
+### eBook (Kindle), zusätzlich zum Taschenbuch
+
+- Wird aus derselben massgeblichen `.docx` gebaut wie das Taschenbuch, nie
+  aus einer separaten `.md`-Datei — sonst laufen die beiden Fassungen auseinander
+- Kindle-Text fliesst: kein Seitenzahlen-Inhaltsverzeichnis, sondern die
+  anklickbare eReader-Navigation
+- Cover nur Vorderseite, kein Rücken/keine Rückseite, Zielverhältnis 1,6 zu 1
+- CSS-Abstand von Kapitel- und Trennseiten-Überschriften (h1/h2) muss
+  identisch sein, sonst derselbe Fehler wie beim Taschenbuch, nur in CSS
+- Schluss-Signaturen mit Kontaktadresse nicht am Ende jedes Kapitels
+  wiederholen — auf manchen eReadern landet sonst eine Seite, auf der nur
+  noch die Mailadresse steht. Die Adresse gehört ausschliesslich in die
+  vorgeschriebenen Rechtlich-Abschnitte (Zur Autorin, Notfall, Rechtliche Hinweise)
+- **KDP-Kategoriebaum ist beim Kindle-eBook ein anderer als beim Taschenbuch.**
+  „Selbsthilfe" (Print) heisst bei Kindle **„Lebensführung"**. Vor der Auswahl
+  immer die tatsächliche Dropdown-Liste ansehen, nicht die Print-Kategorie annehmen
+- DRM: nicht anwenden (schränkt ehrliche Käuferinnen ein, schützt kaum vor Kopien)
+- KDP Select: für ein neues Buch ohne Bewertungen empfehlenswert (Kindle-Unlimited-
+  Reichweite), kostet 90 Tage Exklusivität nur für das eBook, das Taschenbuch bleibt frei
+- Preis meist 30–40 % unter dem Taschenbuchpreis, zwischen 2,99 und 9,99 EUR
+  bleiben für 70 % Tantieme statt 35 %
