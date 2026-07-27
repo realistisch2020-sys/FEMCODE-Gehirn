@@ -2,6 +2,15 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## Erinnerung: Metricool einrichten (ca. 3. August 2026)
+
+Petra will Metricool (automatisches Posten TikTok + Instagram) erst einrichten,
+nachdem sie gesehen hat, wie die ersten Bilder/Karussells aus dem
+Kupka-System (`context/tiktok-karussell-system.md`) aussehen. Automatische
+Erinnerung nach 1 Woche ist technisch fehlgeschlagen (Berechtigungsfehler
+beim send_later-Tool) — bei nächster Gelegenheit erneut versuchen oder
+Petra beim nächsten Gespräch aktiv daran erinnern.
+
 ## Buch 6 (Ich bin so müde. Und niemand fragt mich warum): kurz vor dem Upload
 
 **Stand 26. Juli 2026.** Manuskript und Cover sind fertig. Bereit für den Upload.
