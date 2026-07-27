@@ -255,22 +255,19 @@ for p in docx.paragraphs:
     centered = p.alignment is not None and 'CENTER' in str(p.alignment)
 
     if style == 'Heading 1':
-        # Kapitel-/Trennseiten bekommen immer denselben festen Abstand von
-        # oben, egal wie viel Leerraum davor im Word-Dokument stand
+        # Kapitel-/Trennseiten beginnen jetzt auf der gleichen Hoehe wie jede
+        # gewoehnliche Fliesstext-Seite, kein zusaetzlicher Abstand von oben
         pending_space = 0.0
         if centered:
-            story.append(Spacer(1, 1.9 * cm))
             story.append(Paragraph(t, part_t)); after_part = True
         else:
             if text == 'Einleitung' and not numbered:
                 story.insert(len(story), NextPageTemplate('Numbered'))
                 numbered = True
-            story.append(Spacer(1, 1.9 * cm))
             story.append(Paragraph(t, sect_t)); after_part = False
         continue
     if style == 'Heading 2':
         pending_space = 0.0
-        story.append(Spacer(1, 1.9 * cm))
         story.append(Paragraph(t, chap_t)); after_part = False
         continue
     if is_shaded(p):
