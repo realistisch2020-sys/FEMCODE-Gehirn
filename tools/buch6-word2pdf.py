@@ -72,11 +72,13 @@ def draw_heart(canvas, x, y, s, farbe):
 
 
 def numbered_page(canvas, doc):
+    # 1,4 cm von der Schnittkante, statt der vorherigen 0,9 cm: sonst zu nah
+    # am Rand und ein Fehlschnitt beim Druck faellt sofort auf
     canvas.saveState()
     canvas.setFont('Times-Roman', 9)
     canvas.setFillColor(colors.HexColor('#555555'))
-    canvas.drawCentredString(W / 2, 0.9 * cm, str(doc.page))
-    draw_heart(canvas, W - RM - 0.10 * cm, 0.87 * cm, 0.105 * cm,
+    canvas.drawCentredString(W / 2, 1.4 * cm, str(doc.page))
+    draw_heart(canvas, W - RM - 0.10 * cm, 1.37 * cm, 0.105 * cm,
                colors.HexColor('#9a8f8a'))
     canvas.restoreState()
 
@@ -121,7 +123,7 @@ ital     = ps('Ital',  fontName='Times-Italic',fontSize=11.5, leading=19.5, alig
 tp_title = ps('TpTitle', fontName='Times-Roman', fontSize=20, leading=26, alignment=TA_CENTER, spaceAfter=4)
 tp_sub   = ps('TpSub',   fontName='Times-Italic',fontSize=11, leading=17, alignment=TA_CENTER, spaceAfter=20)
 tp_auth  = ps('TpAuth',  fontName='Times-Roman', fontSize=11, leading=16, alignment=TA_CENTER, spaceAfter=4)
-part_t   = ps('PartTitle', fontName='Times-Bold',   fontSize=14, leading=20, alignment=TA_CENTER, spaceBefore=12, spaceAfter=4)
+part_t   = ps('PartTitle', fontName='Times-Bold',   fontSize=14, leading=20, alignment=TA_CENTER, spaceBefore=6, spaceAfter=4)
 part_s   = ps('PartSub',   fontName='Times-Italic', fontSize=10, leading=14, alignment=TA_CENTER, spaceAfter=20)
 part_ch  = ps('PartCh',    fontName='Times-Roman',  fontSize=11, leading=19, alignment=TA_CENTER, spaceAfter=3)
 chap_t   = ps('ChapterTitle', fontName='Times-Bold', fontSize=14, leading=20, spaceBefore=6, spaceAfter=8, keepWithNext=1)
@@ -183,6 +185,7 @@ story = [NextPageTemplate('Plain')]
 seen_toc = False
 after_part = False
 numbered = False
+frisch_umgebrochen = False
 
 for p in docx.paragraphs:
     raw = p.text
@@ -196,10 +199,18 @@ for p in docx.paragraphs:
         while story and isinstance(story[-1], Spacer):
             story.pop()
         story.append(PageBreak())
+        frisch_umgebrochen = True
         if not text:
             continue
 
     if not text:
+        # Leere Absaetze direkt nach einem Umbruch tragen oft zufaellige,
+        # ueberzogene Word-Abstaende (bis mehrere Zentimeter) und wuerden die
+        # folgende Ueberschrift auf jeder Seite unterschiedlich weit nach unten
+        # schieben. Der feste Abstand kommt ohnehin von der Ueberschrift selbst,
+        # deshalb werden sie hier stillschweigend uebersprungen.
+        if frisch_umgebrochen:
+            continue
         if has_border(p):
             story.append(HRFlowable(width='100%', thickness=0.5,
                                     color=colors.HexColor('#aaaaaa'),
@@ -219,6 +230,8 @@ for p in docx.paragraphs:
             story.append(toc)
         continue
 
+    frisch_umgebrochen = False
+
     t = esc(text).replace('\n', '<br/>')
     r0 = p.runs[0] if p.runs else None
     bold = bool(r0 and r0.bold)
@@ -227,6 +240,9 @@ for p in docx.paragraphs:
 
     if style == 'Heading 1':
         if centered:
+            # Gleicher Abstand von oben wie bei jeder anderen Kapitel-/
+            # Trennseite, sonst beginnt der Text sichtbar hoeher auf der Seite
+            story.append(Spacer(1, 1.9 * cm))
             story.append(Paragraph(t, part_t)); after_part = True
         else:
             if text == 'Einleitung' and not numbered:
