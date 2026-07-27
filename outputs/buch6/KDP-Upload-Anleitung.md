@@ -9,12 +9,12 @@ Nichts davon muss noch entschieden werden.
 
 | | |
 |---|---|
-| Manuskript | `buch6-Taschenbuch.pdf`, 126 Seiten |
-| Cover | `buch6-Cover-FullWrap.pdf`, 293,80 × 222,30 mm |
+| Manuskript | `buch6-Taschenbuch.pdf`, 115 Seiten |
+| Cover | `buch6-Cover-FullWrap.pdf`, 293,10 × 222,30 mm |
 | Format | 5,5 x 8,5 Zoll (13,97 × 21,59 cm) |
 | Papier | Creme |
-| Rückenbreite | 8,00 mm |
-| Covermass gesamt | 293,80 × 222,30 mm |
+| Rückenbreite | 7,30 mm |
+| Covermass gesamt | 293,10 × 222,30 mm |
 
 Das Manuskript ist fertig geprüft: Schriften eingebettet, Seitenmass stimmt,
 keine leere Seite, alle Seitenzahlen im Inhaltsverzeichnis korrekt.

@@ -26,7 +26,7 @@ FRAU2 = MODUS == 'frau2'                    # Ganzkoerper-Cover, nur der Störer
 STOERER_NEU = MODUS == 'stoerer-neu'        # Störer im Bild wird passgenau überdeckt
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
-SEITEN   = 126
+SEITEN   = 115
 TRIM_B   = 139.7 * mm     # 5,5 Zoll
 TRIM_H   = 215.9 * mm     # 8,5 Zoll
 RUECKEN  = SEITEN * 0.0025 * 25.4 * mm     # Creme

@@ -8,7 +8,7 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ### Was fertig ist
 
-- 126 Seiten, 19 Kapitel, 5 Schritte
+- 115 Seiten, 19 Kapitel, 5 Schritte
 - Alleinstellungsmerkmal drin: Selbsttest vorne, Notfall-Seiten vorne, Satz-Sammlung hinten
 - Claudia zieht sich als roter Faden durch fünf Stellen
 - 21 TikTok-Zeilen in grauen Kästen
@@ -22,7 +22,8 @@ Skripte: `tools/buch6-word2pdf.py` und `tools/buch6-cover.py`
 
 ### Cover: fertig (Stand Abend 26. Juli 2026, finale Entscheidung)
 
-`outputs/buch6/buch6-Cover-FullWrap.pdf`, 293,80 × 222,30 mm, Rücken 8,00 mm.
+`outputs/buch6/buch6-Cover-FullWrap.pdf`, 293,10 × 222,30 mm, Rücken 7,30 mm
+(115 Seiten, seit der Korrektur der Absatzabstände weniger als zuvor).
 
 Finales Motiv: Kintsugi-Riss mit Foto einer Frau, die sich erschöpft den Kopf
 hält (schwarzer Blazer). Quelle `cover-entwuerfe/cover-front-kintsugi-frau-hires.png`,
@@ -67,7 +68,7 @@ alle Druckeinstellungen und der Preis stehen dort fertig zum Kopieren.
 
 Kurzfassung der Eckdaten:
 
-- 126 Seiten, 5,5 x 8,5 Zoll, Papier Creme, kein Bleed, Cover Glanz
+- 115 Seiten, 5,5 x 8,5 Zoll, Papier Creme, kein Bleed, Cover Matt
 - Listenpreis 12,99 EUR, Tantieme ca. 5,17 EUR
 - Kostenlose KDP-ISBN, Expanded Distribution aus
 - Nach dem Upload 72 Stunden Indexierung abwarten

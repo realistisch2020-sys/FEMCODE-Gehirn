@@ -186,6 +186,22 @@ seen_toc = False
 after_part = False
 numbered = False
 frisch_umgebrochen = False
+# Leerzeilen zwischen zwei Absaetzen erzeugen keinen eigenen Spacer mehr.
+# Stattdessen wird ihr Abstand gesammelt und dem naechsten echten Absatz als
+# spaceBefore mitgegeben. ReportLab verwirft spaceBefore automatisch, wenn der
+# Absatz ganz oben auf einer neuen Seite landet (Frame._add, self._atTop) -
+# ein Spacer als eigenes Objekt wuerde dagegen immer seine volle Hoehe zeigen,
+# auch wenn er durch einen automatischen Seitenumbruch zufaellig an den
+# Seitenanfang rutscht. Genau das erzeugte die ungleichen Seitenanfaenge.
+pending_space = 0.0
+
+
+def mit_vorlauf(par, extra_pt):
+    """Haengt zusaetzlichen spaceBefore an einen schon gebauten Paragraph an."""
+    if extra_pt:
+        par.style = ParagraphStyle('vorlauf_%d' % id(par), parent=par.style,
+                                    spaceBefore=(par.style.spaceBefore or 0) + extra_pt)
+    return par
 
 for p in docx.paragraphs:
     raw = p.text
@@ -217,7 +233,7 @@ for p in docx.paragraphs:
                                     spaceBefore=4, spaceAfter=8))
         else:
             sa = p.paragraph_format.space_after
-            story.append(Spacer(1, (sa.pt / 0.5 if sa else 7) / 28.35 * cm))
+            pending_space += (sa.pt / 0.5 if sa else 7)
         continue
 
     # Von Word erzeugte Inhaltsverzeichnis-Zeilen ueberspringen
@@ -239,9 +255,10 @@ for p in docx.paragraphs:
     centered = p.alignment is not None and 'CENTER' in str(p.alignment)
 
     if style == 'Heading 1':
+        # Kapitel-/Trennseiten bekommen immer denselben festen Abstand von
+        # oben, egal wie viel Leerraum davor im Word-Dokument stand
+        pending_space = 0.0
         if centered:
-            # Gleicher Abstand von oben wie bei jeder anderen Kapitel-/
-            # Trennseite, sonst beginnt der Text sichtbar hoeher auf der Seite
             story.append(Spacer(1, 1.9 * cm))
             story.append(Paragraph(t, part_t)); after_part = True
         else:
@@ -252,12 +269,14 @@ for p in docx.paragraphs:
             story.append(Paragraph(t, sect_t)); after_part = False
         continue
     if style == 'Heading 2':
+        pending_space = 0.0
         story.append(Spacer(1, 1.9 * cm))
         story.append(Paragraph(t, chap_t)); after_part = False
         continue
     if is_shaded(p):
-        story.append(KeepTogether([Spacer(1, .2 * cm),
-                                   Paragraph(t, tiktok_s), Spacer(1, .2 * cm)]))
+        absatz = mit_vorlauf(Paragraph(t, tiktok_s), .2 * 28.3465 + pending_space)
+        pending_space = 0.0
+        story.append(KeepTogether([absatz, Spacer(1, .2 * cm)]))
         continue
     if italic and p.paragraph_format.left_indent and not centered:
         block = [Paragraph(t, refl_s)]
@@ -267,24 +286,34 @@ for p in docx.paragraphs:
         if story and isinstance(story[-1], Paragraph) \
            and story[-1].getPlainText().strip() == 'Reflexion':
             block.insert(0, story.pop())
-        block.insert(0, Spacer(1, .45 * cm))
+        block[0] = mit_vorlauf(block[0], .45 * 28.3465 + pending_space)
+        pending_space = 0.0
         story.append(KeepTogether(block))
         continue
     if size and size <= 9.5:
-        story.append(Paragraph(richtext(p), imp_bold if bold else imp_s));  continue
+        absatz = mit_vorlauf(Paragraph(richtext(p), imp_bold if bold else imp_s), pending_space)
+        pending_space = 0.0
+        story.append(absatz);  continue
     if size and size >= 20:
-        story.append(Paragraph(t, tp_title));  continue
+        absatz = mit_vorlauf(Paragraph(t, tp_title), pending_space)
+        pending_space = 0.0
+        story.append(absatz);  continue
     if centered:
         if italic and size and size <= 12.5:
-            story.append(Paragraph(t, part_s if after_part else tp_sub))
+            absatz = Paragraph(t, part_s if after_part else tp_sub)
         elif after_part:
-            story.append(Paragraph(t, part_ch))
+            absatz = Paragraph(t, part_ch)
         elif size and size <= 11.5 and not numbered:
-            story.append(Paragraph(t, tp_auth))
+            absatz = Paragraph(t, tp_auth)
         else:
-            story.append(Paragraph(t, body_c))
+            absatz = Paragraph(t, body_c)
+        story.append(mit_vorlauf(absatz, pending_space)); pending_space = 0.0
         continue
-    story.append(Paragraph(richtext(p), ital if italic else body))
+    absatz = Paragraph(richtext(p), ital if italic else body)
+    absatz._nach_leerzeile = pending_space > 0
+    absatz = mit_vorlauf(absatz, pending_space)
+    pending_space = 0.0
+    story.append(absatz)
 
 # Fette Zwischentitel duerfen nie allein am Seitenfuss stehen
 def titel_binden(st):
@@ -322,6 +351,10 @@ def bloecke_binden(st):
             raus.extend(puffer)
         puffer.clear()
     for f in st:
+        # Eine Leerzeile im Word trennt weiterhin zwei Gruppen, auch wenn sie
+        # seit dem Abstands-Umbau keinen eigenen Spacer mehr erzeugt
+        if getattr(f, '_nach_leerzeile', False):
+            leeren()
         if isinstance(f, Paragraph) and f.style.name in ('Body', 'Ital') \
            and len(puffer) < 4:
             puffer.append(f)
