@@ -11,6 +11,27 @@ Erinnerung nach 1 Woche ist technisch fehlgeschlagen (Berechtigungsfehler
 beim send_later-Tool) — bei nächster Gelegenheit erneut versuchen oder
 Petra beim nächsten Gespräch aktiv daran erinnern.
 
+## Carousel Slide 1-7 fuer Buch 6 in Canva fertigstellen (TikTok/Instagram)
+
+Erstes Carousel steht inhaltlich fest (siehe `context/tiktok-carousel-prozess.md`,
+8 Slides zum Thema "Das Funktions-Ich verstehen"). Zwei Bild-Favoriten fuer
+Slide 1 sind bereits als editierbare Canva-Designs erzeugt:
+- Favorit 2: https://www.canva.com/d/pkTQv2NsxbqYEts
+- Favorit 4: https://www.canva.com/d/c8Ki8E39cTDD9hV
+
+**Offen:** Headline-Text bei beiden einfuegen ("Du bist nicht faul. Du bist
+erschöpft von etwas, das niemand sieht."), Petra entscheidet sich fuer einen,
+dann Slides 2-7 nach demselben Muster bauen (Bildgenerierung via Canva +
+Textoverlay). Die Bildgenerator-Prompts fuer alle 8 Slides liegen im Chat-
+Verlauf vom 27. Juli 2026 bereit.
+
+**Blockiert aktuell an:** Das Canva-`edit-design`-Werkzeug (Text/Formen
+einfuegen) schlaegt wiederholt mit "MCP tool call requires approval" fehl,
+auch nach Freigabe durch Petra. `generate-design` und `create-design-from-
+candidate` funktionieren dagegen. Sobald das Editieren wieder geht: Petra hat
+ausdruecklich gesagt, ich soll die restlichen Slides selbststaendig fertig
+bauen, ohne nochmal nachzufragen.
+
 ## Buch 6 (Ich bin so müde. Und niemand fragt mich warum): kurz vor dem Upload
 
 **Stand 26. Juli 2026.** Manuskript und Cover sind fertig. Bereit für den Upload.
