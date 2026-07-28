@@ -106,6 +106,7 @@ body_s = ps('Body', fontName='Times-Roman', fontSize=11.5, leading=19.5,
 body_c_s = ps('BodyC', fontName='Times-Roman', fontSize=11.5, leading=19.5,
               alignment=TA_CENTER, spaceAfter=5)
 small_s = ps('Small', fontName='Times-Roman', fontSize=9, leading=13, spaceAfter=2)
+toc_s = ps('Toc', fontName='Times-Roman', fontSize=10, leading=13.5, spaceAfter=1)
 
 def esc(s):
     s = s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -149,6 +150,7 @@ def baue():
     story = [NextPageTemplate('Plain')]
     pending_space = 0.0
     numbered = False
+    in_toc = False
 
     for p in docx.paragraphs:
         text = p.text.strip()
@@ -175,10 +177,24 @@ def baue():
                 story.append(NextPageTemplate('Numbered'))
                 numbered = True
             pending_space = 0.0
+            in_toc = False
 
         if not text:
             sa = p.paragraph_format.space_after
             pending_space += (sa.pt / 0.5 if sa else 7)
+            continue
+
+        if text == 'Inhalt' and size and 15 <= size < 20:
+            in_toc = True
+            absatz = Paragraph(esc(text), heading_s)
+            pending_space = 0.0
+            story.append(absatz)
+            continue
+
+        if in_toc:
+            absatz = mit_vorlauf(Paragraph(esc(text), toc_s), pending_space)
+            pending_space = 0.0
+            story.append(absatz)
             continue
 
         if size and size >= 20:
