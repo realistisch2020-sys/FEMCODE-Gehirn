@@ -116,7 +116,7 @@ Erst wenn alle Fragen mit Ja beantwortet sind, geht das Buch raus:
 - [ ] Impressum, Rechtliches, Krisennummern, Inhaltsverzeichnis vollständig
 - [ ] Die Checkliste aus `context/rechtssicherheit.md` ist abgehakt
 
-Kontakt in allen Büchern: **beyondlimitsnow25@gmail.com**
+Kontakt in allen Büchern: **info.safetothrive@gmail.com**
 Niemals die private Adresse.
 
 **Rechtssicherheit ist keine Nacharbeit.** `context/rechtssicherheit.md` gilt ab

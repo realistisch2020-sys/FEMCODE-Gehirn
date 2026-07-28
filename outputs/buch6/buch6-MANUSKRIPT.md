@@ -66,7 +66,7 @@ Du musst nur anfangen.
 Bereit?
 
 Petra Tanner
-beyondlimitsnow25@gmail.com
+info.safetothrive@gmail.com
 
 ---
 
@@ -1078,7 +1078,7 @@ Tag für Tag.
 ---
 
 Petra Tanner
-beyondlimitsnow25@gmail.com
+info.safetothrive@gmail.com
 
 ---
 
@@ -1115,7 +1115,7 @@ Es gibt nur: weiter.
 
 Das Begleit-PDF mit fünf Übungen aus diesem Buch schicke ich dir kostenlos.
 
-**beyondlimitsnow25@gmail.com**
+**info.safetothrive@gmail.com**
 Betreff: Begleit-PDF
 
 Und falls du mir schreiben magst was dieses Buch ausgelöst hat, lese ich jede Nachricht.

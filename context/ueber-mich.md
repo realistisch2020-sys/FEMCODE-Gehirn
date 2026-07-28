@@ -7,7 +7,7 @@ Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich ve
 Name: Petra Tanner
 Ich schreibe Bücher — für Männer (ADHS, Sucht in Kalenderform) und für Frauen (Buch 3: Beziehungserschöpfung). Ich bin Therapeutin und Coachin, arbeite unter dem Namen Safe to Thrive in der Schweiz. Keine eigene Homepage (Stand 2026).
 Privater Kontakt: tanner.pe@bluewin.ch (nicht im Buch verwenden)
-Öffentlicher Buchkontakt: beyondlimitsnow25@gmail.com (im Buch + KDP)
+Öffentlicher Buchkontakt: info.safetothrive@gmail.com (im Buch + KDP)
 
 ## Mein Werdegang
 

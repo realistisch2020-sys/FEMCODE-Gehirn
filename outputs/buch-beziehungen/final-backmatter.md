@@ -32,7 +32,7 @@ Gemeinsam mit anderen Frauen, die ähnliche Erfahrungen machen. In einem geschü
 
 Du musst diesen Weg nicht alleine gehen.
 
-Bei Interesse melde dich direkt per E-Mail: **beyondlimitsnow25@gmail.com**
+Bei Interesse melde dich direkt per E-Mail: **info.safetothrive@gmail.com**
 
 ---
 
@@ -81,4 +81,4 @@ Alle Rechte vorbehalten. Das Werk einschliesslich aller seiner Teile ist urheber
 
 **Fallbeispiele:** Alle im Buch erwähnten Personen und Fallbeispiele sind anonymisiert oder als zusammengesetzte Composite-Fälle aus mehreren Situationen dargestellt. Sie dienen der Veranschaulichung und entsprechen keiner einzelnen realen Person. Ähnlichkeiten mit lebenden oder verstorbenen Personen sind rein zufällig und unbeabsichtigt.
 
-**Kontakt:** beyondlimitsnow25@gmail.com
+**Kontakt:** info.safetothrive@gmail.com

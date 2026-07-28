@@ -1359,7 +1359,7 @@ Sie begleitet Menschen, die sich in Beziehungen verlieren, die zu viel geben und
 
 Unter dem Namen Safe to Thrive arbeitet sie in der Schweiz.
 
-Kontakt: beyondlimitsnow25@gmail.com
+Kontakt: info.safetothrive@gmail.com
 
 
 # Wenn du mehr möchtest
@@ -1368,7 +1368,7 @@ Kontakt: beyondlimitsnow25@gmail.com
 
 Schreib mir eine Mail mit dem Betreff "Begleit-PDF" — und du bekommst kostenlos ein druckbares Arbeitsblatt mit den fünf Übungen aus diesem Buch.
 
-beyondlimitsnow25@gmail.com
+info.safetothrive@gmail.com
 
 Dieses Buch ist Teil einer Reihe.
 
@@ -1388,7 +1388,7 @@ Oder direkt: https://www.facebook.com/share/g/1HA553ppVZ/?mibextid=wwXIfr
 
 Wenn du Unterstützung möchtest auf dem Weg, den wir hier begonnen haben, melde dich gerne.
 
-beyondlimitsnow25@gmail.com
+info.safetothrive@gmail.com
 
 
 # Impressum
@@ -1402,4 +1402,4 @@ Die in diesem Buch beschriebenen Personen und Geschichten sind aus therapeutisch
 
 Dieses Buch ersetzt keine therapeutische Behandlung. Bei ernsthaften psychischen Beschwerden wende dich bitte an eine Fachperson.
 
-Kontakt: beyondlimitsnow25@gmail.com
+Kontakt: info.safetothrive@gmail.com

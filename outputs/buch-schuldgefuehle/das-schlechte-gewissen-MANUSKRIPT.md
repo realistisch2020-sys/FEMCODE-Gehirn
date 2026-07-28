@@ -820,7 +820,7 @@ Sie glaubt daran, dass Verstehen der Anfang von Veränderung ist. Und dass jede 
 
 „Das schlechte Gewissen" ist ihr zweites Buch.
 
-Kontakt: beyondlimitsnow25@gmail.com
+Kontakt: info.safetothrive@gmail.com
 
 ---
 
@@ -830,7 +830,7 @@ Manchmal braucht es mehr als ein Buch.
 
 Wenn du das Gefühl hast, dass du Begleitung möchtest, für einen Schritt, der schwerer ist als er von aussen aussieht, für ein Muster, das du nicht allein verändern kannst, für den Raum, in dem jemand wirklich zuhört und nicht bewertet, melde dich gerne direkt.
 
-beyondlimitsnow25@gmail.com
+info.safetothrive@gmail.com
 
 ---
 
@@ -840,6 +840,6 @@ beyondlimitsnow25@gmail.com
 Safe to Thrive, Schweiz
 Alle Rechte vorbehalten.
 
-Kontakt: beyondlimitsnow25@gmail.com
+Kontakt: info.safetothrive@gmail.com
 
 **Haftungsausschluss:** Dieses Buch dient der persönlichen Orientierung und Reflexion. Es ersetzt keine professionelle therapeutische oder medizinische Behandlung. Alle beschriebenen Personen und Situationen sind Composite-Darstellungen zum Schutz der Privatsphäre. Ähnlichkeiten mit lebenden oder verstorbenen Personen sind zufällig und nicht beabsichtigt.

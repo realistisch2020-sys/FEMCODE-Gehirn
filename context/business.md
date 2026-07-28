@@ -7,7 +7,7 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 Bücher (Selfpublishing via Amazon KDP, Schweiz):
 - Buch 1: ADHD-Kalender für Männer
 - Buch 2: Sucht-Kalender für Männer
-- Buch 3: "Wenn Beziehungen erschöpfen — Warum du gibst, bis nichts mehr von dir übrig ist — und wie du dich zurückholst". Zielgruppe Frauen 30–55, Thema Co-Abhängigkeit / Selbstverlust in Beziehungen. 15 Kapitel + Einführung + Abschlussbrief + Backmatter. ~21.100 Wörter. KDP eBook eingereicht am 17. Juli 2026, Status "Wird geprüft". Preis: $9.99 USD / 8.73 EUR, 70% Tantieme. DOCX mit Titelseite + Inhaltsverzeichnis. Kontakt im Buch: beyondlimitsnow25@gmail.com.
+- Buch 3: "Wenn Beziehungen erschöpfen — Warum du gibst, bis nichts mehr von dir übrig ist — und wie du dich zurückholst". Zielgruppe Frauen 30–55, Thema Co-Abhängigkeit / Selbstverlust in Beziehungen. 15 Kapitel + Einführung + Abschlussbrief + Backmatter. ~21.100 Wörter. KDP eBook eingereicht am 17. Juli 2026, Status "Wird geprüft". Preis: $9.99 USD / 8.73 EUR, 70% Tantieme. DOCX mit Titelseite + Inhaltsverzeichnis. Kontakt im Buch: info.safetothrive@gmail.com.
 
 ## Meine Zielgruppe
 

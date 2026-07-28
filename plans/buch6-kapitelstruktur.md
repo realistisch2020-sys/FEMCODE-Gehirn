@@ -104,7 +104,7 @@ Ziel: Sandra fühlt sich sofort gesehen. Sie liest weiter.
 
 Kurz. Direkt. Persönlich.
 Einladung: E-Mail schreiben, Begleit-PDF anfordern.
-Kontakt: beyondlimitsnow25@gmail.com
+Kontakt: info.safetothrive@gmail.com
 
 ---
 

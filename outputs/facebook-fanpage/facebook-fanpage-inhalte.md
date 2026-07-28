@@ -32,12 +32,12 @@ Warum Nein sagen sich falsch anfühlt.
 Und wie das aufhört.
 
 Meine Bücher erscheinen unter dem Namen Safe to Thrive.
-Coaching-Anfragen: beyondlimitsnow25@gmail.com
+Coaching-Anfragen: info.safetothrive@gmail.com
 
 ---
 
 ## Webseite / Kontakt
-beyondlimitsnow25@gmail.com
+info.safetothrive@gmail.com
 
 ---
 
@@ -73,7 +73,7 @@ Zu dem, was sehr früh fehlte — und was das bis heute macht.
 Jetzt auf Amazon. Link in der Bio.
 
 Und: Ich habe ein kostenloses Begleit-PDF für alle, die das Buch lesen.
-Einfach Mail an beyondlimitsnow25@gmail.com — Betreff: Begleit-PDF.
+Einfach Mail an info.safetothrive@gmail.com — Betreff: Begleit-PDF.
 
 ---
 
@@ -154,7 +154,7 @@ Danke.
 3. Kategorie: Autor/in
 4. Kurzbeschreibung einfügen (oben)
 5. "Über diese Seite" → lange Beschreibung einfügen
-6. Kontakt-E-Mail eintragen: beyondlimitsnow25@gmail.com
+6. Kontakt-E-Mail eintragen: info.safetothrive@gmail.com
 7. Cover-Bild hochladen
 8. Profilbild: Foto von Petra
 9. Ersten Post veröffentlichen (Launch-Tag)

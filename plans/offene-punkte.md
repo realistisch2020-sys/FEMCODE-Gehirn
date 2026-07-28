@@ -187,7 +187,7 @@ Wiesentalstrasse 68
 Selbstverlag
 Unabhängig veröffentlicht über Amazon Kindle Direct Publishing
 
-Kontakt: beyondlimitsnow25@gmail.com
+Kontakt: info.safetothrive@gmail.com
 ```
 
 Betrifft:

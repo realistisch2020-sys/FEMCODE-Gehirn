@@ -124,7 +124,7 @@ In dieser Reihenfolge:
 4. **Fallbeispiele und Anonymisierung**
 5. **Urheberrecht**
 6. **Markenrecht** — Safe to Thrive, Das Funktions-Ich
-7. **Kontakt** — beyondlimitsnow25@gmail.com
+7. **Kontakt** — info.safetothrive@gmail.com
 8. **Impressum** — Petra Tanner, Wiesentalstrasse 68, 9240 Uzwil, Schweiz,
    Selbstverlag über Amazon KDP
 
@@ -133,7 +133,7 @@ In dieser Reihenfolge:
 ## 8. Kontaktadresse
 
 Öffentlich in **jedem** Buch, Post, Video und Profil:
-**beyondlimitsnow25@gmail.com**
+**info.safetothrive@gmail.com**
 
 Die private Adresse tanner.pe@bluewin.ch steht **nie** in veröffentlichtem Material.
 
@@ -151,7 +151,7 @@ Pflicht bei Eigenverlag, daran führt kein Weg vorbei.
 - [ ] Kein Heilversprechen, keine Zeitangabe für ein Ergebnis
 - [ ] Fallfiguren zusammengesetzt, mindestens drei Details verändert
 - [ ] Pflichtteil vollständig, alle acht Punkte aus Abschnitt 7
-- [ ] Nur beyondlimitsnow25@gmail.com als Kontakt
+- [ ] Nur info.safetothrive@gmail.com als Kontakt
 
 ---
 

@@ -26,7 +26,7 @@ Petra muss mich nie daran erinnern.
    ist verbindlich, nicht beratend. Sie heisst Coachin, nie Therapeutin, nie
    Heilerin. Keine Aussage darüber, was die Leserin hat oder nicht hat.
    Krisennummern gehören ins vordere Drittel, nicht nur ins Kleingedruckte.
-2. **Kontakt ist immer beyondlimitsnow25@gmail.com.** Die private Adresse steht
+2. **Kontakt ist immer info.safetothrive@gmail.com.** Die private Adresse steht
    nie in veröffentlichtem Material.
 3. **Nach jeder Änderung an einem Buch messen, nicht erinnern:**
    `python3 tools/buch-pruefen.py <manuskript.docx> <taschenbuch.pdf>`

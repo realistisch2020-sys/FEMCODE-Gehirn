@@ -13,7 +13,7 @@ from ebooklib import epub
 
 QUELLE = 'outputs/buch6/buch6-MANUSKRIPT.docx'
 ZIEL = 'outputs/buch6/buch6-eBook.epub'
-KONTAKT = 'beyondlimitsnow25@gmail.com'
+KONTAKT = 'info.safetothrive@gmail.com'
 
 
 def laufweite_html(p):

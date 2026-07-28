@@ -197,7 +197,7 @@ Jedes neue Buch verweist am Ende auf die anderen Bücher der Reihe — im Abschn
 
 ## Kontakt im Buch (immer)
 
-- Öffentlich / im Buch: **beyondlimitsnow25@gmail.com**
+- Öffentlich / im Buch: **info.safetothrive@gmail.com**
 - Privat / NIEMALS im Buch: tanner.pe@bluewin.ch
 
 ---

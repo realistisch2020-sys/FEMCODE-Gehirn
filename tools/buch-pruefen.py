@@ -111,7 +111,7 @@ def pruefe_docx(pfad):
 
     for pflicht in ('Haftungsausschluss', 'Zur Autorin', 'Notfall und professionelle Hilfe',
                     'Fallbeispiele und Anonymisierung', 'Urheberrecht', 'Markenrecht',
-                    'beyondlimitsnow25@gmail.com', 'Wiesentalstrasse 68'):
+                    'info.safetothrive@gmail.com', 'Wiesentalstrasse 68'):
         melde('Pflichtteil: %s' % pflicht,
               [] if any(pflicht in z for z in ps) else ['fehlt im Text'])
 
