@@ -154,18 +154,33 @@ def baue():
     numbered = False
     in_toc = False
     pending_mini = None
+    letzter_war_merge = False
 
-    def anhaengen(flowable, gruppieren):
+    def anhaengen(flowable, gruppieren, quelltext=''):
         # gruppieren=True: Absatz darf nie mitten im Satz auf die naechste
         # Seite gerissen werden. Eine offene fette Zwischenzeile (z.B.
         # "Schritt 1: ...") wird mit diesem Absatz zusammen gehalten, damit
         # sie nie allein als letzte Zeile einer Seite steht.
-        nonlocal pending_mini
+        nonlocal pending_mini, letzter_war_merge
         if pending_mini is not None:
             story.append(KeepTogether([pending_mini, flowable]))
             pending_mini = None
+            letzter_war_merge = False
         elif gruppieren:
-            story.append(KeepTogether([flowable]))
+            # Kurze Pointe-Saetze (ein Satz, keine Ueberschrift) sollen nie
+            # allein am Anfang einer neuen Seite landen, sondern beim
+            # vorherigen Absatz bleiben, zu dem sie inhaltlich gehoeren.
+            # Hoechstens ein Absatz wird so angehaengt, sonst koennten sich
+            # viele kurze Saetze hintereinander (z.B. eine Aufzaehlung) zu
+            # einem einzigen, zu grossen Block verketten.
+            if (len(quelltext) <= 70 and not letzter_war_merge
+                    and story and isinstance(story[-1], KeepTogether)):
+                vorheriges = story.pop()
+                story.append(KeepTogether(list(vorheriges._content) + [flowable]))
+                letzter_war_merge = True
+            else:
+                story.append(KeepTogether([flowable]))
+                letzter_war_merge = False
         else:
             story.append(flowable)
 
@@ -240,7 +255,7 @@ def baue():
             pending_space = 0.0
             # Absatz bleibt als Ganzes auf einer Seite, wird nie mitten im
             # Satz auf die naechste Seite gerissen.
-            anhaengen(absatz, True)
+            anhaengen(absatz, True, text)
         elif ganz_fett and not centered:
             # Ganz fett gesetzte Kurzzeile mitten im Fliesstext (z.B. "Schritt
             # 1: ..."). Das ist eine Zwischenueberschrift ohne eigene
