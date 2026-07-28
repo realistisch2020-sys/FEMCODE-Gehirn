@@ -207,13 +207,15 @@ def baue():
         elif size and size <= 10:
             absatz = mit_vorlauf(Paragraph(richtext(p), small_s), pending_space)
             pending_space = 0.0
-            story.append(absatz)
+            # Absatz bleibt als Ganzes auf einer Seite, wird nie mitten im
+            # Satz auf die naechste Seite gerissen.
+            story.append(KeepTogether([absatz]))
             continue
         else:
             stil = body_c_s if centered else body_s
             absatz = mit_vorlauf(Paragraph(richtext(p), stil), pending_space)
             pending_space = 0.0
-            story.append(absatz)
+            story.append(KeepTogether([absatz]))
             continue
 
         story.append(absatz)
