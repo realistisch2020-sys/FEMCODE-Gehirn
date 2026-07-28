@@ -152,6 +152,11 @@ Pflicht bei Eigenverlag, daran führt kein Weg vorbei.
 - [ ] Fallfiguren zusammengesetzt, mindestens drei Details verändert
 - [ ] Pflichtteil vollständig, alle acht Punkte aus Abschnitt 7
 - [ ] Nur info.safetothrive@gmail.com als Kontakt
+- [ ] **Auch das Cover geprüft, nicht nur das Manuskript.** `buch-pruefen.py`
+      liest nur die Word-Datei und das Taschenbuch-PDF — Rückseiten- und
+      Spine-Text auf dem Cover werden separat entworfen und laufen leicht
+      auseinander (bei Buch 3 stand dort noch „Therapeutin" und die alte
+      private Mailadresse, obwohl das Manuskript längst korrigiert war)
 
 ---
 

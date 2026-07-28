@@ -240,3 +240,80 @@ Gold bleibt die Akzentfarbe. Der Konzeptbegriff steht in goldener Serifenschrift
   Reichweite), kostet 90 Tage Exklusivität nur für das eBook, das Taschenbuch bleibt frei
 - Preis meist 30–40 % unter dem Taschenbuchpreis, zwischen 2,99 und 9,99 EUR
   bleiben für 70 % Tantieme statt 35 %
+
+---
+
+## 9. Technische Regeln aus der Produktion von Buch 3 und Buch 4 (Juli 2026)
+
+Buch 3 und Buch 4 haben, anders als Buch 6, **keine Word-Formatvorlagen**
+(kein „Heading 1/2"), sondern nur direkte Formatierung. Dafür gibt es die
+generischen Skripte `tools/manuskript-word2pdf.py` (Taschenbuch) und
+`tools/manuskript-ebook.py` (eBook) — funktionieren für jedes Manuskript ohne
+Formatvorlagen, Zuordnung Titel/Überschrift/Fliesstext läuft über die
+Schriftgrösse. Immer zuerst prüfen, ob ein Manuskript Formatvorlagen hat
+(`buch6-word2pdf.py`) oder nicht (`manuskript-word2pdf.py`).
+
+### Fallen, die neu aufgetreten sind
+
+- **Verzehnfachte Schriftgrössen.** Manche Absätze tragen fehlerhaft ×10
+  Schriftgrössen (22pt wird als 220pt gespeichert) aus einer früheren
+  Bearbeitung. Führt zu absurd vielen Seiten (z.B. 179 statt 72), weil
+  Fliesstext bei angeblich 110pt nur 2–3 Wörter pro Zeile schafft. Immer
+  prüfen: Werte über 40pt durch 10 teilen, bevor sie zur Stilerkennung
+  verwendet werden.
+- **Inline-Seitenumbrüche.** Word kennt zwei verschiedene Umbruch-Mechanismen:
+  `paragraph_format.page_break_before` UND `<w:br w:type="page"/>` als
+  Inline-Run. Ein Skript, das nur auf Ersteres prüft, verpasst die
+  Übergänge Titelseite→Inhalt→Einleitung. Immer beide Varianten abfragen.
+- **☐-Symbol fehlt in Liberation Serif.** Für Checkbox-Selbsttests im PDF als
+  `[ ]` ersetzen, sonst verschwindet das Zeichen im Druck.
+- **Inhaltsverzeichnis muss kompakt gesetzt werden**, sonst passt die lange
+  Kapitelliste nicht auf eine Seite, und die letzten 1–3 Einträge (z.B.
+  „Impressum") landen isoliert und fast leer auf der nächsten Seite — wirkt,
+  als würde das Buch mit „Impressum" beginnen. Eigener enger ToC-Stil nötig.
+- **Absätze dürfen nie mitten im Satz auf die nächste Seite reissen.** Jeder
+  Fliesstext-Absatz wird als Ganzes zusammengehalten (KeepTogether), nicht
+  zeilenweise über die Seite verteilt.
+- **Fette Zwischenzeilen ohne eigene Schriftgrösse** (z.B. „Schritt 1: Die
+  Signale wahrnehmen.") dürfen nie als letzte Zeile einer Seite allein
+  stehen — werden mit dem folgenden Absatz zusammengehalten.
+- **Kurze Pointe-Sätze** (ein Satz, unter ca. 70 Zeichen, direkt nach einem
+  längeren Absatz) dürfen nicht allein am Anfang einer neuen Seite landen,
+  sondern bleiben beim vorherigen Absatz. Wichtig: höchstens einen Absatz
+  anhängen, sonst verketten sich mehrere kurze Sätze/Aufzählungspunkte
+  hintereinander zu einem einzigen, zu grossen Block und die Seitenzahl
+  explodiert (bei Buch 3 einmal 137 → 165 Seiten durch diesen Fehler).
+- **Literarische Sternchen (`*Text*`) aus einer Markdown-Quelle** landen sonst
+  als sichtbare Sternchen im PDF statt als Kursivschrift. Immer in echte
+  `italic`-Formatierung umwandeln, Sternchen entfernen.
+- **Gedankenstriche im Fliesstext**: Petras Entscheidung Ende Juli 2026,
+  gilt rückwirkend auch für ältere Bücher — Gedankenstriche (—) im Fliesstext
+  werden durch Kommas ersetzt (Bindestriche in Wörtern wie „People-Pleasing"
+  bleiben).
+- **„Literatur und Weiterführendes" ist kein Pflichtteil.** Nur die acht
+  Punkte aus `rechtssicherheit.md` Abschnitt 7 sind vorgeschrieben. Ein
+  Quellenverzeichnis ist Kür und darf auf Wunsch ersatzlos raus.
+- **Cross-Promotion nicht vergessen:** Abschnitt „Meine anderen Bücher" im
+  Backmatter (vor dem Pflichtteil) mit den anderen Safe-to-Thrive-Büchern —
+  gehört inzwischen zum Standard-Backmatter jedes neuen Buchs.
+
+### Cover braucht eigene Rechtsprüfung
+
+Das Cover ist ein **eigenes Dokument**, das `buch-pruefen.py` nicht mitprüft.
+Immer separat kontrollieren:
+
+- **Seitengrösse neu berechnen, sobald sich die Seitenzahl ändert.** KDP
+  verlangt exakt `2×5.5in + Rücken(Seitenzahl) + 2×0.125in Beschnitt` Breite
+  und `8.5in + 0.25in Beschnitt` Höhe. Nach jeder inhaltlichen Änderung am
+  Manuskript (die die Seitenzahl verschiebt) das Cover neu vermessen, nicht
+  nur den Buchblock.
+- **Rückseiten- und Spine-Text enthält denselben Rechtstext wie das
+  Manuskript** — „Therapeutin" statt „Coachin" und alte private
+  E-Mail-Adressen verstecken sich gern genau dort, weil das Cover separat
+  entworfen wurde und nicht automatisch mitkorrigiert wird, wenn der
+  Fliesstext bereinigt wird. Bei jeder Rechtssicherheits-Korrektur auch das
+  Cover mit ansehen, nicht nur die Manuskript-Datei.
+- **Datei klein halten:** beim Zusammensetzen von Cover-Bildpanels (z.B. beim
+  Verbreitern des Rückens) Bilder als JPEG (Qualität ~90, 300dpi) statt
+  verlustfrei einbetten — sonst werden PDFs schnell 40–50 MB gross und lassen
+  sich nicht mehr verschicken.

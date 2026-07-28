@@ -153,51 +153,37 @@ Beleg für das Problem: 5'819 Aufrufe in 30 Tagen bei 3'379 Followern. Das ist w
 
 ## Rückwirkende Angleichung der älteren Bücher (nach Buch 6, ab August 2026)
 
-Bei Buch 6 haben wir drei Dinge festgelegt, die den anderen Büchern noch fehlen.
-Alles lässt sich bei KDP jederzeit nachträglich ändern, Titel und Untertitel bleiben unangetastet.
+### Buch 3 und Buch 4: erledigt (Stand 28. Juli 2026)
 
-### 0. Rechtssicherheit nachziehen (zuerst, weil es das Risiko ist)
+Rechtssicherheit, Impressum-Adresse, Selbsttests, Cross-Promotion-Abschnitt
+„Meine andere Bücher" und Cover-Grösse sind für Buch 3 und Buch 4 durch.
+Im Detail:
 
-`context/rechtssicherheit.md` gilt rückwirkend. In Buch 3, 4 und 5 prüfen und korrigieren:
+- „Therapeutin" komplett raus (auch aus dem Buch-3-Cover, das war die letzte
+  Fundstelle), überall „Coachin"
+- Alte private E-Mail-Adresse überall ersetzt (auch auf dem Buch-3-Cover)
+- Kompletter Pflichtteil (8 Teile aus `rechtssicherheit.md` §7) inkl. Adresse
+  Wiesentalstrasse 68, 9240 Uzwil in beiden Büchern
+- Checkbox-Selbsttest mit Einordnung in beiden Büchern
+- Krisennummern vorne und hinten in beiden Büchern
+- Abschnitt „Meine anderen Bücher" (Cross-Promotion) in Buch 3 ergänzt —
+  bei Buch 4 und künftigen Büchern nachziehen
+- „Literatur und Weiterführendes" aus Buch 3 entfernt (kein Pflichtteil)
+- Cover-Grösse an aktuelle Seitenzahl angepasst: Buch 3 jetzt 148 Seiten,
+  Cover 11.583×8.750in — **falls Petra das Cover schon bei KDP hochgeladen
+  hatte, muss die neue Cover-PDF nochmal hochgeladen werden**
 
-- Steht irgendwo „Therapeutin" über Petra? Ersetzen durch „Coachin"
-- Sagt ein Satz der Leserin, was sie hat oder nicht hat? Umformulieren auf
-  „Es fühlt sich an wie … Ich nenne es …"
-- Selbsttests ohne Einordnung? Absatz „kein Test im medizinischen Sinn" davorsetzen
-- Krisennummern nur im Rechtlichen? Zusätzlich ins vordere Drittel
-- Fehlt der Abschnitt „Zur Autorin" im Rechtlichen? Ergänzen
+**Noch offen: Buch 5** (Niemand hat dich gefragt, wie es dir geht) — dieselbe
+Prüfung/Korrektur fehlt noch komplett (siehe eigener Abschnitt unten).
 
+### Technik-Lehren dieser Runde (schon in `context/buch-standard.md` §9 gespeichert)
 
-### 1. Impressum: ladungsfähige Anschrift ergänzen
-
-In Buch 3, 4 und 5 steht nur „Safe to Thrive, Schweiz" plus E-Mail. Keine Adresse.
-Die deutschen Landespressegesetze verlangen bei gedruckten Werken Name und Anschrift
-des Verlegers, bei Selfpublishing also Petra selbst.
-
-Neuer Block, wie in Buch 6:
-
-```
-© 2026 Petra Tanner
-Alle Rechte vorbehalten.
-
-Petra Tanner
-Wiesentalstrasse 68
-9240 Uzwil, Schweiz
-
-Selbstverlag
-Unabhängig veröffentlicht über Amazon Kindle Direct Publishing
-
-Kontakt: info.safetothrive@gmail.com
-```
-
-Betrifft:
-- `outputs/buch-beziehungen/` (Wenn Beziehungen erschöpfen)
-- `outputs/buch-schuldgefuehle/` (Das schlechte Gewissen)
-- `outputs/buch-niemand-gefragt/` (Niemand hat dich gefragt, wie es dir geht)
-
-Achtung: Das Impressum steht im Buchblock. Änderung heisst neues Manuskript-PDF
-hochladen. Seitenzahl prüfen, danach stimmt eventuell die Rückenbreite nicht mehr
-und das Cover muss neu gerechnet werden.
+Neue generische Skripte `tools/manuskript-word2pdf.py` und
+`tools/manuskript-ebook.py` für Manuskripte ohne Word-Formatvorlagen (Buch 3,
+4, vermutlich auch 5). Wichtigste Lehren: verzehnfachte Schriftgrössen
+normalisieren, Inline-Seitenumbrüche zusätzlich zu `page_break_before`
+prüfen, Inhaltsverzeichnis kompakt setzen, Absätze/Zwischentitel/Pointe-Sätze
+nie über eine Seite reissen lassen, Cover-Rechtstext separat prüfen.
 
 ### 2. Cover auf die Bildsprache von Buch 6 umstellen
 
@@ -216,28 +202,33 @@ Was von der alten Reihe erhalten bleiben muss:
 Reihenfolge: erst schauen, ob Buch 6 läuft. Wenn ja, die anderen nachziehen.
 Nicht umgekehrt, und nicht bevor Buch 6 draussen ist.
 
-## Buch 4 (Das schlechte Gewissen): Taschenbuch Cover neu einreichen
+## Buch 4 (Das schlechte Gewissen): bereit für KDP-Upload
 
-- Cover wurde von KDP abgelehnt: Spine-Text zu nah an Rändern + unter 79 Seiten (kein Spine-Text erlaubt)
-- ✅ Fix: Spine leer, SAFE=0.5", ReportLab PDF neu generiert
-- **Jetzt:** Neues Cover PDF bei KDP hochladen → `outputs/buch-schuldgefuehle/das-schlechte-gewissen-Cover-Print-FullWrap.pdf`
-- Nach Freigabe: Taschenbuch-Link prüfen, Instagram Post
+- Manuskript-PDF fertig: `outputs/buch-schuldgefuehle/das-schlechte-gewissen-Taschenbuch.pdf` (97 Seiten)
+- eBook fertig: `outputs/buch-schuldgefuehle/das-schlechte-gewissen-eBook.epub`
+- Rechtssicherheit komplett (siehe oben)
+- **Offen:** Cover wurde für eine andere Seitenzahl gebaut — vor dem Upload
+  Cover-Grösse gegen die aktuellen 97 Seiten prüfen (wie bei Buch 3 gemacht),
+  Abschnitt „Meine anderen Bücher" fehlt im Backmatter noch
 
-## Buch 3 (Wenn Beziehungen erschöpfen): Taschenbuch Upload ausstehend
+## Buch 3 (Wenn Beziehungen erschöpfen): bereit für KDP-Upload
 
-- Manuskript PDF: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.pdf` (123 Seiten)
-- Cover Full-Wrap PDF: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.pdf`
-- Spine: 83px (123 Seiten × 0.002252 × 300) — Spine-Text erlaubt (>79 Seiten)
-- Empfohlener Preis: $13.99
-- KDP Print: Neues Taschenbuch-Projekt anlegen
+- Manuskript-PDF fertig: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.pdf` (148 Seiten)
+- eBook fertig: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-eBook.epub`
+- Cover fertig, korrekte Grösse (11.583×8.750in): `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.pdf`
+- Rechtssicherheit komplett (siehe oben)
+- **Falls bei KDP schon ein älteres Taschenbuch-Projekt existiert:** neue
+  Manuskript-PDF UND neue Cover-PDF beide neu hochladen (Seitenzahl hat sich
+  mehrfach geändert)
 
-## Buch 5 (Niemand hat dich gefragt, wie es dir geht): Cover fertigstellen
+## Buch 5 (Niemand hat dich gefragt, wie es dir geht): Rechtssicherheit + Cover offen
 
-- Manuskript PDF: `outputs/buch-niemand-gefragt/niemand-hat-dich-gefragt-Taschenbuch.pdf` (61 Seiten)
+- Manuskript PDF: `outputs/buch-niemand-gefragt/niemand-hat-dich-gefragt-Taschenbuch.pdf` (61 Seiten, noch nicht auf den neuen Rechtssicherheit-Standard geprüft)
 - Vordercover PNG erstellt: `outputs/buch-niemand-gefragt/cover-niemand-FRONT.png` (Petrol & Gold, abstraktes Bild)
+- **Offen:** Komplette Rechtssicherheit-Prüfung wie bei Buch 3/4 (Therapeutin?,
+  Impressum-Adresse, Krisennummern, Checkbox-Selbsttest, Cross-Promotion-Abschnitt)
 - **Offen:** Manuskript überarbeiten — KI-typische Stellen raus (Kap. 11, 14 zu dünn, "Ich möchte dir sagen" zu oft)
 - **Offen:** Full-Wrap Cover (Rückseite + Spine) generieren → dann KDP Upload
-- Spine: 41px (61 Seiten) — KEIN Spine-Text (unter 79 Seiten)
 - Empfohlener Preis: $12.99
 
 ## Buch 1 (ADHD Planner): Cover-Anzeige prüfen
