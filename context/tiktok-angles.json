@@ -1,0 +1,49 @@
+{
+  "hinweis": "Pool an Content-Angles pro Buch. Status 'offen' -> 'erledigt' nach Verwendung, damit sich Themen nicht wiederholen. Jede Woche werden ~7 offene Angles ausgewaehlt (gemischt aus verschiedenen Buechern moeglich).",
+  "buecher": {
+    "buch6_muede": {
+      "titel": "Ich bin so müde. Und niemand fragt mich warum",
+      "angles": [
+        {"angle": "Das Funktions-Ich: von aussen laeuft alles, innen ist niemand mehr da", "status": "offen"},
+        {"angle": "Warum 'Ich bin nur müde' oft eine Untertreibung ist", "status": "offen"},
+        {"angle": "Der Moment im Auto, wo endlich niemand mehr etwas von dir will", "status": "offen"},
+        {"angle": "Erschöpfung, die kein Schlaf beheben kann", "status": "offen"},
+        {"angle": "Warum starke Frauen am seltensten gefragt werden, wie es ihnen geht", "status": "offen"},
+        {"angle": "Der Selbsttest: bist du müde oder ausgebrannt?", "status": "offen"},
+        {"angle": "Was passiert, wenn du einen Tag lang nicht funktionierst", "status": "offen"}
+      ]
+    },
+    "buch4_gewissen": {
+      "titel": "Das schlechte Gewissen",
+      "angles": [
+        {"angle": "Der Unterschied zwischen echter Schuld und dem antrainierten schlechten Gewissen", "status": "offen"},
+        {"angle": "Warum du dich entschuldigst, bevor du überhaupt etwas falsch gemacht hast", "status": "offen"},
+        {"angle": "Das schlechte Gewissen als Dauergast am Tisch, der nie eingeladen wurde", "status": "offen"},
+        {"angle": "Schuldgefühle als Mutter: die Version, über die niemand spricht", "status": "offen"},
+        {"angle": "Wenn die Familie das Gewissen als Werkzeug benutzt", "status": "offen"},
+        {"angle": "Nein sagen und trotzdem schlafen können", "status": "offen"},
+        {"angle": "Perfektion als Schutzstrategie vor Schuldgefühlen", "status": "offen"}
+      ]
+    },
+    "buch3_beziehungen": {
+      "titel": "Wenn Beziehungen erschöpfen",
+      "angles": [
+        {"angle": "Die Retterin: warum Helfen sich wie Liebe anfühlt, aber Erschöpfung ist", "status": "offen"},
+        {"angle": "People-Pleasing hat einen Ursprung, keinen Charakterfehler", "status": "offen"},
+        {"angle": "Was echte Fürsorge von Selbstaufgabe unterscheidet", "status": "offen"},
+        {"angle": "Grenzen setzen ohne sich zu rechtfertigen", "status": "offen"},
+        {"angle": "Das innere Kind in Beziehungen: wenn alte Muster mitreden", "status": "offen"},
+        {"angle": "Wenn der andere sich nie ändert: schwierige Persönlichkeiten erkennen", "status": "offen"},
+        {"angle": "Loslassen, wenn eine Beziehung nicht mitwachsen kann", "status": "offen"}
+      ]
+    },
+    "buch5_niemand_gefragt": {
+      "titel": "Niemand hat dich gefragt, wie es dir geht",
+      "angles": [
+        {"angle": "Warum 'Gut' die Standardantwort ist, auch wenn nichts gut ist", "status": "offen"},
+        {"angle": "Die Frage, die dir niemand stellt, weil du sie nie zulässt", "status": "offen"},
+        {"angle": "Wie man wieder lernt, ehrlich zu antworten", "status": "offen"}
+      ]
+    }
+  }
+}
