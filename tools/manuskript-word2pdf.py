@@ -107,6 +107,8 @@ body_c_s = ps('BodyC', fontName='Times-Roman', fontSize=11.5, leading=19.5,
               alignment=TA_CENTER, spaceAfter=5)
 small_s = ps('Small', fontName='Times-Roman', fontSize=9, leading=13, spaceAfter=2)
 toc_s = ps('Toc', fontName='Times-Roman', fontSize=10, leading=13.5, spaceAfter=1)
+mini_head_s = ps('MiniHead', fontName='Times-Bold', fontSize=11.5, leading=19.5,
+                  alignment=TA_JUSTIFY, spaceAfter=5, keepWithNext=1)
 
 def esc(s):
     s = s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -151,17 +153,40 @@ def baue():
     pending_space = 0.0
     numbered = False
     in_toc = False
+    pending_mini = None
+
+    def anhaengen(flowable, gruppieren):
+        # gruppieren=True: Absatz darf nie mitten im Satz auf die naechste
+        # Seite gerissen werden. Eine offene fette Zwischenzeile (z.B.
+        # "Schritt 1: ...") wird mit diesem Absatz zusammen gehalten, damit
+        # sie nie allein als letzte Zeile einer Seite steht.
+        nonlocal pending_mini
+        if pending_mini is not None:
+            story.append(KeepTogether([pending_mini, flowable]))
+            pending_mini = None
+        elif gruppieren:
+            story.append(KeepTogether([flowable]))
+        else:
+            story.append(flowable)
+
+    def mini_offen(flowable):
+        nonlocal pending_mini
+        if pending_mini is not None:
+            # zwei fette Kurzzeilen direkt hintereinander: die erste einzeln
+            # ausgeben, damit nichts verloren geht.
+            story.append(pending_mini)
+        pending_mini = flowable
 
     for p in docx.paragraphs:
         text = p.text.strip()
         centered = p.alignment is not None and 'CENTER' in str(p.alignment)
         size = None
-        bold = False
         for r in p.runs:
             if r.text.strip():
                 size = r.font.size.pt if r.font.size else None
-                bold = bool(r.bold)
                 break
+        textruns = [r for r in p.runs if r.text.strip()]
+        ganz_fett = bool(textruns) and all(r.bold for r in textruns)
         # Manche Absaetze tragen fehlerhaft verzehnfachte Schriftgroessen
         # (z.B. 220pt statt 22pt) aus einer frueheren Bearbeitung. Fuer die
         # Stil-Erkennung auf plausible Buchgroessen zurueckrechnen.
@@ -172,6 +197,9 @@ def baue():
         if umbruch:
             while story and isinstance(story[-1], Spacer):
                 story.pop()
+            if pending_mini is not None:
+                story.append(pending_mini)
+                pending_mini = None
             story.append(PageBreak())
             if not numbered:
                 story.append(NextPageTemplate('Numbered'))
@@ -188,37 +216,48 @@ def baue():
             in_toc = True
             absatz = Paragraph(esc(text), heading_s)
             pending_space = 0.0
-            story.append(absatz)
+            anhaengen(absatz, False)
             continue
 
         if in_toc:
             absatz = mit_vorlauf(Paragraph(esc(text), toc_s), pending_space)
             pending_space = 0.0
-            story.append(absatz)
+            anhaengen(absatz, False)
             continue
 
         if size and size >= 20:
             absatz = Paragraph(esc(text), title_s)
+            anhaengen(absatz, False)
         elif size and 15 <= size < 20:
             absatz = Paragraph(esc(text), heading_s)
             pending_space = 0.0
+            anhaengen(absatz, False)
         elif centered and size and 12 <= size < 15:
             absatz = Paragraph(esc(text), sub_s)
+            anhaengen(absatz, False)
         elif size and size <= 10:
             absatz = mit_vorlauf(Paragraph(richtext(p), small_s), pending_space)
             pending_space = 0.0
             # Absatz bleibt als Ganzes auf einer Seite, wird nie mitten im
             # Satz auf die naechste Seite gerissen.
-            story.append(KeepTogether([absatz]))
-            continue
+            anhaengen(absatz, True)
+        elif ganz_fett and not centered:
+            # Ganz fett gesetzte Kurzzeile mitten im Fliesstext (z.B. "Schritt
+            # 1: ..."). Das ist eine Zwischenueberschrift ohne eigene
+            # Schriftgroesse. Darf nie als letzte Zeile einer Seite allein
+            # stehen bleiben, deshalb wird sie mit dem naechsten Absatz
+            # zusammen gehalten statt sofort ausgegeben.
+            absatz = mit_vorlauf(Paragraph(richtext(p), mini_head_s), pending_space)
+            pending_space = 0.0
+            mini_offen(absatz)
         else:
             stil = body_c_s if centered else body_s
             absatz = mit_vorlauf(Paragraph(richtext(p), stil), pending_space)
             pending_space = 0.0
-            story.append(KeepTogether([absatz]))
-            continue
+            anhaengen(absatz, True)
 
-        story.append(absatz)
+    if pending_mini is not None:
+        story.append(pending_mini)
 
     doc = BookDoc(OUT)
     doc.build(story)
