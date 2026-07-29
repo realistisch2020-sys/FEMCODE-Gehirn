@@ -12,7 +12,7 @@ Das kommt dir bekannt vor. Aber das bist nicht du.
 
 Es ist ein Muster, das du gelernt hast. Tief drin, lange bevor du alt genug warst, um darüber nachzudenken.
 
-Petra Tanner, Therapeutin und Coachin, begleitet seit vielen Jahren Frauen, die an einem Punkt ankommen, wo das Funktionieren nicht mehr funktioniert. Immer wieder sieht sie dasselbe: Frauen, die sich für Dinge schuldig fühlen, die keine Schuld verdienen. Die so lange für alle anderen da waren, dass sie nicht mehr wissen, was sie selbst brauchen. Deren Körper schon längst Nein sagt — und die trotzdem weitermachen.
+Petra Tanner, Coachin, begleitet seit vielen Jahren Frauen, die an einem Punkt ankommen, wo das Funktionieren nicht mehr funktioniert. Immer wieder sieht sie dasselbe: Frauen, die sich für Dinge schuldig fühlen, die keine Schuld verdienen. Die so lange für alle anderen da waren, dass sie nicht mehr wissen, was sie selbst brauchen. Deren Körper schon längst Nein sagt — und die trotzdem weitermachen.
 
 Dieses Buch ist für diese Frauen geschrieben.
 
@@ -88,7 +88,7 @@ Kopiere diesen Text direkt ins KDP-Beschreibungsfeld:
 
 <p>Das kommt dir bekannt vor. Aber das bist nicht du. Es ist ein Muster, das du gelernt hast.</p>
 
-<p>Petra Tanner, Therapeutin und Coachin, begleitet seit vielen Jahren Frauen, die an einem Punkt ankommen, wo das Funktionieren nicht mehr funktioniert. Immer wieder sieht sie dasselbe: Frauen, die sich für Dinge schuldig fühlen, die keine Schuld verdienen.</p>
+<p>Petra Tanner, Coachin, begleitet seit vielen Jahren Frauen, die an einem Punkt ankommen, wo das Funktionieren nicht mehr funktioniert. Immer wieder sieht sie dasselbe: Frauen, die sich für Dinge schuldig fühlen, die keine Schuld verdienen.</p>
 
 <p><b>In diesem Buch erfährst du:</b></p>
 <ul>
