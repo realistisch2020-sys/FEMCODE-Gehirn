@@ -2,6 +2,31 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## Stand 30. Juli 2026: 3 Bücher + 3 Journale fertig
+
+Alle drei Hauptbücher (Das schlechte Gewissen, Wenn Beziehungen erschöpfen,
+Ich bin so müde...) haben jetzt je ein eigenständiges Journal/Workbook als
+zweites KDP-Produkt, siehe `context/kdp-buch-produktion.md` Abschnitt
+„Journal-Serie". Alle drei sind mehrfach durch KDP-Fehlerkorrekturen (Cover-
+Grösse, Bild-außerhalb-Ränder, Font-Einbettung, leere Seiten, Waisen-Zeile,
+Dateigrösse) gelaufen und laut Petra erfolgreich hochgeladen.
+
+**Noch zu prüfen, falls nicht schon geschehen:** Querverweis auf das Journal
+im jeweiligen Hauptbuch-Manuskript (Backmatter) — wurde für alle drei
+eingebaut, bei nächster Buch-Überarbeitung gegenprüfen.
+
+**Offen:** Amazon-Ads-Kampagne für „Das schlechte Gewissen" — zwei Kampagnen
+liefen zuletzt (automatisch + manuell), beide sichtbar. Keine akuten Probleme
+mehr bekannt, aber nicht aktiv weiterverfolgt diese Session.
+
+## Erinnerung: Gumroad
+
+Petra wollte an Gumroad (Direktverkauf-Plattform, Alternative/Ergänzung zu
+Amazon KDP mit höherer Marge, z. B. für die Journale als PDF-Download ohne
+Print) erinnert werden. Kein funktionierender Reminder-Mechanismus vorhanden
+(send_later schlug mit Berechtigungsfehler fehl) — beim nächsten Gespräch
+aktiv ansprechen.
+
 ## Erinnerung: Metricool einrichten (ca. 3. August 2026)
 
 Petra will Metricool (automatisches Posten TikTok + Instagram) erst einrichten,
@@ -258,3 +283,4 @@ Nicht umgekehrt, und nicht bevor Buch 6 draussen ist.
 - Instagram-Content zu Buch 3, 4, 5 planen
 - eBook für Buch 5 erstellen (nach Taschenbuch)
 - Aktionspreise: nur über eBook möglich (Kindle Countdown Deal, KDP Select)
+- Journale auch als eigene eBooks/interaktive PDFs prüfen (siehe Gumroad-Idee oben)

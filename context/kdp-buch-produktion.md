@@ -237,8 +237,58 @@ KDP → Buchdetails bearbeiten → "Schlüsselwörter". Phrasen statt Einzelwör
 
 ## Fertige Bücher
 
-| Buch | Titel | Seiten | Spine | Manuskript-PDF | Cover-PDF | KDP-Status |
-|---|---|---|---|---|---|---|
-| Buch 3 | Wenn Beziehungen erschöpfen | 123 | 83px | outputs/buch-beziehungen/…-Taschenbuch.pdf | outputs/buch-beziehungen/…-FullWrap.pdf | In Vorbereitung |
-| Buch 4 | Das schlechte Gewissen | 72 | 49px | outputs/buch-schuldgefuehle/…-Taschenbuch.pdf | outputs/buch-schuldgefuehle/…-FullWrap.pdf | In Vorbereitung |
-| Buch 5 | Niemand hat dich gefragt, wie es dir geht | 61 | 41px | outputs/buch-niemand-gefragt/niemand-hat-dich-gefragt-Taschenbuch.pdf | — | Cover ausstehend |
+| Buch | Titel | Seiten | Manuskript-PDF | Cover-PDF | KDP-Status |
+|---|---|---|---|---|---|
+| Buch 3 | Wenn Beziehungen erschöpfen | 148 | outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.pdf | outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.pdf | Bereit für Upload |
+| Buch 4 | Das schlechte Gewissen | 97 | outputs/buch-schuldgefuehle/das-schlechte-gewissen-Taschenbuch.pdf | Cover-Grösse vor Upload prüfen | Bereit für Upload |
+| Buch 5 | Niemand hat dich gefragt, wie es dir geht | 61 | outputs/buch-niemand-gefragt/niemand-hat-dich-gefragt-Taschenbuch.pdf | Full-Wrap fehlt noch | Rechtssicherheit/Cover offen |
+| Buch 6 | Ich bin so müde. Und niemand fragt mich warum | 111 | outputs/buch6/buch6-Taschenbuch.pdf | outputs/buch6/buch6-Cover-FullWrap.pdf | Hochgeladen, Kampagne läuft |
+
+## Journal-Serie (Workbooks zu Buch 4, 3, 6)
+
+Jedes Hauptbuch hat inzwischen ein eigenständiges Journal (Workbook) als
+zweites Amazon-Produkt — Querverweis im Hauptbuch, eigenes KDP-Listing.
+
+| Journal (zu) | Seiten | Manuskript | Cover Full-Wrap | Klappentext |
+|---|---|---|---|---|
+| Das schlechte Gewissen | 42 | outputs/buch-schuldgefuehle/das-schlechte-gewissen-Journal.pdf(+.docx) | outputs/buch-schuldgefuehle/journal-Cover-Print-FullWrap.pdf | outputs/buch-schuldgefuehle/journal-klappentext.md |
+| Wenn Beziehungen erschöpfen | 44 | outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Journal.pdf | outputs/buch-beziehungen/journal-Cover-Print-FullWrap.pdf | outputs/buch-beziehungen/journal-klappentext.md |
+| Ich bin so müde... | 38 | outputs/buch6/ich-bin-so-muede-Journal.pdf | outputs/buch6/journal-Cover-Print-FullWrap.pdf | outputs/buch6/journal-klappentext.md |
+
+**Aufbau je Journal:** Titelseite (Cover-Bild als Hintergrund), pro Kapitel
+kurze Einordnung + Reflexionsfragen mit Schreiblinien + kleine Übung +
+Checkliste + 3-Schritte-Prozess + Vorher/Nachher-Tabelle, dazwischen
+Zitat-Trennseiten (Foto-Hintergrund geblurrt), Impressum am Ende.
+
+**Reusable Baumuster (gilt für jedes künftige Journal):**
+- Trimgrösse, Ränder, Fonts identisch zum Hauptbuch (5.5×8.5in, Liberation
+  Serif eingebettet)
+- Bild-Hintergründe (Titelseite, Zitatseiten) NUR als JPEG einbetten
+  (`quality=85`), nie PNG — PNG treibt die Dateigrösse auf mehrere MB hoch
+  und macht die KDP-Vorschau extrem langsam. Zielgrösse < 1MB gesamt.
+- Bilder in Frames NIE randlos/bleed zeichnen — nur innerhalb derselben
+  Ränder wie der Fliesstext platzieren. Ein randloses Vollbild (auch mit
+  Farbfüllung dahinter) löst "Bild befindet sich außerhalb der Ränder" aus.
+- Jede Frage + ihre Schreiblinien in `KeepTogether([...])` verpacken (aus
+  `reportlab.platypus`) — verhindert, dass die Frage auf der letzten Zeile
+  einer Seite landet und die Striche erst auf der nächsten. Regel gilt für
+  jeden Frage-Block, jede Übung, jede Standortbestimmung.
+- Zwischen normalem Kapitelinhalt und einer Zitat-Trennseite NIE zwei
+  `PageBreak()` hintereinander — erzeugt eine leere Seite. `NextPageTemplate`
+  direkt vor den einen nötigen `PageBreak()` setzen, danach jedes Dokument
+  mit `fitz` (PyMuPDF) auf leere Seiten prüfen.
+- Impressum/Legal-Block kompakt halten (spaceAfter/spaceBefore klein setzen),
+  damit kein einzelner Satz ("Selbstverlag über Amazon KDP") als Waise auf
+  einer eigenen Schlussseite landet.
+- Rücken-Formel (Weisspapier) je nach finaler Seitenzahl neu berechnen:
+  `SPINE_IN = SEITEN * 0.002252`. Nach jeder inhaltlichen Änderung, die die
+  Seitenzahl verschiebt, Full-Wrap-Cover neu bauen.
+- Nach jedem Build: `python3 tools/buch-pruefen.py <docx> <pdf>` UND das PDF
+  visuell mit `fitz`-Rendering prüfen (leere Seiten, Ränder, Seitenumbrüche).
+
+**Master-Skripte (Scratchpad, bei Bedarf neu ausführen mit angepasster
+PAGES-Konstante):** `journal_pdf_full.py` / `journal2_pdf_full.py` /
+`journal3_pdf_full.py` (Inhalt) und `journal_fullwrap.py` /
+`journal2_fullwrap.py` / `journal3_fullwrap.py` (Cover) — je einer pro Buch,
+liegen im Session-Scratchpad, nicht im Repo. Bei künftigen Journalen dieses
+Muster kopieren statt neu erfinden.
