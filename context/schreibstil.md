@@ -41,6 +41,22 @@ Wer bist du, wenn niemand etwas von dir braucht?
 Ready?
 ```
 
+**5b. Wiederholungs-Anker — derselbe Satzanfang zweimal, anderes Ende:**
+```
+Genau dafür gibt es diesen einen Satz.
+Und genau dafür gibt es dieses Buch: damit du ihn üben kannst, bevor es zählt.
+```
+Erzeugt einen Sog. Zweimal reicht, ein drittes Mal wirkt schon aufgesetzt.
+
+**5c. Parallel-Konstruktion "So wie ..., genauso ...":**
+```
+So wie du als Kind gelernt hast, den Satz zu schlucken,
+genauso kannst du jetzt lernen, ihn auszusprechen.
+```
+Macht die Übertragung selbst zur Aussage. Sparsam einsetzen, ein- bis
+zweimal pro Buch an einer Schlüsselstelle (grosses Kapitel, Abschlussbrief),
+nicht in jedem Kapitel.
+
 **6. Nicht erklären — benennen:**
 Nicht: "Die Neurobiologie zeigt, dass Gefühle im Körper entstehen."
 Sondern: "Dein Körper weiss das. Er hat es immer gewusst."
@@ -59,6 +75,13 @@ Sondern: "Wer wählst du zu sein?"
 
 Franzi benutzt: "SEIN", "Magie", "expandieren", "duplizieren", "Manifest", spirituelle Sprache.
 Das ist Franzis Welt — nicht Petras. Petra ist Therapeutin. Die Energie wird übernommen, nicht das Vokabular.
+
+**Konkret zu meiden, auch wenn es in Franzis Originalmaterial auftaucht**
+(Screenshots/Buchseiten von Franzi sind reines Referenzmaterial für Rhythmus,
+nie für Wortwahl): "Fülle", "Mangel", "Abundance", "The Experience",
+"Ausrichtung", "Wahrnehmung manifestieren", "Transformationspotential",
+"Vollkommenheit der Unvollkommenheit". Diese Wörter tauchen in keinem
+Petra-Buch auf, egal wie stark die Satzstruktur der Vorlage gefällt.
 
 ---
 
