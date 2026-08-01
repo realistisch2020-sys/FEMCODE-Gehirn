@@ -5,7 +5,7 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 ## Diese Woche
 
 - Content Studio als ersten Workflow bauen (Thema → Hook → Skript → Caption → Hashtags)
-- Noch zu klären: echter Name (Petra?), Buchtitel, genaue MONAT-Rolle, genaue Zielgruppe, Markenfarben
+- Noch zu klären: Buchtitel, Markenfarben
 
 ## Demnächst
 

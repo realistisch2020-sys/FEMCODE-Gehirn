@@ -7,11 +7,11 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 Zwei Geschäftsbereiche, bewusst kein drittes Standbein (kein Verkauf von KI-Agenten an fremde Unternehmen):
 
 1. **SAFE TO THRIVE** — eigene Bücher, Themenfelder: Psychologie, Beziehungen, Schuldgefühle, Nervensystem
-2. **MONAT** — Network Marketing, Haarpflegeprodukte, Kunden- und Teampartnergewinnung
+2. **MONAT** — Network Marketing, Ziel: Produkte verkaufen und neue Teampartner gewinnen
 
 ## Meine Zielgruppe
 
-(noch offen — grob umrissen: Bücher für Menschen mit Interesse an Psychologie/Beziehungen/Nervensystem, MONAT für Interessent:innen an Haarpflege und ggf. eigenem Business)
+Alle, die mehr vom Leben wollen.
 
 ## Meine Kanäle
 

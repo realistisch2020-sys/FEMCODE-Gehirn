@@ -4,7 +4,7 @@ Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich ve
 
 ## Wer ich bin
 
-Name: Petra (noch zu bestätigen). Autorin unter der Marke "Safe to Thrive" und Network-Marketing-Partnerin bei MONAT (Haarpflege).
+Name: Petra. Autorin unter der Marke "Safe to Thrive" und Network-Marketing-Partnerin bei MONAT (Haarpflege).
 
 ## Mein Werdegang
 
