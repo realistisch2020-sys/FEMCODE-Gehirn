@@ -4,18 +4,16 @@ Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich ve
 
 ## Wer ich bin
 
-Wer bist du, was machst du, wie würdest du dich in zwei Sätzen vorstellen?
+Name: Petra (noch zu bestätigen). Autorin unter der Marke "Safe to Thrive" und Network-Marketing-Partnerin bei MONAT (Haarpflege).
 
 ## Mein Werdegang
 
-Wie bist du dahin gekommen, wo du heute bist? Die wichtigsten Stationen reichen.
+(noch offen)
 
 ## Was mich antreibt
 
-Warum machst du das? Was ist dein Warum hinter dem Business?
+Ziel: nachhaltiges Einkommen aus Büchern und eigener Marke — 20'000 CHF/Monat aus dem Buchbusiness genannt. KI soll dabei Zeit sparen, nicht ersetzen.
 
 ## Wie ich arbeite
 
-Wie tickst du im Alltag? Wann bist du produktiv, was nervt dich, wie sollen Ergebnisse für dich aussehen?
-
-Halte es kurz und ehrlich. Drei klare Sätze schlagen eine ganze Seite.
+Steht nicht gerne vor der Kamera, dreht ungern eigene Videos. Arbeitet lieber mit Buchcovern, Bildern, Zitaten, B-Roll und KI-generierten Inhalten. Will ein digitales Team ("Petra AI"), das täglich Recherche und Content-Vorarbeit übernimmt, statt selbst stundenlang zu suchen.

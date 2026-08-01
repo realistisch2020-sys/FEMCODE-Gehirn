@@ -4,12 +4,16 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- (noch nichts)
+- Content Studio als ersten Workflow bauen (Thema → Hook → Skript → Caption → Hashtags)
+- Noch zu klären: echter Name (Petra?), Buchtitel, genaue MONAT-Rolle, genaue Zielgruppe, Markenfarben
 
 ## Demnächst
 
-- (noch nichts)
+- Buch-Agent (Safe to Thrive)
+- MONAT-Agent
+- Verkaufs-Agent
+- CEO-Agent (Tagesbericht)
 
 ## Ideen / später
 
-- (noch nichts)
+- KI-Team später ggf. dokumentieren und als Angebot an Coaches/Autor:innen — aktuell keine Priorität

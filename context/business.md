@@ -4,18 +4,23 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 
 ## Was ich anbiete
 
-Welche Produkte, Programme oder Leistungen? Was ist dein Hauptangebot?
+Zwei Geschäftsbereiche, bewusst kein drittes Standbein (kein Verkauf von KI-Agenten an fremde Unternehmen):
+
+1. **SAFE TO THRIVE** — eigene Bücher, Themenfelder: Psychologie, Beziehungen, Schuldgefühle, Nervensystem
+2. **MONAT** — Network Marketing, Haarpflegeprodukte, Kunden- und Teampartnergewinnung
 
 ## Meine Zielgruppe
 
-Für wen ist das? Wer kauft bei dir, was beschäftigt diese Menschen?
+(noch offen — grob umrissen: Bücher für Menschen mit Interesse an Psychologie/Beziehungen/Nervensystem, MONAT für Interessent:innen an Haarpflege und ggf. eigenem Business)
 
 ## Meine Kanäle
 
-Wo findest du statt (Instagram, Newsletter, Podcast, was auch immer)?
+Instagram, Facebook, TikTok, Threads, Pinterest (LinkedIn optional)
 
 ## Meine Angebote und Preise
 
-Was kostet was? Grobe Preisspannen reichen.
+(noch offen)
 
-Kurz halten. Genug damit Claude dich versteht, kein vollständiges Wiki.
+## Zielwert
+
+20'000 CHF/Monat aus dem Buchbusiness (genannter Zielwert, nicht weiter präzisiert)
