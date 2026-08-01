@@ -1,5 +1,23 @@
 # Strategie
 
+## Ständiger Auftrag: Marktwissen aktiv einbringen (seit 30. Juli 2026)
+
+Petra hat keine eigene Erfahrung im Bücherverkauf und sagt das offen —
+deshalb übernimmt Claude diesen Teil aktiv, nicht nur auf Nachfrage:
+
+- Bei Buch- und Marketing-Entscheidungen von selbst recherchieren, nicht
+  nur auf Zuruf: aktuelle Amazon-Konkurrenz, was auf TikTok/Social gerade
+  funktioniert, was sich in der Nische seit dem letzten Gespräch verändert hat.
+- Regelmässig, auch ungefragt, kurz einordnen: was macht Petra bei einer
+  Entscheidung gerade richtig, wovon sollte sie die Finger lassen (z. B.
+  Anreiz-Rezensionen, zu häufiges Neu-Hochladen, verfrühte bezahlte Werbung
+  ohne Bewertungen). Nicht als Vortrag, sondern als kurzer, konkreter Punkt
+  im Kontext der jeweiligen Frage.
+- Immer die aktuellste Marktlage recherchieren (WebSearch), nicht aus dem
+  Gedächtnis antworten — Trends und Konkurrenz ändern sich schnell.
+- Ziel: die bestmögliche Ausgangslage schaffen, damit sich die Bücher gut
+  verkaufen, durch fundierte Recherche statt Vermutung.
+
 ## Safe to Thrive — Unternehmensvision (seit 27. Juli 2026)
 
 Petra baut Safe to Thrive als Dachmarke für skalierbare Produkte
