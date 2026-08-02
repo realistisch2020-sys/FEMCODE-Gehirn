@@ -239,10 +239,59 @@ KDP → Buchdetails bearbeiten → "Schlüsselwörter". Phrasen statt Einzelwör
 
 | Buch | Titel | Seiten | Manuskript-PDF | Cover-PDF | KDP-Status |
 |---|---|---|---|---|---|
-| Buch 3 | Wenn Beziehungen erschöpfen | 148 | outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.pdf | outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.pdf | Bereit für Upload |
-| Buch 4 | Das schlechte Gewissen | 97 | outputs/buch-schuldgefuehle/das-schlechte-gewissen-Taschenbuch.pdf | Cover-Grösse vor Upload prüfen | Bereit für Upload |
+| Buch 3 | Wenn Beziehungen erschöpfen | 149 | outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.pdf | outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.pdf | Live, Bewertungen vorhanden |
+| Buch 4 | Das schlechte Gewissen | 106 | outputs/buch-schuldgefuehle/das-schlechte-gewissen-Taschenbuch.pdf | outputs/buch-schuldgefuehle/das-schlechte-gewissen-Cover-Print-FullWrap.pdf | Live, Bewertungen vorhanden, Ads laufen |
 | Buch 5 | Niemand hat dich gefragt, wie es dir geht | 61 | outputs/buch-niemand-gefragt/niemand-hat-dich-gefragt-Taschenbuch.pdf | Full-Wrap fehlt noch | Rechtssicherheit/Cover offen |
-| Buch 6 | Ich bin so müde. Und niemand fragt mich warum | 111 | outputs/buch6/buch6-Taschenbuch.pdf | outputs/buch6/buch6-Cover-FullWrap.pdf | Hochgeladen, Kampagne läuft |
+| Buch 6 | Ich bin so müde. Und niemand fragt mich warum | 111 | outputs/buch6/buch6-Taschenbuch.pdf | outputs/buch6/buch6-Cover-FullWrap.pdf | Live |
+| Buch 7 | Ich habe nie gelernt, an mich zu denken | 75 (Ziel ~100) | outputs/buch-an-mich-denken/buch4-Taschenbuch.pdf | outputs/buch-an-mich-denken/buch4-Cover-Print-FullWrap.pdf | In Arbeit, noch nicht hochgeladen, eBook fehlt noch |
+
+Alle vier Bücher (3, 4, 6, in Arbeit auch 7) enthalten jetzt vor dem
+Impressum den Abschnitt „Ein letztes Wort" — eine Bewertungs-Bitte im
+Franzi-Rhythmus, ohne jede Gegenleistung (Anreiz-Rezensionen sind bei
+Amazon verboten, Kontosperrungsrisiko, siehe `plans/safe-to-thrive-masterplan.md`).
+
+## A+ Content — Technik-Lehren (August 2026)
+
+Für jedes Buch drei Module: Zitatkarte, „Was dich erwartet"
+(Themenübersicht), Cross-Promotion (Cover der anderen Bücher). Bild- und
+Textvorlagen liegen in den jeweiligen `outputs/<buch>/`-Ordnern
+(`werbung-zitatkarte-*.png`, `aplus-was-dich-erwartet.png`) und einmal
+gemeinsam in `outputs/aplus-cross-promotion.png`.
+
+**Wichtigste Lehre: A+-Module brauchen Querformat, nicht Instagram-Hochformat.**
+Die für Social Media gebauten Zitatkarten (1080×1350, Hochformat) werden
+von den KDP-A+-Modulen abgelehnt bzw. nicht richtig übernommen — die
+Module verlangen mindestens 970×300px im **Querformat**. Immer eine
+eigene Querformat-Version bauen (970×600 hat sich bewährt), Dateiname
+mit `-quer-` kennzeichnen, um sie von der Social-Media-Version zu
+unterscheiden.
+
+**Cross-Promotion-Bild:** Mindesthöhe 600px (nicht 300px wie ursprünglich
+gebaut). Nur die tatsächlich veröffentlichten Bücher zeigen — ein noch
+nicht live geschaltetes Buch nicht mit abbilden, das verwirrt Leserinnen
+auf einer Produktseite, wo es das Buch noch nicht zu kaufen gibt.
+
+**Bekannter KDP-Bug: „Project could not be deserialized" beim Speichern.**
+Tritt gelegentlich beim „Als Entwurf speichern" oder in der Vorschau auf,
+unabhängig von Bild-/Textqualität (Bilder vorher immer trotzdem prüfen:
+PNG, RGB, richtige Grösse — war in unseren Fällen nie die Ursache).
+Bekannte Abhilfen, der Reihe nach probieren:
+1. Einzeln speichern (erst Bild, dann Überschrift, dann Text), nicht alles auf einmal
+2. Bei zwei Modulen mit exakt demselben Layout-Typ: eines auf ein anderes Layout wechseln
+3. Neuer Entwurf in einem frischen Browser/Inkognito-Fenster, statt den hängenden Entwurf zu reparieren
+4. Bleibt es bestehen: KDP-Support kontaktieren, Fehlermeldung + Reproduktionsschritte mitgeben
+
+**ASIN-Zuordnung zuerst machen, nicht zuletzt.** Reihenfolge, die weniger
+Fehler produziert hat: ASINs anwenden (Kindle- und Taschenbuch-ASIN
+beide), erst danach die drei Module befüllen. Ein Buch hat zwei ASINs
+(Kindle + Taschenbuch), A+ Content gilt für beide, wenn man beim
+Zuordnen beide anhakt.
+
+**Vorsicht vor doppelten Entwürfen.** Der A+-Inhaltsmanager zeigt alle
+Entwürfe zu einem Buch in einer Liste — es kann leicht ein zweiter,
+neuer Entwurf neben einem älteren entstehen. Vor dem Weiterarbeiten
+immer prüfen, mit welchem Entwurf man gerade verbunden ist (Titel + Datum
+„Zuletzt geändert" oben auf der Seite).
 
 ## Journal-Serie (Workbooks zu Buch 4, 3, 6)
 

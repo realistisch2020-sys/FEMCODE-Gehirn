@@ -227,24 +227,24 @@ Was von der alten Reihe erhalten bleiben muss:
 Reihenfolge: erst schauen, ob Buch 6 läuft. Wenn ja, die anderen nachziehen.
 Nicht umgekehrt, und nicht bevor Buch 6 draussen ist.
 
-## Buch 4 (Das schlechte Gewissen): bereit für KDP-Upload
+## Buch 4 (Das schlechte Gewissen): live, A+ Content eingereicht
 
-- Manuskript-PDF fertig: `outputs/buch-schuldgefuehle/das-schlechte-gewissen-Taschenbuch.pdf` (97 Seiten)
-- eBook fertig: `outputs/buch-schuldgefuehle/das-schlechte-gewissen-eBook.epub`
-- Rechtssicherheit komplett (siehe oben)
-- **Offen:** Cover wurde für eine andere Seitenzahl gebaut — vor dem Upload
-  Cover-Grösse gegen die aktuellen 97 Seiten prüfen (wie bei Buch 3 gemacht),
-  Abschnitt „Meine anderen Bücher" fehlt im Backmatter noch
+Live auf Amazon, 106 Seiten, „Ein letztes Wort" (Bewertungs-Bitte) ergänzt.
+A+ Content (Zitatkarte quer, Themen-Übersicht, Cross-Promotion) ist fertig
+gebaut und am 1./2. August 2026 erfolgreich zur Prüfung eingereicht — Status
+bei Petra prüfen (Genehmigung/Veröffentlicht).
 
-## Buch 3 (Wenn Beziehungen erschöpfen): bereit für KDP-Upload
+## Buch 3 (Wenn Beziehungen erschöpfen): live, A+ Content hängt an KDP-Fehler
 
-- Manuskript-PDF fertig: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.pdf` (148 Seiten)
-- eBook fertig: `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-eBook.epub`
-- Cover fertig, korrekte Grösse (11.583×8.750in): `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.pdf`
-- Rechtssicherheit komplett (siehe oben)
-- **Falls bei KDP schon ein älteres Taschenbuch-Projekt existiert:** neue
-  Manuskript-PDF UND neue Cover-PDF beide neu hochladen (Seitenzahl hat sich
-  mehrfach geändert)
+Live auf Amazon, 149 Seiten, „Ein letztes Wort" ergänzt. A+ Content-Bilder
+sind fertig (`outputs/buch-beziehungen/zitatkarte-quer-*.png`,
+`aplus-was-dich-erwartet.png`, `outputs/aplus-cross-promotion.png`), aber
+das Speichern im KDP-Editor schlägt wiederholt fehl mit „Project could not
+be deserialized (CatchAll)". Ausprobiert und nicht gelöst: leeres Modul
+löschen, Modul-Layouts variieren (Petra hat das versucht, half nicht).
+
+**Nächster Schritt:** frischer Browser/Inkognito-Modus, sonst KDP-Support
+kontaktieren.
 
 ## Buch 5 (Niemand hat dich gefragt, wie es dir geht): Rechtssicherheit + Cover offen
 
@@ -255,6 +255,27 @@ Nicht umgekehrt, und nicht bevor Buch 6 draussen ist.
 - **Offen:** Manuskript überarbeiten — KI-typische Stellen raus (Kap. 11, 14 zu dünn, "Ich möchte dir sagen" zu oft)
 - **Offen:** Full-Wrap Cover (Rückseite + Spine) generieren → dann KDP Upload
 - Empfohlener Preis: $12.99
+
+## Buch 6 (Ich bin so müde...): A+ Content noch nicht begonnen
+
+Manuskript und Cover live wie oben beschrieben. A+ Content (Zitatkarte,
+Übersicht, Cross-Promotion) für dieses Buch wurde diese Session noch nicht
+gebaut — nach Buch 3 und Buch 4 nachziehen, gleiches Muster (970×600px
+Querformat, siehe `context/kdp-buch-produktion.md` Abschnitt „A+ Content —
+Technik-Lehren").
+
+## Buch 7 (Ich habe nie gelernt, an mich zu denken): in Arbeit
+
+- Manuskript: `outputs/buch-an-mich-denken/buch4-MANUSKRIPT.docx` /
+  `buch4-Taschenbuch.pdf`, aktuell 75 Seiten, Ziel ca. 100 Seiten — noch
+  nicht erreicht, weitere Kapitel/Vertiefung nötig
+- Franzi-Stil durchgezogen, TikTok-Marker-Wort vollständig aus dem
+  gedruckten Text entfernt (nur noch graue Kästen ohne das Wort selbst)
+- Cover (Front + FullWrap) gebaut, Spine-Breite auf 75 Seiten kalibriert —
+  **muss bei jeder weiteren Seitenzahl-Änderung neu gebaut werden**
+  (`/tmp/.../scratchpad/buch4_fullwrap.py`, `PAGES`-Konstante anpassen)
+- **Offen:** auf ~100 Seiten bringen, danach `buch-pruefen.py` laufen lassen,
+  eBook (epub) bauen, Cover final neu rechnen, erst dann KDP-Upload
 
 ## Buch 1 (ADHD Planner): Cover-Anzeige prüfen
 
