@@ -37,7 +37,8 @@ rl_config.canvas_basefontname = 'Times-Roman'
 
 from docx import Document
 from reportlab.platypus import (BaseDocTemplate, Frame, PageTemplate, Paragraph,
-                                Spacer, PageBreak, KeepTogether, NextPageTemplate)
+                                Spacer, PageBreak, KeepTogether, NextPageTemplate,
+                                Table, TableStyle)
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import cm
 from reportlab.lib import colors
@@ -109,6 +110,23 @@ small_s = ps('Small', fontName='Times-Roman', fontSize=9, leading=13, spaceAfter
 toc_s = ps('Toc', fontName='Times-Roman', fontSize=10, leading=13.5, spaceAfter=1)
 mini_head_s = ps('MiniHead', fontName='Times-Bold', fontSize=11.5, leading=19.5,
                   alignment=TA_JUSTIFY, spaceAfter=5, keepWithNext=1)
+tiktok_s = ps('TikTok', fontName='Times-Italic', fontSize=11, leading=15.5,
+              alignment=TA_CENTER)
+
+
+def tiktok_box(text):
+    """TikTok-Zeilen als grau hinterlegter Kasten, wie bei Buch 6."""
+    p = Paragraph(text, tiktok_s)
+    t = Table([[p]], colWidths=[W - LM - RM])
+    t.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor('#efece6')),
+        ('TOPPADDING', (0, 0), (-1, -1), 10),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 10),
+        ('LEFTPADDING', (0, 0), (-1, -1), 12),
+        ('RIGHTPADDING', (0, 0), (-1, -1), 12),
+        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+    ]))
+    return t
 
 def esc(s):
     s = s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -240,7 +258,11 @@ def baue():
             anhaengen(absatz, False)
             continue
 
-        if size and size >= 20:
+        if text.startswith('TikTok'):
+            absatz = mit_vorlauf(tiktok_box(richtext(p)), pending_space)
+            pending_space = 0.0
+            anhaengen(absatz, True, text)
+        elif size and size >= 20:
             absatz = Paragraph(esc(text), title_s)
             anhaengen(absatz, False)
         elif size and 15 <= size < 20:
