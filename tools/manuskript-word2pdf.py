@@ -114,8 +114,15 @@ tiktok_s = ps('TikTok', fontName='Times-Italic', fontSize=11, leading=15.5,
               alignment=TA_CENTER)
 
 
+import re as _re
+_TIKTOK_PREFIX = _re.compile(r'^TikTok\s*(?:&#183;|·)?\s*', _re.IGNORECASE)
+
+
 def tiktok_box(text):
-    """TikTok-Zeilen als grau hinterlegter Kasten, wie bei Buch 6."""
+    """Kurze Merksaetze als grau hinterlegter Kasten, wie bei Buch 6.
+    Das interne 'TikTok'-Praefix (nur zur Erkennung im Quelltext) wird
+    hier entfernt, es darf nicht im gedruckten Buch erscheinen."""
+    text = _TIKTOK_PREFIX.sub('', text)
     p = Paragraph(text, tiktok_s)
     t = Table([[p]], colWidths=[W - LM - RM])
     t.setStyle(TableStyle([
