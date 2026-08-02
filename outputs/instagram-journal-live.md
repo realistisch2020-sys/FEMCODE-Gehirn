@@ -1,9 +1,11 @@
 # Instagram Post – Journal live (3 Bücher)
 
-Alle 3 Bücher sind live. 📖✨
+Alle 3 Bücher sind live. 📖
 
-Und für alle, die tiefer eintauchen wollen: In jedem Buch findest du den Zugang zum Live-Journal.
+Und für alle, die nicht nur lesen, sondern wirklich dranbleiben wollen: Zu jedem Buch gibt's jetzt ein eigenes Live-Journal.
 
-Dort bleibst du nicht beim Lesen stehen — du reflektierst mit, schreibst mit, gehst den nächsten Schritt.
+Kein Bonus, kein Beiwerk — ein eigenständiges Tool, das dich Schritt für Schritt durchs Buch begleitet. Reflektieren, umsetzen, dranbleiben.
 
-Welches Buch ist deins? 👇
+👉 Journal einzeln erhältlich — Link in Bio.
+
+Welches Buch startest du zuerst?
