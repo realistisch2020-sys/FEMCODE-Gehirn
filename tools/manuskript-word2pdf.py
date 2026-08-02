@@ -115,14 +115,17 @@ tiktok_s = ps('TikTok', fontName='Times-Italic', fontSize=11, leading=15.5,
 
 
 import re as _re
-_TIKTOK_PREFIX = _re.compile(r'^TikTok\s*(?:&#183;|·)?\s*', _re.IGNORECASE)
+# Kein '^'-Anker: der Text kommt aus richtext() und kann mit einem
+# HTML-Tag beginnen (z.B. '<i>'), wenn der Absatz kursiv formatiert ist.
+# Das Praefix steht dann nicht am Stringanfang, sondern direkt danach.
+_TIKTOK_PREFIX = _re.compile(r'TikTok\s*(?:&#183;|·)?\s*', _re.IGNORECASE)
 
 
 def tiktok_box(text):
     """Kurze Merksaetze als grau hinterlegter Kasten, wie bei Buch 6.
     Das interne 'TikTok'-Praefix (nur zur Erkennung im Quelltext) wird
     hier entfernt, es darf nicht im gedruckten Buch erscheinen."""
-    text = _TIKTOK_PREFIX.sub('', text)
+    text = _TIKTOK_PREFIX.sub('', text, count=1)
     p = Paragraph(text, tiktok_s)
     t = Table([[p]], colWidths=[W - LM - RM])
     t.setStyle(TableStyle([
