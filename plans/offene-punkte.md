@@ -305,3 +305,10 @@ Technik-Lehren").
 - eBook für Buch 5 erstellen (nach Taschenbuch)
 - Aktionspreise: nur über eBook möglich (Kindle Countdown Deal, KDP Select)
 - Journale auch als eigene eBooks/interaktive PDFs prüfen (siehe Gumroad-Idee oben)
+
+## Nächster Buchtitel-Kandidat (Stand 5. August 2026)
+
+„Ich fühle mich nicht richtig glücklich" — von Petra als möglicher weiterer
+Titel genannt, noch nicht ausgearbeitet. Vor dem Start: Markt-Gegencheck wie
+bei Buch 4 (Konkurrenz auf Amazon.de/.com, Content-Gap), dann erst
+Manuskript-Konzept.
