@@ -165,6 +165,19 @@ Human Design ist ein Selbstreflexions-Werkzeug, kein medizinisches oder wissensc
 
 ## Anhang: Rohdaten (Gate.Linie)
 
+### Was diese Tabelle zeigt
+
+Ein Human-Design-Chart entsteht aus den Positionen der Sonne, des Mondes und der Planeten am Himmel – zu zwei verschiedenen Zeitpunkten:
+
+- **Personality (Persönlichkeit, bewusst):** die Planetenstände genau zum Geburtsmoment – 17.07.1962, 15:25 Uhr, Zürich. Das ist die Seite von dir, die du kennst und die andere an dir sehen: deine bewussten Eigenschaften, dein "So bin ich, wenn ich über mich nachdenke".
+- **Design (Entwurf, unbewusst):** die Planetenstände ca. 91 Tage vor der Geburt – exakt der Moment, in dem die Sonne 88° früher am Himmel stand (das ist keine feste Anzahl Tage, sondern ein fester Winkel; wie viele Tage das sind, hängt von der Jahreszeit ab). Das ist die körperliche, unbewusste Seite: Instinkte, automatische Reaktionen, das, was der Körper tut, bevor der Kopf mitdenkt.
+
+**Wie man eine Zahl wie "62.5" liest:** die erste Zahl ist das **Gate** (eines von 64 "Toren" – vergleichbar mit den 64 Hexagrammen des I-Ging, jedes für ein Grundthema), die zweite Zahl nach dem Punkt ist die **Linie** (1–6, eine Feinabstufung innerhalb des Gates, wie eine Unterüberschrift zum Thema). "62.5" heisst also: Gate 62, Linie 5.
+
+**Wie daraus Zentren und Kanäle werden:** jedes der 64 Gates gehört zu einem der 9 Körper-Zentren (z. B. Gate 3 gehört zum Sakral, Gate 50 zur Milz). Zwei Gates, die durch einen der 36 möglichen Kanäle direkt miteinander verbunden sind, bilden – wenn beide Enden aktiviert sind (egal ob über Personality oder Design) – einen **definierten Kanal**, und die beiden Zentren an seinen Enden werden dadurch **definiert** (dauerhaft an). Zentren ohne so eine vollständige Verbindung bleiben **offen**. Aus genau dieser Logik ergeben sich deine definierten Zentren (Sakral, Solarplexus, Kehle, G-Zentrum, Wurzel) und die drei Kanäle unten in der Tabelle.
+
+**Berechnungsgrundlage:** die Positionen wurden mit einer astronomischen Ephemeride (Swiss Ephemeris, Moshier-Modell) für den exakten Geburtsmoment in UTC berechnet (Zürich hatte 1962 ganzjährig MEZ = UTC+1, da die Schweiz von 1943 bis 1980 keine Sommerzeit kannte). Die Zuordnung von Gradzahl zu Gate/Linie folgt dem offiziellen Human-Design-Rad (Start bei 358,25°, jedes Gate 5,625° breit, jede Linie 0,9375°), gegengeprüft an unabhängigen Referenzwerten.
+
 | Planet | Personality | Design |
 |---|---|---|
 | Sonne | 62.5 | 3.1 |
