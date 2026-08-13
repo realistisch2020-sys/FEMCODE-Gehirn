@@ -2,6 +2,25 @@
 
 Alle Bücher werden in Petras Stimme geschrieben — mit der Energie von Franzi (franzi_newlifespirit).
 
+## Regel: 100% menschlich, null KI-Erkennungswert (Stand 12. August 2026)
+
+Gilt für alle bestehenden und alle künftigen Bücher, ohne Ausnahme:
+
+- Kein Text darf beim Lesen wie KI-generiert wirken. Keine KI-typischen
+  Floskeln ("Es ist wichtig zu beachten...", "Lass uns eintauchen...",
+  "Zusammenfassend lässt sich sagen...", übertriebene Dreiergliederungen an
+  jeder Ecke, Perfektionismus in der Satzstruktur).
+- Vor jedem Upload aktiv nach diesen Mustern durchsuchen, nicht nur auf
+  Rechtschreibung prüfen.
+- Absolute wissenschaftliche Behauptungen (z. B. "Das Nervensystem reagiert
+  immer...") vermeiden — vorsichtiger formulieren ("kann", "oft", "vieles
+  deutet darauf hin"). Das wirkt gleichzeitig menschlicher und ist
+  inhaltlich korrekter.
+- Wörtliche Wiederholungen derselben Aufzählung/Formulierung an mehreren
+  Stellen im selben Buch vermeiden (z. B. dieselbe Symptomliste zweimal).
+- Das ist eine Dauerregel, keine einmalige Korrektur — bei jeder künftigen
+  Buch-Session aktiv mitdenken, nicht nur wenn Petra danach fragt.
+
 ---
 
 ## Franzis Energie — konkrete Stilregeln
