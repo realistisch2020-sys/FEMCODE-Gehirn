@@ -16,6 +16,18 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Demnächst
 
+- **Re-Upload der drei bereits live verkauften Bücher nötig**, sonst bleiben
+  die KI-Signatur-Korrekturen wirkungslos: das Beheben der Manuskripte in
+  diesem Repo ändert nichts an dem, was gerade auf Amazon verkauft wird. Bei
+  KDP jeweils neues Taschenbuch-PDF und neues eBook hochladen:
+  - „Wenn Beziehungen erschöpfen" — `outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Taschenbuch.pdf` + `-eBook.epub`
+  - „Das schlechte Gewissen" — `outputs/buch-schuldgefuehle/das-schlechte-gewissen-Taschenbuch.pdf` + `-eBook.epub` (dort zusätzlich 29 gerade Anführungszeichen und 2 Gedankenstriche behoben, unabhängig vom KI-Auftrag)
+  - „Ich bin so müde..." — `outputs/buch6/buch6-Taschenbuch.pdf` + `buch6-eBook.epub`
+  - Seitenzahl blieb bei allen dreien unverändert, Cover müssen NICHT neu
+    hochgeladen werden.
+
+## Ideen / später
+
 - (noch nichts)
 
 ## Ideen / später
