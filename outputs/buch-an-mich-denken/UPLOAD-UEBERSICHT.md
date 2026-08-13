@@ -1,6 +1,58 @@
 # Upload-Übersicht: Ich habe nie gelernt, an mich zu denken
 
-Stand: 13. August 2026. Alle Dateien in diesem Ordner geprüft und bereit für den KDP-Upload.
+Stand: 13. August 2026, zweite Prüfrunde. Manuskripte inhaltlich gelesen (nicht
+nur automatisch geprüft), Rechtschreibung mit hunspell (deutsches Wörterbuch)
+geprüft, Rechtssicherheit und leere Seiten in allen drei Formaten kontrolliert.
+
+**Ehrliche Einschätzung zum Inhalt:** Das Manuskript ist stark. Eine durchgängige
+Beispielfigur (Claudia), konkrete Szenen statt allgemeiner Ratgeber-Sprache,
+ein klar benanntes Alleinstellungsmerkmal (das „Selbstvergessen" als Stufe vor
+Grenzen setzen), harte Fakten eingebaut (Gehaltslücke, Pflegearbeit-Zahlen),
+und durchgehend die geforderte Tun-Komponente (wörtliche Sätze, Wochenplan,
+Rückfall-Kapitel). Erfüllt den eigenen Standard aus `context/buch-standard.md`.
+
+## Gefunden und behoben (13. August, zweite Runde)
+
+- **Echter Tippfehler**, Hauptbuch, Abschnitt „Zur Autorin": „ist seid 26 Jahren"
+  → „ist seit 26 Jahren" korrigiert. Taschenbuch-PDF und eBook daraus neu gebaut.
+- **11 Gedankenstriche + 3 Auslassungspunkte im Journal-Manuskript**, verstösst
+  gegen die explizite, rückwirkend geltende Regel in `context/buch-standard.md`
+  §8/§9 (kein Gedankenstrich im Fliesstext, keine Auslassungspunkte). Alle 14
+  Stellen korrigiert (Gedankenstrich → Komma, Auslassungspunkte entfernt).
+  Journal-Taschenbuch-PDF daraus neu gebaut, Seitenzahl unverändert (59).
+- Keine echten Rechtschreibfehler sonst gefunden (hunspell-Liste bestand fast
+  nur aus Schweizer ss-Schreibung, Eigennamen und dem Fachbegriff
+  „Selbstvergessen" — alles korrekt so).
+- Keine leeren Seiten in Taschenbuch oder Journal. Zwei sehr kurze Seiten im
+  Hauptbuch (32, 58) sind Absicht: einzeilige „Pointe"-Sätze am Kapitelende.
+- Rechtssicherheit in beiden Manuskripten vollständig: alle acht Pflichtteile,
+  keine private Mailadresse, keine „Heilerin", korrekte Berufsbezeichnung.
+
+## Noch offen: zwei Punkte im Journal-COVER, nicht selbst korrigiert
+
+Beim visuellen Cover-Check gefunden, aber **nicht** repariert, weil dafür die
+ursprüngliche Design-Datei nötig wäre (nur das fertige PNG/PDF liegt hier) und
+weil einer der Punkte eine inhaltliche Entscheidung ist, die dir gehört:
+
+1. Auf der Journal-Rückseite steht im Titel ein Gedankenstrich: „Ich habe nie
+   gelernt, an mich zu denken — Das Journal" sowie im Fliesstext „eine kleine
+   Übung — dazu eine Checkliste". Verstösst gegen dieselbe No-Gedankenstrich-Regel
+   wie oben, diesmal im Cover-Bild selbst eingebrannt.
+2. Cover-Vorderseite und Rückseite behaupten beide „22 Kapitel". Das Journal-
+   Manuskript hat tatsächlich 25 mit „Kapitel" überschriebene Abschnitte (20
+   durchnummerierte plus 5 mit Buchstaben, z. B. 10b, 18b–18e). Möglich, dass
+   22 bewusst vereinfacht war, bevor die Buchstaben-Kapitel dazukamen — das
+   kann ich nicht für dich entscheiden.
+
+Zusätzlich, rein kosmetisch: Die Unterzeile auf dem Hauptbuch-Cover lautet
+„...für alle sorgst und dich selbst dabei verlierst", im Manuskript-Titelblatt
+steht „...für alle sorgst und dich dabei selbst verlierst" (Wortstellung
+vertauscht). Fällt beim Lesen kaum auf, der Vollständigkeit halber notiert.
+
+**Sag Bescheid, wenn ich die Cover-Korrektur versuchen soll** (Text-Patch auf
+dem bestehenden Bild, Schrift/Farbe nachgebildet) — sonst kannst du heute Abend
+mit den Covern so hochladen, wie sie sind, das sind keine KDP-Blocker, nur
+Konsistenz-/Genauigkeitsfragen.
 
 ## Hauptbuch (Taschenbuch)
 
@@ -30,10 +82,10 @@ Stand: 13. August 2026. Alle Dateien in diesem Ordner geprüft und bereit für d
 
 ## Journal / Workbook (zweites Produkt)
 
-- Manuskript: `buch4-Journal-MANUSKRIPT.docx` / `buch4-Journal-Taschenbuch.pdf`, 59 Seiten
-- Cover: `journal-Cover-Print-FullWrap.pdf`, 289,14 × 222,25 mm
+- Manuskript: `buch4-Journal-MANUSKRIPT.docx` / `buch4-Journal-Taschenbuch.pdf`, 59 Seiten (unverändert nach der Korrektur)
+- Cover: `journal-Cover-Print-FullWrap.pdf`, 289,14 × 222,25 mm — Korrekturbedarf siehe oben
 - eBook-Cover Vorderseite: `journal-cover-FRONT.png`
-- Laut letztem Bearbeitungsstand bereits lektoriert.
+- Text jetzt zweimal geprüft (Lektorat aus der letzten Session + heutige Rechtschreib-/Stilprüfung).
 
 ## Noch offen (nicht in diesem Ordner enthalten)
 
