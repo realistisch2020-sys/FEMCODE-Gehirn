@@ -112,7 +112,8 @@ Erst wenn alle Fragen mit Ja beantwortet sind, geht das Buch raus:
 - [ ] Es funktioniert auch an einem Tag ohne Kraft
 - [ ] Eine Person trägt das Buch durch
 - [ ] Jedes Kapitel hat eine TikTok-Zeile, die für sich steht
-- [ ] Keine KI-Handschrift, kein ß, keine leeren Seiten
+- [ ] Null KI-Erkennungswert (Pflicht-Check aus `context/schreibstil.md` §0
+      durchgeführt, nicht nur überflogen), kein ß, keine leeren Seiten
 - [ ] Impressum, Rechtliches, Krisennummern, Inhaltsverzeichnis vollständig
 - [ ] Die Checkliste aus `context/rechtssicherheit.md` ist abgehakt
 
