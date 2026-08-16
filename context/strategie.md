@@ -18,6 +18,26 @@ deshalb übernimmt Claude diesen Teil aktiv, nicht nur auf Nachfrage:
 - Ziel: die bestmögliche Ausgangslage schaffen, damit sich die Bücher gut
   verkaufen, durch fundierte Recherche statt Vermutung.
 
+## Standard-Checkliste für jedes künftige Buch (seit 12. August 2026)
+
+Vor dem Schreiben eines neuen Buches, nicht danach:
+
+1. Thema wählen, nach dem bereits stark gesucht und gekauft wird, aber mit
+   einer erreichbaren Nische (nicht direkt gegen grosse Verlage antreten).
+2. Titel und Untertitel nach Kaufabsicht entwickeln, nicht nur danach, was
+   schön klingt.
+3. Konkurrenz, Kategorien und Suchbegriffe vor dem Schreiben analysieren
+   (echte WebSearch-Recherche, nicht aus dem Gedächtnis).
+4. Cover so bauen, dass es neben den Bestsellern der Kategorie im
+   Amazon-Mini-Format sofort konkurrenzfähig aussieht.
+5. Produktseite, Beschreibung und A+ Content von Anfang an auf Conversion
+   auslegen, nicht erst nachträglich optimieren.
+
+Punkt 6–7 (gezielte Ads auf Suchbegriffe/Konkurrenzbücher, konzentrierter
+Verkaufsstart in kurzer Zeit) erst einplanen, wenn Budget und ein echtes
+Publikum (Newsletter, Social-Media-Reichweite) dafür vorhanden sind — sonst
+bleibt das Theorie statt Hebel.
+
 ## Safe to Thrive — Unternehmensvision (seit 27. Juli 2026)
 
 Petra baut Safe to Thrive als Dachmarke für skalierbare Produkte
