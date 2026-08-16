@@ -35,6 +35,13 @@ Ab sofort für alle künftigen Bücher, von Petra ausdrücklich so gewünscht:
 - Ziel: weniger perfekt gleichmässiger Rhythmus über das ganze Buch hinweg.
   Das macht den Text gleichzeitig lebendiger und schwerer als KI-generiert
   erkennbar.
+- Mehr Pfiff: Sätze, Einstiege und Fallbeispiele so schreiben, dass Leserinnen
+  UND Leser das Buch unbedingt weiterlesen wollen, nicht nur nicken. Nicht
+  bequem-glatt, sondern mit einem Haken, der neugierig macht.
+- Zielgruppe ab sofort nicht mehr nur Frauen — Sprache, Anrede und
+  Fallbeispiele so anlegen, dass sich auch Männer angesprochen fühlen
+  (durchmischte Fallbeispiele, keine reine "du als Frau"-Anrede mehr, wo es
+  sich vermeiden lässt).
 
 ---
 
