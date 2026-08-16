@@ -21,6 +21,21 @@ Gilt für alle bestehenden und alle künftigen Bücher, ohne Ausnahme:
 - Das ist eine Dauerregel, keine einmalige Korrektur — bei jeder künftigen
   Buch-Session aktiv mitdenken, nicht nur wenn Petra danach fragt.
 
+## Regel: Balance zwischen Franzi-Rhythmus und Variation (Stand 12. August 2026)
+
+Ab sofort für alle künftigen Bücher, von Petra ausdrücklich so gewünscht:
+
+- Franzi-Rhythmus (kurze Sätze, "Und" am Satzanfang, Dreier-Strukturen) bleibt
+  für Landing-Sätze, Kapitelübergänge und die pointierten Schlusssätze eines
+  Abschnitts — das ist die Wiedererkennung, die bleibt.
+- In Fallbeispielen und längeren Erklärpassagen: mehr Variation, mehr Petra,
+  mehr überraschende Formulierungen, mehr konkrete, echte Details (Namen,
+  Orte, kleine unerwartete Wendungen). Nicht in jedem Absatz dasselbe
+  Drei-kurze-Sätze-Muster wiederholen.
+- Ziel: weniger perfekt gleichmässiger Rhythmus über das ganze Buch hinweg.
+  Das macht den Text gleichzeitig lebendiger und schwerer als KI-generiert
+  erkennbar.
+
 ---
 
 ## Franzis Energie — konkrete Stilregeln
