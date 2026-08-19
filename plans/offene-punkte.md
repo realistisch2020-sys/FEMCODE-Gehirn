@@ -264,18 +264,31 @@ gebaut — nach Buch 3 und Buch 4 nachziehen, gleiches Muster (970×600px
 Querformat, siehe `context/kdp-buch-produktion.md` Abschnitt „A+ Content —
 Technik-Lehren").
 
-## Buch 7 (Ich habe nie gelernt, an mich zu denken): in Arbeit
+## Buch 7 — jetzt „Ich stand nie auf meiner eigenen Liste" (Titel am 15. Aug. geändert): in Arbeit
 
+- Hiess vorher „Ich habe nie gelernt, an mich zu denken" — Titel, Untertitel,
+  Impressum/Markenrecht und Cover sind auf den neuen Titel umgestellt.
+  Alte Bezeichnung nirgends mehr verwenden.
 - Manuskript: `outputs/buch-an-mich-denken/buch4-MANUSKRIPT.docx` /
   `buch4-Taschenbuch.pdf`, aktuell 75 Seiten, Ziel ca. 100 Seiten — noch
   nicht erreicht, weitere Kapitel/Vertiefung nötig
-- Franzi-Stil durchgezogen, TikTok-Marker-Wort vollständig aus dem
-  gedruckten Text entfernt (nur noch graue Kästen ohne das Wort selbst)
-- Cover (Front + FullWrap) gebaut, Spine-Breite auf 75 Seiten kalibriert —
-  **muss bei jeder weiteren Seitenzahl-Änderung neu gebaut werden**
-  (`/tmp/.../scratchpad/buch4_fullwrap.py`, `PAGES`-Konstante anpassen)
+- eBook (`buch4-eBook.epub`) ist inzwischen gebaut, ebenso ein eigenes
+  eBook-Cover (`buch4-eBook-Cover.jpg`)
+- Cover komplett neu (neues Bildmotiv: Kintsugi-Riss lila/gold, dunkler
+  Hintergrund), Front + eBook-Cover + Vollwrap-PDF fertig, Spine auf 75
+  Seiten kalibriert — **muss bei jeder weiteren Seitenzahl-Änderung neu
+  gebaut werden** (`/tmp/.../scratchpad/buch4_newcover2.py`, `PAGES`-Konstante
+  anpassen)
+- Lektorat: KI-typisches Kontrastmuster („Das ist kein… Es ist…") teilweise
+  variiert, absolute Aussagen zu Gehalt/Bindungsforschung/Wut abgeschwächt,
+  gerade Anführungszeichen korrigiert, Sprache für gemischte Zielgruppe
+  (Männer + Frauen) geöffnet
+- Journal (`buch4-Journal-MANUSKRIPT.docx`) trägt noch den **alten** Titel —
+  bei Gelegenheit auf „Ich stand nie auf meiner eigenen Liste" umstellen
 - **Offen:** auf ~100 Seiten bringen, danach `buch-pruefen.py` laufen lassen,
-  eBook (epub) bauen, Cover final neu rechnen, erst dann KDP-Upload
+  Journal-Titel/Cover nachziehen, A+ Content bauen, erst dann KDP-Upload —
+  bewusst zurückgehalten, bis die vier laufenden Bücher sich stabilisieren
+  (siehe Timing-Hinweis oben)
 
 ## Buch 1 (ADHD Planner): Cover-Anzeige prüfen
 
