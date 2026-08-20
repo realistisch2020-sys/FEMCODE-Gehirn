@@ -1,0 +1,8 @@
+# Rechnungsautomation: enthält echte Kunden- und Bankdaten, bleibt lokal
+tools/rechnungsautomation/config.py
+tools/rechnungsautomation/kunden.csv
+tools/rechnungsautomation/protokoll.csv
+tools/rechnungsautomation/entwuerfe/*.pdf
+tools/rechnungsautomation/lauf.log
+__pycache__/
+*.pyc

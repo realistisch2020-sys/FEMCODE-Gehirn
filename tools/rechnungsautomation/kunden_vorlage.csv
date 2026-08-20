@@ -1,0 +1,4 @@
+Name,Strasse,Hausnummer,PLZ,Ort,Land,Betrag,Rhythmus,Start,Letzte_Rechnung,Referenz_ID,Aktiv,Notiz
+Erika Kunde,Kundenweg,2,3000,Bern,CH,150.00,monatlich,2026-01-15,,1001,JA,Fernhilfe
+Hans Beispiel,Beispielstrasse,5,4000,Basel,CH,400.00,3 monate,2026-02-01,,1002,JA,Fernhilfe Quartal
+Res Muster,Musterallee,9,9000,St. Gallen,CH,750.00,6 monate,2026-03-01,,1003,JA,Fernhilfe Halbjahr

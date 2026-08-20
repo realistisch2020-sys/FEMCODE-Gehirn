@@ -1,0 +1,4 @@
+qrbill
+svglib
+reportlab
+python-stdnum

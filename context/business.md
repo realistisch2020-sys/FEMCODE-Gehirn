@@ -18,4 +18,12 @@ Wo findest du statt (Instagram, Newsletter, Podcast, was auch immer)?
 
 Was kostet was? Grobe Preisspannen reichen.
 
+## Fernhilfe-Kunden / Abrechnung
+
+Kunden zahlen entweder monatlich oder für 3 bzw. 6 Monate. Bisher manuell
+in der Agenda getrackt. Rechnungsautomation liegt in
+`tools/rechnungsautomation/` (Schweizer QR-Rechnung, läuft lokal jeden
+Sonntag, erstellt Entwürfe für die kommende Woche). Details siehe README
+dort.
+
 Kurz halten. Genug damit Claude dich versteht, kein vollständiges Wiki.
