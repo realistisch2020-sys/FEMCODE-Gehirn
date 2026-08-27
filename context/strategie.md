@@ -46,6 +46,22 @@ Verkaufsstart in kurzer Zeit) erst einplanen, wenn Budget und ein echtes
 Publikum (Newsletter, Social-Media-Reichweite) dafür vorhanden sind — sonst
 bleibt das Theorie statt Hebel.
 
+## Bonus-PDFs (Freebies) für den Newsletter (seit 27. August 2026)
+
+Jedes Buch bekommt ein eigenes, farbiges Bonus-PDF mit sechs vertiefenden
+Übungen, das über Tentary automatisch per QR-Code/Newsletter-Anmeldung
+verschickt wird. Immer:
+
+- Farben aus dem jeweiligen Buchcover ableiten (nicht eine Standardpalette
+  für alle Bücher verwenden) — Cover-Bild ansehen, Haupt- und Akzentfarbe
+  bestimmen, daraus Cover-Hintergrund + zwei Akzenttöne für die Übungen ableiten.
+- Gemeinsames Layout-Modul `tools/bonus_pdf_common.py` verwenden (Cover,
+  Willkommensseite, 6 Übungsseiten, Rechtliches/Krisennummern am Schluss),
+  pro Buch nur `tools/buchX-bonus-pdf.py` mit eigener Palette und eigenen
+  Übungen anlegen.
+- Übungen inhaltlich aus den tatsächlichen Kapiteln des jeweiligen Buches
+  ableiten, nicht generisch.
+
 ## Safe to Thrive — Unternehmensvision (seit 27. Juli 2026)
 
 Petra baut Safe to Thrive als Dachmarke für skalierbare Produkte
