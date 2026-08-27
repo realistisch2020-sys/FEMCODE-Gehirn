@@ -19,7 +19,7 @@ W, H = A4
 OUT = "/home/user/FEMCODE-Gehirn/outputs/buch-an-mich-denken/buch4-Bonus-PDF.pdf"
 
 # --- Palette: von Buch-4-Cover uebernommen (Ink, Wein, Gold) ---
-INK = HexColor('#150F1A')       # fast schwarzer Cover-Hintergrund
+INK = HexColor('#5C1B3E')       # Beerenton vom Cover-Glow, statt fast Schwarz
 CREAM = HexColor('#FAF3E6')     # warmes Elfenbein statt reinem Weiss
 ROSE = HexColor('#8C3563')      # tiefes Wein/Magenta vom Cover-Glow
 ROSE_DARK = HexColor('#6E2049')
@@ -93,6 +93,19 @@ def number_badge(c, x, y, r, num, color=ROSE):
     c.setFillColor(WHITE)
     c.setFont('Serif-Bold', r * 1.15)
     c.drawCentredString(x, y - r * 0.38, str(num))
+    c.restoreState()
+
+def number_badge_soft(c, x, y, r, num, color, tint):
+    """Kleines, weiches Zahlen-Kreischen fuer Listen mit Schreiblinien,
+    mittig auf der Linie, statt eines schweren Vollkreises."""
+    c.saveState()
+    c.setFillColor(tint)
+    c.setStrokeColor(color)
+    c.setLineWidth(1)
+    c.circle(x, y, r, fill=1, stroke=1)
+    c.setFillColor(color)
+    c.setFont('Serif-Bold', r * 1.25)
+    c.drawCentredString(x, y - r * 0.36, str(num))
     c.restoreState()
 
 def section_header(c, num, title_text, note, color, tint):
@@ -235,8 +248,8 @@ box_h = 55 * mm
 rounded(c, MARGIN, y - box_h, W - 2 * MARGIN, box_h, 6 * mm, WHITE, stroke=LINE)
 yy = y - 16 * mm
 for i in range(1, 4):
-    number_badge(c, MARGIN + 12 * mm, yy - 3.5*mm, 5 * mm, i, ROSE)
-    blank_line(c, MARGIN + 22 * mm, yy, W - 2 * MARGIN - 32 * mm)
+    number_badge_soft(c, MARGIN + 16 * mm, yy + 1.6 * mm, 4 * mm, i, ROSE_DARK, ROSE_LIGHT)
+    blank_line(c, MARGIN + 26 * mm, yy, W - 2 * MARGIN - 36 * mm)
     yy -= 15 * mm
 note = ("Häng den Zettel irgendwo hin, wo du ihn zufällig siehst. Nicht um ihn "
         "auswendig zu lernen, sondern um ihn mit der Zeit vertraut werden zu lassen.")
@@ -258,8 +271,8 @@ c.drawString(MARGIN + 8 * mm, y - 10 * mm, "Drei Dinge, die mir in guten Wochen 
 c.drawString(MARGIN + 8 * mm, y - 15 * mm, "und die ich auch in einer schlechten Woche noch schaffe:")
 yy = y - 24 * mm
 for i in range(1, 4):
-    number_badge(c, MARGIN + 12 * mm, yy - 3.5*mm, 5 * mm, i, SAGE)
-    blank_line(c, MARGIN + 22 * mm, yy, W - 2 * MARGIN - 32 * mm)
+    number_badge_soft(c, MARGIN + 16 * mm, yy + 1.6 * mm, 4 * mm, i, SAGE_DARK, SAGE_LIGHT)
+    blank_line(c, MARGIN + 26 * mm, yy, W - 2 * MARGIN - 36 * mm)
     yy -= 11 * mm
 c.setFont('Sans-Bold', 11)
 c.setFillColor(SAGE_DARK)
