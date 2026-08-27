@@ -32,6 +32,14 @@ Vor dem Schreiben eines neuen Buches, nicht danach:
    Amazon-Mini-Format sofort konkurrenzfähig aussieht.
 5. Produktseite, Beschreibung und A+ Content von Anfang an auf Conversion
    auslegen, nicht erst nachträglich optimieren.
+6. Zielumfang 120–150 Seiten (Stand 16. August 2026, von Petra ausdrücklich
+   so gewünscht). Nicht bei einem ersten Rohentwurf von 60–80 Seiten stehen
+   bleiben — Kapitel vertiefen, zweite Fallbeispiele ergänzen, wo inhaltlich
+   sinnvoll zusätzliche Kapitel einbauen, bis der Zielumfang erreicht ist.
+7. Am Buchende, nach dem Bewertungs-Hinweis ("Ein letztes Wort") und dem
+   Bonus-PDF-Geschenk, eine Newsletter-Anmeldung ergänzen (E-Mail-Adresse
+   oder Anmeldelink), damit Leserinnen und Leser dauerhaft erreichbar
+   bleiben, nicht nur einmalig übers Bonus-PDF.
 
 Punkt 6–7 (gezielte Ads auf Suchbegriffe/Konkurrenzbücher, konzentrierter
 Verkaufsstart in kurzer Zeit) erst einplanen, wenn Budget und ein echtes
