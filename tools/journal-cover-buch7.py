@@ -30,7 +30,7 @@ TOTAL_H = TRIM_H + 2 * BLEED
 OUT_PDF = "/home/user/FEMCODE-Gehirn/outputs/buch-an-mich-denken/journal-Cover-Print-FullWrap.pdf"
 OUT_PNG = "/home/user/FEMCODE-Gehirn/outputs/buch-an-mich-denken/journal-Cover-Print-FullWrap.png"
 
-INK = HexColor('#150F1A')
+INK = HexColor('#3D1533')  # Violett vom Cover-Glow, statt fast Schwarz
 GOLD = HexColor('#C99A43')
 CREAM = HexColor('#F5EFE3')
 WHITE = HexColor('#FFFFFF')
