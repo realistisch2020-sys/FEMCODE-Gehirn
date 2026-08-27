@@ -159,9 +159,12 @@ def richtext(p):
 
 
 def mit_vorlauf(par, extra_pt):
-    if extra_pt:
+    if extra_pt and hasattr(par, 'style'):
         par.style = ParagraphStyle('vorlauf_%d' % id(par), parent=par.style,
                                     spaceBefore=(par.style.spaceBefore or 0) + extra_pt)
+    # Objekte ohne .style (z.B. eine Table/TikTok-Kasten) haben schon eigenes
+    # Padding - zusaetzlicher Vorlauf wird hier bewusst ignoriert, statt das
+    # Layout durch ein KeepTogether auf eine neue Seite zu zwingen.
     return par
 
 
