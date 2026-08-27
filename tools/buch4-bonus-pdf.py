@@ -145,8 +145,8 @@ for l in ['„Ich stand nie auf', 'meiner eigenen Liste“']:
 rounded(c, W / 2 - 48 * mm, H - 152 * mm, 96 * mm, 17 * mm, 8 * mm, ROSE, stroke=None)
 c.setFont('Sans', 11.5)
 c.setFillColor(WHITE)
-c.drawCentredString(W / 2, H - 145.5 * mm, "Sechs kurze Übungen für die Zeit")
-c.drawCentredString(W / 2, H - 150.5 * mm, "nach dem Buch")
+c.drawCentredString(W / 2, H - 142 * mm, "Sechs kurze Übungen für die Zeit")
+c.drawCentredString(W / 2, H - 147 * mm, "nach dem Buch")
 
 c.setFont('Serif-It', 15)
 c.setFillColor(WHITE)
