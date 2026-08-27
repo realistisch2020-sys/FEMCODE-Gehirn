@@ -8,9 +8,12 @@ Charakter) wird uebersprungen, die eReader-Navigation ersetzt es.
 
     python3 tools/manuskript-ebook.py <manuskript.docx> <ausgabe.epub> "<Titel>" "<Untertitel>" "<Autor>"
 """
+import re
 import sys
 from docx import Document
 from ebooklib import epub
+
+_TIKTOK_PREFIX = re.compile(r'TikTok\s*(?:&#183;|·)?\s*', re.IGNORECASE)
 
 DOCX = sys.argv[1]
 OUT = sys.argv[2]
@@ -136,6 +139,13 @@ def baue():
             html_buffer.append('<h1>%s</h1>' % text)
             toc.append(epub.Link(seite.file_name, seite.title,
                                   seite.file_name.replace('.xhtml', '')))
+        elif text.startswith('TikTok'):
+            if aktuelle_seite is None:
+                neue_seite(text[:30])
+                toc.append(epub.Link(aktuelle_seite.file_name, aktuelle_seite.title,
+                                      aktuelle_seite.file_name.replace('.xhtml', '')))
+            zitat = _TIKTOK_PREFIX.sub('', laufweite_html(p), count=1)
+            html_buffer.append('<p class="zitat">%s</p>' % zitat)
         else:
             if aktuelle_seite is None:
                 neue_seite(text[:30])
@@ -150,6 +160,8 @@ def baue():
     body { font-family: serif; line-height: 1.5; }
     h1 { text-align:center; margin-top:1.5em; }
     p { margin: 0 0 0.8em 0; text-indent: 0; }
+    p.zitat { background: #efece6; font-style: italic; padding: 0.8em 1em;
+              margin: 1em 0; }
     '''
     stil_datei = epub.EpubItem(uid='stil', file_name='stil.css',
                                 media_type='text/css', content=css)
