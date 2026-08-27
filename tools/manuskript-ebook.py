@@ -20,6 +20,18 @@ AUTOR = sys.argv[5] if len(sys.argv) > 5 else 'Petra Tanner'
 KONTAKT = 'info.safetothrive@gmail.com'
 
 NS = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
+A_NS = 'http://schemas.openxmlformats.org/drawingml/2006/main'
+R_NS = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
+
+
+def eingebettetes_bild(p):
+    """Bildbytes eines inline eingefuegten Bildes (z.B. QR-Code) in diesem
+    Absatz, sonst None."""
+    for blip in p._p.findall('.//{%s}blip' % A_NS):
+        rId = blip.get('{%s}embed' % R_NS)
+        if rId:
+            return p.part.related_parts[rId].blob
+    return None
 
 
 def hat_inline_umbruch(p):
@@ -83,6 +95,7 @@ def baue():
     start = umbrueche[1] + 1 if len(umbrueche) >= 2 else 0
 
     zaehler = 0
+    bild_zaehler = 0
     aktuelle_seite = None
     html_buffer = []
 
@@ -103,6 +116,17 @@ def baue():
     for i in range(start, len(ps)):
         p = ps[i]
         text = p.text.strip()
+        bild = eingebettetes_bild(p)
+        if bild is not None and aktuelle_seite is not None:
+            bild_zaehler += 1
+            bild_name = 'bild_%03d.png' % bild_zaehler
+            bild_item = epub.EpubItem(uid='img%d' % bild_zaehler, file_name=bild_name,
+                                       media_type='image/png', content=bild)
+            buch.add_item(bild_item)
+            html_buffer.append(
+                '<p style="text-align:center;"><img src="%s" alt="QR-Code" '
+                'style="max-width:45%%;"/></p>' % bild_name)
+            continue
         if not text:
             continue
         size = groesse(p)

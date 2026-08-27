@@ -38,11 +38,32 @@ rl_config.canvas_basefontname = 'Times-Roman'
 from docx import Document
 from reportlab.platypus import (BaseDocTemplate, Frame, PageTemplate, Paragraph,
                                 Spacer, PageBreak, KeepTogether, NextPageTemplate,
-                                Table, TableStyle)
+                                Table, TableStyle, Image)
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import cm
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
+import io
+
+
+def eingebettetes_bild(p):
+    """Findet ein inline eingefuegtes Bild (z.B. QR-Code) in einem Absatz und
+    gibt es als zentriertes reportlab-Image zurueck, sonst None."""
+    ns = {'a': 'http://schemas.openxmlformats.org/drawingml/2006/main',
+          'r': 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'}
+    for blip in p._p.findall('.//a:blip', ns):
+        rId = blip.get('{%s}embed' % ns['r'])
+        if not rId:
+            continue
+        image_part = p.part.related_parts[rId]
+        img = Image(io.BytesIO(image_part.blob))
+        max_w = 4.2 * cm
+        scale = max_w / img.imageWidth
+        img.drawWidth = max_w
+        img.drawHeight = img.imageHeight * scale
+        img.hAlign = 'CENTER'
+        return img
+    return None
 from reportlab.lib.pagesizes import inch
 
 SEITE = (5.5 * inch, 8.5 * inch)
@@ -225,6 +246,12 @@ def baue():
 
     for p in docx.paragraphs:
         text = p.text.strip()
+        bild = eingebettetes_bild(p)
+        if bild is not None:
+            absatz = mit_vorlauf(bild, pending_space)
+            pending_space = 0.0
+            anhaengen(absatz, True)
+            continue
         centered = p.alignment is not None and 'CENTER' in str(p.alignment)
         size = None
         for r in p.runs:
