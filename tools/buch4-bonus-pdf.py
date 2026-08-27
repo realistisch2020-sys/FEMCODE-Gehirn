@@ -18,17 +18,18 @@ pdfmetrics.registerFont(TTFont('Sans-Bold', FD + 'LiberationSans-Bold.ttf'))
 W, H = A4
 OUT = "/home/user/FEMCODE-Gehirn/outputs/buch-an-mich-denken/buch4-Bonus-PDF.pdf"
 
-# --- Palette: warm, weich, modern ---
-CREAM = HexColor('#FBF3EC')
-ROSE = HexColor('#CC8577')
-ROSE_DARK = HexColor('#B36657')
-ROSE_LIGHT = HexColor('#F3DCD3')
-SAGE = HexColor('#7C9A76')
-SAGE_DARK = HexColor('#5F7C59')
-SAGE_LIGHT = HexColor('#E4EAE0')
-PLUM = HexColor('#4A3538')
+# --- Palette: von Buch-4-Cover uebernommen (Ink, Wein, Gold) ---
+INK = HexColor('#150F1A')       # fast schwarzer Cover-Hintergrund
+CREAM = HexColor('#FAF3E6')     # warmes Elfenbein statt reinem Weiss
+ROSE = HexColor('#8C3563')      # tiefes Wein/Magenta vom Cover-Glow
+ROSE_DARK = HexColor('#6E2049')
+ROSE_LIGHT = HexColor('#F2DDE7')
+SAGE = HexColor('#C99A43')      # Gold vom Cover
+SAGE_DARK = HexColor('#9C752B')
+SAGE_LIGHT = HexColor('#F6ECD3')
+PLUM = HexColor('#3A2A30')
 WHITE = HexColor('#FFFFFF')
-LINE = HexColor('#D8C3B9')
+LINE = HexColor('#E2CDBE')
 
 MARGIN = 22 * mm
 
@@ -108,12 +109,15 @@ def section_header(c, num, title_text, note, color, tint):
 
 c = canvas.Canvas(OUT, pagesize=A4)
 
-# ============ Seite 1: Cover ============
-bg(c)
-rounded(c, 0, H - 118 * mm, W, 118 * mm, 0, ROSE)
-heart(c, W / 2, H - 40 * mm, 4.2, WHITE)
+# ============ Seite 1: Cover (wie Buch-Cover: dunkel + Gold) ============
+bg(c, INK)
+rounded(c, 0, H - 118 * mm, W, 118 * mm, 0, INK)
+c.setStrokeColor(SAGE)
+c.setLineWidth(1.4)
+c.line(MARGIN, H - 116 * mm, W - MARGIN, H - 116 * mm)
+heart(c, W / 2, H - 40 * mm, 4.2, SAGE)
 c.setFont('Sans-Bold', 13)
-c.setFillColor(HexColor('#FBEDE7'))
+c.setFillColor(SAGE)
 c.drawCentredString(W / 2, H - 58 * mm, "D E I N   B O N U S")
 c.setFont('Serif-Bold', 28)
 c.setFillColor(WHITE)
@@ -121,22 +125,23 @@ c.drawCentredString(W / 2, H - 75 * mm, "Vertiefende Übungen zu")
 c.setFont('Serif-Bold', 25)
 yy = H - 92 * mm
 for l in ['„Ich stand nie auf', 'meiner eigenen Liste“']:
+    c.setFillColor(SAGE)
     c.drawCentredString(W / 2, yy, l)
     yy -= 10 * mm
 
-rounded(c, W / 2 - 48 * mm, H - 152 * mm, 96 * mm, 17 * mm, 8 * mm, SAGE_LIGHT, stroke=SAGE)
+rounded(c, W / 2 - 48 * mm, H - 152 * mm, 96 * mm, 17 * mm, 8 * mm, ROSE, stroke=None)
 c.setFont('Sans', 11.5)
-c.setFillColor(PLUM)
+c.setFillColor(WHITE)
 c.drawCentredString(W / 2, H - 145.5 * mm, "Sechs kurze Übungen für die Zeit")
 c.drawCentredString(W / 2, H - 150.5 * mm, "nach dem Buch")
 
 c.setFont('Serif-It', 15)
-c.setFillColor(ROSE_DARK)
+c.setFillColor(WHITE)
 c.drawCentredString(W / 2, 55 * mm, "Petra Tanner")
 c.setFont('Sans-Bold', 11)
-c.setFillColor(SAGE_DARK)
+c.setFillColor(SAGE)
 c.drawCentredString(W / 2, 47 * mm, "SAFE TO THRIVE")
-footer(c, 1, "Bonus-PDF")
+footer(c, 1, "Bonus-PDF", SAGE)
 c.showPage()
 
 # ============ Seite 2: Willkommen ============
@@ -308,8 +313,8 @@ c.showPage()
 
 # ============ Seite 9: Zum Schluss / rechtliches ============
 bg(c)
-rounded(c, 0, H - 60 * mm, W, 60 * mm, 0, ROSE)
-heart(c, W / 2, H - 26 * mm, 3.4, WHITE)
+rounded(c, 0, H - 60 * mm, W, 60 * mm, 0, INK)
+heart(c, W / 2, H - 26 * mm, 3.4, SAGE)
 c.setFont('Serif-Bold', 20)
 c.setFillColor(WHITE)
 c.drawCentredString(W / 2, H - 40 * mm, "Zum Schluss")
