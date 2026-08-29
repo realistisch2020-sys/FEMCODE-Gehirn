@@ -162,8 +162,8 @@ bg(c)
 rounded(c, MARGIN, H - 62 * mm, W - 2 * MARGIN, 34 * mm, 6 * mm, ROSE_LIGHT)
 c.setFont('Serif-Bold', 19)
 c.setFillColor(ROSE_DARK)
-c.drawCentredString(W / 2, H - 40 * mm, "Danke, dass du dieses Buch")
-c.drawCentredString(W / 2, H - 48 * mm, "gelesen hast")
+c.drawCentredString(W / 2, H - 43 * mm, "Danke, dass du dieses Buch")
+c.drawCentredString(W / 2, H - 51 * mm, "gelesen hast")
 y = H - 76 * mm
 intro = ("Dieses Bonus-PDF ist keine Fortsetzung, sondern eine Vertiefung. Sechs "
          "kurze Übungen, die du direkt ausfüllen kannst, für die Wochen nach dem "
@@ -344,12 +344,12 @@ y -= 10 * mm
 rounded(c, MARGIN, y - 24 * mm, W - 2 * MARGIN, 24 * mm, 6 * mm, ROSE_LIGHT)
 c.setFont('Sans-Bold', 11.5)
 c.setFillColor(ROSE_DARK)
-c.drawCentredString(W / 2, y - 10 * mm, "Bei einer akuten Krise")
+c.drawCentredString(W / 2, y - 7.5 * mm, "Bei einer akuten Krise")
 c.setFont('Sans', 11)
 c.setFillColor(PLUM)
-c.drawCentredString(W / 2, y - 17 * mm, "Schweiz 143 · Deutschland 0800 111 0 111 · Österreich 142")
+c.drawCentredString(W / 2, y - 14.5 * mm, "Schweiz 143 · Deutschland 0800 111 0 111 · Österreich 142")
 c.setFont('Sans', 9)
-c.drawCentredString(W / 2, y - 21.5 * mm, "Kostenlos, anonym, Tag und Nacht.")
+c.drawCentredString(W / 2, y - 19 * mm, "Kostenlos, anonym, Tag und Nacht.")
 
 y -= 38 * mm
 copyright_txt = ("© Petra Tanner, Safe to Thrive. Alle Rechte vorbehalten. Nur für den "
