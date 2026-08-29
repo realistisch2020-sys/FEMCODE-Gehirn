@@ -246,15 +246,25 @@ löschen, Modul-Layouts variieren (Petra hat das versucht, half nicht).
 **Nächster Schritt:** frischer Browser/Inkognito-Modus, sonst KDP-Support
 kontaktieren.
 
-## Buch 5 (Niemand hat dich gefragt, wie es dir geht): Rechtssicherheit + Cover offen
+## Buch 5 (jetzt "Deine Reaktion gehört dir. Nicht mir.", Stand 28. Aug. 2026)
 
-- Manuskript PDF: `outputs/buch-niemand-gefragt/niemand-hat-dich-gefragt-Taschenbuch.pdf` (61 Seiten, noch nicht auf den neuen Rechtssicherheit-Standard geprüft)
-- Vordercover PNG erstellt: `outputs/buch-niemand-gefragt/cover-niemand-FRONT.png` (Petrol & Gold, abstraktes Bild)
-- **Offen:** Komplette Rechtssicherheit-Prüfung wie bei Buch 3/4 (Therapeutin?,
+- Titel geändert von "Niemand hat dich gefragt, wie es dir geht" — der alte
+  Ordner `outputs/buch-niemand-gefragt/` ist veraltet, nicht mehr verwenden.
+- Aktueller Stand liegt in `outputs/buch-reaktion/`:
+  - `buch5-MANUSKRIPT.docx` / `buch5-Taschenbuch.pdf` (100 Seiten)
+  - `buch5-eBook.epub`
+  - `buch5-Cover-FullWrap.pdf` (Taschenbuch, Rücken auf 100 Seiten kalibriert)
+    und `buch5-eBook-Cover.jpg` (Kindle) — fertig, Vorderseitenbild ist ein von
+    Petra ausgewähltes Bild (Petrol/Gold-Riss-Motiv), Quelle gesichert unter
+    `buch5-cover-front-source.png`. **Achtung:** Bild hat nur ~182 dpi
+    (KDP empfiehlt 300 dpi) — Petra ist das bewusst, ggf. nach KDP-Druckprobe
+    nochmal durch eine höher aufgelöste Bildversion ersetzen.
+  - Build-Skript: `tools/buch5-cover.py` (SEITEN-Konstante bei Umfangsänderung anpassen)
+- **Offen:** Komplette Rechtssicherheit-Prüfung wie bei Buch 3/4/7 (Therapeutin?,
   Impressum-Adresse, Krisennummern, Checkbox-Selbsttest, Cross-Promotion-Abschnitt)
-- **Offen:** Manuskript überarbeiten — KI-typische Stellen raus (Kap. 11, 14 zu dünn, "Ich möchte dir sagen" zu oft)
-- **Offen:** Full-Wrap Cover (Rückseite + Spine) generieren → dann KDP Upload
-- Empfohlener Preis: $12.99
+  — `tools/buch-pruefen.py` laufen lassen
+- **Offen:** KDP-Upload (Taschenbuch + eBook), danach A+ Content
+- Empfohlener Preis: $12.99 / 12,99 €
 
 ## Buch 6 (Ich bin so müde...): A+ Content noch nicht begonnen
 
