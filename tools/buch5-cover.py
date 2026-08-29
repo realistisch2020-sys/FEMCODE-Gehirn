@@ -12,6 +12,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab import rl_config
 
 OUT = '/home/user/FEMCODE-Gehirn/outputs/buch-reaktion/buch5-Cover-FullWrap.pdf'
+BILD = '/home/user/FEMCODE-Gehirn/outputs/buch-reaktion/buch5-cover-front-source.png'
 
 SEITEN = 100
 TRIM_B = 139.7 * mm
@@ -46,14 +47,24 @@ c = rl.Canvas(OUT, pagesize=(W, H))
 
 c.setFillColor(PETROL)
 c.rect(0, 0, W, H, fill=1, stroke=0)
-for i in range(140):
-    t = i / 140.0
-    c.setFillColorRGB(0.055 + 0.035 * (1 - t), 0.168 + 0.05 * (1 - t),
-                      0.180 + 0.05 * (1 - t))
-    c.rect(FRONT_X, H - (i + 1) * H / 140, TRIM_B + BLEED, H / 140 + 0.6,
-           fill=1, stroke=0)
 c.setFillColor(PETROL_TIEF)
 c.rect(0, 0, SPINE_X, H, fill=1, stroke=0)
+
+if BILD:
+    from reportlab.lib.utils import ImageReader
+    from PIL import Image as PILImage
+    iw, ih = PILImage.open(BILD).size
+    fw, fh = TRIM_B + BLEED, H
+    skala = max(fw / iw, fh / ih)
+    zw, zh = iw * skala, ih * skala
+    c.saveState()
+    pfad = c.beginPath(); pfad.rect(FRONT_X, 0, fw, H); c.clipPath(pfad, stroke=0)
+    c.drawImage(ImageReader(BILD), FRONT_X - (zw - fw) / 2, -(zh - fh) / 2,
+                width=zw, height=zh, mask='auto')
+    c.restoreState()
+    dpi = iw / (fw / mm / 25.4)
+    print(f'  Bild eingesetzt: {iw}x{ih} px  ->  {dpi:.0f} dpi'
+          + ('' if dpi >= 300 else '   ACHTUNG: unter 300 dpi'))
 
 
 def ader(x, y, laenge, winkel, tiefe=0, breite=1.0, seed=0):
@@ -78,17 +89,18 @@ def ader(x, y, laenge, winkel, tiefe=0, breite=1.0, seed=0):
     ader(px, py, laenge * 0.34, winkel - 0.85, tiefe + 1, breite * 0.5, seed + 5)
 
 
-c.saveState()
-p = c.beginPath()
-p.rect(FRONT_X, 0, TRIM_B + BLEED, H)
-c.clipPath(p, stroke=0)
-c.setStrokeAlpha(0.85)
-ader(FRONT_X + TRIM_B - 14 * mm, H - BLEED + 2 * mm, 128 * mm, math.radians(252),
-     breite=2.2, seed=7)
-c.setStrokeAlpha(0.35)
-ader(FRONT_X + TRIM_B - 36 * mm, BLEED - 3 * mm, 46 * mm, math.radians(70),
-     breite=0.9, seed=21)
-c.restoreState()
+if not BILD:
+    c.saveState()
+    p = c.beginPath()
+    p.rect(FRONT_X, 0, TRIM_B + BLEED, H)
+    c.clipPath(p, stroke=0)
+    c.setStrokeAlpha(0.85)
+    ader(FRONT_X + TRIM_B - 14 * mm, H - BLEED + 2 * mm, 128 * mm, math.radians(252),
+         breite=2.2, seed=7)
+    c.setStrokeAlpha(0.35)
+    ader(FRONT_X + TRIM_B - 36 * mm, BLEED - 3 * mm, 46 * mm, math.radians(70),
+         breite=0.9, seed=21)
+    c.restoreState()
 
 
 def gesperrt(x, y, text, font, groesse, farbe, sperrung, mitte=False):
@@ -127,6 +139,8 @@ def fit(text, font, breite, max_pt=200):
 
 
 # ═══════════════ VORDERSEITE ═══════════════
+# Bei BILD ist Titel + Autor schon im Bild enthalten, keine eigene
+# Typografie mehr noetig.
 fx = FRONT_X + SAFE + 4 * mm
 fm = FRONT_X + TRIM_B / 2
 innen = TRIM_B - (SAFE + 4 * mm) - (SAFE + 3 * mm)
@@ -138,27 +152,28 @@ def gruppe(zeilen, breite, farbe, ty, durchschuss=1.03):
         ty -= g * durchschuss
     return ty
 
-ty = H - BLEED - 32 * mm
-ty = gruppe(['DEINE REAKTION'], innen * 0.92, CREME, ty, 1.02)
-ty -= 6 * mm
-ty = gruppe(['GEHÖRT DIR.', 'NICHT MIR.'], innen * 0.80, GOLD_H, ty, 1.06)
+if not BILD:
+    ty = H - BLEED - 32 * mm
+    ty = gruppe(['DEINE REAKTION'], innen * 0.92, CREME, ty, 1.02)
+    ty -= 6 * mm
+    ty = gruppe(['GEHÖRT DIR.', 'NICHT MIR.'], innen * 0.80, GOLD_H, ty, 1.06)
 
-ty -= 9 * mm
-c.setStrokeColor(GOLD)
-c.setLineWidth(1.0)
-c.line(fx, ty, fx + 30 * mm, ty)
+    ty -= 9 * mm
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(1.0)
+    c.line(fx, ty, fx + 30 * mm, ty)
 
-ty -= 12.5 * mm
-block(fx, ty, ['Warum du aufhören darfst, für die',
-               'Gefühle anderer verantwortlich zu sein'],
-      'Serif', 12.6, CREME, 6.4 * mm)
+    ty -= 12.5 * mm
+    block(fx, ty, ['Warum du aufhören darfst, für die',
+                   'Gefühle anderer verantwortlich zu sein'],
+          'Serif', 12.6, CREME, 6.4 * mm)
 
-sy = BLEED + 20 * mm
-gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, CREME, 3.6, mitte=True)
-c.setStrokeColor(GOLD)
-c.setLineWidth(0.7)
-c.line(fm - 26 * mm, sy - 5.2 * mm, fm + 26 * mm, sy - 5.2 * mm)
-gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2, GOLD, 3.8, mitte=True)
+    sy = BLEED + 20 * mm
+    gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, CREME, 3.6, mitte=True)
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(0.7)
+    c.line(fm - 26 * mm, sy - 5.2 * mm, fm + 26 * mm, sy - 5.2 * mm)
+    gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2, GOLD, 3.8, mitte=True)
 
 # ═══════════════ BUCHRÜCKEN ═══════════════
 c.saveState()
