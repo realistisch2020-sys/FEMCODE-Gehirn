@@ -81,7 +81,7 @@ EXERCISES = [
 CFG = {
     'out': "/home/user/FEMCODE-Gehirn/outputs/buch-reaktion/buch5-Bonus-PDF.pdf",
     'palette': PALETTE,
-    'title_lines': ['„Deine Reaktion gehört dir.', 'Nicht mir.“'],
+    'title_lines': ['„Deine Reaktion gehört dir', 'Nicht mir“'],
     'title_size': 24, 'title_leading': 10, 'pill_w': 100,
     'pill_line1': "Sechs kurze Übungen für die Zeit",
     'pill_line2': "nach dem Buch",
