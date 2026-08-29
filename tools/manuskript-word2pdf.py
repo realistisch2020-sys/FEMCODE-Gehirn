@@ -130,7 +130,7 @@ body_c_s = ps('BodyC', fontName='Times-Roman', fontSize=11.5, leading=19.5,
 small_s = ps('Small', fontName='Times-Roman', fontSize=9, leading=13, spaceAfter=2)
 toc_s = ps('Toc', fontName='Times-Roman', fontSize=10, leading=13.5, spaceAfter=1)
 mini_head_s = ps('MiniHead', fontName='Times-Bold', fontSize=11.5, leading=19.5,
-                  alignment=TA_JUSTIFY, spaceAfter=5, keepWithNext=1)
+                  alignment=TA_JUSTIFY, spaceBefore=10, spaceAfter=5, keepWithNext=1)
 tiktok_s = ps('TikTok', fontName='Times-Italic', fontSize=11, leading=15.5,
               alignment=TA_CENTER)
 
@@ -208,7 +208,7 @@ def baue():
     pending_mini = None
     letzter_war_merge = False
 
-    def anhaengen(flowable, gruppieren, quelltext=''):
+    def anhaengen(flowable, gruppieren, quelltext='', max_merge_len=70):
         # gruppieren=True: Absatz darf nie mitten im Satz auf die naechste
         # Seite gerissen werden. Eine offene fette Zwischenzeile (z.B.
         # "Schritt 1: ...") wird mit diesem Absatz zusammen gehalten, damit
@@ -225,7 +225,7 @@ def baue():
             # Hoechstens ein Absatz wird so angehaengt, sonst koennten sich
             # viele kurze Saetze hintereinander (z.B. eine Aufzaehlung) zu
             # einem einzigen, zu grossen Block verketten.
-            if (len(quelltext) <= 70 and not letzter_war_merge
+            if (len(quelltext) <= max_merge_len and not letzter_war_merge
                     and story and isinstance(story[-1], KeepTogether)):
                 vorheriges = story.pop()
                 story.append(KeepTogether(list(vorheriges._content) + [flowable]))
@@ -301,7 +301,13 @@ def baue():
         if text.startswith('TikTok'):
             absatz = mit_vorlauf(tiktok_box(richtext(p)), pending_space)
             pending_space = 0.0
-            anhaengen(absatz, True, text)
+            # Fuer die Merge-Entscheidung (Absatz bleibt beim vorherigen
+            # Block statt allein auf einer neuen Seite zu landen) zaehlt nur
+            # das eigentliche Zitat, nicht das interne "TikTok "-Praefix.
+            # Grosszuegigere Laengengrenze als bei normalen Pointe-Saetzen,
+            # damit ein Zitat nie allein auf einer fast leeren Seite landet.
+            anhaengen(absatz, True, _TIKTOK_PREFIX.sub('', text, count=1),
+                      max_merge_len=140)
         elif size and size >= 20:
             absatz = Paragraph(esc(text), title_s)
             anhaengen(absatz, False)
