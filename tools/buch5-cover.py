@@ -14,7 +14,7 @@ from reportlab import rl_config
 OUT = '/home/user/FEMCODE-Gehirn/outputs/buch-reaktion/buch5-Cover-FullWrap.pdf'
 BILD = '/home/user/FEMCODE-Gehirn/outputs/buch-reaktion/buch5-cover-front-source.png'
 
-SEITEN = 100
+SEITEN = 102
 TRIM_B = 139.7 * mm
 TRIM_H = 215.9 * mm
 RUECKEN = SEITEN * 0.0025 * 25.4 * mm
