@@ -246,6 +246,10 @@ def baue():
 
     for p in docx.paragraphs:
         text = p.text.strip()
+        if text.startswith('EBOOKONLY'):
+            # Absatz ist nur fuer das eBook gedacht (z.B. Text-Fallback-Link
+            # fuer den QR-Code), im Taschenbuch komplett weglassen.
+            continue
         bild = eingebettetes_bild(p)
         if bild is not None:
             absatz = mit_vorlauf(bild, pending_space)

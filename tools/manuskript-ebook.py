@@ -14,6 +14,7 @@ from docx import Document
 from ebooklib import epub
 
 _TIKTOK_PREFIX = re.compile(r'TikTok\s*(?:&#183;|·)?\s*', re.IGNORECASE)
+_EBOOKONLY_PREFIX = re.compile(r'EBOOKONLY\s*(?:&#183;|·)?\s*', re.IGNORECASE)
 
 DOCX = sys.argv[1]
 OUT = sys.argv[2]
@@ -151,7 +152,7 @@ def baue():
                 neue_seite(text[:30])
                 toc.append(epub.Link(aktuelle_seite.file_name, aktuelle_seite.title,
                                       aktuelle_seite.file_name.replace('.xhtml', '')))
-            html_buffer.append('<p>%s</p>' % laufweite_html(p))
+            html_buffer.append('<p>%s</p>' % _EBOOKONLY_PREFIX.sub('', laufweite_html(p), count=1))
 
     if aktuelle_seite is not None:
         aktuelle_seite.content = '<div>%s</div>' % ''.join(html_buffer)
