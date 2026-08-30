@@ -2,6 +2,13 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## Neues Buch (6.): "Du brauchst kein letztes Gespräch" — Konzept steht, Manuskript offen
+
+Titel/Untertitel, Methode (4 Schritte), Kapitelliste, Zitate und die
+Markt-Recherche (Abgrenzung zu positivem Mindset, Reichweite des Themas)
+liegen vollständig in `outputs/buch-letztes-gespraech/konzept.md`.
+Nächster Schritt: Manuskript schreiben, Ziel 120-150 Seiten.
+
 ## Stand 30. Juli 2026: 3 Bücher + 3 Journale fertig
 
 Alle drei Hauptbücher (Das schlechte Gewissen, Wenn Beziehungen erschöpfen,
