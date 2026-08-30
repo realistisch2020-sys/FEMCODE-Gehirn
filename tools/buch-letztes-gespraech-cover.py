@@ -15,7 +15,7 @@ from reportlab import rl_config
 OUT = '/home/user/FEMCODE-Gehirn/outputs/buch-letztes-gespraech/buch-Cover-FullWrap.pdf'
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
-SEITEN  = 204
+SEITEN  = 113
 TRIM_B  = 139.7 * mm
 TRIM_H  = 215.9 * mm
 RUECKEN = SEITEN * 0.0025 * 25.4 * mm
