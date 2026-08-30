@@ -246,25 +246,32 @@ löschen, Modul-Layouts variieren (Petra hat das versucht, half nicht).
 **Nächster Schritt:** frischer Browser/Inkognito-Modus, sonst KDP-Support
 kontaktieren.
 
-## Buch 5 (jetzt "Deine Reaktion gehört dir. Nicht mir.", Stand 28. Aug. 2026)
+## Buch 5 ("Deine Reaktion gehört dir. Nicht mir.") — bereit zum KDP-Upload (Stand 30. Aug. 2026)
 
 - Titel geändert von "Niemand hat dich gefragt, wie es dir geht" — der alte
   Ordner `outputs/buch-niemand-gefragt/` ist veraltet, nicht mehr verwenden.
-- Aktueller Stand liegt in `outputs/buch-reaktion/`:
-  - `buch5-MANUSKRIPT.docx` / `buch5-Taschenbuch.pdf` (100 Seiten)
+- Alles Aktuelle liegt in `outputs/buch-reaktion/`, 102 Seiten:
+  - `buch5-MANUSKRIPT.docx` — Quelle, gemeinsam für Taschenbuch und eBook
+  - `buch5-Taschenbuch.pdf` — druckfertig, Rücken 6,48 mm
   - `buch5-eBook.epub`
-  - `buch5-Cover-FullWrap.pdf` (Taschenbuch, Rücken auf 100 Seiten kalibriert)
-    und `buch5-eBook-Cover.jpg` (Kindle) — fertig, Vorderseitenbild ist ein von
-    Petra ausgewähltes Bild (Petrol/Gold-Riss-Motiv), Quelle gesichert unter
-    `buch5-cover-front-source.png`. **Achtung:** Bild hat nur ~182 dpi
-    (KDP empfiehlt 300 dpi) — Petra ist das bewusst, ggf. nach KDP-Druckprobe
-    nochmal durch eine höher aufgelöste Bildversion ersetzen.
-  - Build-Skript: `tools/buch5-cover.py` (SEITEN-Konstante bei Umfangsänderung anpassen)
-- **Offen:** Komplette Rechtssicherheit-Prüfung wie bei Buch 3/4/7 (Therapeutin?,
-  Impressum-Adresse, Krisennummern, Checkbox-Selbsttest, Cross-Promotion-Abschnitt)
-  — `tools/buch-pruefen.py` laufen lassen
-- **Offen:** KDP-Upload (Taschenbuch + eBook), danach A+ Content
-- Empfohlener Preis: $12.99 / 12,99 €
+  - `buch5-Cover-FullWrap.pdf` (Taschenbuch, Rücken auf 102 Seiten kalibriert)
+    und `buch5-eBook-Cover.jpg` (Kindle) — Vorderseitenbild ist ein von Petra
+    ausgewähltes Bild (Petrol/Gold-Riss-Motiv, 320 dpi, Quelle gesichert unter
+    `buch5-cover-front-source.png`)
+  - `buch5-Bonus-PDF.pdf` — Freebie in Petrol/Gold, sechs Übungen aus dem Buch
+  - Kapitel "Vertiefende Übungen zu diesem Buch" mit QR-Code zu Tentary
+    (Freebie + Newsletter) in Taschenbuch UND eBook eingebaut. Der Text-Link
+    als Fallback steht nur im eBook, im Taschenbuch reicht der QR-Code
+    (neuer "EBOOKONLY·"-Marker in `tools/manuskript-word2pdf.py` /
+    `tools/manuskript-ebook.py`, analog zum TikTok-Marker)
+  - Facebook-Gruppen-Link aus dem Kontakt-Abschnitt entfernt
+  - `tools/buch-pruefen.py` sauber durchgelaufen (nur bekannte Heuristik-Treffer,
+    keine echten Fehler): alle 8 Pflichtteile da, Krisennummern vorne
+  - Build-Skripte: `tools/buch5-cover.py`, `tools/buch5-bonus-pdf.py`
+    (SEITEN-Konstante bei künftiger Umfangsänderung anpassen)
+- **Offen:** KDP-Upload (Taschenbuch + eBook), danach A+ Content — Petra will
+  das am **Samstag, 5. September 2026** hochladen
+- Empfohlener Preis: 12,99 € (Taschenbuch), 9,99 € (eBook)
 
 ## Buch 6 (Ich bin so müde...): A+ Content noch nicht begonnen
 
