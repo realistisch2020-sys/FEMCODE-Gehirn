@@ -42,7 +42,7 @@ from reportlab.platypus import (BaseDocTemplate, Frame, PageTemplate, Paragraph,
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import cm
 from reportlab.lib import colors
-from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
+from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY, TA_RIGHT
 import io
 
 
@@ -98,7 +98,7 @@ def numbered_page(canvas, doc):
 
 
 class BookDoc(BaseDocTemplate):
-    def __init__(self, filename):
+    def __init__(self, filename, toc_capture=None):
         BaseDocTemplate.__init__(
             self, filename, pagesize=SEITE,
             leftMargin=LM, rightMargin=RM, topMargin=TM, bottomMargin=BM,
@@ -111,6 +111,16 @@ class BookDoc(BaseDocTemplate):
                                       H - TM - BM - .5 * cm),
                          onPage=numbered_page),
         ])
+        # Fuer das Inhaltsverzeichnis: merkt sich, auf welcher Seite jede
+        # echte Kapitelueberschrift gelandet ist (1. Durchlauf), damit der
+        # 2. Durchlauf die Seitenzahlen ins TOC eintragen kann.
+        self.toc_capture = toc_capture
+
+    def afterFlowable(self, flowable):
+        if self.toc_capture is not None:
+            key = getattr(flowable, '_toc_text', None)
+            if key is not None:
+                self.toc_capture[key] = self.page
 
 
 def ps(name, **kw):
@@ -128,11 +138,16 @@ body_s = ps('Body', fontName='Times-Roman', fontSize=11.5, leading=19.5,
 body_c_s = ps('BodyC', fontName='Times-Roman', fontSize=11.5, leading=19.5,
               alignment=TA_CENTER, spaceAfter=5)
 small_s = ps('Small', fontName='Times-Roman', fontSize=9, leading=13, spaceAfter=2)
-toc_s = ps('Toc', fontName='Times-Roman', fontSize=10, leading=13.5, spaceAfter=1)
+toc_s = ps('Toc', fontName='Times-Roman', fontSize=9.6, leading=12.6, spaceAfter=0.6)
+toc_num_s = ps('TocNum', fontName='Times-Roman', fontSize=9.6, leading=12.6,
+               spaceAfter=0.6, alignment=TA_RIGHT)
 mini_head_s = ps('MiniHead', fontName='Times-Bold', fontSize=11.5, leading=19.5,
                   alignment=TA_JUSTIFY, spaceBefore=10, spaceAfter=5, keepWithNext=1)
 tiktok_s = ps('TikTok', fontName='Times-Italic', fontSize=11, leading=15.5,
               alignment=TA_CENTER)
+herz_s = ps('Herz', fontName='Times-Roman', fontSize=13, leading=13,
+            alignment=TA_CENTER, spaceBefore=14, spaceAfter=14,
+            textColor=colors.HexColor('#b09a8f'))
 
 
 import re as _re
@@ -199,7 +214,11 @@ def hat_inline_umbruch(p):
     return False
 
 
-def baue():
+def baue(toc_pages=None, out_path=None, toc_capture=None):
+    """toc_pages: im 2. Durchlauf die im 1. Durchlauf gesammelten
+    Kapitel->Seite-Zuordnungen, damit das Inhaltsverzeichnis echte
+    Seitenzahlen zeigt. toc_capture: im 1. Durchlauf ein leeres dict, das
+    BookDoc waehrend des Renderns befuellt."""
     docx = Document(DOCX)
     story = [NextPageTemplate('Plain')]
     pending_space = 0.0
@@ -297,7 +316,27 @@ def baue():
             continue
 
         if in_toc:
-            absatz = mit_vorlauf(Paragraph(esc(text), toc_s), pending_space)
+            seite = toc_pages.get(text) if toc_pages else None
+            if seite:
+                zeile = Table(
+                    [[Paragraph(esc(text), toc_s), Paragraph(str(seite), toc_num_s)]],
+                    colWidths=[W - LM - RM - 1.1 * cm, 1.1 * cm])
+                zeile.setStyle(TableStyle([
+                    ('LEFTPADDING', (0, 0), (-1, -1), 0),
+                    ('RIGHTPADDING', (0, 0), (-1, -1), 0),
+                    ('TOPPADDING', (0, 0), (-1, -1), 0),
+                    ('BOTTOMPADDING', (0, 0), (-1, -1), 1),
+                    ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                ]))
+                absatz = mit_vorlauf(zeile, pending_space)
+            else:
+                absatz = mit_vorlauf(Paragraph(esc(text), toc_s), pending_space)
+            pending_space = 0.0
+            anhaengen(absatz, False)
+            continue
+
+        if text in ('♥', '❤', '♥ ♥ ♥'):
+            absatz = mit_vorlauf(Paragraph('♥ ♥ ♥', herz_s), pending_space)
             pending_space = 0.0
             anhaengen(absatz, False)
             continue
@@ -317,6 +356,7 @@ def baue():
             anhaengen(absatz, False)
         elif size and 15 <= size < 20:
             absatz = Paragraph(esc(text), heading_s)
+            absatz._toc_text = text
             pending_space = 0.0
             anhaengen(absatz, False)
         elif centered and size and 12 <= size < 15:
@@ -346,11 +386,22 @@ def baue():
     if pending_mini is not None:
         story.append(pending_mini)
 
-    doc = BookDoc(OUT)
+    ziel = out_path or OUT
+    doc = BookDoc(ziel, toc_capture=toc_capture)
     doc.build(story)
+    return ziel
+
+
+def baue_mit_seitenzahlen():
+    """2 Durchlaeufe: der erste sammelt, auf welcher Seite jede echte
+    Kapitelueberschrift landet, der zweite baut das PDF neu mit einem
+    Inhaltsverzeichnis, das diese Seitenzahlen zeigt."""
+    erfasst = {}
+    baue(out_path='/tmp/_toc_pass1.pdf', toc_capture=erfasst)
+    baue(toc_pages=erfasst, out_path=OUT)
     print('PDF erstellt:', OUT)
     print('  Seiten:', end=' ')
 
 
 if __name__ == '__main__':
-    baue()
+    baue_mit_seitenzahlen()

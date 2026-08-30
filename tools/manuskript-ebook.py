@@ -140,6 +140,9 @@ def baue():
             html_buffer.append('<h1>%s</h1>' % text)
             toc.append(epub.Link(seite.file_name, seite.title,
                                   seite.file_name.replace('.xhtml', '')))
+        elif text in ('♥', '❤', '♥ ♥ ♥'):
+            if aktuelle_seite is not None:
+                html_buffer.append('<p style="text-align:center;color:#b09a8f;">♥ ♥ ♥</p>')
         elif text.startswith('TikTok'):
             if aktuelle_seite is None:
                 neue_seite(text[:30])
