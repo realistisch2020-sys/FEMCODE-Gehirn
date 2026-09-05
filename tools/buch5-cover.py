@@ -235,7 +235,7 @@ for t in ('Ihre Reaktion gehört ihr.', 'Deine gehört dir.'):
     y -= 6.2 * mm
 
 vy = BLEED + SAFE + 12 * mm
-block(rx, vy, ['Petra Tanner, Coachin.',
+block(rx, vy, ['Petra Tanner, Autorin und Mentorin.',
                'Safe to Thrive.'], 'SerifI', 9.2, GRAU, 5.0 * mm)
 
 c.setFillColor(colors.white)

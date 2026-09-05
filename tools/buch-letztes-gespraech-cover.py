@@ -228,7 +228,7 @@ for t in ('Du musst nicht verstehen, warum.', 'Du darfst trotzdem gehen.'):
     y -= 6.2 * mm
 
 vy = BLEED + SAFE + 12 * mm
-block(rx, vy, ['Petra Tanner, Coachin.',
+block(rx, vy, ['Petra Tanner, Autorin und Mentorin.',
                'Seit 26 Jahren in eigener Praxis.'], 'SerifI', 9.2, GRAU, 5.0 * mm)
 
 c.setFillColor(colors.white)

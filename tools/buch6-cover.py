@@ -381,7 +381,7 @@ for t in ('Du darfst aufhören.', 'Du darfst müde sein.', 'Du darfst du sein.')
 
 # Vita unten links, neben dem Barcodefeld
 vy = BLEED + SAFE + 12 * mm
-block(rx, vy, ['Petra Tanner, Coachin.',
+block(rx, vy, ['Petra Tanner, Autorin und Mentorin.',
                'Seit 26 Jahren in eigener Praxis.'], 'SerifI', 9.2, GRAU, 5.0 * mm)
 
 # Barcodefeld freihalten (KDP druckt ihn selbst)
