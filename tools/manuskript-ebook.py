@@ -15,6 +15,19 @@ from ebooklib import epub
 
 _TIKTOK_PREFIX = re.compile(r'TikTok\s*(?:&#183;|·)?\s*', re.IGNORECASE)
 _EBOOKONLY_PREFIX = re.compile(r'EBOOKONLY\s*(?:&#183;|·)?\s*', re.IGNORECASE)
+_URL_MUSTER = re.compile(
+    r'(https?://[^\s<]+|(?:www\.)?[a-z0-9][a-z0-9\-]*\.mytentary\.com/[^\s<]*)',
+    re.IGNORECASE)
+
+
+def verlinke_urls(html):
+    """Macht nackte URLs im HTML-Text zu klickbaren <a>-Links (fuers eBook,
+    im Taschenbuch bleibt der Text einfach stehen)."""
+    def ersetzen(m):
+        url = m.group(0)
+        href = url if url.startswith('http') else 'https://' + url
+        return '<a href="%s">%s</a>' % (href, url)
+    return _URL_MUSTER.sub(ersetzen, html)
 
 DOCX = sys.argv[1]
 OUT = sys.argv[2]
@@ -155,7 +168,8 @@ def baue():
                 neue_seite(text[:30])
                 toc.append(epub.Link(aktuelle_seite.file_name, aktuelle_seite.title,
                                       aktuelle_seite.file_name.replace('.xhtml', '')))
-            html_buffer.append('<p>%s</p>' % _EBOOKONLY_PREFIX.sub('', laufweite_html(p), count=1))
+            absatz_html = _EBOOKONLY_PREFIX.sub('', laufweite_html(p), count=1)
+            html_buffer.append('<p>%s</p>' % verlinke_urls(absatz_html))
 
     if aktuelle_seite is not None:
         aktuelle_seite.content = '<div>%s</div>' % ''.join(html_buffer)
