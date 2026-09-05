@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Freebie-PDF 'Sieben Saetze, die dich zurueck zu dir bringen'.
 Hochformat A4, zehn Seiten, viel Weissraum, wenig Text pro Seite,
-edle ruhige Typografie (Creme/Anthrazit/Gold)."""
+lieblich-warme Typografie (Creme/Rose/Gold, Herz-Trenner, sanfte
+Rosé-Karten hinter den Saetzen) - passend zur Buchreihen-Bildsprache."""
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
@@ -19,15 +20,18 @@ for name, fn in [('Serif', 'LiberationSerif-Regular.ttf'),
     pdfmetrics.registerFont(TTFont(name, FD + fn))
 
 OUT = "/home/user/FEMCODE-Gehirn/outputs/freebie-7-saetze/7-saetze-zurueck-zu-dir.pdf"
+QR_PFAD = "/home/user/FEMCODE-Gehirn/outputs/freebie-7-saetze/autorenseite-qr.png"
 
 W, H = A4
 MARGIN = 30 * mm
 CX = W / 2
 
-CREME = HexColor('#FAF7F1')
-ANTHRAZIT = HexColor('#2B2924')
-GOLD = HexColor('#B8934A')
-GRAU = HexColor('#8A8478')
+CREME = HexColor('#FBF3EC')
+ROSE_HELL = HexColor('#F3DCD3')
+ROSE = HexColor('#C98B78')
+ANTHRAZIT = HexColor('#4A3B34')
+GOLD = HexColor('#C08A4E')
+GRAU = HexColor('#9C8579')
 
 c = canvas.Canvas(OUT, pagesize=A4)
 
@@ -37,7 +41,22 @@ def bg():
     c.rect(0, 0, W, H, fill=1, stroke=0)
 
 
-def rule(y, width=26 * mm, color=GOLD, lw=0.9):
+def herz(x, y, s, color=ROSE):
+    c.saveState()
+    p = c.beginPath()
+    p.moveTo(x, y)
+    p.curveTo(x - 1.45 * s, y + 1.05 * s, x - 0.80 * s, y + 2.15 * s, x, y + 1.35 * s)
+    p.curveTo(x + 0.80 * s, y + 2.15 * s, x + 1.45 * s, y + 1.05 * s, x, y)
+    p.close()
+    c.setFillColor(color)
+    c.drawPath(p, fill=1, stroke=0)
+    c.restoreState()
+
+
+def rule(y, width=26 * mm, color=GOLD, lw=0.9, mit_herz=True):
+    if mit_herz:
+        herz(CX, y - 1.1 * mm, 1.15 * mm)
+        return
     c.setStrokeColor(color)
     c.setLineWidth(lw)
     c.line(CX - width / 2, y, CX + width / 2, y)
@@ -62,9 +81,30 @@ def wrapped_centered(text, y, font, size, color, leading, max_w=None):
     return centered_block(lines, y, font, size, color, leading)
 
 
+def rose_karte(text, y_top, font, size, color, leading, max_w, pad=9 * mm):
+    """Zeichnet eine sanft gerundete Rosé-Karte hinter dem Satz und
+    gibt die y-Position unterhalb der Karte zurueck."""
+    lines = simpleSplit(text, font, size, max_w)
+    block_h = len(lines) * leading
+    box_w = max_w + 2 * pad
+    box_h = block_h + 2 * pad
+    box_y = y_top - box_h
+    c.saveState()
+    c.setFillColor(ROSE_HELL)
+    c.roundRect(CX - box_w / 2, box_y, box_w, box_h, 6 * mm, fill=1, stroke=0)
+    c.restoreState()
+    text_y = y_top - pad - size * 0.92
+    for line in lines:
+        c.setFont(font, size)
+        c.setFillColor(color)
+        c.drawCentredString(CX, text_y, line)
+        text_y -= leading
+    return box_y - 0
+
+
 def eyebrow(text, y):
     c.setFont('Sans-Bold', 10.5)
-    c.setFillColor(GOLD)
+    c.setFillColor(ROSE)
     spaced = ' '.join(list(text)) if False else text
     # leichte Sperrung von Hand, ohne Kerning-API
     letters = list(text.upper())
@@ -174,20 +214,19 @@ SAETZE = [
 
 for label, satz, absaetze, tages_impuls in SAETZE:
     new_page()
-    y = H - 62 * mm
+    y = H - 58 * mm
     eyebrow(label, y)
-    y -= 14 * mm
-    y = wrapped_centered(satz, y, 'Serif-Bold', 19, ANTHRAZIT, 26,
-                          max_w=120 * mm)
-    y -= 8 * mm
-    rule(y, width=18 * mm)
-    y -= 14 * mm
+    y -= 16 * mm
+    y = rose_karte(satz, y, 'Serif-Bold', 18, ANTHRAZIT, 25, max_w=100 * mm)
+    y -= 16 * mm
     for absatz in absaetze:
         y = wrapped_centered(absatz, y, 'Serif', 12, ANTHRAZIT, 17.5,
                               max_w=112 * mm)
         y -= 6 * mm
-    y -= 8 * mm
-    wrapped_centered(tages_impuls, y, 'Serif-It', 12, GOLD, 17,
+    y -= 6 * mm
+    herz(CX, y - 1.1 * mm, 1.1 * mm)
+    y -= 10 * mm
+    wrapped_centered(tages_impuls, y, 'Serif-It', 12, ROSE, 17,
                       max_w=105 * mm)
 
 # ─── Seite 10: Abschluss ────────────────────────────────────────────────
@@ -224,14 +263,18 @@ y = wrapped_centered('Alle Bücher findest du hier:', y, 'Serif', 11.5,
                       ANTHRAZIT, 16, max_w=110 * mm)
 y = wrapped_centered('amazon.de/stores/Petra-Tanner/author/B0H9FG6CJ7',
                       y, 'Sans-Bold', 10.5, GOLD, 15, max_w=115 * mm)
-y -= 10 * mm
+y -= 8 * mm
+QR_SIZE = 24 * mm
+c.drawImage(QR_PFAD, CX - QR_SIZE / 2, y - QR_SIZE, QR_SIZE, QR_SIZE,
+            mask='auto')
+y -= QR_SIZE + 9 * mm
 y = wrapped_centered('Folge mir auf Amazon', y, 'Serif-Bold', 13,
                       ANTHRAZIT, 18, max_w=110 * mm)
 y = wrapped_centered('Öffne meine Autorenseite und klicke auf „Folgen“. '
                       'So kann Amazon dich informieren, sobald ein neues '
                       'Buch von mir erscheint.',
                       y, 'Serif', 11, GRAU, 16, max_w=105 * mm)
-y -= 14 * mm
+y -= 12 * mm
 centered('Herzlichst', y, 'Serif-It', 12, ANTHRAZIT, 17)
 centered('Petra Tanner', y - 17, 'Serif-Bold', 13, ANTHRAZIT, 0)
 
