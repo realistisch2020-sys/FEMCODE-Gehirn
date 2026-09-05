@@ -36,9 +36,26 @@ GRAU = HexColor('#9C8579')
 c = canvas.Canvas(OUT, pagesize=A4)
 
 
+GRAD_TOP = HexColor('#F6E1D7')
+GRAD_BOTTOM = HexColor('#FCF5EF')
+
+
+def _mix(c1, c2, t):
+    return (c1[0] + (c2[0] - c1[0]) * t,
+            c1[1] + (c2[1] - c1[1]) * t,
+            c1[2] + (c2[2] - c1[2]) * t)
+
+
 def bg():
-    c.setFillColor(CREME)
-    c.rect(0, 0, W, H, fill=1, stroke=0)
+    top = (GRAD_TOP.red, GRAD_TOP.green, GRAD_TOP.blue)
+    bottom = (GRAD_BOTTOM.red, GRAD_BOTTOM.green, GRAD_BOTTOM.blue)
+    bands = 140
+    band_h = H / bands
+    for i in range(bands):
+        t = i / (bands - 1)
+        r, g, b = _mix(top, bottom, t)
+        c.setFillColorRGB(r, g, b)
+        c.rect(0, H - (i + 1) * band_h, W, band_h + 0.6, fill=1, stroke=0)
 
 
 def herz(x, y, s, color=ROSE):
@@ -102,18 +119,16 @@ def rose_karte(text, y_top, font, size, color, leading, max_w, pad=9 * mm):
     return box_y - 0
 
 
-def eyebrow(text, y):
-    c.setFont('Sans-Bold', 10.5)
+def eyebrow(text, y, size=12):
+    c.setFont('Sans-Bold', size)
     c.setFillColor(ROSE)
-    spaced = ' '.join(list(text)) if False else text
-    # leichte Sperrung von Hand, ohne Kerning-API
     letters = list(text.upper())
-    spacing = 2.6
-    total_w = sum(pdfmetrics.stringWidth(ch, 'Sans-Bold', 10.5) + spacing for ch in letters) - spacing
+    spacing = 3.0
+    total_w = sum(pdfmetrics.stringWidth(ch, 'Sans-Bold', size) + spacing for ch in letters) - spacing
     x = CX - total_w / 2
     for ch in letters:
         c.drawString(x, y, ch)
-        x += pdfmetrics.stringWidth(ch, 'Sans-Bold', 10.5) + spacing
+        x += pdfmetrics.stringWidth(ch, 'Sans-Bold', size) + spacing
     return y
 
 
@@ -124,35 +139,35 @@ def new_page():
 
 # ─── Seite 1: Titelseite ────────────────────────────────────────────────
 bg()
-y = H - 105 * mm
+y = H - 100 * mm
 y = wrapped_centered('7 Sätze, die dich zurück zu dir bringen',
-                      y, 'Serif-Bold', 27, ANTHRAZIT, 34)
+                      y, 'Serif-Bold', 32, ANTHRAZIT, 40, max_w=125 * mm)
 y -= 10 * mm
 rule(y)
-y -= 14 * mm
+y -= 15 * mm
 y = wrapped_centered('Für die Momente, in denen du für alle da bist – '
                       'nur nicht mehr für dich',
-                      y, 'Serif-It', 13.5, GRAU, 19, max_w=110 * mm)
+                      y, 'Serif-It', 16, GRAU, 22, max_w=120 * mm)
 y = 40 * mm
-centered('PETRA TANNER', y, 'Sans-Bold', 11.5, ANTHRAZIT, 0)
+centered('PETRA TANNER', y, 'Sans-Bold', 13, ANTHRAZIT, 0)
 
 # ─── Seite 2: Einleitung ────────────────────────────────────────────────
 new_page()
-y = H - 110 * mm
+y = H - 105 * mm
 y = wrapped_centered('Du musst nicht erst zusammenbrechen, um zu erkennen, '
                       'dass es zu viel ist.',
-                      y, 'Serif-Bold', 16.5, ANTHRAZIT, 23, max_w=115 * mm)
-y -= 12 * mm
+                      y, 'Serif-Bold', 19, ANTHRAZIT, 26, max_w=120 * mm)
+y -= 13 * mm
 y = wrapped_centered('Manchmal reicht ein Satz, der dich mitten im '
                       'Funktionieren stoppt. Ein Satz, der dich daran '
                       'erinnert, dass auch du in deinem eigenen Leben '
                       'vorkommen darfst.',
-                      y, 'Serif', 12.5, ANTHRAZIT, 18.5, max_w=110 * mm)
-y -= 10 * mm
+                      y, 'Serif', 14.5, ANTHRAZIT, 21, max_w=118 * mm)
+y -= 11 * mm
 y = wrapped_centered('Lies diese Seiten langsam. Bleib bei dem Satz hängen, '
                       'der etwas in dir auslöst. Genau dort beginnt deine '
                       'Veränderung.',
-                      y, 'Serif', 12.5, ANTHRAZIT, 18.5, max_w=110 * mm)
+                      y, 'Serif', 14.5, ANTHRAZIT, 21, max_w=118 * mm)
 
 # ─── Saetze ──────────────────────────────────────────────────────────────
 SAETZE = [
@@ -214,34 +229,35 @@ SAETZE = [
 
 for label, satz, absaetze, tages_impuls in SAETZE:
     new_page()
-    y = H - 58 * mm
+    y = H - 52 * mm
     eyebrow(label, y)
-    y -= 16 * mm
-    y = rose_karte(satz, y, 'Serif-Bold', 18, ANTHRAZIT, 25, max_w=100 * mm)
-    y -= 16 * mm
+    y -= 18 * mm
+    y = rose_karte(satz, y, 'Serif-Bold', 21, ANTHRAZIT, 29, max_w=108 * mm,
+                   pad=10 * mm)
+    y -= 17 * mm
     for absatz in absaetze:
-        y = wrapped_centered(absatz, y, 'Serif', 12, ANTHRAZIT, 17.5,
-                              max_w=112 * mm)
-        y -= 6 * mm
+        y = wrapped_centered(absatz, y, 'Serif', 14, ANTHRAZIT, 20,
+                              max_w=118 * mm)
+        y -= 7 * mm
     y -= 6 * mm
-    herz(CX, y - 1.1 * mm, 1.1 * mm)
-    y -= 10 * mm
-    wrapped_centered(tages_impuls, y, 'Serif-It', 12, ROSE, 17,
-                      max_w=105 * mm)
+    herz(CX, y - 1.3 * mm, 1.3 * mm)
+    y -= 12 * mm
+    wrapped_centered(tages_impuls, y, 'Serif-It', 14, ROSE, 19.5,
+                      max_w=112 * mm)
 
 # ─── Seite 10: Abschluss ────────────────────────────────────────────────
 new_page()
-y = H - 55 * mm
+y = H - 42 * mm
 y = wrapped_centered('Welcher Satz ist bei dir hängen geblieben?',
-                      y, 'Serif-Bold', 17, ANTHRAZIT, 23, max_w=115 * mm)
-y -= 10 * mm
+                      y, 'Serif-Bold', 20, ANTHRAZIT, 26, max_w=120 * mm)
+y -= 9 * mm
 y = wrapped_centered('Meist ist es genau der Satz, bei dem du kurz still '
                       'wirst. Weil du längst spürst, dass sich dort etwas '
                       'verändern darf.',
-                      y, 'Serif', 12, ANTHRAZIT, 17.5, max_w=108 * mm)
-y -= 12 * mm
+                      y, 'Serif', 13.5, ANTHRAZIT, 19, max_w=112 * mm)
+y -= 9 * mm
 rule(y, width=18 * mm)
-y -= 12 * mm
+y -= 10 * mm
 
 EMPFEHLUNGEN = [
     ("Wenn dich Beziehungen erschöpfen:", "Wenn Beziehungen erschöpfen"),
@@ -251,32 +267,32 @@ EMPFEHLUNGEN = [
     ("Wenn du die Gefühle und Reaktionen anderer trägst:", "Deine Reaktion gehört dir. Nicht mir."),
 ]
 for bedingung, titel in EMPFEHLUNGEN:
-    y = wrapped_centered(bedingung, y, 'Sans', 10, GRAU, 14, max_w=115 * mm)
-    y = wrapped_centered('„%s“' % titel, y, 'Serif-Bold', 12.5, ANTHRAZIT,
-                          18, max_w=115 * mm)
-    y -= 5 * mm
+    y = wrapped_centered(bedingung, y, 'Sans', 11, GRAU, 15, max_w=120 * mm)
+    y = wrapped_centered('„%s“' % titel, y, 'Serif-Bold', 14, ANTHRAZIT,
+                          19, max_w=120 * mm)
+    y -= 4 * mm
 
-y -= 6 * mm
+y -= 5 * mm
 rule(y, width=18 * mm)
-y -= 12 * mm
-y = wrapped_centered('Alle Bücher findest du hier:', y, 'Serif', 11.5,
-                      ANTHRAZIT, 16, max_w=110 * mm)
+y -= 10 * mm
+y = wrapped_centered('Alle Bücher findest du hier:', y, 'Serif', 13,
+                      ANTHRAZIT, 18, max_w=115 * mm)
 y = wrapped_centered('amazon.de/stores/Petra-Tanner/author/B0H9FG6CJ7',
-                      y, 'Sans-Bold', 10.5, GOLD, 15, max_w=115 * mm)
-y -= 8 * mm
-QR_SIZE = 24 * mm
+                      y, 'Sans-Bold', 12, GOLD, 16, max_w=118 * mm)
+y -= 7 * mm
+QR_SIZE = 26 * mm
 c.drawImage(QR_PFAD, CX - QR_SIZE / 2, y - QR_SIZE, QR_SIZE, QR_SIZE,
             mask='auto')
 y -= QR_SIZE + 9 * mm
-y = wrapped_centered('Folge mir auf Amazon', y, 'Serif-Bold', 13,
-                      ANTHRAZIT, 18, max_w=110 * mm)
+y = wrapped_centered('Folge mir auf Amazon', y, 'Serif-Bold', 15,
+                      ANTHRAZIT, 20, max_w=115 * mm)
 y = wrapped_centered('Öffne meine Autorenseite und klicke auf „Folgen“. '
                       'So kann Amazon dich informieren, sobald ein neues '
                       'Buch von mir erscheint.',
-                      y, 'Serif', 11, GRAU, 16, max_w=105 * mm)
-y -= 12 * mm
-centered('Herzlichst', y, 'Serif-It', 12, ANTHRAZIT, 17)
-centered('Petra Tanner', y - 17, 'Serif-Bold', 13, ANTHRAZIT, 0)
+                      y, 'Serif', 12.5, GRAU, 17.5, max_w=108 * mm)
+y -= 10 * mm
+centered('Herzlichst', y, 'Serif-It', 14, ANTHRAZIT, 19)
+centered('Petra Tanner', y - 19, 'Serif-Bold', 15, ANTHRAZIT, 0)
 
 c.save()
 print('PDF erstellt:', OUT)
