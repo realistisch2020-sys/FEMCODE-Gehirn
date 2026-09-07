@@ -57,7 +57,7 @@ def eingebettetes_bild(p):
             continue
         image_part = p.part.related_parts[rId]
         img = Image(io.BytesIO(image_part.blob))
-        max_w = 4.2 * cm
+        max_w = 3.2 * cm
         scale = max_w / img.imageWidth
         img.drawWidth = max_w
         img.drawHeight = img.imageHeight * scale
