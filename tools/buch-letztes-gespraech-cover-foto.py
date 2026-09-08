@@ -21,7 +21,7 @@ if not BILD:
     raise SystemExit('Bilddatei als Argument angeben.')
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
-SEITEN  = 113
+SEITEN  = 109
 TRIM_B  = 139.7 * mm
 TRIM_H  = 215.9 * mm
 RUECKEN = SEITEN * 0.0025 * 25.4 * mm
