@@ -1,0 +1,81 @@
+name: Social Media Automatisierung
+
+# Läuft vorerst nur manuell (workflow_dispatch). Der schedule-Trigger ist
+# absichtlich auskommentiert, bis die Meta-Zugänge (Baustein 3, siehe
+# plans/automatisierung-social-media.md) als Secrets hinterlegt sind — sonst
+# schlägt der Job jeden Tag sichtbar fehl. Einkommentieren, sobald so weit.
+on:
+  # schedule:
+  #   - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      generate_track:
+        description: "Zusätzlich Entwürfe erzeugen für (leer lassen = nur publish/comments)"
+        required: false
+        default: "keine"
+        type: choice
+        options:
+          - keine
+          - buecher
+          - business
+      generate_count:
+        description: "Wie viele Entwürfe erzeugen"
+        required: false
+        default: "4"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-automation
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencies installieren
+        run: pip install -r automation/requirements.txt
+
+      - name: Entwürfe erzeugen
+        if: github.event_name == 'workflow_dispatch' && inputs.generate_track != 'keine'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python automation/scripts/generate_content.py ${{ inputs.generate_track }} --count ${{ inputs.generate_count }}
+
+      - name: Freigegebene Posts veröffentlichen
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_BUSINESS_ACCOUNT_ID: ${{ secrets.IG_BUSINESS_ACCOUNT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+        run: |
+          python automation/scripts/publish_instagram.py
+          python automation/scripts/publish_facebook.py
+
+      - name: Neue Kommentare abholen
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_BUSINESS_ACCOUNT_ID: ${{ secrets.IG_BUSINESS_ACCOUNT_ID }}
+        run: python automation/scripts/fetch_comments.py
+
+      - name: Freigegebene Antworten senden
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python automation/scripts/reply_comments.py
+
+      - name: Queue-Änderungen committen
+        if: always()
+        run: |
+          git config user.name "femcode-automation"
+          git config user.email "automation@users.noreply.github.com"
+          git add automation/content_queue.json automation/comments_queue.json
+          if [ -f outputs/social-log.md ]; then git add outputs/social-log.md; fi
+          git diff --cached --quiet || git commit -m "Automation: Queue-Status aktualisiert"
+          git push
