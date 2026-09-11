@@ -4,7 +4,7 @@ Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich ve
 
 ## Wer ich bin
 
-Wer bist du, was machst du, wie würdest du dich in zwei Sätzen vorstellen?
+Petra. MONAT-Haarpflege-Beraterin/Networkerin (Schweiz), Marke "Safe to Thrive x MONAT". Instagram: @petra.safetothrive.
 
 ## Mein Werdegang
 
