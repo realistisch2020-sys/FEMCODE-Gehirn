@@ -424,6 +424,8 @@ let currentQuestion = 0;
 let scores = { A:0, B:0, C:0, D:0, E:0 };
 
 function startQuiz(){
+  document.getElementById('bgAudio').play().catch(()=>{});
+  document.getElementById('musicToggle').classList.add('playing');
   currentQuestion = 0;
   scores = { A:0, B:0, C:0, D:0, E:0 };
   document.getElementById('screen-intro').classList.add('hidden');

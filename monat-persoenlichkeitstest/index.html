@@ -941,6 +941,8 @@ function updateProgress(i){
 }
 
 function startQuiz(){
+  document.getElementById('bgAudio').play().catch(()=>{});
+  document.getElementById('musicToggle').classList.add('playing');
   document.getElementById('progressWrap').style.display = 'block';
   document.getElementById('subline').style.display = 'none';
   document.getElementById('headline').textContent = 'Welcher Haar-Typ bist du?';
