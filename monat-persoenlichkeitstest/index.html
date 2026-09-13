@@ -524,6 +524,32 @@
     font-family:'Inter', sans-serif;
   }
 
+  .music-toggle{
+    position:fixed;
+    top:16px;
+    right:16px;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    border:1px solid var(--line);
+    background:var(--white);
+    color:var(--ink-soft);
+    box-shadow:0 8px 20px -10px rgba(43,35,31,0.35);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    z-index:100;
+    transition:color 0.25s ease, border-color 0.25s ease;
+  }
+
+  .music-toggle svg{ width:20px; height:20px; }
+
+  .music-toggle.playing{
+    color:var(--gold);
+    border-color:var(--gold);
+  }
+
   @media (max-width:480px){
     .top, .body, .progress-wrap{padding-left:22px; padding-right:22px;}
     h1{font-size:24px;}
@@ -532,6 +558,11 @@
 </style>
 </head>
 <body>
+
+<button class="music-toggle" id="musicToggle" onclick="toggleMusic()" type="button" aria-label="Musik an/aus">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+</button>
+<audio id="bgAudio" src="monat.mp3" loop preload="none"></audio>
 
 <div class="card">
 
@@ -1059,6 +1090,18 @@ function restartQuiz(){
   document.getElementById('subline').style.display = 'block';
   document.getElementById('headline').textContent = 'Welcher Haar-Typ bist du?';
   showScreen('screen-intro');
+}
+
+function toggleMusic(){
+  const audio = document.getElementById('bgAudio');
+  const btn = document.getElementById('musicToggle');
+  if(audio.paused){
+    audio.play();
+    btn.classList.add('playing');
+  } else {
+    audio.pause();
+    btn.classList.remove('playing');
+  }
 }
 </script>
 
