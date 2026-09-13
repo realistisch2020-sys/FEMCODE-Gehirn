@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcher Typ bist du?</title>
+<style>
+  :root{
+    --ink: #1B1712;
+    --charcoal: #22201C;
+    --cream: #EDE7DA;
+    --gold: #C9A84C;
+    --gold-dim: #b99a52;
+    --line: rgba(201,168,76,0.28);
+  }
+  *{box-sizing:border-box;}
+  html{ background: var(--ink) !important; }
+  html,body{margin:0;padding:0;min-height:100%;}
+  body{
+    background: var(--ink) !important;
+    color: var(--cream) !important;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 400;
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 32px 18px;
+  }
+  .frame, .option, .btn{ font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  h1, .question, .signature, .result-title, .book-title{ font-family: Georgia, 'Times New Roman', serif; }
+  .stage{
+    width:100%;
+    max-width: 560px;
+  }
+  .frame{
+    border: 1px solid var(--line);
+    padding: 48px 36px;
+    position:relative;
+    background: linear-gradient(180deg, rgba(201,168,76,0.04), transparent 40%);
+  }
+  .frame::before, .frame::after{
+    content:"";
+    position:absolute;
+    width:18px; height:18px;
+    border: 1px solid var(--gold);
+  }
+  .frame::before{ top:-1px; left:-1px; border-right:none; border-bottom:none; }
+  .frame::after{ bottom:-1px; right:-1px; border-left:none; border-top:none; }
+
+  .progress-track{
+    height:1px;
+    background: rgba(237,231,218,0.14);
+    margin-bottom: 40px;
+    position:relative;
+  }
+  .progress-fill{
+    position:absolute; top:0; left:0; height:1px;
+    background: var(--gold);
+    transition: width 0.5s ease;
+  }
+  .progress-label{
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--gold-dim);
+    margin-bottom: 8px;
+    font-family:'Work Sans', sans-serif;
+  }
+
+  h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height:1.15;
+    margin: 0 0 18px 0;
+    color: var(--cream);
+  }
+  h1 em{
+    font-style: italic;
+    color: var(--gold);
+  }
+  .intro-text{
+    font-size: 16px;
+    line-height:1.7;
+    color: rgba(237,231,218,0.82);
+    margin-bottom: 34px;
+  }
+  .signature{
+    font-family:'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--gold);
+    margin-top: 30px;
+  }
+
+  .question{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 1.65rem;
+    line-height:1.35;
+    font-weight:500;
+    margin-bottom: 28px;
+  }
+
+  .options{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .option{
+    text-align:left;
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid rgba(237,231,218,0.22);
+    padding: 16px 20px;
+    font-family:'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height:1.5;
+    cursor:pointer;
+    transition: border-color 0.25s ease, background 0.25s ease, padding-left 0.25s ease;
+  }
+  .option:hover{
+    border-color: var(--gold);
+    background: rgba(201,168,76,0.06);
+    padding-left: 26px;
+  }
+
+  .btn{
+    display:inline-block;
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 14px 30px;
+    font-family:'Work Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    cursor:pointer;
+    margin-top: 8px;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+  .btn:hover{
+    background: var(--gold);
+    color: var(--ink);
+  }
+
+  .result-eyebrow{
+    font-size: 13px;
+    color: var(--gold-dim);
+    margin-bottom: 10px;
+    letter-spacing: 0.04em;
+  }
+  .result-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 2.3rem;
+    font-weight:500;
+    color: var(--gold);
+    margin: 0 0 20px 0;
+    line-height:1.2;
+  }
+  .result-text{
+    font-size: 16px;
+    line-height: 1.75;
+    color: rgba(237,231,218,0.9);
+    margin-bottom: 26px;
+  }
+  .book-box{
+    border-left: 2px solid var(--gold);
+    padding: 4px 0 4px 20px;
+    margin-bottom: 30px;
+  }
+  .book-label{
+    font-size: 12px;
+    color: var(--gold-dim);
+    margin-bottom: 6px;
+    letter-spacing: 0.04em;
+  }
+  .book-title{
+    font-family:'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--cream);
+  }
+
+  .contact-heading{
+    font-size: 1.3rem;
+    color: var(--cream);
+    margin: 34px 0 10px 0;
+  }
+  .contact-sub{
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(237,231,218,0.72);
+    margin-bottom: 18px;
+  }
+  .contact-row{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .btn-link{
+    text-decoration:none;
+  }
+  .btn-solid{
+    background: var(--gold);
+    color: var(--ink);
+  }
+  .btn-solid:hover{
+    background: transparent;
+    color: var(--gold);
+  }
+
+  .restart{
+    display:block;
+    margin-top: 26px;
+    font-size: 13px;
+    color: rgba(237,231,218,0.5);
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .restart:hover{ color: var(--cream); }
+
+  .hidden{ display:none; }
+
+  @media (max-width: 480px){
+    .frame{ padding: 34px 22px; }
+    h1{ font-size: 2.1rem; }
+    .question{ font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="frame">
+
+    <!-- INTRO -->
+    <div id="screen-intro">
+      <h1>Welcher Teil von dir <em>führt</em> gerade dein Leben?</h1>
+      <p class="intro-text">
+        Sechs kurze Fragen. Keine richtigen oder falschen Antworten &mdash; nur ehrliche.
+        Am Ende zeige ich dir, welches Muster bei dir gerade am lautesten ist,
+        und welches meiner Bücher genau dort ansetzt.
+      </p>
+      <button class="btn" onclick="startQuiz()">Test beginnen</button>
+      <p class="signature">Ich sage dir was wirklich los ist.</p>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="screen-quiz" class="hidden">
+      <div class="progress-label" id="progress-label">Frage 1 von 6</div>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <div class="question" id="question-text"></div>
+      <div class="options" id="options-container"></div>
+    </div>
+
+    <!-- RESULT -->
+    <div id="screen-result" class="hidden">
+      <div class="result-eyebrow">Dein Ergebnis</div>
+      <div class="result-title" id="result-title"></div>
+      <div class="result-text" id="result-text"></div>
+      <div class="book-box">
+        <div class="book-label">Das Buch für diesen Moment</div>
+        <div class="book-title" id="result-book"></div>
+        <a class="btn btn-solid btn-link" id="amazon-link" href="#" target="_blank" rel="noopener" style="margin-top:16px; display:inline-block;">Jetzt auf Amazon ansehen</a>
+      </div>
+      <p class="intro-text" id="result-cta"></p>
+
+      <div class="contact-heading">Willst du direkt mit mir sprechen statt nur zu lesen?</div>
+      <p class="contact-sub">Ich biete auch persönliche Online-Sitzungen an, in denen wir gemeinsam genau an diesem Muster arbeiten.</p>
+      <div class="contact-row">
+        <a class="btn btn-solid btn-link" id="whatsapp-link" href="#" target="_blank" rel="noopener">Per WhatsApp schreiben</a>
+        <a class="btn btn-link" id="email-link" href="#">E-Mail schreiben</a>
+      </div>
+
+      <button class="restart" onclick="restartQuiz()">Test noch einmal machen</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const questions = [
+  {
+    text: "Wie fühlst du dich am Ende eines ganz normalen Tages?",
+    options: [
+      { label: "Schuldig, weil ich nicht genug für andere getan habe", type: "A" },
+      { label: "Ausgelaugt von den Menschen um mich herum", type: "B" },
+      { label: "Müde, aber niemand merkt es", type: "C" },
+      { label: "Als hätte ich wieder alle versorgt, außer mir selbst", type: "D" },
+      { label: "Aufgewühlt von etwas, das jemand zu mir gesagt hat", type: "E" }
+    ]
+  },
+  {
+    text: "Was passiert, wenn du eigentlich \u201eNein\u201c sagen willst?",
+    options: [
+      { label: "Ich sage trotzdem \u201eJa\u201c und ärgere mich danach über mich selbst", type: "A" },
+      { label: "Ich sage Nein, aber die Beziehung fühlt sich danach schwerer an", type: "B" },
+      { label: "Ich sage gar nichts, ich funktioniere einfach weiter", type: "C" },
+      { label: "Ich merke, ich habe verlernt, was ich überhaupt will", type: "D" },
+      { label: "Die Reaktion des anderen wirft mich völlig aus der Bahn", type: "E" }
+    ]
+  },
+  {
+    text: "Welcher Gedanke schleicht sich bei dir am häufigsten ein?",
+    options: [
+      { label: "\u201eIch hätte mehr tun können.\u201c", type: "A" },
+      { label: "\u201eDiese Beziehung kostet mich zu viel Kraft.\u201c", type: "B" },
+      { label: "\u201eIch funktioniere, aber ich fühle kaum noch etwas.\u201c", type: "C" },
+      { label: "\u201eWann habe ich mich das letzte Mal um mich selbst gekümmert?\u201c", type: "D" },
+      { label: "\u201eWarum lässt mich das so aus der Fassung bringen?\u201c", type: "E" }
+    ]
+  },
+  {
+    text: "Wonach sehnst du dich, wenn du ganz ehrlich bist?",
+    options: [
+      { label: "Danach, dass jemand sagt: \u201eDu machst das gut.\u201c", type: "A" },
+      { label: "Nach einer Beziehung, die mich nicht leert", type: "B" },
+      { label: "Danach, gesehen zu werden, so wie ich wirklich bin", type: "C" },
+      { label: "Danach, mich selbst wieder wichtig zu nehmen", type: "D" },
+      { label: "Nach innerer Ruhe, egal was andere sagen oder tun", type: "E" }
+    ]
+  },
+  {
+    text: "Was fällt dir im Alltag am schwersten?",
+    options: [
+      { label: "Grenzen zu setzen, ohne mich schuldig zu fühlen", type: "A" },
+      { label: "Nähe zuzulassen, ohne mich dabei zu verlieren", type: "B" },
+      { label: "Um Hilfe zu bitten", type: "C" },
+      { label: "Etwas nur für mich zu tun, ohne schlechtes Gewissen", type: "D" },
+      { label: "Nicht sofort zu reagieren, wenn mich etwas triggert", type: "E" }
+    ]
+  },
+  {
+    text: "Was hätte das Kind in dir am meisten gebraucht?",
+    options: [
+      { label: "Anerkennung dafür, dass es genug war, so wie es ist", type: "A" },
+      { label: "Beziehungen, die sich sicher statt anstrengend anfühlen", type: "B" },
+      { label: "Gesehen zu werden, ohne sich beweisen zu müssen", type: "C" },
+      { label: "Die Erlaubnis, sich selbst wichtig zu nehmen", type: "D" },
+      { label: "Zu lernen, dass nicht jede Reaktion ihm gehört", type: "E" }
+    ]
+  }
+];
+
+const results = {
+  A: {
+    title: "Die Schuldgefühl-Trägerin",
+    text: "Du übernimmst Verantwortung, die dir oft gar nicht gehört. Ein \u201eNein\u201c fühlt sich für dich an wie ein Verrat &mdash; also sagst du \u201eJa\u201c und trägst danach ein schlechtes Gewissen mit dir herum, das eigentlich niemandem dient.\n\nDas ist kein Charakterfehler. Viele Kinder lernen früh, dass sie verantwortlich sind, wenn es einer wichtigen Bezugsperson schlecht geht. Aus dieser Vermischung von \u201eich\u201c und \u201edu\u201c wird später ein Gewissen, das nicht mehr zwischen echter und übernommener Schuld unterscheidet \u2014 und genau das macht Grenzen setzen so anstrengend.",
+    book: "\u201eMein schlechtes Gewissen\u201c",
+    amazonUrl: "https://www.amazon.de/dp/B0H9HVX97R",
+    cta: "In diesem Buch zeige ich dir, woher dieses Gewissen wirklich kommt \u2014 und wie du anfängst, Entscheidungen zu treffen, ohne dich danach dafür zu bestrafen."
+  },
+  B: {
+    title: "Die Beziehungs-Erschöpfte",
+    text: "Nähe und Erschöpfung liegen bei dir oft nah beieinander. Du gibst viel, hältst viel zusammen, und merkst erst spät, wie leer du dabei wirst.\n\nDas hat oft mit einem Muster zu tun, das Fachleute co-abhängiges Verhalten nennen: Deine innere Ruhe hängt vom Zustand des anderen ab. Du gibst, um Nähe zu sichern \u2014 und merkst erst hinterher, wie viel dich das eigentlich kostet. Nicht weil du die Menschen um dich herum nicht liebst, sondern weil du nie gelernt hast, wo du aufhörst und der andere anfängt.",
+    book: "\u201eWenn Beziehungen erschöpfen\u201c",
+    amazonUrl: "https://www.amazon.de/dp/B0H9J886MQ",
+    cta: "Dieses Buch hilft dir zu erkennen, welche Beziehungen dich tragen und welche dich nur noch kosten \u2014 und was du tun kannst, ohne alles hinzuwerfen."
+  },
+  C: {
+    title: "Die Unsichtbare",
+    text: "Du funktionierst. Zuverlässig, still, oft unbemerkt. Aber unter dieser Funktionsfähigkeit liegt eine Müdigkeit, die schon lange niemand mehr gesehen hat \u2014 auch du selbst nicht immer.\n\nIn der Psychologie nennt man dieses Muster manchmal \u201efunktionierende Erschöpfung\u201c: Du bist leistungsfähig, organisiert, fällst nirgends auf \u2014 und genau deshalb bleibt unsichtbar, wie viel du innerlich trägst. Nicht, weil es niemanden interessiert. Sondern weil du so gut darin geworden bist, es nicht zu zeigen.",
+    book: "\u201eIch bin so müde und keiner sieht es\u201c",
+    amazonUrl: "https://www.amazon.de/dp/B0HBQ26552",
+    cta: "Dieses Buch ist für die Momente, in denen du aufhören darfst, stark zu wirken \u2014 und anfängst, gesehen zu werden."
+  },
+  D: {
+    title: "Die Selbstvergessene",
+    text: "Deine Liste ist lang. Familie, Arbeit, alle anderen \u2014 nur dein eigener Name taucht darauf selten auf.\n\nDieses Muster beginnt oft mit dem, was als People Pleasing bekannt ist: die Bedürfnisse anderer so lange über die eigenen zu stellen, bis man die eigenen kaum noch kennt. Nicht aus Schwäche \u2014 sondern weil du irgendwann gelernt hast, dass Zugehörigkeit sicherer ist als eigene Wünsche, und dass du erst zählst, wenn alle anderen versorgt sind.",
+    book: "\u201eIch stand nie auf meiner eigenen Liste\u201c",
+    amazonUrl: "https://www.amazon.de/dp/B0HGT4PX8H",
+    cta: "Dieses Buch bringt dich zurück auf deine eigene Liste \u2014 Schritt für Schritt, ohne schlechtes Gewissen."
+  },
+  E: {
+    title: "Die Grenzenlose",
+    text: "Ein Satz, ein Blick, eine Reaktion \u2014 und dein ganzer Tag kippt. Du trägst Dinge mit dir herum, die eigentlich gar nicht dir gehören.\n\nDas hat mit deinem Nervensystem zu tun, nicht mit deinem Charakter: Ein Trigger aktiviert in Sekundenbruchteilen eine alte Erfahrung, lange bevor dein Verstand mitreden kann. Die Reaktion fühlt sich riesig an, weil sie nicht nur aus dem Moment kommt \u2014 sondern aus alten Momenten, die noch nicht verarbeitet sind. Das ist kein Zeichen von Schwäche, sondern davon, dass deine Grenzen irgendwann verschwommen sind.",
+    book: "\u201eDeine Reaktion gehört dir nicht mehr\u201c",
+    amazonUrl: "https://www.amazon.de/dp/B0HHJY571K",
+    cta: "Dieses Buch zeigt dir, wie du innerlich ruhig bleibst, auch wenn andere es nicht sind."
+  }
+};
+
+const CONTACT = {
+  whatsappNumber: "41787189109",
+  email: "info.safetothrive@gmail.com"
+};
+
+let currentQuestion = 0;
+let scores = { A:0, B:0, C:0, D:0, E:0 };
+
+function startQuiz(){
+  currentQuestion = 0;
+  scores = { A:0, B:0, C:0, D:0, E:0 };
+  document.getElementById('screen-intro').classList.add('hidden');
+  document.getElementById('screen-quiz').classList.remove('hidden');
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const q = questions[currentQuestion];
+  document.getElementById('progress-label').textContent = "Frage " + (currentQuestion+1) + " von " + questions.length;
+  document.getElementById('progress-fill').style.width = ((currentQuestion) / questions.length * 100) + "%";
+  document.getElementById('question-text').textContent = q.text;
+
+  const container = document.getElementById('options-container');
+  container.innerHTML = "";
+  q.options.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.textContent = opt.label;
+    btn.onclick = () => selectAnswer(opt.type);
+    container.appendChild(btn);
+  });
+}
+
+function selectAnswer(type){
+  scores[type]++;
+  currentQuestion++;
+  if(currentQuestion < questions.length){
+    renderQuestion();
+  } else {
+    document.getElementById('progress-fill').style.width = "100%";
+    showResult();
+  }
+}
+
+function showResult(){
+  let winner = 'A';
+  let max = -1;
+  for(const key in scores){
+    if(scores[key] > max){ max = scores[key]; winner = key; }
+  }
+  const r = results[winner];
+  document.getElementById('screen-quiz').classList.add('hidden');
+  document.getElementById('result-title').textContent = r.title;
+  document.getElementById('result-text').innerHTML = r.text.split('\n\n').map(p => '<p style="margin:0 0 16px 0;">' + p + '</p>').join('');
+  document.getElementById('result-book').textContent = r.book;
+  document.getElementById('amazon-link').href = r.amazonUrl;
+  document.getElementById('result-cta').textContent = r.cta;
+
+  const waMessage = "Hallo Petra, ich habe den Persönlichkeitstest gemacht (Ergebnis: " + r.title + ") und möchte mehr über eine Online-Sitzung erfahren.";
+  document.getElementById('whatsapp-link').href = "https://wa.me/" + CONTACT.whatsappNumber + "?text=" + encodeURIComponent(waMessage);
+  document.getElementById('email-link').href = "mailto:" + CONTACT.email + "?subject=" + encodeURIComponent("Persönlichkeitstest – " + r.title) + "&body=" + encodeURIComponent(waMessage);
+
+  document.getElementById('screen-result').classList.remove('hidden');
+}
+
+function restartQuiz(){
+  document.getElementById('screen-result').classList.add('hidden');
+  document.getElementById('screen-intro').classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
