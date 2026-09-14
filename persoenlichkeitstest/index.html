@@ -304,6 +304,9 @@
           <div class="book-label">Das Buch für diesen Moment</div>
           <div class="book-title" id="result-book"></div>
           <a class="btn btn-solid btn-link" id="amazon-link" href="#" target="_blank" rel="noopener" style="margin-top:16px; display:inline-block;">Jetzt auf Amazon ansehen</a>
+          <a class="btn btn-link" id="pdf-link" href="#" target="_blank" rel="noopener" style="margin-top:10px; margin-left:10px; display:inline-block;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:14px; height:14px; vertical-align:-2px; margin-right:6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Formular zum Ausfüllen (PDF)
+          </a>
         </div>
         <p class="intro-text" id="result-cta"></p>
 
@@ -391,6 +394,7 @@ const results = {
     text: "Du übernimmst Verantwortung, die dir oft gar nicht gehört. Ein \u201eNein\u201c fühlt sich für dich an wie ein Verrat &mdash; also sagst du \u201eJa\u201c und trägst danach ein schlechtes Gewissen mit dir herum, das eigentlich niemandem dient.\n\nDas ist kein Charakterfehler. Viele Kinder lernen früh, dass sie verantwortlich sind, wenn es einer wichtigen Bezugsperson schlecht geht. Aus dieser Vermischung von \u201eich\u201c und \u201edu\u201c wird später ein Gewissen, das nicht mehr zwischen echter und übernommener Schuld unterscheidet \u2014 und genau das macht Grenzen setzen so anstrengend.",
     book: "\u201eMein schlechtes Gewissen\u201c",
     amazonUrl: "https://www.amazon.de/dp/B0H9HVX97R",
+    pdfUrl: "formulare/schuldgefuehl.pdf",
     cta: "In diesem Buch zeige ich dir, woher dieses Gewissen wirklich kommt \u2014 und wie du anfängst, Entscheidungen zu treffen, ohne dich danach dafür zu bestrafen."
   },
   B: {
@@ -398,6 +402,7 @@ const results = {
     text: "Nähe und Erschöpfung liegen bei dir oft nah beieinander. Du gibst viel, hältst viel zusammen, und merkst erst spät, wie leer du dabei wirst.\n\nDas hat oft mit einem Muster zu tun, das Fachleute co-abhängiges Verhalten nennen: Deine innere Ruhe hängt vom Zustand des anderen ab. Du gibst, um Nähe zu sichern \u2014 und merkst erst hinterher, wie viel dich das eigentlich kostet. Nicht weil du die Menschen um dich herum nicht liebst, sondern weil du nie gelernt hast, wo du aufhörst und der andere anfängt.",
     book: "\u201eWenn Beziehungen erschöpfen\u201c",
     amazonUrl: "https://www.amazon.de/dp/B0H9J886MQ",
+    pdfUrl: "formulare/beziehungserschoepft.pdf",
     cta: "Dieses Buch hilft dir zu erkennen, welche Beziehungen dich tragen und welche dich nur noch kosten \u2014 und was du tun kannst, ohne alles hinzuwerfen."
   },
   C: {
@@ -405,6 +410,7 @@ const results = {
     text: "Du funktionierst. Zuverlässig, still, oft unbemerkt. Aber unter dieser Funktionsfähigkeit liegt eine Müdigkeit, die schon lange niemand mehr gesehen hat \u2014 auch du selbst nicht immer.\n\nIn der Psychologie nennt man dieses Muster manchmal \u201efunktionierende Erschöpfung\u201c: Du bist leistungsfähig, organisiert, fällst nirgends auf \u2014 und genau deshalb bleibt unsichtbar, wie viel du innerlich trägst. Nicht, weil es niemanden interessiert. Sondern weil du so gut darin geworden bist, es nicht zu zeigen.",
     book: "\u201eIch bin so müde und keiner sieht es\u201c",
     amazonUrl: "https://www.amazon.de/dp/B0HBQ26552",
+    pdfUrl: "formulare/unsichtbar.pdf",
     cta: "Dieses Buch ist für die Momente, in denen du aufhören darfst, stark zu wirken \u2014 und anfängst, gesehen zu werden."
   },
   D: {
@@ -412,6 +418,7 @@ const results = {
     text: "Deine Liste ist lang. Familie, Arbeit, alle anderen \u2014 nur dein eigener Name taucht darauf selten auf.\n\nDieses Muster beginnt oft mit dem, was als People Pleasing bekannt ist: die Bedürfnisse anderer so lange über die eigenen zu stellen, bis man die eigenen kaum noch kennt. Nicht aus Schwäche \u2014 sondern weil du irgendwann gelernt hast, dass Zugehörigkeit sicherer ist als eigene Wünsche, und dass du erst zählst, wenn alle anderen versorgt sind.",
     book: "\u201eIch stand nie auf meiner eigenen Liste\u201c",
     amazonUrl: "https://www.amazon.de/dp/B0HGT4PX8H",
+    pdfUrl: "formulare/selbstvergessen.pdf",
     cta: "Dieses Buch bringt dich zurück auf deine eigene Liste \u2014 Schritt für Schritt, ohne schlechtes Gewissen."
   },
   E: {
@@ -419,6 +426,7 @@ const results = {
     text: "Ein Satz, ein Blick, eine Reaktion \u2014 und dein ganzer Tag kippt. Du trägst Dinge mit dir herum, die eigentlich gar nicht dir gehören.\n\nDas hat mit deinem Nervensystem zu tun, nicht mit deinem Charakter: Ein Trigger aktiviert in Sekundenbruchteilen eine alte Erfahrung, lange bevor dein Verstand mitreden kann. Die Reaktion fühlt sich riesig an, weil sie nicht nur aus dem Moment kommt \u2014 sondern aus alten Momenten, die noch nicht verarbeitet sind. Das ist kein Zeichen von Schwäche, sondern davon, dass deine Grenzen irgendwann verschwommen sind.",
     book: "\u201eDeine Reaktion gehört dir nicht mehr\u201c",
     amazonUrl: "https://www.amazon.de/dp/B0HHBDG1Y7",
+    pdfUrl: "formulare/grenzenlos.pdf",
     cta: "Dieses Buch zeigt dir, wie du innerlich ruhig bleibst, auch wenn andere es nicht sind."
   }
 };
@@ -476,6 +484,7 @@ function renderResult(winner){
   document.getElementById('result-text').innerHTML = r.text.split('\n\n').map(p => '<p style="margin:0 0 16px 0;">' + p + '</p>').join('');
   document.getElementById('result-book').textContent = r.book;
   document.getElementById('amazon-link').href = r.amazonUrl;
+  document.getElementById('pdf-link').href = r.pdfUrl;
   document.getElementById('result-cta').textContent = r.cta;
 
   const waMessage = "Hallo Petra, ich habe den Persönlichkeitstest gemacht (Ergebnis: " + r.title + ") und möchte mehr über eine Online-Sitzung erfahren.";
