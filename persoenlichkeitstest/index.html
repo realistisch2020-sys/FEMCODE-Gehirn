@@ -430,6 +430,7 @@ const CONTACT = {
 
 let currentQuestion = 0;
 let scores = { A:0, B:0, C:0, D:0, E:0 };
+let currentWinner = null;
 
 function startQuiz(){
   document.getElementById('bgAudio').play().catch(()=>{});
@@ -469,14 +470,8 @@ function selectAnswer(type){
   }
 }
 
-function showResult(){
-  let winner = 'A';
-  let max = -1;
-  for(const key in scores){
-    if(scores[key] > max){ max = scores[key]; winner = key; }
-  }
+function renderResult(winner){
   const r = results[winner];
-  document.getElementById('screen-quiz').classList.add('hidden');
   document.getElementById('result-title').textContent = r.title;
   document.getElementById('result-text').innerHTML = r.text.split('\n\n').map(p => '<p style="margin:0 0 16px 0;">' + p + '</p>').join('');
   document.getElementById('result-book').textContent = r.book;
@@ -489,21 +484,48 @@ function showResult(){
 
   const waGateMessage = "Hallo Petra, ich habe den Persönlichkeitstest gemacht (Ergebnis: " + r.title + ") und möchte gerne meine Auswertung bekommen.";
   document.getElementById('whatsapp-link-gate').href = "https://wa.me/" + CONTACT.whatsappNumber + "?text=" + encodeURIComponent(waGateMessage);
+}
 
+function showResult(){
+  let winner = 'A';
+  let max = -1;
+  for(const key in scores){
+    if(scores[key] > max){ max = scores[key]; winner = key; }
+  }
+  currentWinner = winner;
+  renderResult(winner);
+  document.getElementById('screen-quiz').classList.add('hidden');
   document.getElementById('screen-result').classList.remove('hidden');
 }
 
 function unlockResult(){
+  if(currentWinner){
+    try{ localStorage.setItem('resultUnlocked', currentWinner); }catch(e){}
+  }
   document.getElementById('result-gate').classList.add('hidden');
   document.getElementById('result-details').classList.remove('hidden');
 }
 
 function restartQuiz(){
+  try{ localStorage.removeItem('resultUnlocked'); }catch(e){}
   document.getElementById('screen-result').classList.add('hidden');
   document.getElementById('result-gate').classList.remove('hidden');
   document.getElementById('result-details').classList.add('hidden');
   document.getElementById('screen-intro').classList.remove('hidden');
 }
+
+(function restoreUnlockedResult(){
+  let saved = null;
+  try{ saved = localStorage.getItem('resultUnlocked'); }catch(e){}
+  if(saved && results[saved]){
+    currentWinner = saved;
+    renderResult(saved);
+    document.getElementById('screen-intro').classList.add('hidden');
+    document.getElementById('result-gate').classList.add('hidden');
+    document.getElementById('result-details').classList.remove('hidden');
+    document.getElementById('screen-result').classList.remove('hidden');
+  }
+})();
 
 function toggleMusic(){
   const audio = document.getElementById('bgAudio');
