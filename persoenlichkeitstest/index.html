@@ -507,9 +507,11 @@ function showResult(){
   document.getElementById('screen-result').classList.remove('hidden');
 }
 
+const UNLOCK_EXPIRY_MS = 60 * 60 * 1000; // 1 Stunde
+
 function unlockResult(){
   if(currentWinner){
-    try{ localStorage.setItem('resultUnlocked', currentWinner); }catch(e){}
+    try{ localStorage.setItem('resultUnlocked', JSON.stringify({ winner: currentWinner, ts: Date.now() })); }catch(e){}
   }
   document.getElementById('result-gate').classList.add('hidden');
   document.getElementById('result-details').classList.remove('hidden');
@@ -524,11 +526,21 @@ function restartQuiz(){
 }
 
 (function restoreUnlockedResult(){
+  let raw = null;
+  try{ raw = localStorage.getItem('resultUnlocked'); }catch(e){}
+  if(!raw) return;
   let saved = null;
-  try{ saved = localStorage.getItem('resultUnlocked'); }catch(e){}
-  if(saved && results[saved]){
-    currentWinner = saved;
-    renderResult(saved);
+  try{ saved = JSON.parse(raw); }catch(e){}
+  const winner = saved && saved.winner;
+  const ts = saved && saved.ts;
+  const expired = !ts || (Date.now() - ts > UNLOCK_EXPIRY_MS);
+  if(expired){
+    try{ localStorage.removeItem('resultUnlocked'); }catch(e){}
+    return;
+  }
+  if(winner && results[winner]){
+    currentWinner = winner;
+    renderResult(winner);
     document.getElementById('screen-intro').classList.add('hidden');
     document.getElementById('result-gate').classList.add('hidden');
     document.getElementById('result-details').classList.remove('hidden');
