@@ -291,20 +291,28 @@
     <!-- RESULT -->
     <div id="screen-result" class="hidden">
       <div class="result-eyebrow">Dein Ergebnis</div>
-      <div class="result-title" id="result-title"></div>
-      <div class="result-text" id="result-text"></div>
-      <div class="book-box">
-        <div class="book-label">Das Buch für diesen Moment</div>
-        <div class="book-title" id="result-book"></div>
-        <a class="btn btn-solid btn-link" id="amazon-link" href="#" target="_blank" rel="noopener" style="margin-top:16px; display:inline-block;">Jetzt auf Amazon ansehen</a>
-      </div>
-      <p class="intro-text" id="result-cta"></p>
 
-      <div class="contact-heading">Willst du direkt mit mir sprechen statt nur zu lesen?</div>
-      <p class="contact-sub">Ich biete auch persönliche Online-Sitzungen an, in denen wir gemeinsam genau an diesem Muster arbeiten.</p>
-      <div class="contact-row">
-        <a class="btn btn-solid btn-link" id="whatsapp-link" href="#" target="_blank" rel="noopener">Per WhatsApp schreiben</a>
-        <a class="btn btn-link" id="email-link" href="#">E-Mail schreiben</a>
+      <div id="result-gate">
+        <p class="intro-text">Dein Ergebnis ist fertig. Schreib mir kurz auf WhatsApp, dann bekommst du deine Auswertung direkt hier zu sehen — inklusive der Buch-Empfehlung, die zu deinem Ergebnis passt.</p>
+        <a class="btn btn-solid btn-link" id="whatsapp-link-gate" style="display:block; text-decoration:none; text-align:center;" href="#" target="_blank" rel="noopener" onclick="unlockResult()">Ergebnis auf WhatsApp anfordern</a>
+      </div>
+
+      <div id="result-details" class="hidden">
+        <div class="result-title" id="result-title"></div>
+        <div class="result-text" id="result-text"></div>
+        <div class="book-box">
+          <div class="book-label">Das Buch für diesen Moment</div>
+          <div class="book-title" id="result-book"></div>
+          <a class="btn btn-solid btn-link" id="amazon-link" href="#" target="_blank" rel="noopener" style="margin-top:16px; display:inline-block;">Jetzt auf Amazon ansehen</a>
+        </div>
+        <p class="intro-text" id="result-cta"></p>
+
+        <div class="contact-heading">Willst du direkt mit mir sprechen statt nur zu lesen?</div>
+        <p class="contact-sub">Ich biete auch persönliche Online-Sitzungen an, in denen wir gemeinsam genau an diesem Muster arbeiten.</p>
+        <div class="contact-row">
+          <a class="btn btn-solid btn-link" id="whatsapp-link" href="#" target="_blank" rel="noopener">Per WhatsApp schreiben</a>
+          <a class="btn btn-link" id="email-link" href="#">E-Mail schreiben</a>
+        </div>
       </div>
 
       <button class="restart" onclick="restartQuiz()">Test noch einmal machen</button>
@@ -479,11 +487,21 @@ function showResult(){
   document.getElementById('whatsapp-link').href = "https://wa.me/" + CONTACT.whatsappNumber + "?text=" + encodeURIComponent(waMessage);
   document.getElementById('email-link').href = "mailto:" + CONTACT.email + "?subject=" + encodeURIComponent("Persönlichkeitstest – " + r.title) + "&body=" + encodeURIComponent(waMessage);
 
+  const waGateMessage = "Hallo Petra, ich habe den Persönlichkeitstest gemacht (Ergebnis: " + r.title + ") und möchte gerne meine Auswertung bekommen.";
+  document.getElementById('whatsapp-link-gate').href = "https://wa.me/" + CONTACT.whatsappNumber + "?text=" + encodeURIComponent(waGateMessage);
+
   document.getElementById('screen-result').classList.remove('hidden');
+}
+
+function unlockResult(){
+  document.getElementById('result-gate').classList.add('hidden');
+  document.getElementById('result-details').classList.remove('hidden');
 }
 
 function restartQuiz(){
   document.getElementById('screen-result').classList.add('hidden');
+  document.getElementById('result-gate').classList.remove('hidden');
+  document.getElementById('result-details').classList.add('hidden');
   document.getElementById('screen-intro').classList.remove('hidden');
 }
 
