@@ -37,7 +37,7 @@ Ohne Entscheidung hier bleibt die Automatisierung bei "Text fertig, Video von Ha
 
 ## Baustein 3: Plattform-Zugänge (das machst du, nicht ich)
 
-Das kann ich nicht für dich erledigen — Tokens und App-Zugänge hängen an deinem Login und deiner Identität. Ich schreibe dir die exakten Schritte, aber du klickst sie in deinem Meta-Account durch (im Prinzip die 9 Schritte aus der Anzeige, die du mir gezeigt hast):
+Das kann ich nicht für dich erledigen — Tokens und App-Zugänge hängen an deinem Login und deiner Identität. Schritt-für-Schritt-Anleitung für Instagram+Facebook: `reference/meta-setup.md` (eigene Anleitung, nicht die aus der Anzeige — führt direkt zu den vier Werten, die `automation/` braucht). Kurzfassung:
 
 - **Instagram + Facebook**: Creator/Business-Konto → Meta-Entwicklerportal → eigene App → Zugriffsschlüssel → 60-Tage-Token. Eine App deckt beide Plattformen ab.
 - **TikTok** (Phase 2): eigener Entwickler-Account + Content-Posting-API-Freigabe — kann Tage bis Wochen dauern, strenger als Meta.

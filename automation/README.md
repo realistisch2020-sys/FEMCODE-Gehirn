@@ -20,8 +20,8 @@ Kommentare genauso: `fetch_comments.py` → `approve.py` (draft_reply prüfen/se
 1. `pip install -r automation/requirements.txt`
 2. Secrets als GitHub-Actions-Secrets hinterlegen (Repo → Settings → Secrets and variables → Actions):
    - `ANTHROPIC_API_KEY` — für die Content-Generierung
-   - `IG_ACCESS_TOKEN`, `IG_BUSINESS_ACCOUNT_ID` — aus dem Meta-Setup (Baustein 3 in `plans/automatisierung-social-media.md`). Token läuft nach 60 Tagen ab.
-   - `FB_PAGE_ID`, `FB_PAGE_ACCESS_TOKEN` — dieselbe Meta-App deckt das ab
+   - `IG_ACCESS_TOKEN`, `IG_BUSINESS_ACCOUNT_ID` — Schritt-für-Schritt-Anleitung in `reference/meta-setup.md`. Token läuft nach 60 Tagen ab.
+   - `FB_PAGE_ID`, `FB_PAGE_ACCESS_TOKEN` — fallen bei derselben Anleitung mit ab
 3. Vor dem ersten Workflow-Lauf lokal testen:
    ```
    export ANTHROPIC_API_KEY=...

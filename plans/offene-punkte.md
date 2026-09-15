@@ -10,8 +10,8 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Demnächst
 
-- Meta-Setup (Instagram+Facebook App/Token) machen, dann als Secrets hinterlegen (Liste in `automation/README.md`)
-- API-Feldnamen in `automation/scripts/` einmal gegen die aktuelle Meta-Doku gegenchecken (konnte hier nicht direkt abgerufen werden)
+- Meta-Setup machen: Schritt-für-Schritt-Anleitung steht in `reference/meta-setup.md`, dann die 5 Secrets hinterlegen (Liste in `automation/README.md`)
+- API-Feldnamen in `automation/scripts/` einmal gegen die aktuelle Meta-Doku gegenchecken (konnte hier nicht direkt abgerufen werden — developers.facebook.com war blockiert)
 - Danach: `schedule`-Trigger im Workflow einkommentieren
 - Später: Ads-Layer + TikTok (Baustein 6)
 
