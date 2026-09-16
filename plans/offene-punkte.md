@@ -4,16 +4,18 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- Klären: Mentoring wirklich komplett raus aus dem Plan? Eine Nachricht empfahl noch "Übergang in dein Mentoring", die nächste sagte "kein Mentoring mehr" — im Chat angesprochen, Bestätigung offen
+- Operativer Spielplan steht: `plans/kdp-wachstumsplan.md` (Royalty-Formeln, Kategorien/Keywords, Ads-Struktur, KU-vs-Wide, Launch-Fahrplan, Produktionstakt)
 - Backmatter-Vorlage steht in `reference/backmatter-vorlage.md`, mentoring-frei — in die ersten 3 Bücher einfügen, bei den anderen vereinheitlichen
 - Tentary-Willkommensserie (4 Mails) umbauen: von "nur Beziehung aufbauen" zu "Backlist/neue Bücher empfehlen"
+- Kategorien/Keywords (7 Backend-Keywords je Buch) für alle 5 bestehenden Bücher aufsetzen/prüfen
 
-## Fehlende Zahlen für einen echten (statt geschätzten) Plan
+## Fehlende Zahlen für eine exakte (statt Größenordnungs-) Rechnung
 
-- Sind die 5 neuen Bücher fürs Dezember-Bündel schon in Arbeit, oder Start bei null?
-- Kindle Unlimited: genutzt oder nicht?
+- Echte Seitenzahl(en) der Bücher
+- Taschenbuch/Kindle-Split der aktuellen 4 Verkäufe/Tag
+- Kindle Unlimited oder wide?
+- Stand der 5 neuen Manuskripte — bestimmt den Produktionstakt bis Dezember
 - Amazon-Ads ACOS / Kosten pro Verkauf
-- Preis + Kapazität Gruppenprogramm/1:1 (nur falls Mentoring doch wieder Thema wird)
 - Währung fürs 50k-Ziel: € oder Fr.?
 
 ## Zurückgestellt (nicht mehr Kernpriorität)

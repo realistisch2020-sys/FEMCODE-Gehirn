@@ -12,7 +12,7 @@ Fokusbuch „Ich stand nie auf meiner eigenen Liste" skalieren (aktuell ca. 4 Ve
 - Katalog: 5 neue Bücher bis Dezember 2026 fertigstellen ("Bündel von zehn")
 - Großes Ziel: 50.000 (€/Fr. noch zu klären) Monatsumsatz rein aus dem Bücher-Geschäft, in 12 Monaten
 
-Rechnung + Plan: `plans/weg-zu-50k.md`.
+Rechnung + Entscheidungen: `plans/weg-zu-50k.md`. Operativer Spielplan (Royalty-Formeln, Ads, Kategorien/Keywords, KU-vs-Wide, Launch-Fahrplan): `plans/kdp-wachstumsplan.md`.
 
 ## Prioritäten
 

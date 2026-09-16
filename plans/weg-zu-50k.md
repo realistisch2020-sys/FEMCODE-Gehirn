@@ -9,7 +9,7 @@ Zwei Kursänderungen in dieser Planung, beide festgehalten statt überschrieben,
 1. Kein Fokus auf Social Media (Insta/TikTok/FB) — kein großer laufender Aufwand gewünscht. Hebel läuft über Kanäle, die mit Geld statt Zeit skalieren.
 2. **Kein Mentoring mehr als Wachstumshebel.** Ursprünglich war "Bücher als Funnel ins Mentoring" der Kernhebel dieses Plans (siehe unten, "Verworfen"). Aktuelle Ansage: das Ziel soll rein über das Bücher-Geschäft erreicht werden, ohne Mentoring-Verkauf. Geplant: Erweiterung des Katalogs auf ein Bündel von 10 Büchern bis Dezember 2026 (aktuell 5).
 
-Achtung, das steht so noch nicht ganz widerspruchsfrei da — im Chat dazu eine Rückfrage, siehe unten "das fehlt noch", Punkt 1.
+(Kurzer Widerspruch dazu im Chat geklärt: kein Mentoring, volle Kraft auf die Bücher.)
 
 ## Was sicher bekannt ist
 
@@ -40,7 +40,7 @@ Zum Vergleich: das Fokusbuch steht heute bei 4/Tag. ~33/Tag im Schnitt pro Titel
 
 Ob Kindle Unlimited (Page-Reads) genutzt wird, weiß ich nicht — das würde die Rechnung zusätzlich verändern (siehe offene Punkte unten).
 
-**Realitäts-Check, den ich offen ansprechen muss:** 5 neue Bücher bis Dezember (~3,5 Monate) zu schreiben, redigieren, formatieren und zu veröffentlichen — parallel zum Ausbau von Ads/Backmatter für die bestehenden 5 — ist ein sehr ambitionierter Zeitplan. Nur du kannst einschätzen, ob das machbar ist.
+Produktionstakt für die 5 neuen Bücher bis Dezember (~3,5 Monate): rechnerisch ein neues Buch etwa alle 2–3 Wochen, wenn parallel geschrieben/lektoriert wird. Der komplette operative Spielplan dazu — Royalty-Formeln, Kategorien/Keywords, Ads-Struktur, KU-vs-Wide, Launch-Fahrplan, Takt — steht in `plans/kdp-wachstumsplan.md`.
 
 ## Verworfen: Bücher als Funnel ins Mentoring
 
@@ -50,12 +50,14 @@ Frühere Überlegung in dieser Planung, mittlerweile verworfen: Mentoring als Ha
 
 1. **Backmatter vereinheitlichen** — Vorlage in `reference/backmatter-vorlage.md`. Fokus: Bonus-PDF/Tentary-Link (bleibt), Newsletter-Opt-in (bleibt), Cross-Promotion zu den anderen Büchern (wird gestärkt), optional Bitte um Rezension (aktuell nicht in der Backmatter, aber ein niedrigschwelliger Hebel, der zu "kein großer Aufwand" passt).
 2. **Tentary-Serie anpassen** — die 4 Mails von "Beziehung aufbauen" hin zu "Beziehung aufbauen → nächstes Buch/Backlist empfehlen → auf neue Bücher im Bündel vorbereiten" umbauen.
-3. **Ads über mehrere Titel** — sobald neue Bücher erscheinen, jeweils eigene Kampagne, nicht nur fürs Fokusbuch.
+3. **Kategorien/Keywords + Ads-Struktur** pro Buch aufsetzen, siehe `plans/kdp-wachstumsplan.md`.
+4. **Produktionstakt für die 5 neuen Bücher** festlegen (siehe Wachstumsplan, Punkt 6).
 
 ## Damit das kein Rateplan bleibt — das fehlt noch
 
-1. Bestätigung: Mentoring wirklich komplett raus aus dem Plan? (die vorletzte Nachricht empfahl noch einen Übergang "in dein Mentoring", die letzte sagt "kein Mentoring mehr" — im Chat einmal klären)
-2. Sind die 5 neuen Bücher fürs Dezember-Bündel schon in Arbeit/Rohentwurf, oder Start bei null?
-3. Kindle Unlimited: genutzt oder nicht (ändert die Royalty-Rechnung)?
-4. Amazon-Ads: aktueller ACOS bzw. Kosten pro Verkauf
-5. Währung: 50.000 € oder 50.000 Fr.?
+1. Echte Seitenzahl(en) der Bücher (für die Druckkosten-Formel)
+2. Taschenbuch/Kindle-Split der aktuellen 4 Verkäufe/Tag
+3. Kindle Unlimited oder wide?
+4. Stand der 5 neuen Manuskripte — bestimmt den Produktionstakt
+5. Amazon-Ads: aktueller ACOS bzw. Kosten pro Verkauf
+6. Währung: 50.000 € oder 50.000 Fr.?
