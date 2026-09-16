@@ -51,15 +51,23 @@ Ein Launch ist eine konzentrierte erste Woche, kein einzelner Tag — Amazons Al
 
 Bei Ziel Dezember und ~3,5 Monaten: ein neues Buch etwa alle 2–3 Wochen, wenn die Produktion parallel läuft (Buch 2 in Schreibe/Lektorat, während Buch 1 im Feinschliff ist). Die Stellschraube, die den Takt bestimmt: wie weit die 5 Manuskripte schon stehen.
 
-**Aktueller Manuskript-Stand:**
+**Aktueller Manuskript-Stand** (geklärt: „Du brauchst kein letztes Gespräch" ist der 5. bereits veröffentlichte Titel, kein neues Buch — Katalog steht bei 5, wie ursprünglich gesagt):
 
 | Arbeitstitel/Thema | Status |
 |---|---|
-| „Du brauchst kein letztes Gespräch" | in Arbeit — **zu klären, siehe Chat: ist das ein bereits veröffentlichter Titel oder tatsächlich noch offen? Taucht in `context/business.md` als bereits live gelistet.** |
 | Lust, Beziehung, Mental Load, Begehren (Arbeitstitel offen) | Positionierung/Marktidee entwickelt, Manuskript nicht fertig |
-| 3 weitere | Status nicht erfasst |
+| 4 weitere | Status nicht erfasst |
 
-Sobald geklärt, wie viele der 5 wirklich bei null starten, lässt sich der Takt realistisch statt hypothetisch rechnen.
+## 6a. Live heute: „Du brauchst kein letztes Gespräch" (16.09.2026)
+
+Der Launch-Fahrplan aus Punkt 5 ist jetzt akut, nicht mehr hypothetisch. Für heute/diese Woche konkret:
+
+1. Kategorien + 7 Backend-Keywords final gesetzt (Punkt 2)?
+2. E-Mail-Launch-Ankündigung an die Tentary-Liste raus
+3. Ads-Kampagne für dieses Buch jetzt starten/hochfahren (Auto-Kampagne sofort, falls noch keine läuft) — die erste Woche zählt für die organische Sichtbarkeit danach
+4. Backmatter: dieses Buch verweist auf die anderen 4, und die Backmatter der anderen 4 wird um dieses Buch ergänzt (siehe `reference/backmatter-vorlage.md`)
+5. Falls Testleser:innen/frühe Leser:innen bereitstehen: jetzt um Rezension bitten — frühe Rezensionen wirken stärker als spätere
+6. KDP-Select-Entscheidung für dieses Buch jetzt bewusst treffen (Punkt 4), bevor die Launch-Woche verstreicht
 
 ## 7. Wöchentliches Tracking
 
@@ -77,4 +85,4 @@ Kein Rechnen nötig, KDP hat das schon:
 2. **Taschenbuch/Kindle-Split** — KDP Reports → Sales Dashboard, letzte 30 Tage, nach Format gefiltert.
 3. **KDP-Select-Status pro E-Book** — KDP Bookshelf → E-Book → Reiter „Rechte & Preisgestaltung": zeigt an, ob aktuell in KDP Select. Für jeden Titel einzeln prüfen (siehe Punkt 4 oben, Apple-Books-Konflikt).
 
-Plus weiterhin offen: Status der übrigen 3 (von 5) neuen Manuskripte, und die Klärung zu „Du brauchst kein letztes Gespräch" oben.
+Plus weiterhin offen: Status der übrigen 4 (von 5) neuen Manuskripte für den Dezember-Zuwachs.
