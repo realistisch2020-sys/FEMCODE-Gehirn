@@ -11,15 +11,17 @@ Rahmen für beide Content-Spuren. `automation/scripts/generate_content.py` nutzt
 
 ## Spur: Bücher
 
-Ton: *noch offen — sobald `context/business.md` steht, hier konkretisieren.*
+Nische: Schuldgefühle, Selbstverlust im ständigen Funktionieren, erschöpfende Beziehungen, schwieriges Loslassen. Ton: direkt, verständnisvoll, ohne zu verniedlichen — die Leserin soll sich erkannt fühlen, nicht belehrt.
 
-Content-Ideen: Zitat aus dem Buch, Leseprobe, "3 Dinge, die ich beim Schreiben gelernt habe", Frage ans Publikum, hinter den Kulissen.
+Aktueller Fokus: „Ich stand nie auf meiner eigenen Liste" (siehe `context/strategie.md`) — bekommt den größten Content-Anteil, bis das Verkaufssystem dafür steht. Die anderen 4 Bücher folgen danach.
 
-## Spur: Produkte/Business
+Content-Ideen: Zitat/Leseprobe, ein Satz, der genau die Selbsterkenntnis trifft ("kennst du das…"), "3 Dinge, die ich beim Schreiben gelernt habe", Frage ans Publikum, hinter den Kulissen.
 
-Ton: *noch offen — sobald `context/business.md` steht, hier konkretisieren.*
+## Spur: Produkte/Business (Mentoring)
 
-Content-Ideen: Problem → Lösung, Kunden-Ergebnis/Testimonial, Mythos aufräumen, "so würde ich das heute anders machen", Angebot direkt ansprechen.
+Gruppenprogramme und 1:1-Begleitungen — der Ort, an den die Bücher führen sollen. Ton: wie bei den Büchern direkt und glasklar, aber sichtbar als nächster Schritt nach dem Buch (nicht als Ersatz dafür).
+
+Content-Ideen: Problem → Lösung, Kunden-Ergebnis/Testimonial, Mythos aufräumen, "so würde ich das heute anders machen", Angebot direkt ansprechen, Brücke vom Buchthema zum Mentoring ("das Buch zeigt dir X, im Programm gehen wir Y gemeinsam an").
 
 ## Hook-Formeln (für beide Spuren)
 

@@ -1,21 +1,21 @@
 # Über mich
 
-Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich versteht und in deiner Sprache für dich arbeitet. Du musst das nicht auf einmal füllen. Fang mit dem an, was dir leicht fällt.
+Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich versteht und in deiner Sprache für dich arbeitet.
+
+Name: Petra Tanner
 
 ## Wer ich bin
 
-Wer bist du, was machst du, wie würdest du dich in zwei Sätzen vorstellen?
+Autorin und Mentorin. Ich schreibe Bücher über Schuldgefühle, Selbstverlust im ständigen Funktionieren, erschöpfende Beziehungen und schwieriges Loslassen — und begleite Menschen als Mentorin dabei, das im echten Leben umzusetzen (Gruppenprogramme, 1:1-Begleitungen).
 
 ## Mein Werdegang
 
-Wie bist du dahin gekommen, wo du heute bist? Die wichtigsten Stationen reichen.
+Noch nicht erfasst.
 
 ## Was mich antreibt
 
-Warum machst du das? Was ist dein Warum hinter dem Business?
+Noch nicht erfasst.
 
 ## Wie ich arbeite
 
-Wie tickst du im Alltag? Wann bist du produktiv, was nervt dich, wie sollen Ergebnisse für dich aussehen?
-
-Halte es kurz und ehrlich. Drei klare Sätze schlagen eine ganze Seite.
+Noch nicht erfasst. Bekannt: will glasklare, direkte Antworten und Zahlen — nicht kleingehalten oder gehedgt.

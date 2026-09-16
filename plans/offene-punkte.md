@@ -4,8 +4,13 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- Posting-Engine (Baustein 4, organisch) ist gebaut: `automation/` — generieren → freigeben → posten/beantworten, siehe `automation/README.md`. Läuft noch nicht automatisch, nur manuell per GitHub Actions.
-- Blocker für echten Content: `context/business.md` füllen (Bücher, Produkte, Zielgruppe, Preise) — ohne das verweigert `generate_content.py` bewusst den Lauf
+- `context/business.md` ist gefüllt (5 Bücher, Mentoring, Zielgruppe) — `generate_content.py` sollte jetzt laufen, sobald Secrets stehen
+- 50k-Plan steht in `plans/weg-zu-50k.md` — fehlende Zahlen, um daraus einen echten statt geschätzten Plan zu machen:
+  - Preis + Kapazität Gruppenprogramm und 1:1-Begleitung
+  - Konversion Buch/Newsletter → Mentoring, falls schon gemessen
+  - Instagram-/TikTok-/Facebook-Follower, E-Mail-Listengröße (Tentary)
+  - Amazon-Ads ACOS / Kosten pro Verkauf
+  - Währung fürs 50k-Ziel: € oder Fr.?
 - Video-Produktion Baustein 2: Option A/B/C wählen (siehe `plans/automatisierung-social-media.md`) — bis dahin muss `video_url` bei jedem Post von Hand gesetzt werden
 
 ## Demnächst

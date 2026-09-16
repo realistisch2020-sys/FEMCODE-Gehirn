@@ -4,10 +4,14 @@ Hier kommen deine wichtigsten Kennzahlen rein. Damit gibt Claude realistische Vo
 
 ## Aktuelle Zahlen
 
-Umsatz, Reichweite, E-Mail-Liste, was für dich relevant ist. Grobe Zahlen reichen.
+- Fokusbuch „Ich stand nie auf meiner eigenen Liste": ca. 4 Verkäufe/Tag (Stand 09/2026)
+- Preise Fokusbuch: Taschenbuch ca. 16,04€, Kindle ca. 7,99€
+- Instagram-/TikTok-/Facebook-Follower, E-Mail-Listengröße (Tentary): noch nicht erfasst — bewusst nicht geschätzt, hier eintragen sobald bekannt
+- Amazon-Ads-Kosten pro Verkauf (ACOS): noch nicht erfasst
 
 ## Was gerade läuft
 
-Laufende Launches, Projekte, Tests.
-
-Nur was du wirklich verfolgen willst. Kein Reporting-Monster.
+- Amazon Ads aktiv und im gezielten Ausbau für das Fokusbuch
+- Aufbau externer Traffic über Instagram, TikTok, Facebook, Telegram
+- Automatisierte Willkommensserie im Newsletter (Tentary) mit Bonus-PDFs
+- Social-Media-Automatisierung im Aufbau, siehe `plans/automatisierung-social-media.md`
