@@ -53,6 +53,10 @@ Frühere Überlegung in dieser Planung, mittlerweile verworfen: Mentoring als Ha
 3. **Kategorien/Keywords + Ads-Struktur** pro Buch aufsetzen, siehe `plans/kdp-wachstumsplan.md`.
 4. **Produktionstakt für die 5 neuen Bücher** festlegen (siehe Wachstumsplan, Punkt 6).
 
+## Ehrliche Einschätzung (16.09.2026)
+
+Das System (Ads + Backlist + Bündel) ist richtig aufgesetzt. "50.000 in 12 Monaten" ist der optimistische Rand, nicht der Erwartungswert — hängt an drei Dingen gleichzeitig: Produktionstakt der 5 neuen Bücher wirklich gehalten, ACOS trägt eine 8x-Skalierung des Ad-Budgets, Backlist-Konversion liegt nicht bei null. Hakt eins davon, landet man trotzdem deutlich über dem heutigen Stand (z. B. 15.000–25.000/Monat oder 50.000 in 15 statt 12 Monaten) — kein Scheitern, sondern eine normale Verschiebung. Am schnellsten Richtung "wahrscheinlich" über die drei offenen Zahlen unten, nicht über mehr Tempo beim Schreiben allein.
+
 ## Damit das kein Rateplan bleibt — das fehlt noch
 
 1. Echte Seitenzahl(en) der Bücher (für die Druckkosten-Formel)
