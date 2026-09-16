@@ -1,5 +1,7 @@
 # Social Automation
 
+**Status: zurückgestellt.** Kurskorrektur in `plans/weg-zu-50k.md` — kein Fokus mehr auf Social Media, Haupthebel ist jetzt Ads + Backmatter + E-Mail. Der Code hier ist fertig und funktionsfähig, aber nicht mehr Kernpriorität. Vor Weiterarbeit hier: `plans/offene-punkte.md` checken, ob sich das wieder geändert hat.
+
 Organischer Teil von Baustein 4 aus `plans/automatisierung-social-media.md`: Entwürfe erzeugen, freigeben, veröffentlichen, Kommentare abholen und beantworten. Alles läuft über zwei Warteschlangen mit einem Freigabe-Schritt dazwischen — **nichts geht live, ohne dass jemand `approve.py` benutzt hat.**
 
 ## Ablauf

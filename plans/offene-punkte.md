@@ -4,21 +4,27 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- `context/business.md` ist gefüllt (5 Bücher, Mentoring, Zielgruppe) — `generate_content.py` sollte jetzt laufen, sobald Secrets stehen
-- 50k-Plan steht in `plans/weg-zu-50k.md` — fehlende Zahlen, um daraus einen echten statt geschätzten Plan zu machen:
+- Kurskorrektur: kein Fokus auf Social Media (Insta/TikTok/FB), kein großer laufender Aufwand gewünscht. Neuer Kern: Ads + Backmatter + E-Mail, siehe `plans/weg-zu-50k.md`
+- Fehlende Zahlen für einen echten (statt geschätzten) 50k-Plan:
   - Preis + Kapazität Gruppenprogramm und 1:1-Begleitung
   - Konversion Buch/Newsletter → Mentoring, falls schon gemessen
-  - Instagram-/TikTok-/Facebook-Follower, E-Mail-Listengröße (Tentary)
+  - Aktuelle Backmatter-Inhalte der Bücher (was steht da schon drin, falls überhaupt was)
+  - Führt die Willkommensserie (Tentary) aktuell zum Mentoring, oder endet sie vorher?
   - Amazon-Ads ACOS / Kosten pro Verkauf
   - Währung fürs 50k-Ziel: € oder Fr.?
-- Video-Produktion Baustein 2: Option A/B/C wählen (siehe `plans/automatisierung-social-media.md`) — bis dahin muss `video_url` bei jedem Post von Hand gesetzt werden
 
 ## Demnächst
 
-- Meta-Setup machen: Schritt-für-Schritt-Anleitung steht in `reference/meta-setup.md`, dann die 5 Secrets hinterlegen (Liste in `automation/README.md`)
-- API-Feldnamen in `automation/scripts/` einmal gegen die aktuelle Meta-Doku gegenchecken (konnte hier nicht direkt abgerufen werden — developers.facebook.com war blockiert)
-- Danach: `schedule`-Trigger im Workflow einkommentieren
-- Später: Ads-Layer + TikTok (Baustein 6)
+- Backmatter für die 5 Bücher schreiben (Verweis auf Bonus-PDF/Newsletter + Mentoring) — sobald obige Zahlen da sind
+- E-Mail-Sequenz ggf. um Mentoring-CTA ergänzen
+
+## Zurückgestellt (nicht mehr Kernpriorität)
+
+- Social-Media-Automatisierung (`automation/`, `reference/meta-setup.md`, `plans/automatisierung-social-media.md`) — technisch fertig gebaut und nutzbar, aber laut Kurskorrektur kein Haupthebel mehr. Bleibt liegen, bis/falls gewünscht:
+  - Meta-Setup (Instagram+Facebook Zugänge)
+  - API-Feldnamen gegen Meta-Doku gegenchecken (developers.facebook.com war hier blockiert)
+  - `schedule`-Trigger im Workflow einkommentieren
+  - Video-Produktion Baustein 2, Ads-Layer, TikTok
 
 ## Ideen / später
 

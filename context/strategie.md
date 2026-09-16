@@ -16,6 +16,11 @@ Rechnung + Phasenplan dazu: `plans/weg-zu-50k.md`.
 
 ## Prioritäten
 
-1. Verkaufssystem fürs Fokusbuch verlässlich machen (Ads + organisch)
-2. Bücher konsequent als Funnel ins Mentoring nutzen, nicht nur als Einzelverkauf — reiner Buchverkauf reicht rechnerisch nicht für die 50k
-3. Weitere 4 Bücher nachziehen, sobald das System für Buch 1 steht
+Ausdrücklich **kein** Fokus auf Instagram/TikTok/Facebook-Content — kein großer laufender Aufwand gewünscht. Wachstum läuft über Kanäle, die mit Geld statt mit Zeit skalieren:
+
+1. Amazon Ads fürs Fokusbuch skalieren (Aufwand = Optimierung, nicht Content-Produktion)
+2. Backmatter der Bücher als Funnel ins Mentoring nutzen (einmal schreiben, läuft dauerhaft)
+3. E-Mail-Sequenz (Tentary) konsequent bis zum Mentoring-Angebot durchziehen
+4. Weitere 4 Bücher ins gleiche System aufnehmen, sobald es für Buch 1 steht
+
+Social Media ist Kür, kein Pflichtkanal — reiner Buchverkauf allein reicht rechnerisch ohnehin nicht für die 50k, das Mentoring ist der Hebel.

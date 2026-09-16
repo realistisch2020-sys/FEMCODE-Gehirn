@@ -2,6 +2,16 @@
 
 Glasklar, nicht kleingehalten: die Rechnung, warum reiner Buchverkauf allein nicht reicht, und was den Hebel tatsächlich macht.
 
+## Kurskorrektur: kein Social-Media-Aufwand
+
+Ausdrücklicher Wunsch: kein Fokus auf Instagram/TikTok/Facebook-Content-Produktion, wenig Follower ohnehin, kein großer laufender Aufwand. Das schließt Social als **Haupthebel** aus. Der Plan unten ist entsprechend umgebaut auf Kanäle, die mit Geld statt mit laufender Zeit skalieren:
+
+1. **Amazon Ads** — läuft schon, Aufwand ist Optimierung (Keywords/Gebote), nicht Content-Produktion
+2. **Backmatter der Bücher** — einmal geschrieben, verweist für immer auf Newsletter/Bonus-PDF und Mentoring
+3. **E-Mail-Sequenz (Tentary)** — die Willkommensserie existiert schon, muss nur konsequent zum Mentoring führen
+
+Instagram/TikTok/Facebook/Telegram sind damit Kür, nicht Pflicht — die Automatisierung in `automation/` bleibt nutzbar, ist aber aus diesem Plan als Kernbaustein raus.
+
 ## Was sicher bekannt ist
 
 - Fokusbuch „Ich stand nie auf meiner eigenen Liste": ca. 4 Verkäufe/Tag
@@ -26,7 +36,7 @@ Selbst am oberen Ende des aktuellen Etappenziels bleibt reiner Buchverkauf bei e
 
 ## Rechnung 2: Bücher als Funnel ins Mentoring — der eigentliche Hebel
 
-Das Mentoring existiert schon. Bücher (niedriger Preis, hohe Reichweite über Ads + Social + Telegram + Newsletter) sind der Vertrauens-/Reichweiten-Motor; das Mentoring ist die Marge.
+Das Mentoring existiert schon. Bücher (Reichweite über Amazon Ads, nicht über Social) sind der Vertrauens-/Reichweiten-Motor; das Mentoring ist die Marge.
 
 Wichtige Einschränkung: **1:1-Begleitung ist zeitlich gedeckelt** — das skaliert nicht linear, egal wie viel Traffic reinkommt. Der Haupthebel für 50k ist mit hoher Wahrscheinlichkeit das **Gruppenprogramm** (mehr Teilnehmer:innen ohne proportional mehr Zeit), 1:1 als margenstarke Ergänzung obendrauf.
 
@@ -36,25 +46,26 @@ Ich kann das nicht real durchrechnen, weil mir fehlt:
 - Wie viele Klient:innen gleichzeitig betreubar sind (1:1-Kapazitätsgrenze)
 - Aktuelle Konversion von Buch-/Newsletter-Leser:in zu Programm-Käufer:in (falls schon gemessen)
 
-Zur Einordnung, was für eine Größenordnung realistisch ist: bei einer Konversion von 1–3% (typisch für einen gut gebauten Funnel von Newsletter/Buchleser:in zu einem bezahlten Angebot) braucht es für z. B. 40 Programm-Verkäufe/Monat ungefähr 1.300–4.000 qualifizierte Leads/Monat — das ist eine Bandbreite, keine Zusage, aber sie zeigt: der nötige Trichter ist mit eurer bestehenden Reichweite (Social + Telegram + Newsletter, weiter skaliert) erreichbar, ohne dass daraus zehntausende Buchverkäufe werden müssten.
+Zur Einordnung, was für eine Größenordnung realistisch ist: bei einer Konversion von 1–3% (typisch für einen gut gebauten Funnel von Newsletter/Buchleser:in zu einem bezahlten Angebot) braucht es für z. B. 40 Programm-Verkäufe/Monat ungefähr 1.300–4.000 qualifizierte Leads/Monat. Die kommen in diesem Plan aus Ads-Traffic aufs Buch plus jedem, der das Buch organisch über Amazon findet — nicht aus Social-Reichweite.
 
 ## Trichter-Logik in einem Satz
 
-Buch (Ads + Social + Telegram) → Bonus-PDF/Willkommensserie (Tentary) → Vertrauen aufgebaut → Mentoring-Angebot (Gruppenprogramm zuerst, 1:1 als Ergänzung).
+Amazon Ads → Buchverkauf → Backmatter verweist auf Bonus-PDF/Newsletter (Tentary) → automatisierte Sequenz führt zum Mentoring-Angebot (Gruppenprogramm zuerst, 1:1 als Ergänzung). Alles nach dem Ad-Klick läuft ohne laufenden manuellen Aufwand.
 
 ## 12-Monats-Phasen (grob — wird präzisiert, sobald die fehlenden Zahlen da sind)
 
-- **Monate 1–3:** Fokusbuch-Verkaufssystem stabilisieren (10 → 12–15/Tag). Expliziten Funnel vom Buch/Newsletter ins Mentoring-Angebot einbauen, falls noch nicht vorhanden. Content-Automatisierung (`automation/`) für das Fokusbuch produktiv nehmen.
-- **Monate 4–6:** Traffic gezielt skalieren (Ads-Budget hoch, wenn ACOS es zulässt; organischer Content im festen Rhythmus über IG/TikTok/FB/Telegram). Erste Kohorten aus dem Buch-Funnel im Gruppenprogramm.
-- **Monate 7–9:** Konversion Buch → Mentoring optimieren — das hebelt stärker als mehr Bücher zu verkaufen. Zweites Buch als weiteren Funnel-Einstieg aktivieren.
+- **Monate 1–3:** Fokusbuch-Ads stabilisieren (10 → 12–15/Tag), ACOS im Blick behalten. Backmatter aller 5 Bücher schreiben/überarbeiten: Verweis auf Bonus-PDF/Newsletter + Mentoring. E-Mail-Willkommensserie prüfen — endet sie im Mentoring-Angebot? Falls nicht, ergänzen.
+- **Monate 4–6:** Ads-Budget weiter hochfahren, solange ACOS es hergibt. Erste Cohorten fürs Gruppenprogramm direkt aus der E-Mail-Liste launchen — kein Social nötig.
+- **Monate 7–9:** Konversion Buch → Mentoring optimieren (Backmatter-Text, E-Mail-Sequenz testen) — das hebelt stärker als mehr Bücher zu verkaufen. Zweites Buch ins gleiche Ads+Backmatter-System aufnehmen.
 - **Monate 10–12:** System für die übrigen Bücher wiederholen. Mentoring-Kapazität/Preise bei Bedarf anpassen, wenn Nachfrage die aktuelle Kapazität übersteigt.
 
 ## Damit das kein Rateplan bleibt — das fehlt noch
 
 1. Preis + Kapazität Gruppenprogramm und 1:1-Begleitung
 2. Aktuelle Konversion Buch/Newsletter → Mentoring, falls schon irgendwo gemessen
-3. Instagram-/TikTok-/Facebook-Follower, E-Mail-Listengröße (Tentary)
+3. Was steht aktuell in der Backmatter der Bücher (falls überhaupt was)? E-Mail-Listengröße (Tentary)
 4. Amazon-Ads: aktueller ACOS bzw. Kosten pro Verkauf (für echten Netto-Gewinn statt nur Brutto-Royalty)
-5. Währung: 50.000 € oder 50.000 Fr.? (beides schon genannt)
+5. Führt die Willkommensserie aktuell schon zum Mentoring, oder endet sie vorher?
+6. Währung: 50.000 € oder 50.000 Fr.? (beides schon genannt)
 
 Sobald das da ist, wird aus Rechnung 2 ein echter Zahlenplan statt einer Bandbreite.
