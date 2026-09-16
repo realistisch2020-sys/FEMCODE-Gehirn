@@ -32,11 +32,12 @@ Blended (Mix Taschenbuch/Kindle): grob **~5,50–6€ netto/Exemplar**. Für die
 - Sobald mehrere Bücher da sind: **Product Targeting** auf ASINs vergleichbarer Titel, später Sponsored-Brands-Anzeigen, die mehrere deiner Bücher gleichzeitig zeigen
 - ACOS nicht nur pro Einzelbuch bewerten, sondern gegen den **Backlist-Wert**: ein Verkauf, der über die neue Backmatter noch 1–2 weitere Bücher nach sich zieht, darf einen höheren Einzel-ACOS vertragen als ein Buch ohne Backlist-Anschluss
 
-## 4. Kindle Unlimited vs. Wide — eine offene Entscheidung
+## 4. Kindle Unlimited vs. Wide — aktuell unbewusst gemischt, muss pro Titel entschieden werden
 
-- **KU (KDP Select, exklusiv bei Amazon):** zusätzliche Einnahmen über Page-Reads, Zugriff auf Countdown Deals und kostenlose Werbeaktionen — verstärkt Sichtbarkeit gerade für neue Bücher
-- **Wide (alle Plattformen):** mehr Reichweite außerhalb Amazons, aber kein Page-Read-Einkommen, keine Select-Promo-Werkzeuge
-- Für einen Katalog, der stark auf Ads + Backlist auf Amazon setzt, spricht einiges für KU zumindest für die neuen Bücher — deine Entscheidung, auch abhängig davon, ob du langfristig auf andere Plattformen willst
+- **KU (KDP Select, exklusiv bei Amazon):** zusätzliche Einnahmen über Page-Reads, Zugriff auf Countdown Deals und kostenlose Werbeaktionen — verstärkt Sichtbarkeit gerade für neue Bücher. Voraussetzung: das E-Book läuft während der Einschreibung **exklusiv** über Amazon.
+- **Wide (alle Plattformen):** mehr Reichweite außerhalb Amazons, aber kein Page-Read-Einkommen, keine Select-Promo-Werkzeuge.
+- **Ist-Stand:** mindestens ein Titel ist bereits bei Apple Books eingereicht/nominiert — das schließt KDP Select für diesen Titel aus, solange er dort läuft. Es gibt aktuell keine dokumentierte einheitliche Linie; das ist eine Lücke, kein Fehler, aber sie kostet bares Geld, wenn sie nicht bewusst geschlossen wird (z. B. Page-Read-Einnahmen, die möglich wären, aber durch eine halbe Apple-Listung verschenkt werden, ohne dass die Apple-Reichweite groß genug ist, um das aufzuwiegen).
+- **Nächster Schritt:** pro Titel im KDP Bookshelf unter „Rechte & Preisgestaltung" den aktuellen Select-Status prüfen und bewusst für jeden der 5 (bzw. bald 10) Titel festlegen: KU oder wide — nicht mehr zufällig gemischt.
 
 ## 5. Launch-Fahrplan pro neuem Buch
 
@@ -50,6 +51,16 @@ Ein Launch ist eine konzentrierte erste Woche, kein einzelner Tag — Amazons Al
 
 Bei Ziel Dezember und ~3,5 Monaten: ein neues Buch etwa alle 2–3 Wochen, wenn die Produktion parallel läuft (Buch 2 in Schreibe/Lektorat, während Buch 1 im Feinschliff ist). Die Stellschraube, die den Takt bestimmt: wie weit die 5 Manuskripte schon stehen.
 
+**Aktueller Manuskript-Stand:**
+
+| Arbeitstitel/Thema | Status |
+|---|---|
+| „Du brauchst kein letztes Gespräch" | in Arbeit — **zu klären, siehe Chat: ist das ein bereits veröffentlichter Titel oder tatsächlich noch offen? Taucht in `context/business.md` als bereits live gelistet.** |
+| Lust, Beziehung, Mental Load, Begehren (Arbeitstitel offen) | Positionierung/Marktidee entwickelt, Manuskript nicht fertig |
+| 3 weitere | Status nicht erfasst |
+
+Sobald geklärt, wie viele der 5 wirklich bei null starten, lässt sich der Takt realistisch statt hypothetisch rechnen.
+
 ## 7. Wöchentliches Tracking
 
 - Verkäufe/Tag pro Titel und Format (KDP-Dashboard)
@@ -58,9 +69,12 @@ Bei Ziel Dezember und ~3,5 Monaten: ein neues Buch etwa alle 2–3 Wochen, wenn 
 - Listenwachstum (Tentary)
 - Rezensionsanzahl/-geschwindigkeit pro Buch
 
-## Damit die Rechnung exakt statt Größenordnung wird
+## Wo du die 3 fehlenden Zahlen in ~10 Minuten findest
 
-1. Echte Seitenzahl(en) deiner Bücher
-2. Taschenbuch/Kindle-Split der aktuellen 4 Verkäufe/Tag
-3. KU oder wide
-4. Stand der 5 neuen Manuskripte — wie viel steht schon, was bestimmt den Takt
+Kein Rechnen nötig, KDP hat das schon:
+
+1. **Royalty pro Titel/Format** — KDP Bookshelf → Buch anklicken → Reiter „Preisgestaltung": zeigt die berechnete Tantieme direkt an, für Taschenbuch und Kindle je Marktplatz.
+2. **Taschenbuch/Kindle-Split** — KDP Reports → Sales Dashboard, letzte 30 Tage, nach Format gefiltert.
+3. **KDP-Select-Status pro E-Book** — KDP Bookshelf → E-Book → Reiter „Rechte & Preisgestaltung": zeigt an, ob aktuell in KDP Select. Für jeden Titel einzeln prüfen (siehe Punkt 4 oben, Apple-Books-Konflikt).
+
+Plus weiterhin offen: Status der übrigen 3 (von 5) neuen Manuskripte, und die Klärung zu „Du brauchst kein letztes Gespräch" oben.

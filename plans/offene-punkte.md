@@ -11,10 +11,11 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Fehlende Zahlen für eine exakte (statt Größenordnungs-) Rechnung
 
-- Echte Seitenzahl(en) der Bücher
-- Taschenbuch/Kindle-Split der aktuellen 4 Verkäufe/Tag
-- Kindle Unlimited oder wide?
-- Stand der 5 neuen Manuskripte — bestimmt den Produktionstakt bis Dezember
+- **Klären: „Du brauchst kein letztes Gespräch" — bereits veröffentlicht (wie ursprünglich gesagt) oder doch noch in Arbeit?** Widerspruch zwischen den Nachrichten, im Chat angesprochen
+- Royalty pro Titel/Format — direkt aus KDP Bookshelf → Preisgestaltung ablesen
+- Taschenbuch/Kindle-Split — aus KDP Sales Dashboard, letzte 30 Tage
+- KDP-Select-Status pro E-Book prüfen — mind. 1 Titel ist bei Apple Books, das schließt KU für den aus; pro Titel bewusst entscheiden statt zufällig gemischt lassen
+- Status der übrigen 3 (von 5) neuen Manuskripte — bestimmt den Produktionstakt bis Dezember
 - Amazon-Ads ACOS / Kosten pro Verkauf
 - Währung fürs 50k-Ziel: € oder Fr.?
 
