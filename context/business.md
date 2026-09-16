@@ -12,7 +12,7 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 4. **„Wenn Beziehungen erschöpfen"** — Beziehungen, in denen Nähe, Verantwortung und emotionale Last zunehmend Kraft kosten. Wie man sich nicht verliert und klarer bei sich bleibt.
 5. **„Du brauchst kein letztes Gespräch"** — Loslassen nach Beziehungen/belastenden Verbindungen. Kern: Abschluss entsteht nicht zwingend durch den anderen, sondern kann in einem selbst entstehen.
 
-**Mentoring** — eigene Gruppenprogramme und 1:1-Begleitungen, höherpreisig. Die Bücher sind langfristig nicht nur Direktverkauf, sondern auch Einstieg hierher.
+**Mentoring** — eigene Gruppenprogramme und 1:1-Begleitungen, existiert als Angebot. Stand 09/2026: bewusst **nicht** Teil der aktuellen Wachstumsstrategie — das 50k-Ziel soll rein über das Bücher-Geschäft erreicht werden (siehe `context/strategie.md`, `plans/weg-zu-50k.md`).
 
 ## Meine Zielgruppe
 
@@ -29,6 +29,7 @@ Getrennte Kanäle für Bücher und andere Geschäftsbereiche.
 
 - Fokusbuch „Ich stand nie auf meiner eigenen Liste": Taschenbuch ca. 16,04€, Kindle ca. 7,99€
 - Weitere 4 Bücher: ebenfalls Taschenbuch + Kindle über Amazon, Einzelpreise noch nicht erfasst
+- Katalog wächst auf ein Bündel von 10 Büchern bis Dezember 2026 (5 neue Titel geplant)
 - Mentoring (Gruppenprogramme, Begleitungen): Preise noch nicht erfasst
 
 Verkauf läuft hauptsächlich über Amazon KDP. Amazon Ads sind aktiv und werden gezielt ausgebaut.

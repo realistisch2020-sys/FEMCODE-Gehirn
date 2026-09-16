@@ -1,71 +1,61 @@
 # Weg zu 50.000/Monat mit dem Buchgeschäft
 
-Glasklar, nicht kleingehalten: die Rechnung, warum reiner Buchverkauf allein nicht reicht, und was den Hebel tatsächlich macht.
+Glasklar, nicht kleingehalten.
 
-## Kurskorrektur: kein Social-Media-Aufwand
+## Aktueller Stand der Entscheidung (16.09.2026)
 
-Ausdrücklicher Wunsch: kein Fokus auf Instagram/TikTok/Facebook-Content-Produktion, wenig Follower ohnehin, kein großer laufender Aufwand. Das schließt Social als **Haupthebel** aus. Der Plan unten ist entsprechend umgebaut auf Kanäle, die mit Geld statt mit laufender Zeit skalieren:
+Zwei Kursänderungen in dieser Planung, beide festgehalten statt überschrieben, damit nichts verloren geht:
 
-1. **Amazon Ads** — läuft schon, Aufwand ist Optimierung (Keywords/Gebote), nicht Content-Produktion
-2. **Backmatter der Bücher** — einmal geschrieben, verweist für immer auf Newsletter/Bonus-PDF und Mentoring
-3. **E-Mail-Sequenz (Tentary)** — die Willkommensserie existiert schon, muss nur konsequent zum Mentoring führen
+1. Kein Fokus auf Social Media (Insta/TikTok/FB) — kein großer laufender Aufwand gewünscht. Hebel läuft über Kanäle, die mit Geld statt Zeit skalieren.
+2. **Kein Mentoring mehr als Wachstumshebel.** Ursprünglich war "Bücher als Funnel ins Mentoring" der Kernhebel dieses Plans (siehe unten, "Verworfen"). Aktuelle Ansage: das Ziel soll rein über das Bücher-Geschäft erreicht werden, ohne Mentoring-Verkauf. Geplant: Erweiterung des Katalogs auf ein Bündel von 10 Büchern bis Dezember 2026 (aktuell 5).
 
-Instagram/TikTok/Facebook/Telegram sind damit Kür, nicht Pflicht — die Automatisierung in `automation/` bleibt nutzbar, ist aber aus diesem Plan als Kernbaustein raus.
+Achtung, das steht so noch nicht ganz widerspruchsfrei da — im Chat dazu eine Rückfrage, siehe unten "das fehlt noch", Punkt 1.
 
 ## Was sicher bekannt ist
 
 - Fokusbuch „Ich stand nie auf meiner eigenen Liste": ca. 4 Verkäufe/Tag
 - Preise: Taschenbuch ca. 16,04€, Kindle ca. 7,99€
 - Amazon Ads laufen bereits und werden ausgebaut
-- Mentoring (Gruppenprogramme, 1:1-Begleitungen) existiert bereits als höherpreisiges Angebot
 - Etappenziele: 10/Tag, dann 12–15/Tag, dann weitere Skalierung
+- Katalog soll bis Dezember 2026 von 5 auf 10 Bücher wachsen ("Bündel")
+- Backmatter: uneinheitlich — bei neueren Büchern teilweise vorhanden (Bonus-PDF, QR/Tentary-Link, Newsletter-Opt-in, Verweis auf weitere Bücher), bei den ersten 3 Büchern noch ins Manuskript einzufügen. Kein konsequenter nächster Schritt nach dem Newsletter-Eintrag.
+- Tentary-Willkommensserie: 4 Mails, bewusst neutral gehalten, endet aktuell bei "Beziehung aufbauen", nicht bei einem klaren nächsten Schritt
 
-## Rechnung 1: Nur Bucheinzelverkauf — warum das allein nicht reicht
+## Rechnung: 50.000€/Monat rein aus Büchern, verteilt auf 10 Titel
 
-KDP-Netto-Royalty grob geschätzt (Kindle ~70%-Tier minus Delivery-Fee, Taschenbuch ~60% minus Druckkosten — Druckkosten hängen von der Seitenzahl ab, die ich nicht kenne): **ca. 5€ netto pro verkauftem Exemplar**, als grobe Mitte. Das ist eine Schätzung, keine exakte Zahl — und noch **vor** Abzug der Amazon-Ads-Kosten pro Verkauf (ACOS), die schon laufen, aber deren Höhe ich nicht kenne.
+KDP-Netto-Royalty weiterhin grob geschätzt: **ca. 5€ netto pro verkauftem Exemplar** (Schätzung, keine exakte Zahl — Taschenbuch-Druckkosten hängen von der Seitenzahl ab, die ich nicht kenne; Zahl ist vor Abzug der Amazon-Ads-Kosten pro Verkauf).
 
-| Verkäufe/Tag | Verkäufe/Monat | Netto-Royalty/Monat (Schätzung) | Anteil an 50.000 |
-|---|---|---|---|
-| 4 (jetzt) | ~120 | ~600€ | ~1,2% |
-| 10 (Etappe 1) | ~300 | ~1.500€ | ~3% |
-| 15 (Etappe 2) | ~450 | ~2.250€ | ~4,5% |
+Für 50.000€/Monat: ~10.000 verkaufte Exemplare/Monat, gesamt über den Katalog.
 
-Selbst am oberen Ende des aktuellen Etappenziels bleibt reiner Buchverkauf bei einem kleinen Bruchteil des Ziels. Um 50.000€ **nur** über Bucheinzelverkäufe zu erreichen, bräuchte es bei ~5€ netto grob **8.000–10.000 verkaufte Exemplare pro Monat** — verteilt auf alle 5 Bücher wird das etwas leichter, bleibt aber Bestseller-Volumen, nicht "Ads besser einstellen"-Volumen.
+| Katalog-Größe | Ø Exemplare/Titel/Monat | Ø Exemplare/Titel/Tag |
+|---|---|---|
+| 5 Bücher (jetzt) | ~2.000 | ~67 |
+| 10 Bücher (Ziel Dezember) | ~1.000 | ~33 |
 
-**Das ist keine schlechte Nachricht, sondern die Erklärung, warum der zweite Hebel entscheidend ist.**
+Zum Vergleich: das Fokusbuch steht heute bei 4/Tag. ~33/Tag im Schnitt pro Titel bei 10 Büchern ist immer noch das gut 8-Fache des heutigen Fokusbuch-Stands — aber verteilt über 10 Titel statt auf einen konzentriert, mit Rückenwind durch drei Effekte, die bei nur einem Buch nicht wirken:
 
-## Rechnung 2: Bücher als Funnel ins Mentoring — der eigentliche Hebel
+1. **Backlist-Effekt** — jeder neue Titel kann über Cross-Promotion in der Backmatter und "Auch gekauft" auf Amazon die älteren Bücher mit aktivieren, nicht nur sich selbst verkaufen
+2. **Mehr Ads-Fläche gleichzeitig** — 10 Kampagnen parallel können mehr Gesamtvolumen bringen als eine einzelne
+3. **Bündel-Preis** — ein Box-Set/Bundle mehrerer Bücher zusammen verkauft sich zu einem höheren Kombipreis als der Einzelpreis eines Buchs — erhöht Umsatz pro Sale, genau das Wort, das du selbst benutzt hast ("Bündel")
 
-Das Mentoring existiert schon. Bücher (Reichweite über Amazon Ads, nicht über Social) sind der Vertrauens-/Reichweiten-Motor; das Mentoring ist die Marge.
+Ob Kindle Unlimited (Page-Reads) genutzt wird, weiß ich nicht — das würde die Rechnung zusätzlich verändern (siehe offene Punkte unten).
 
-Wichtige Einschränkung: **1:1-Begleitung ist zeitlich gedeckelt** — das skaliert nicht linear, egal wie viel Traffic reinkommt. Der Haupthebel für 50k ist mit hoher Wahrscheinlichkeit das **Gruppenprogramm** (mehr Teilnehmer:innen ohne proportional mehr Zeit), 1:1 als margenstarke Ergänzung obendrauf.
+**Realitäts-Check, den ich offen ansprechen muss:** 5 neue Bücher bis Dezember (~3,5 Monate) zu schreiben, redigieren, formatieren und zu veröffentlichen — parallel zum Ausbau von Ads/Backmatter für die bestehenden 5 — ist ein sehr ambitionierter Zeitplan. Nur du kannst einschätzen, ob das machbar ist.
 
-Ich kann das nicht real durchrechnen, weil mir fehlt:
-- Preis pro Gruppenprogramm-Platz
-- Preis pro 1:1-Begleitung
-- Wie viele Klient:innen gleichzeitig betreubar sind (1:1-Kapazitätsgrenze)
-- Aktuelle Konversion von Buch-/Newsletter-Leser:in zu Programm-Käufer:in (falls schon gemessen)
+## Verworfen: Bücher als Funnel ins Mentoring
 
-Zur Einordnung, was für eine Größenordnung realistisch ist: bei einer Konversion von 1–3% (typisch für einen gut gebauten Funnel von Newsletter/Buchleser:in zu einem bezahlten Angebot) braucht es für z. B. 40 Programm-Verkäufe/Monat ungefähr 1.300–4.000 qualifizierte Leads/Monat. Die kommen in diesem Plan aus Ads-Traffic aufs Buch plus jedem, der das Buch organisch über Amazon findet — nicht aus Social-Reichweite.
+Frühere Überlegung in dieser Planung, mittlerweile verworfen: Mentoring als Hauptverkaufshebel, Bücher als Reichweiten-Motor dafür. Grund: kein Mentoring-Verkauf mehr gewünscht. Hier aufgehoben statt gelöscht, falls sich das nochmal ändert — die Rechnung dazu war: bei 1–3% Konversion und einem Gruppenprogramm bräuchte es ca. 1.300–4.000 Leads/Monat für ~40 Verkäufe. Aktuell nicht Teil des Plans.
 
-## Trichter-Logik in einem Satz
+## Was jetzt konkret zu tun ist
 
-Amazon Ads → Buchverkauf → Backmatter verweist auf Bonus-PDF/Newsletter (Tentary) → automatisierte Sequenz führt zum Mentoring-Angebot (Gruppenprogramm zuerst, 1:1 als Ergänzung). Alles nach dem Ad-Klick läuft ohne laufenden manuellen Aufwand.
-
-## 12-Monats-Phasen (grob — wird präzisiert, sobald die fehlenden Zahlen da sind)
-
-- **Monate 1–3:** Fokusbuch-Ads stabilisieren (10 → 12–15/Tag), ACOS im Blick behalten. Backmatter aller 5 Bücher schreiben/überarbeiten: Verweis auf Bonus-PDF/Newsletter + Mentoring. E-Mail-Willkommensserie prüfen — endet sie im Mentoring-Angebot? Falls nicht, ergänzen.
-- **Monate 4–6:** Ads-Budget weiter hochfahren, solange ACOS es hergibt. Erste Cohorten fürs Gruppenprogramm direkt aus der E-Mail-Liste launchen — kein Social nötig.
-- **Monate 7–9:** Konversion Buch → Mentoring optimieren (Backmatter-Text, E-Mail-Sequenz testen) — das hebelt stärker als mehr Bücher zu verkaufen. Zweites Buch ins gleiche Ads+Backmatter-System aufnehmen.
-- **Monate 10–12:** System für die übrigen Bücher wiederholen. Mentoring-Kapazität/Preise bei Bedarf anpassen, wenn Nachfrage die aktuelle Kapazität übersteigt.
+1. **Backmatter vereinheitlichen** — Vorlage in `reference/backmatter-vorlage.md`. Fokus: Bonus-PDF/Tentary-Link (bleibt), Newsletter-Opt-in (bleibt), Cross-Promotion zu den anderen Büchern (wird gestärkt), optional Bitte um Rezension (aktuell nicht in der Backmatter, aber ein niedrigschwelliger Hebel, der zu "kein großer Aufwand" passt).
+2. **Tentary-Serie anpassen** — die 4 Mails von "Beziehung aufbauen" hin zu "Beziehung aufbauen → nächstes Buch/Backlist empfehlen → auf neue Bücher im Bündel vorbereiten" umbauen.
+3. **Ads über mehrere Titel** — sobald neue Bücher erscheinen, jeweils eigene Kampagne, nicht nur fürs Fokusbuch.
 
 ## Damit das kein Rateplan bleibt — das fehlt noch
 
-1. Preis + Kapazität Gruppenprogramm und 1:1-Begleitung
-2. Aktuelle Konversion Buch/Newsletter → Mentoring, falls schon irgendwo gemessen
-3. Was steht aktuell in der Backmatter der Bücher (falls überhaupt was)? E-Mail-Listengröße (Tentary)
-4. Amazon-Ads: aktueller ACOS bzw. Kosten pro Verkauf (für echten Netto-Gewinn statt nur Brutto-Royalty)
-5. Führt die Willkommensserie aktuell schon zum Mentoring, oder endet sie vorher?
-6. Währung: 50.000 € oder 50.000 Fr.? (beides schon genannt)
-
-Sobald das da ist, wird aus Rechnung 2 ein echter Zahlenplan statt einer Bandbreite.
+1. Bestätigung: Mentoring wirklich komplett raus aus dem Plan? (die vorletzte Nachricht empfahl noch einen Übergang "in dein Mentoring", die letzte sagt "kein Mentoring mehr" — im Chat einmal klären)
+2. Sind die 5 neuen Bücher fürs Dezember-Bündel schon in Arbeit/Rohentwurf, oder Start bei null?
+3. Kindle Unlimited: genutzt oder nicht (ändert die Royalty-Rechnung)?
+4. Amazon-Ads: aktueller ACOS bzw. Kosten pro Verkauf
+5. Währung: 50.000 € oder 50.000 Fr.?

@@ -4,27 +4,21 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- Kurskorrektur: kein Fokus auf Social Media (Insta/TikTok/FB), kein großer laufender Aufwand gewünscht. Neuer Kern: Ads + Backmatter + E-Mail, siehe `plans/weg-zu-50k.md`
-- Fehlende Zahlen für einen echten (statt geschätzten) 50k-Plan:
-  - Preis + Kapazität Gruppenprogramm und 1:1-Begleitung
-  - Konversion Buch/Newsletter → Mentoring, falls schon gemessen
-  - Aktuelle Backmatter-Inhalte der Bücher (was steht da schon drin, falls überhaupt was)
-  - Führt die Willkommensserie (Tentary) aktuell zum Mentoring, oder endet sie vorher?
-  - Amazon-Ads ACOS / Kosten pro Verkauf
-  - Währung fürs 50k-Ziel: € oder Fr.?
+- Klären: Mentoring wirklich komplett raus aus dem Plan? Eine Nachricht empfahl noch "Übergang in dein Mentoring", die nächste sagte "kein Mentoring mehr" — im Chat angesprochen, Bestätigung offen
+- Backmatter-Vorlage steht in `reference/backmatter-vorlage.md`, mentoring-frei — in die ersten 3 Bücher einfügen, bei den anderen vereinheitlichen
+- Tentary-Willkommensserie (4 Mails) umbauen: von "nur Beziehung aufbauen" zu "Backlist/neue Bücher empfehlen"
 
-## Demnächst
+## Fehlende Zahlen für einen echten (statt geschätzten) Plan
 
-- Backmatter für die 5 Bücher schreiben (Verweis auf Bonus-PDF/Newsletter + Mentoring) — sobald obige Zahlen da sind
-- E-Mail-Sequenz ggf. um Mentoring-CTA ergänzen
+- Sind die 5 neuen Bücher fürs Dezember-Bündel schon in Arbeit, oder Start bei null?
+- Kindle Unlimited: genutzt oder nicht?
+- Amazon-Ads ACOS / Kosten pro Verkauf
+- Preis + Kapazität Gruppenprogramm/1:1 (nur falls Mentoring doch wieder Thema wird)
+- Währung fürs 50k-Ziel: € oder Fr.?
 
 ## Zurückgestellt (nicht mehr Kernpriorität)
 
-- Social-Media-Automatisierung (`automation/`, `reference/meta-setup.md`, `plans/automatisierung-social-media.md`) — technisch fertig gebaut und nutzbar, aber laut Kurskorrektur kein Haupthebel mehr. Bleibt liegen, bis/falls gewünscht:
-  - Meta-Setup (Instagram+Facebook Zugänge)
-  - API-Feldnamen gegen Meta-Doku gegenchecken (developers.facebook.com war hier blockiert)
-  - `schedule`-Trigger im Workflow einkommentieren
-  - Video-Produktion Baustein 2, Ads-Layer, TikTok
+- Social-Media-Automatisierung (`automation/`, `reference/meta-setup.md`, `plans/automatisierung-social-media.md`) — technisch fertig gebaut und nutzbar, aber kein Haupthebel mehr. Bleibt liegen, bis/falls gewünscht.
 
 ## Ideen / später
 
