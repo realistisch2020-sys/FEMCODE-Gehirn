@@ -4,18 +4,20 @@ Hier kommt rein, wer du bist. Claude liest das bei jedem Start, damit er dich ve
 
 ## Wer ich bin
 
-Wer bist du, was machst du, wie würdest du dich in zwei Sätzen vorstellen?
+Petra Tanner. Autorin unter der Marke "Safe to Thrive" (Self-Help-Bücher auf Amazon zu Themen wie Schuldgefühle, Beziehungs-Erschöpfung, People Pleasing, Reizbarkeit/Nervensystem) und MONAT-Haarpflege-Beraterin mit eigenem Team.
 
 ## Mein Werdegang
 
-Wie bist du dahin gekommen, wo du heute bist? Die wichtigsten Stationen reichen.
+(noch nichts)
 
 ## Was mich antreibt
 
-Warum machst du das? Was ist dein Warum hinter dem Business?
+(noch nichts)
 
 ## Wie ich arbeite
 
-Wie tickst du im Alltag? Wann bist du produktiv, was nervt dich, wie sollen Ergebnisse für dich aussehen?
+- Bestehende, bereits live/geteilte Seiten und Links nie anfassen ohne explizite Erlaubnis — im Zweifel lieber eine neue, separate Kopie anlegen statt etwas Bestehendes zu überschreiben.
+- Bei fehlenden Kontakt- oder Produktdaten (E-Mail, Telefon, Shop-/Kauflinks) nachfragen statt raten oder platzhaltern — auch nicht Daten einer anderen Person übernehmen.
+- Will Ergebnisse wirklich live/funktional geprüft sehen, nicht nur "sollte gehen".
 
 Halte es kurz und ehrlich. Drei klare Sätze schlagen eine ganze Seite.

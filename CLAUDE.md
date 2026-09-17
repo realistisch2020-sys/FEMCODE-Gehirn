@@ -4,9 +4,9 @@ Claude liest diese Datei bei jedem Start zuerst. Sie sagt in wenigen Zeilen, wer
 
 ## Wer ich bin
 
-- Name:
-- Was ich mache:
-- Für wen:
+- Name: Petra Tanner
+- Was ich mache: Schreibe Self-Help-Bücher unter der Marke "Safe to Thrive" (Amazon) und biete dazu 1:1-Online-Sitzungen an. Außerdem MONAT-Haarpflege-Beraterin mit eigenem Team.
+- Für wen: Menschen mit Mustern wie Schuldgefühlen, Beziehungs-Erschöpfung, People Pleasing, Reizbarkeit (Safe to Thrive) — und MONAT-Kundschaft über einen Haartyp-Test (auch für mein Team nutzbar).
 
 Mehr in `context/ueber-mich.md` und `context/business.md`.
 

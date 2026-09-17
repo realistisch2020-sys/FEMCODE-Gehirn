@@ -4,11 +4,13 @@ Hier kommt rein, woran du gerade arbeitest und wohin es gehen soll. So weiß Cla
 
 ## Aktueller Fokus
 
-Woran arbeitest du gerade konkret?
+Persönlichkeits-/Haartyp-Tests als Lead-Funnel aufbauen und pflegen (GitHub Pages, `gh-pages`-Branch): eigene Tests (Safe to Thrive, MONAT) plus Kopien für MONAT-Teammitglieder mit deren eigenen Kontakt-/Shop-Daten.
+
+**Ablauf für eine neue Teammitglied-Kopie:** Name, Telefon, Shop-Link(e), 8 MONAT-Warenkorb-Links (Glow/Repair/Volumen/Detox/Kopfhaut/Locken hohe Porosität/Locken andere Porosität/Männerset — falls unbeschriftet, in dieser Reihenfolge zuordnen und zur Kontrolle vorlegen) → neue Kopie unter `monat-persoenlichkeitstest-N`, nie eine bestehende Kopie verändern.
 
 ## Ziele der nächsten Monate
 
-Was willst du in den nächsten drei bis sechs Monaten erreichen?
+(noch nichts)
 
 ## Prioritäten
 
