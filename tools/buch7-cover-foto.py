@@ -106,7 +106,15 @@ dpi = iw / (fw / mm / 25.4)
 print(f'  Bild eingesetzt: {iw}x{ih} px  ->  {dpi:.0f} dpi'
       + ('' if dpi >= 300 else '   ACHTUNG: unter 300 dpi, im Druck evtl. unscharf'))
 # Titel/Untertitel sind bereits im Bild eingebrannt -> keine eigene
-# Typografie auf der Vorderseite, sonst doppelter Text.
+# Typografie dafuer. Autorinnen-Signatur (Markenzeichen der Reihe) fehlt
+# im Bild und wird hier ergaenzt, kompakt ganz unten, unterhalb des im
+# Bild bereits vorhandenen Untertitels.
+fm = FRONT_X + TRIM_B / 2
+sy = BLEED + 10 * mm
+c.setFillColor(colors.Color(0.06, 0.05, 0.045, alpha=0.55))
+c.rect(FRONT_X, BLEED, fw, 16 * mm, fill=1, stroke=0)
+gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 10.5, CREME, 2.6, mitte=True)
+gesperrt(fm, sy - 5.5 * mm, 'SAFE TO THRIVE', 'Sans', 7.0, TERRA_H, 3.0, mitte=True)
 
 # ════════════════════════════════════════════════════════════════════════════
 # BUCHRÜCKEN
