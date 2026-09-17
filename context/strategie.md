@@ -8,6 +8,8 @@ Persönlichkeits-/Haartyp-Tests als Lead-Funnel aufbauen und pflegen (GitHub Pag
 
 **Ablauf für eine neue Teammitglied-Kopie:** Name, Telefon, Shop-Link(e), 8 MONAT-Warenkorb-Links (Glow/Repair/Volumen/Detox/Kopfhaut/Locken hohe Porosität/Locken andere Porosität/Männerset — falls unbeschriftet, in dieser Reihenfolge zuordnen und zur Kontrolle vorlegen) → neue Kopie unter `monat-persoenlichkeitstest-N`, nie eine bestehende Kopie verändern.
 
+**Design-Varianten:** Lässt zusätzlich auffälligere Neugestaltungen (Farbverläufe, Glitzer/Konfetti, eigener KI-Song) über Claude.ai-Artefakte bauen und schickt dann nur den `claude.ai/artifact/...`-Link zum Veröffentlichen — nicht als Datei-Upload. Inhalt (Kontaktdaten/Links) vor dem Publizieren trotzdem prüfen, dann als eigener neuer Ordner/Link veröffentlichen, nie bestehende Seiten ersetzen.
+
 ## Ziele der nächsten Monate
 
 (noch nichts)

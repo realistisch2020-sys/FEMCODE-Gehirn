@@ -6,7 +6,7 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 
 Zwei Standbeine:
 1. **Safe to Thrive** — eigene Self-Help-Bücher (Amazon) + 1:1-Online-Sitzungen zum jeweiligen Thema.
-2. **MONAT** — Haarpflege-Produkte als Beraterin, plus eigenes Team (andere Beraterinnen), für das ich gleichartige Lead-Funnel-Seiten mit deren eigenen Kontakt-/Shop-Daten aufsetze.
+2. **MONAT** — Haarpflege-Produkte als Beraterin, plus eigenes Team (andere Beraterinnen), für das ich gleichartige Lead-Funnel-Seiten mit deren eigenen Kontakt-/Shop-Daten aufsetze. Zwei Test-Linien: Haar-Typ-Test und Business-Typ-Test (Rekrutierung ins Team), von beiden existieren auch mehrere Design-Varianten parallel (gleiche Daten, unterschiedlicher Look).
 
 Beide laufen über denselben Mechanismus: ein interaktiver Quiz auf einer eigenen Seite (GitHub Pages), Ergebnis + Buch-/Produkt-Empfehlung, WhatsApp als Kontaktkanal.
 
