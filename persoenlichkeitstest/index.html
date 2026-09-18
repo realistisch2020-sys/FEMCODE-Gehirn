@@ -4,60 +4,104 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcher Typ bist du?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink: #1B1712;
-    --charcoal: #22201C;
-    --cream: #EDE7DA;
-    --gold: #C9A84C;
-    --gold-dim: #b99a52;
-    --line: rgba(201,168,76,0.28);
+    --ink: #150c1d;
+    --charcoal: #1f1329;
+    --cream: #f5ece0;
+    --gold: #ffb238;
+    --gold-dim: #d99a4a;
+    --rose: #ff5c7a;
+    --violet: #8b5cf6;
+    --line: rgba(255,178,56,0.25);
   }
   *{box-sizing:border-box;}
   html{ background: var(--ink) !important; }
   html,body{margin:0;padding:0;min-height:100%;}
   body{
-    background: var(--ink) !important;
+    background:
+      radial-gradient(circle at 15% 8%, rgba(255,92,122,0.20) 0%, transparent 45%),
+      radial-gradient(circle at 88% 92%, rgba(139,92,246,0.22) 0%, transparent 50%),
+      linear-gradient(165deg, #1a1124, #0d0713) !important;
     color: var(--cream) !important;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Work Sans', -apple-system, sans-serif;
     font-weight: 400;
     min-height: 100vh;
     display:flex;
     align-items:center;
     justify-content:center;
     padding: 32px 18px;
+    position: relative;
+    overflow-x: hidden;
   }
-  .frame, .option, .btn{ font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-  h1, .question, .signature, .result-title, .book-title{ font-family: Georgia, 'Times New Roman', serif; }
+  .frame, .option, .btn{ font-family:'Work Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  h1, .question, .signature, .result-title, .book-title{ font-family:'Fraunces', Georgia, serif; }
   .stage{
     width:100%;
     max-width: 560px;
+    position: relative;
+    z-index: 1;
   }
   .frame{
-    border: 1px solid var(--line);
+    border: 1px solid transparent;
+    border-radius: 26px;
     padding: 48px 36px;
     position:relative;
-    background: linear-gradient(180deg, rgba(201,168,76,0.04), transparent 40%);
+    background: linear-gradient(180deg, rgba(255,178,56,0.05), transparent 40%), var(--charcoal);
+    box-shadow: 0 30px 70px -30px rgba(0,0,0,0.6);
+    overflow: hidden;
   }
-  .frame::before, .frame::after{
+  .frame::before{
     content:"";
     position:absolute;
-    width:18px; height:18px;
-    border: 1px solid var(--gold);
+    inset:0;
+    border-radius:26px;
+    padding:1.5px;
+    background: linear-gradient(135deg, var(--gold), var(--rose) 35%, var(--violet) 70%, var(--gold));
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events:none;
+    animation: borderShimmer 6s ease infinite;
+    opacity: 0.85;
   }
-  .frame::before{ top:-1px; left:-1px; border-right:none; border-bottom:none; }
-  .frame::after{ bottom:-1px; right:-1px; border-left:none; border-top:none; }
+  @keyframes borderShimmer{
+    0%,100%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+  }
+
+  .sparkle-deco{
+    position:absolute;
+    font-size:18px;
+    color: var(--gold);
+    opacity:0.65;
+    pointer-events:none;
+    z-index: 2;
+    animation: sparkleFloat 7s ease-in-out infinite;
+  }
+  @keyframes sparkleFloat{
+    0%,100%{ transform: translateY(0) rotate(0deg); opacity:0.35; }
+    50%{ transform: translateY(-6px) rotate(12deg); opacity:0.9; }
+  }
 
   .progress-track{
-    height:1px;
-    background: rgba(237,231,218,0.14);
+    height:4px;
+    background: rgba(245,236,224,0.12);
+    border-radius: 4px;
     margin-bottom: 40px;
     position:relative;
+    overflow: hidden;
   }
   .progress-fill{
-    position:absolute; top:0; left:0; height:1px;
-    background: var(--gold);
+    position:absolute; top:0; left:0; height:100%;
+    background: linear-gradient(90deg, var(--gold), var(--rose));
+    border-radius: 4px;
     transition: width 0.5s ease;
+    box-shadow: 0 0 10px rgba(255,178,56,0.5);
   }
   .progress-label{
     font-size: 12px;
@@ -68,25 +112,29 @@
   }
 
   h1{
-    font-family:'Cormorant Garamond', serif;
     font-weight: 500;
     font-size: 2.6rem;
     line-height:1.15;
     margin: 0 0 18px 0;
-    color: var(--cream);
+    background: linear-gradient(90deg, var(--cream) 25%, var(--gold) 65%, var(--rose));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   h1 em{
     font-style: italic;
-    color: var(--gold);
+    background: linear-gradient(90deg, var(--gold), var(--rose));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   .intro-text{
     font-size: 16px;
     line-height:1.7;
-    color: rgba(237,231,218,0.82);
+    color: rgba(245,236,224,0.82);
     margin-bottom: 34px;
   }
   .signature{
-    font-family:'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 17px;
     color: var(--gold);
@@ -94,11 +142,11 @@
   }
 
   .question{
-    font-family:'Cormorant Garamond', serif;
     font-size: 1.65rem;
     line-height:1.35;
     font-weight:500;
     margin-bottom: 28px;
+    color: var(--cream);
   }
 
   .options{
@@ -108,39 +156,55 @@
   }
   .option{
     text-align:left;
-    background: transparent;
+    background: rgba(255,255,255,0.03);
     color: var(--cream);
-    border: 1px solid rgba(237,231,218,0.22);
+    border: 1.5px solid rgba(245,236,224,0.16);
+    border-radius: 14px;
     padding: 16px 20px;
     font-family:'Work Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
     line-height:1.5;
     cursor:pointer;
-    transition: border-color 0.25s ease, background 0.25s ease, padding-left 0.25s ease;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.25s ease, background 0.25s ease, transform 0.15s ease;
+  }
+  .option::before{
+    content:"";
+    position:absolute; left:0; top:0; bottom:0; width:3px;
+    background: linear-gradient(180deg, var(--gold), var(--rose));
+    transform: scaleY(0);
+    transition: transform 0.2s ease;
   }
   .option:hover{
     border-color: var(--gold);
-    background: rgba(201,168,76,0.06);
-    padding-left: 26px;
+    background: rgba(255,178,56,0.08);
+    transform: translateX(3px);
   }
+  .option:hover::before{ transform: scaleY(1); }
 
   .btn{
     display:inline-block;
     background: transparent;
     color: var(--gold);
-    border: 1px solid var(--gold);
+    border: 1.5px solid var(--gold);
+    border-radius: 100px;
     padding: 14px 30px;
     font-family:'Work Sans', sans-serif;
+    font-weight: 600;
     font-size: 14px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     cursor:pointer;
     margin-top: 8px;
-    transition: background 0.25s ease, color 0.25s ease;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, color 0.25s ease, border-color 0.25s ease;
   }
   .btn:hover{
-    background: var(--gold);
-    color: var(--ink);
+    border-color: var(--rose);
+    color: var(--cream);
+    transform: translateY(-1px);
   }
 
   .result-eyebrow{
@@ -150,22 +214,26 @@
     letter-spacing: 0.04em;
   }
   .result-title{
-    font-family:'Cormorant Garamond', serif;
     font-size: 2.3rem;
     font-weight:500;
-    color: var(--gold);
+    background: linear-gradient(90deg, var(--gold), var(--rose));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     margin: 0 0 20px 0;
     line-height:1.2;
   }
   .result-text{
     font-size: 16px;
     line-height: 1.75;
-    color: rgba(237,231,218,0.9);
+    color: rgba(245,236,224,0.9);
     margin-bottom: 26px;
   }
   .book-box{
-    border-left: 2px solid var(--gold);
-    padding: 4px 0 4px 20px;
+    border-left: 3px solid var(--gold);
+    background: linear-gradient(90deg, rgba(255,178,56,0.07), transparent);
+    padding: 16px 20px;
+    border-radius: 0 14px 14px 0;
     margin-bottom: 30px;
   }
   .book-label{
@@ -175,21 +243,64 @@
     letter-spacing: 0.04em;
   }
   .book-title{
-    font-family:'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 1.4rem;
     color: var(--cream);
+  }
+
+  .book-extra{
+    margin-bottom: 30px;
+    border: 1.5px solid var(--line);
+    border-radius: 18px;
+    padding: 24px 20px 22px;
+    background: linear-gradient(160deg, rgba(139,92,246,0.10), transparent);
+    text-align: center;
+  }
+  .book-extra-label{
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 16px;
+  }
+  .book-extra-cover{
+    width: 130px;
+    border-radius: 8px;
+    box-shadow: 0 18px 34px -14px rgba(0,0,0,0.65);
+    margin-bottom: 16px;
+  }
+  .book-extra-title{
+    font-family:'Fraunces', serif;
+    font-size: 1.3rem;
+    color: var(--cream);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .book-extra-sub{
+    font-size: 13px;
+    color: rgba(245,236,224,0.7);
+    margin-bottom: 16px;
+    line-height: 1.5;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .book-extra-note{
+    font-size: 12.5px;
+    color: var(--gold-dim);
+    font-style: italic;
   }
 
   .contact-heading{
     font-size: 1.3rem;
     color: var(--cream);
     margin: 34px 0 10px 0;
+    font-family:'Fraunces', serif;
   }
   .contact-sub{
     font-size: 14px;
     line-height: 1.6;
-    color: rgba(237,231,218,0.72);
+    color: rgba(245,236,224,0.72);
     margin-bottom: 18px;
   }
   .contact-row{
@@ -201,19 +312,32 @@
     text-decoration:none;
   }
   .btn-solid{
-    background: var(--gold);
+    background: linear-gradient(90deg, var(--gold), var(--rose));
     color: var(--ink);
+    border-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 14px 30px -14px rgba(255,92,122,0.55);
   }
+  .btn-solid::after{
+    content:"";
+    position:absolute; top:0; left:-60%; width:35%; height:100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.55), transparent);
+    transform: skewX(-20deg);
+    animation: btnShine 3.2s ease-in-out infinite;
+  }
+  @keyframes btnShine{ 0%{left:-60%;} 55%,100%{left:130%;} }
   .btn-solid:hover{
-    background: transparent;
-    color: var(--gold);
+    background: linear-gradient(90deg, var(--rose), var(--gold));
+    color: var(--ink);
+    transform: translateY(-2px);
+    box-shadow: 0 18px 36px -14px rgba(255,92,122,0.7);
   }
 
   .restart{
     display:block;
     margin-top: 26px;
     font-size: 13px;
-    color: rgba(237,231,218,0.5);
+    color: rgba(245,236,224,0.5);
     background:none;
     border:none;
     cursor:pointer;
@@ -235,20 +359,22 @@
     border:1px solid var(--line);
     background:var(--charcoal);
     color:var(--gold-dim);
-    box-shadow:0 8px 20px -10px rgba(0,0,0,0.5);
+    box-shadow:0 8px 20px -10px rgba(0,0,0,0.6);
     display:flex;
     align-items:center;
     justify-content:center;
     cursor:pointer;
     z-index:100;
-    transition:color 0.25s ease, border-color 0.25s ease;
+    transition:color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
   }
+  .music-toggle:hover{ transform: scale(1.06); }
 
   .music-toggle svg{ width:20px; height:20px; }
 
   .music-toggle.playing{
     color:var(--gold);
     border-color:var(--gold);
+    box-shadow: 0 0 16px rgba(255,178,56,0.45);
   }
 
   @media (max-width: 480px){
@@ -259,6 +385,9 @@
 </style>
 </head>
 <body>
+
+<div class="sparkle-deco" style="top:8px; left:8%;">✨</div>
+<div class="sparkle-deco" style="bottom:12px; right:6%; animation-duration:9s;">✦</div>
 
 <button class="music-toggle" id="musicToggle" onclick="toggleMusic()" type="button" aria-label="Musik an/aus">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
@@ -309,6 +438,14 @@
           </a>
         </div>
         <p class="intro-text" id="result-cta"></p>
+
+        <div class="book-extra">
+          <div class="book-extra-label">Mein neuestes Buch</div>
+          <img class="book-extra-cover" src="images/letztes-gespraech-cover.jpg" alt="Buchcover: Du brauchst kein letztes Gespräch">
+          <div class="book-extra-title">Du brauchst kein letztes Gespräch</div>
+          <p class="book-extra-sub">Wie du innerlich frei wirst, auch wenn die Entschuldigung nie kommt.</p>
+          <p class="book-extra-note">Amazon-Link folgt in Kürze</p>
+        </div>
 
         <div class="contact-heading">Willst du direkt mit mir sprechen statt nur zu lesen?</div>
         <p class="contact-sub">Ich biete auch persönliche Online-Sitzungen an, in denen wir gemeinsam genau an diesem Muster arbeiten.</p>
