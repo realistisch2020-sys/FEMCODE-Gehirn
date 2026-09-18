@@ -138,7 +138,9 @@ def render(cfg):
         number_badge(c, MARGIN + 18 * mm, H - 32 * mm, 9 * mm, num, color, WHITE)
         c.setFont('Serif-Bold', 17)
         c.setFillColor(PLUM)
-        c.drawString(MARGIN + 34 * mm, H - 29 * mm, title_text)
+        # Baseline so gesetzt, dass der Titel optisch auf Hoehe der
+        # Kreismitte (Badge bei H - 32 mm) liegt, nicht darueber.
+        c.drawString(MARGIN + 34 * mm, H - 33.5 * mm, title_text)
         y0 = H - 60 * mm
         y0 = wrapped(c, note, MARGIN, y0, W - 2 * MARGIN, 'Sans', 11.5, 16.5, PLUM)
         return y0 - 8 * mm
