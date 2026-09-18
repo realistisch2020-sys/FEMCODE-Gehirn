@@ -2,19 +2,20 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
-## Neues Buch (6.): "Du brauchst kein letztes Gespräch" — fertig bis auf Bonusseite, KDP-Upload offen
+## Buch 6: "Du brauchst kein letztes Gespräch" — fertig, KDP-Upload offen
 
-Manuskript ist geschrieben, gründlich lektoriert (Inhaltsverzeichnis
-bereinigt, Unterkapitel-Nummern entfernt, mehrere Sachfehler und eine
-versteckte Geschichte ohne Überschrift korrigiert), Taschenbuch-PDF
-(109 Seiten), Cover (Vollwrap mit Petras Foto) und eBook sind fertig.
-Dazu ein komplett neues Journal (12 Kapitel, Reflexionsfragen,
-Schreiblinien, Standortbestimmung) samt eigenem Cover. Alles in
-`outputs/buch-letztes-gespraech/`.
+Manuskript, Taschenbuch-PDF (110 Seiten), Cover (Vollwrap mit Petras
+Foto), eBook, Journal samt eigenem Cover und Bonus-PDF (sechs Übungen)
+sind alle fertig. Tentary-Bonuslink von Petra erhalten
+(beyondlimitsnow25.mytentary.com/p/1DKSI4) und als QR-Code samt Link
+ins Manuskript-Backmatter eingebaut, Taschenbuch/eBook/Cover neu
+gebaut. Alles in `outputs/buch-letztes-gespraech/`.
 
-**Fehlt noch:** Tentary-Bonuslink von Petra für die Bonusseite mit
-QR-Code (gleiches Muster wie bei den anderen Büchern). Noch nicht bei
-KDP hochgeladen.
+**Fehlt noch:** Bei KDP hochladen (Taschenbuch, eBook, Journal).
+
+**Wichtig für alle künftigen Bücher (Petras Regel vom 18. September
+2026):** Jedes Buch bekommt denselben vollständigen Ablauf — Taschenbuch,
+eBook, Journal, Bonus-PDF, siehe `context/strategie.md`.
 
 ## KDP-Upload ausstehend (Stand 14. September 2026)
 
