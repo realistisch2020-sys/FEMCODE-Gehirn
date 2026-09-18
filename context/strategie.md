@@ -18,6 +18,21 @@ deshalb übernimmt Claude diesen Teil aktiv, nicht nur auf Nachfrage:
 - Ziel: die bestmögliche Ausgangslage schaffen, damit sich die Bücher gut
   verkaufen, durch fundierte Recherche statt Vermutung.
 
+## Jedes Buch bekommt denselben vollständigen Ablauf (seit 18. September 2026)
+
+Petras ausdrückliche Regel: **Alle Bücher laufen im gleichen Ablauf.** Zu
+jedem Hauptbuch gehören immer, ohne dass sie danach fragen muss:
+
+- Taschenbuch (Manuskript + Cover, KDP-fertig)
+- eBook (epub + eBook-Cover)
+- Ein eigenständiges Journal/Workbook zum Buch, mit eigenem Cover
+- Ein Bonus-PDF mit sechs vertiefenden Übungen aus den echten Kapiteln
+  (siehe Abschnitt „Bonus-PDFs" unten), Farbpalette vom jeweiligen Cover
+
+Kein Buch gilt als fertig, solange eines dieser vier Teile fehlt. Bei
+Rückfragen wie „gib mir alles für Buch X" immer alle vier prüfen und
+mitliefern, nicht nur das zuletzt besprochene Teil.
+
 ## Standard-Checkliste für jedes künftige Buch (seit 12. August 2026)
 
 Vor dem Schreiben eines neuen Buches, nicht danach:
