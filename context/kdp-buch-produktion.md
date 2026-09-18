@@ -195,6 +195,34 @@ Jedes neue Buch verweist am Ende auf die anderen Bücher der Reihe — im Abschn
 
 ---
 
+## "Fehler beim Verarbeiten des Covers" — wenn die Datei nachweislich sauber ist
+
+Gelernt am Journal zu "Du brauchst kein letztes Gespräch", 18. September 2026.
+
+Wenn KDP diesen Fehler wiederholt zeigt, obwohl die Cover-PDF technisch
+geprüft einwandfrei ist (qpdf --check, Ghostscript-Reprocessing ohne
+Fehler, Fonts eingebettet, exakte KDP-Masse), UND die Grundeinstellungen
+im Entwurf stimmen (richtige Trim Size, richtige Seitenzahl im
+Manuskript-Reiter, richtiger Upload-Modus "Upload a cover you already
+have"), dann liegt es meist **nicht mehr an der Datei**, sondern daran,
+dass sich der KDP-Entwurf nach mehreren fehlgeschlagenen Upload-
+Versuchen im selben Feld festgefahren hat.
+
+**Was tatsächlich geholfen hat:** Cover-Upload im bestehenden Entwurf
+komplett löschen (nicht nur eine neue Datei ins selbe Feld hochladen)
+und danach frisch hochladen. Bei anhaltendem Problem: neuer Entwurf
+oder anderer Browser/Inkognito-Fenster.
+
+**Nicht mehr blind wiederholen, bevor das nicht klar ist:** Mehrfaches
+Neubauen der Cover-Datei selbst (andere Bleed-Werte, Fonts einbetten,
+zu Rasterbild flachen) bringt nichts, wenn die Datei schon beim ersten
+Versuch technisch sauber war — das kostet nur Zeit. Erst prüfen
+(qpdf/Ghostscript, KDP-Grundeinstellungen), dann wenn alles sauber ist
+direkt den Upload-Feld-Reset vorschlagen, nicht drei weitere
+Dateivarianten bauen.
+
+---
+
 ## Kontakt im Buch (immer)
 
 - Öffentlich / im Buch: **info.safetothrive@gmail.com**

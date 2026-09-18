@@ -2,16 +2,35 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
-## Buch 6: "Du brauchst kein letztes Gespräch" — fertig, KDP-Upload offen
+## Buch 6: "Du brauchst kein letztes Gespräch" — Taschenbuch + Journal bei KDP hochgeladen (Stand 18. September 2026)
 
 Manuskript, Taschenbuch-PDF (110 Seiten), Cover (Vollwrap mit Petras
-Foto), eBook, Journal samt eigenem Cover und Bonus-PDF (sechs Übungen)
-sind alle fertig. Tentary-Bonuslink von Petra erhalten
+Foto), Journal (26 Seiten, eigenes Cover) und Bonus-PDF (sechs Übungen)
+sind fertig. Tentary-Bonuslink von Petra erhalten
 (beyondlimitsnow25.mytentary.com/p/1DKSI4) und als QR-Code samt Link
-ins Manuskript-Backmatter eingebaut, Taschenbuch/eBook/Cover neu
-gebaut. Alles in `outputs/buch-letztes-gespraech/`.
+ins Manuskript-Backmatter eingebaut. Alles in
+`outputs/buch-letztes-gespraech/`.
 
-**Fehlt noch:** Bei KDP hochladen (Taschenbuch, eBook, Journal).
+**Von Petra bestätigt: Taschenbuch und Journal sind bei KDP hochgeladen.**
+
+**Noch offen / unklar:** Status des eBooks (`buch-eBook.epub` +
+`buch-eBook-Cover.png`/`.jpg`) bei KDP — nicht explizit bestätigt, beim
+nächsten Gespräch nachfragen statt annehmen. Danach: A+ Content, erste
+Bewertungen sammeln, erst dann TikTok/Social (siehe Standardablauf).
+
+**Journal mit Cover-Fehler, gelöst:** Das Journal hatte ursprünglich nur
+20 Seiten, unter KDPs Mindestanforderung von 24 für Taschenbücher — auf
+26 Seiten erweitert (neuer Abschnitt "Eigene Notizen" mit Schreiblinien).
+Danach kam beim Cover-Upload trotzdem wiederholt "Fehler beim
+Verarbeiten des Covers", auch nachdem die Datei technisch dreifach
+gehärtet wurde (Font-Einbettung, exaktes Beschnittmass, zuletzt als
+reines Rasterbild ohne Schriftarten/Vektoren). Die Datei bestand jede
+externe Prüfung (qpdf, Ghostscript) und alle Petras KDP-Einstellungen
+waren korrekt. **Was tatsächlich geholfen hat: den Cover-Upload im
+bestehenden, bereits mehrfach fehlgeschlagenen Entwurf löschen und
+frisch hochladen** — der Entwurf selbst hatte sich festgefahren, nicht
+die Datei. Lehre für künftige Bücher in `context/kdp-buch-produktion.md`
+gespeichert.
 
 **Wichtig für alle künftigen Bücher (Petras Regel vom 18. September
 2026):** Jedes Buch bekommt denselben vollständigen Ablauf — Taschenbuch,
