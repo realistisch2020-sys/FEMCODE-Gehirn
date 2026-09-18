@@ -238,8 +238,11 @@ def render(cfg):
                 head_off = 5 * mm * len(ex['heading']) + 4 * mm
             yy = y - 16 * mm - head_off
             for i2 in range(1, ex.get('n_items', 3) + 1):
-                number_badge_soft(c, MARGIN + 16 * mm, yy + 1.6 * mm, 4 * mm, i2, dark, tint)
-                blank_line(c, MARGIN + 26 * mm, yy, W - 2 * MARGIN - 36 * mm, LINE)
+                # Kreismitte und Schreiblinie auf dieselbe Hoehe setzen,
+                # sonst sitzt die Linie sichtbar unterhalb der Kreismitte.
+                badge_mitte = yy + 1.6 * mm
+                number_badge_soft(c, MARGIN + 16 * mm, badge_mitte, 4 * mm, i2, dark, tint)
+                blank_line(c, MARGIN + 26 * mm, badge_mitte, W - 2 * MARGIN - 36 * mm, LINE)
                 yy -= ex.get('item_gap', 15) * mm
             if ex.get('extra_label'):
                 c.setFont('Sans-Bold', 11)
