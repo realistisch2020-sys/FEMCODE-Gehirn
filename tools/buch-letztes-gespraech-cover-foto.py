@@ -99,7 +99,11 @@ skala = max(fw / iw, fh / ih)
 zw, zh = iw * skala, ih * skala
 c.saveState()
 pfad = c.beginPath(); pfad.rect(FRONT_X, 0, fw, H); c.clipPath(pfad, stroke=0)
-c.drawImage(ImageReader(BILD), FRONT_X - (zw - fw) / 2, -(zh - fh) / 2,
+# Oben ausgerichtet statt mittig beschnitten: das Bild hat unten eine
+# gespiegelte Verlaengerung (siehe cover-front-foto-padded.png), damit
+# "SAFE TO THRIVE" genug Abstand zur Schnittkante hat. Mittige Beschneidung
+# wuerde diesen Rand wieder halbieren.
+c.drawImage(ImageReader(BILD), FRONT_X - (zw - fw) / 2, fh - zh,
             width=zw, height=zh, mask='auto')
 c.restoreState()
 dpi = iw / (fw / mm / 25.4)
