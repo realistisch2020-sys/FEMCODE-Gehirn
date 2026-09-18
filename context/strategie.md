@@ -61,6 +61,14 @@ Verkaufsstart in kurzer Zeit) erst einplanen, wenn Budget und ein echtes
 Publikum (Newsletter, Social-Media-Reichweite) dafür vorhanden sind — sonst
 bleibt das Theorie statt Hebel.
 
+## Newsletter bei Tentary fertig eingerichtet (Stand 18. September 2026)
+
+Petras Newsletter läuft über Tentary (mytentary.com), fertig aufgesetzt.
+Die Bonus-PDF-QR-Codes in den Büchern melden Leserinnen und Leser
+automatisch dafür an. Kein offener Punkt mehr, für neue Bücher einfach
+denselben Tentary-Account weiterverwenden (neuer Freebie-Link pro Buch,
+siehe unten).
+
 ## Bonus-PDFs (Freebies) für den Newsletter (seit 27. August 2026)
 
 Jedes Buch bekommt ein eigenes, farbiges Bonus-PDF mit sechs vertiefenden

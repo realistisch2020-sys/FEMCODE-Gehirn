@@ -352,7 +352,6 @@ Technik-Lehren").
 - Instagram Story + Feed-Post pro Buch
 - Erste Bewertungen organisieren
 - Homepage / Landingpage für Safe to Thrive erstellen (aktuell keine vorhanden)
-- Newsletter aufbauen
 
 ## TikTok-Automation-Workflow aufbauen
 
