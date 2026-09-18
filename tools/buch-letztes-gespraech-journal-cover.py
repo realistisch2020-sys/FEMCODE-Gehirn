@@ -9,6 +9,7 @@ from reportlab.lib.colors import HexColor
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import simpleSplit
+from reportlab import rl_config
 
 FD = '/usr/share/fonts/truetype/liberation/'
 for name, fn in [('Serif', 'LiberationSerif-Regular.ttf'),
@@ -17,6 +18,13 @@ for name, fn in [('Serif', 'LiberationSerif-Regular.ttf'),
                   ('Sans', 'LiberationSans-Regular.ttf'),
                   ('Sans-Bold', 'LiberationSans-Bold.ttf')]:
     pdfmetrics.registerFont(TTFont(name, FD + fn))
+
+# ReportLab traegt sonst zusaetzlich das nicht eingebettete Standardfont
+# "Helvetica" in die PDF-Ressourcen ein (Canvas-Vorgabe vor dem ersten
+# setFont). KDP lehnt Cover-PDFs mit nicht eingebetteten Fonts ab
+# ("Fehler beim Verarbeiten des Covers"). Vorgabe auf ein eingebettetes
+# Font umstellen, bevor der Canvas irgendetwas zeichnet.
+rl_config.canvas_basefontname = 'Serif'
 
 PAGES = 26
 SPINE_MM = PAGES * 0.0025 * 25.4
@@ -62,7 +70,7 @@ def wrapped(text, x, y, width, font, size, leading, color, align='left'):
 y = H - (BLEED + 30) * mm
 c.setFont('Serif-Bold', 17)
 c.setFillColor(CREAM)
-for line in ["Du brauchst kein letztes", "Gespräch. — Das Journal"]:
+for line in ["Du brauchst kein letztes", "Gespräch, das Journal"]:
     c.drawString(margin, y, line)
     y -= 9 * mm
 y -= 6 * mm
