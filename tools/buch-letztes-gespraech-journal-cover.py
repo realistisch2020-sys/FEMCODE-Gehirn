@@ -28,7 +28,7 @@ rl_config.canvas_basefontname = 'Serif'
 
 PAGES = 26
 SPINE_MM = PAGES * 0.0025 * 25.4
-BLEED = 3.2
+BLEED = 3.175  # exakt 0,125 Zoll, KDPs eigener Wert, nicht 3.2mm gerundet
 TRIM_W, TRIM_H = 139.7, 215.9
 PANEL_W = BLEED + TRIM_W
 TOTAL_W = PANEL_W * 2 + SPINE_MM
