@@ -2,21 +2,15 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
-## Buch 6: "Du brauchst kein letztes Gespräch" — Taschenbuch + Journal bei KDP hochgeladen (Stand 18. September 2026)
+## Buch 6: "Du brauchst kein letztes Gespräch" — komplett hochgeladen (Stand 18. September 2026)
 
-Manuskript, Taschenbuch-PDF (110 Seiten), Cover (Vollwrap mit Petras
-Foto), Journal (26 Seiten, eigenes Cover) und Bonus-PDF (sechs Übungen)
-sind fertig. Tentary-Bonuslink von Petra erhalten
-(beyondlimitsnow25.mytentary.com/p/1DKSI4) und als QR-Code samt Link
-ins Manuskript-Backmatter eingebaut. Alles in
-`outputs/buch-letztes-gespraech/`.
+**Von Petra bestätigt: Taschenbuch, eBook und Journal sind alle bei KDP
+hochgeladen.** Bonus-PDF fertig, Tentary-QR-Code im Buch eingebaut. Alle
+Dateien in `outputs/buch-letztes-gespraech/`.
 
-**Von Petra bestätigt: Taschenbuch und Journal sind bei KDP hochgeladen.**
-
-**Noch offen / unklar:** Status des eBooks (`buch-eBook.epub` +
-`buch-eBook-Cover.png`/`.jpg`) bei KDP — nicht explizit bestätigt, beim
-nächsten Gespräch nachfragen statt annehmen. Danach: A+ Content, erste
-Bewertungen sammeln, erst dann TikTok/Social (siehe Standardablauf).
+**Nächste Schritte (Standardablauf, noch nicht begonnen):** A+ Content
+bauen, fünf bis zehn Bewertungen sammeln (verteilt über zwei bis drei
+Wochen), erst danach TikTok/Social zu diesem Buch.
 
 **Journal mit Cover-Fehler, gelöst:** Das Journal hatte ursprünglich nur
 20 Seiten, unter KDPs Mindestanforderung von 24 für Taschenbücher — auf
