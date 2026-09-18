@@ -131,6 +131,50 @@
     from{ transform: rotate(0deg); }
     to{ transform: rotate(360deg); }
   }
+  @keyframes titleShimmer{
+    0%{ background-position: 0% 50%; }
+    100%{ background-position: -200% 50%; }
+  }
+  @keyframes optionIn{
+    from{ opacity:0; transform: translateY(10px); }
+    to{ opacity:1; transform: translateY(0); }
+  }
+  .ripple{
+    position:absolute;
+    border-radius:50%;
+    background: rgba(255,255,255,0.55);
+    transform: scale(0);
+    opacity:1;
+    animation: rippleAnim 0.6s ease-out forwards;
+    pointer-events:none;
+  }
+  @keyframes rippleAnim{
+    to{ transform:scale(2.2); opacity:0; }
+  }
+  .confetti-container{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:0;
+    overflow:visible;
+    pointer-events:none;
+    z-index:5;
+  }
+  .confetti-piece{
+    position:absolute;
+    top:-6px;
+    width:8px;
+    height:8px;
+    border-radius:2px;
+    animation-name: confettiFall;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  @keyframes confettiFall{
+    0%{ transform: translateY(0) rotate(0deg); opacity:1; }
+    100%{ transform: translateY(340px) rotate(540deg); opacity:0; }
+  }
   @keyframes popIn{
     0%{ opacity:0; transform: scale(0.92) translateY(10px); }
     100%{ opacity:1; transform: scale(1) translateY(0); }
@@ -168,10 +212,12 @@
     font-size: 2.6rem;
     line-height:1.15;
     margin: 0 0 18px 0;
-    background: linear-gradient(90deg, var(--cream) 25%, var(--gold) 65%, var(--rose));
+    background: linear-gradient(100deg, var(--cream) 15%, var(--gold) 40%, var(--rose) 50%, var(--gold) 60%, var(--cream) 85%);
+    background-size: 250% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    animation: titleShimmer 6s ease-in-out infinite;
   }
   h1 em{
     font-style: italic;
@@ -221,7 +267,13 @@
     position: relative;
     overflow: hidden;
     transition: border-color 0.25s ease, background 0.25s ease, transform 0.15s ease;
+    animation: optionIn 0.4s ease both;
   }
+  .option:nth-child(1){ animation-delay: 0.03s; }
+  .option:nth-child(2){ animation-delay: 0.09s; }
+  .option:nth-child(3){ animation-delay: 0.15s; }
+  .option:nth-child(4){ animation-delay: 0.21s; }
+  .option:nth-child(5){ animation-delay: 0.27s; }
   .option::before{
     content:"";
     position:absolute; left:0; top:0; bottom:0; width:3px;
@@ -297,12 +349,14 @@
   .result-title{
     font-size: 2.3rem;
     font-weight:500;
-    background: linear-gradient(90deg, var(--gold), var(--rose));
+    background: linear-gradient(100deg, var(--gold) 10%, var(--rose) 35%, var(--violet) 50%, var(--rose) 65%, var(--gold) 90%);
+    background-size: 250% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     margin: 0 0 20px 0;
     line-height:1.2;
+    animation: titleShimmer 6s ease-in-out infinite;
   }
   .result-text{
     font-size: 16px;
@@ -465,6 +519,9 @@
   #result-details:not(.hidden), #screen-result:not(.hidden) .book-extra{
     animation: popIn 0.55s cubic-bezier(0.34,1.56,0.64,1) both;
   }
+  #result-details{
+    position: relative;
+  }
 
   @media (max-width: 480px){
     .frame{ padding: 34px 22px; }
@@ -483,6 +540,10 @@
 <div class="sparkle-deco spin" style="bottom:6%; right:38%; color:var(--rose); font-size:15px; animation-duration:5.5s;">💫</div>
 <div class="sparkle-deco" style="top:38%; left:2%; color:var(--violet); font-size:14px; animation-duration:11s;">✦</div>
 <div class="sparkle-deco" style="top:64%; right:3%; font-size:16px; animation-duration:8.5s;">⋆</div>
+<div class="sparkle-deco spin" style="top:48%; left:6%; color:var(--rose); font-size:13px; animation-duration:4s;">✨</div>
+<div class="sparkle-deco" style="top:80%; left:22%; color:var(--gold); font-size:13px; animation-duration:9.5s;">✧</div>
+<div class="sparkle-deco spin" style="top:2%; right:26%; color:var(--violet); font-size:15px; animation-duration:5s;">★</div>
+<div class="sparkle-deco" style="bottom:2%; right:14%; font-size:14px; animation-duration:7.5s;">💫</div>
 
 <div class="glitter-dot" style="left:12%; animation-duration:11s; animation-delay:-2s;"></div>
 <div class="glitter-dot" style="left:28%; background:var(--rose); box-shadow:0 0 10px 2px rgba(255,92,122,0.6); animation-duration:14s; animation-delay:-6s;"></div>
@@ -507,7 +568,7 @@
         Am Ende zeige ich dir, welches Muster bei dir gerade am lautesten ist,
         und welches meiner Bücher genau dort ansetzt.
       </p>
-      <button class="btn" onclick="startQuiz()">Test beginnen</button>
+      <button class="btn" id="start-quiz-btn" onclick="startQuiz(event)">Test beginnen</button>
       <p class="signature">Ich sage dir was wirklich los ist.</p>
     </div>
 
@@ -525,10 +586,11 @@
 
       <div id="result-gate">
         <p class="intro-text">Dein Ergebnis ist fertig. Schreib mir kurz auf WhatsApp, dann bekommst du deine Auswertung direkt hier zu sehen — inklusive der Buch-Empfehlung, die zu deinem Ergebnis passt.</p>
-        <a class="btn btn-solid btn-link" id="whatsapp-link-gate" style="display:block; text-decoration:none; text-align:center;" href="#" target="_blank" rel="noopener" onclick="unlockResult()">Ergebnis auf WhatsApp anfordern</a>
+        <a class="btn btn-solid btn-link" id="whatsapp-link-gate" style="display:block; text-decoration:none; text-align:center;" href="#" target="_blank" rel="noopener" onclick="unlockResult(event)">Ergebnis auf WhatsApp anfordern</a>
       </div>
 
       <div id="result-details" class="hidden">
+        <div class="confetti-container" id="confettiContainer"></div>
         <div class="result-title" id="result-title"></div>
         <div class="result-text" id="result-text"></div>
         <div class="book-box">
@@ -545,7 +607,7 @@
           <div class="book-extra-label">Mein neuestes Buch</div>
           <img class="book-extra-cover" src="images/letztes-gespraech-cover.jpg" alt="Buchcover: Du brauchst kein letztes Gespräch">
           <div class="book-extra-title">Du brauchst kein letztes Gespräch</div>
-          <p class="book-extra-sub">Wie du innerlich frei wirst, auch wenn die Entschuldigung nie kommt.</p>
+          <p class="book-extra-sub">Für sie, die auf Worte wartet, die nie kommen. Für ihn, der loslassen will, auch ohne die Erklärung des anderen. Wie du innerlich frei wirst &mdash; ganz ohne das letzte Gespräch.</p>
           <a class="btn btn-solid btn-link" href="https://www.amazon.de/dp/B0HK86W8T4" target="_blank" rel="noopener" style="display:inline-block;">Jetzt auf Amazon ansehen</a>
         </div>
 
@@ -679,14 +741,52 @@ let currentQuestion = 0;
 let scores = { A:0, B:0, C:0, D:0, E:0 };
 let currentWinner = null;
 
-function startQuiz(){
+function spawnRipple(el, e){
+  if(!el || !e) return;
+  try{
+    const rect = el.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height) * 1.3;
+    const ripple = document.createElement('span');
+    ripple.className = 'ripple';
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = ((e.clientX || (rect.left + rect.width/2)) - rect.left - size/2) + 'px';
+    ripple.style.top = ((e.clientY || (rect.top + rect.height/2)) - rect.top - size/2) + 'px';
+    el.appendChild(ripple);
+    setTimeout(function(){ try{ ripple.remove(); }catch(err){} }, 650);
+  }catch(err){}
+}
+
+function spawnRippleThenRun(el, e, callback, delay){
+  spawnRipple(el, e);
+  setTimeout(callback, delay || 0);
+}
+
+function burstConfetti(){
+  const container = document.getElementById('confettiContainer');
+  if(!container) return;
+  const colors = ['var(--gold)', 'var(--rose)', 'var(--violet)', 'var(--cream)'];
+  for(let i=0; i<16; i++){
+    const piece = document.createElement('span');
+    piece.className = 'confetti-piece';
+    piece.style.left = (Math.random()*100) + '%';
+    piece.style.background = colors[i % colors.length];
+    piece.style.animationDelay = (Math.random()*0.25) + 's';
+    piece.style.animationDuration = (1.2 + Math.random()*0.8) + 's';
+    container.appendChild(piece);
+  }
+  setTimeout(function(){ try{ container.innerHTML = ""; }catch(err){} }, 2300);
+}
+
+function startQuiz(e){
   document.getElementById('bgAudio').play().catch(()=>{});
   document.getElementById('musicToggle').classList.add('playing');
   currentQuestion = 0;
   scores = { A:0, B:0, C:0, D:0, E:0 };
-  document.getElementById('screen-intro').classList.add('hidden');
-  document.getElementById('screen-quiz').classList.remove('hidden');
-  renderQuestion();
+  spawnRippleThenRun(e && e.currentTarget, e, function(){
+    document.getElementById('screen-intro').classList.add('hidden');
+    document.getElementById('screen-quiz').classList.remove('hidden');
+    renderQuestion();
+  }, 180);
 }
 
 function renderQuestion(){
@@ -701,20 +801,22 @@ function renderQuestion(){
     const btn = document.createElement('button');
     btn.className = 'option';
     btn.textContent = opt.label;
-    btn.onclick = () => selectAnswer(opt.type);
+    btn.onclick = (e) => selectAnswer(opt.type, e, btn);
     container.appendChild(btn);
   });
 }
 
-function selectAnswer(type){
+function selectAnswer(type, e, btnEl){
   scores[type]++;
   currentQuestion++;
-  if(currentQuestion < questions.length){
-    renderQuestion();
-  } else {
-    document.getElementById('progress-fill').style.width = "100%";
-    showResult();
-  }
+  spawnRippleThenRun(btnEl, e, function(){
+    if(currentQuestion < questions.length){
+      renderQuestion();
+    } else {
+      document.getElementById('progress-fill').style.width = "100%";
+      showResult();
+    }
+  }, 180);
 }
 
 function renderResult(winner){
@@ -748,12 +850,15 @@ function showResult(){
 
 const UNLOCK_EXPIRY_MS = 60 * 60 * 1000; // 1 Stunde
 
-function unlockResult(){
+function unlockResult(e){
   if(currentWinner){
-    try{ localStorage.setItem('resultUnlocked', JSON.stringify({ winner: currentWinner, ts: Date.now() })); }catch(e){}
+    try{ localStorage.setItem('resultUnlocked', JSON.stringify({ winner: currentWinner, ts: Date.now() })); }catch(err){}
   }
-  document.getElementById('result-gate').classList.add('hidden');
-  document.getElementById('result-details').classList.remove('hidden');
+  spawnRippleThenRun(e && e.currentTarget, e, function(){
+    document.getElementById('result-gate').classList.add('hidden');
+    document.getElementById('result-details').classList.remove('hidden');
+    burstConfetti();
+  }, 180);
 }
 
 function restartQuiz(){
@@ -798,6 +903,12 @@ function toggleMusic(){
     btn.classList.remove('playing');
   }
 }
+
+document.addEventListener('click', function(e){
+  const el = e.target.closest('.btn');
+  if(!el || el.id === 'whatsapp-link-gate' || el.id === 'start-quiz-btn') return;
+  spawnRipple(el, e);
+});
 </script>
 
 </body>
