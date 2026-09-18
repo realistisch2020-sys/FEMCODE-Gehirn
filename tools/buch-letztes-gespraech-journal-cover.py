@@ -18,7 +18,7 @@ for name, fn in [('Serif', 'LiberationSerif-Regular.ttf'),
                   ('Sans-Bold', 'LiberationSans-Bold.ttf')]:
     pdfmetrics.registerFont(TTFont(name, FD + fn))
 
-PAGES = 20
+PAGES = 26
 SPINE_MM = PAGES * 0.0025 * 25.4
 BLEED = 3.2
 TRIM_W, TRIM_H = 139.7, 215.9
