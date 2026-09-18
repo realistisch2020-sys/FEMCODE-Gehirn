@@ -155,18 +155,44 @@ def pruefe_pdf(pfad):
 
     # Inhaltsverzeichnis gegen die echten Seitenzahlen
     zei = []
+    toc_ende_idx = 3
     for i in range(min(6, len(doc))):
-        zei += [z.strip() for z in doc[i].get_text().split('\n') if z.strip()]
+        zeilen_dieser_seite = [z.strip() for z in doc[i].get_text().split('\n') if z.strip()]
+        zei += zeilen_dieser_seite
+        if 'Rechtliche Hinweise und Impressum' in zeilen_dieser_seite:
+            toc_ende_idx = i
+    # Layout ist "Titel" (ggf. ueber mehrere Zeilen umgebrochen) gefolgt
+    # von "Seitenzahl" (Tabellenzeile: Titel links, Zahl rechts), nicht
+    # umgekehrt - die Zahl gehoert also zu den Titelzeilen davor, nicht
+    # zur naechsten Zeile danach.
     eintraege = []
-    for k, z in enumerate(zei):
+    puffer = []
+    in_inhalt = False
+    for z in zei:
+        if z == 'Inhalt':
+            in_inhalt = True
+            puffer = []
+            continue
+        if not in_inhalt:
+            continue
         m = re.match(r'^[\. ]*(\d+)$', z)
-        if m and k + 1 < len(zei):
-            eintraege.append((zei[k + 1], int(m.group(1))))
+        if m and puffer:
+            titel = ' '.join(puffer)
+            eintraege.append((titel, int(m.group(1))))
+            puffer = []
+            # Letzter Pflicht-Eintrag des Inhaltsverzeichnisses erreicht -
+            # alles danach ist echter Buchtext, keine TOC-Zeile mehr,
+            # auch wenn dort ebenfalls einzelne Ziffern (Seitenzahlen im
+            # Fuss) vorkommen.
+            if titel == 'Rechtliche Hinweise und Impressum':
+                in_inhalt = False
+        elif not m:
+            puffer.append(z)
     seiten = [re.sub(r'\s+', ' ', s.get_text().replace('\n', ' ')) for s in doc]
     falsch = []
     for titel, nr in eintraege:
         schl = re.sub(r'\s+', ' ', titel)[:40]
-        tref = [i + 1 for i, s in enumerate(seiten) if schl in s and i >= 4]
+        tref = [i + 1 for i, s in enumerate(seiten) if schl in s and i > toc_ende_idx]
         if not tref:
             falsch.append('%s: im Text nicht gefunden' % titel[:45])
         elif tref[0] != nr:

@@ -316,21 +316,26 @@ def baue(toc_pages=None, out_path=None, toc_capture=None):
             continue
 
         if in_toc:
+            # Im 1. Durchlauf (toc_pages=None) gibt es noch keine echten
+            # Seitenzahlen. Trotzdem muss die Zeile hier exakt dieselbe
+            # Tabellenform wie im 2. Durchlauf bekommen (inkl. Platzhalter-
+            # Zahl), sonst ist die Inhaltsverzeichnis-Zeile im 1. Durchlauf
+            # eine Spur niedriger als im 2., das Verzeichnis wird dadurch
+            # im fertigen Buch eine Seite zu kurz berechnet, und jede
+            # Seitenzahl im gedruckten Inhaltsverzeichnis landet 1 zu niedrig.
             seite = toc_pages.get(text) if toc_pages else None
-            if seite:
-                zeile = Table(
-                    [[Paragraph(esc(text), toc_s), Paragraph(str(seite), toc_num_s)]],
-                    colWidths=[W - LM - RM - 1.1 * cm, 1.1 * cm])
-                zeile.setStyle(TableStyle([
-                    ('LEFTPADDING', (0, 0), (-1, -1), 0),
-                    ('RIGHTPADDING', (0, 0), (-1, -1), 0),
-                    ('TOPPADDING', (0, 0), (-1, -1), 0),
-                    ('BOTTOMPADDING', (0, 0), (-1, -1), 1),
-                    ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-                ]))
-                absatz = mit_vorlauf(zeile, pending_space)
-            else:
-                absatz = mit_vorlauf(Paragraph(esc(text), toc_s), pending_space)
+            zeile = Table(
+                [[Paragraph(esc(text), toc_s),
+                  Paragraph(str(seite) if seite else '000', toc_num_s)]],
+                colWidths=[W - LM - RM - 1.1 * cm, 1.1 * cm])
+            zeile.setStyle(TableStyle([
+                ('LEFTPADDING', (0, 0), (-1, -1), 0),
+                ('RIGHTPADDING', (0, 0), (-1, -1), 0),
+                ('TOPPADDING', (0, 0), (-1, -1), 0),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 1),
+                ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+            ]))
+            absatz = mit_vorlauf(zeile, pending_space)
             pending_space = 0.0
             anhaengen(absatz, False)
             continue
