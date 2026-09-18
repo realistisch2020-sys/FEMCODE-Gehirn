@@ -1,6 +1,6 @@
 # Buch 6 bei KDP hochladen, Schritt für Schritt
 
-Stand 26. Juli 2026. Alles zum Abschreiben oder Kopieren.
+Stand 18. September 2026. Alles zum Abschreiben oder Kopieren.
 Nichts davon muss noch entschieden werden.
 
 ---
@@ -9,12 +9,12 @@ Nichts davon muss noch entschieden werden.
 
 | | |
 |---|---|
-| Manuskript | `buch6-Taschenbuch.pdf`, 111 Seiten |
-| Cover | `buch6-Cover-FullWrap.pdf`, 292,85 × 222,30 mm |
+| Manuskript | `buch6-Taschenbuch.pdf`, 113 Seiten |
+| Cover | `buch6-Cover-FullWrap.pdf`, 292,98 × 222,30 mm |
 | Format | 5,5 x 8,5 Zoll (13,97 × 21,59 cm) |
 | Papier | Creme |
-| Rückenbreite | 7,05 mm |
-| Covermass gesamt | 292,85 × 222,30 mm |
+| Rückenbreite | 7,18 mm |
+| Covermass gesamt | 292,98 × 222,30 mm |
 
 Das Manuskript ist fertig geprüft: Schriften eingebettet, Seitenmass stimmt,
 keine leere Seite, alle Seitenzahlen im Inhaltsverzeichnis korrekt.
@@ -119,9 +119,9 @@ Du machst alles selbst, weil bitten sich schlimmer anfühlt als tragen.
 Du hast ein schlechtes Gewissen, wenn du Nein sagst.
 Du weisst nicht mehr, wer du bist, wenn niemand etwas von dir will.
 
-Petra Tanner ist Coachin und arbeitet seit sechsundzwanzig Jahren mit Menschen
-in ihrer Praxis. In dieser Zeit hat sie einen Satz öfter gehört als jeden
-anderen: „Ich kann nicht mehr. Aber ich muss ja.“
+Petra Tanner ist Autorin und Mentorin und arbeitet seit sechsundzwanzig Jahren
+mit Menschen in ihrer Praxis. In dieser Zeit hat sie einen Satz öfter gehört
+als jeden anderen: „Ich kann nicht mehr. Aber ich muss ja.“
 
 Du musst nicht stark sein, um dieses Buch zu lesen.
 Du darfst müde sein. Das ist der Anfang.
@@ -205,8 +205,8 @@ wenn im Vorschaubild alles gut aussieht.
 
 **Im Previewer selbst nachsehen, nicht nur auf grün klicken:**
 - Seite 1 Titel, Seite 5 Einleitung
-- Seite 16 mit den Krisennummern
-- Seite 126 Impressum
+- Seite 13 mit den Krisennummern
+- Seite 113 Impressum
 - Cover: Rücken mittig, Barcodefeld unten rechts frei
 
 ---
