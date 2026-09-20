@@ -815,7 +815,7 @@
   <div class="top" id="header">
     <div class="kicker"><svg class="kicker-orn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2L13.8 9.2L21 11L13.8 12.8L12 20L10.2 12.8L3 11L10.2 9.2Z"/></svg>Safe to Thrive × MONAT</div>
     <h1 id="headline">Welcher Haar-Typ bist du?</h1>
-    <p class="sub" id="subline">12 kurze Fragen. Danach bekommst du deine persönliche Haar-Routine.</p>
+    <p class="sub" id="subline">6 kurze Fragen. Danach bekommst du deine persönliche Haar-Routine.</p>
   </div>
 
   <div class="progress-wrap" id="progressWrap" style="display:none;">
@@ -958,47 +958,6 @@ const questions = [
     ]
   },
   {
-    q: "Wenn du an dein Traumhaar denkst — was steht ganz oben?",
-    options: [
-      { text: "Seidiger, natürlicher Glanz", type: "glow" },
-      { text: "Kraftvolles Haar ohne Spliss und Bruch", type: "repair" },
-      { text: "Sichtbar mehr Volumen und Schwung", type: "volume" },
-      { text: "Eine Kopfhaut ohne Fett und Rückstände", type: "detox" },
-      { text: "Eine beruhigte, nicht mehr gereizte Kopfhaut", type: "sensitive" }
-    ]
-  },
-  {
-    q: "Wie oft färbst, tönst oder behandelst du dein Haar chemisch?",
-    options: [
-      { text: "Selten, aber ich möchte den Glanz trotzdem erhalten", type: "glow" },
-      { text: "Regelmässig — mein Haar hat schon einiges mitgemacht", type: "repair" },
-      { text: "Kaum, mein Haar ist einfach von Natur aus fein", type: "volume" },
-      { text: "Unregelmässig — danach fettet die Kopfhaut spürbar schneller", type: "detox" },
-      { text: "Selten, meine Kopfhaut reagiert empfindlich auf Chemie", type: "sensitive" },
-      { text: "Ich färbe nicht", type: "glow" }
-    ]
-  },
-  {
-    q: "Wie oft wäschst du deine Haare im Schnitt?",
-    options: [
-      { text: "Alle 2–3 Tage, sieht dann aber schon wieder müde aus", type: "glow" },
-      { text: "Fast täglich, wegen Styling-Rückständen", type: "repair" },
-      { text: "Täglich, sonst fällt es komplett in sich zusammen", type: "volume" },
-      { text: "Täglich, weil es sonst fettet", type: "detox" },
-      { text: "So selten wie möglich — Waschen reizt meine Kopfhaut zusätzlich", type: "sensitive" }
-    ]
-  },
-  {
-    q: "Was beschreibt deine Kopfhaut am ehesten?",
-    options: [
-      { text: "Eigentlich unauffällig und gesund", type: "glow" },
-      { text: "Normal — mein Fokus liegt eher auf den Längen", type: "repair" },
-      { text: "Manchmal leicht empfindlich an den Ansätzen durch Styling", type: "volume" },
-      { text: "Fettet schnell nach, mit sichtbaren Rückständen", type: "detox" },
-      { text: "Spannt, schuppt oder juckt regelmässig", type: "sensitive" }
-    ]
-  },
-  {
     q: "Was würdest du am liebsten sofort ändern?",
     options: [
       { text: "Den Glanz länger halten, auch am zweiten Tag", type: "glow" },
@@ -1006,26 +965,6 @@ const questions = [
       { text: "Meinem Haar mehr Fülle und Dichte geben", type: "volume" },
       { text: "Meine Kopfhaut von Fett und Rückständen befreien", type: "detox" },
       { text: "Juckreiz oder Rötung an der Kopfhaut beruhigen", type: "sensitive" }
-    ]
-  },
-  {
-    q: "Was würde dich am meisten überraschen und freuen?",
-    options: [
-      { text: "Wenn der Glanz auch am zweiten Tag noch da wäre", type: "glow" },
-      { text: "Wenn Spliss und Bruch einfach aufhören würden", type: "repair" },
-      { text: "Wenn meine Ansätze von selbst Stand hätten", type: "volume" },
-      { text: "Wenn ich zwei Tage länger ohne Waschen auskommen könnte", type: "detox" },
-      { text: "Wenn meine Kopfhaut einfach mal Ruhe geben würde", type: "sensitive" }
-    ]
-  },
-  {
-    q: "Und zum Schluss: Wie beschreibst du dein Verhältnis zu deinem Haar gerade?",
-    options: [
-      { text: "Es ist okay, aber es könnte strahlender sein", type: "glow" },
-      { text: "Es fühlt sich strapaziert an, ich möchte es aufbauen", type: "repair" },
-      { text: "Ich wünsche mir einfach mehr Präsenz und Fülle", type: "volume" },
-      { text: "Es beginnt bei der Kopfhaut — dort will ich ansetzen", type: "detox" },
-      { text: "Meine Kopfhaut ist launisch — reagiert auf Stress, Wetter, Produkte", type: "sensitive" }
     ]
   }
 ];
