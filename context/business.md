@@ -10,6 +10,10 @@ Zwei Standbeine:
 
 Beide laufen über denselben Mechanismus: ein interaktiver Quiz auf einer eigenen Seite (GitHub Pages), Ergebnis + Buch-/Produkt-Empfehlung, WhatsApp als Kontaktkanal.
 
+## Wichtig: Live-Links nie über Kreuz verändern
+
+Es gibt viele ähnlich benannte Quiz-Seiten (Safe-to-Thrive-Persönlichkeitstest, mehrere MONAT-Haartest-Varianten, `glow-typ-test.html` für MONAT Gloss Mode™ Warteliste). Jede ist eigenständig. Arbeit an einer Seite (z.B. Persönlichkeitstest) darf nie eine andere live Seite oder deren Link verändern — auch nicht aus Versehen wegen ähnlichem Namen/Aufbau.
+
 ## Meine Zielgruppe
 
 Safe to Thrive: Menschen mit Mustern wie Schuldgefühlen, Beziehungs-Erschöpfung, unsichtbarer Erschöpfung, People Pleasing, Reizbarkeit/Nervensystem-Themen.
