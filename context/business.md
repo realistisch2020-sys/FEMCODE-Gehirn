@@ -12,7 +12,11 @@ Beide laufen über denselben Mechanismus: ein interaktiver Quiz auf einer eigene
 
 ## Wichtig: Live-Links nie über Kreuz verändern
 
-Es gibt viele ähnlich benannte Quiz-Seiten (Safe-to-Thrive-Persönlichkeitstest, mehrere MONAT-Haartest-Varianten, `glow-typ-test.html` für MONAT Gloss Mode™ Warteliste). Jede ist eigenständig. Arbeit an einer Seite (z.B. Persönlichkeitstest) darf nie eine andere live Seite oder deren Link verändern — auch nicht aus Versehen wegen ähnlichem Namen/Aufbau.
+Es gibt viele ähnlich benannte Quiz-Seiten (Safe-to-Thrive-Persönlichkeitstest, mehrere MONAT-Haartest-Varianten, `glow-typ-test.html` für MONAT Gloss Mode™ Warteliste, `monat-detox-test/` für die Detox-Phase, `monat-anwendungstest.html` für die Produkt-Anwendung). Jede ist eigenständig. Arbeit an einer Seite (z.B. Persönlichkeitstest) darf nie eine andere live Seite oder deren Link verändern — auch nicht aus Versehen wegen ähnlichem Namen/Aufbau.
+
+## MONAT-Quiz-Vorlage: visueller Standard
+
+Die MONAT-Test-Seiten teilen sich einen Effekt-Baukasten (Glitzer-Canvas, Konfetti, 3D-Emblem, drehende Icon-Badges, Buttons die beim Klick wackeln/Farbe zeigen). Lieber zu viel Bewegung/Effekte als zu wenig einsetzen.
 
 ## Meine Zielgruppe
 
