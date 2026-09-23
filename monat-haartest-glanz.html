@@ -8,18 +8,18 @@
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap');
 
   :root{
-    --cream:#1c1420;
-    --ink:#f5ece0;
-    --ink-soft:#c9b9cc;
-    --gold:#ffb238;
-    --gold-light:rgba(255,178,56,0.16);
-    --gold-deep:#ff7a3d;
-    --gold-bright:#ffd27a;
-    --clay:#ff5c7a;
-    --moss:#a855f7;
-    --moss-light:rgba(168,85,247,0.14);
-    --line:rgba(255,255,255,0.14);
-    --white:#241a2c;
+    --cream:#f7e9ea;
+    --ink:#241c22;
+    --ink-soft:#6e5f66;
+    --gold:#a8536b;
+    --gold-light:rgba(168,83,107,0.16);
+    --gold-deep:#7d3a4d;
+    --gold-bright:#f1cdd3;
+    --clay:#c9718c;
+    --moss:#7c8968;
+    --moss-light:rgba(124,137,104,0.14);
+    --line:rgba(255,255,255,0.85);
+    --white:#fdf8f2;
   }
 
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -27,11 +27,11 @@
   body{
     font-family:'Inter', -apple-system, sans-serif;
     background:
-      radial-gradient(circle at 18% 12%, rgba(255,90,120,0.22) 0%, transparent 45%),
-      radial-gradient(circle at 85% 15%, rgba(255,178,56,0.16) 0%, transparent 45%),
-      radial-gradient(circle at 82% 85%, rgba(168,85,247,0.20) 0%, transparent 50%),
-      radial-gradient(circle at 10% 88%, rgba(20,201,174,0.14) 0%, transparent 45%),
-      linear-gradient(160deg, #150f19, #1b1220);
+      radial-gradient(circle at 18% 12%, rgba(201,113,140,0.22) 0%, transparent 45%),
+      radial-gradient(circle at 85% 15%, rgba(168,83,107,0.16) 0%, transparent 45%),
+      radial-gradient(circle at 82% 85%, rgba(124,137,104,0.20) 0%, transparent 50%),
+      radial-gradient(circle at 10% 88%, rgba(95,107,82,0.14) 0%, transparent 45%),
+      linear-gradient(160deg, #f7e9ea, #eef1e6);
     color:var(--ink);
     min-height:100vh;
     display:flex;
@@ -46,7 +46,7 @@
     max-width:520px;
     background:var(--white);
     border-radius:20px;
-    box-shadow:0 40px 90px -30px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.06);
+    box-shadow:0 40px 90px -30px rgba(125,58,77,0.35), 0 0 0 1px rgba(255,255,255,0.7);
     overflow:hidden;
     position:relative;
     backdrop-filter:blur(6px);
@@ -58,7 +58,7 @@
     inset:0;
     padding:1px;
     border-radius:20px;
-    background:linear-gradient(135deg, #ff5c7a, #ffb238 35%, #a855f7 70%, #14c9ae);
+    background:linear-gradient(135deg, #c9718c, #a8536b 35%, #7c8968 70%, #5f6b52);
     -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite:xor;
     mask-composite:exclude;
@@ -117,21 +117,22 @@
   .progress-track{
     height:6px;
     width:100%;
-    background:rgba(255,255,255,0.08);
+    background:rgba(255,255,255,0.55);
+    border:1px solid rgba(255,255,255,0.85);
     border-radius:6px;
     overflow:hidden;
-    box-shadow:inset 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow:inset 0 1px 3px rgba(0,0,0,0.12);
   }
 
   .progress-fill{
     height:100%;
-    background:linear-gradient(90deg, #ff5c7a, #ffb238, #a855f7, #ff5c7a);
+    background:linear-gradient(90deg, #c9718c, #a8536b, #7c8968, #c9718c);
     background-size:300% 100%;
     border-radius:6px;
     transition:width 0.4s ease;
     width:0%;
     animation:shimmerBar 3.2s linear infinite;
-    box-shadow:0 0 10px rgba(255,178,56,0.6);
+    box-shadow:0 0 10px rgba(168,83,107,0.6);
   }
   @keyframes shimmerBar{
     0%{ background-position:0% 0%; }
@@ -176,7 +177,8 @@
     padding:16px 18px;
     border:1px solid var(--line);
     border-radius:14px;
-    background:linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+    background:linear-gradient(135deg, rgba(255,255,255,0.55), rgba(255,255,255,0.3));
+    box-shadow:0 2px 10px -6px rgba(125,58,77,0.18);
     font-size:15px;
     color:var(--ink);
     cursor:pointer;
@@ -190,16 +192,16 @@
     content:"";
     position:absolute;
     left:0; top:0; bottom:0; width:3px;
-    background:linear-gradient(180deg, #ff5c7a, #ffb238, #a855f7);
+    background:linear-gradient(180deg, #c9718c, #a8536b, #7c8968);
     transform:scaleY(0);
     transition:transform 0.25s ease;
   }
 
   .option:hover{
-    border-color:rgba(255,178,56,0.5);
-    background:linear-gradient(135deg, rgba(255,178,56,0.10), rgba(168,85,247,0.06));
+    border-color:rgba(168,83,107,0.5);
+    background:linear-gradient(135deg, rgba(168,83,107,0.10), rgba(124,137,104,0.06));
     transform:translateX(3px) translateY(-1px);
-    box-shadow:0 12px 28px -16px rgba(255,92,122,0.4);
+    box-shadow:0 12px 28px -16px rgba(201,113,140,0.4);
   }
 
   .option:hover::before{
@@ -210,11 +212,11 @@
     transform:translateX(2px) scale(0.99);
   }
 
-  .option{ --opt-color: #ffb238; }
+  .option{ --opt-color: #a8536b; }
 
   .option.selected{
     border-color:var(--opt-color);
-    background:linear-gradient(135deg, var(--opt-color), color-mix(in srgb, var(--opt-color) 60%, #1c1420));
+    background:linear-gradient(135deg, var(--opt-color), color-mix(in srgb, var(--opt-color) 60%, #241c22));
     color:#fff;
     transform:scale(0.98);
     box-shadow:0 0 26px -4px var(--opt-color);
@@ -257,10 +259,10 @@
   .loading-ring{
     width:56px; height:56px;
     border-radius:50%;
-    border:3px solid rgba(255,255,255,0.12);
-    border-top-color:#ff5c7a;
-    border-right-color:#ffb238;
-    border-bottom-color:#a855f7;
+    border:3px solid rgba(255,255,255,0.55);
+    border-top-color:#c9718c;
+    border-right-color:#a8536b;
+    border-bottom-color:#7c8968;
     animation:ringSpin 0.9s linear infinite;
   }
   @keyframes ringSpin{ to{ transform:rotate(360deg); } }
@@ -278,13 +280,13 @@
     bottom:24px;
     left:50%;
     transform:translateX(-50%) translateY(20px);
-    background:linear-gradient(90deg, #ff5c7a, #a855f7);
+    background:linear-gradient(90deg, #c9718c, #7c8968);
     color:#fff;
     font-size:13.5px;
     font-weight:600;
     padding:12px 22px;
     border-radius:999px;
-    box-shadow:0 14px 30px -10px rgba(168,85,247,0.5);
+    box-shadow:0 14px 30px -10px rgba(124,137,104,0.5);
     opacity:0;
     transition:opacity 0.35s ease, transform 0.35s ease;
     z-index:200;
@@ -325,8 +327,8 @@
     padding:15px 20px;
     border:none;
     border-radius:12px;
-    background:linear-gradient(90deg, #ff5c7a, #ffb238);
-    color:#1c1420;
+    background:linear-gradient(90deg, #c9718c, #a8536b);
+    color:#fdf8f2;
     font-size:15px;
     font-weight:700;
     cursor:pointer;
@@ -334,7 +336,7 @@
     transition:background 0.2s ease, transform 0.15s ease;
     position:relative;
     overflow:hidden;
-    box-shadow:0 14px 30px -12px rgba(255,92,122,0.5);
+    box-shadow:0 14px 30px -12px rgba(201,113,140,0.5);
   }
 
   .cta-btn{
@@ -373,7 +375,7 @@
   }
 
   .start-btn:hover, .cart-btn:hover{
-    background:linear-gradient(90deg, #ffb238, #ff5c7a);
+    background:linear-gradient(90deg, #a8536b, #c9718c);
     transform:translateY(-1px);
   }
 
@@ -551,10 +553,23 @@
     display:flex;
     gap:14px;
     padding:14px 0;
-    border-bottom:1px solid rgba(255,255,255,0.12);
+    border-bottom:1px solid rgba(125,58,77,0.14);
   }
 
   .routine-step:last-child{ border-bottom:none; }
+
+  .routine-ic{
+    flex-shrink:0;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:var(--gold-light);
+    color:var(--gold-deep);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .routine-ic svg{ width:16px; height:16px; }
 
   .routine-num{
     font-family:'Fraunces', serif;
@@ -602,6 +617,65 @@
     color:var(--ink-soft);
     line-height:1.5;
   }
+
+  .product-gallery{
+    margin-bottom:24px;
+    padding:18px 20px;
+    background:var(--moss-light);
+    border-radius:14px;
+  }
+
+  .pg-heading{
+    font-family:'Fraunces', serif;
+    font-size:16px;
+    color:var(--ink);
+    margin-bottom:4px;
+  }
+
+  .pg-sub{
+    font-size:12.5px;
+    color:var(--ink-soft);
+    margin-bottom:14px;
+    line-height:1.5;
+  }
+
+  .pg-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px;
+  }
+
+  .pg-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 10px;
+    border-radius:10px;
+    background:var(--white);
+    text-decoration:none;
+    color:var(--ink);
+    font-size:12px;
+    line-height:1.3;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .pg-item:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 16px -8px rgba(125,58,77,0.3);
+  }
+
+  .pg-ic{
+    flex-shrink:0;
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:var(--gold-light);
+    color:var(--gold-deep);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .pg-ic svg{ width:14px; height:14px; }
 
   .personal-note{
     font-size:14.5px;
@@ -765,7 +839,7 @@
   .glit{
     position:absolute; border-radius:50%;
     background:var(--gold-bright);
-    box-shadow:0 0 7px 1px rgba(255,178,56,0.7);
+    box-shadow:0 0 7px 1px rgba(168,83,107,0.7);
     animation:twinkle ease-in-out infinite;
   }
   @keyframes twinkle{
@@ -889,6 +963,11 @@
       </div>
       <div class="intro-info">
         <strong>MONAT</strong> ist eine internationale Marke für hochwertige, natürlich basierte Haarpflege — vegan, ohne Tierversuche entwickelt und mit REJUVENIQE®, einer Mischung aus über 13 Pflanzenölen, in vielen Produkten. Du kaufst mit voller <strong>30-Tage-Zufriedenheitsgarantie</strong>: Gefällt dir ein Produkt nicht, kannst du es einfach zurückschicken.
+      </div>
+      <div class="product-gallery">
+        <div class="pg-heading">Das ganze MONAT-Sortiment</div>
+        <div class="pg-sub">Nicht nur deine Routine oben — hier die komplette Produktpalette zum Entdecken.</div>
+        <div class="pg-grid" id="productGallery"></div>
       </div>
       <div class="personal-note" id="resultNote"></div>
 
@@ -1088,6 +1167,57 @@ const results = {
   }
 };
 
+/* --- Produkt-Icons (verspielte Badges für Routine & Produkt-Galerie) --- */
+const ICONS = {
+  drop: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s6 7 6 12a6 6 0 01-12 0c0-5 6-12 6-12z"/></svg>`,
+  bottle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 2h4v3.5l2 2V21a1 1 0 01-1 1H9a1 1 0 01-1-1V7.5l2-2V2z"/><path d="M9 11h6"/></svg>`,
+  scrub: `<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="7" cy="8" r="1.6"/><circle cx="16" cy="6" r="1.3"/><circle cx="12" cy="13" r="1.4"/><circle cx="17" cy="16" r="1.2"/><circle cx="7" cy="17" r="1.1"/></svg>`,
+  jar: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="9" width="14" height="12" rx="2"/><path d="M8 9V6a1 1 0 011-1h6a1 1 0 011 1v3"/></svg>`,
+  spray: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 8h6l1 13H8L9 8z"/><path d="M10 8V4h4v4"/><path d="M4 9l2 1M4 13l2-1M4 6l2 2" stroke-linecap="round"/></svg>`,
+  bundle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h4v3l1.5 1.5V20a1 1 0 01-1 1h-5a1 1 0 01-1-1V8.5L7 7V4z"/><path d="M14 9h3v2l1 1v9a1 1 0 01-1 1h-3a1 1 0 01-1-1v-9l1-1V9z"/></svg>`
+};
+
+function productIcon(name){
+  const n = name.toLowerCase();
+  if(/system|black/.test(n)) return ICONS.bundle;
+  if(/scrub|peeling/.test(n)) return ICONS.scrub;
+  if(/serum|öl|oil|rejuveniqe/.test(n)) return ICONS.drop;
+  if(/maske|mask|creme|cream/.test(n)) return ICONS.jar;
+  if(/spray/.test(n)) return ICONS.spray;
+  if(/shampoo|spülung|conditioner|treatment|rinse/.test(n)) return ICONS.bottle;
+  return ICONS.drop;
+}
+
+/* --- Komplettes MONAT-Sortiment für die Produkt-Galerie --- */
+const ALL_PRODUCTS = [
+  "Renew™ Shampoo",
+  "Renew™ Spülung",
+  "MONAT BLACK™ Shampoo + Spülung",
+  "Smoothing Anti-Frizz™ Deep Conditioner",
+  "Smoothing Anti-Frizz™ Intensive Tiefenbehandlung",
+  "Smoothing Anti-Frizz™ Föhn-Spray",
+  "MONAT Curl Perfection™ Auffrischungsspray",
+  "REJUVENIQE® Öl",
+  "Restore™ Leave-in Conditioner",
+  "Replenish™ Maske",
+  "Scalp Purifying Scrub",
+  "MONAT STUDIO ONE™ Föhncreme",
+  "IR CLINICAL™ Kopfhautserum",
+  "IR CLINICAL™ Verdickendes Shampoo",
+  "IR CLINICAL™ Verdickende Spülung"
+];
+
+function buildProductGallery(){
+  const el = document.getElementById('productGallery');
+  el.innerHTML = ALL_PRODUCTS.map(name => `
+    <a class="pg-item" href="https://swiss.mymonat.com/shop/products?keywords=${encodeURIComponent(name.replace(/™|®/g, ''))}" target="_blank" rel="noopener">
+      <span class="pg-ic">${productIcon(name)}</span>
+      <span class="pg-name">${name}</span>
+    </a>
+  `).join('');
+}
+buildProductGallery();
+
 let current = 0;
 const answers = [];
 let lengthAnswer = null;
@@ -1178,7 +1308,7 @@ createGlitter();
 function fireConfetti(){
   const host = document.getElementById('confettiHost');
   host.innerHTML = '';
-  const colors = ['#ff5c7a', '#ffb238', '#a855f7', '#14c9ae'];
+  const colors = ['#c9718c', '#a8536b', '#7c8968', '#5f6b52'];
   for (let i = 0; i < 22; i++) {
     const p = document.createElement('div');
     p.className = 'confetti-piece';
@@ -1197,7 +1327,7 @@ function fireConfetti(){
 function buildQuestions(){
   const container = document.getElementById('questions-container');
   const galleryIds = ['introImg1', 'introImg2', 'introImg3'];
-  const optColors = ['#ff5c7a', '#ffb238', '#a855f7', '#14c9ae', '#ff8a3d', '#4facfe'];
+  const optColors = ['#c9718c', '#a8536b', '#7c8968', '#5f6b52', '#8a4a5e', '#9aa688'];
   questions.forEach((q, i) => {
     const div = document.createElement('div');
     div.className = 'screen';
@@ -1345,6 +1475,7 @@ function showResult(forcedType){
   document.getElementById('routineList').innerHTML = routineToShow.map((item, idx) => `
     <div class="routine-step">
       <div class="routine-num">${idx + 1}</div>
+      <span class="routine-ic">${productIcon(item.name)}</span>
       <div class="routine-body">
         <a class="name" href="https://swiss.mymonat.com/shop/products?keywords=${encodeURIComponent(item.name.replace(/™|®/g, ''))}" target="_blank" rel="noopener">${item.name} →</a>
       </div>
