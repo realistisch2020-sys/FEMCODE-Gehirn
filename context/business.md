@@ -18,6 +18,7 @@ Team-Kopien für andere Beraterinnen: gleicher Seiteninhalt, aber deren eigene K
 
 Bereits bekannte Original-Kontaktdaten:
 - Angela Gross → `monat-persoenlichkeitstest-2/index.html`
+- Monika Gessler → `monat-persoenlichkeitstest-3/index.html`
 - Edith Furrer → `monat-persoenlichkeitstest-4/index.html` (keine E-Mail/Instagram hinterlegt)
 
 ## MONAT-Quiz-Vorlage: visueller Standard
