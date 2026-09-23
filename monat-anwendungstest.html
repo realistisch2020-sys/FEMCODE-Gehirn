@@ -80,6 +80,10 @@ p{margin:0 0 14px}
 .btn.ghost{background:var(--glass);color:var(--ink);border:1px solid var(--glass-b);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 10px 26px -12px var(--shadow)}
 .btn.ghost::after{background:linear-gradient(100deg,transparent,rgba(255,255,255,.8),transparent)}
 .btn svg{width:20px;height:20px;flex:none}
+@keyframes pop{0%{transform:scale(1) rotate(0deg)}35%{transform:scale(.93) rotate(-4deg)}65%{transform:scale(1.05) rotate(3deg)}100%{transform:scale(1) rotate(0deg)}}
+.btn.pop{animation:pop .55s cubic-bezier(.3,1.6,.5,1)}
+@keyframes flashColor{0%{background:var(--glass)}40%{background:linear-gradient(135deg,var(--blush),var(--rose))}100%{background:var(--glass)}}
+.btn.ghost.pop{animation:pop .55s cubic-bezier(.3,1.6,.5,1),flashColor .55s ease}
 .btn:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);transform:scale(0);animation:rip .7s ease-out forwards;pointer-events:none}
 @keyframes rip{to{transform:scale(4);opacity:0}}
@@ -109,14 +113,19 @@ p{margin:0 0 14px}
 .psel.sel{border-color:var(--gold);background:var(--glass-b);box-shadow:0 0 0 3px rgba(217,160,176,.3),0 12px 24px -14px var(--shadow)}
 .psel.sel .chk{border-color:var(--gold)}
 .psel.sel .chk::after{transform:scale(1)}
-.psel .pic{flex:none;width:32px;height:32px;border-radius:50%;background:var(--blush);color:var(--gold);display:grid;place-items:center}
+.psel .pic{flex:none;width:32px;height:32px;border-radius:50%;background:var(--blush);color:var(--gold);display:grid;place-items:center;transition:transform .4s cubic-bezier(.3,1.6,.5,1),background .3s,color .3s}
 .psel .pic svg{width:16px;height:16px}
+.psel:hover .pic{transform:rotate(20deg) scale(1.08)}
+.psel.sel .pic{animation:spinIn .5s cubic-bezier(.3,1.6,.5,1);background:var(--gold);color:#fff}
+@keyframes spinIn{from{transform:rotate(0deg) scale(.7)}to{transform:rotate(360deg) scale(1)}}
 .psel .pname{font-size:.95rem;font-weight:600}
 
 .pstep-list{display:grid;gap:14px;margin-bottom:6px}
 .pstep{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:20px;border:1px solid var(--glass-b);background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-.pstep .pic{flex:none;width:38px;height:38px;border-radius:50%;background:var(--blush);color:var(--gold);display:grid;place-items:center}
+.pstep .pic{flex:none;width:38px;height:38px;border-radius:50%;background:var(--blush);color:var(--gold);display:grid;place-items:center;animation:spinIn .6s cubic-bezier(.3,1.6,.5,1) both}
 .pstep .pic svg{width:19px;height:19px}
+.pstep:hover .pic{animation:slowSpin 1.2s linear infinite}
+@keyframes slowSpin{to{transform:rotate(360deg)}}
 .pstep b{display:block;font-size:1rem;margin-bottom:3px}
 .pstep small{display:block;color:var(--muted);font-size:.88rem;line-height:1.45;margin-bottom:6px}
 .pstep .pshop{font-size:.82rem;font-weight:700;color:var(--gold);text-decoration:none}
@@ -138,7 +147,7 @@ p{margin:0 0 14px}
   box-shadow:0 20px 50px -10px var(--shadow),inset 0 -10px 24px rgba(185,120,127,.35);display:grid;place-items:center;animation:pop .9s cubic-bezier(.3,1.6,.5,1) both}
 @keyframes pop{from{transform:scale(0) rotate(-40deg)}to{transform:none}}
 .emblem .core svg{width:56px;height:56px;color:#fff}
-.orbit{position:absolute;inset:0;animation:spin 9s linear infinite}
+.orbit{position:absolute;inset:0;animation:spin 6s linear infinite}
 .orbit span{position:absolute;left:50%;top:0;width:14px;height:14px;margin-left:-7px;background:var(--gold);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
 .orbit span:nth-child(2){top:auto;bottom:0;background:var(--rose);transform:scale(.8)}
 .orbit span:nth-child(3){left:0;top:50%;margin:-7px 0 0 0;background:var(--silver)}
@@ -199,7 +208,7 @@ p{margin:0 0 14px}
   <section class="screen" id="s-res">
     <div class="res-head">
       <div class="emblem"><div class="orbit"><span></span><span></span><span></span><span></span></div>
-        <div class="core"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l2.4 6.6 6.6 2.4-6.6 2.4L12 19.5l-2.4-6.6L3 10.5l6.6-2.4z"/></svg></div></div>
+        <div class="core"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.7-10-9.3C.5 8.2 2.6 4 6.6 4c2 0 3.6 1.1 4.4 2.7C11.8 5.1 13.4 4 15.4 4c4 0 6.1 4.2 4.6 7.7C19.5 16.3 12 21 12 21z"/></svg></div></div>
       <p class="tag">Deine Anwendungs­anleitung</p>
       <div class="rname">Fertig!</div>
       <div class="rline">So wendest du deine Produkte an</div>
@@ -303,6 +312,10 @@ function ripple(el,e){
   sp.style.left = (x - s/2)+"px"; sp.style.top = (y - s/2)+"px";
   el.appendChild(sp); setTimeout(function(){sp.remove()},720);
 }
+function pop(el){
+  if(RM) return;
+  el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop");
+}
 
 /* ---- Auswahl ---- */
 function renderSelect(){
@@ -331,16 +344,17 @@ $("selbox").addEventListener("click",function(e){
   var key = card.dataset.key;
   selected[key] = !selected[key];
   card.classList.toggle("sel", !!selected[key]);
-  ripple(card,e);
+  ripple(card,e); pop(card);
+  if(selected[key]) burst(e.clientX,e.clientY,10,false);
   updateCount();
 });
-$("back").addEventListener("click",function(){ show("s-intro"); });
+$("back").addEventListener("click",function(){ pop(this); show("s-intro"); });
 $("start").addEventListener("click",function(e){
-  ripple(this,e); burst(e.clientX,e.clientY,22,false);
+  ripple(this,e); pop(this); burst(e.clientX,e.clientY,26,false);
   show("s-select"); renderSelect();
 });
 $("selDone").addEventListener("click",function(e){
-  ripple(this,e); burst(e.clientX,e.clientY,22,false);
+  ripple(this,e); pop(this); burst(e.clientX,e.clientY,26,false);
   finish();
 });
 
@@ -366,7 +380,7 @@ function renderDone(){
     sh = '<p style="text-align:center;color:var(--muted);margin-bottom:16px">Du hast noch keine Produkte ausgewählt.</p><button class="btn ghost" id="backToSelect" type="button">Zurück zur Auswahl</button>';
   }
   $("resultBody").innerHTML = sh;
-  if(!any){ $("backToSelect").addEventListener("click",function(){ show("s-select"); }); }
+  if(!any){ $("backToSelect").addEventListener("click",function(){ pop(this); show("s-select"); }); }
   $("links-res").innerHTML = linksHTML();
   var revs = document.querySelectorAll("#s-res .rev"); for(var i=0;i<revs.length;i++) revs[i].classList.remove("vis");
   setupReveal();
@@ -381,8 +395,9 @@ function setupReveal(){
   },{threshold:.15});
   els.forEach(function(e){io.observe(e)});
 }
-$("again").addEventListener("click",function(){ show("s-select"); renderSelect(); });
-$("share").addEventListener("click",function(){
+$("again").addEventListener("click",function(){ pop(this); show("s-select"); renderSelect(); });
+$("share").addEventListener("click",function(e){
+  pop(this); burst(e.clientX,e.clientY,16,false);
   var url = location.href, txt = "So wendest du dein MONAT-Sortiment richtig an — der Anwendungs-Guide.";
   if(navigator.share){ navigator.share({title:"MONAT Anwendungstest",text:txt,url:url}).catch(function(){}); }
   else if(navigator.clipboard){ navigator.clipboard.writeText(url).then(function(){ $("share").textContent="Link kopiert"; }).catch(function(){}); }
@@ -398,35 +413,46 @@ function star(x,y,r,rot){
   cx.moveTo(0,-r); cx.quadraticCurveTo(r*.12,-r*.12,r,0); cx.quadraticCurveTo(r*.12,r*.12,0,r);
   cx.quadraticCurveTo(-r*.12,r*.12,-r,0); cx.quadraticCurveTo(-r*.12,-r*.12,0,-r); cx.fill(); cx.restore();
 }
+function heart(x,y,r,rot){
+  cx.save(); cx.translate(x,y); cx.rotate(rot||0); cx.beginPath();
+  cx.moveTo(0,r*.6);
+  cx.bezierCurveTo(-r*1.1,-r*.3,-r*.5,-r*1.1,0,-r*.35);
+  cx.bezierCurveTo(r*.5,-r*1.1,r*1.1,-r*.3,0,r*.6);
+  cx.fill(); cx.restore();
+}
+function dot(x,y,r){ cx.beginPath(); cx.arc(x,y,r*.5,0,6.283); cx.fill(); }
+function shape(sh,x,y,r,rot){ if(sh==="heart") heart(x,y,r,rot); else if(sh==="dot") dot(x,y,r); else star(x,y,r,rot); }
+var SHAPES = ["star","star","heart","dot"];
+function randShape(){ return SHAPES[(Math.random()*SHAPES.length)|0]; }
 var amb = [], parts = [];
-if(!RM){ for(var i=0;i<34;i++) amb.push({x:Math.random()*W,y:Math.random()*H,r:3+Math.random()*7,ph:Math.random()*6.28,sp:.6+Math.random()*1.2,vy:-.08-Math.random()*.22,vx:(Math.random()-.5)*.15,c:COLORS[i%COLORS.length]}); }
+if(!RM){ for(var i=0;i<55;i++) amb.push({x:Math.random()*W,y:Math.random()*H,r:3+Math.random()*8,ph:Math.random()*6.28,sp:.6+Math.random()*1.2,vy:-.08-Math.random()*.22,vx:(Math.random()-.5)*.15,c:COLORS[i%COLORS.length],sh:randShape()}); }
 function burst(x,y,n,big){
   if(RM || !x) return;
   for(var i=0;i<n;i++){
-    var a = Math.random()*6.28, s = (big?3:1.2)+Math.random()*(big?6:3);
-    parts.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-(big?2:1),g:.09,life:1,d:.012+Math.random()*.014,r:(big?4:3)+Math.random()*(big?7:4),rot:Math.random()*6,vr:(Math.random()-.5)*.3,c:COLORS[(Math.random()*COLORS.length)|0]});
+    var a = Math.random()*6.28, s = (big?3.5:1.4)+Math.random()*(big?7:3.5);
+    parts.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-(big?2:1),g:.09,life:1,d:.011+Math.random()*.013,r:(big?5:3.5)+Math.random()*(big?8:4.5),rot:Math.random()*6,vr:(Math.random()-.5)*.35,c:COLORS[(Math.random()*COLORS.length)|0],sh:randShape()});
   }
 }
 function confetti(){
-  for(var k=0;k<4;k++) setTimeout(function(){ burst(Math.random()*W*.6+W*.2, H*.3, 46, true); }, k*260);
-  for(var j=0;j<70;j++) parts.push({x:Math.random()*W,y:-20-Math.random()*200,vx:(Math.random()-.5)*1.2,vy:1+Math.random()*2.5,g:.02,life:1,d:.004,r:4+Math.random()*6,rot:Math.random()*6,vr:(Math.random()-.5)*.2,c:COLORS[(Math.random()*COLORS.length)|0]});
+  for(var k=0;k<8;k++) setTimeout(function(){ burst(Math.random()*W*.7+W*.15, H*.28, 60, true); }, k*180);
+  for(var j=0;j<170;j++) parts.push({x:Math.random()*W,y:-20-Math.random()*260,vx:(Math.random()-.5)*1.4,vy:1+Math.random()*2.8,g:.02,life:1,d:.0035,r:4+Math.random()*7,rot:Math.random()*6,vr:(Math.random()-.5)*.25,c:COLORS[(Math.random()*COLORS.length)|0],sh:randShape()});
 }
 var lastTrail = 0;
 if(!RM){ addEventListener("pointermove",function(e){
-  if(e.pointerType!=="mouse") return; var n = performance.now(); if(n-lastTrail<45) return; lastTrail = n;
-  parts.push({x:e.clientX,y:e.clientY,vx:(Math.random()-.5)*.6,vy:.4+Math.random()*.6,g:.01,life:1,d:.03,r:3+Math.random()*4,rot:Math.random()*6,vr:.05,c:COLORS[(Math.random()*4)|0]});
+  if(e.pointerType!=="mouse") return; var n = performance.now(); if(n-lastTrail<40) return; lastTrail = n;
+  parts.push({x:e.clientX,y:e.clientY,vx:(Math.random()-.5)*.6,vy:.4+Math.random()*.6,g:.01,life:1,d:.028,r:3+Math.random()*4,rot:Math.random()*6,vr:.05,c:COLORS[(Math.random()*4)|0],sh:randShape()});
 }); }
 function loop(t){
   cx.clearRect(0,0,W,H);
   amb.forEach(function(a){
     a.y += a.vy; a.x += a.vx; if(a.y < -20){ a.y = H+20; a.x = Math.random()*W; }
     var al = .25 + .55*Math.abs(Math.sin(t/1000*a.sp + a.ph));
-    cx.globalAlpha = al; cx.fillStyle = a.c; star(a.x,a.y,a.r*(.7+.3*al),t/2000*a.sp);
+    cx.globalAlpha = al; cx.fillStyle = a.c; shape(a.sh,a.x,a.y,a.r*(.7+.3*al),t/2000*a.sp);
   });
   for(var i=parts.length-1;i>=0;i--){
     var p = parts[i]; p.vy += p.g; p.x += p.vx; p.y += p.vy; p.rot += p.vr; p.life -= p.d;
     if(p.life<=0 || p.y>H+30){ parts.splice(i,1); continue; }
-    cx.globalAlpha = Math.max(0,p.life); cx.fillStyle = p.c; star(p.x,p.y,p.r,p.rot);
+    cx.globalAlpha = Math.max(0,p.life); cx.fillStyle = p.c; shape(p.sh,p.x,p.y,p.r,p.rot);
   }
   cx.globalAlpha = 1;
   requestAnimationFrame(loop);
