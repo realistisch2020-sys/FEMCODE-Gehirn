@@ -86,24 +86,34 @@ p{margin:0 0 14px}
 .links{display:grid;gap:10px;margin-top:14px}
 .mini{margin-top:12px;font-size:.88rem;color:var(--muted);text-align:center}
 
-/* Guide */
+/* Auswahl */
 .top{display:flex;align-items:center;gap:12px;margin-bottom:22px}
 .back{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--glass-b);background:var(--glass);color:var(--ink);cursor:pointer;display:grid;place-items:center;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
-.back:disabled{opacity:.35;cursor:default}
 .bar{position:relative;flex:1;height:14px;border-radius:99px;background:var(--glass);border:1px solid var(--glass-b);overflow:visible}
-.fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:99px;background:linear-gradient(90deg,var(--blush),var(--rose),var(--gold));transition:width .7s cubic-bezier(.3,1.3,.5,1);
+.fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:99px;background:linear-gradient(90deg,var(--blush),var(--rose),var(--gold));transition:width .5s cubic-bezier(.3,1.3,.5,1);
   box-shadow:0 0 18px var(--rose)}
 .fill::before{content:"";position:absolute;inset:0;border-radius:99px;background:linear-gradient(100deg,transparent,rgba(255,255,255,.8),transparent);background-size:60% 100%;background-repeat:no-repeat;animation:flow 2s linear infinite}
 @keyframes flow{from{background-position:-100% 0}to{background-position:200% 0}}
-.drop{position:absolute;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;transition:left .7s cubic-bezier(.3,1.3,.5,1);filter:drop-shadow(0 4px 8px var(--shadow))}
-.count{flex:none;font-weight:700;font-size:.9rem;min-width:3ch;text-align:right}
-#qbox{transition:opacity .28s,transform .28s,filter .28s}
-#qbox.out{opacity:0;transform:translateX(-22px);filter:blur(8px)}
-#qbox.in{animation:qin .5s cubic-bezier(.2,.8,.2,1) both}
-@keyframes qin{from{opacity:0;transform:translateX(26px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
-.qtext{font-weight:800;letter-spacing:-.02em;line-height:1.12;font-size:clamp(1.55rem,7.4vw,2.15rem);margin:0 0 20px}
+.drop{position:absolute;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;transition:left .5s cubic-bezier(.3,1.3,.5,1);filter:drop-shadow(0 4px 8px var(--shadow))}
+.count{flex:none;font-weight:700;font-size:.9rem;min-width:3.6ch;text-align:right}
 
-.pstep-list{display:grid;gap:14px;margin-bottom:24px}
+.group-heading{font-weight:800;font-size:.95rem;letter-spacing:.01em;margin:20px 0 8px;color:var(--ink)}
+.group-heading:first-child{margin-top:0}
+.psel-list{display:grid;gap:8px;margin-bottom:6px}
+.psel{position:relative;overflow:hidden;display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:16px;
+  border:1px solid var(--glass-b);background:var(--glass);cursor:pointer;-webkit-tap-highlight-color:transparent;
+  transition:transform .2s,box-shadow .2s,border-color .2s,background .2s}
+.psel:hover{transform:translateY(-1px)}
+.psel .chk{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid var(--rose);position:relative;transition:.3s}
+.psel .chk::after{content:"";position:absolute;inset:3px;border-radius:50%;background:linear-gradient(135deg,var(--blush),var(--gold));transform:scale(0);transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.psel.sel{border-color:var(--gold);background:var(--glass-b);box-shadow:0 0 0 3px rgba(217,160,176,.3),0 12px 24px -14px var(--shadow)}
+.psel.sel .chk{border-color:var(--gold)}
+.psel.sel .chk::after{transform:scale(1)}
+.psel .pic{flex:none;width:32px;height:32px;border-radius:50%;background:var(--blush);color:var(--gold);display:grid;place-items:center}
+.psel .pic svg{width:16px;height:16px}
+.psel .pname{font-size:.95rem;font-weight:600}
+
+.pstep-list{display:grid;gap:14px;margin-bottom:6px}
 .pstep{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:20px;border:1px solid var(--glass-b);background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .pstep .pic{flex:none;width:38px;height:38px;border-radius:50%;background:var(--blush);color:var(--gold);display:grid;place-items:center}
 .pstep .pic svg{width:19px;height:19px}
@@ -140,11 +150,6 @@ p{margin:0 0 14px}
 .card{position:relative;border-radius:26px;padding:22px 20px;margin:18px 0;background:var(--glass);border:1px solid var(--glass-b);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 22px 44px -22px var(--shadow)}
 .rev{opacity:0;transform:translateY(24px);filter:blur(6px);transition:opacity .8s,transform .8s,filter .8s}
 .rev.vis{opacity:1;transform:none;filter:none}
-.steps{display:grid;grid-template-columns:1fr;gap:8px;margin-top:6px}
-.step{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:18px;border:1px solid transparent;color:var(--muted);transition:.5s}
-.step b{display:block;color:var(--ink)}
-.step small{font-size:.82rem}
-.step .n{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--rose);font-weight:800;font-size:.85rem;color:var(--gold);background:var(--blush)}
 .news{text-align:center;background:linear-gradient(150deg,rgba(241,201,210,.7),rgba(255,255,255,.55) 55%,rgba(201,205,216,.55));border-color:var(--glass-b);overflow:hidden}
 .news::before{content:"";position:absolute;inset:-40%;background:conic-gradient(from 0deg,transparent,rgba(255,255,255,.65),transparent 30%);animation:spin 9s linear infinite;pointer-events:none;opacity:.6}
 .news>*{position:relative}
@@ -165,27 +170,29 @@ p{margin:0 0 14px}
   <!-- START -->
   <section class="screen on" id="s-intro" aria-labelledby="h-intro">
     <span class="badge"><span class="dot"></span>MONAT Sortiment</span>
-    <h1 id="h-intro">So wendest du dein MONAT-Sortiment richtig an</h1>
-    <p class="lead">7 Schritte, von der Kopfhautpflege bis zum Styling. Du siehst genau, wann du welches Produkt einsetzt und wie du es anwendest.</p>
-    <button class="btn" id="start" type="button">Guide starten</button>
-    <p class="mini">Dauert etwa zwei Minuten.</p>
+    <h1 id="h-intro">Welche MONAT-Produkte hast du?</h1>
+    <p class="lead">Wähle deine Produkte aus. Danach zeige ich dir genau, wann und wie du sie anwendest.</p>
+    <button class="btn" id="start" type="button">Produkte auswählen</button>
+    <p class="mini">Dauert etwa eine Minute.</p>
   </section>
 
-  <!-- SCHRITTE -->
-  <section class="screen" id="s-quiz" aria-live="polite">
+  <!-- AUSWAHL -->
+  <section class="screen" id="s-select" aria-live="polite">
     <div class="top">
       <button class="back" id="back" type="button" aria-label="Zurück"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="7" id="pbar"><div class="fill" id="fill"></div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="15" id="pbar"><div class="fill" id="fill"></div>
         <svg class="drop" id="drop" viewBox="0 0 24 24"><defs><linearGradient id="dg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1c9d2"/><stop offset="1" stop-color="#b9787f"/></linearGradient></defs><path d="M12 2C9 7 5 10.5 5 15a7 7 0 0014 0c0-4.5-4-8-7-13z" fill="url(#dg)"/><path d="M9 15a3 3 0 002.5 3" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".8"/></svg>
       </div>
-      <div class="count" id="count">1/7</div>
+      <div class="count" id="count">0/15</div>
     </div>
-    <div id="qbox"></div>
+    <h2 style="font-size:1.4rem">Tippe an, was du hast</h2>
+    <div id="selbox"></div>
+    <button class="btn" id="selDone" type="button" style="margin-top:8px">Anleitung anzeigen</button>
   </section>
 
   <!-- LADEN -->
   <section class="screen" id="s-wait">
-    <div class="wait"><div><div class="orb"></div><div class="shim">Dein Guide wird zusammengestellt</div></div></div>
+    <div class="wait"><div><div class="orb"></div><div class="shim">Deine Anleitung wird zusammengestellt</div></div></div>
   </section>
 
   <!-- ABSCHLUSS -->
@@ -193,26 +200,26 @@ p{margin:0 0 14px}
     <div class="res-head">
       <div class="emblem"><div class="orbit"><span></span><span></span><span></span><span></span></div>
         <div class="core"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l2.4 6.6 6.6 2.4-6.6 2.4L12 19.5l-2.4-6.6L3 10.5l6.6-2.4z"/></svg></div></div>
-      <p class="tag">Dein MONAT-Guide</p>
-      <div class="rname">Alles im Überblick</div>
-      <div class="rline">Deine Routine in 7 Schritten</div>
+      <p class="tag">Deine Anwendungs­anleitung</p>
+      <div class="rname">Fertig!</div>
+      <div class="rline">So wendest du deine Produkte an</div>
     </div>
 
     <div class="card rev">
-      <h2 style="font-size:1.25rem">Deine Schritte</h2>
-      <div class="steps" id="steps"></div>
+      <h2 style="font-size:1.25rem">Deine Anleitung</h2>
+      <div id="resultBody"></div>
     </div>
 
     <div class="card news rev" id="news">
       <span class="badge" style="margin-bottom:14px"><span class="dot"></span>Bereit für deine Routine?</span>
       <h2>Lass uns deine Auswahl besprechen.</h2>
-      <p style="max-width:38ch;margin:0 auto 6px">Nicht sicher, welche Produkte für dich am sinnvollsten sind? Melde dich einfach — ich helfe dir gern weiter.</p>
+      <p style="max-width:38ch;margin:0 auto 6px">Fragen zu deinen Produkten oder zur Reihenfolge? Melde dich einfach — ich helfe dir gern weiter.</p>
       <div class="links" id="links-res"></div>
     </div>
 
     <div class="rev" style="display:grid;gap:10px">
       <button class="btn ghost" id="share" type="button">Guide mit einer Freundin teilen</button>
-      <button class="btn ghost" id="again" type="button">Guide noch einmal ansehen</button>
+      <button class="btn ghost" id="again" type="button">Auswahl ändern</button>
     </div>
     <p class="foot">Deine Ansprechpartnerin: Petra Tanner<br>Produktnamen und Angaben: MONAT.</p>
   </section>
@@ -247,9 +254,8 @@ var ICONS_P = {
   spray: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 8h6l1 13H8L9 8z"/><path d="M10 8V4h4v4"/><path d="M4 9l2 1M4 13l2-1M4 6l2 2" stroke-linecap="round"/></svg>',
   bundle: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h4v3l1.5 1.5V20a1 1 0 01-1 1h-5a1 1 0 01-1-1V8.5L7 7V4z"/><path d="M14 9h3v2l1 1v9a1 1 0 01-1 1h-3a1 1 0 01-1-1v-9l1-1V9z"/></svg>'
 };
-var CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M20 6L9 17l-5-5"/></svg>';
 
-/* ---- Inhalte: 7 Schritte der Anwendung ---- */
+/* ---- Inhalte: 7 Schritte der Anwendung, 15 Produkte ---- */
 var STEPS = [
   {w:"Kopfhaut vorbereiten", items:[
     {n:"Scalp Purifying Scrub", d:"Der erste Schritt für jede Routine — löst Rückstände von der Kopfhaut und schafft die Grundlage, damit die folgende Pflege wirklich wirkt. 1–2× wöchentlich vor der Haarwäsche.", icon:"scrub"}
@@ -281,7 +287,8 @@ var STEPS = [
     {n:"MONAT Curl Perfection™ Auffrischungsspray", d:"Zwischendurch auf trockenes oder leicht angefeuchtetes Haar sprühen, um Locken aufzufrischen, ohne neu zu waschen.", icon:"spray"}
   ]}
 ];
-var idx = 0, busy = false;
+var TOTAL = STEPS.reduce(function(n,s){return n+s.items.length},0);
+var selected = {};
 
 /* ---- Screens ---- */
 function show(id){
@@ -296,53 +303,70 @@ function ripple(el,e){
   sp.style.left = (x - s/2)+"px"; sp.style.top = (y - s/2)+"px";
   el.appendChild(sp); setTimeout(function(){sp.remove()},720);
 }
-function renderStep(){
-  var box = $("qbox"), d = STEPS[idx];
-  var h = '<h2 class="qtext">'+d.w+'</h2><div class="pstep-list">';
-  d.items.forEach(function(it){
-    var shopUrl = "https://swiss.mymonat.com/shop/products?keywords="+encodeURIComponent(it.n.replace(/™|®/g,''));
-    h += '<div class="pstep"><span class="pic">'+ICONS_P[it.icon]+'</span><div class="pbody"><b>'+it.n+'</b><small>'+it.d+'</small><a class="pshop" href="'+shopUrl+'" target="_blank" rel="noopener">Im Shop ansehen →</a></div></div>';
+
+/* ---- Auswahl ---- */
+function renderSelect(){
+  var h = "";
+  STEPS.forEach(function(s,si){
+    h += '<div class="group-heading">'+s.w+'</div><div class="psel-list">';
+    s.items.forEach(function(it,ii){
+      var key = si+"-"+ii, sel = !!selected[key];
+      h += '<div class="psel'+(sel?' sel':'')+'" data-key="'+key+'"><span class="chk"></span><span class="pic">'+ICONS_P[it.icon]+'</span><span class="pname">'+it.n+'</span></div>';
+    });
+    h += '</div>';
   });
-  h += '</div><button class="btn" id="stepNext" type="button">'+(idx<STEPS.length-1?'Weiter':'Fertig ansehen')+'</button>';
-  box.innerHTML = h;
-  box.className = "in";
-  var pct = (idx/STEPS.length)*100 + (100/STEPS.length)*0.5;
+  $("selbox").innerHTML = h;
+  updateCount();
+}
+function updateCount(){
+  var n = Object.keys(selected).filter(function(k){return selected[k]}).length;
+  $("count").textContent = n+"/"+TOTAL;
+  var pct = (n/TOTAL)*100;
   $("fill").style.width = pct+"%"; $("fill").style.setProperty("--w",pct+"%");
   $("drop").style.left = pct+"%";
-  $("count").textContent = (idx+1)+"/"+STEPS.length;
-  $("pbar").setAttribute("aria-valuenow", idx+1);
-  $("back").disabled = idx===0;
+  $("pbar").setAttribute("aria-valuenow", n);
 }
-function swap(){
-  var box = $("qbox"); box.className = "out";
-  setTimeout(function(){ renderStep(); busy = false; }, RM?0:280);
-}
-$("qbox").addEventListener("click",function(e){
-  var b = e.target.closest("#stepNext"); if(!b || busy) return;
-  busy = true; ripple(b,e); burst(e.clientX,e.clientY,14,false);
-  setTimeout(function(){
-    if(idx < STEPS.length-1){ idx++; swap(); } else { finish(); busy=false; }
-  }, RM?60:420);
+$("selbox").addEventListener("click",function(e){
+  var card = e.target.closest(".psel"); if(!card) return;
+  var key = card.dataset.key;
+  selected[key] = !selected[key];
+  card.classList.toggle("sel", !!selected[key]);
+  ripple(card,e);
+  updateCount();
 });
-$("back").addEventListener("click",function(){ if(idx>0 && !busy){ idx--; busy=true; swap(); } });
+$("back").addEventListener("click",function(){ show("s-intro"); });
 $("start").addEventListener("click",function(e){
   ripple(this,e); burst(e.clientX,e.clientY,22,false);
-  idx = 0; show("s-quiz"); renderStep();
+  show("s-select"); renderSelect();
+});
+$("selDone").addEventListener("click",function(e){
+  ripple(this,e); burst(e.clientX,e.clientY,22,false);
+  finish();
 });
 
 /* ---- Abschluss ---- */
 function finish(){
-  $("fill").style.width = "100%"; $("drop").style.left = "100%";
   show("s-wait");
   setTimeout(function(){ renderDone(); show("s-res"); if(!RM) setTimeout(confetti,350); }, RM?200:1600);
 }
 function renderDone(){
-  var sh = "";
-  STEPS.forEach(function(s){
-    var names = s.items.map(function(it){return it.n}).join(", ");
-    sh += '<div class="step"><span class="n">'+CHECK+'</span><span><b>'+s.w+'</b><small>'+names+'</small></span></div>';
+  var any = false, sh = "";
+  STEPS.forEach(function(s,si){
+    var items = s.items.filter(function(it,ii){ return selected[si+"-"+ii]; });
+    if(!items.length) return;
+    any = true;
+    sh += '<div class="group-heading">'+s.w+'</div><div class="pstep-list">';
+    items.forEach(function(it){
+      var shopUrl = "https://swiss.mymonat.com/shop/products?keywords="+encodeURIComponent(it.n.replace(/™|®/g,''));
+      sh += '<div class="pstep"><span class="pic">'+ICONS_P[it.icon]+'</span><div class="pbody"><b>'+it.n+'</b><small>'+it.d+'</small><a class="pshop" href="'+shopUrl+'" target="_blank" rel="noopener">Im Shop ansehen →</a></div></div>';
+    });
+    sh += '</div>';
   });
-  $("steps").innerHTML = sh;
+  if(!any){
+    sh = '<p style="text-align:center;color:var(--muted);margin-bottom:16px">Du hast noch keine Produkte ausgewählt.</p><button class="btn ghost" id="backToSelect" type="button">Zurück zur Auswahl</button>';
+  }
+  $("resultBody").innerHTML = sh;
+  if(!any){ $("backToSelect").addEventListener("click",function(){ show("s-select"); }); }
   $("links-res").innerHTML = linksHTML();
   var revs = document.querySelectorAll("#s-res .rev"); for(var i=0;i<revs.length;i++) revs[i].classList.remove("vis");
   setupReveal();
@@ -357,7 +381,7 @@ function setupReveal(){
   },{threshold:.15});
   els.forEach(function(e){io.observe(e)});
 }
-$("again").addEventListener("click",function(){ idx=0; show("s-intro"); });
+$("again").addEventListener("click",function(){ show("s-select"); renderSelect(); });
 $("share").addEventListener("click",function(){
   var url = location.href, txt = "So wendest du dein MONAT-Sortiment richtig an — der Anwendungs-Guide.";
   if(navigator.share){ navigator.share({title:"MONAT Anwendungstest",text:txt,url:url}).catch(function(){}); }
