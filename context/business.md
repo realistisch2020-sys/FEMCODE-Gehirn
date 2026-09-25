@@ -36,6 +36,8 @@ Die MONAT-Test-Seiten teilen sich einen Effekt-Baukasten (Glitzer-Canvas, Konfet
 - Ergebnisseiten per Sprungmarke direkt erreichbar (`#kategorie-name`) für Google-Ads-Deep-Links
 Bei künftigen MONAT-Funnel-Anfragen zuerst nachfragen, ob dieser strengere Standard gelten soll (falls nicht ausdrücklich gesagt).
 
+Pro Ergebnis gibt es jetzt zwei Buttons: "Als VIP bestellen" (primär, führt zum passenden Enrollment-/VIP-Warenkorb-Link) + "Produkte ansehen" (sekundär, zum allgemeinen Shop). Die VIP-Links liegen im Code als `VIP_LINKS`-Objekt (ein Link pro Ergebniskategorie), extra als einfach austauschbare Variable angelegt — Petra kann sie selbst ersetzen, sobald sie die aktuellen offiziellen Links hat. Kaufabschluss immer auf der offiziellen MONAT-Seite.
+
 ## Meine Zielgruppe
 
 Safe to Thrive: Menschen mit Mustern wie Schuldgefühlen, Beziehungs-Erschöpfung, unsichtbarer Erschöpfung, People Pleasing, Reizbarkeit/Nervensystem-Themen.
