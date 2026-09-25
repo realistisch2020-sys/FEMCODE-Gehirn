@@ -25,6 +25,17 @@ Bereits bekannte Original-Kontaktdaten:
 
 Die MONAT-Test-Seiten teilen sich einen Effekt-Baukasten (Glitzer-Canvas, Konfetti, 3D-Emblem, drehende Icon-Badges, Buttons die beim Klick wackeln/Farbe zeigen). Lieber zu viel Bewegung/Effekte als zu wenig einsetzen.
 
+## MONAT-Compliance-Standard (seit Haartest-Umbau)
+
+`monat-haartest-glanz.html` läuft jetzt nach strengeren Regeln, weil sie als Google-Ads-Funnel gedacht ist:
+- Sie-Form, neutraler Name, kein Anschein eines offiziellen MONAT-Tests
+- Keine medizinischen Aussagen/Heilversprechen (auch nicht "stoppt/behandelt Haarausfall", "heilt", "regeneriert Haarfollikel" o.ä.) — Haarausfall-Anfragen verweisen auf Arzt/Fachperson statt Test-Ergebnis
+- Footer mit "Petra Tanner | Unabhängige MONAT Markenpartnerin" + Orientierungs-Disclaimer
+- Keine Countdown/künstliche Verknappung/erfundene Bewertungen
+- Tracking-Events einheitlich: `test_started`, `test_completed`, `result_<kategorie>`, `product_click`, `contact_click`
+- Ergebnisseiten per Sprungmarke direkt erreichbar (`#kategorie-name`) für Google-Ads-Deep-Links
+Bei künftigen MONAT-Funnel-Anfragen zuerst nachfragen, ob dieser strengere Standard gelten soll (falls nicht ausdrücklich gesagt).
+
 ## Meine Zielgruppe
 
 Safe to Thrive: Menschen mit Mustern wie Schuldgefühlen, Beziehungs-Erschöpfung, unsichtbarer Erschöpfung, People Pleasing, Reizbarkeit/Nervensystem-Themen.
