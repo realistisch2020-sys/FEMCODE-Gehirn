@@ -2,21 +2,15 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
-## Akut — heute (16.09.2026): Launch „Du brauchst kein letztes Gespräch"
+## Rückfrage offen
 
-Checkliste in `plans/kdp-wachstumsplan.md` Punkt 6a:
-- Kategorien/Keywords final gesetzt
-- E-Mail-Launch-Ankündigung an Tentary-Liste raus
-- Ads-Kampagne für dieses Buch gestartet/hochgefahren
-- Backmatter gegenseitig verzahnt (dieses Buch ↔ die anderen 4)
-- Frühe Rezensionen angefragt, falls Testleser:innen bereitstehen
-- KDP-Select-Entscheidung für dieses Buch bewusst getroffen
+- Wie ist der Launch von „Du brauchst kein letztes Gespräch" (16.09.) gelaufen? Checkliste war in `plans/kdp-wachstumsplan.md` Punkt 6a — Status hier seit 12 Tagen nicht aktualisiert.
 
 ## Diese Woche
 
-- Backmatter-Vorlage steht in `reference/backmatter-vorlage.md`, mentoring-frei — in die ersten 3 Bücher einfügen, bei den anderen vereinheitlichen
-- Tentary-Willkommensserie (4 Mails) umbauen: von "nur Beziehung aufbauen" zu "Backlist/neue Bücher empfehlen"
-- Kategorien/Keywords (7 Backend-Keywords je Buch) für alle 5 bestehenden Bücher aufsetzen/prüfen
+- Tentary-Willkommensserie neu geschrieben: `outputs/tentary-willkommensserie.md` — Rahmen steht, Mail 2+3 brauchen pro Buch eine ausgefüllte Variante (aktuell nur Fokusbuch-Beispiel angedeutet), dann in Tentary einpflegen
+- Backend-Keywords-Entwurf für alle 5 Bücher: `reference/kdp-keywords-entwurf.md` — vor Eintragen in KDP gegen Amazon-Autosuggest/Keyword-Tool prüfen
+- Backmatter-Vorlage (`reference/backmatter-vorlage.md`) in die ersten 3 Bücher einfügen, bei den anderen vereinheitlichen — kann ich nicht selbst tun, keine Manuskript-Dateien in diesem Repo
 
 ## Fehlende Zahlen für eine exakte (statt Größenordnungs-) Rechnung
 
