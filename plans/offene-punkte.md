@@ -4,15 +4,13 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- **Social-Media-System (Bild-Posts) steht:** 30-Tage-Kalender fürs Hauptbuch fertig gebaut — `automation/content_queue.json` (66 Einträge: 60 geplante Bild-Posts + 6 optionale Reel-Konzepte), Bilder gerendert in `outputs/social-images/`, TikTok-Manifest in `outputs/tiktok-export.csv`. Alles Status "draft", wartet auf Freigabe. Details/Module: `automation/README.md`.
-- **Zwei Dinge blockieren den ersten echten Post:**
-  1. Meta-Setup (`reference/meta-setup.md`) — nur du, Login-gebunden
-  2. Bild-Hosting: die Bilder brauchen eine öffentliche URL. Naheliegend wäre ein `social-images/`-Ordner im `gh-pages`-Branch (dort läuft schon deine echte Website) — das habe ich bewusst **nicht** ungefragt gemacht, weil das sofort live auf deiner Seite sichtbar würde. Sag Bescheid, wenn ich das einrichten soll.
+- **Social-Media-System (Bild-Posts) steht:** 30-Tage-Kalender fürs Hauptbuch fertig gebaut — `automation/content_queue.json` (66 Einträge: 60 geplante Bild-Posts + 6 optionale Reel-Konzepte), Bilder gerendert und live gehostet in `gh-pages/social-images/` (29.09., mit Freigabe), TikTok-Manifest in `outputs/tiktok-export.csv`. Alles Status "draft", wartet auf Freigabe.
+- **Blockiert den ersten echten Post nur noch:** Meta-Setup (`reference/meta-setup.md`) — nur du, Login-gebunden
 - **Mehr Fotos gewünscht:** aktuell nur 2 Hintergrundbilder (dein Portrait + 1 Stock-Foto) für 30 Posts — beim Durchscrollen wiederholt sich das sichtbar. Weitere Fotos von dir wären der größte Hebel für Abwechslung.
 - Tentary-Willkommensserie neu geschrieben: `outputs/tentary-willkommensserie.md` — Rahmen steht, Mail 2+3 brauchen pro Buch eine ausgefüllte Variante, dann in Tentary einpflegen
 - Backend-Keywords-Entwurf für alle 5 Bücher: `reference/kdp-keywords-entwurf.md` — vor Eintragen in KDP gegen Amazon-Autosuggest/Keyword-Tool prüfen
 - Backmatter-Vorlage (`reference/backmatter-vorlage.md`) in die ersten 3 Bücher einfügen, bei den anderen vereinheitlichen — kann ich nicht selbst tun, keine Manuskript-Dateien in diesem Repo
-- MONAT-Geschäft (Haarpflege) in `context/business.md` nur als Platzhalter erfasst — Details (Produkte, Preise, Zielgruppe, Zahlen) fehlen noch, eigenes System kommt erst später
+- MONAT-Geschäft (Haarpflege): Grundstruktur jetzt in `context/business.md` erfasst (aus der gh-pages-Historie rekonstruiert — Rolle, Funnel-Aufbau, Compliance-Ansatz). Preise/Provisionen/Zahlen fehlen weiterhin, eigenes Automatisierungs-System kommt erst später
 
 ## Rückfrage offen
 

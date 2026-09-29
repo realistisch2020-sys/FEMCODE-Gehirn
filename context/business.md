@@ -14,7 +14,13 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 
 **Mentoring** — eigene Gruppenprogramme und 1:1-Begleitungen, existiert als Angebot. Stand 09/2026: bewusst **nicht** Teil der aktuellen Wachstumsstrategie — das 50k-Ziel soll rein über das Bücher-Geschäft erreicht werden (siehe `context/strategie.md`, `plans/weg-zu-50k.md`).
 
-**MONAT** (Haarpflege-Produkte) — zweite, komplett eigenständige Geschäftslinie, entdeckt über die bestehende GitHub-Pages-Seite (Typ-Test/Business-Test-Funnel). Details (Produkte, Rolle, Preise, Zielgruppe, Zahlen) noch nicht erfasst. Ausdrücklich **nicht** mit dem Bücher-System vermischen — eigenes System kommt später, eigene Zielgruppe/Sprache/Links/Compliance.
+**MONAT** (Haarpflege-Produkte) — zweite, komplett eigenständige Geschäftslinie. Rolle: unabhängige MONAT-Markenpartnerin (laut Footer-Text auf der Funnel-Seite). Aufbau (aus der Git-Historie der gh-pages-Seite rekonstruiert, nicht von dir bestätigt):
+- Quiz-Funnel ("Welche Haarpflege passt zu Ihnen?") mit 6 Fragen, 5 Ergebniskategorien (trockenes Haar, Kopfhaut, Frizz, Volumen, feines Haar), max. 2 Produktempfehlungen pro Ergebnis
+- Bewusst compliance-konform: keine medizinischen Aussagen/Heilversprechen, Kaufabschluss läuft immer über die offizielle MONAT-Seite (kein eigener Checkout), Hinweis dass Preise/Rabatte wie offiziell bei MONAT gelten
+- Personalisierte Kopien der Seite für (vermutlich) Team-/Downline-Mitglieder mit deren eigenen Kontakt-/Shop-Links (z. B. Monika, Edith)
+- Preise/Provisionsstruktur/Zahlen weiterhin nicht erfasst
+
+Ausdrücklich **nicht** mit dem Bücher-System vermischen — eigenes Automatisierungs-System kommt später, falls gewünscht.
 
 ## Meine Zielgruppe
 

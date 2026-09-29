@@ -2,7 +2,7 @@
 
 **Priorität: Amazon-Buchverkäufe steigern, Hauptbuch „Ich stand nie auf meiner eigenen Liste" zuerst.** Instagram/Facebook sind Verkaufs- und Vertrauenskanäle dafür, nicht Selbstzweck. MONAT (Haarpflege) ist bewusst ein komplett separates, noch nicht gebautes System — nicht vermischen.
 
-**Status (29.09.2026):** Code fertig und funktionsfähig, läuft als Zusatzkanal neben dem Haupthebel Ads + Backmatter + E-Mail (`plans/weg-zu-50k.md`). Zwei Dinge fehlen noch bis zum ersten echten Post — siehe "Was noch fehlt" unten.
+**Status (29.09.2026):** Code fertig und funktionsfähig, läuft als Zusatzkanal neben dem Haupthebel Ads + Backmatter + E-Mail (`plans/weg-zu-50k.md`). Bild-Hosting steht (siehe unten) — es fehlt noch das Meta-Setup bis zum ersten echten Post.
 
 ## Module
 
@@ -58,9 +58,10 @@ Reels bleiben möglich (die 6 ursprünglichen Konzepte in `content_queue.json` m
 ## Was noch fehlt, bevor der erste echte Post rausgeht
 
 1. **Meta-Setup** (`reference/meta-setup.md`) — nur Petra kann das machen, Login-gebunden.
-2. **Bild-Hosting.** Instagram/Facebook holen sich das Bild über eine öffentliche URL, keinen Datei-Upload. Die Bilder in `outputs/social-images/` haben schon die dafür vorgesehene URL eingetragen (`image_url` in `content_queue.json`, Format `https://realistisch2020-sys.github.io/FEMCODE-Gehirn/social-images/<datei>`) — **die Datei liegt dort aber noch nicht.** Dieses Repo hat schon eine GitHub-Pages-Automatisierung (`.github/workflows/deploy-pages.yml`), die den `gh-pages`-Branch deployed. Der `gh-pages`-Branch ist Petras **echte, bereits live geschaltete Website** (Persönlichkeitstest-Funnel, MONAT-Seiten) — dort ungefragt reinzupushen hätte sofort einen Live-Effekt auf ihre öffentliche Seite, deshalb ist das hier absichtlich **nicht** automatisch passiert. Empfehlung: einen `social-images/`-Unterordner im `gh-pages`-Branch anlegen (berührt nichts Bestehendes) und die Dateien aus `outputs/social-images/` dorthin kopieren — nach Petras ausdrücklicher Zustimmung.
 
-Bis beides steht, kann alles andere (Kalender bauen, Bilder rendern, Freigeben-Workflow durchspielen) schon getestet werden — nur das tatsächliche Veröffentlichen hängt daran.
+**Erledigt (29.09.2026): Bild-Hosting.** Die 30 Bilder + `manifest.json` liegen jetzt in einem neuen `social-images/`-Unterordner im `gh-pages`-Branch (Petras ausdrückliche Zustimmung vorausgesetzt, nichts Bestehendes angefasst). Öffentliche URLs entsprechen exakt `image_url` in `content_queue.json`: `https://realistisch2020-sys.github.io/FEMCODE-Gehirn/social-images/<datei>`.
+
+Bis das Meta-Setup steht, kann alles andere (Kalender bauen, Bilder rendern, Freigeben-Workflow durchspielen) schon getestet werden — nur das tatsächliche Veröffentlichen hängt noch daran.
 
 ## Vor dem ersten Live-Post (Checkliste)
 
