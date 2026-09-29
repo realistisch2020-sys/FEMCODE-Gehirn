@@ -6,7 +6,7 @@ Glasklar, nicht kleingehalten.
 
 Zwei Kursänderungen in dieser Planung, beide festgehalten statt überschrieben, damit nichts verloren geht:
 
-1. Kein Fokus auf Social Media (Insta/TikTok/FB) — kein großer laufender Aufwand gewünscht. Hebel läuft über Kanäle, die mit Geld statt Zeit skalieren.
+1. Kein Fokus auf Social Media (Insta/TikTok/FB) — kein großer laufender Aufwand gewünscht. Hebel läuft über Kanäle, die mit Geld statt Zeit skalieren. **Update 29.09.2026: Insta+Facebook-Automatisierung (`automation/`) läuft jetzt zusätzlich mit, als Ergänzung, nicht als Ersatz für Ads+Backmatter+E-Mail.**
 2. **Kein Mentoring mehr als Wachstumshebel.** Ursprünglich war "Bücher als Funnel ins Mentoring" der Kernhebel dieses Plans (siehe unten, "Verworfen"). Aktuelle Ansage: das Ziel soll rein über das Bücher-Geschäft erreicht werden, ohne Mentoring-Verkauf. Geplant: Erweiterung des Katalogs auf ein Bündel von 10 Büchern bis Dezember 2026 (aktuell 5).
 
 (Kurzer Widerspruch dazu im Chat geklärt: kein Mentoring, volle Kraft auf die Bücher.)

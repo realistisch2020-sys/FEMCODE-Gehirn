@@ -4,7 +4,7 @@ Hier kommt rein, woran du gerade arbeitest und wohin es gehen soll. So weiß Cla
 
 ## Aktueller Fokus
 
-Fokusbuch „Ich stand nie auf meiner eigenen Liste" skalieren (aktuell ca. 4 Verkäufe/Tag) + Katalog auf 10 Bücher erweitern bis Dezember 2026 (aktuell 5). Kein Mentoring-Verkauf als Teil der Strategie, kein Fokus auf Social Media.
+Fokusbuch „Ich stand nie auf meiner eigenen Liste" skalieren (aktuell ca. 4 Verkäufe/Tag) + Katalog auf 10 Bücher erweitern bis Dezember 2026 (aktuell 5). Kein Mentoring-Verkauf als Teil der Strategie. Social-Media-Automatisierung (Insta+Facebook) läuft seit 29.09.2026 zusätzlich mit, ist aber nicht der Haupthebel.
 
 ## Ziele der nächsten Monate
 
@@ -16,9 +16,11 @@ Rechnung + Entscheidungen: `plans/weg-zu-50k.md`. Operativer Spielplan (Royalty-
 
 ## Prioritäten
 
-Kein Fokus auf Social Media, kein Mentoring-Verkauf. Wachstum läuft über:
+Kein Mentoring-Verkauf. Haupthebel bleibt, was mit Geld statt Zeit skaliert:
 
 1. Amazon Ads ausbauen, sobald mehr Titel da sind über mehrere Kampagnen gleichzeitig
 2. Backmatter aller Bücher vereinheitlichen — Cross-Promotion zu den anderen Büchern (nicht zu Mentoring), siehe `reference/backmatter-vorlage.md`
 3. Tentary-Sequenz auf Backlist/neue Bücher ausrichten statt nur "Beziehung aufbauen"
 4. 5 neue Bücher bis Dezember fertigstellen
+
+Zusätzlich, nicht statt dessen: Instagram+Facebook-Automatisierung (`automation/`) — Meta-Setup ist der nächste Schritt, siehe `reference/meta-setup.md`.
