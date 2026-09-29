@@ -8,7 +8,7 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Diese Woche
 
-- **Social Media (Insta+Facebook) läuft ab jetzt zusätzlich mit (29.09.), nicht mehr statt dessen.** Nächster Schritt: Meta-Setup machen — `reference/meta-setup.md` — nur du kannst das (Login-gebunden). Danach 5 Secrets hinterlegen (`automation/README.md`), dann `generate_content.py` testen (sollte jetzt echte Buch-Inhalte liefern statt generisch).
+- **Social Media (Insta+Facebook) läuft ab jetzt zusätzlich mit (29.09.), nicht mehr statt dessen.** `automation/content_queue.json` hat bereits 6 fertige Reel-Entwürfe (5 zum Fokusbuch + Backlist, 1 zum Launch-Buch) — Status "draft", warten auf Freigabe. Nächster Schritt: Meta-Setup machen — `reference/meta-setup.md` — nur du kannst das (Login-gebunden). Danach 5 Secrets hinterlegen (`automation/README.md`), dann `python automation/scripts/approve.py content list` durchgehen und freigeben (`--platform instagram/facebook --video-url ...`).
 - Tentary-Willkommensserie neu geschrieben: `outputs/tentary-willkommensserie.md` — Rahmen steht, Mail 2+3 brauchen pro Buch eine ausgefüllte Variante (aktuell nur Fokusbuch-Beispiel angedeutet), dann in Tentary einpflegen
 - Backend-Keywords-Entwurf für alle 5 Bücher: `reference/kdp-keywords-entwurf.md` — vor Eintragen in KDP gegen Amazon-Autosuggest/Keyword-Tool prüfen
 - Backmatter-Vorlage (`reference/backmatter-vorlage.md`) in die ersten 3 Bücher einfügen, bei den anderen vereinheitlichen — kann ich nicht selbst tun, keine Manuskript-Dateien in diesem Repo
