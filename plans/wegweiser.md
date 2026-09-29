@@ -23,12 +23,12 @@ Nur Buchverkauf reicht rechnerisch nicht: bei ~5,50–6€ Netto-Royalty/Exempla
 2. **Backmatter** — jedes Buch verweist aufs nächste + auf den Newsletter, einmal geschrieben, läuft dauerhaft
 3. **E-Mail-Sequenz (Tentary)** — von "nur Beziehung aufbauen" zu "Backlist/neue Bücher empfehlen"
 4. **Katalog-Erweiterung** — weitere Bücher bis Dezember
-5. **Social Media (Insta+Facebook), zusätzlich** — Automatisierung fertig gebaut, wartet auf Meta-Zugänge
+5. **Social Media (Insta+Facebook), zusätzlich** — als Buchverkaufs-System gebaut (nicht nur Posting-Tool): 30-Tage-Kalender mit gerenderten Bild-Posts fürs Hauptbuch fertig, wartet auf Meta-Zugänge + Bild-Hosting
 
 → Operativer Spielplan (Kategorien/Keywords, Ads-Struktur, KU-vs-Wide, Launch-Fahrplan): `plans/kdp-wachstumsplan.md`
 → Backmatter-Text: `reference/backmatter-vorlage.md`
 → Neue Tentary-Serie: `outputs/tentary-willkommensserie.md`
-→ Social-Media-Automatisierung: `automation/` (Setup-Anleitung: `reference/meta-setup.md`) — 6 Reel-Entwürfe liegen schon fertig in `automation/content_queue.json`
+→ Social-Media-Automatisierung: `automation/` (Module-Übersicht + Setup: `automation/README.md`, Meta-Anleitung: `reference/meta-setup.md`) — 60 geplante Bild-Posts + 6 optionale Reel-Konzepte liegen fertig in `automation/content_queue.json`, Bilder in `outputs/social-images/`
 
 ## Was ich von dir brauche
 
@@ -46,14 +46,19 @@ Nur Buchverkauf reicht rechnerisch nicht: bei ~5,50–6€ Netto-Royalty/Exempla
 **C — Damit Social Media wirklich postet:**
 8. Meta-Setup durchklicken: `reference/meta-setup.md` — dein Login, kann ich nicht übernehmen
 9. Die 4 daraus entstehenden Werte + `ANTHROPIC_API_KEY` als GitHub-Secrets hinterlegen (Liste in `automation/README.md`)
-10. Video-Entscheidung treffen: filmst du selbst und ich liefere nur Skript (Option A), ein Template-Tool mit B-Roll (Option B), oder ein KI-Avatar-Dienst (Option C)? Ohne das bleibt `video_url` in den Entwürfen leer, und nichts kann gepostet werden — siehe `plans/automatisierung-social-media.md` Baustein 2
+10. ~~Video-Entscheidung~~ — erledigt: Bild-Posts mit Text-Overlay statt Video, per deiner Vorgabe umgesetzt
+11. Bild-Hosting freigeben: Vorschlag ist ein `social-images/`-Unterordner im `gh-pages`-Branch (dort läuft deine echte Website) — mache ich nicht ungefragt, weil das sofort live sichtbar wäre. Dein OK?
+12. Mehr Fotos von dir — aktuell nur 2 Hintergrundbilder für 30 Posts, wiederholt sich sichtbar im Feed
 
 **D — Damit die Buch-Seite live geht** (kein Datei-/Kontozugriff meinerseits, deshalb nur du):
-11. Backmatter-Vorlage (`reference/backmatter-vorlage.md`) in die Manuskripte einfügen bzw. mit deinem Formatter abstimmen
-12. Neue Tentary-Serie (`outputs/tentary-willkommensserie.md`) in dein Tentary-Konto einpflegen
+13. Backmatter-Vorlage (`reference/backmatter-vorlage.md`) in die Manuskripte einfügen bzw. mit deinem Formatter abstimmen
+14. Neue Tentary-Serie (`outputs/tentary-willkommensserie.md`) in dein Tentary-Konto einpflegen
 
 **E — Kurzes Update, wenn Zeit ist:**
-13. Wie lief der Launch von „Du brauchst kein letztes Gespräch"?
+15. Wie lief der Launch von „Du brauchst kein letztes Gespräch"?
+
+**F — MONAT (Haarpflege), bisher nur als Notiz erfasst:**
+16. Produkte, Rolle, Zielgruppe, Preise/Provisionen, aktuelle Zahlen — eigenes System kommt erst später, aber die Basics gehören schon in `context/business.md`
 
 ## Wo was steht
 
@@ -64,6 +69,7 @@ Nur Buchverkauf reicht rechnerisch nicht: bei ~5,50–6€ Netto-Royalty/Exempla
 - `reference/backmatter-vorlage.md` — der Backmatter-Text
 - `reference/kdp-keywords-entwurf.md` — Backend-Keywords + Kategorie-Ideen pro Buch
 - `outputs/tentary-willkommensserie.md` — die neue 4-Mail-Serie
-- `outputs/kurzfassung-buchgeschaeft.md` — portable Kurzfassung für externe Tools
-- `automation/` + `reference/meta-setup.md` — Social-Media-Automatisierung, aktiv als Zusatzkanal
+- `outputs/kurzfassung-buchgeschaeft.md`, `outputs/fehlende-daten.md` — portable Zusammenfassungen für externe Tools
+- `automation/` (Module-Übersicht in `automation/README.md`) + `reference/meta-setup.md` — Social-Media-Automatisierung, aktiv als Zusatzkanal
+- `outputs/social-images/` — 30 gerenderte Bild-Posts fürs Hauptbuch, `outputs/tiktok-export.csv` — Manifest für manuellen TikTok-Upload
 - `plans/offene-punkte.md` — laufende ToDos, wird bei `/shutdown` gepflegt

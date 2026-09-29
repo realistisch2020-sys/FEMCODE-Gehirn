@@ -14,6 +14,8 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 
 **Mentoring** — eigene Gruppenprogramme und 1:1-Begleitungen, existiert als Angebot. Stand 09/2026: bewusst **nicht** Teil der aktuellen Wachstumsstrategie — das 50k-Ziel soll rein über das Bücher-Geschäft erreicht werden (siehe `context/strategie.md`, `plans/weg-zu-50k.md`).
 
+**MONAT** (Haarpflege-Produkte) — zweite, komplett eigenständige Geschäftslinie, entdeckt über die bestehende GitHub-Pages-Seite (Typ-Test/Business-Test-Funnel). Details (Produkte, Rolle, Preise, Zielgruppe, Zahlen) noch nicht erfasst. Ausdrücklich **nicht** mit dem Bücher-System vermischen — eigenes System kommt später, eigene Zielgruppe/Sprache/Links/Compliance.
+
 ## Meine Zielgruppe
 
 Menschen, die sich in Schuldgefühlen, ständigem Funktionieren/Erschöpfung, Selbstverlust in Beziehungen und schwierigem Loslassen wiedererkennen.
@@ -28,8 +30,11 @@ Getrennte Kanäle für Bücher und andere Geschäftsbereiche.
 ## Meine Angebote und Preise
 
 - Fokusbuch „Ich stand nie auf meiner eigenen Liste": Taschenbuch ca. 16,04€, Kindle ca. 7,99€
-- Weitere 4 Bücher: ebenfalls Taschenbuch + Kindle über Amazon, Einzelpreise noch nicht erfasst
+  - Amazon-Links: [Taschenbuch](https://www.amazon.de/dp/B0HGT4PX8H) · [Kindle](https://www.amazon.de/dp/B0HGSBZS18) (Kindle-Link nur für E-Book-/Preisaktions-Posts verwenden)
+- Autorenseite: https://www.amazon.de/stores/Petra-Tanner/author/B0H9FG6CJ7
+- Weitere 4 Bücher: ebenfalls Taschenbuch + Kindle über Amazon, Einzellinks/-preise noch nicht erfasst
 - Katalog wächst auf ein Bündel von 10 Büchern bis Dezember 2026 (5 neue Titel geplant)
 - Mentoring (Gruppenprogramme, Begleitungen): Preise noch nicht erfasst
+- MONAT: Preise/Provisionsstruktur noch nicht erfasst
 
 Verkauf läuft hauptsächlich über Amazon KDP. Amazon Ads sind aktiv und werden gezielt ausgebaut.

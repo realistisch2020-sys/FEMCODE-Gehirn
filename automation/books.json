@@ -1,0 +1,40 @@
+{
+  "hauptbuch": {
+    "titel": "Ich stand nie auf meiner eigenen Liste",
+    "hauptbuch": true,
+    "amazon_taschenbuch": "https://www.amazon.de/dp/B0HGT4PX8H",
+    "amazon_kindle": "https://www.amazon.de/dp/B0HGSBZS18",
+    "kindle_nur_fuer": "E-Book- oder Preisaktions-Posts",
+    "pillars": ["Selbstverlust", "Funktionieren", "Verkaufsimpuls"]
+  },
+  "schlechtes_gewissen": {
+    "titel": "Das schlechte Gewissen",
+    "hauptbuch": false,
+    "amazon_taschenbuch": null,
+    "amazon_kindle": null,
+    "pillars": ["Schuldgefühle", "Grenzen"]
+  },
+  "funktions_ich": {
+    "titel": "Ich bin so müde und niemand fragt mich warum",
+    "hauptbuch": false,
+    "amazon_taschenbuch": null,
+    "amazon_kindle": null,
+    "pillars": ["Funktionieren"]
+  },
+  "beziehungen_erschoepfen": {
+    "titel": "Wenn Beziehungen erschöpfen",
+    "hauptbuch": false,
+    "amazon_taschenbuch": null,
+    "amazon_kindle": null,
+    "pillars": ["Beziehungsmüdigkeit"]
+  },
+  "letztes_gespraech": {
+    "titel": "Du brauchst kein letztes Gespräch",
+    "hauptbuch": false,
+    "amazon_taschenbuch": null,
+    "amazon_kindle": null,
+    "pillars": ["Loslassen"]
+  },
+  "autorenseite": "https://www.amazon.de/stores/Petra-Tanner/author/B0H9FG6CJ7",
+  "_hinweis": "Taschenbuch-/Kindle-Links fuer die anderen 4 Buecher noch nicht erfasst -- bitte ergaenzen, sobald bekannt. Bis dahin verweisen Beitraege zu diesen Themen auf die Autorenseite."
+}

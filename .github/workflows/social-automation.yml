@@ -22,6 +22,11 @@ on:
         description: "Wie viele Entwürfe erzeugen"
         required: false
         default: "4"
+      build_calendar:
+        description: "Content-Kalender aus den Hooks neu bauen (rendert Bilder)"
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -43,11 +48,22 @@ jobs:
       - name: Dependencies installieren
         run: pip install -r automation/requirements.txt
 
+      - name: Schriftart für Bild-Rendering sicherstellen
+        run: sudo apt-get install -y fonts-dejavu-core
+
       - name: Entwürfe erzeugen
         if: github.event_name == 'workflow_dispatch' && inputs.generate_track != 'keine'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python automation/scripts/generate_content.py ${{ inputs.generate_track }} --count ${{ inputs.generate_count }}
+
+      - name: Content-Kalender bauen (Bild-Posts rendern)
+        if: github.event_name == 'workflow_dispatch' && inputs.build_calendar == 'true'
+        run: python automation/scripts/build_content_plan.py
+
+      - name: TikTok-Export aktualisieren
+        if: github.event_name == 'workflow_dispatch' && inputs.build_calendar == 'true'
+        run: python automation/scripts/tiktok_export.py
 
       - name: Freigegebene Posts veröffentlichen
         env:
@@ -77,5 +93,7 @@ jobs:
           git config user.email "automation@users.noreply.github.com"
           git add automation/content_queue.json automation/comments_queue.json
           if [ -f outputs/social-log.md ]; then git add outputs/social-log.md; fi
+          if [ -d outputs/social-images ]; then git add outputs/social-images; fi
+          if [ -f outputs/tiktok-export.csv ]; then git add outputs/tiktok-export.csv; fi
           git diff --cached --quiet || git commit -m "Automation: Queue-Status aktualisiert"
           git push

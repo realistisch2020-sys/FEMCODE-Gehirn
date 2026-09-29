@@ -1,11 +1,9 @@
-"""Veröffentlicht freigegebene Reels aus der Content-Queue auf Instagram.
+"""Veröffentlicht freigegebene Posts aus der Content-Queue auf Instagram.
 
-Fasst nur Einträge mit status == "approved", platform == "instagram" und
-gesetztem video_url an. Braucht IG_ACCESS_TOKEN + IG_BUSINESS_ACCOUNT_ID
-(siehe automation/README.md für den Weg dorthin).
-
-Ablauf laut Meta Content Publishing API: Media-Container anlegen, auf
-Verarbeitung warten (FINISHED), dann veröffentlichen.
+Hauptformat: Bild-Posts (image_url gesetzt). Reels sind optionale Ergänzung
+(video_url gesetzt, type == "reel") — siehe automation/README.md.
+Fasst nur Einträge mit status == "approved" und platform == "instagram" an.
+Braucht IG_ACCESS_TOKEN + IG_BUSINESS_ACCOUNT_ID.
 """
 import time
 
@@ -15,13 +13,34 @@ POLL_INTERVAL_SECONDS = 15
 POLL_TIMEOUT_SECONDS = 300
 
 
-def publish_one(item: dict, ig_user_id: str, token: str) -> None:
-    caption = f"{item['caption']}\n\n{' '.join(item.get('hashtags', []))}".strip()
+def build_caption(item: dict) -> str:
+    parts = [item.get("caption", "").strip()]
+    if item.get("cta"):
+        parts.append(item["cta"])
+    if item.get("hashtags"):
+        parts.append(" ".join(item["hashtags"]))
+    return "\n\n".join(p for p in parts if p)
+
+
+def publish_image(item: dict, ig_user_id: str, token: str) -> None:
+    container = graph_request(
+        "POST", f"{ig_user_id}/media", token,
+        image_url=item["image_url"],
+        caption=build_caption(item),
+    )
+    result = graph_request("POST", f"{ig_user_id}/media_publish", token, creation_id=container["id"])
+    item["status"] = "posted"
+    item["posted_at"] = now_iso()
+    item["media_id"] = result["id"]
+    log(f"Instagram Bild-Post veröffentlicht: {item['id']} -> media_id {result['id']}")
+
+
+def publish_reel(item: dict, ig_user_id: str, token: str) -> None:
     container = graph_request(
         "POST", f"{ig_user_id}/media", token,
         media_type="REELS",
         video_url=item["video_url"],
-        caption=caption,
+        caption=build_caption(item),
         share_to_feed="true",
     )
     creation_id = container["id"]
@@ -56,12 +75,16 @@ def main() -> None:
         return
 
     for item in pending:
-        if not item.get("video_url"):
-            log(f"Übersprungen (kein video_url gesetzt): {item['id']}")
-            continue
         try:
-            publish_one(item, env["IG_BUSINESS_ACCOUNT_ID"], env["IG_ACCESS_TOKEN"])
+            if item.get("image_url"):
+                publish_image(item, env["IG_BUSINESS_ACCOUNT_ID"], env["IG_ACCESS_TOKEN"])
+            elif item.get("video_url"):
+                publish_reel(item, env["IG_BUSINESS_ACCOUNT_ID"], env["IG_ACCESS_TOKEN"])
+            else:
+                log(f"Übersprungen (weder image_url noch video_url gesetzt): {item['id']}")
         except Exception as exc:
+            item["status"] = "failed"
+            item["fehler"] = str(exc)
             log(f"Fehler beim Posten von {item['id']}: {exc}")
 
     save_json(CONTENT_QUEUE, queue)

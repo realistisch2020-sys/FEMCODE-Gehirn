@@ -1,14 +1,20 @@
 """Veröffentlicht freigegebene Posts aus der Content-Queue auf einer Facebook-Page.
 
-Fasst nur Einträge mit status == "approved" und platform == "facebook" an.
-Postet ein Video über file_url, wenn video_url gesetzt ist, sonst einen
-reinen Text-Post. Braucht FB_PAGE_ID + FB_PAGE_ACCESS_TOKEN.
-
-Hinweis: nutzt die einfache /videos-Route, nicht die Chunked-Upload-API
-fürs native Reels-Tab — reicht für "Video auf der Page", nicht für denselben
-Feed wie Instagram Reels (siehe automation/README.md).
+Hauptformat: Bild-Posts (image_url -> /photos). Video optional
+(video_url -> /videos, einfache Route, nicht das native Reels-Tab).
+Ohne beides: reiner Text-Post. Fasst nur status == "approved" und
+platform == "facebook" an. Braucht FB_PAGE_ID + FB_PAGE_ACCESS_TOKEN.
 """
 from common import CONTENT_QUEUE, graph_request, load_json, log, now_iso, require_env, save_json
+
+
+def build_message(item: dict) -> str:
+    parts = [item.get("caption", "").strip()]
+    if item.get("cta"):
+        parts.append(item["cta"])
+    if item.get("hashtags"):
+        parts.append(" ".join(item["hashtags"]))
+    return "\n\n".join(p for p in parts if p)
 
 
 def main() -> None:
@@ -21,9 +27,14 @@ def main() -> None:
         return
 
     for item in pending:
-        message = f"{item['caption']}\n\n{' '.join(item.get('hashtags', []))}".strip()
+        message = build_message(item)
         try:
-            if item.get("video_url"):
+            if item.get("image_url"):
+                result = graph_request(
+                    "POST", f"{env['FB_PAGE_ID']}/photos", env["FB_PAGE_ACCESS_TOKEN"],
+                    url=item["image_url"], caption=message,
+                )
+            elif item.get("video_url"):
                 result = graph_request(
                     "POST", f"{env['FB_PAGE_ID']}/videos", env["FB_PAGE_ACCESS_TOKEN"],
                     file_url=item["video_url"], description=message,
@@ -38,6 +49,8 @@ def main() -> None:
             item["media_id"] = result["id"]
             log(f"Facebook-Post veröffentlicht: {item['id']} -> {result['id']}")
         except Exception as exc:
+            item["status"] = "failed"
+            item["fehler"] = str(exc)
             log(f"Fehler beim Posten von {item['id']}: {exc}")
 
     save_json(CONTENT_QUEUE, queue)
