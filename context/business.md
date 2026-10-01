@@ -20,7 +20,7 @@ Hier kommt rein, womit du Geld verdienst und für wen. Damit kann Claude Content
 - Personalisierte Kopien der Seite existieren mit individuellen Kontakt-/Shop-Links (u. a. für Monika, Edith, Angela) — **diese Personen haben mit der Werbung/Automatisierung nichts zu tun und dürfen in keinem Marketing-Content (Bücher oder Monat) referenziert werden.**
 - Preise/Provisionsstruktur/Zahlen weiterhin nicht erfasst
 
-Ausdrücklich **nicht** mit dem Bücher-System vermischen — eigenes Automatisierungs-System kommt später, falls gewünscht.
+Ausdrücklich **nicht** mit dem Bücher-System vermischen. Eigenes Automatisierungs-System existiert bereits (nicht erst "später"): n8n-Workflows unter dem Namen **„KI Akademie"** (u. a. „Petra AI V3.3 – Story Reel Entwurf", „Petra AI V3.2 – Telegram Freigabe", „Petra AI Master Brain", „AI Content Generator"). Stand 10/2026: **100% Fehlerquote**, nicht nutzbar. Petras Vorgabe: zuerst nur **prüfen & reparieren**, nicht neu aufbauen (Risiko sonst: wieder ein technisches Durcheinander). Claude Code hat aktuell **keinen Zugriff** auf n8n oder den „KI Akademie"-Ordner — Diagnose blockiert, bis Petra Screenshots der Fehler/Workflows oder einen n8n-Workflow-JSON-Export liefert.
 
 ## Meine Zielgruppe
 

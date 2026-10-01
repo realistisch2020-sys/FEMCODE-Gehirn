@@ -10,7 +10,8 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 - Tentary-Willkommensserie neu geschrieben: `outputs/tentary-willkommensserie.md` — Rahmen steht, Mail 2+3 brauchen pro Buch eine ausgefüllte Variante, dann in Tentary einpflegen
 - Backend-Keywords-Entwurf für alle 5 Bücher: `reference/kdp-keywords-entwurf.md` — vor Eintragen in KDP gegen Amazon-Autosuggest/Keyword-Tool prüfen
 - Backmatter-Vorlage (`reference/backmatter-vorlage.md`) in die ersten 3 Bücher einfügen, bei den anderen vereinheitlichen — kann ich nicht selbst tun, keine Manuskript-Dateien in diesem Repo
-- MONAT-Geschäft (Haarpflege): Grundstruktur jetzt in `context/business.md` erfasst (aus der gh-pages-Historie rekonstruiert — Rolle, Funnel-Aufbau, Compliance-Ansatz). Preise/Provisionen/Zahlen fehlen weiterhin, eigenes Automatisierungs-System kommt erst später
+- MONAT-Geschäft (Haarpflege): Grundstruktur jetzt in `context/business.md` erfasst (aus der gh-pages-Historie rekonstruiert — Rolle, Funnel-Aufbau, Compliance-Ansatz). Preise/Provisionen/Zahlen fehlen weiterhin
+- **MONAT-Automatisierung („KI Akademie", n8n) kaputt — Diagnose blockiert:** 100% Fehlerquote laut Petra (Workflows: Petra AI V3.3/V3.2/Master Brain/AI Content Generator). Claude Code hat keinen n8n-Zugriff und keinen Zugriff auf den „KI Akademie"-Ordner. Brauche von Petra: Screenshots der Fehler/Workflows ODER n8n-Workflow-JSON-Export (in n8n pro Workflow über "..." → Download, oder Settings → Export). Vorgehen danach wie von Petra gewünscht: nur prüfen & reparieren, nicht neu bauen — der volle 10-Punkte-Ausbau (Sheet-CRM, Wochen-Content-Maschine, Rang-Tracking) bleibt vorerst Zukunftsidee unten in „Ideen / später", nicht Teil der Reparatur.
 
 ## Rückfrage offen
 
@@ -27,4 +28,4 @@ Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` aut
 
 ## Ideen / später
 
-- (noch nichts)
+- MONAT-Vollausbau laut Petras n8n-Brief (erst nach der Reparatur, nicht jetzt): Google-Sheet als CRM, wöchentliche Content-Maschine, Team-/Rang-Tracking, 13 Content-Pillars für MONAT
