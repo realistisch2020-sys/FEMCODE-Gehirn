@@ -17,9 +17,23 @@ Es gibt viele ähnlich benannte Quiz-Seiten (Safe-to-Thrive-Persönlichkeitstest
 Team-Kopien für andere Beraterinnen: gleicher Seiteninhalt, aber deren eigene Kontakt-/Shop-Daten (WhatsApp, E-Mail, mymonat.com-Subdomain). Bei "Kopie für [Name]"-Anfragen zuerst in bestehenden Seiten nach den echten Daten der Person suchen, nicht neu fragen oder erfinden. Fehlt ein Feld dort auch (z.B. keine E-Mail hinterlegt), in der Kopie einfach weglassen statt erfinden.
 
 Bereits bekannte Original-Kontaktdaten:
-- Angela Gross → `monat-persoenlichkeitstest-2/index.html`
-- Monika Gessler → `monat-persoenlichkeitstest-3/index.html`
-- Edith Furrer → `monat-persoenlichkeitstest-4/index.html` (keine E-Mail/Instagram hinterlegt)
+- Angela Gross → `monat-persoenlichkeitstest-2/index.html`, auch `monat-anwendungstest-angela.html`
+- Monika Gessler → `monat-persoenlichkeitstest-3/index.html`, auch `monat-anwendungstest-monika.html`
+- Edith Furrer → `monat-persoenlichkeitstest-4/index.html`, auch `monat-anwendungstest-edith.html` (keine E-Mail/Instagram hinterlegt)
+- Monika Duhme → `monat-haartest-monika-duhme.html` (Glanz-Test-Stil, siehe unten)
+- Andrea Klaus, Coiffeur Haar-Lay → `monat-haartest-andrea-klaus.html` (Glanz-Test-Stil, siehe unten)
+
+### Team-Kopien im Glanz-Test-Stil (seit Monika Duhme/Andrea Klaus)
+
+Vorlage ist `monat-haartest-glanz.html` (Quiz, 5 Ergebnisse: trockenes-haar/kopfhaut/frizz/volumen/feines-haar) — eigene Dateien `monat-haartest-[name].html`, nicht die Anwendungstest-Vorlage. Pro Person brauche ich: Name, WhatsApp, E-Mail (optional), Instagram (optional), MONAT-Shop-Link, ggf. eigener Business-Name statt "Unabhängige MONAT Markenpartnerin" im Footer/Badge. Fehlt ein Feld, weglassen statt erfinden.
+
+Plus Warenkorb-Links: 5 Stück, einer pro Ergebniskategorie (volumen+feines-haar nur teilen, wenn sie das wie bei sich selbst so will — nicht automatisch annehmen). Optional 2 Marketpartner-Links (Kampagne `..._mp`) für einen Zusatz-Block "Werde Teil meines Teams", optional weitere Einzel-Links (z.B. "Männerset") als zusätzliche Buttons unter "Fertige Sets direkt bestellen" — Beschriftung dafür erfragen, nicht raten.
+
+Nur Links im Format `enrollments/<id>/share?...&utm_campaign=pre_package_cart` funktionieren als Warenkorb-Link. Das Format `shop/orders/<id>/share` ist ungültig (führt zu MONATs eigener Fehlerseite "this page flaked out like drugstore shampoo") — bei diesem Format nachfragen/neue Links erbitten, nicht verwenden.
+
+Immer ohne GTM (Kopf-Script + Noscript-Block entfernen). Bei unbeschrifteten Linklisten: Reihenfolge wie zuletzt mit ihr abgestimmt übernehmen (aktuell: trockenes-haar, kopfhaut, frizz, volumen, feines-haar), aber kurz bestätigen lassen statt stillschweigend anzunehmen.
+
+Veröffentlicht wird erst auf expliziten Wunsch ("Link zum Weitergeben/Rauskopieren" o.ä.) — vorher nur Artifact-Vorschau + Datei zum Prüfen.
 
 ## MONAT-Quiz-Vorlage: visueller Standard
 
