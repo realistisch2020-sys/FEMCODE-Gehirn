@@ -170,3 +170,31 @@ Dazu kommt „Dynamische Gebote – nur senken“ (AUTO/ASIN), die das effektive
 Wachstumshebel: die 2 Verkaufs-Targets (fehlen noch). Dort liegt der einzige Kaufnachweis (ASIN-Kampagne CVR 3 %, CPA 12,82 €).
 
 **Verlauf SP/Auto (Kampagnenebene, ab 21.09.) [B]:** „Es gibt keine Änderungen“. Status „Wird bereitgestellt“, Ausgaben 22,43 €, 16.157 Impr., 0 Verkäufe seit 21.09. Gebotsänderungen an Targets stehen vermutlich im Verlauf der Anzeigengruppe → dort weiter prüfen. Ø-CPC 0,39 € bei Gebot 0,20 € und Strategie „nur senken“ ist nur möglich, wenn das Gebot im Zeitraum höher war.
+
+---
+
+## Update 05.10.2026: Verkaufs-Targets (letzte 14 Tage) [B]
+
+| Target | Gebot | Impr. | Klicks | Kosten | Ø-CPC | Käufe | Umsatz | CVR | CPA | ACOS |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ASIN 196432923X | 0,30 € | 33.099 | 73 | 31,75 € | 0,43 € | 2 | 28,90 € | 2,7 % | 15,88 € | 110 % |
+| ASIN 3990606131 | 0,25 € | 1.090 | 7 | 3,09 € | 0,44 € | 1 | 7,47 € (= Kindle netto) | 14 % | 3,09 € | 41 % |
+
+- 196432923X ist der Auslieferungsmotor: Er liefert den Großteil aller Hero-Impressionen. Das Gebot liegt mit 0,30 € unter dem bisherigen Ø-CPC von 0,43 €. **Hauptursache des Einbruchs** (Gebotssenkung bestätigt durch die Konstellation CPC > Gebot bei „nur senken“; der Zeitstempel fehlt noch).
+- Alle 5 Suchhinweis-Gebote sind im Konto bestätigt (0,30 / 0,20 / 0,22 / 0,25 / 0,15).
+- Budget ist kein Engpass. Das Hero-Buch nimmt nach den Daten derzeit ≈ 6–8 €/Tag sinnvoll auf. Die frühere Empfehlung „15 €/Tag / 105 €“ ist aktuell nicht begründet.
+
+## Freigabeliste (Vorschlag, nicht umgesetzt)
+
+| # | Kampagne | Target | bisher | neu | Grund |
+|---|---|---|---|---|---|
+| 1 | SP/ASIN | 196432923X | 0,30 € | 0,38 € | einziger Wiederholungskäufer, Auslieferung zurückholen; Lerntest mit bewusstem Verlust |
+| 2 | SP/ASIN | 3990606131 | 0,25 € | 0,40 € | 1 Kauf aus 7 Klicks, CPA 3,09 € unter Kindle-Tantieme |
+| 3 | SP/EXACT | immer für andere da | 0,15 € | 0,35 € | Kern-Keyword, unter Amazons Mindestvorschlag |
+
+Budgets unverändert (ASIN 10 €, AUTO 8 €, EXACT 12 €). Alle anderen Targets LASSEN, keine Pausen.
+Erwartung [P]: tatsächliche Ausgaben ≈ 5–8 €/Tag, 7-Tage-Rahmen max. 55 €, ≈ 1–3 Käufe/Woche.
+Prüfung am 15.10. (7 Tage + 3 Tage Zuordnung):
+- 196432923X: CPA ≤ 10 € → lassen/erhöhen; ≥ 15 € Kosten ohne Kauf → zurück auf 0,30 €.
+- 3990606131: weiterer Kauf → 0,49 €; ≥ 8 € Kosten ohne Kauf → zurück auf 0,25 €.
+- immer für andere da: ≥ 6 € Kosten ohne Kauf → zurück auf 0,20 €.
