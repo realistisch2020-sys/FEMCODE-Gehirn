@@ -1,17 +1,12 @@
 # Strategie
 
-Hier kommt rein, woran du gerade arbeitest und wohin es gehen soll. So weiß Claude, was Priorität hat.
+## Ziele
 
-## Aktueller Fokus
+- Langfristig: 50.000 € Monatsumsatz mit Büchern (erfordert einen Katalog mit mehreren werbefähigen Titeln, nicht nur ein Buch).
+- Operativ zuerst: reproduzierbar 10 Buchverkäufe/Tag, danach 15+.
 
-Woran arbeitest du gerade konkret?
+## Haltung zu Werbebudget
 
-## Ziele der nächsten Monate
-
-Was willst du in den nächsten drei bis sechs Monaten erreichen?
-
-## Prioritäten
-
-Was ist wichtig, was kann warten?
-
-Kurz und konkret. Drei klare Ziele schlagen zehn vage.
+- Bereit, Kapital für messbares Wachstum einzusetzen. Minimale Werbekosten sind nicht das Hauptziel.
+- Jede Zusatzausgabe muss Verkäufe oder verwertbare Erkenntnisse bringen. Bewusster Verlust ist nur mit Lernziel, Testdauer, Ausgabenrahmen und Entscheidungskriterien erlaubt.
+- Keine pauschalen Kampagnenstopps. Auf Target-Ebene entscheiden: ERHÖHEN – LASSEN – SENKEN – PAUSIEREN.
