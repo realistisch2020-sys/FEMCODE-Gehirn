@@ -137,3 +137,34 @@ Befunde:
 - EXACT liefert praktisch nicht aus (1 Klick/8 Tage). Die Gebote liegen zu niedrig oder die Keywords haben zu wenig Volumen.
 - 3 aktive Kampagnen mit 34 €/Tag Budget haben **0 Impressionen**. Das deutet auf Anzeige nicht berechtigt, Targets/Anzeigen pausiert oder sehr niedrige Gebote hin. Ein Zusammenhang mit den 3 Kontowarnungen ist möglich, aber unbelegt.
 - Beide Käufe stammen aus der ASIN-Kampagne (CPA 12,82 €). Weiter offen: welches Produkt für 14,45 € gekauft wurde.
+
+---
+
+## Update 05.10.2026: Targeting-Export (gefiltert: „Ziele mit Klicks, aber ohne Verkäufe“, letzte 14 Tage)
+
+Der Export enthält nur 10 der 87 Targets (Kachel „10 von 87“). Die 2 Targets mit Verkäufen fehlen noch.
+
+**Gebotsprüfung der Suchhinweise [B]:**
+- close-match 0,20 € ✓ · „immer für andere da“ 0,15 € ✓ · ASIN 3950614206 0,22 € ✓ → umgesetzt.
+- ASIN 196432923X (0,30 €) und 3990606131 (0,25 €) sind nicht im Export, vermutlich die beiden Verkaufs-Targets. Noch offen.
+
+**Ursache des Einbruchs (stark gestützt, Zeitpunkt noch offen):** Bei den 3 größten Targets liegt der Ø-CPC der letzten 14 Tage über dem aktuellen Gebot. Die Gebote wurden also unter den früheren Klickpreis gesenkt:
+- close-match: Ø-CPC 0,39 € vs. Gebot 0,20 € (55 der 95 Klicks dieser Liste, 64 % der Kosten)
+- „immer für andere da“: Ø-CPC 0,45 € vs. Gebot 0,15 € (unter Amazons niedrigstem Vorschlag 0,23 €)
+- ASIN 3950614206: Ø-CPC 0,33 € vs. Gebot 0,22 €
+Dazu kommt „Dynamische Gebote – nur senken“ (AUTO/ASIN), die das effektive Gebot zusätzlich drückt. Budget, Kampagnenstatus und Konto/Zahlung sind ausgeschlossen bzw. unauffällig.
+
+| Kampagne | Target | Typ | Gebot | Impr. | Klicks | Kosten | Best. | ACOS | Entscheidung | empf. Gebot | Begründung |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| AUTO | close-match | Auto eng | 0,20 € | 15.325 | 55 | 21,23 € | 0 | n. a. | LASSEN | 0,20 € | 4,4 × Break-even-CPA ohne Kauf; P(0 Käufe) bei 8 % CVR ≈ 1 %. Zurück auf 0,39 € kauft vor allem unprofitable Klicks. Erst Suchbegriffe ernten. |
+| AUTO | loose-match | Auto weit | 0,32 € | 217 | 3 | 0,80 € | 0 | n. a. | LASSEN | 0,32 € | zu wenig Daten, beste CTR 1,38 % |
+| AUTO | complements | Ergänzungen | 0,20 € | 606 | 2 | 0,40 € | 0 | n. a. | LASSEN | 0,20 € | zu wenig Daten |
+| EXACT | immer für andere da | genau | 0,15 € | 1.002 | 6 | 2,68 € | 0 | n. a. | **ERHÖHEN** | 0,35 € | Kern-Keyword der Positionierung, beste Hero-CTR 0,60 %, Gebot unter Amazons Mindestvorschlag → faktisch abgeschaltet. Lerntest. |
+| EXACT | sich selbst vergessen | genau | 0,45 € | 268 | 1 | 0,67 € | 0 | n. a. | LASSEN | 0,45 € | Gebot schon über Vorschlag „hoch“, Engpass ist Suchvolumen |
+| ASIN | 3950614206 | ASIN erw. | 0,22 € | 3.100 | 10 | 3,31 € | 0 | n. a. | LASSEN | 0,22 € | Kosten < 1 Break-even-CPA, kein Urteil möglich |
+| ASIN | 3950569456 | ASIN erw. | 0,20 € | 3.520 | 9 | 1,15 € | 0 | n. a. | LASSEN | 0,20 € | sehr günstig (CPC 0,13 €) |
+| ASIN | 374740720X | ASIN erw. | 0,35 € | 1.038 | 5 | 1,71 € | 0 | n. a. | LASSEN | 0,35 € | beste ASIN-CTR 0,48 % |
+| ASIN | B0GS915W4X | ASIN erw. | 0,35 € | 1.804 | 4 | 1,17 € | 0 | n. a. | LASSEN | 0,35 € | zu wenig Daten |
+| Du brauchst… | innere freiheit | genau | 0,55 € | 9 | 1 | 0,55 € | 0 | n. a. | offen | – | Vorschlag 0,83–1,11 €, kaum Volumen; separat prüfen |
+
+Wachstumshebel: die 2 Verkaufs-Targets (fehlen noch). Dort liegt der einzige Kaufnachweis (ASIN-Kampagne CVR 3 %, CPA 12,82 €).
