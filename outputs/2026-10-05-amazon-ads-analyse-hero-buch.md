@@ -205,7 +205,7 @@ Die Ads-Konsole zeigt als Preise **Kindle 5,99 €** und **TB 15,46 €** (nicht
 **Umsetzung 05.10. [B]:** 196432923X → 0,38 €, 3990606131 → 0,40 € (laut Petra), „immer für andere da“ → 0,35 € (Screenshot bestätigt).
 EXACT-Anzeigengruppe: 23 Keywords, 3.202 Impr. in 14 Tagen. „zurück zu dir“ ist angehalten (0,70 €, 1.626 Impr., 0 Klicks) → richtig so lassen. Viele Kern-Keywords liegen deutlich unter dem Gebotsvorschlag (z. B. „people pleasing buch“ 0,35 € vs. 1,19 €, „es allen recht machen“ 0,50 € vs. 1,02 €) → möglicher Reichweitenhebel für Stufe 2.
 
-## Stufe 2 – Reichweitentest EXACT (Vorschlag, nicht freigegeben)
+## Stufe 2 – Reichweitentest EXACT (FREIGEGEBEN 05.10.2026)
 
 | # | Keyword | bisher | neu | Amazon-Vorschlag | Impr. 14 T. |
 |---|---|---|---|---|---|
