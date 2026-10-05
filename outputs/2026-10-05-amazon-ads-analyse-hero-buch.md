@@ -168,3 +168,5 @@ Dazu kommt „Dynamische Gebote – nur senken“ (AUTO/ASIN), die das effektive
 | Du brauchst… | innere freiheit | genau | 0,55 € | 9 | 1 | 0,55 € | 0 | n. a. | offen | – | Vorschlag 0,83–1,11 €, kaum Volumen; separat prüfen |
 
 Wachstumshebel: die 2 Verkaufs-Targets (fehlen noch). Dort liegt der einzige Kaufnachweis (ASIN-Kampagne CVR 3 %, CPA 12,82 €).
+
+**Verlauf SP/Auto (Kampagnenebene, ab 21.09.) [B]:** „Es gibt keine Änderungen“. Status „Wird bereitgestellt“, Ausgaben 22,43 €, 16.157 Impr., 0 Verkäufe seit 21.09. Gebotsänderungen an Targets stehen vermutlich im Verlauf der Anzeigengruppe → dort weiter prüfen. Ø-CPC 0,39 € bei Gebot 0,20 € und Strategie „nur senken“ ist nur möglich, wenn das Gebot im Zeitraum höher war.
