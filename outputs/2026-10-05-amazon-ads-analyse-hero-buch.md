@@ -198,3 +198,6 @@ Prüfung am 15.10. (7 Tage + 3 Tage Zuordnung):
 - 196432923X: CPA ≤ 10 € → lassen/erhöhen; ≥ 15 € Kosten ohne Kauf → zurück auf 0,30 €.
 - 3990606131: weiterer Kauf → 0,49 €; ≥ 8 € Kosten ohne Kauf → zurück auf 0,25 €.
 - immer für andere da: ≥ 6 € Kosten ohne Kauf → zurück auf 0,20 €.
+
+**Anzeigen in SP/ASIN (21.09.–heute) [B]:** Kindle B0HGSBZS18 – 34,15 € Kosten, 2 Käufe, 21,92 €; TB B0HGT4PX8H – 8,91 € Kosten, 1 Kauf, 14,45 €.
+Die Ads-Konsole zeigt als Preise **Kindle 5,99 €** und **TB 15,46 €** (nicht 7,99 € / 12,99 €). 14,45 € = 15,46 € ohne 7 % MwSt. → Die Werbekäufe zu 14,45 € waren Taschenbücher zum Preis 15,46 €. Preise auf amazon.de prüfen. Falls das TB 15,46 € kostet, liegt die Tantieme bei ≈ 6,25 € statt 4,87 €.
