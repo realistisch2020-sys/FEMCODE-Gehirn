@@ -11,3 +11,4 @@
 - Manueller Aufwand für mich so gering wie möglich. Unterlagen gebündelt anfordern, nicht einzeln nachfragen.
 - Keine Änderungen an Amazon/KDP ohne meine ausdrückliche Freigabe.
 - Belegt, Annahme und Prognose immer getrennt ausweisen.
+- Antworten extrem kurz: nur was ich ändern oder liefern muss, ein Schritt nach dem anderen. Kein Erklärtext.
