@@ -110,3 +110,30 @@ Benötigte Werbebestellungen = Ziel − belegter Basisabsatz (noch unbekannt: KD
 ## 8. Benötigte Unterlagen (einmal gebündelt)
 
 Siehe Chat-Nachricht vom 05.10.2026 bzw. `plans/offene-punkte.md`.
+
+---
+
+## Update 05.10.2026: Kampagnenexport (28.09.–05.10.) ausgewertet
+
+Quelle: Campaign_Oct_5_2026.csv **[B]**. Impressionen im Export leer, daher aus Klicks/CTR zurückgerechnet.
+
+| Kampagne | Status | Budget/Tag | Strategie | Impr. (ber.) | Klicks | Kosten | Best. | Umsatz | CPC | CTR | CVR | ACOS | Anteil Klicks / Kosten / Best. |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| SP/ASIN/Ich stand nie/DE | Aktiv | 10 € | nur senken | ≈ 29.100 | 67 | 25,64 € | 2 | 28,90 € | 0,38 € | 0,23 % | 3,0 % | 88,7 % | 61 % / 61 % / 100 % |
+| SP/Auto/ich stand nie/DE | Aktiv | 8 € | nur senken | ≈ 11.700 | 42 | 15,77 € | 0 | 0 € | 0,38 € | 0,36 % | 0 % | n. a. (kein Umsatz) | 38 % / 38 % / 0 % |
+| SP/EXACT/Ich stand nie/DE | Aktiv | 12 € | erhöhen+senken | ≈ 830 | 1 | 0,36 € | 0 | 0 € | 0,36 € | 0,12 % | – | n. a. | 1 % / 1 % / 0 % |
+| SP/PHRASE/Ich stand nie/DE | Angehalten | 3 € | – | 0 | 0 | 0 | 0 | – | – | – | – | – | – |
+| SP Exact Du brauchst kein letztes Gespräch DE | Aktiv | 20 € | nur senken | **0** | 0 | 0 | 0 | – | – | – | – | – | – |
+| SP Exact Du brauchst kein letztes Gespräch DE (Kampagne 18.9. 17:08) | Aktiv | 7 € | nur senken | **0** | 0 | 0 | 0 | – | – | – | – | – | – |
+| Kampagne – 18.9.2026 17:13 (Buch unklar) | Aktiv | 7 € | nur senken | **0** | 0 | 0 | 0 | – | – | – | – | – | – |
+| Das schlechte Gewissen / SP_Manuell _das schlechte Gewissen | Angehalten | je 5 € | – | 0 | 0 | 0 | 0 | – | – | – | – | – | – |
+| Kampagne – 28.7.2026 (Auto) | Beendet 08.08. | 10 € | – | 0 | 0 | 0 | 0 | – | – | – | – | – | – |
+
+Befunde:
+- Die Kontosumme (41,77 €, 110 Klicks, 2 Käufe) stammt zu 100 % aus Sponsored Products und aus den 3 Hero-Kampagnen.
+- **Budget ist nicht die Bremse:** Die Hero-Budgets betragen zusammen 30 €/Tag, ausgegeben wurden Ø ≈ 5,20 €/Tag. Budgeterhöhungen bringen derzeit nichts.
+- Die Hero-Kampagnen sind aktiv und haben kein Enddatum. Pausen und Enddaten auf Kampagnenebene scheiden als Ursache aus. Anzeigengruppen und Targets sind noch offen.
+- Laut Diagramm-Foto ist der Einbruch real: ≈ 6–8 €/Tag bis 02.10., ≈ 4 € am 03.10., ≈ 1 € am 04.10. Bei aktiven Kampagnen mit freiem Budget bleiben als Hauptverdächtige Gebotssenkungen plus „Dynamische Gebote – nur senken“ (senkt zusätzlich).
+- EXACT liefert praktisch nicht aus (1 Klick/8 Tage). Die Gebote liegen zu niedrig oder die Keywords haben zu wenig Volumen.
+- 3 aktive Kampagnen mit 34 €/Tag Budget haben **0 Impressionen**. Das deutet auf Anzeige nicht berechtigt, Targets/Anzeigen pausiert oder sehr niedrige Gebote hin. Ein Zusammenhang mit den 3 Kontowarnungen ist möglich, aber unbelegt.
+- Beide Käufe stammen aus der ASIN-Kampagne (CPA 12,82 €). Weiter offen: welches Produkt für 14,45 € gekauft wurde.
