@@ -11,6 +11,7 @@
 
 ## KDP
 
+- 05.10.2026: 11 Buchverkäufe gesamt (laut Petra), Hero-Buch am stärksten. Aufteilung Titel/Format offen.
 - 02.10.2026: 8 Einheiten (5 × Hero, 3 × „Wenn Beziehungen erschöpfen“), Format unbekannt.
 
 ## Was gerade läuft
