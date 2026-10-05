@@ -10,3 +10,4 @@
 - Bereit, Kapital für messbares Wachstum einzusetzen. Minimale Werbekosten sind nicht das Hauptziel.
 - Jede Zusatzausgabe muss Verkäufe oder verwertbare Erkenntnisse bringen. Bewusster Verlust ist nur mit Lernziel, Testdauer, Ausgabenrahmen und Entscheidungskriterien erlaubt.
 - Keine pauschalen Kampagnenstopps. Auf Target-Ebene entscheiden: ERHÖHEN – LASSEN – SENKEN – PAUSIEREN.
+- Petra will wie eine Top-Publisherin behandelt werden: Mehr Werbegeld ist ausdrücklich erlaubt, wenn es nachweislich mehr Buchverkäufe bringt. Empfehlungen auf Wachstum ausrichten, nicht auf Kostenminimierung.
