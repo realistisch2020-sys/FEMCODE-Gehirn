@@ -204,3 +204,17 @@ Die Ads-Konsole zeigt als Preise **Kindle 5,99 €** und **TB 15,46 €** (nicht
 
 **Umsetzung 05.10. [B]:** 196432923X → 0,38 €, 3990606131 → 0,40 € (laut Petra), „immer für andere da“ → 0,35 € (Screenshot bestätigt).
 EXACT-Anzeigengruppe: 23 Keywords, 3.202 Impr. in 14 Tagen. „zurück zu dir“ ist angehalten (0,70 €, 1.626 Impr., 0 Klicks) → richtig so lassen. Viele Kern-Keywords liegen deutlich unter dem Gebotsvorschlag (z. B. „people pleasing buch“ 0,35 € vs. 1,19 €, „es allen recht machen“ 0,50 € vs. 1,02 €) → möglicher Reichweitenhebel für Stufe 2.
+
+## Stufe 2 – Reichweitentest EXACT (Vorschlag, nicht freigegeben)
+
+| # | Keyword | bisher | neu | Amazon-Vorschlag | Impr. 14 T. |
+|---|---|---|---|---|---|
+| 1 | people pleasing buch | 0,35 € | 0,70 € | 1,19 € (0,89–1,49) | 27 |
+| 2 | es allen recht machen | 0,50 € | 0,70 € | 1,02 € (0,77–1,27) | 91 |
+| 3 | people pleasing überwinden | 0,50 € | 0,65 € | 0,91 € (0,68–1,14) | 8 |
+| 4 | nein sagen lernen buch | 0,35 € | 0,50 € | 0,61 € (0,46–0,76) | 0 |
+| 5 | grenzen setzen buch | 0,35 € | 0,50 € | 0,58 € (0,43–0,73) | 1 |
+
+Bewusster Wachstumstest mit Verlustrisiko: Bei 0,70 € CPC braucht Break-even ≈ 10–14 % CVR (je nach Format/Preis). Bei kaufnahen „…buch“-Keywords ist das plausibel, aber unbelegt.
+Rahmen [P]: + 2–5 €/Tag, max. 35 € in 7 Tagen, EXACT-Budget 12 € reicht.
+Je Keyword: ≥ 6 € Kosten ohne Kauf → zurück aufs alte Gebot; Kauf mit CPA ≤ 8 € → lassen bzw. weiter erhöhen.
