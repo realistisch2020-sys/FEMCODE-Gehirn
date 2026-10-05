@@ -201,3 +201,6 @@ Prüfung am 15.10. (7 Tage + 3 Tage Zuordnung):
 
 **Anzeigen in SP/ASIN (21.09.–heute) [B]:** Kindle B0HGSBZS18 – 34,15 € Kosten, 2 Käufe, 21,92 €; TB B0HGT4PX8H – 8,91 € Kosten, 1 Kauf, 14,45 €.
 Die Ads-Konsole zeigt als Preise **Kindle 5,99 €** und **TB 15,46 €** (nicht 7,99 € / 12,99 €). 14,45 € = 15,46 € ohne 7 % MwSt. → Die Werbekäufe zu 14,45 € waren Taschenbücher zum Preis 15,46 €. Preise auf amazon.de prüfen. Falls das TB 15,46 € kostet, liegt die Tantieme bei ≈ 6,25 € statt 4,87 €.
+
+**Umsetzung 05.10. [B]:** 196432923X → 0,38 €, 3990606131 → 0,40 € (laut Petra), „immer für andere da“ → 0,35 € (Screenshot bestätigt).
+EXACT-Anzeigengruppe: 23 Keywords, 3.202 Impr. in 14 Tagen. „zurück zu dir“ ist angehalten (0,70 €, 1.626 Impr., 0 Klicks) → richtig so lassen. Viele Kern-Keywords liegen deutlich unter dem Gebotsvorschlag (z. B. „people pleasing buch“ 0,35 € vs. 1,19 €, „es allen recht machen“ 0,50 € vs. 1,02 €) → möglicher Reichweitenhebel für Stufe 2.
