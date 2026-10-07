@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fettige Kopfhaut? Das steckt dahinter | Petra Tanner, MONAT Markenpartnerin</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg:#180f14;
+    --card:#241720;
+    --surface:#2e1c27;
+    --ink:#f6ece7;
+    --ink-soft:#b9a0ab;
+    --berry:#b23a63;
+    --berry-deep:#8a2c4d;
+    --berry-bright:#e784a6;
+    --orange:#f0883d;
+    --orange-light:rgba(240,136,61,0.16);
+    --orange-deep:#d9691f;
+    --green:#7cb66b;
+    --green-light:rgba(124,182,107,0.16);
+    --line:rgba(255,255,255,0.08);
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ overflow-x:hidden; }
+body{
+  overflow-x:hidden;
+  font-family:'Inter', -apple-system, sans-serif;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(240,136,61,0.20) 0%, transparent 45%),
+    radial-gradient(circle at 88% 18%, rgba(178,58,99,0.24) 0%, transparent 45%),
+    radial-gradient(circle at 85% 88%, rgba(124,182,107,0.18) 0%, transparent 50%),
+    radial-gradient(circle at 8% 90%, rgba(85,143,73,0.15) 0%, transparent 45%),
+    linear-gradient(160deg, #180f14, #10140f);
+  color:var(--ink);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  line-height:1.5;
+}
+
+.card{
+  width:100%; max-width:540px;
+  background:var(--card);
+  border-radius:24px;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
+  overflow:hidden;
+  position:relative; z-index:1;
+}
+.card::before{
+  content:""; position:absolute; inset:0; padding:1px; border-radius:24px;
+  background:linear-gradient(135deg, var(--orange), var(--berry) 40%, var(--green) 75%, var(--green));
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor; mask-composite:exclude;
+  pointer-events:none; z-index:2;
+}
+
+/* glitter + sparkle */
+.glitter-field{ position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+.glit{ position:absolute; border-radius:50%; background:var(--berry-bright); box-shadow:0 0 7px 1px rgba(231,132,166,0.6); animation:twinkle ease-in-out infinite; }
+@keyframes twinkle{ 0%,100%{opacity:.15; transform:scale(.6);} 50%{opacity:.85; transform:scale(1.15);} }
+.sparkle-deco{ position:absolute; font-size:16px; z-index:2; pointer-events:none; animation:spinFloat 9s linear infinite; color:var(--orange); opacity:.8; }
+@keyframes spinFloat{ from{transform:rotate(0deg) translateY(0);} 50%{transform:rotate(180deg) translateY(-6px);} to{transform:rotate(360deg) translateY(0);} }
+.confetti-host{ position:relative; }
+.confetti-piece{ position:absolute; width:6px; height:6px; top:0; left:50%; border-radius:2px; pointer-events:none; animation:burst .9s cubic-bezier(.2,.8,.3,1) forwards; }
+@keyframes burst{ 0%{transform:translate(-50%,-50%) scale(.6) rotate(0deg); opacity:1;} 100%{transform:translate(var(--tx),var(--ty)) scale(1) rotate(var(--rot)); opacity:0;} }
+
+/* scroll reveal */
+.rev{ opacity:0; transform:translateY(16px); transition:opacity .55s ease, transform .55s ease; }
+.rev.vis{ opacity:1; transform:translateY(0); }
+@media (prefers-reduced-motion:reduce){ .rev{ opacity:1; transform:none; transition:none; } }
+
+/* hero */
+.hero{ padding:40px 30px 26px; border-bottom:1px solid var(--line); }
+.kicker{
+  display:inline-flex; align-items:center; gap:6px;
+  font-size:11.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--orange); background:var(--orange-light);
+  border-radius:999px; padding:6px 13px; margin-bottom:16px;
+}
+.kicker svg{ width:13px; height:13px; flex:none; }
+h1{
+  font-family:'Fraunces', serif; font-weight:600; font-size:30px; line-height:1.14;
+  letter-spacing:-0.01em; color:var(--ink); text-wrap:balance;
+}
+h1 .accent{ color:var(--orange); font-style:italic; }
+.sub{ margin-top:14px; font-size:15px; color:var(--ink-soft); line-height:1.6; max-width:46ch; }
+
+/* section chrome */
+.section{ padding:28px 30px; border-bottom:1px solid var(--line); }
+.section:last-of-type{ border-bottom:none; }
+.section-head{ display:flex; align-items:center; gap:10px; margin-bottom:18px; }
+.section-rule{ width:22px; height:3px; border-radius:3px; background:linear-gradient(90deg, var(--orange), var(--green)); flex:none; }
+.section-title{ font-family:'Fraunces', serif; font-size:18px; font-weight:600; color:var(--ink); }
+
+/* reason grid */
+.reason-grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.reason-chip{
+  display:flex; gap:10px; align-items:flex-start;
+  background:var(--surface); border-radius:14px; padding:13px 12px;
+}
+.reason-ic{
+  flex:none; width:30px; height:30px; border-radius:9px;
+  background:rgba(255,255,255,0.07); color:var(--orange);
+  display:flex; align-items:center; justify-content:center;
+}
+.reason-ic svg{ width:16px; height:16px; }
+.reason-txt{ display:flex; flex-direction:column; gap:2px; min-width:0; }
+.reason-title{ font-size:12.5px; font-weight:600; color:var(--ink); line-height:1.3; }
+.reason-sub{ font-size:11px; color:var(--ink-soft); line-height:1.4; }
+@media (max-width:380px){ .reason-grid{ grid-template-columns:1fr; } }
+
+/* routine timeline */
+.routine-timeline{ display:flex; flex-direction:column; }
+.step{ display:flex; gap:16px; }
+.step-rail{ flex:none; width:36px; display:flex; flex-direction:column; align-items:center; position:relative; }
+.step-rail::after{
+  content:""; position:absolute; top:36px; bottom:-22px; width:2px;
+  background:linear-gradient(var(--berry), var(--green)); opacity:.5;
+}
+.step-rail.step-last::after{ display:none; }
+.step-num{
+  width:36px; height:36px; border-radius:50%; flex:none;
+  background:linear-gradient(135deg, var(--berry), var(--orange-deep));
+  color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:14px;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 8px 18px -8px rgba(178,58,99,0.6);
+}
+.step-card{
+  flex:1; min-width:0; background:var(--surface); border-radius:16px; padding:16px 16px 14px;
+  margin-bottom:22px; transition:transform .2s ease;
+}
+.step:last-child .step-card{ margin-bottom:0; }
+.step-head{ display:flex; align-items:center; gap:9px; margin-bottom:7px; }
+.step-ic{ flex:none; width:26px; height:26px; color:var(--orange); display:flex; align-items:center; justify-content:center; }
+.step-ic svg{ width:18px; height:18px; }
+.step-name{ font-size:14.5px; font-weight:700; color:var(--ink); line-height:1.3; }
+.step-benefit{ font-size:13px; color:var(--ink-soft); line-height:1.55; margin-bottom:7px; }
+.step-when{
+  display:inline-block; font-size:11.5px; font-weight:600; color:var(--green);
+  background:var(--green-light); border-radius:999px; padding:4px 10px; margin-bottom:9px;
+}
+.step-link{ display:block; font-size:12.5px; font-weight:600; color:var(--orange); text-decoration:none; }
+.step-link:hover{ text-decoration:underline; }
+
+/* CTA */
+.vip-btn-primary{
+  display:block; text-align:center; text-decoration:none;
+  font-weight:700; font-size:15px; color:#1c1118;
+  background:linear-gradient(135deg, var(--orange), var(--orange-deep));
+  border-radius:14px; padding:16px 20px; letter-spacing:.01em;
+  box-shadow:0 16px 30px -14px rgba(217,105,31,0.5);
+  transition:transform .15s ease;
+}
+.vip-btn-primary:active{ transform:scale(.98); }
+.vip-redirect-note{ text-align:center; font-size:11.5px; color:var(--ink-soft); margin:10px 0 16px; }
+.vip-btn-secondary{
+  display:block; text-align:center; text-decoration:none;
+  font-weight:600; font-size:13.5px; color:var(--ink);
+  border:1.5px solid var(--line); background:var(--surface);
+  border-radius:14px; padding:13px 20px; margin-bottom:22px;
+}
+.ask-box{ font-size:13px; font-weight:600; color:var(--ink-soft); text-align:center; margin-bottom:10px; }
+.cta-btn{
+  font-weight:600; font-size:13.5px; color:var(--green);
+  border:1.5px solid rgba(124,182,107,0.35); background:var(--surface);
+  border-radius:14px; padding:13px 20px;
+}
+.email-box{ margin-top:14px; background:var(--surface); border-radius:16px; padding:16px; }
+.email-heading{ font-family:'Fraunces', serif; font-size:14.5px; font-weight:600; color:var(--ink); margin-bottom:5px; }
+.email-sub{ font-size:11.5px; color:var(--ink-soft); line-height:1.5; margin-bottom:12px; }
+#emailInput{
+  width:100%; font-size:13.5px; font-family:inherit; color:var(--ink);
+  border:1.5px solid var(--line); background:var(--card);
+  border-radius:12px; padding:11px 13px; margin-bottom:10px; outline:none;
+}
+#emailInput:focus{ border-color:var(--orange); }
+
+/* trust */
+.trust-lead{ font-size:13.5px; color:var(--ink-soft); margin-bottom:14px; line-height:1.6; }
+.trust-chips{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+.trust-chip{
+  font-size:11.5px; font-weight:600; color:var(--green);
+  background:var(--green-light); border-radius:999px; padding:6px 12px;
+}
+.trust-note{ font-size:12px; color:var(--ink-soft); }
+
+/* disclaimers / contact / footer */
+.disclaimer-box{ font-size:11.5px; color:var(--ink-soft); line-height:1.6; background:var(--surface); border-radius:12px; padding:12px 14px; margin-bottom:10px; }
+.contact-row{ display:flex; flex-direction:column; gap:12px; margin:18px 0; }
+.contact-link{ display:flex; align-items:center; gap:10px; font-size:13.5px; font-weight:500; color:var(--ink); text-decoration:none; }
+.contact-link svg{ width:17px; height:17px; flex:none; color:var(--orange); }
+.footer-legal{ text-align:center; padding-top:14px; border-top:1px solid var(--line); }
+.partner-line{ font-family:'Fraunces', serif; font-weight:600; font-size:13px; color:var(--ink); margin-bottom:6px; }
+.disclaimer-line{ font-size:11px; color:var(--ink-soft); line-height:1.5; }
+
+a:focus-visible, button:focus-visible, input:focus-visible{ outline:2px solid var(--orange); outline-offset:2px; }
+
+@media (max-width:380px){
+  .hero{ padding:32px 22px 22px; }
+  .section{ padding:22px 22px; }
+  h1{ font-size:25px; }
+}
+</style>
+</head>
+<body>
+<div class="glitter-field" id="glitterField" aria-hidden="true"></div>
+<div class="sparkle-deco" aria-hidden="true" style="top:-8px; left:60%;">&#10024;</div>
+<div class="sparkle-deco" aria-hidden="true" style="bottom:10px; right:6px; animation-duration:11s;">&#10022;</div>
+
+<div class="card">
+
+  <div class="hero">
+    <div class="kicker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2L13.8 9.2L21 11L13.8 12.8L12 20L10.2 12.8L3 11L10.2 9.2Z"/></svg>Petra Tanner &middot; MONAT Markenpartnerin</div>
+    <h1>Fettige Kopfhaut?<br><span class="accent">Das steckt wirklich dahinter.</span></h1>
+    <p class="sub">Schnelles Nachfetten ist meist ein Kopfhaut-Thema &mdash; kein Haarproblem. Hier erf&auml;hrst du, woran es liegt und was wirklich hilft.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><span class="section-rule"></span><span class="section-title">Was deine Kopfhaut aus dem Gleichgewicht bringt</span></div>
+    <div class="reason-grid">
+        <div class="reason-chip rev">
+          <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11A8 8 0 006.3 6.3L4 8.6"/><path d="M4 4v4.6h4.6"/><path d="M4 13a8 8 0 0013.7 4.7L20 15.4"/><path d="M20 20v-4.6h-4.6"/></svg></span>
+          <div class="reason-txt"><span class="reason-title">Hormonelle Schwankungen</span><span class="reason-sub">Zyklus, Schwangerschaft, Pubertät</span></div>
+        </div>
+        <div class="reason-chip rev">
+          <span class="reason-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span>
+          <div class="reason-txt"><span class="reason-title">Stress &amp; Cortisol</span><span class="reason-sub">Erh&ouml;hter Cortisolspiegel kurbelt die Talgproduktion an</span></div>
+        </div>
+        <div class="reason-chip rev">
+          <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l1.5-5h9L18 9"/><rect x="4" y="9" width="16" height="12" rx="2"/><path d="M9 13v4M12 13v4M15 13v4"/></svg></span>
+          <div class="reason-txt"><span class="reason-title">Zu h&auml;ufiges Waschen</span><span class="reason-sub">Die Kopfhaut produziert als Ausgleich noch mehr Fett</span></div>
+        </div>
+        <div class="reason-chip rev">
+          <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.3"/><path d="M5 6v5.5c0 1.3 3.1 2.3 7 2.3s7-1 7-2.3V6"/><path d="M5 11.5V17c0 1.3 3.1 2.3 7 2.3s7-1 7-2.3v-5.5"/></svg></span>
+          <div class="reason-txt"><span class="reason-title">Falsche Produkte</span><span class="reason-sub">Ablagerungen durch zu reichhaltige oder falsche Pflege</span></div>
+        </div>
+        <div class="reason-chip rev">
+          <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.3s6.2 7.3 6.2 12A6.2 6.2 0 015.8 14.3C5.8 9.6 12 2.3 12 2.3z"/><circle cx="12" cy="14.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.3" cy="12" r="0.8" fill="currentColor" stroke="none"/></svg></span>
+          <div class="reason-txt"><span class="reason-title">Kalkhaltiges Wasser</span><span class="reason-sub">Erschwert die gr&uuml;ndliche Reinigung der Kopfhaut</span></div>
+        </div>
+        <div class="reason-chip rev">
+          <span class="reason-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c9 1 14-4 14-14-10 0-14 5-14 14z"/><path d="M5 19c3-5 6-8 11-11"/></svg></span>
+          <div class="reason-txt"><span class="reason-title">Wenig Omega-3</span><span class="reason-sub">Zu wenig in der t&auml;glichen Ern&auml;hrung</span></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><span class="section-rule"></span><span class="section-title">Deine 4-Schritte-Routine</span></div>
+    <div class="routine-timeline">
+        <div class="step rev">
+          <div class="step-rail">
+            <span class="step-num">01</span>
+          </div>
+          <div class="step-card">
+            <div class="step-head">
+              <span class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="1.1" fill="currentColor" stroke="none"/><circle cx="16" cy="6.5" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="13" r="1.1" fill="currentColor" stroke="none"/><circle cx="17.5" cy="15.5" r="1" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r="0.9" fill="currentColor" stroke="none"/><path d="M4 20c4-1 12-1 16 0"/></svg></span>
+              <span class="step-name">Scalp Purifying Scrub</span>
+            </div>
+            <p class="step-benefit">Der erste Schritt f&uuml;r eine ausgeglichene Kopfhaut &mdash; l&ouml;st Ablagerungen und bereitet die Kopfhaut auf die weitere Pflege vor.</p>
+            <div class="step-when">1&ndash;2&times; w&ouml;chentlich, vor der Haarw&auml;sche.</div>
+            <a class="step-link" href="https://swiss.mymonat.com/shop/products?keywords=Scalp%20Purifying%20Scrub" target="_blank" rel="noopener">Produkt ansehen &rarr;</a>
+          </div>
+        </div>
+        <div class="step rev">
+          <div class="step-rail">
+            <span class="step-num">02</span>
+          </div>
+          <div class="step-card">
+            <div class="step-head">
+              <span class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v3.3l2.2 2.2V21a1 1 0 01-1 1H8.8a1 1 0 01-1-1V7.5L10 5.3V2z"/><path d="M8.8 11.5h6.4"/></svg></span>
+              <span class="step-name">IR CLINICAL&trade; Verdickendes Shampoo</span>
+            </div>
+            <p class="step-benefit">Als mildes Basis-Shampoo verwenden &mdash; reinigt sanft und bereitet die Kopfhaut auf die Pflege danach vor.</p>
+            <div class="step-when">Bei jeder Haarw&auml;sche.</div>
+            <a class="step-link" href="https://swiss.mymonat.com/shop/products?keywords=IR%20CLINICAL%20Verdickendes%20Shampoo" target="_blank" rel="noopener">Produkt ansehen &rarr;</a>
+          </div>
+        </div>
+        <div class="step rev">
+          <div class="step-rail">
+            <span class="step-num">03</span>
+          </div>
+          <div class="step-card">
+            <div class="step-head">
+              <span class="step-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2h5v3l2 2.3V21a1 1 0 01-1 1H8.5a1 1 0 01-1-1V7.3l2-2.3V2z"/><path d="M8.5 14.5c1.2.8 2.2.8 3.5 0s2.3-.8 3.5 0"/></svg></span>
+              <span class="step-name">IR CLINICAL&trade; Verdickende Sp&uuml;lung</span>
+            </div>
+            <p class="step-benefit">Nach dem Shampoo in die L&auml;ngen einarbeiten &mdash; pflegt, ohne die Kopfhaut zu beschweren.</p>
+            <div class="step-when">Nach jedem Shampoo, kurz einwirken lassen und ausp&uuml;len.</div>
+            <a class="step-link" href="https://swiss.mymonat.com/shop/products?keywords=IR%20CLINICAL%20Verdickende%20Spuelung" target="_blank" rel="noopener">Produkt ansehen &rarr;</a>
+          </div>
+        </div>
+        <div class="step rev">
+          <div class="step-rail step-last">
+            <span class="step-num">04</span>
+          </div>
+          <div class="step-card">
+            <div class="step-head">
+              <span class="step-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.3s6.2 7.3 6.2 12A6.2 6.2 0 015.8 14.3C5.8 9.6 12 2.3 12 2.3z"/></svg></span>
+              <span class="step-name">IR CLINICAL&trade; Kopfhautserum</span>
+            </div>
+            <p class="step-benefit">Mit Melatonin, Koffein und CAPIXYL&reg; &mdash; unterst&uuml;tzt ein kr&auml;ftigeres, ausgeglicheneres Kopfhautgef&uuml;hl.</p>
+            <div class="step-when">T&auml;glich 2&ndash;3 Pipetten auf die Kopfhaut einmassieren. Am besten in Kombination mit dem IR CLINICAL&trade; Shampoo.</div>
+            <a class="step-link" href="https://swiss.mymonat.com/shop/products?keywords=IR%20CLINICAL%20Kopfhautserum" target="_blank" rel="noopener">Produkt ansehen &rarr;</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <a class="vip-btn-primary rev" id="vipBtn" href="https://mymonat.com/enrollments/16024678-1791351745/share?utm_source=website&amp;utm_medium=link&amp;utm_campaign=pre_package_cart" target="_blank" rel="noopener" onclick="track('vip_click', { result: 'kopfhaut' })">Jetzt deine 4-Schritte-Routine bestellen</a>
+    <div class="vip-redirect-note">Du wirst zum offiziellen MONAT-Shop weitergeleitet.</div>
+    <a class="vip-btn-secondary" id="shopBtn" href="https://swiss.mymonat.com" target="_blank" rel="noopener" onclick="track('shop_click', {})">Weitere Produkte ansehen</a>
+
+    <div class="ask-box">Unsicher, was zu dir passt?</div>
+    <a class="cta-btn" id="ctaBtn" style="display:block; text-decoration:none; text-align:center; margin-bottom:20px;" href="https://wa.me/41787189109?text=Hallo%20Petra%2C%20ich%20habe%20Fragen%20zu%20fettiger%20Kopfhaut%20und%20den%20passenden%20MONAT-Produkten." target="_blank" rel="noopener" onclick="track('contact_click', { method: 'whatsapp' })">Frage an Petra stellen</a>
+
+    <div class="email-box">
+      <div class="email-heading">M&ouml;chtest du eine pers&ouml;nliche Einsch&auml;tzung?</div>
+      <div class="email-sub">Mit dem Button &ouml;ffnet sich dein E-Mail-Programm mit einer vorbereiteten Nachricht an Petra Tanner. Deine Adresse wird auf dieser Seite nicht gespeichert.</div>
+      <input type="email" id="emailInput" placeholder="Deine E-Mail-Adresse (optional, nur f&uuml;r den Betreff)">
+      <a class="cta-btn" id="emailBtn" style="display:block; text-decoration:none; text-align:center;" target="_blank" onclick="track('contact_click', { method: 'email' })">E-Mail vorbereiten</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><span class="section-rule"></span><span class="section-title">Warum MONAT</span></div>
+    <p class="trust-lead">98% nat&uuml;rliche Inhaltsstoffe, vegan, biologisch abbaubar und dermatologisch getestet. Frei von:</p>
+    <div class="trust-chips">
+          <span class="trust-chip">Sulfate (SLS, SLES)</span>
+          <span class="trust-chip">Parabene</span>
+          <span class="trust-chip">Silikone</span>
+          <span class="trust-chip">Phthalate</span>
+          <span class="trust-chip">PEG</span>
+          <span class="trust-chip">Mineral&ouml;l</span>
+          <span class="trust-chip">Formaldehyd</span>
+          <span class="trust-chip">Tierversuche</span>
+    </div>
+    <div class="trust-note">Leaping Bunny zertifiziert &mdash; nicht an Tieren getestet.</div>
+  </div>
+
+  <div class="section">
+    <div class="disclaimer-box">Diese Informationen ersetzen keine individuelle Beratung. Hautreaktionen k&ouml;nnen unterschiedlich ausfallen &mdash; teste neue Produkte zun&auml;chst an einer kleinen Stelle.</div>
+    <div class="disclaimer-box">Kauf und Zahlungsabwicklung erfolgen ausschlie&szlig;lich &uuml;ber die offizielle MONAT-Webseite. Preise, Verf&uuml;gbarkeit und VIP-Bedingungen werden dort aktuell angezeigt.</div>
+
+    <div class="contact-row">
+      <a class="contact-link" href="mailto:Info.safetothrive@gmail.com" onclick="track('contact_click', { method: 'email' })">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg>
+        Info.safetothrive@gmail.com
+      </a>
+      <a class="contact-link" href="tel:+41787189109" onclick="track('contact_click', { method: 'phone' })">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg>
+        078 718 91 09
+      </a>
+      <a class="contact-link" href="https://www.instagram.com/petra.safetothrive/" target="_blank" rel="noopener" onclick="track('contact_click', { method: 'instagram' })">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+        @petra.safetothrive
+      </a>
+    </div>
+
+    <div class="footer-legal">
+      <div class="partner-line">Petra Tanner | Unabh&auml;ngige MONAT Markenpartnerin</div>
+      <div class="disclaimer-line">Diese Seite dient der allgemeinen Orientierung zur Kopfhautpflege und ersetzt keine medizinische Beratung oder Diagnose.</div>
+    </div>
+  </div>
+
+</div>
+<div class="confetti-host" id="confettiHost" style="position:fixed; top:40%; left:50%; width:0; height:0; z-index:60;" aria-hidden="true"></div>
+
+<script>
+(function(){
+"use strict";
+window.dataLayer = window.dataLayer || [];
+function track(eventName, data){
+  data = data || {};
+  try{ window.dataLayer.push(Object.assign({event: eventName}, data)); }catch(e){}
+}
+window.track = track;
+
+function fireConfetti(){
+  var host = document.getElementById('confettiHost');
+  host.innerHTML = '';
+  var colors = ['#f0883d', '#b23a63', '#7cb66b', '#d9691f'];
+  for (var i = 0; i < 22; i++) {
+    var p = document.createElement('div');
+    p.className = 'confetti-piece';
+    var angle = Math.random() * Math.PI * 2;
+    var dist = 50 + Math.random() * 70;
+    p.style.setProperty('--tx', Math.cos(angle) * dist + 'px');
+    p.style.setProperty('--ty', Math.sin(angle) * dist + 'px');
+    p.style.setProperty('--rot', (Math.random() * 360) + 'deg');
+    p.style.background = colors[i % colors.length];
+    p.style.animationDelay = (Math.random() * 0.15) + 's';
+    host.appendChild(p);
+  }
+  setTimeout(function(){ host.innerHTML = ''; }, 1200);
+}
+
+function placeGlitter(){
+  var field = document.getElementById('glitterField');
+  if (!field || field.children.length) return;
+  for (var i = 0; i < 14; i++) {
+    var g = document.createElement('div');
+    g.className = 'glit';
+    var size = 2 + Math.random() * 3;
+    g.style.width = size + 'px';
+    g.style.height = size + 'px';
+    g.style.left = (Math.random() * 100) + 'vw';
+    g.style.top = (Math.random() * 100) + 'vh';
+    g.style.animationDuration = (2.5 + Math.random() * 3) + 's';
+    g.style.animationDelay = (Math.random() * 2) + 's';
+    field.appendChild(g);
+  }
+}
+placeGlitter();
+
+var emailBtn = document.getElementById('emailBtn');
+var emailInput = document.getElementById('emailInput');
+function buildEmailHref(){
+  var addr = (emailInput.value || '').trim();
+  var body = "Hallo Petra,\n\nich habe Fragen zu fettiger Kopfhaut und den passenden MONAT-Produkten." + (addr ? " Bitte antworte mir an " + addr + "." : "") + "\n\nDanke!";
+  emailBtn.href = "mailto:Info.safetothrive@gmail.com?subject=" + encodeURIComponent("Frage zu fettiger Kopfhaut") + "&body=" + encodeURIComponent(body);
+}
+buildEmailHref();
+emailInput.oninput = buildEmailHref;
+
+if ('IntersectionObserver' in window) {
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.rev').forEach(function(el){ obs.observe(el); });
+} else {
+  document.querySelectorAll('.rev').forEach(function(el){ el.classList.add('vis'); });
+}
+
+track('page_view', {page: 'kopfhaut-funnel'});
+setTimeout(fireConfetti, 500);
+})();
+</script>
+</body>
+</html>
