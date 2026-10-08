@@ -1,4 +1,4 @@
-<title>Welche Ja-Sagerin bist du?</title>
+<title>Welcher Ja-Sager-Typ bist du?</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap">
 <style>
 /* Layout: eine schmale Karte, eine Frage pro Bildschirm, Ergebnis als Beeren-Karte */
@@ -77,34 +77,34 @@ const KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
 const INSTA='https://www.instagram.com/petratanner.autorin/';
 
 const TYPES={
- K:{name:'Die Kümmerin',short:'sieht alle, nur nicht sich',
-    text:'Du merkst, was andere brauchen, bevor sie es aussprechen. Du bist der Mensch, bei dem alle landen. Nur wer fragt eigentlich dich?',
+ K:{name:'Typ Fürsorge',short:'sieht alle, nur nicht sich',
+    text:'Du merkst, was andere brauchen, bevor sie es aussprechen. Bei dir landen alle. Nur wer fragt eigentlich dich?',
     pattern:'Du sagst Ja, weil du dich verantwortlich fühlst. Deine eigenen Bedürfnisse kommen erst, wenn alle versorgt sind. Und das ist nie.',
     satz:'Bevor ich frage „Was brauchen die anderen?“, frage ich zuerst: „Was brauche ich?“',
     step:'Stell dir diese Woche jeden Morgen eine Frage: „Was brauche ich heute?“ Schreib die Antwort auf, bevor du aufs Handy schaust.'},
- H:{name:'Die Friedensstifterin',short:'hält alle zusammen',
-    text:'Du spürst jede Spannung im Raum und gleichst sie aus. Mit dir gibt es keinen Streit. Dafür schluckst du vieles herunter.',
+ H:{name:'Typ Harmonie',short:'hält alle zusammen',
+    text:'Du spürst jede Spannung im Raum und gleichst sie aus. Mit dir gibt es selten Streit. Dafür schluckst du vieles herunter.',
     pattern:'Du sagst Ja, weil ein Nein Ärger bedeuten könnte. Lieber trägst du die Last, als jemanden zu enttäuschen.',
     satz:'Ein Nein zu anderen ist manchmal ein Ja zu mir.',
     step:'Sag diese Woche einmal: „Ich schaue in meinen Kalender und sage dir morgen Bescheid.“ Damit stoppst du das automatische Ja.'},
- S:{name:'Die Starke',short:'schafft einfach alles',
+ S:{name:'Typ Stärke',short:'schafft einfach alles',
     text:'Auf dich ist Verlass. Du funktionierst, auch wenn du längst nicht mehr kannst. Schwäche zeigen fühlt sich für dich fremd an.',
     pattern:'Du sagst Ja, weil du es eben kannst. Dein Wert hängt für dich daran, was du leistest. Müdigkeit übergehst du.',
     satz:'Ich bin nicht nur so viel wert, wie ich leiste. Ich bin wertvoll, einfach so.',
     step:'Plane diese Woche 30 Minuten ein, in denen du nichts leistest. Kein Haushalt, kein Handy, nichts erledigen.'},
- G:{name:'Die Pflichtbewusste',short:'trägt das schlechte Gewissen',
+ G:{name:'Typ Pflicht',short:'trägt das schlechte Gewissen',
     text:'Du nimmst alles ernst, besonders deine Pflichten. Selbst wenn du dir eine Pause gönnst, sitzt das schlechte Gewissen mit am Tisch.',
     pattern:'Du sagst Ja, weil ein Nein sich wie ein Fehler anfühlt. Danach grübelst du lange, ob du genug getan hast.',
     satz:'Mein schlechtes Gewissen ist kein Beweis, dass ich etwas falsch mache. Es zeigt nur, dass ich etwas Neues lerne.',
     step:'Wenn sich diese Woche das schlechte Gewissen meldet, sag innerlich: „Danke, ich hab dich gehört.“ Und bleib bei deiner Entscheidung.'}
 };
 const Q=[
- ['Eine Kollegin fragt, ob du noch ihr Projekt übernimmst. Dein erster Gedanke?',
-  {K:'„Sie hat so viel um die Ohren, ich helfe ihr.“',H:'„Wenn ich Nein sage, ist sie bestimmt sauer.“',S:'„Ich schaffe das schon irgendwie.“',G:'„Ich würde mich schlecht fühlen, wenn ich ablehne.“'}],
+ ['Jemand aus deinem Team fragt, ob du noch ein Projekt übernimmst. Dein erster Gedanke?',
+  {K:'„Die Person hat so viel um die Ohren, ich helfe.“',H:'„Wenn ich Nein sage, gibt es bestimmt Ärger.“',S:'„Ich schaffe das schon irgendwie.“',G:'„Ich würde mich schlecht fühlen, wenn ich ablehne.“'}],
  ['Du hast einen freien Samstagnachmittag. Was passiert meistens?',
   {K:'Er geht für das drauf, was andere gerade brauchen.',H:'Ich sage zu dem Ja, was andere vorschlagen.',S:'Ich erledige, was liegen geblieben ist.',G:'Ich ruhe mich aus, aber mit schlechtem Gewissen.'}],
  ['Was sagen andere am ehesten über dich?',
-  {K:'„Sie ist immer für alle da.“',H:'„Mit ihr gibt es nie Streit.“',S:'„Auf sie ist Verlass, sie schafft alles.“',G:'„Sie nimmt alles sehr ernst.“'}],
+  {K:'„Du bist immer für alle da.“',H:'„Mit dir gibt es nie Streit.“',S:'„Auf dich ist Verlass, du schaffst alles.“',G:'„Du nimmst alles sehr ernst.“'}],
  ['Wenn du doch einmal Nein sagst …',
   {K:'… frage ich mich danach, ob der andere zurechtkommt.',H:'… erkläre ich es lange und entschuldige mich mehrmals.',S:'… kommt selten vor. Ich mache es lieber selbst.',G:'… grüble ich noch stundenlang darüber nach.'}],
  ['Was erschöpft dich am meisten?',
@@ -123,7 +123,7 @@ const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
 
 function start(){
  app.innerHTML=`<section class="fade">
-  <h1>Welche <i>Ja-Sagerin</i> bist du?</h1>
+  <h1>Welcher <i>Ja-Sager-Typ</i> bist&nbsp;du?</h1>
   <p class="lead">Du sagst Ja, obwohl du Nein meinst? Finde in 8 Fragen heraus, warum. Und was dir hilft, endlich auch auf deiner eigenen Liste zu stehen.</p>
   <button class="btn" id="go">Test starten →</button>
   <div class="meta"><span>8 Fragen</span><span>ca. 2 Minuten</span><span>kostenlos, ohne Anmeldung</span></div>
@@ -155,7 +155,7 @@ function result(){
    <div class="k">Dein Ergebnis</div>
    <h2>${t.name}</h2>
    <p>${t.text}</p>
-   <div class="bars">${sorted.map(k=>`<div class="bar"><span>${TYPES[k].name.replace('Die ','')}</span><span class="t"><i style="width:${Math.round(c[k]/Q.length*100)}%"></i></span><b>${Math.round(c[k]/Q.length*100)}%</b></div>`).join('')}</div>
+   <div class="bars">${sorted.map(k=>`<div class="bar"><span>${TYPES[k].name.replace('Typ ','')}</span><span class="t"><i style="width:${Math.round(c[k]/Q.length*100)}%"></i></span><b>${Math.round(c[k]/Q.length*100)}%</b></div>`).join('')}</div>
   </div>
   <div class="sec">
    <div class="box"><div class="k">Dein Muster</div><p style="margin:0">${t.pattern}</p></div>
@@ -169,7 +169,7 @@ function result(){
    </div>
    <div class="box"><div class="k">Wenn du tiefer gehen willst</div>
     <h3 style="font-size:24px;line-height:1.15;margin:4px 0 6px">„Ich stand nie auf meiner eigenen Liste“</h3>
-    <p style="margin:0">Mein Buch für Frauen, die an alle denken, nur nicht an sich: 30+ kurze Kapitel, Übungen, ein Schritt pro Woche und Satzhilfen für Momente, in denen du sonst automatisch Ja sagst.</p>
+    <p style="margin:0">Mein Buch für alle, die an alle denken, nur nicht an sich: 30+ kurze Kapitel, Übungen, ein Schritt pro Woche und Satzhilfen für Momente, in denen du sonst automatisch Ja sagst.</p>
     <div class="cta"><a class="btn" href="${TB_CART}">Taschenbuch bestellen · 12,99 €</a><a class="btn ghost" href="${KINDLE}">Kindle sofort lesen · 7,99 €</a></div>
    </div>
   </div>
@@ -178,7 +178,7 @@ function result(){
  </section>`;
  document.getElementById('again').onclick=start;
  document.getElementById('share').onclick=async()=>{
-  const txt=`Ich bin „${t.name}“ 🤍 Welche Ja-Sagerin bist du? Mach den Test bei @petratanner.autorin`;
+  const txt=`Ich bin „${t.name}“ 🤍 Welcher Ja-Sager-Typ bist du? Mach den Test bei @petratanner.autorin`;
   const m=document.getElementById('msg');
   try{await navigator.clipboard.writeText(txt);m.textContent='Kopiert. Füg es in deine Story oder eine Nachricht ein.'}
   catch(e){m.textContent=txt}
