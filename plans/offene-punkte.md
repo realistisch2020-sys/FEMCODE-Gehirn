@@ -20,6 +20,7 @@
 
 ## Demnächst
 
+- PDF fertigstellen: Amazon-Autorenlink, E-Mail, Instagram-Name in `outputs/2026-10-08-funnel-liste/pdf-generator.js` eintragen (Petra liefert)
 - Funnel „LISTE“ starten (Petra): Tentary-Gratisprodukt, ManyChat-Stichwort, Reel posten → `outputs/2026-10-08-funnel-liste/funnel.md`. Nach 7 Tagen Zahlen auswerten.
 
 - 7-Tage-Lerntest Ads (vorläufig: Budgets 15 €/Tag, max. 85 € tatsächliche Ausgaben), erst nach Freigabe

@@ -27,7 +27,7 @@ Du denkst an alle. Nur nicht an dich? 🤍
 
 Diese 9 Sätze sind für die Tage, an denen du vergisst, dass du auch zählst.
 
-👉 Kommentiere **LISTE** und ich schicke dir alle 9 Sätze als PDF, mit einer kleinen Übung für diese Woche.
+👉 Kommentiere **LISTE** und ich schicke dir alle 9 Sätze als PDF, plus fertige Sätze, mit denen du Nein sagst, ohne dich zu rechtfertigen.
 
 #selbstfürsorge #neinsagen #grenzensetzen #peoplepleasing #selbstwert #mentalload #schlechtesgewissen #affirmationen #selbstliebe
 
@@ -38,7 +38,7 @@ Ist unterwegs zu dir 🤍 Schau in deine Nachrichten.
 ### DM 1 (sofort)
 
 Hey, schön, dass du da bist 🤍
-Hier sind deine 9 Sätze, mit einer Frage zu jedem Satz und der Übung „Meine eigene Liste“:
+Hier sind deine 9 Sätze, mit einer Frage zu jedem Satz, Satzhilfen zum Neinsagen ohne Rechtfertigung und der Übung „Meine eigene Liste“:
 👉 [Tentary-Link]
 
 Mein Tipp: Nimm dir nur einen Satz pro Tag. Welcher trifft dich gerade am meisten?
