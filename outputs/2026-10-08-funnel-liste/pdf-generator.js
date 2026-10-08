@@ -1,97 +1,141 @@
+// Gratis-PDF „9 Sätze für dich“ – Design: modern, Beerentöne
+// Neu erzeugen: NODE_PATH=$(npm root -g) node pdf-generator.js <ziel.pdf>
 const {chromium}=require('playwright');
 // ===== HIER EINTRAGEN =====
 const NAME='Petra Tanner';
 const AUTORLINK='https://www.amazon.de/s?k=Petra+Tanner&i=stripbooks';
 const EMAIL='info.safetothrive@gmail.com';
 const INSTA='@petratanner.autorin';
+const TB='https://www.amazon.de/dp/B0HGT4PX8H', KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
 // ==========================
-const H=[
-['Kollegin: „Kannst du das noch schnell übernehmen?“','„Heute schaffe ich das nicht. Morgen ab 10 Uhr schaue ich es mir gern an.“'],
-['Familie: „Du kommst doch am Sonntag?“','„Dieses Wochenende bleibe ich zu Hause. Ich brauche Ruhe.“'],
-['Freundin: „Hilfst du mir beim Umzug?“','„Diesmal nicht. Ich drücke dir die Daumen, dass alles gut klappt.“'],
-['Partner: „Machst du das eben?“','„Ich mache heute schon das Abendessen. Übernimmst du das?“'],
-['Kinder: „Mama, kannst du mal …?“','„Ich trinke gerade meinen Kaffee. In zehn Minuten bin ich für dich da.“'],
-['Schule / Verein: „Wir suchen noch jemanden für …“','„Danke, dass ihr an mich denkt. Dieses Mal sage ich ab.“'],
-];
 const S=[
-['Ich muss mir Ruhe nicht erst <em>verdienen.</em> Ich darf sie mir einfach nehmen.','Wann hast du dir zuletzt Ruhe erlaubt, ohne sie vorher „abzuarbeiten“?'],
-['Ein <em>Nein</em> zu anderen ist manchmal ein Ja zu mir.','Zu welcher Bitte möchtest du diese Woche Nein sagen?'],
-['Ich bin nicht verantwortlich für die Gefühle aller anderen. Ich bin verantwortlich für <em>meine.</em>','Wessen Enttäuschung versuchst du gerade zu verhindern – und was kostet dich das?'],
-['Bevor ich frage „Was brauchen die anderen?“, frage ich zuerst: „Was brauche <em>ich?</em>“','Was brauchst du heute? Ein Satz reicht.'],
-['Mein schlechtes Gewissen ist kein Beweis, dass ich etwas falsch mache. Es zeigt nur, dass ich etwas <em>Neues lerne.</em>','Wann hattest du zuletzt ein schlechtes Gewissen, obwohl du nichts Falsches getan hast?'],
-['Ich höre auf, mich <em>klein</em> zu machen, nur damit es für alle anderen bequem bleibt.','Wo machst du dich klein, damit es für andere leichter ist?'],
-['Ich bin nicht nur so viel wert, wie ich leiste. Ich bin <em>wertvoll, einfach so.</em>','Was magst du an dir, das nichts mit Leistung zu tun hat?'],
-['Müde sein ist keine Schwäche. Es ist mein Körper, der sagt: <em>Jetzt bin ich dran.</em>','Was will dir deine Müdigkeit gerade sagen?'],
-['Ab heute stehe ich auch auf meiner eigenen Liste. Nicht ganz unten. <em>Ganz oben.</em>','Was kommt diese Woche ganz oben auf deine Liste?'],
+['Ich muss mir Ruhe nicht erst verdienen.','Ich darf sie mir einfach nehmen.','Wann hast du dir zuletzt Ruhe erlaubt, ohne sie vorher „abzuarbeiten“?'],
+['Ein Nein zu anderen','ist manchmal ein Ja zu mir.','Zu welcher Bitte möchtest du diese Woche Nein sagen?'],
+['Ich bin nicht verantwortlich für die Gefühle aller anderen.','Ich bin verantwortlich für meine.','Wessen Enttäuschung versuchst du gerade zu verhindern – und was kostet dich das?'],
+['Bevor ich frage „Was brauchen die anderen?“,','frage ich zuerst: „Was brauche ich?“','Was brauchst du heute? Ein Satz reicht.'],
+['Mein schlechtes Gewissen ist kein Beweis, dass ich etwas falsch mache.','Es zeigt nur, dass ich etwas Neues lerne.','Wann hattest du zuletzt ein schlechtes Gewissen, obwohl du nichts Falsches getan hast?'],
+['Ich höre auf, mich klein zu machen,','nur damit es für alle anderen bequem bleibt.','Wo machst du dich klein, damit es für andere leichter ist?'],
+['Ich bin nicht nur so viel wert, wie ich leiste.','Ich bin wertvoll, einfach so.','Was magst du an dir, das nichts mit Leistung zu tun hat?'],
+['Müde sein ist keine Schwäche.','Es ist mein Körper, der sagt: Jetzt bin ich dran.','Was will dir deine Müdigkeit gerade sagen?'],
+['Ab heute stehe ich auch auf meiner eigenen Liste.','Nicht ganz unten. Ganz oben.','Was kommt diese Woche ganz oben auf deine Liste?'],
 ];
-const card=(s,i)=>`<div class="c"><div class="no">${i+1}</div><p class="q">${s[0]}</p><p class="f"><b>Frag dich:</b> ${s[1]}</p><div class="l"></div><div class="l"></div></div>`;
-const html=`<!doctype html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Great+Vibes&display=swap" rel="stylesheet"><style>
+const H=[
+['Kollegin','„Kannst du das noch schnell übernehmen?“','„Heute schaffe ich das nicht. Morgen ab 10 Uhr schaue ich es mir gern an.“'],
+['Familie','„Du kommst doch am Sonntag?“','„Dieses Wochenende bleibe ich zu Hause. Ich brauche Ruhe.“'],
+['Freundin','„Hilfst du mir beim Umzug?“','„Diesmal nicht. Ich drücke dir die Daumen, dass alles gut klappt.“'],
+['Partner','„Machst du das eben?“','„Ich mache heute schon das Abendessen. Übernimmst du das?“'],
+['Kinder','„Mama, kannst du mal …?“','„Ich trinke gerade meinen Kaffee. In zehn Minuten bin ich für dich da.“'],
+['Schule / Verein','„Wir suchen noch jemanden für …“','„Danke, dass ihr an mich denkt. Dieses Mal sage ich ab.“'],
+];
+const foot=n=>`<div class="foot"><span>9 Sätze für dich</span><span>${NAME} · ${INSTA}</span><span>${String(n).padStart(2,'0')}</span></div>`;
+const card=(s,i)=>`<div class="card"><div class="num">${String(i+1).padStart(2,'0')}</div><div class="cb"><p class="q">${s[0]} <b>${s[1]}</b></p><p class="ask"><span class="tag">Frag dich</span>${s[2]}</p><div class="ln"></div><div class="ln"></div><div class="ln"></div></div></div>`;
+const html=`<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"><style>
+:root{--berry:#6B1D46;--rasp:#B8326A;--blush:#F6E3EB;--cream:#FFF9F6;--ink:#2A1420;--muted:#7A5A68}
 @page{size:A4;margin:0}
-body{margin:0;font-family:'Cormorant Garamond',serif;color:#2b2118}
-.p{width:210mm;height:297mm;box-sizing:border-box;padding:22mm 22mm;page-break-after:always;position:relative;background:linear-gradient(160deg,#fbf5ea,#f3e6cd)}
+body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink)}
+.p{width:210mm;height:297mm;box-sizing:border-box;padding:20mm 20mm 24mm;page-break-after:always;position:relative;background:var(--cream);overflow:hidden}
 .p:last-child{page-break-after:auto}
-.cover{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:radial-gradient(ellipse at 70% 30%,#fbf3e4,#f1e2c6 55%,#e2c99d)}
-h1{font-size:64pt;font-weight:500;margin:0;line-height:1}
-.sc{font-family:'Great Vibes',cursive;color:#a8782c;font-weight:400}
-.sub{font-size:20pt;margin-top:10mm;line-height:1.3}
-.by{position:absolute;bottom:22mm;font-size:13pt;letter-spacing:5px;text-transform:uppercase;color:#8a6a3a}
-.d{color:#a8782c;font-size:22pt;margin:8mm 0}
-h2{font-size:30pt;font-weight:500;margin:0 0 6mm}
-p,li{font-size:14.5pt;line-height:1.5}
-em{color:#a8782c;font-style:italic;font-weight:600}
-.c{border-top:1px solid #c9a46a;padding:6mm 0 4mm;position:relative}
-.no{position:absolute;left:0;top:5mm;font-family:'Great Vibes';font-size:34pt;color:#a8782c}
-.q{font-size:19pt;line-height:1.3;margin:0 0 3mm 16mm}
-.f{margin:0 0 2mm 16mm;font-size:13.5pt;color:#5a4630}
-.l{margin-left:16mm;border-bottom:1px dotted #b8955a;height:9mm}
-.box{border:1.5px solid #c9a46a;border-radius:4mm;padding:4mm 6mm;margin-top:6mm;background:rgba(255,255,255,.4)}
-.big{border-bottom:1px dotted #b8955a;height:12mm}
-a{color:#a8782c}
-.foot{position:absolute;bottom:12mm;left:22mm;right:22mm;text-align:center;font-size:10pt;color:#8a6a3a}
+h1,h2,.q,.serif{font-family:'Fraunces',serif}
+.eyebrow{font-size:9.5pt;letter-spacing:3px;text-transform:uppercase;color:var(--rasp);font-weight:700;margin-bottom:4mm}
+h2{font-size:30pt;font-weight:400;line-height:1.08;margin:0 0 7mm;color:var(--berry)}
+h2 i{color:var(--rasp)}
+p,li{font-size:11.5pt;line-height:1.6}
+.cover{background:var(--berry);color:#fff;padding:0}
+.cover .blob{position:absolute;border-radius:50%}
+.cover .b1{width:150mm;height:150mm;right:-45mm;top:-40mm;background:var(--rasp);opacity:.9}
+.cover .b2{width:90mm;height:90mm;left:-30mm;bottom:30mm;background:#8E2A5C}
+.cover .in{position:absolute;left:20mm;right:20mm;bottom:38mm}
+.cover h1{font-size:76pt;font-weight:400;line-height:.95;margin:0}
+.cover h1 i{color:var(--blush)}
+.cover .sub{font-size:15pt;margin-top:8mm;line-height:1.45;max-width:130mm;opacity:.95}
+.cover .pill{display:inline-block;border:1.5px solid rgba(255,255,255,.7);border-radius:30px;padding:2mm 6mm;font-size:9.5pt;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10mm}
+.cover .by{position:absolute;left:20mm;bottom:16mm;font-size:10pt;letter-spacing:3px;text-transform:uppercase;opacity:.85}
+.panel{background:var(--blush);border-radius:6mm;padding:7mm 8mm;margin-top:7mm}
+.panel ol{margin:2mm 0 0;padding-left:6mm}.panel li{margin-bottom:2mm}
+.card{display:flex;gap:6mm;padding:9mm 0;border-top:1.5px solid var(--blush)}
+.card:first-of-type{border-top:none}
+.num{font-family:'Fraunces';font-size:34pt;color:var(--rasp);line-height:.9;width:18mm;flex:none}
+.q{font-size:20pt;line-height:1.3;margin:0 0 4mm;font-weight:400}
+.q b{font-weight:600;color:var(--berry);font-style:italic}
+.ask{font-size:11.5pt;margin:0;color:var(--muted)}
+.tag{display:inline-block;background:var(--berry);color:#fff;border-radius:20px;padding:.5mm 3mm;font-size:8pt;letter-spacing:1.5px;text-transform:uppercase;margin-right:2.5mm;font-weight:700;vertical-align:1px}
+.ln{border-bottom:1.5px dashed #E2B9CA;height:10mm}
+.ln2{border-bottom:1.5px dashed #E2B9CA;height:11mm}
+.key{background:var(--berry);color:#fff;border-radius:6mm;padding:7mm 8mm;margin:2mm 0 6mm}
+.key .serif{font-size:18pt;line-height:1.3;margin:2mm 0}
+.key small{opacity:.8;font-size:9.5pt}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.h{background:#fff;border:1.5px solid var(--blush);border-radius:4mm;padding:4mm 5mm}
+.h .who{font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--rasp);font-weight:700}
+.h .ask2{font-size:10pt;color:var(--muted);margin:1.5mm 0}
+.h .ans{font-family:'Fraunces';font-size:12.5pt;line-height:1.35;color:var(--berry)}
+ul.x{list-style:none;padding:0}ul.x li{padding-left:7mm;position:relative;margin-bottom:2mm}ul.x li:before{content:"×";position:absolute;left:0;color:var(--rasp);font-weight:700}
+ul.c{list-style:none;padding:0}ul.c li{padding-left:7mm;position:relative;margin-bottom:2mm}ul.c li:before{content:"✓";position:absolute;left:0;color:var(--rasp);font-weight:700}
+.book{background:var(--berry);color:#fff}
+.book h2{color:#fff}.book h2 i{color:#F2B8CF}
+.btn{display:block;text-align:center;background:var(--rasp);color:#fff;text-decoration:none;border-radius:30px;padding:4mm;font-weight:700;font-size:12pt;margin-top:3mm}
+.btn.o{background:transparent;border:1.5px solid #fff}
+.bookcard{background:rgba(255,255,255,.08);border-radius:6mm;padding:7mm 8mm;margin:6mm 0}
+.contact{position:absolute;left:20mm;right:20mm;bottom:22mm;border-top:1px solid rgba(255,255,255,.3);padding-top:5mm;font-size:10pt;display:flex;justify-content:space-between}
+.contact a{color:#fff}
+.foot{position:absolute;left:20mm;right:20mm;bottom:10mm;display:flex;justify-content:space-between;font-size:8pt;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.book .foot{color:rgba(255,255,255,.6)}
 </style></head><body>
-<div class="p cover"><h1>9 Sätze</h1><div class="sc" style="font-size:54pt">für dich</div><div class="d">— ♡ —</div><div class="sub">Für Frauen, die immer an alle denken.<br>Nur nicht an sich.</div><div class="by">${NAME}</div></div>
-<div class="p"><h2>Bevor du anfängst</h2>
+
+<div class="p cover"><div class="blob b1"></div><div class="blob b2"></div>
+<div class="in"><div class="pill">Gratis-Workbook</div><h1>9 Sätze<br><i>für dich.</i></h1>
+<div class="sub">Für Frauen, die immer an alle denken. Nur nicht an sich. Mit Fragen, Satzhilfen zum Neinsagen und einer Übung für diese Woche.</div></div>
+<div class="by">${NAME}</div></div>
+
+<div class="p"><div class="eyebrow">Bevor du anfängst</div><h2>Du zählst <i>auch.</i></h2>
 <p>Du bist es gewohnt, für andere da zu sein. Du merkst, was andere brauchen, bevor sie es aussprechen. Und irgendwo ganz unten auf der Liste stehst du.</p>
-<p>Dazu bekommst du Satzhilfen, mit denen du Nein sagen kannst, ohne dich zu rechtfertigen. Diese 9 Sätze sind keine Zauberformeln. Sie sind kleine Erinnerungen daran, dass du auch zählst.</p>
-<div class="box"><p style="margin:0"><b>So nutzt du sie:</b></p><ul style="margin:2mm 0">
-<li>Nimm dir <b>einen Satz pro Tag.</b> Lies ihn morgens laut.</li>
-<li>Beantworte die <b>Frage darunter</b> mit nur einem Satz. Ehrlich, nicht schön.</li>
-<li>Schreib den Satz, der dich am meisten trifft, auf einen Zettel oder mach ihn zu deinem Handy-Hintergrund.</li>
-<li>Wenn dein schlechtes Gewissen sich meldet: Das ist normal. Mach trotzdem weiter.</li></ul></div>
-<div class="foot">9 Sätze für dich · ${NAME}</div></div>
-<div class="p">${S.slice(0,3).map(card).join('')}<div class="foot">9 Sätze für dich · ${NAME}</div></div>
-<div class="p">${S.slice(3,6).map((s,i)=>card(s,i+3)).join('')}<div class="foot">9 Sätze für dich · ${NAME}</div></div>
-<div class="p">${S.slice(6,9).map((s,i)=>card(s,i+6)).join('')}<div class="foot">9 Sätze für dich · ${NAME}</div></div>
-<div class="p"><h2>Nein sagen <span class="sc" style="font-size:30pt">ohne Rechtfertigung</span></h2>
-<p>Ein Nein braucht keine lange Erklärung. Je mehr du dich rechtfertigst, desto mehr lädst du zum Verhandeln ein. <b>Kurz, freundlich, klar</b> reicht.</p>
-<div class="box"><p style="margin:0"><b>Der wichtigste Satz zuerst – er verhindert das automatische Ja:</b></p>
-<p style="font-size:19pt;margin:2mm 0"><em>„Ich schaue in meinen Kalender und sage dir morgen Bescheid.“</em></p>
-<p style="margin:0;font-size:12.5pt">So hast du Zeit zu spüren, ob du wirklich willst.</p></div>
-${H.map(h=>`<div class="c" style="padding:3.5mm 0"><p class="f" style="margin:0">${h[0]}</p><p class="q" style="font-size:16pt;margin:1mm 0 0 0">${h[1]}</p></div>`).join('')}
-<div class="foot">9 Sätze für dich · ${NAME}</div></div>
-<div class="p"><h2>Wenn jemand nachhakt</h2>
-<p>Manche Menschen sind es gewohnt, dass du nachgibst. Bleib einfach freundlich bei deiner Antwort:</p>
-<div class="box"><p style="font-size:18pt;margin:1mm 0"><em>„Ich verstehe, dass das blöd für dich ist. Meine Antwort bleibt trotzdem Nein.“</em></p>
-<p style="font-size:18pt;margin:3mm 0 1mm"><em>„Das passt für mich gerade nicht.“</em> – und dann nichts mehr hinzufügen.</p></div>
-<h2 style="margin-top:10mm;font-size:24pt">Was du weglassen darfst</h2>
-<ul><li>Lange Entschuldigungen („Es tut mir so leid, aber …“)</li><li>Ausreden, die du dir erst ausdenken musst</li><li>Versprechen fürs nächste Mal, die du gar nicht willst</li><li>Das schlechte Gewissen danach. Es darf da sein, es muss aber nicht entscheiden.</li></ul>
-<div class="box"><p style="margin:0"><b>Mein Nein-Satz für diese Woche:</b></p><div class="big"></div></div>
-<div class="foot">9 Sätze für dich · ${NAME}</div></div>
-<div class="p"><h2>Meine eigene Liste <span class="sc" style="font-size:30pt">diese Woche</span></h2>
+<p>Diese 9 Sätze sind keine Zauberformeln. Sie sind kleine Erinnerungen daran, dass du auch zählst. Dazu bekommst du Satzhilfen, mit denen du Nein sagen kannst, ohne dich zu rechtfertigen.</p>
+<div class="panel"><b>So nutzt du das Workbook</b><ol>
+<li><b>Ein Satz pro Tag.</b> Lies ihn morgens laut.</li>
+<li><b>Beantworte die Frage</b> darunter mit nur einem Satz. Ehrlich, nicht schön.</li>
+<li><b>Mach den Satz, der dich am meisten trifft,</b> zu deinem Handy-Hintergrund.</li>
+<li><b>Wenn sich dein schlechtes Gewissen meldet:</b> normal. Mach trotzdem weiter.</li></ol></div>
+<div class="panel" style="background:#fff;border:1.5px solid var(--blush)"><b>Was dich erwartet</b>
+<ul class="c" style="margin:2mm 0 0"><li>9 Sätze mit je einer Frage</li><li>Satzhilfen: Nein sagen in 6 Alltagssituationen</li><li>Was tun, wenn jemand nachhakt</li><li>Übung „Meine eigene Liste“</li></ul></div>
+${foot(2)}</div>
+
+<div class="p"><div class="eyebrow">Satz 1 – 3</div>${S.slice(0,3).map((s,i)=>card(s,i)).join('')}${foot(3)}</div>
+<div class="p"><div class="eyebrow">Satz 4 – 6</div>${S.slice(3,6).map((s,i)=>card(s,i+3)).join('')}${foot(4)}</div>
+<div class="p"><div class="eyebrow">Satz 7 – 9</div>${S.slice(6,9).map((s,i)=>card(s,i+6)).join('')}${foot(5)}</div>
+
+<div class="p"><div class="eyebrow">Satzhilfen</div><h2>Nein sagen <i>ohne Rechtfertigung.</i></h2>
+<p style="margin-top:-2mm">Je mehr du dich rechtfertigst, desto mehr lädst du zum Verhandeln ein. Kurz, freundlich, klar reicht.</p>
+<div class="key"><small>DER WICHTIGSTE SATZ – ER STOPPT DAS AUTOMATISCHE JA</small><div class="serif">„Ich schaue in meinen Kalender und sage dir morgen Bescheid.“</div><small>So hast du Zeit zu spüren, ob du wirklich willst.</small></div>
+<div class="grid">${H.map(h=>`<div class="h"><div class="who">${h[0]}</div><div class="ask2">${h[1]}</div><div class="ans">${h[2]}</div></div>`).join('')}</div>
+${foot(6)}</div>
+
+<div class="p"><div class="eyebrow">Satzhilfen</div><h2>Wenn jemand <i>nachhakt.</i></h2>
+<p>Manche Menschen sind es gewohnt, dass du nachgibst. Bleib freundlich bei deiner Antwort:</p>
+<div class="key"><div class="serif">„Ich verstehe, dass das blöd für dich ist. Meine Antwort bleibt trotzdem Nein.“</div></div>
+<div class="key" style="background:var(--rasp)"><div class="serif">„Das passt für mich gerade nicht.“</div><small>Und dann nichts mehr hinzufügen.</small></div>
+<h2 style="font-size:20pt;margin-top:8mm">Was du <i>weglassen</i> darfst</h2>
+<ul class="x"><li>Lange Entschuldigungen („Es tut mir so leid, aber …“)</li><li>Ausreden, die du dir erst ausdenken musst</li><li>Versprechen fürs nächste Mal, die du gar nicht willst</li><li>Das schlechte Gewissen danach. Es darf da sein, aber es muss nicht entscheiden.</li></ul>
+<div class="panel"><b>Mein Nein-Satz für diese Woche</b><div class="ln2"></div></div>
+${foot(7)}</div>
+
+<div class="p"><div class="eyebrow">Übung</div><h2>Meine eigene Liste <i>diese Woche.</i></h2>
 <p>Drei Dinge, die ich diese Woche <b>nur für mich</b> tue. Nicht für die Familie, nicht für die Arbeit. Für mich.</p>
-<div class="box"><p style="margin:0">1.</p><div class="big"></div><p style="margin:3mm 0 0">2.</p><div class="big"></div><p style="margin:3mm 0 0">3.</p><div class="big"></div></div>
-<p style="margin-top:8mm">Und eine Sache, zu der ich diese Woche <b>Nein</b> sage:</p><div class="big"></div>
-<div class="foot">9 Sätze für dich · ${NAME}</div></div>
-<div class="p" style="display:flex;flex-direction:column;justify-content:center"><h2>Wenn dich diese Sätze berührt haben …</h2>
-<p>… dann bist du vielleicht schon sehr lange für alle da. Genau dafür habe ich mein Buch geschrieben:</p>
-<div class="box" style="text-align:center"><p style="font-size:24pt;margin:2mm 0;line-height:1.2"><em>„Ich stand nie auf meiner eigenen Liste“</em></p><p style="margin:0">Du hast an alle gedacht. Nur nicht an dich.</p></div>
-<ul><li>30+ kurze Kapitel, die du auch an vollen Tagen schaffst</li><li>Übungen und ein Schritt pro Woche</li><li>Satzhilfen für Momente, in denen du sonst automatisch Ja sagst</li></ul>
-<p>Erkenne wieder, was du selbst brauchst, bevor du automatisch Ja sagst.</p>
-<p style="font-size:17pt;text-align:center;margin-top:6mm">Jetzt auf Amazon:<br>Taschenbuch: <a href="https://www.amazon.de/dp/B0HGT4PX8H">amazon.de/dp/B0HGT4PX8H</a><br>Kindle: <a href="https://www.amazon.de/dp/B0HGSBZS18">amazon.de/dp/B0HGSBZS18</a></p>
-<div class="box" style="text-align:center;margin-top:10mm"><p style="margin:0 0 2mm"><b>Alle meine Bücher:</b> <a href="${AUTORLINK}">auf Amazon „Petra Tanner“</a></p>
-<p style="margin:0">${NAME} · <a href="mailto:${EMAIL}">${EMAIL}</a> · Instagram ${INSTA}</p></div>
-<div class="foot">9 Sätze für dich · ${NAME}</div></div>
+${[1,2,3].map(n=>`<div class="card" style="border-top:1.5px solid var(--blush)"><div class="num">${n}</div><div class="cb" style="flex:1"><div class="ln2"></div></div></div>`).join('')}
+<div class="panel" style="margin-top:8mm"><b>Und eine Sache, zu der ich diese Woche Nein sage:</b><div class="ln2"></div></div>
+<div class="panel" style="background:#fff;border:1.5px solid var(--blush)"><b>Am Ende der Woche:</b> Wie hat es sich angefühlt, auf deiner eigenen Liste zu stehen?<div class="ln2"></div></div>
+${foot(8)}</div>
+
+<div class="p book"><div class="eyebrow" style="color:#F2B8CF">Wenn dich diese Sätze berührt haben</div>
+<h2>Dann bist du vielleicht schon <i>sehr lange</i> für alle da.</h2>
+<p>Genau dafür habe ich mein Buch geschrieben.</p>
+<div class="bookcard"><div class="serif" style="font-size:24pt;line-height:1.15">„Ich stand nie auf meiner eigenen Liste“</div>
+<p style="opacity:.85;margin:2mm 0 4mm">Du hast an alle gedacht. Nur nicht an dich.</p>
+<ul class="c" style="margin:0"><li>30+ kurze Kapitel, die du auch an vollen Tagen schaffst</li><li>Übungen und ein Schritt pro Woche</li><li>Satzhilfen für Momente, in denen du sonst automatisch Ja sagst</li></ul></div>
+<a class="btn" href="${TB}">Taschenbuch auf Amazon →</a>
+<a class="btn o" href="${KINDLE}">Kindle-Ausgabe auf Amazon →</a>
+<div class="contact"><span><a href="${AUTORLINK}">Alle meine Bücher</a></span><span><a href="mailto:${EMAIL}">${EMAIL}</a></span><span>${INSTA}</span></div>
+${foot(9)}</div>
 </body></html>`;
 (async()=>{const b=await chromium.launch();const p=await b.newPage();await p.setContent(html,{waitUntil:'networkidle'});await p.evaluate(()=>document.fonts.ready);
-await p.pdf({path:process.argv[2],format:'A4',printBackground:true});
-await p.setViewportSize({width:794,height:1123});await p.screenshot({path:'pdfprev.png',fullPage:true});await b.close()})();
+await p.pdf({path:process.argv[2],format:'A4',printBackground:true});await b.close()})();

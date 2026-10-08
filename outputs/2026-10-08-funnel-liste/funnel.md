@@ -1,5 +1,7 @@
 # Funnel „LISTE“ – Reel → PDF → Buch (08.10.2026)
 
+Design: modern, Beerentöne (Beere #6B1D46, Himbeere #B8326A, Zartrosa #F6E3EB), Schriften Fraunces + DM Sans. Übersicht: `funnel-uebersicht.png`. Generatoren: `pdf-generator.js`, `reel-generator.js`, `funnel-grafik.js`.
+
 ## Ablauf
 
 1. **Reel** (`reel-9-saetze.mp4`, 46 Sek.) auf Instagram + Facebook posten. Musik in Instagram selbst wählen (ruhig, Klavier/Ambient).
