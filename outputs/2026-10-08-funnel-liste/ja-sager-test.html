@@ -103,6 +103,17 @@ h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
 .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
 .row .btn{flex:1 1 180px;background:var(--surface);color:var(--head);border:1.5px solid var(--line)}
 .msg{font-size:13px;color:var(--muted);min-height:1.4em;margin-top:8px}
+
+/* Atem-Pause vor dem Ergebnis */
+.breath{min-height:520px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.circle{position:relative;width:230px;height:230px;margin:34px 0 28px;display:grid;place-items:center}
+.circle .ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(255,245,248,.35)}
+.circle .orb{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--pink),var(--rasp) 70%);box-shadow:0 0 60px -6px var(--rasp);transform:scale(.45);transition:transform 4s ease-in-out}
+.circle.in .orb{transform:scale(1)}
+.circle .word{position:relative;font-family:var(--display);font-size:26px;font-style:italic;color:var(--on)}
+.breath .hint{opacity:.85;font-size:15px;max-width:32ch;margin:0}
+.skip{background:none;border:0;color:var(--on);opacity:.7;font:500 13px var(--body);margin-top:18px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.dots{display:flex;gap:6px;margin-top:14px}.dots i{width:6px;height:6px;border-radius:50%;background:var(--pink);opacity:.3;transition:opacity .4s}.dots i.on{opacity:1}
 @media (max-width:440px){.types{grid-template-columns:1fr 1fr}.type{padding:14px}.type h3{font-size:17px}.bar{grid-template-columns:82px 1fr 36px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.bar .t i{transition:none}}
 </style>
@@ -190,9 +201,33 @@ function ask(){
  let locked=false;
  app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(locked)return;locked=true;answers[i]=b.dataset.k;
   app.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',x===b));
-  setTimeout(()=>{i++;i<Q.length?ask():result()},reduce?0:380)});
+  setTimeout(()=>{i++;i<Q.length?ask():breathe()},reduce?0:380)});
  const bk=document.getElementById('back'); if(bk) bk.onclick=()=>{i--;ask()};
  window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+}
+
+function breathe(){
+ app.innerHTML=`<section class="enter">
+  <div class="stage breath">${blobs}
+   <span class="pill">Dein Ergebnis wird ausgewertet</span>
+   <div class="circle" id="c"><div class="ring"></div><div class="orb"></div><div class="word" id="w">Einatmen</div></div>
+   <p class="hint">Nimm dir diesen Moment nur für dich. Atme mit dem Kreis.</p>
+   <div class="dots"><i id="d1"></i><i id="d2"></i></div>
+   <button class="skip" id="skip">Direkt zum Ergebnis</button>
+  </div></section>`;
+ window.scrollTo({top:0});
+ const c=document.getElementById('c'),w=document.getElementById('w');
+ const timers=[];let done=false;
+ const finish=()=>{if(done)return;done=true;timers.forEach(clearTimeout);result()};
+ document.getElementById('skip').onclick=finish;
+ if(reduce){w.textContent='Atme ruhig';timers.push(setTimeout(finish,2500));return}
+ const step=(k,t)=>timers.push(setTimeout(k,t));
+ // 2 Atemzüge: je 4 s ein, 4 s aus
+ [0,8000].forEach((t,n)=>{
+  step(()=>{c.classList.add('in');w.textContent='Einatmen';document.getElementById('d'+(n+1)).classList.add('on')},t+60);
+  step(()=>{c.classList.remove('in');w.textContent='Ausatmen'},t+4060);
+ });
+ step(finish,16100);
 }
 function result(){
  const c={K:0,H:0,S:0,G:0}; answers.forEach(a=>c[a]++);
