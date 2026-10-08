@@ -1,81 +1,119 @@
 <title>Welcher Ja-Sager-Typ bist du?</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap">
 <style>
-/* Layout: eine schmale Karte, eine Frage pro Bildschirm, Ergebnis als Beeren-Karte */
+/* Layout: Workbook-Look – Beeren-Bühne oben, cremige Karten darunter, eine Frage pro Bildschirm */
 :root{
-  --bg:#FFF9F6; --surface:#FFFFFF; --soft:#F6E3EB; --berry:#6B1D46; --rasp:#B8326A;
-  --ink:#2A1420; --muted:#7A5A68; --line:#EBCFDB; --on-berry:#FFF5F8; --pink:#F7B7D0;
+  --bg:#FFF9F6; --surface:#FFFFFF; --soft:#F6E3EB; --line:#EBCFDB;
+  --ink:#2A1420; --muted:#7A5A68; --accent:#B8326A; --head:#6B1D46;
+  --stage:#6B1D46; --stage2:#45122E; --rasp:#B8326A; --plum:#8E2A5C; --pink:#F7B7D0; --on:#FFF5F8;
   --display:'Fraunces',Georgia,'Times New Roman',serif; --body:'DM Sans',system-ui,-apple-system,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#1E0E17; --surface:#2A1420; --soft:#3A1A2B; --berry:#F2A9C6; --rasp:#E0609A;
-  --ink:#FBEAF1; --muted:#C9A3B4; --line:#4A2537; --on-berry:#2A1420; --pink:#F7B7D0; color-scheme:dark}}
+  --bg:#1A0C14; --surface:#24121C; --soft:#331827; --line:#4A2537; --ink:#FBEAF1; --muted:#C9A3B4; --accent:#EC6FA3; --head:#F7B7D0; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#1E0E17; --surface:#2A1420; --soft:#3A1A2B; --berry:#F2A9C6; --rasp:#E0609A;
-  --ink:#FBEAF1; --muted:#C9A3B4; --line:#4A2537; --on-berry:#2A1420; --pink:#F7B7D0; color-scheme:dark}
+  --bg:#1A0C14; --surface:#24121C; --soft:#331827; --line:#4A2537; --ink:#FBEAF1; --muted:#C9A3B4; --accent:#EC6FA3; --head:#F7B7D0; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;padding-inline:16px;padding-block:28px 48px}
-.wrap{max-width:560px;margin:0 auto}
-.brand{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rasp);font-weight:700;margin-bottom:28px}
-.brand a{color:var(--muted);text-decoration:none;letter-spacing:.05em;text-transform:none;font-weight:500}
-h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;color:var(--berry)}
-h1{font-size:clamp(38px,9vw,56px);line-height:1.02}
-h1 i,h2 i{color:var(--rasp)}
-h2{font-size:clamp(26px,6vw,34px);line-height:1.15}
-.lead{font-size:18px;color:var(--muted);margin:18px 0 26px;max-width:46ch}
-.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:999px;background:var(--rasp);color:#fff;font:700 16px var(--body);padding:16px 28px;cursor:pointer;text-decoration:none;text-align:center}
-.btn:focus-visible,.opt:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
-.btn.ghost{background:transparent;color:var(--berry);border:1.5px solid var(--line)}
-.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--muted)}
-.types{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:34px}
-.types div{background:var(--soft);border-radius:16px;padding:14px 16px;font-family:var(--display);font-size:17px;color:var(--berry)}
-.types small{display:block;font-family:var(--body);font-size:12.5px;color:var(--muted);margin-top:2px}
-.prog{display:flex;gap:5px;margin-bottom:26px}
-.prog span{flex:1;height:5px;border-radius:5px;background:var(--line);transition:background .3s}
-.prog span.on{background:var(--rasp)}
-.qn{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rasp);font-weight:700;margin-bottom:10px}
-.opts{display:grid;gap:10px;margin-top:24px}
-.opt{width:100%;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px;font:500 16px/1.45 var(--body);color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
-.opt:hover{border-color:var(--rasp)}
-.opt.sel{background:var(--soft);border-color:var(--rasp)}
-.back{background:none;border:0;color:var(--muted);font:500 14px var(--body);margin-top:18px;cursor:pointer;padding:6px 0}
-.res{background:var(--berry);color:var(--on-berry);border-radius:28px;padding:30px 26px;position:relative;overflow:hidden}
-.res::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--rasp);opacity:.5;right:-90px;top:-100px}
-.res>*{position:relative;z-index:1}
-.res .k{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;opacity:.8}
-.res h2{color:var(--on-berry);font-size:clamp(34px,8vw,46px);margin:8px 0 14px}
-.res p{margin:0 0 12px}
-.bars{display:grid;gap:8px;margin:22px 0 4px}
-.bar{display:grid;grid-template-columns:118px 1fr 34px;align-items:center;gap:10px;font-size:13px}
-.bar .t{height:8px;border-radius:8px;background:color-mix(in srgb,var(--on-berry) 22%,transparent);overflow:hidden}
-.bar .t i{display:block;height:100%;background:var(--pink);border-radius:8px}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;padding-inline:16px;padding-block:20px 56px}
+.wrap{max-width:600px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+
+/* Bühne (wie PDF-Titelblatt) */
+.stage{position:relative;overflow:hidden;border-radius:32px;background:linear-gradient(160deg,var(--stage),var(--stage2));color:var(--on);padding:30px 26px 32px;isolation:isolate}
+.blob{position:absolute;border-radius:50%;z-index:-1;filter:blur(.5px)}
+.b1{width:300px;height:300px;right:-110px;top:-120px;background:var(--rasp);opacity:.85;animation:float1 12s ease-in-out infinite}
+.b2{width:190px;height:190px;left:-80px;bottom:-60px;background:var(--plum);animation:float2 14s ease-in-out infinite}
+.b3{width:70px;height:70px;right:34px;bottom:40px;background:var(--pink);opacity:.25;animation:float1 9s ease-in-out infinite reverse}
+@keyframes float1{50%{transform:translate(-18px,22px) scale(1.06)}}
+@keyframes float2{50%{transform:translate(20px,-16px) scale(.95)}}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:46px}
+.pill{display:inline-block;border:1.5px solid rgba(255,245,248,.55);border-radius:99px;padding:6px 14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.handle{color:var(--on);opacity:.8;text-decoration:none;font-size:13px}
+.stage h1{font-size:clamp(42px,11vw,68px);line-height:.98}
+.stage h1 i,.stage h2 i{color:var(--pink)}
+.stage .sub{font-size:17px;opacity:.92;margin:18px 0 26px;max-width:40ch}
+.go{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:10px;border:0;border-radius:99px;background:var(--on);color:var(--stage);font:700 16px var(--body);padding:17px 30px;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 30px -10px rgba(0,0,0,.45)}
+.go::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(184,50,106,.18) 50%,transparent 70%);transform:translateX(-100%);animation:shine 3.2s ease-in-out infinite}
+@keyframes shine{60%,100%{transform:translateX(100%)}}
+.go:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(0,0,0,.5)}
+.go span{transition:transform .2s}.go:hover span{transform:translateX(4px)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:13.5px;opacity:.85}
+.facts b{color:var(--pink);font-weight:700}
+
+.types{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.type{background:var(--surface);border:1.5px solid var(--line);border-radius:22px;padding:16px 16px 18px;transition:transform .25s,border-color .25s}
+.type:hover{transform:translateY(-3px);border-color:var(--accent)}
+.dot{width:34px;height:34px;border-radius:50%;margin-bottom:12px;display:grid;place-items:center;color:#fff;font-family:var(--display);font-size:16px}
+.type h3{font-size:19px;color:var(--head)}
+.type p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+
+/* Frage */
+.qhead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.qnum{font-family:var(--display);font-size:44px;line-height:1;color:var(--pink)}
+.qnum small{font-size:18px;opacity:.7}
+.track{height:6px;border-radius:6px;background:rgba(255,245,248,.2);overflow:hidden}
+.track i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--pink),#fff);transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.stage h2{font-size:clamp(25px,6.4vw,33px);line-height:1.18;margin-top:22px}
+.opts{display:grid;gap:10px;margin-top:16px}
+.opt{position:relative;width:100%;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:17px 52px 17px 20px;font:500 16px/1.45 var(--body);color:var(--ink);cursor:pointer;transition:transform .2s,border-color .2s,background .25s,color .25s,box-shadow .2s;animation:rise .45s cubic-bezier(.2,.8,.2,1) both}
+.opt:nth-child(2){animation-delay:.05s}.opt:nth-child(3){animation-delay:.1s}.opt:nth-child(4){animation-delay:.15s}
+.opt::after{content:"";position:absolute;right:18px;top:50%;width:20px;height:20px;margin-top:-10px;border-radius:50%;border:1.5px solid var(--line);transition:all .2s}
+.opt:hover{transform:translateX(4px);border-color:var(--accent);box-shadow:0 8px 24px -16px var(--accent)}
+.opt.sel{background:var(--stage);border-color:var(--stage);color:var(--on);transform:scale(1.02)}
+.opt.sel::after{border-color:var(--pink);background:var(--pink);box-shadow:inset 0 0 0 4px var(--stage)}
+.opt:focus-visible,.go:focus-visible,.btn:focus-visible,.back:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.back{background:none;border:0;color:var(--muted);font:500 14px var(--body);margin-top:14px;cursor:pointer;padding:6px 2px}
+@keyframes rise{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
+.enter{animation:enter .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes enter{from{opacity:.001;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+
+/* Ergebnis */
+.res .name{font-size:clamp(44px,12vw,64px);line-height:1;margin:14px 0 16px}
+.res .name i{color:var(--pink)}
+.res p{margin:0;opacity:.95;max-width:44ch}
+.bars{display:grid;gap:10px;margin-top:26px}
+.bar{display:grid;grid-template-columns:96px 1fr 40px;align-items:center;gap:12px;font-size:13.5px}
+.bar .t{height:10px;border-radius:10px;background:rgba(255,245,248,.16);overflow:hidden}
+.bar .t i{display:block;height:100%;width:0;border-radius:10px;background:linear-gradient(90deg,var(--pink),#fff);transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
 .bar b{font-variant-numeric:tabular-nums;text-align:right}
-.sec{margin-top:28px;display:grid;gap:14px}
-.box{background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:20px 22px}
-.box .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--rasp);font-weight:700;margin-bottom:6px}
-.quote{font-family:var(--display);font-style:italic;font-size:22px;line-height:1.3;color:var(--berry)}
-.book{background:var(--soft);border:0}
-.book h3{font-size:24px;line-height:1.15;margin:4px 0 6px}
-.cta{display:grid;gap:10px;margin-top:16px}
-.small{font-size:13px;color:var(--muted)}
-.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.row .btn{flex:1 1 200px}
-.fade{animation:in .35s ease both}
-@keyframes in{from{opacity:.001;transform:translateY(8px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.fade{animation:none}.opt,.prog span{transition:none}}
-@media (max-width:420px){.types{grid-template-columns:1fr}.bar{grid-template-columns:96px 1fr 30px}}
+.bar.win span{font-weight:700}
+.hearts{position:absolute;inset:0;pointer-events:none;z-index:2}
+.hearts span{position:absolute;bottom:-20px;font-size:18px;color:var(--pink);animation:up 2.6s ease-out forwards;opacity:0}
+@keyframes up{0%{opacity:0;transform:translateY(0) scale(.6)}15%{opacity:.9}100%{opacity:0;transform:translateY(-420px) scale(1.1) rotate(20deg)}}
+.cards{display:grid;gap:12px;margin-top:14px}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:24px;padding:22px 22px 24px;animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
+.card:nth-child(2){animation-delay:.12s}.card:nth-child(3){animation-delay:.24s}.card:nth-child(4){animation-delay:.36s}
+.card .eyebrow{color:var(--accent);margin-bottom:8px}
+.card p{margin:0}
+.quote{font-family:var(--display);font-style:italic;font-size:23px;line-height:1.3;color:var(--head)}
+.card.soft{background:var(--soft);border-color:transparent}
+.card h3{font-size:25px;line-height:1.15;color:var(--head);margin-bottom:8px}
+.btn{display:flex;justify-content:center;align-items:center;gap:8px;border-radius:99px;padding:16px 22px;font:700 15.5px var(--body);text-decoration:none;text-align:center;cursor:pointer;border:0;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--rasp);color:#fff;box-shadow:0 10px 24px -14px var(--rasp)}
+.btn.line{background:transparent;border:1.5px solid currentColor}
+.btns{display:grid;gap:10px;margin-top:18px}
+.bookcard{background:linear-gradient(160deg,var(--stage),var(--stage2));color:var(--on);border:0;position:relative;overflow:hidden;isolation:isolate}
+.bookcard h3{color:var(--on)}
+.bookcard .eyebrow{color:var(--pink)}
+.bookcard ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px;font-size:14.5px}
+.bookcard li::before{content:"✓";color:var(--pink);font-weight:700;margin-right:10px}
+.bookcard .btn.line{color:var(--on)}
+.small{font-size:13px;color:var(--muted);margin-top:10px!important}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.row .btn{flex:1 1 180px;background:var(--surface);color:var(--head);border:1.5px solid var(--line)}
+.msg{font-size:13px;color:var(--muted);min-height:1.4em;margin-top:8px}
+@media (max-width:440px){.types{grid-template-columns:1fr 1fr}.type{padding:14px}.type h3{font-size:17px}.bar{grid-template-columns:82px 1fr 36px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.bar .t i{transition:none}}
 </style>
 
-<div class="wrap">
-  <div class="brand"><span>Petra Tanner</span><a href="https://www.instagram.com/petratanner.autorin/">@petratanner.autorin</a></div>
-  <main id="app"></main>
-</div>
+<div class="wrap"><main id="app"></main></div>
 
 <script>
 const TB_CART='https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B0HGT4PX8H&Quantity.1=1';
 const KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
 const INSTA='https://www.instagram.com/petratanner.autorin/';
-
+const COL={K:'#B8326A',H:'#8E2A5C',S:'#6B1D46',G:'#D4628F'};
 const TYPES={
  K:{name:'Typ Fürsorge',short:'sieht alle, nur nicht sich',
     text:'Du merkst, was andere brauchen, bevor sie es aussprechen. Bei dir landen alle. Nur wer fragt eigentlich dich?',
@@ -116,74 +154,96 @@ const Q=[
  ['Welcher Satz trifft dich gerade am meisten?',
   {K:'„Ich darf zuerst fragen: Was brauche ich?“',H:'„Ein Nein zu anderen ist ein Ja zu mir.“',S:'„Ich bin wertvoll, einfach so.“',G:'„Mein schlechtes Gewissen ist kein Beweis.“'}]
 ];
+
 const app=document.getElementById('app');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 let i=0, answers=[], order=[];
 const shuffle=a=>{a=a.slice();for(let j=a.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[a[j],a[k]]=[a[k],a[j]]}return a};
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const blobs='<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>';
+const hdr=l=>`<div class="top"><span class="pill">${l}</span><a class="handle" href="${INSTA}">@petratanner.autorin</a></div>`;
 
 function start(){
- app.innerHTML=`<section class="fade">
-  <h1>Welcher <i>Ja-Sager-Typ</i> bist&nbsp;du?</h1>
-  <p class="lead">Du sagst Ja, obwohl du Nein meinst? Finde in 8 Fragen heraus, warum. Und was dir hilft, endlich auch auf deiner eigenen Liste zu stehen.</p>
-  <button class="btn" id="go">Test starten →</button>
-  <div class="meta"><span>8 Fragen</span><span>ca. 2 Minuten</span><span>kostenlos, ohne Anmeldung</span></div>
-  <div class="types">${Object.values(TYPES).map(t=>`<div>${t.name}<small>${t.short}</small></div>`).join('')}</div>
+ app.innerHTML=`<section class="enter">
+  <div class="stage">${blobs}${hdr('Persönlichkeitstest')}
+   <h1>Welcher <i>Ja-Sager-Typ</i> bist&nbsp;du?</h1>
+   <p class="sub">Du sagst Ja, obwohl du Nein meinst? Finde in 8 Fragen heraus, warum. Und was dir hilft, endlich auch auf deiner eigenen Liste zu stehen.</p>
+   <button class="go" id="go">Test starten <span>→</span></button>
+   <div class="facts"><span><b>8</b> Fragen</span><span><b>2</b> Minuten</span><span>kostenlos, ohne Anmeldung</span></div>
+  </div>
+  <div class="types">${Object.entries(TYPES).map(([k,t])=>`<div class="type"><div class="dot" style="background:${COL[k]}">♡</div><h3>${t.name}</h3><p>${t.short}</p></div>`).join('')}</div>
  </section>`;
  document.getElementById('go').onclick=()=>{i=0;answers=[];order=Q.map(()=>shuffle(['K','H','S','G']));ask()};
 }
 function ask(){
  const [q,o]=Q[i];
- app.innerHTML=`<section class="fade">
-  <div class="prog">${Q.map((_,n)=>`<span class="${n<=i?'on':''}"></span>`).join('')}</div>
-  <div class="qn">Frage ${i+1} von ${Q.length}</div>
-  <h2>${esc(q)}</h2>
+ app.innerHTML=`<section class="enter">
+  <div class="stage">${blobs}
+   <div class="qhead"><div class="qnum">${String(i+1).padStart(2,'0')}<small> / ${String(Q.length).padStart(2,'0')}</small></div><span class="pill">${['Los geht’s','Gut so','Weiter so','Halbzeit','Ehrlich bleiben','Fast da','Noch zwei','Letzte Frage'][i]}</span></div>
+   <div class="track"><i style="width:${i/Q.length*100}%"></i></div>
+   <h2>${esc(q)}</h2>
+  </div>
   <div class="opts">${order[i].map(k=>`<button class="opt${answers[i]===k?' sel':''}" data-k="${k}">${esc(o[k])}</button>`).join('')}</div>
   ${i>0?'<button class="back" id="back">← Zurück</button>':''}
  </section>`;
- app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{answers[i]=b.dataset.k;b.classList.add('sel');setTimeout(()=>{i++;i<Q.length?ask():result()},180)});
+ requestAnimationFrame(()=>{const t=app.querySelector('.track i');t.style.width=((i+1)/Q.length*100)+'%'});
+ let locked=false;
+ app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(locked)return;locked=true;answers[i]=b.dataset.k;
+  app.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',x===b));
+  setTimeout(()=>{i++;i<Q.length?ask():result()},reduce?0:380)});
  const bk=document.getElementById('back'); if(bk) bk.onclick=()=>{i--;ask()};
- window.scrollTo({top:0});
+ window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
 }
 function result(){
  const c={K:0,H:0,S:0,G:0}; answers.forEach(a=>c[a]++);
  const max=Math.max(...Object.values(c));
- const top=c[answers[Q.length-1]]===max?answers[Q.length-1]:Object.keys(c).find(k=>c[k]===max);
- const t=TYPES[top];
+ const last=answers[Q.length-1];
+ const win=c[last]===max?last:Object.keys(c).find(k=>c[k]===max);
+ const t=TYPES[win];
  const sorted=Object.keys(c).sort((a,b)=>c[b]-c[a]);
- app.innerHTML=`<section class="fade">
-  <div class="res">
-   <div class="k">Dein Ergebnis</div>
-   <h2>${t.name}</h2>
+ const pct=k=>Math.round(c[k]/Q.length*100);
+ app.innerHTML=`<section class="enter res">
+  <div class="stage">${blobs}<div class="hearts" id="hearts"></div>${hdr('Dein Ergebnis')}
+   <h2 class="name">Typ <i>${t.name.replace('Typ ','')}</i></h2>
    <p>${t.text}</p>
-   <div class="bars">${sorted.map(k=>`<div class="bar"><span>${TYPES[k].name.replace('Typ ','')}</span><span class="t"><i style="width:${Math.round(c[k]/Q.length*100)}%"></i></span><b>${Math.round(c[k]/Q.length*100)}%</b></div>`).join('')}</div>
+   <div class="bars">${sorted.map(k=>`<div class="bar${k===win?' win':''}"><span>${TYPES[k].name.replace('Typ ','')}</span><span class="t"><i data-w="${pct(k)}"></i></span><b data-n="${pct(k)}">${pct(k)}%</b></div>`).join('')}</div>
   </div>
-  <div class="sec">
-   <div class="box"><div class="k">Dein Muster</div><p style="margin:0">${t.pattern}</p></div>
-   <div class="box"><div class="k">Dein Satz</div><div class="quote">${t.satz}</div></div>
-   <div class="box"><div class="k">Dein erster Schritt diese Woche</div><p style="margin:0">${t.step}</p></div>
-   <div class="box book"><div class="k">Gratis für dich</div>
-    <h3>Das Workbook „9 Sätze für dich“</h3>
-    <p style="margin:0">Alle 9 Sätze mit Fragen, fertige Sätze zum Neinsagen ohne Rechtfertigung und die Übung „Meine eigene Liste“.</p>
-    <div class="cta"><a class="btn" href="${INSTA}">Schreib mir „LISTE“ auf Instagram →</a></div>
-    <p class="small" style="margin:8px 0 0">Ich schicke dir das PDF direkt per Nachricht.</p>
+  <div class="cards">
+   <div class="card"><div class="eyebrow">Dein Muster</div><p>${t.pattern}</p></div>
+   <div class="card"><div class="eyebrow">Dein Satz</div><div class="quote">${t.satz}</div></div>
+   <div class="card soft"><div class="eyebrow">Dein erster Schritt diese Woche</div><p>${t.step}</p></div>
+   <div class="card"><div class="eyebrow">Gratis für dich</div>
+    <h3>Workbook „9 Sätze für dich“</h3>
+    <p>Alle 9 Sätze mit Fragen, fertige Sätze zum Neinsagen ohne Rechtfertigung und die Übung „Meine eigene Liste“.</p>
+    <div class="btns"><a class="btn pri" href="${INSTA}">Schreib mir „LISTE“ auf Instagram →</a></div>
+    <p class="small">Ich schicke dir das PDF direkt per Nachricht.</p>
    </div>
-   <div class="box"><div class="k">Wenn du tiefer gehen willst</div>
-    <h3 style="font-size:24px;line-height:1.15;margin:4px 0 6px">„Ich stand nie auf meiner eigenen Liste“</h3>
-    <p style="margin:0">Mein Buch für alle, die an alle denken, nur nicht an sich: 30+ kurze Kapitel, Übungen, ein Schritt pro Woche und Satzhilfen für Momente, in denen du sonst automatisch Ja sagst.</p>
-    <div class="cta"><a class="btn" href="${TB_CART}">Taschenbuch bestellen · 12,99 €</a><a class="btn ghost" href="${KINDLE}">Kindle sofort lesen · 7,99 €</a></div>
+   <div class="card bookcard">${blobs}<div class="eyebrow">Wenn du tiefer gehen willst</div>
+    <h3>„Ich stand nie auf meiner eigenen Liste“</h3>
+    <p style="opacity:.9">Mein Buch für alle, die an alle denken, nur nicht an sich.</p>
+    <ul><li>30+ kurze Kapitel für volle Tage</li><li>Übungen und ein Schritt pro Woche</li><li>Satzhilfen gegen das automatische Ja</li></ul>
+    <div class="btns"><a class="btn pri" href="${TB_CART}">Taschenbuch bestellen · 12,99 €</a><a class="btn line" href="${KINDLE}">Kindle sofort lesen · 7,99 €</a></div>
    </div>
   </div>
-  <div class="row"><button class="btn ghost" id="share">Ergebnis kopieren</button><button class="btn ghost" id="again">Test neu starten</button></div>
-  <p class="small" id="msg" style="margin-top:10px" aria-live="polite"></p>
+  <div class="row"><button class="btn" id="share">Ergebnis kopieren</button><button class="btn" id="again">Test neu starten</button></div>
+  <p class="msg" id="msg" aria-live="polite"></p>
  </section>`;
+ // Balken + Zähler animieren
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  app.querySelectorAll('.bar .t i').forEach(el=>el.style.width=el.dataset.w+'%');
+  if(!reduce) app.querySelectorAll('.bar b').forEach(el=>{const n=+el.dataset.n,t0=performance.now();
+   const tick=now=>{const p=Math.min(1,(now-t0)/1100);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+'%';if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)});
+ }));
+ // Herzen
+ if(!reduce){const h=document.getElementById('hearts');for(let n=0;n<14;n++){const s=document.createElement('span');s.textContent='♡';
+  s.style.left=(5+Math.random()*90)+'%';s.style.animationDelay=(Math.random()*1.2)+'s';s.style.fontSize=(12+Math.random()*16)+'px';h.appendChild(s)}}
  document.getElementById('again').onclick=start;
  document.getElementById('share').onclick=async()=>{
   const txt=`Ich bin „${t.name}“ 🤍 Welcher Ja-Sager-Typ bist du? Mach den Test bei @petratanner.autorin`;
   const m=document.getElementById('msg');
-  try{await navigator.clipboard.writeText(txt);m.textContent='Kopiert. Füg es in deine Story oder eine Nachricht ein.'}
-  catch(e){m.textContent=txt}
+  try{await navigator.clipboard.writeText(txt);m.textContent='Kopiert. Füg es in deine Story oder eine Nachricht ein.'}catch(e){m.textContent=txt}
  };
- window.scrollTo({top:0});
+ window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
 }
 start();
 </script>
