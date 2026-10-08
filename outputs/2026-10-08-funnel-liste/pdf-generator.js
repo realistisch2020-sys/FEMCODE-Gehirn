@@ -1,9 +1,9 @@
 const {chromium}=require('playwright');
 // ===== HIER EINTRAGEN =====
 const NAME='Petra Tanner';
-const AUTORLINK='[AMAZON-AUTORENLINK]';
-const EMAIL='[E-MAIL]';
-const INSTA='[@INSTAGRAM]';
+const AUTORLINK='https://www.amazon.de/s?k=Petra+Tanner&i=stripbooks';
+const EMAIL='info.safetothrive@gmail.com';
+const INSTA='@petratanner.autorin';
 // ==========================
 const H=[
 ['Kollegin: „Kannst du das noch schnell übernehmen?“','„Heute schaffe ich das nicht. Morgen ab 10 Uhr schaue ich es mir gern an.“'],
@@ -87,8 +87,8 @@ ${H.map(h=>`<div class="c" style="padding:3.5mm 0"><p class="f" style="margin:0"
 <div class="box" style="text-align:center"><p style="font-size:24pt;margin:2mm 0;line-height:1.2"><em>„Ich stand nie auf meiner eigenen Liste“</em></p><p style="margin:0">Du hast an alle gedacht. Nur nicht an dich.</p></div>
 <ul><li>30+ kurze Kapitel, die du auch an vollen Tagen schaffst</li><li>Übungen und ein Schritt pro Woche</li><li>Satzhilfen für Momente, in denen du sonst automatisch Ja sagst</li></ul>
 <p>Erkenne wieder, was du selbst brauchst, bevor du automatisch Ja sagst.</p>
-<p style="font-size:17pt;text-align:center;margin-top:6mm">Taschenbuch &amp; Kindle auf Amazon:<br><a href="https://www.amazon.de/dp/B0HGT4PX8H">amazon.de/dp/B0HGT4PX8H</a></p>
-<div class="box" style="text-align:center;margin-top:10mm"><p style="margin:0 0 2mm"><b>Alle meine Bücher:</b> <a href="${AUTORLINK}">${AUTORLINK}</a></p>
+<p style="font-size:17pt;text-align:center;margin-top:6mm">Jetzt auf Amazon:<br>Taschenbuch: <a href="https://www.amazon.de/dp/B0HGT4PX8H">amazon.de/dp/B0HGT4PX8H</a><br>Kindle: <a href="https://www.amazon.de/dp/B0HGSBZS18">amazon.de/dp/B0HGSBZS18</a></p>
+<div class="box" style="text-align:center;margin-top:10mm"><p style="margin:0 0 2mm"><b>Alle meine Bücher:</b> <a href="${AUTORLINK}">auf Amazon „Petra Tanner“</a></p>
 <p style="margin:0">${NAME} · <a href="mailto:${EMAIL}">${EMAIL}</a> · Instagram ${INSTA}</p></div>
 <div class="foot">9 Sätze für dich · ${NAME}</div></div>
 </body></html>`;

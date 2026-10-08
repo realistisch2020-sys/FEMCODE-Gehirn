@@ -12,3 +12,9 @@
 - Keine Änderungen an Amazon/KDP ohne meine ausdrückliche Freigabe.
 - Belegt, Annahme und Prognose immer getrennt ausweisen.
 - Antworten extrem kurz: nur was ich ändern oder liefern muss, ein Schritt nach dem anderen. Kein Erklärtext.
+
+## Kontakt (öffentlich, für PDFs/Posts)
+
+- E-Mail: info.safetothrive@gmail.com
+- Instagram: @petratanner.autorin
+- Amazon: Hero-Buch Kindle B0HGSBZS18, TB B0HGT4PX8H. Eigene Autorenseite-URL unbekannt → bis dahin Suche `amazon.de/s?k=Petra+Tanner&i=stripbooks`
