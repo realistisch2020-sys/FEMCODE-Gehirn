@@ -137,6 +137,18 @@ ${foot(8)}</div>
 <p style="font-size:9pt;opacity:.75;text-align:center;margin-top:3mm">Taschenbuch: Klick legt das Buch direkt in deinen Amazon-Warenkorb.<br>Ohne Klick: amazon.de/dp/B0HGT4PX8H (Taschenbuch) · amazon.de/dp/B0HGSBZS18 (Kindle)</p>
 <div class="contact"><span><a href="${AUTORLINK}">Alle meine Bücher</a></span><span><a href="mailto:${EMAIL}">${EMAIL}</a></span><span>${INSTA}</span></div>
 ${foot(9)}</div>
+<div class="p"><div class="eyebrow">Alle meine Bücher</div><h2>Für jedes Muster <i>das passende Buch.</i></h2>
+<p>Alle Bücher findest du auf Amazon. Ein Klick auf den Titel öffnet das Buch.</p>
+${[
+['Ich stand nie auf meiner eigenen Liste','Du hast an alle gedacht. Nur nicht an dich.','https://www.amazon.de/dp/B0HGT4PX8H'],
+['Deine Reaktion gehört dir. Nicht mir.','Warum du aufhören darfst, für die Gefühle anderer verantwortlich zu sein','https://www.amazon.de/dp/B0HHBDG1Y7'],
+['Wenn Beziehungen erschöpfen','','https://www.amazon.de/dp/B0H9J886MQ'],
+['Das schlechte Gewissen','','https://www.amazon.de/s?k=Petra+Tanner+Das+schlechte+Gewissen&i=stripbooks'],
+['Ich bin so müde und niemand fragt mich warum','','https://www.amazon.de/dp/B0HBQ26552'],
+['Du brauchst kein letztes Gespräch','Wie du innerlich frei wirst, auch wenn die Entschuldigung nie kommt','https://www.amazon.de/dp/B0HK86W8T4'],
+].map((b,n)=>`<a href="${b[2]}" style="text-decoration:none;color:inherit"><div class="card" style="border-top:1.5px solid var(--blush);padding:6mm 0"><div class="num" style="font-size:26pt">${String(n+1).padStart(2,'0')}</div><div class="cb"><p class="q" style="font-size:17pt;margin:0">${b[0]} <span style="color:var(--rasp)">→</span></p>${b[1]?`<p class="ask" style="margin-top:1mm">${b[1]}</p>`:''}</div></div></a>`).join('')}
+<p style="margin-top:6mm;color:var(--muted);font-size:10.5pt">${NAME} · Safe to Thrive</p>
+${foot(10)}</div>
 </body></html>`;
 (async()=>{const b=await chromium.launch();const p=await b.newPage();await p.setContent(html,{waitUntil:'networkidle'});await p.evaluate(()=>document.fonts.ready);
 await p.pdf({path:process.argv[2],format:'A4',printBackground:true});await b.close()})();

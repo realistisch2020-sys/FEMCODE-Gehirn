@@ -18,9 +18,12 @@ Ratgeber-/Selbsthilfebücher für Frauen, auf Amazon (Taschenbuch + Kindle), Mar
 | B0HGSBZS18 | Ich stand nie auf meiner eigenen Liste (Hero) | Kindle |
 | B0H9J886MQ | Wenn Beziehungen erschöpfen | ? |
 | B0HBQ26552 | Ich bin so müde und niemand fragt mich warum | Kindle |
-| B0H9HVX97R | ? (Titel offen) | ? |
-| B0HHBDG1Y7 | ? (Titel offen) | ? |
-| B0HK86W8T4 | ? (Titel offen) | ? |
+| B0H9HVX97R | ? (Titel offen, evtl. „Das schlechte Gewissen“ – nicht bestätigt) | ? |
+| B0HHBDG1Y7 | Deine Reaktion gehört dir. Nicht mir. – Warum du aufhören darfst, für die Gefühle anderer verantwortlich zu sein | ? |
+| B0HK86W8T4 | Du brauchst kein letztes Gespräch – Wie du innerlich frei wirst, auch wenn die Entschuldigung nie kommt | ? |
+
+Weitere (aus Screenshot, unvollständig): B0HGSXFQC4 – „…meiner eigenen Liste – Reflexionsfragen“ (Begleitbuch?)
+Marke auf allen Covern: „Petra Tanner – Safe to Thrive“. Cover-Stil: dunkel mit Gold.
 
 ## Meine Zielgruppe
 

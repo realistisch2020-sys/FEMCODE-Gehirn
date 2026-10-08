@@ -114,6 +114,11 @@ h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
 .breath .hint{opacity:.85;font-size:15px;max-width:32ch;margin:0}
 .skip{background:none;border:0;color:var(--on);opacity:.7;font:500 13px var(--body);margin-top:18px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
 .dots{display:flex;gap:6px;margin-top:14px}.dots i{width:6px;height:6px;border-radius:50%;background:var(--pink);opacity:.3;transition:opacity .4s}.dots i.on{opacity:1}
+.shelf{display:grid;margin-top:4px}
+.shelf a{display:flex;justify-content:space-between;gap:12px;padding:13px 2px;border-top:1px solid var(--line);color:var(--ink);text-decoration:none;font-family:var(--display);font-size:17px;transition:color .2s,padding .2s}
+.shelf a:first-child{border-top:0}
+.shelf a b{color:var(--accent);font-family:var(--body)}
+.shelf a:hover{color:var(--accent);padding-left:6px}
 @media (max-width:440px){.types{grid-template-columns:1fr 1fr}.type{padding:14px}.type h3{font-size:17px}.bar{grid-template-columns:82px 1fr 36px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.bar .t i{transition:none}}
 </style>
@@ -166,6 +171,20 @@ const Q=[
   {K:'„Ich darf zuerst fragen: Was brauche ich?“',H:'„Ein Nein zu anderen ist ein Ja zu mir.“',S:'„Ich bin wertvoll, einfach so.“',G:'„Mein schlechtes Gewissen ist kein Beweis.“'}]
 ];
 
+const BOOKS={
+ K:{t:'Ich stand nie auf meiner eigenen Liste',s:'Du hast an alle gedacht. Nur nicht an dich.',w:'Für alle, die automatisch Ja sagen und sich selbst dabei vergessen. Mit 30+ kurzen Kapiteln, Übungen und Satzhilfen.',l:[['Taschenbuch bestellen · 12,99 €','https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B0HGT4PX8H&Quantity.1=1'],['Kindle sofort lesen · 7,99 €','https://www.amazon.de/dp/B0HGSBZS18']]},
+ H:{t:'Deine Reaktion gehört dir. Nicht mir.',s:'Warum du aufhören darfst, für die Gefühle anderer verantwortlich zu sein',w:'Du spürst die Stimmung im Raum, bevor jemand etwas sagt? Dieses Buch zeigt dir, woher das kommt und wie du die Gefühle anderer bei ihnen lassen kannst.',l:[['Jetzt auf Amazon ansehen','https://www.amazon.de/dp/B0HHBDG1Y7']]},
+ S:{t:'Ich bin so müde und niemand fragt mich warum',s:'',w:'Für alle, die funktionieren, obwohl innerlich längst nichts mehr geht.',l:[['Jetzt auf Amazon ansehen','https://www.amazon.de/dp/B0HBQ26552']]},
+ G:{t:'Das schlechte Gewissen',s:'',w:'Für alle, die sich schuldig fühlen, sobald sie an sich selbst denken.',l:[['Jetzt auf Amazon ansehen','https://www.amazon.de/s?k=Petra+Tanner+Das+schlechte+Gewissen&i=stripbooks']]}
+};
+const ALL=[
+ ['Ich stand nie auf meiner eigenen Liste','https://www.amazon.de/dp/B0HGT4PX8H'],
+ ['Deine Reaktion gehört dir. Nicht mir.','https://www.amazon.de/dp/B0HHBDG1Y7'],
+ ['Wenn Beziehungen erschöpfen','https://www.amazon.de/dp/B0H9J886MQ'],
+ ['Das schlechte Gewissen','https://www.amazon.de/s?k=Petra+Tanner+Das+schlechte+Gewissen&i=stripbooks'],
+ ['Ich bin so müde und niemand fragt mich warum','https://www.amazon.de/dp/B0HBQ26552'],
+ ['Du brauchst kein letztes Gespräch','https://www.amazon.de/dp/B0HK86W8T4']
+];
 const app=document.getElementById('app');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 let i=0, answers=[], order=[];
@@ -234,7 +253,7 @@ function result(){
  const max=Math.max(...Object.values(c));
  const last=answers[Q.length-1];
  const win=c[last]===max?last:Object.keys(c).find(k=>c[k]===max);
- const t=TYPES[win];
+ const t=TYPES[win], B=BOOKS[win];
  const sorted=Object.keys(c).sort((a,b)=>c[b]-c[a]);
  const pct=k=>Math.round(c[k]/Q.length*100);
  app.innerHTML=`<section class="enter res">
@@ -253,11 +272,15 @@ function result(){
     <div class="btns"><a class="btn pri" href="${INSTA}">Schreib mir „LISTE“ auf Instagram →</a></div>
     <p class="small">Ich schicke dir das PDF direkt per Nachricht.</p>
    </div>
-   <div class="card bookcard">${blobs}<div class="eyebrow">Wenn du tiefer gehen willst</div>
-    <h3>„Ich stand nie auf meiner eigenen Liste“</h3>
-    <p style="opacity:.9">Mein Buch für alle, die an alle denken, nur nicht an sich.</p>
-    <ul><li>30+ kurze Kapitel für volle Tage</li><li>Übungen und ein Schritt pro Woche</li><li>Satzhilfen gegen das automatische Ja</li></ul>
-    <div class="btns"><a class="btn pri" href="${TB_CART}">Taschenbuch bestellen · 12,99 €</a><a class="btn line" href="${KINDLE}">Kindle sofort lesen · 7,99 €</a></div>
+   <div class="card bookcard">${blobs}<div class="eyebrow">Mein Buch für deinen Typ</div>
+    <h3>„${B.t}“</h3>
+    ${B.s?`<p style="opacity:.85;font-style:italic;margin-bottom:10px">${B.s}</p>`:''}
+    <p style="opacity:.92">${B.w}</p>
+    <div class="btns">${B.l.map((x,n)=>`<a class="btn ${n?'line':'pri'}" href="${x[1]}">${x[0]}</a>`).join('')}</div>
+   </div>
+   <div class="card"><div class="eyebrow">Alle meine Bücher</div>
+    <div class="shelf">${ALL.map(x=>`<a href="${x[1]}"><span>${x[0]}</span><b>→</b></a>`).join('')}</div>
+    <p class="small">Petra Tanner · Safe to Thrive</p>
    </div>
   </div>
   <div class="row"><button class="btn" id="share">Ergebnis kopieren</button><button class="btn" id="again">Test neu starten</button></div>
