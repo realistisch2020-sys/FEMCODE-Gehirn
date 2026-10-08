@@ -10,6 +10,18 @@ Ratgeber-/Selbsthilfebücher für Frauen, auf Amazon (Taschenbuch + Kindle), Mar
 - Portfolio-Priorität (Werbung/Fokus): 1. Ich stand nie auf meiner eigenen Liste · 2. Wenn Beziehungen erschöpfen · 3. Das schlechte Gewissen · 4. Ich bin so müde und niemand fragt mich warum · 5. Du brauchst kein letztes Gespräch
 - 6 Titel veröffentlicht, Buch 7 erscheint Anfang/Mitte Oktober 2026.
 
+## Amazon-Links (von Petra, 08.10.2026)
+
+| ASIN | Titel | Format |
+|---|---|---|
+| B0HGT4PX8H | Ich stand nie auf meiner eigenen Liste (Hero) | Taschenbuch |
+| B0HGSBZS18 | Ich stand nie auf meiner eigenen Liste (Hero) | Kindle |
+| B0H9J886MQ | Wenn Beziehungen erschöpfen | ? |
+| B0HBQ26552 | Ich bin so müde und niemand fragt mich warum | Kindle |
+| B0H9HVX97R | ? (Titel offen) | ? |
+| B0HHBDG1Y7 | ? (Titel offen) | ? |
+| B0HK86W8T4 | ? (Titel offen) | ? |
+
 ## Meine Zielgruppe
 
 Frauen, die für andere da sind, automatisch Ja sagen, eigene Bedürfnisse übergehen und sich schuldig fühlen, wenn sie sich selbst wichtig nehmen.
