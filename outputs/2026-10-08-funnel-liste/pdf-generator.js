@@ -6,7 +6,7 @@ const NAME='Petra Tanner';
 const AUTORLINK='https://www.amazon.de/s?k=Petra+Tanner&i=stripbooks';
 const EMAIL='info.safetothrive@gmail.com';
 const INSTA='@petratanner.autorin';
-const TB='https://www.amazon.de/dp/B0HGT4PX8H', KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
+const TB='https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B0HGT4PX8H&Quantity.1=1', KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
 // ==========================
 const S=[
 ['Ich muss mir Ruhe nicht erst verdienen.','Ich darf sie mir einfach nehmen.','Wann hast du dir zuletzt Ruhe erlaubt, ohne sie vorher „abzuarbeiten“?'],
@@ -132,8 +132,9 @@ ${foot(8)}</div>
 <div class="bookcard"><div class="serif" style="font-size:24pt;line-height:1.15">„Ich stand nie auf meiner eigenen Liste“</div>
 <p style="opacity:.85;margin:2mm 0 4mm">Du hast an alle gedacht. Nur nicht an dich.</p>
 <ul class="c" style="margin:0"><li>30+ kurze Kapitel, die du auch an vollen Tagen schaffst</li><li>Übungen und ein Schritt pro Woche</li><li>Satzhilfen für Momente, in denen du sonst automatisch Ja sagst</li></ul></div>
-<a class="btn" href="${TB}">Taschenbuch auf Amazon →</a>
-<a class="btn o" href="${KINDLE}">Kindle-Ausgabe auf Amazon →</a>
+<a class="btn" href="${TB}">Taschenbuch jetzt bestellen · 12,99 € →</a>
+<a class="btn o" href="${KINDLE}">Kindle sofort lesen · 7,99 € →</a>
+<p style="font-size:9pt;opacity:.75;text-align:center;margin-top:3mm">Taschenbuch: Klick legt das Buch direkt in deinen Amazon-Warenkorb.<br>Ohne Klick: amazon.de/dp/B0HGT4PX8H (Taschenbuch) · amazon.de/dp/B0HGSBZS18 (Kindle)</p>
 <div class="contact"><span><a href="${AUTORLINK}">Alle meine Bücher</a></span><span><a href="mailto:${EMAIL}">${EMAIL}</a></span><span>${INSTA}</span></div>
 ${foot(9)}</div>
 </body></html>`;
