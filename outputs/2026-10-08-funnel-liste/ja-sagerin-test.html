@@ -1,0 +1,189 @@
+<title>Welche Ja-Sagerin bist du?</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: eine schmale Karte, eine Frage pro Bildschirm, Ergebnis als Beeren-Karte */
+:root{
+  --bg:#FFF9F6; --surface:#FFFFFF; --soft:#F6E3EB; --berry:#6B1D46; --rasp:#B8326A;
+  --ink:#2A1420; --muted:#7A5A68; --line:#EBCFDB; --on-berry:#FFF5F8; --pink:#F7B7D0;
+  --display:'Fraunces',Georgia,'Times New Roman',serif; --body:'DM Sans',system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1E0E17; --surface:#2A1420; --soft:#3A1A2B; --berry:#F2A9C6; --rasp:#E0609A;
+  --ink:#FBEAF1; --muted:#C9A3B4; --line:#4A2537; --on-berry:#2A1420; --pink:#F7B7D0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1E0E17; --surface:#2A1420; --soft:#3A1A2B; --berry:#F2A9C6; --rasp:#E0609A;
+  --ink:#FBEAF1; --muted:#C9A3B4; --line:#4A2537; --on-berry:#2A1420; --pink:#F7B7D0; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;padding-inline:16px;padding-block:28px 48px}
+.wrap{max-width:560px;margin:0 auto}
+.brand{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rasp);font-weight:700;margin-bottom:28px}
+.brand a{color:var(--muted);text-decoration:none;letter-spacing:.05em;text-transform:none;font-weight:500}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;color:var(--berry)}
+h1{font-size:clamp(38px,9vw,56px);line-height:1.02}
+h1 i,h2 i{color:var(--rasp)}
+h2{font-size:clamp(26px,6vw,34px);line-height:1.15}
+.lead{font-size:18px;color:var(--muted);margin:18px 0 26px;max-width:46ch}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:999px;background:var(--rasp);color:#fff;font:700 16px var(--body);padding:16px 28px;cursor:pointer;text-decoration:none;text-align:center}
+.btn:focus-visible,.opt:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--berry);border:1.5px solid var(--line)}
+.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--muted)}
+.types{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:34px}
+.types div{background:var(--soft);border-radius:16px;padding:14px 16px;font-family:var(--display);font-size:17px;color:var(--berry)}
+.types small{display:block;font-family:var(--body);font-size:12.5px;color:var(--muted);margin-top:2px}
+.prog{display:flex;gap:5px;margin-bottom:26px}
+.prog span{flex:1;height:5px;border-radius:5px;background:var(--line);transition:background .3s}
+.prog span.on{background:var(--rasp)}
+.qn{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rasp);font-weight:700;margin-bottom:10px}
+.opts{display:grid;gap:10px;margin-top:24px}
+.opt{width:100%;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px;font:500 16px/1.45 var(--body);color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+.opt:hover{border-color:var(--rasp)}
+.opt.sel{background:var(--soft);border-color:var(--rasp)}
+.back{background:none;border:0;color:var(--muted);font:500 14px var(--body);margin-top:18px;cursor:pointer;padding:6px 0}
+.res{background:var(--berry);color:var(--on-berry);border-radius:28px;padding:30px 26px;position:relative;overflow:hidden}
+.res::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--rasp);opacity:.5;right:-90px;top:-100px}
+.res>*{position:relative;z-index:1}
+.res .k{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;opacity:.8}
+.res h2{color:var(--on-berry);font-size:clamp(34px,8vw,46px);margin:8px 0 14px}
+.res p{margin:0 0 12px}
+.bars{display:grid;gap:8px;margin:22px 0 4px}
+.bar{display:grid;grid-template-columns:118px 1fr 34px;align-items:center;gap:10px;font-size:13px}
+.bar .t{height:8px;border-radius:8px;background:color-mix(in srgb,var(--on-berry) 22%,transparent);overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--pink);border-radius:8px}
+.bar b{font-variant-numeric:tabular-nums;text-align:right}
+.sec{margin-top:28px;display:grid;gap:14px}
+.box{background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:20px 22px}
+.box .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--rasp);font-weight:700;margin-bottom:6px}
+.quote{font-family:var(--display);font-style:italic;font-size:22px;line-height:1.3;color:var(--berry)}
+.book{background:var(--soft);border:0}
+.book h3{font-size:24px;line-height:1.15;margin:4px 0 6px}
+.cta{display:grid;gap:10px;margin-top:16px}
+.small{font-size:13px;color:var(--muted)}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.row .btn{flex:1 1 200px}
+.fade{animation:in .35s ease both}
+@keyframes in{from{opacity:.001;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fade{animation:none}.opt,.prog span{transition:none}}
+@media (max-width:420px){.types{grid-template-columns:1fr}.bar{grid-template-columns:96px 1fr 30px}}
+</style>
+
+<div class="wrap">
+  <div class="brand"><span>Petra Tanner</span><a href="https://www.instagram.com/petratanner.autorin/">@petratanner.autorin</a></div>
+  <main id="app"></main>
+</div>
+
+<script>
+const TB_CART='https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B0HGT4PX8H&Quantity.1=1';
+const KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
+const INSTA='https://www.instagram.com/petratanner.autorin/';
+
+const TYPES={
+ K:{name:'Die Kümmerin',short:'sieht alle, nur nicht sich',
+    text:'Du merkst, was andere brauchen, bevor sie es aussprechen. Du bist der Mensch, bei dem alle landen. Nur wer fragt eigentlich dich?',
+    pattern:'Du sagst Ja, weil du dich verantwortlich fühlst. Deine eigenen Bedürfnisse kommen erst, wenn alle versorgt sind. Und das ist nie.',
+    satz:'Bevor ich frage „Was brauchen die anderen?“, frage ich zuerst: „Was brauche ich?“',
+    step:'Stell dir diese Woche jeden Morgen eine Frage: „Was brauche ich heute?“ Schreib die Antwort auf, bevor du aufs Handy schaust.'},
+ H:{name:'Die Friedensstifterin',short:'hält alle zusammen',
+    text:'Du spürst jede Spannung im Raum und gleichst sie aus. Mit dir gibt es keinen Streit. Dafür schluckst du vieles herunter.',
+    pattern:'Du sagst Ja, weil ein Nein Ärger bedeuten könnte. Lieber trägst du die Last, als jemanden zu enttäuschen.',
+    satz:'Ein Nein zu anderen ist manchmal ein Ja zu mir.',
+    step:'Sag diese Woche einmal: „Ich schaue in meinen Kalender und sage dir morgen Bescheid.“ Damit stoppst du das automatische Ja.'},
+ S:{name:'Die Starke',short:'schafft einfach alles',
+    text:'Auf dich ist Verlass. Du funktionierst, auch wenn du längst nicht mehr kannst. Schwäche zeigen fühlt sich für dich fremd an.',
+    pattern:'Du sagst Ja, weil du es eben kannst. Dein Wert hängt für dich daran, was du leistest. Müdigkeit übergehst du.',
+    satz:'Ich bin nicht nur so viel wert, wie ich leiste. Ich bin wertvoll, einfach so.',
+    step:'Plane diese Woche 30 Minuten ein, in denen du nichts leistest. Kein Haushalt, kein Handy, nichts erledigen.'},
+ G:{name:'Die Pflichtbewusste',short:'trägt das schlechte Gewissen',
+    text:'Du nimmst alles ernst, besonders deine Pflichten. Selbst wenn du dir eine Pause gönnst, sitzt das schlechte Gewissen mit am Tisch.',
+    pattern:'Du sagst Ja, weil ein Nein sich wie ein Fehler anfühlt. Danach grübelst du lange, ob du genug getan hast.',
+    satz:'Mein schlechtes Gewissen ist kein Beweis, dass ich etwas falsch mache. Es zeigt nur, dass ich etwas Neues lerne.',
+    step:'Wenn sich diese Woche das schlechte Gewissen meldet, sag innerlich: „Danke, ich hab dich gehört.“ Und bleib bei deiner Entscheidung.'}
+};
+const Q=[
+ ['Eine Kollegin fragt, ob du noch ihr Projekt übernimmst. Dein erster Gedanke?',
+  {K:'„Sie hat so viel um die Ohren, ich helfe ihr.“',H:'„Wenn ich Nein sage, ist sie bestimmt sauer.“',S:'„Ich schaffe das schon irgendwie.“',G:'„Ich würde mich schlecht fühlen, wenn ich ablehne.“'}],
+ ['Du hast einen freien Samstagnachmittag. Was passiert meistens?',
+  {K:'Er geht für das drauf, was andere gerade brauchen.',H:'Ich sage zu dem Ja, was andere vorschlagen.',S:'Ich erledige, was liegen geblieben ist.',G:'Ich ruhe mich aus, aber mit schlechtem Gewissen.'}],
+ ['Was sagen andere am ehesten über dich?',
+  {K:'„Sie ist immer für alle da.“',H:'„Mit ihr gibt es nie Streit.“',S:'„Auf sie ist Verlass, sie schafft alles.“',G:'„Sie nimmt alles sehr ernst.“'}],
+ ['Wenn du doch einmal Nein sagst …',
+  {K:'… frage ich mich danach, ob der andere zurechtkommt.',H:'… erkläre ich es lange und entschuldige mich mehrmals.',S:'… kommt selten vor. Ich mache es lieber selbst.',G:'… grüble ich noch stundenlang darüber nach.'}],
+ ['Was erschöpft dich am meisten?',
+  {K:'Dass niemand fragt, wie es mir eigentlich geht.',H:'Spannungen, die ich ausgleichen muss.',S:'Dass alles an mir hängen bleibt.',G:'Das Gefühl, nie genug zu tun.'}],
+ ['Dein Körper sagt deutlich: Pause. Du …',
+  {K:'… mache weiter, die anderen brauchen mich.',H:'… warte, bis es niemanden stört.',S:'… trinke einen Kaffee und funktioniere.',G:'… mache Pause, fühle mich aber faul.'}],
+ ['Was wünschst du dir heimlich?',
+  {K:'Dass sich einmal jemand um mich kümmert.',H:'Sagen zu können, was ich denke, ohne Angst.',S:'Einmal nicht stark sein zu müssen.',G:'Mich gut zu fühlen, ohne es mir verdient zu haben.'}],
+ ['Welcher Satz trifft dich gerade am meisten?',
+  {K:'„Ich darf zuerst fragen: Was brauche ich?“',H:'„Ein Nein zu anderen ist ein Ja zu mir.“',S:'„Ich bin wertvoll, einfach so.“',G:'„Mein schlechtes Gewissen ist kein Beweis.“'}]
+];
+const app=document.getElementById('app');
+let i=0, answers=[], order=[];
+const shuffle=a=>{a=a.slice();for(let j=a.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[a[j],a[k]]=[a[k],a[j]]}return a};
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+
+function start(){
+ app.innerHTML=`<section class="fade">
+  <h1>Welche <i>Ja-Sagerin</i> bist du?</h1>
+  <p class="lead">Du sagst Ja, obwohl du Nein meinst? Finde in 8 Fragen heraus, warum. Und was dir hilft, endlich auch auf deiner eigenen Liste zu stehen.</p>
+  <button class="btn" id="go">Test starten →</button>
+  <div class="meta"><span>8 Fragen</span><span>ca. 2 Minuten</span><span>kostenlos, ohne Anmeldung</span></div>
+  <div class="types">${Object.values(TYPES).map(t=>`<div>${t.name}<small>${t.short}</small></div>`).join('')}</div>
+ </section>`;
+ document.getElementById('go').onclick=()=>{i=0;answers=[];order=Q.map(()=>shuffle(['K','H','S','G']));ask()};
+}
+function ask(){
+ const [q,o]=Q[i];
+ app.innerHTML=`<section class="fade">
+  <div class="prog">${Q.map((_,n)=>`<span class="${n<=i?'on':''}"></span>`).join('')}</div>
+  <div class="qn">Frage ${i+1} von ${Q.length}</div>
+  <h2>${esc(q)}</h2>
+  <div class="opts">${order[i].map(k=>`<button class="opt${answers[i]===k?' sel':''}" data-k="${k}">${esc(o[k])}</button>`).join('')}</div>
+  ${i>0?'<button class="back" id="back">← Zurück</button>':''}
+ </section>`;
+ app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{answers[i]=b.dataset.k;b.classList.add('sel');setTimeout(()=>{i++;i<Q.length?ask():result()},180)});
+ const bk=document.getElementById('back'); if(bk) bk.onclick=()=>{i--;ask()};
+ window.scrollTo({top:0});
+}
+function result(){
+ const c={K:0,H:0,S:0,G:0}; answers.forEach(a=>c[a]++);
+ const max=Math.max(...Object.values(c));
+ const top=c[answers[Q.length-1]]===max?answers[Q.length-1]:Object.keys(c).find(k=>c[k]===max);
+ const t=TYPES[top];
+ const sorted=Object.keys(c).sort((a,b)=>c[b]-c[a]);
+ app.innerHTML=`<section class="fade">
+  <div class="res">
+   <div class="k">Dein Ergebnis</div>
+   <h2>${t.name}</h2>
+   <p>${t.text}</p>
+   <div class="bars">${sorted.map(k=>`<div class="bar"><span>${TYPES[k].name.replace('Die ','')}</span><span class="t"><i style="width:${Math.round(c[k]/Q.length*100)}%"></i></span><b>${Math.round(c[k]/Q.length*100)}%</b></div>`).join('')}</div>
+  </div>
+  <div class="sec">
+   <div class="box"><div class="k">Dein Muster</div><p style="margin:0">${t.pattern}</p></div>
+   <div class="box"><div class="k">Dein Satz</div><div class="quote">${t.satz}</div></div>
+   <div class="box"><div class="k">Dein erster Schritt diese Woche</div><p style="margin:0">${t.step}</p></div>
+   <div class="box book"><div class="k">Gratis für dich</div>
+    <h3>Das Workbook „9 Sätze für dich“</h3>
+    <p style="margin:0">Alle 9 Sätze mit Fragen, fertige Sätze zum Neinsagen ohne Rechtfertigung und die Übung „Meine eigene Liste“.</p>
+    <div class="cta"><a class="btn" href="${INSTA}">Schreib mir „LISTE“ auf Instagram →</a></div>
+    <p class="small" style="margin:8px 0 0">Ich schicke dir das PDF direkt per Nachricht.</p>
+   </div>
+   <div class="box"><div class="k">Wenn du tiefer gehen willst</div>
+    <h3 style="font-size:24px;line-height:1.15;margin:4px 0 6px">„Ich stand nie auf meiner eigenen Liste“</h3>
+    <p style="margin:0">Mein Buch für Frauen, die an alle denken, nur nicht an sich: 30+ kurze Kapitel, Übungen, ein Schritt pro Woche und Satzhilfen für Momente, in denen du sonst automatisch Ja sagst.</p>
+    <div class="cta"><a class="btn" href="${TB_CART}">Taschenbuch bestellen · 12,99 €</a><a class="btn ghost" href="${KINDLE}">Kindle sofort lesen · 7,99 €</a></div>
+   </div>
+  </div>
+  <div class="row"><button class="btn ghost" id="share">Ergebnis kopieren</button><button class="btn ghost" id="again">Test neu starten</button></div>
+  <p class="small" id="msg" style="margin-top:10px" aria-live="polite"></p>
+ </section>`;
+ document.getElementById('again').onclick=start;
+ document.getElementById('share').onclick=async()=>{
+  const txt=`Ich bin „${t.name}“ 🤍 Welche Ja-Sagerin bist du? Mach den Test bei @petratanner.autorin`;
+  const m=document.getElementById('msg');
+  try{await navigator.clipboard.writeText(txt);m.textContent='Kopiert. Füg es in deine Story oder eine Nachricht ein.'}
+  catch(e){m.textContent=txt}
+ };
+ window.scrollTo({top:0});
+}
+start();
+</script>

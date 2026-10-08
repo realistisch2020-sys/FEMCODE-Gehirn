@@ -21,6 +21,7 @@
 ## Demnächst
 
 - Amazon-Autorenseite (Author Central) anlegen/Link holen → dann im PDF `pdf-generator.js` (AUTORLINK) ersetzen
+- Persönlichkeitstest „Welche Ja-Sagerin bist du?“ öffentlich hosten (Weg klären) → `outputs/2026-10-08-funnel-liste/ja-sagerin-test.html`
 - Funnel „LISTE“ starten (Petra): Tentary-Gratisprodukt, ManyChat-Stichwort, Reel posten → `outputs/2026-10-08-funnel-liste/funnel.md`. Nach 7 Tagen Zahlen auswerten.
 
 - 7-Tage-Lerntest Ads (vorläufig: Budgets 15 €/Tag, max. 85 € tatsächliche Ausgaben), erst nach Freigabe

@@ -69,3 +69,16 @@ Bild 10 aus dem Karussell + Umfrage: „Welcher Satz fällt dir am schwersten? 3
 | DMs verschickt / Link-Klicks | ManyChat |
 | PDF-Downloads / E-Mails | Tentary |
 | Buchverkäufe | KDP (Hinweis: Amazon-Klicks ohne Attribution-Link nicht zuordenbar → Amazon Attribution prüfen, siehe offene Punkte) |
+
+## Variante: Persönlichkeitstest „Welche Ja-Sagerin bist du?“
+
+Datei: `ja-sagerin-test.html` (Vorschau: https://claude.ai/artifact/P5fGYtpjFdXEbvUMcVMxLV, privat)
+
+- 8 Fragen, 4 Typen: Die Kümmerin · Die Friedensstifterin · Die Starke · Die Pflichtbewusste
+- Ergebnis: Beschreibung, Prozent je Typ, „Dein Muster“, passender Satz aus den 9 Sätzen, erster Schritt für die Woche
+- Danach: Gratis-Workbook (DM „LISTE“ auf Instagram) + Buch-Knöpfe (Taschenbuch Warenkorb, Kindle)
+- „Ergebnis kopieren“ → Text für Story/Nachricht (Teilen = Reichweite)
+
+Ablauf: Reel/Post „Welche Ja-Sagerin bist du?“ → Kommentar „TEST“ → DM mit Test-Link → Ergebnis → „LISTE“ → PDF → Buch.
+
+Offen: Test öffentlich erreichbar machen. Die Vorschau ist privat. Die HTML-Datei funktioniert eigenständig und kann auf jede Website/Landingpage-Tool (z. B. Tentary-Seite, eigene Domain, Netlify Drop) hochgeladen werden.
