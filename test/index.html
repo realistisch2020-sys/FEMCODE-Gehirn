@@ -1,0 +1,330 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>[hidden]{display:none!important}img{max-width:100%}</style></head><body>
+<title>Welcher Ja-Sager-Typ bist du?</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: Workbook-Look – Beeren-Bühne oben, cremige Karten darunter, eine Frage pro Bildschirm */
+:root{
+  --bg:#FFF9F6; --surface:#FFFFFF; --soft:#F6E3EB; --line:#EBCFDB;
+  --ink:#2A1420; --muted:#7A5A68; --accent:#B8326A; --head:#6B1D46;
+  --stage:#6B1D46; --stage2:#45122E; --rasp:#B8326A; --plum:#8E2A5C; --pink:#F7B7D0; --on:#FFF5F8;
+  --display:'Fraunces',Georgia,'Times New Roman',serif; --body:'DM Sans',system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1A0C14; --surface:#24121C; --soft:#331827; --line:#4A2537; --ink:#FBEAF1; --muted:#C9A3B4; --accent:#EC6FA3; --head:#F7B7D0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1A0C14; --surface:#24121C; --soft:#331827; --line:#4A2537; --ink:#FBEAF1; --muted:#C9A3B4; --accent:#EC6FA3; --head:#F7B7D0; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;padding-inline:16px;padding-block:20px 56px}
+.wrap{max-width:600px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+
+/* Bühne (wie PDF-Titelblatt) */
+.stage{position:relative;overflow:hidden;border-radius:32px;background:linear-gradient(160deg,var(--stage),var(--stage2));color:var(--on);padding:30px 26px 32px;isolation:isolate}
+.blob{position:absolute;border-radius:50%;z-index:-1;filter:blur(.5px)}
+.b1{width:300px;height:300px;right:-110px;top:-120px;background:var(--rasp);opacity:.85;animation:float1 12s ease-in-out infinite}
+.b2{width:190px;height:190px;left:-80px;bottom:-60px;background:var(--plum);animation:float2 14s ease-in-out infinite}
+.b3{width:70px;height:70px;right:34px;bottom:40px;background:var(--pink);opacity:.25;animation:float1 9s ease-in-out infinite reverse}
+@keyframes float1{50%{transform:translate(-18px,22px) scale(1.06)}}
+@keyframes float2{50%{transform:translate(20px,-16px) scale(.95)}}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:46px}
+.pill{display:inline-block;border:1.5px solid rgba(255,245,248,.55);border-radius:99px;padding:6px 14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.handle{color:var(--on);opacity:.8;text-decoration:none;font-size:13px}
+.stage h1{font-size:clamp(42px,11vw,68px);line-height:.98}
+.stage h1 i,.stage h2 i{color:var(--pink)}
+.stage .sub{font-size:17px;opacity:.92;margin:18px 0 26px;max-width:40ch}
+.go{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:10px;border:0;border-radius:99px;background:var(--on);color:var(--stage);font:700 16px var(--body);padding:17px 30px;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 30px -10px rgba(0,0,0,.45)}
+.go::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(184,50,106,.18) 50%,transparent 70%);transform:translateX(-100%);animation:shine 3.2s ease-in-out infinite}
+@keyframes shine{60%,100%{transform:translateX(100%)}}
+.go:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(0,0,0,.5)}
+.go span{transition:transform .2s}.go:hover span{transform:translateX(4px)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:13.5px;opacity:.85}
+.facts b{color:var(--pink);font-weight:700}
+
+.types{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.type{background:var(--surface);border:1.5px solid var(--line);border-radius:22px;padding:16px 16px 18px;transition:transform .25s,border-color .25s}
+.type:hover{transform:translateY(-3px);border-color:var(--accent)}
+.dot{width:34px;height:34px;border-radius:50%;margin-bottom:12px;display:grid;place-items:center;color:#fff;font-family:var(--display);font-size:16px}
+.type h3{font-size:19px;color:var(--head)}
+.type p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+
+/* Frage */
+.qhead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.qnum{font-family:var(--display);font-size:44px;line-height:1;color:var(--pink)}
+.qnum small{font-size:18px;opacity:.7}
+.track{height:6px;border-radius:6px;background:rgba(255,245,248,.2);overflow:hidden}
+.track i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--pink),#fff);transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.stage h2{font-size:clamp(25px,6.4vw,33px);line-height:1.18;margin-top:22px}
+.opts{display:grid;gap:10px;margin-top:16px}
+.opt{position:relative;width:100%;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:17px 52px 17px 20px;font:500 16px/1.45 var(--body);color:var(--ink);cursor:pointer;transition:transform .2s,border-color .2s,background .25s,color .25s,box-shadow .2s;animation:rise .45s cubic-bezier(.2,.8,.2,1) both}
+.opt:nth-child(2){animation-delay:.05s}.opt:nth-child(3){animation-delay:.1s}.opt:nth-child(4){animation-delay:.15s}
+.opt::after{content:"";position:absolute;right:18px;top:50%;width:20px;height:20px;margin-top:-10px;border-radius:50%;border:1.5px solid var(--line);transition:all .2s}
+.opt:hover{transform:translateX(4px);border-color:var(--accent);box-shadow:0 8px 24px -16px var(--accent)}
+.opt.sel{background:var(--stage);border-color:var(--stage);color:var(--on);transform:scale(1.02)}
+.opt.sel::after{border-color:var(--pink);background:var(--pink);box-shadow:inset 0 0 0 4px var(--stage)}
+.opt:focus-visible,.go:focus-visible,.btn:focus-visible,.back:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.back{background:none;border:0;color:var(--muted);font:500 14px var(--body);margin-top:14px;cursor:pointer;padding:6px 2px}
+@keyframes rise{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
+.enter{animation:enter .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes enter{from{opacity:.001;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+
+/* Ergebnis */
+.res .name{font-size:clamp(44px,12vw,64px);line-height:1;margin:14px 0 16px}
+.res .name i{color:var(--pink)}
+.res p{margin:0;opacity:.95;max-width:44ch}
+.bars{display:grid;gap:10px;margin-top:26px}
+.bar{display:grid;grid-template-columns:96px 1fr 40px;align-items:center;gap:12px;font-size:13.5px}
+.bar .t{height:10px;border-radius:10px;background:rgba(255,245,248,.16);overflow:hidden}
+.bar .t i{display:block;height:100%;width:0;border-radius:10px;background:linear-gradient(90deg,var(--pink),#fff);transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.bar b{font-variant-numeric:tabular-nums;text-align:right}
+.bar.win span{font-weight:700}
+.hearts{position:absolute;inset:0;pointer-events:none;z-index:2}
+.hearts span{position:absolute;bottom:-20px;font-size:18px;color:var(--pink);animation:up 2.6s ease-out forwards;opacity:0}
+@keyframes up{0%{opacity:0;transform:translateY(0) scale(.6)}15%{opacity:.9}100%{opacity:0;transform:translateY(-420px) scale(1.1) rotate(20deg)}}
+.cards{display:grid;gap:12px;margin-top:14px}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:24px;padding:22px 22px 24px;animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
+.card:nth-child(2){animation-delay:.12s}.card:nth-child(3){animation-delay:.24s}.card:nth-child(4){animation-delay:.36s}
+.card .eyebrow{color:var(--accent);margin-bottom:8px}
+.card p{margin:0}
+.quote{font-family:var(--display);font-style:italic;font-size:23px;line-height:1.3;color:var(--head)}
+.card.soft{background:var(--soft);border-color:transparent}
+.card h3{font-size:25px;line-height:1.15;color:var(--head);margin-bottom:8px}
+.btn{display:flex;justify-content:center;align-items:center;gap:8px;border-radius:99px;padding:16px 22px;font:700 15.5px var(--body);text-decoration:none;text-align:center;cursor:pointer;border:0;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--rasp);color:#fff;box-shadow:0 10px 24px -14px var(--rasp)}
+.btn.line{background:transparent;border:1.5px solid currentColor}
+.btns{display:grid;gap:10px;margin-top:18px}
+.bookcard{background:linear-gradient(160deg,var(--stage),var(--stage2));color:var(--on);border:0;position:relative;overflow:hidden;isolation:isolate}
+.bookcard h3{color:var(--on)}
+.bookcard .eyebrow{color:var(--pink)}
+.bookcard ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px;font-size:14.5px}
+.bookcard li::before{content:"✓";color:var(--pink);font-weight:700;margin-right:10px}
+.bookcard .btn.line{color:var(--on)}
+.small{font-size:13px;color:var(--muted);margin-top:10px!important}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.row .btn{flex:1 1 180px;background:var(--surface);color:var(--head);border:1.5px solid var(--line)}
+.msg{font-size:13px;color:var(--muted);min-height:1.4em;margin-top:8px}
+
+/* Atem-Pause vor dem Ergebnis */
+.breath{min-height:520px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.circle{position:relative;width:230px;height:230px;margin:34px 0 28px;display:grid;place-items:center}
+.circle .ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(255,245,248,.35)}
+.circle .orb{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--pink),var(--rasp) 70%);box-shadow:0 0 60px -6px var(--rasp);transform:scale(.45);transition:transform 4s ease-in-out}
+.circle.in .orb{transform:scale(1)}
+.circle .word{position:relative;font-family:var(--display);font-size:26px;font-style:italic;color:var(--on)}
+.breath .hint{opacity:.85;font-size:15px;max-width:32ch;margin:0}
+.skip{background:none;border:0;color:var(--on);opacity:.7;font:500 13px var(--body);margin-top:18px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.dots{display:flex;gap:6px;margin-top:14px}.dots i{width:6px;height:6px;border-radius:50%;background:var(--pink);opacity:.3;transition:opacity .4s}.dots i.on{opacity:1}
+.shelf{display:grid;margin-top:4px}
+.shelf a{display:flex;justify-content:space-between;gap:12px;padding:13px 2px;border-top:1px solid var(--line);color:var(--ink);text-decoration:none;font-family:var(--display);font-size:17px;transition:color .2s,padding .2s}
+.shelf a:first-child{border-top:0}
+.shelf a b{color:var(--accent);font-family:var(--body)}
+.shelf a:hover{color:var(--accent);padding-left:6px}
+.insta{padding:0}
+.insta a{display:flex;align-items:center;gap:14px;padding:18px 20px;color:var(--ink);text-decoration:none}
+.insta .ig{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--rasp),var(--plum))}
+.insta small{color:var(--muted);font-size:13px}
+.insta .arr{margin-left:auto;color:var(--accent)}
+.insta a:hover .arr{transform:translateX(4px)}.insta .arr{transition:transform .2s}
+@media (max-width:440px){.types{grid-template-columns:1fr 1fr}.type{padding:14px}.type h3{font-size:17px}.bar{grid-template-columns:82px 1fr 36px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.bar .t i{transition:none}}
+</style>
+
+<div class="wrap"><main id="app"></main></div>
+
+<script>
+const TB_CART='https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B0HGT4PX8H&Quantity.1=1';
+const KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
+const INSTA='https://www.instagram.com/petratanner.autorin/';
+// WhatsApp-Nummer nur Ziffern mit Ländervorwahl, ohne + und Leerzeichen, z. B. '41791234567'
+const WA_NUMBER='41787189109';
+// Anonyme Zählung mit GoatCounter (keine Cookies, keine Namen).
+// Konto anlegen auf goatcounter.com, Code hier eintragen, z. B. 'petratanner'. Leer = keine Zählung.
+const GOATCOUNTER='';
+if(GOATCOUNTER){try{const g=document.createElement('script');g.async=true;g.src='https://gc.zgo.at/count.js';
+ g.dataset.goatcounter=`https://${GOATCOUNTER}.goatcounter.com/count`;document.head.appendChild(g)}catch(e){}}
+function track(name){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'test/'+name,title:name,event:true})}catch(e){}}
+document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]');if(!a)return;const h=a.href;
+ track(h.includes('wa.me')?'klick-whatsapp':h.includes('instagram')?'klick-instagram':h.includes('amazon')?'klick-amazon':'klick-link')},true);
+const WA=WA_NUMBER?`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('LISTE')}`:INSTA;
+const COL={K:'#B8326A',H:'#8E2A5C',S:'#6B1D46',G:'#D4628F'};
+const TYPES={
+ K:{name:'Typ Fürsorge',short:'sieht alle, nur nicht sich',
+    text:'Du merkst, was andere brauchen, bevor sie es aussprechen. Bei dir landen alle. Nur wer fragt eigentlich dich?',
+    pattern:'Du sagst Ja, weil du dich verantwortlich fühlst. Deine eigenen Bedürfnisse kommen erst, wenn alle versorgt sind. Und das ist nie.',
+    satz:'Bevor ich frage „Was brauchen die anderen?“, frage ich zuerst: „Was brauche ich?“',
+    step:'Stell dir diese Woche jeden Morgen eine Frage: „Was brauche ich heute?“ Schreib die Antwort auf, bevor du aufs Handy schaust.'},
+ H:{name:'Typ Harmonie',short:'hält alle zusammen',
+    text:'Du spürst jede Spannung im Raum und gleichst sie aus. Mit dir gibt es selten Streit. Dafür schluckst du vieles herunter.',
+    pattern:'Du sagst Ja, weil ein Nein Ärger bedeuten könnte. Lieber trägst du die Last, als jemanden zu enttäuschen.',
+    satz:'Ein Nein zu anderen ist manchmal ein Ja zu mir.',
+    step:'Sag diese Woche einmal: „Ich schaue in meinen Kalender und sage dir morgen Bescheid.“ Damit stoppst du das automatische Ja.'},
+ S:{name:'Typ Stärke',short:'schafft einfach alles',
+    text:'Auf dich ist Verlass. Du funktionierst, auch wenn du längst nicht mehr kannst. Schwäche zeigen fühlt sich für dich fremd an.',
+    pattern:'Du sagst Ja, weil du es eben kannst. Dein Wert hängt für dich daran, was du leistest. Müdigkeit übergehst du.',
+    satz:'Ich bin nicht nur so viel wert, wie ich leiste. Ich bin wertvoll, einfach so.',
+    step:'Plane diese Woche 30 Minuten ein, in denen du nichts leistest. Kein Haushalt, kein Handy, nichts erledigen.'},
+ G:{name:'Typ Pflicht',short:'trägt das schlechte Gewissen',
+    text:'Du nimmst alles ernst, besonders deine Pflichten. Selbst wenn du dir eine Pause gönnst, sitzt das schlechte Gewissen mit am Tisch.',
+    pattern:'Du sagst Ja, weil ein Nein sich wie ein Fehler anfühlt. Danach grübelst du lange, ob du genug getan hast.',
+    satz:'Mein schlechtes Gewissen ist kein Beweis, dass ich etwas falsch mache. Es zeigt nur, dass ich etwas Neues lerne.',
+    step:'Wenn sich diese Woche das schlechte Gewissen meldet, sag innerlich: „Danke, ich hab dich gehört.“ Und bleib bei deiner Entscheidung.'}
+};
+const Q=[
+ ['Jemand bittet dich um einen Gefallen, obwohl du eigentlich keine Kraft mehr hast. Dein erster Gedanke?',
+  {K:'„Die Person hat so viel um die Ohren, ich helfe.“',H:'„Wenn ich Nein sage, gibt es bestimmt Ärger.“',S:'„Ich schaffe das schon irgendwie.“',G:'„Ich würde mich schlecht fühlen, wenn ich ablehne.“'}],
+ ['Du hast einen freien Samstagnachmittag. Was passiert meistens?',
+  {K:'Er geht für das drauf, was andere gerade brauchen.',H:'Ich sage zu dem Ja, was andere vorschlagen.',S:'Ich erledige, was liegen geblieben ist.',G:'Ich ruhe mich aus, aber mit schlechtem Gewissen.'}],
+ ['Was sagen andere am ehesten über dich?',
+  {K:'„Du bist immer für alle da.“',H:'„Mit dir gibt es nie Streit.“',S:'„Auf dich ist Verlass, du schaffst alles.“',G:'„Du nimmst alles sehr ernst.“'}],
+ ['Wenn du doch einmal Nein sagst …',
+  {K:'… frage ich mich danach, ob der andere zurechtkommt.',H:'… erkläre ich es lange und entschuldige mich mehrmals.',S:'… kommt selten vor. Ich mache es lieber selbst.',G:'… grüble ich noch stundenlang darüber nach.'}],
+ ['Was erschöpft dich am meisten?',
+  {K:'Dass niemand fragt, wie es mir eigentlich geht.',H:'Spannungen, die ich ausgleichen muss.',S:'Dass alles an mir hängen bleibt.',G:'Das Gefühl, nie genug zu tun.'}],
+ ['Dein Körper sagt deutlich: Pause. Du …',
+  {K:'… mache weiter, die anderen brauchen mich.',H:'… warte, bis es niemanden stört.',S:'… trinke einen Kaffee und funktioniere.',G:'… mache Pause, fühle mich aber faul.'}],
+ ['Was wünschst du dir heimlich?',
+  {K:'Dass sich einmal jemand um mich kümmert.',H:'Sagen zu können, was ich denke, ohne Angst.',S:'Einmal nicht stark sein zu müssen.',G:'Mich gut zu fühlen, ohne es mir verdient zu haben.'}],
+ ['Welcher Satz trifft dich gerade am meisten?',
+  {K:'„Ich darf zuerst fragen: Was brauche ich?“',H:'„Ein Nein zu anderen ist ein Ja zu mir.“',S:'„Ich bin wertvoll, einfach so.“',G:'„Mein schlechtes Gewissen ist kein Beweis.“'}]
+];
+
+const BOOKS={
+ K:{t:'Ich stand nie auf meiner eigenen Liste',s:'Du hast an alle gedacht. Nur nicht an dich.',w:'Für alle, die automatisch Ja sagen und sich selbst dabei vergessen. Mit 30+ kurzen Kapiteln, Übungen und Satzhilfen.',l:[['Taschenbuch bestellen · 12,99 €','https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B0HGT4PX8H&Quantity.1=1'],['Kindle sofort lesen · 7,99 €','https://www.amazon.de/dp/B0HGSBZS18']]},
+ H:{t:'Deine Reaktion gehört dir. Nicht mir.',s:'Warum du aufhören darfst, für die Gefühle anderer verantwortlich zu sein',w:'Du spürst die Stimmung im Raum, bevor jemand etwas sagt? Dieses Buch zeigt dir, woher das kommt und wie du die Gefühle anderer bei ihnen lassen kannst.',l:[['Jetzt auf Amazon ansehen','https://www.amazon.de/dp/B0HHBDG1Y7']]},
+ S:{t:'Ich bin so müde und niemand fragt mich warum',s:'',w:'Für alle, die funktionieren, obwohl innerlich längst nichts mehr geht.',l:[['Jetzt auf Amazon ansehen','https://www.amazon.de/dp/B0HBQ26552']]},
+ G:{t:'Das schlechte Gewissen',s:'',w:'Für alle, die sich schuldig fühlen, sobald sie an sich selbst denken.',l:[['Jetzt auf Amazon ansehen','https://www.amazon.de/s?k=Petra+Tanner+Das+schlechte+Gewissen&i=stripbooks']]}
+};
+const ALL=[
+ ['Ich stand nie auf meiner eigenen Liste','https://www.amazon.de/dp/B0HGT4PX8H'],
+ ['Deine Reaktion gehört dir. Nicht mir.','https://www.amazon.de/dp/B0HHBDG1Y7'],
+ ['Wenn Beziehungen erschöpfen','https://www.amazon.de/dp/B0H9J886MQ'],
+ ['Das schlechte Gewissen','https://www.amazon.de/s?k=Petra+Tanner+Das+schlechte+Gewissen&i=stripbooks'],
+ ['Ich bin so müde und niemand fragt mich warum','https://www.amazon.de/dp/B0HBQ26552'],
+ ['Du brauchst kein letztes Gespräch','https://www.amazon.de/dp/B0HK86W8T4']
+];
+const app=document.getElementById('app');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let i=0, answers=[], order=[];
+const shuffle=a=>{a=a.slice();for(let j=a.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[a[j],a[k]]=[a[k],a[j]]}return a};
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const blobs='<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>';
+const hdr=l=>`<div class="top"><span class="pill">${l}</span><a class="handle" href="${INSTA}">@petratanner.autorin</a></div>`;
+
+function start(){
+ app.innerHTML=`<section class="enter">
+  <div class="stage">${blobs}${hdr('Persönlichkeitstest')}
+   <h1>Welcher <i>Ja-Sager-Typ</i> bist&nbsp;du?</h1>
+   <p class="sub">Du sagst Ja, obwohl du Nein meinst? Finde in 8 Fragen heraus, warum. Und was dir hilft, endlich auch auf deiner eigenen Liste zu stehen.</p>
+   <button class="go" id="go">Test starten <span>→</span></button>
+   <div class="facts"><span><b>8</b> Fragen</span><span><b>2</b> Minuten</span><span>kostenlos, ohne Anmeldung</span></div>
+  </div>
+  <div class="types">${Object.entries(TYPES).map(([k,t])=>`<div class="type"><div class="dot" style="background:${COL[k]}">♡</div><h3>${t.name}</h3><p>${t.short}</p></div>`).join('')}</div>
+ </section>`;
+ document.getElementById('go').onclick=()=>{track('gestartet');i=0;answers=[];order=Q.map(()=>shuffle(['K','H','S','G']));ask()};
+}
+function ask(){
+ const [q,o]=Q[i];
+ app.innerHTML=`<section class="enter">
+  <div class="stage">${blobs}
+   <div class="qhead"><div class="qnum">${String(i+1).padStart(2,'0')}<small> / ${String(Q.length).padStart(2,'0')}</small></div><span class="pill">${['Los geht’s','Gut so','Weiter so','Halbzeit','Ehrlich bleiben','Fast da','Noch zwei','Letzte Frage'][i]}</span></div>
+   <div class="track"><i style="width:${i/Q.length*100}%"></i></div>
+   <h2>${esc(q)}</h2>
+  </div>
+  <div class="opts">${order[i].map(k=>`<button class="opt${answers[i]===k?' sel':''}" data-k="${k}">${esc(o[k])}</button>`).join('')}</div>
+  ${i>0?'<button class="back" id="back">← Zurück</button>':''}
+ </section>`;
+ requestAnimationFrame(()=>{const t=app.querySelector('.track i');t.style.width=((i+1)/Q.length*100)+'%'});
+ let locked=false;
+ app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(locked)return;locked=true;answers[i]=b.dataset.k;
+  app.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',x===b));
+  setTimeout(()=>{i++;i<Q.length?ask():breathe()},reduce?0:380)});
+ const bk=document.getElementById('back'); if(bk) bk.onclick=()=>{i--;ask()};
+ window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+}
+
+function breathe(){
+ app.innerHTML=`<section class="enter">
+  <div class="stage breath">${blobs}
+   <span class="pill">Dein Ergebnis wird ausgewertet</span>
+   <div class="circle" id="c"><div class="ring"></div><div class="orb"></div><div class="word" id="w">Einatmen</div></div>
+   <p class="hint">Nimm dir diesen Moment nur für dich. Atme mit dem Kreis.</p>
+   <div class="dots"><i id="d1"></i><i id="d2"></i></div>
+   <button class="skip" id="skip">Direkt zum Ergebnis</button>
+  </div></section>`;
+ window.scrollTo({top:0});
+ const c=document.getElementById('c'),w=document.getElementById('w');
+ const timers=[];let done=false;
+ const finish=()=>{if(done)return;done=true;timers.forEach(clearTimeout);result()};
+ document.getElementById('skip').onclick=finish;
+ if(reduce){w.textContent='Atme ruhig';timers.push(setTimeout(finish,2500));return}
+ const step=(k,t)=>timers.push(setTimeout(k,t));
+ // 2 Atemzüge: je 4 s ein, 4 s aus
+ [0,8000].forEach((t,n)=>{
+  step(()=>{c.classList.add('in');w.textContent='Einatmen';document.getElementById('d'+(n+1)).classList.add('on')},t+60);
+  step(()=>{c.classList.remove('in');w.textContent='Ausatmen'},t+4060);
+ });
+ step(finish,16100);
+}
+function result(){
+ const c={K:0,H:0,S:0,G:0}; answers.forEach(a=>c[a]++);
+ const max=Math.max(...Object.values(c));
+ const last=answers[Q.length-1];
+ const win=c[last]===max?last:Object.keys(c).find(k=>c[k]===max);
+ const t=TYPES[win], B=BOOKS[win];
+ track('fertig');track('typ-'+t.name.replace('Typ ','').toLowerCase());
+ const sorted=Object.keys(c).sort((a,b)=>c[b]-c[a]);
+ const pct=k=>Math.round(c[k]/Q.length*100);
+ app.innerHTML=`<section class="enter res">
+  <div class="stage">${blobs}<div class="hearts" id="hearts"></div>${hdr('Dein Ergebnis')}
+   <h2 class="name">Typ <i>${t.name.replace('Typ ','')}</i></h2>
+   <p>${t.text}</p>
+   <div class="bars">${sorted.map(k=>`<div class="bar${k===win?' win':''}"><span>${TYPES[k].name.replace('Typ ','')}</span><span class="t"><i data-w="${pct(k)}"></i></span><b data-n="${pct(k)}">${pct(k)}%</b></div>`).join('')}</div>
+  </div>
+  <div class="cards">
+   <div class="card"><div class="eyebrow">Dein Muster</div><p>${t.pattern}</p></div>
+   <div class="card"><div class="eyebrow">Dein Satz</div><div class="quote">${t.satz}</div></div>
+   <div class="card soft"><div class="eyebrow">Dein erster Schritt diese Woche</div><p>${t.step}</p></div>
+   <div class="card"><div class="eyebrow">Gratis für dich</div>
+    <h3>Workbook „9 Sätze für dich“</h3>
+    <p>Alle 9 Sätze mit Fragen, fertige Sätze zum Neinsagen ohne Rechtfertigung und die Übung „Meine eigene Liste“.</p>
+    <div class="btns"><a class="btn pri wa" href="${WA}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>PDF per WhatsApp holen</a></div>
+    <p class="small">Ohne Anmeldung, ohne Newsletter. WhatsApp öffnet sich mit dem Wort „LISTE“, du tippst nur auf Senden.</p>
+   </div>
+   <div class="card bookcard">${blobs}<div class="eyebrow">Mein Buch für deinen Typ</div>
+    <h3>„${B.t}“</h3>
+    ${B.s?`<p style="opacity:.85;font-style:italic;margin-bottom:10px">${B.s}</p>`:''}
+    <p style="opacity:.92">${B.w}</p>
+    <div class="btns">${B.l.map((x,n)=>`<a class="btn ${n?'line':'pri'}" href="${x[1]}">${x[0]}</a>`).join('')}</div>
+   </div>
+   <div class="card"><div class="eyebrow">Alle meine Bücher</div>
+    <div class="shelf">${ALL.map(x=>`<a href="${x[1]}"><span>${x[0]}</span><b>→</b></a>`).join('')}</div>
+    <p class="small">Petra Tanner · Safe to Thrive</p>
+   </div>
+   <div class="card insta"><a href="${INSTA}"><span class="ig"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span><span><b>Folge mir auf Instagram</b><br><small>@petratanner.autorin</small></span><b class="arr">→</b></a>
+   </div>
+  </div>
+  <div class="row"><button class="btn" id="share">Ergebnis kopieren</button><button class="btn" id="again">Test neu starten</button></div>
+  <p class="msg" id="msg" aria-live="polite"></p>
+ </section>`;
+ // Balken + Zähler animieren
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  app.querySelectorAll('.bar .t i').forEach(el=>el.style.width=el.dataset.w+'%');
+  if(!reduce) app.querySelectorAll('.bar b').forEach(el=>{const n=+el.dataset.n,t0=performance.now();
+   const tick=now=>{const p=Math.min(1,(now-t0)/1100);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+'%';if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)});
+ }));
+ // Herzen
+ if(!reduce){const h=document.getElementById('hearts');for(let n=0;n<14;n++){const s=document.createElement('span');s.textContent='♡';
+  s.style.left=(5+Math.random()*90)+'%';s.style.animationDelay=(Math.random()*1.2)+'s';s.style.fontSize=(12+Math.random()*16)+'px';h.appendChild(s)}}
+ document.getElementById('again').onclick=start;
+ document.getElementById('share').onclick=async()=>{
+  const txt=`Ich bin „${t.name}“ 🤍 Welcher Ja-Sager-Typ bist du? Mach den Test bei @petratanner.autorin`;
+  const m=document.getElementById('msg');
+  try{await navigator.clipboard.writeText(txt);m.textContent='Kopiert. Füg es in deine Story oder eine Nachricht ein.'}catch(e){m.textContent=txt}
+ };
+ window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+}
+start();
+</script>
+
+</body></html>
