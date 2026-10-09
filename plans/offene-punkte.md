@@ -29,7 +29,7 @@
 
 ## Später (Petra startet Tests „richtig“, alle zusammen)
 
-- Persönlichkeitstest „Welcher Ja-Sager-Typ bist du?“ öffentlich hosten (Netlify) + GoatCounter-Konto → Code eintragen → `outputs/2026-10-08-funnel-liste/ja-sager-test.html`
+- Persönlichkeitstest „Welcher Ja-Sager-Typ bist du?“ online unter realistisch2020-sys.github.io/FEMCODE-Gehirn/ja-sager-test/ – GoatCounter-Konto → Code eintragen → `outputs/2026-10-08-funnel-liste/ja-sager-test.html`
 - Funnel starten: Reel/Post → WhatsApp „LISTE“ → PDF → Buch → `outputs/2026-10-08-funnel-liste/funnel.md`. Nach 7 Tagen Zahlen auswerten.
 - Karussell „9 Sätze“ ggf. auf Beeren-Design umstellen
 

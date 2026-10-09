@@ -16,7 +16,8 @@
   - Harmonie (Gefühle anderer tragen) → Deine Reaktion gehört dir. Nicht mir.
   - Stärke (funktionieren, Leistung) → Ich bin so müde und niemand fragt mich warum
   - Pflicht (schlechtes Gewissen) → Das schlechte Gewissen
-- Öffentliche Links brauchen ein Hosting ohne Claude-Login (z. B. Netlify). Petra startet mit Tests später „richtig“, alle zusammen.
+- **Veröffentlichen wie alle bisherigen Tests:** Datei als `<name>/index.html` in den Branch `gh-pages` legen → Link `https://realistisch2020-sys.github.io/FEMCODE-Gehirn/<name>/` (GitHub Pages baut automatisch, ca. 1 Min.).
+- Ja-Sager-Test: https://realistisch2020-sys.github.io/FEMCODE-Gehirn/ja-sager-test/
 
 ## Design
 
