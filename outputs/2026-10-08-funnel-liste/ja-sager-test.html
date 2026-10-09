@@ -119,6 +119,12 @@ h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
 .shelf a:first-child{border-top:0}
 .shelf a b{color:var(--accent);font-family:var(--body)}
 .shelf a:hover{color:var(--accent);padding-left:6px}
+.insta{padding:0}
+.insta a{display:flex;align-items:center;gap:14px;padding:18px 20px;color:var(--ink);text-decoration:none}
+.insta .ig{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--rasp),var(--plum))}
+.insta small{color:var(--muted);font-size:13px}
+.insta .arr{margin-left:auto;color:var(--accent)}
+.insta a:hover .arr{transform:translateX(4px)}.insta .arr{transition:transform .2s}
 @media (max-width:440px){.types{grid-template-columns:1fr 1fr}.type{padding:14px}.type h3{font-size:17px}.bar{grid-template-columns:82px 1fr 36px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.bar .t i{transition:none}}
 </style>
@@ -129,6 +135,9 @@ h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
 const TB_CART='https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B0HGT4PX8H&Quantity.1=1';
 const KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
 const INSTA='https://www.instagram.com/petratanner.autorin/';
+// WhatsApp-Nummer nur Ziffern mit Ländervorwahl, ohne + und Leerzeichen, z. B. '41791234567'
+const WA_NUMBER='';
+const WA=WA_NUMBER?`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('LISTE')}`:INSTA;
 const COL={K:'#B8326A',H:'#8E2A5C',S:'#6B1D46',G:'#D4628F'};
 const TYPES={
  K:{name:'Typ Fürsorge',short:'sieht alle, nur nicht sich',
@@ -269,8 +278,8 @@ function result(){
    <div class="card"><div class="eyebrow">Gratis für dich</div>
     <h3>Workbook „9 Sätze für dich“</h3>
     <p>Alle 9 Sätze mit Fragen, fertige Sätze zum Neinsagen ohne Rechtfertigung und die Übung „Meine eigene Liste“.</p>
-    <div class="btns"><a class="btn pri" href="${INSTA}">Schreib mir „LISTE“ auf Instagram →</a></div>
-    <p class="small">Ich schicke dir das PDF direkt per Nachricht.</p>
+    <div class="btns"><a class="btn pri wa" href="${WA}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>PDF per WhatsApp holen</a></div>
+    <p class="small">Ohne Anmeldung, ohne Newsletter. WhatsApp öffnet sich mit dem Wort „LISTE“, du tippst nur auf Senden.</p>
    </div>
    <div class="card bookcard">${blobs}<div class="eyebrow">Mein Buch für deinen Typ</div>
     <h3>„${B.t}“</h3>
@@ -281,6 +290,8 @@ function result(){
    <div class="card"><div class="eyebrow">Alle meine Bücher</div>
     <div class="shelf">${ALL.map(x=>`<a href="${x[1]}"><span>${x[0]}</span><b>→</b></a>`).join('')}</div>
     <p class="small">Petra Tanner · Safe to Thrive</p>
+   </div>
+   <div class="card insta"><a href="${INSTA}"><span class="ig"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span><span><b>Folge mir auf Instagram</b><br><small>@petratanner.autorin</small></span><b class="arr">→</b></a>
    </div>
   </div>
   <div class="row"><button class="btn" id="share">Ergebnis kopieren</button><button class="btn" id="again">Test neu starten</button></div>
