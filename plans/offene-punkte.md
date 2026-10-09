@@ -21,10 +21,17 @@
 ## Demnächst
 
 - Amazon-Autorenseite (Author Central) anlegen/Link holen → dann im PDF `pdf-generator.js` (AUTORLINK) ersetzen
-- Titel zu B0H9HVX97R bestätigen; ASIN „Das schlechte Gewissen“ (Test/PDF nutzen bis dahin Amazon-Suche)
-- GoatCounter-Konto anlegen (Petra) → Code im Test eintragen
-- Persönlichkeitstest „Welcher Ja-Sager-Typ bist du?“ (für Männer und Frauen) öffentlich hosten (Weg klären) → `outputs/2026-10-08-funnel-liste/ja-sager-test.html`
-- Funnel „LISTE“ starten (Petra): Tentary-Gratisprodukt, ManyChat-Stichwort, Reel posten → `outputs/2026-10-08-funnel-liste/funnel.md`. Nach 7 Tagen Zahlen auswerten.
+- Titel zu B0H9HVX97R bestätigen; ASIN „Das schlechte Gewissen“ fehlt (Test/PDF nutzen bis dahin Amazon-Suche)
+- B0HGSXFQC4 („…Liste – Reflexionsfragen“?) klären: Begleitbuch, in Bücherliste aufnehmen?
+- WhatsApp Business: Begrüßungsnachricht mit PDF-Link einrichten (PDF dafür online ablegen, z. B. Google Drive)
+- WhatsApp-Knopf im Test einmal selbst testen (Nummer +41 78 718 91 09)
+- GitHub-Projekt femcode-gehirn: Sichtbarkeit prüfen (Petra entscheidet)
+
+## Später (Petra startet Tests „richtig“, alle zusammen)
+
+- Persönlichkeitstest „Welcher Ja-Sager-Typ bist du?“ öffentlich hosten (Netlify) + GoatCounter-Konto → Code eintragen → `outputs/2026-10-08-funnel-liste/ja-sager-test.html`
+- Funnel starten: Reel/Post → WhatsApp „LISTE“ → PDF → Buch → `outputs/2026-10-08-funnel-liste/funnel.md`. Nach 7 Tagen Zahlen auswerten.
+- Karussell „9 Sätze“ ggf. auf Beeren-Design umstellen
 
 - 7-Tage-Lerntest Ads (vorläufig: Budgets 15 €/Tag, max. 85 € tatsächliche Ausgaben), erst nach Freigabe
 
