@@ -137,6 +137,14 @@ const KINDLE='https://www.amazon.de/dp/B0HGSBZS18';
 const INSTA='https://www.instagram.com/petratanner.autorin/';
 // WhatsApp-Nummer nur Ziffern mit Ländervorwahl, ohne + und Leerzeichen, z. B. '41791234567'
 const WA_NUMBER='41787189109';
+// Anonyme Zählung mit GoatCounter (keine Cookies, keine Namen).
+// Konto anlegen auf goatcounter.com, Code hier eintragen, z. B. 'petratanner'. Leer = keine Zählung.
+const GOATCOUNTER='';
+if(GOATCOUNTER){try{const g=document.createElement('script');g.async=true;g.src='https://gc.zgo.at/count.js';
+ g.dataset.goatcounter=`https://${GOATCOUNTER}.goatcounter.com/count`;document.head.appendChild(g)}catch(e){}}
+function track(name){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'test/'+name,title:name,event:true})}catch(e){}}
+document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]');if(!a)return;const h=a.href;
+ track(h.includes('wa.me')?'klick-whatsapp':h.includes('instagram')?'klick-instagram':h.includes('amazon')?'klick-amazon':'klick-link')},true);
 const WA=WA_NUMBER?`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('LISTE')}`:INSTA;
 const COL={K:'#B8326A',H:'#8E2A5C',S:'#6B1D46',G:'#D4628F'};
 const TYPES={
@@ -212,7 +220,7 @@ function start(){
   </div>
   <div class="types">${Object.entries(TYPES).map(([k,t])=>`<div class="type"><div class="dot" style="background:${COL[k]}">♡</div><h3>${t.name}</h3><p>${t.short}</p></div>`).join('')}</div>
  </section>`;
- document.getElementById('go').onclick=()=>{i=0;answers=[];order=Q.map(()=>shuffle(['K','H','S','G']));ask()};
+ document.getElementById('go').onclick=()=>{track('gestartet');i=0;answers=[];order=Q.map(()=>shuffle(['K','H','S','G']));ask()};
 }
 function ask(){
  const [q,o]=Q[i];
@@ -263,6 +271,7 @@ function result(){
  const last=answers[Q.length-1];
  const win=c[last]===max?last:Object.keys(c).find(k=>c[k]===max);
  const t=TYPES[win], B=BOOKS[win];
+ track('fertig');track('typ-'+t.name.replace('Typ ','').toLowerCase());
  const sorted=Object.keys(c).sort((a,b)=>c[b]-c[a]);
  const pct=k=>Math.round(c[k]/Q.length*100);
  app.innerHTML=`<section class="enter res">

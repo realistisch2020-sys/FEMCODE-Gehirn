@@ -22,6 +22,7 @@
 
 - Amazon-Autorenseite (Author Central) anlegen/Link holen → dann im PDF `pdf-generator.js` (AUTORLINK) ersetzen
 - Titel zu B0H9HVX97R bestätigen; ASIN „Das schlechte Gewissen“ (Test/PDF nutzen bis dahin Amazon-Suche)
+- GoatCounter-Konto anlegen (Petra) → Code im Test eintragen
 - Persönlichkeitstest „Welcher Ja-Sager-Typ bist du?“ (für Männer und Frauen) öffentlich hosten (Weg klären) → `outputs/2026-10-08-funnel-liste/ja-sager-test.html`
 - Funnel „LISTE“ starten (Petra): Tentary-Gratisprodukt, ManyChat-Stichwort, Reel posten → `outputs/2026-10-08-funnel-liste/funnel.md`. Nach 7 Tagen Zahlen auswerten.
 

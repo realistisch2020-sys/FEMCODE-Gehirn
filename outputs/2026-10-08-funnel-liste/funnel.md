@@ -82,3 +82,9 @@ Datei: `ja-sager-test.html` (Vorschau: https://claude.ai/artifact/P5fGYtpjFdXEbv
 Ablauf: Reel/Post „Welcher Ja-Sager-Typ bist du?“ (für Männer und Frauen) → Kommentar „TEST“ → DM mit Test-Link → Ergebnis → „LISTE“ → PDF → Buch.
 
 Offen: Test öffentlich erreichbar machen. Die Vorschau ist privat. Die HTML-Datei funktioniert eigenständig und kann auf jede Website/Landingpage-Tool (z. B. Tentary-Seite, eigene Domain, Netlify Drop) hochgeladen werden.
+
+## Zählung im Test (anonym)
+
+Eingebaut über GoatCounter (keine Cookies, keine Namen). Aktiv, sobald im Test `const GOATCOUNTER='…'` eingetragen ist und der Test öffentlich läuft.
+Gezählt: Aufrufe der Seite · `test/gestartet` · `test/fertig` · `test/typ-fürsorge|harmonie|stärke|pflicht` · `test/klick-whatsapp` · `test/klick-amazon` · `test/klick-instagram`.
+Wer genau: nur über WhatsApp (wer das PDF anfordert).
