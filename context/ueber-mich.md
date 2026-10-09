@@ -17,4 +17,5 @@
 
 - E-Mail: info.safetothrive@gmail.com
 - Instagram: @petratanner.autorin
+- WhatsApp (öffentlich im Test): +41 78 718 91 09 → wa.me/41787189109
 - Amazon: Hero-Buch Kindle B0HGSBZS18, TB B0HGT4PX8H. Eigene Autorenseite-URL unbekannt → bis dahin Suche `amazon.de/s?k=Petra+Tanner&i=stripbooks`
