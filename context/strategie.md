@@ -107,6 +107,31 @@ Buch 6 live, Bewertungen sammeln, Buch 4 (ADHS/Masking-Erschöpfung)
 fertigstellen, Newsletter aufsetzen, erstes Zusatzprodukt (Journal/
 Kartenset) aus bestehendem Thema.
 
+## Impressumspflicht auf TikTok/Instagram (seit 10. Oktober 2026 bekannt)
+
+Sobald das TikTok-/Instagram-Konto geschäftlich für die Bücher genutzt
+wird (nicht mehr rein privat), greift die deutsche Impressumspflicht
+(§ 5 DDG, löst seit 14. Mai 2024 das alte TMG ab) — gilt ausdrücklich
+auch für Social-Media-Profile, nicht nur Websites. Pflicht: Impressum
+in max. 2 Klicks erreichbar, klar als "Impressum" beschriftet (nicht
+"Info"), üblicherweise über einen Bio-Link zu einer vollständigen
+Impressum-Seite. Petra hat noch keine öffentliche Website/Landingpage
+— die ohnehin geplante Landingpage sollte deshalb auch diese
+Pflichtangaben bekommen (Name, Wiesentalstrasse 68, 9240 Uzwil,
+info.safetothrive@gmail.com), bevor das TikTok-Konto aktiv Bücher bewirbt.
+
+Werbekennzeichnung für Eigenwerbung (eigenes Buch, keine bezahlte
+Fremdwerbung) ist rechtlich weniger streng als bei bezahlten
+Kooperationen, aber nicht eindeutig geklärt — sicherste Praxis: bei
+Posts mit klarem Kaufaufruf die kommerzielle Absicht erkennbar machen.
+
+Ob deutsches Recht eine Schweizer Anbieterin ohne Weiteres erfasst,
+ist nicht eindeutig geklärt — Praxis-Empfehlung unabhängig von der
+offenen Rechtsfrage: sauberes Impressum als günstige Absicherung,
+sobald gezielt deutsches Publikum/Amazon.de-Käuferinnen angesprochen
+werden. Keine verbindliche Rechtsberatung, bei Unsicherheit echten
+Anwalt für deutsches Wettbewerbsrecht konsultieren.
+
 ## Prioritäten
 
 1. Buch 6 veröffentlichen und Bewertungen sammeln, bevor TikTok das Buch bewirbt
