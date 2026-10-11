@@ -21,7 +21,7 @@
 - Buchseite Tentary (Hero-Buch): richtige HTML-Datei fehlt (ca. 210 KB, Überschrift «Du spürst, was alle brauchen»). Hochgeladene Datei war die Wegweiser-Seite (17 KB) → Petra sucht oder lässt neu erstellen
 - Buchseite: Datenschutz-URL fehlt. Domain: siehe unten (petratanner.ch). Attribution + Messung erst, wenn Seite live geht
 - Tentary-Entwurf angelegt 11.10.: «Ich stand nie auf meiner eigenen Liste», URL beyondlimitsnow25.mytentary.com/buch, HTML-Feld leer, Status Entwurf → richtige Datei einfügen, sobald gefunden
-- Domain petratanner.ch gekauft 11.10., CNAME www → sites.tentary.com + Weiterleitung gesetzt (Infomaniak). In Tentary noch NICHT gespeichert: erst wenn DNS aktiv (dnschecker), dann Bonus-/QR-Link testen
+- Domain petratanner.ch gekauft 11.10., CNAME www → sites.tentary.com + Weiterleitung gesetzt (Infomaniak). Infomaniak korrekt (NS ns11/ns12.infomaniak.ch, gültig bis 09.10.2027), aber 11.10. abends noch nicht im Internet sichtbar (dnschecker NS alles rot). 12.10. erneut prüfen, falls noch rot: Infomaniak-Support. Erst dann in Tentary speichern + Bonus-/QR-Link testen
 - Entscheid 11.10.: Zwei Tentary-Seiten. /buch = Hero-Buch (Werbung), /buecher = Wegweiser alle 5 Bücher. Wegweiser braucht 4 fehlende ASINs (Links sind noch Amazon-Suche)
 - Setup 11.10.: Claude-Erweiterung in Edge läuft (Seitenfenster im jeweiligen Tab öffnen). Claude Code lokal installiert, PATH-Eintrag fehlt noch (nur nötig, falls lokal gearbeitet wird)
 
