@@ -20,7 +20,8 @@ Frauen, die für andere da sind, automatisch Ja sagen, eigene Bedürfnisse über
 - Meta Ads, ChatGPT Ads (laufen, Verkäufe bisher nicht messbar)
 - Rezenzo (Rezensionsexemplare, mehrere Bücher angelegt)
 - Organisch: Instagram, Facebook, Telegram
-- Tentary: Bonus-Material zum Buch. Shop: beyondlimitsnow25.mytentary.com (keine eigene Domain, Tarif «Start» erlaubt eigene Domain: Online-Shop > Domain). Buchseite als Entwurf unter /buch
+- Tentary (Tarif «Start», erlaubt eigene Domain unter Online-Shop > Domain): Bonus-Material zum Buch (QR im Buch). Shop aktuell: beyondlimitsnow25.mytentary.com. Geplant: /buch = Landingpage Hero-Buch (für Werbung), /buecher = Wegweiser alle Bücher (Selbsttest). HTML-Seiten gehen nur mit eigener Domain live.
+- Domain: petratanner.ch (Infomaniak, gültig bis 09.10.2027, www → CNAME sites.tentary.com). Regel: Beim Domainwechsel muss der Bonus-QR-Link im gedruckten Buch weiter funktionieren.
 - Tracking-Struktur: `outputs/kanaele-und-attribution.md`
 
 ## Wirtschaftlichkeit (Regeln)
