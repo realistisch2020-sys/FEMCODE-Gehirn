@@ -19,8 +19,7 @@
 - Freigabestatus A+ Content prüfen
 
 - Buchseite Tentary (Hero-Buch): richtige HTML-Datei fehlt (ca. 210 KB, Überschrift «Du spürst, was alle brauchen»). Hochgeladene Datei war die Wegweiser-Seite (17 KB) → Petra sucht oder lässt neu erstellen
-- Buchseite: Preis klären – Seite 13,33 €, `context/business.md` 12,99 € (TB)
-- Buchseite: Datenschutz-URL, eigene Domain in Tentary, Amazon-Attribution-Link
+- Buchseite: Datenschutz-URL fehlt. Eigene Domain: Petra entscheidet (kaufen + in Tentary verbinden). Attribution + Messung erst, wenn Seite live geht
 - Tentary-Entwurf angelegt 11.10.: «Ich stand nie auf meiner eigenen Liste», URL beyondlimitsnow25.mytentary.com/buch, HTML-Feld leer, Status Entwurf → richtige Datei einfügen, sobald gefunden
 - Eigene Domain in Tentary fehlt (Shop läuft auf beyondlimitsnow25.mytentary.com). HTML-Seiten lassen sich nur mit eigener Domain veröffentlichen
 - Setup 11.10.: Claude-Erweiterung in Edge läuft (Seitenfenster im jeweiligen Tab öffnen). Claude Code lokal installiert, PATH-Eintrag fehlt noch (nur nötig, falls lokal gearbeitet wird)

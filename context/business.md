@@ -5,7 +5,7 @@
 Ratgeber-/Selbsthilfebücher für Frauen, auf Amazon (Taschenbuch + Kindle), Markt DE.
 
 - **Hero-Buch:** „Ich stand nie auf meiner eigenen Liste“, Untertitel „Du hast an alle gedacht. Nur nicht an dich.“
-  - TB B0HGT4PX8H, 12,99 € · Kindle B0HGSBZS18, 7,99 € · 118 Seiten, 30+ kurze Kapitel, Übungen, Schritt-pro-Woche, Satzhilfen, Bonus per QR
+  - TB B0HGT4PX8H, 13,33 € (bestätigt 11.10.) · Kindle B0HGSBZS18, 7,99 € · 118 Seiten, 30+ kurze Kapitel, Übungen, Schritt-pro-Woche, Satzhilfen, Bonus per QR
   - Positionierung: „Erkenne zuerst wieder, was du selbst brauchst, bevor du automatisch Ja sagst.“
 - Portfolio-Priorität (Werbung/Fokus): 1. Ich stand nie auf meiner eigenen Liste · 2. Wenn Beziehungen erschöpfen · 3. Das schlechte Gewissen · 4. Ich bin so müde und niemand fragt mich warum · 5. Du brauchst kein letztes Gespräch
 - 6 Titel veröffentlicht, Buch 7 erscheint Anfang/Mitte Oktober 2026.
