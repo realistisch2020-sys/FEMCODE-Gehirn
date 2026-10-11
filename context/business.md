@@ -20,7 +20,7 @@ Frauen, die für andere da sind, automatisch Ja sagen, eigene Bedürfnisse über
 - Meta Ads, ChatGPT Ads (laufen, Verkäufe bisher nicht messbar)
 - Rezenzo (Rezensionsexemplare, mehrere Bücher angelegt)
 - Organisch: Instagram, Facebook, Telegram
-- Tentary: Bonus-Material zum Buch
+- Tentary: Bonus-Material zum Buch. Shop: beyondlimitsnow25.mytentary.com (keine eigene Domain). Buchseite als Entwurf unter /buch
 - Tracking-Struktur: `outputs/kanaele-und-attribution.md`
 
 ## Wirtschaftlichkeit (Regeln)
