@@ -18,6 +18,11 @@
 - 04.10.-Werte frühestens am 07.10. bewerten (Berichtsverzögerung)
 - Freigabestatus A+ Content prüfen
 
+- Buchseite Tentary (Hero-Buch): richtige HTML-Datei fehlt (ca. 210 KB, Überschrift «Du spürst, was alle brauchen»). Hochgeladene Datei war die Wegweiser-Seite (17 KB) → Petra sucht oder lässt neu erstellen
+- Buchseite: Preis klären – Seite 13,33 €, `context/business.md` 12,99 € (TB)
+- Buchseite: Datenschutz-URL, eigene Domain in Tentary, Amazon-Attribution-Link
+- Setup 11.10.: Claude-Erweiterung in Edge installiert + angemeldet. Claude Code installiert, PATH-Eintrag fehlt noch
+
 ## Demnächst
 
 - 7-Tage-Lerntest Ads (vorläufig: Budgets 15 €/Tag, max. 85 € tatsächliche Ausgaben), erst nach Freigabe
