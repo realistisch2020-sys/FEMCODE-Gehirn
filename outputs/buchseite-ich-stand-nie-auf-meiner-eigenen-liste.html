@@ -1,0 +1,249 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Auf meiner Liste</title>
+<style>
+/* Layout: einspaltiger Mobile-Funnel. Hero, Swipe-Karten, Themenwahl, Ergebnis mit Buch. */
+/* Bewusst ein einziger Look: tiefer Beerenton mit Glas-Karten, in hell und dunkel gleich. */
+:root{
+  --paper:#3B0A33; --ink:#FFF3F8; --muted:#E7BFD6; --card:rgba(255,255,255,.1); --line:rgba(255,255,255,.22);
+  --coral:#FF6A5C; --sun:#FFC247; --lilac:#C9B6FF; --mint:#6FDDBF; --plum:#2A0725;
+  --btn-bg:#FFC247; --btn-fg:#2A0725;
+  --font:Arial,Helvetica,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.55;margin:0;padding-inline:16px;padding-block:0 56px;overflow-x:hidden}
+.wrap{max-width:640px;margin:0 auto;position:relative;z-index:2}
+
+/* Hintergrund: wandernde Beerenfarben, Funkeln, Konfetti */
+.bg{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:radial-gradient(120% 80% at 50% 0%,#7A1F5C 0%,#4A0E3D 45%,#2A0725 100%)}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;will-change:transform}
+.b1{width:340px;height:340px;background:#E5307F;left:-120px;top:4%;animation:drift1 18s ease-in-out infinite alternate}
+.b2{width:300px;height:300px;background:#8A2BE2;right:-110px;top:34%;animation:drift2 22s ease-in-out infinite alternate}
+.b3{width:280px;height:280px;background:#FF6A5C;left:10%;bottom:-100px;opacity:.4;animation:drift3 20s ease-in-out infinite alternate}
+@keyframes drift1{to{transform:translate(90px,160px) scale(1.25)}}
+@keyframes drift2{to{transform:translate(-110px,-120px) scale(1.2)}}
+@keyframes drift3{to{transform:translate(120px,-90px) scale(1.3)}}
+.spark{position:absolute;bottom:-20px;width:6px;height:6px;border-radius:50%;background:#FFE9A8;box-shadow:0 0 12px 3px rgba(255,214,120,.8);opacity:0;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:.9}100%{transform:translateY(-110vh) translateX(var(--dx)) scale(1.1);opacity:0}}
+#confetti{position:fixed;inset:0;width:100%;height:100%;z-index:5;pointer-events:none}
+
+/* Einstieg */
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.hero>*{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+.hero>*:nth-child(2){animation-delay:.12s}
+.hero>*:nth-child(3){animation-delay:.24s}
+.hero>*:nth-child(4){animation-delay:.36s}
+h1,h2,h3{margin:0;line-height:1.08;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* Hero */
+.hero{padding-block:44px 28px;display:flex;flex-direction:column;gap:20px}
+.hero h1{font-size:clamp(38px,11vw,62px);font-weight:900}
+.hero h1 em{font-style:normal;background:linear-gradient(100deg,#FFC247,#FF8FB8,#C9B6FF,#FFC247);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 6s linear infinite}
+@keyframes shimmer{to{background-position:-250% 0}}
+.hero .lead{font-size:19px;color:var(--muted);max-width:30em}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--btn-bg);color:var(--btn-fg);font-family:var(--font);font-weight:700;font-size:17px;padding:16px 26px;border-radius:999px;border:0;text-decoration:none;cursor:pointer;align-self:flex-start;transition:transform .15s,box-shadow .2s;box-shadow:0 8px 28px rgba(255,194,71,.35);animation:pulse 3s ease-in-out infinite}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-20deg);animation:shine 3.6s ease-in-out infinite}
+@keyframes shine{0%,55%{left:-70%}100%{left:130%}}
+@keyframes pulse{50%{box-shadow:0 8px 38px rgba(255,194,71,.65)}}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.btn:focus-visible,.chip:focus-visible{outline:3px solid var(--lilac);outline-offset:3px}
+
+/* Swipe-Karten */
+.sec{padding-block:30px;display:flex;flex-direction:column;gap:18px}
+.sec h2{font-size:clamp(28px,7.5vw,40px);font-weight:900}
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-16px;padding:6px 16px 18px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.slide{flex:0 0 min(82%,340px);aspect-ratio:4/5;scroll-snap-align:center;border-radius:28px;padding:30px 26px;display:flex;flex-direction:column;justify-content:space-between;color:#1E1433;position:relative;overflow:hidden}
+.slide::before,.slide::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.slide::before{width:200px;height:200px;right:-70px;top:-60px;background:rgba(255,255,255,.28)}
+.slide::after{width:120px;height:120px;left:-40px;bottom:-30px;background:rgba(255,255,255,.2)}
+.slide{box-shadow:0 18px 40px rgba(20,0,20,.45);transition:transform .35s cubic-bezier(.2,.8,.2,1);animation:bob 6s ease-in-out infinite}
+.slide:nth-child(even){animation-delay:-3s}
+.slide:hover{transform:translateY(-8px) rotate(-1.5deg) scale(1.02)}
+@keyframes bob{50%{translate:0 -7px}}
+.slide::before{animation:float 9s ease-in-out infinite alternate}
+@keyframes float{to{transform:translate(-30px,40px) scale(1.2)}}
+.slide p{font-size:clamp(23px,6.6vw,29px);font-weight:900;line-height:1.14;letter-spacing:-.015em;position:relative;z-index:1}
+.slide p span{display:block}
+.slide .tag{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.7;position:relative;z-index:1}
+.g1{background:linear-gradient(155deg,#FFC247,#FF6A5C)}
+.g2{background:linear-gradient(155deg,#C9B6FF,#7FD7FF)}
+.g3{background:linear-gradient(155deg,#6FDDBF,#FFE07A)}
+.g4{background:linear-gradient(155deg,#FF9AB8,#A98BFF)}
+.g5{background:linear-gradient(155deg,#FFB27A,#FF6A8C)}
+.g6{background:linear-gradient(155deg,#7FD7FF,#6FDDBF)}
+.hint{font-size:14px;color:var(--muted)}
+
+/* Themenwahl */
+.chips{display:flex;flex-direction:column;gap:10px}
+.chip{font-family:var(--font);font-size:17px;font-weight:700;text-align:left;color:var(--ink);background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:2px solid var(--line);border-radius:18px;padding:16px 18px;cursor:pointer;transition:border-color .15s,transform .2s,background .2s,box-shadow .2s}
+.chip:hover{border-color:var(--sun);transform:translateX(6px);background:rgba(255,255,255,.16)}
+.chip[aria-pressed="true"]{border-color:var(--sun);transform:translateX(8px);background:rgba(255,194,71,.2);box-shadow:0 0 28px rgba(255,194,71,.35)}
+
+/* Ergebnis */
+.result{border-radius:28px;padding:28px 24px;display:flex;flex-direction:column;gap:16px;color:#1E1433}
+.result[hidden]{display:none}
+.result{animation:pop .55s cubic-bezier(.2,1.3,.4,1) both;box-shadow:0 22px 50px rgba(20,0,20,.5)}
+@keyframes pop{from{opacity:0;transform:scale(.88) translateY(24px)}to{opacity:1;transform:none}}
+.result .eyebrow{color:rgba(30,20,51,.7)}
+.result h3{font-size:clamp(28px,8vw,40px);font-weight:900}
+.result .sentence{font-size:20px;font-weight:700;line-height:1.3}
+.result .teaser{font-size:17px}
+.result .btn{background:#1E1433;color:#FFF7F0}
+
+/* Alle Bücher */
+.books{display:grid;gap:12px}
+.book{background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:2px solid var(--line);border-radius:20px;padding:16px 18px;display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--ink);transition:transform .25s,border-color .2s,background .2s}
+.book:hover{transform:translateX(8px) scale(1.01);border-color:var(--sun);background:rgba(255,255,255,.16)}
+.book i{transition:transform .25s}
+.book:hover i{transform:scaleY(1.18)}
+.book i{flex:0 0 14px;height:56px;border-radius:5px}
+.book b{display:block;font-size:17px;line-height:1.25}
+.book small{color:var(--muted);font-size:14px}
+
+/* Schluss */
+.close{border-radius:28px;padding:34px 24px;background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:2px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#FFF7F0;display:flex;flex-direction:column;gap:16px;margin-top:20px}
+.close h2{font-size:clamp(30px,8.5vw,44px);font-weight:900}
+.close h2 em{font-style:normal;color:var(--sun)}
+.close .btn{background:var(--sun);color:#241B3A}
+footer{margin-top:28px;font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.spark,#confetti{display:none}}
+</style>
+
+<div class="bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<main class="wrap">
+
+<section class="hero">
+  <span class="eyebrow">Safe to Thrive · Bücher für Frauen</span>
+  <h1>Du warst lange für alle da. <em>Jetzt kommst DU.</em></h1>
+  <p class="lead">Sechs Sätze, die du dir heute sagen darfst. Und danach das Buch, das zu dem passt, was du gerade trägst.</p>
+  <a class="btn" href="#saetze">Sätze ansehen ↓</a>
+</section>
+
+<section class="sec" id="saetze">
+  <h2>Sechs Sätze für dich.</h2>
+  <div class="rail" tabindex="0" aria-label="Sätze, seitlich wischen">
+    <div class="slide g1"><span class="tag">1 / 6</span><p><span>Mein schlechtes Gewissen</span><span>ist kein Beweis.</span><span>Ich habe nichts falsch gemacht.</span></p></div>
+    <div class="slide g2"><span class="tag">2 / 6</span><p><span>Ich darf Nein sagen.</span><span>Ohne Erklärung.</span><span>Ohne Entschuldigung.</span></p></div>
+    <div class="slide g3"><span class="tag">3 / 6</span><p><span>Ab heute stehe ich</span><span>auf meiner eigenen Liste.</span><span>Ganz oben.</span></p></div>
+    <div class="slide g4"><span class="tag">4 / 6</span><p><span>Meine Müdigkeit ist echt.</span><span>Auch wenn sie niemand sieht.</span></p></div>
+    <div class="slide g5"><span class="tag">5 / 6</span><p><span>Nicht jede Beziehung</span><span>verdient meine ganze Kraft.</span></p></div>
+    <div class="slide g6"><span class="tag">6 / 6</span><p><span>Was andere fühlen,</span><span>muss ich nicht tragen.</span><span>Meine Reaktion gehört mir.</span></p></div>
+  </div>
+  <p class="hint">Wische nach links. Welcher Satz hat dich getroffen?</p>
+</section>
+
+<section class="sec" id="wahl">
+  <h2>Und jetzt kommst DU.</h2>
+  <p>Was trägst du gerade am meisten? Tippe auf das, was am ehesten stimmt.</p>
+  <div class="chips" id="chips"></div>
+  <div class="result" id="result" hidden aria-live="polite">
+    <span class="eyebrow">Dieses Buch ist für dich</span>
+    <h3 id="rTitle"></h3>
+    <p class="sentence" id="rSentence"></p>
+    <p class="teaser" id="rTeaser"></p>
+    <a class="btn" id="rBtn" href="#" target="_blank" rel="noopener">Auf Amazon ansehen →</a>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>Die ganze Reihe.</h2>
+  <div class="books" id="books"></div>
+</section>
+
+<section class="close">
+  <h2>Du musst nicht erst <em>leer</em> sein, um dich wichtig zu nehmen.</h2>
+  <p>Such dir das Buch aus, das heute zu dir passt. Dein Weg beginnt mit einem einzigen Satz, der nur dir gehört.</p>
+  <a class="btn" href="#wahl">Mein Buch finden ↑</a>
+</section>
+
+<footer>Safe to Thrive · Petra Tanner, Coachin, Uzwil</footer>
+</main>
+
+<script>
+// Hier die echten Amazon-Links eintragen. Bis dahin öffnet der Button eine Amazon-Suche nach dem Titel.
+var BOOKS=[
+ {id:"gewissen",chip:"Ich habe ständig ein schlechtes Gewissen",title:"Mein schlechtes Gewissen",color:"linear-gradient(155deg,#FFC247,#FF6A5C)",
+  sentence:"Schuldgefühle sind kein Beweis dafür, dass du etwas falsch gemacht hast.",
+  teaser:"Für dich, wenn du dich schuldig fühlst, sobald du an dich denkst. Du lernst, zwischen echter Verantwortung und antrainierter Schuld zu unterscheiden.",url:""},
+ {id:"beziehung",chip:"Eine Beziehung kostet mich meine ganze Kraft",title:"Wenn Beziehungen erschöpfen",color:"linear-gradient(155deg,#C9B6FF,#7FD7FF)",
+  sentence:"Nicht jede Beziehung verdient deine ganze Kraft.",
+  teaser:"Für dich, wenn du gibst und gibst und am Ende leer bist. Du erkennst, was dich auslaugt, und holst dir deine Energie zurück.",url:""},
+ {id:"muede",chip:"Ich bin so müde und keiner sieht es",title:"Ich bin so müde und keiner sieht es",color:"linear-gradient(155deg,#FF9AB8,#A98BFF)",
+  sentence:"Deine Müdigkeit ist echt, auch wenn sie niemand sieht.",
+  teaser:"Für dich, wenn du nach außen funktionierst und innen nur noch Erschöpfung spürst. Hier darfst du endlich gesehen werden, zuerst von dir selbst.",url:""},
+ {id:"liste",chip:"Ich stehe nie auf meiner eigenen Liste",title:"Ich stand nie auf meiner eigenen Liste",color:"linear-gradient(155deg,#6FDDBF,#FFE07A)",
+  sentence:"Ab heute stehst du auf deiner eigenen Liste. Ganz oben.",
+  teaser:"Für dich, wenn immer erst alle anderen dran sind. Du setzt neue Standards und lernst, dir selbst zuzustehen, was du anderen selbstverständlich gibst.",url:""},
+ {id:"reaktion",chip:"Ich reagiere auf andere, statt bei mir zu bleiben",title:"Deine Reaktion gehört dir nicht mehr",color:"linear-gradient(155deg,#FFB27A,#FF6A8C)",
+  sentence:"Was andere fühlen, musst du nicht tragen. Deine Reaktion gehört dir.",
+  teaser:"Für dich, wenn Stimmungen anderer dein ganzes System bestimmen. Du holst dir deine Reaktion zurück und entscheidest wieder selbst.",url:""}
+];
+// Funkeln im Hintergrund
+(function(){
+  var bg=document.querySelector(".bg");
+  for(var i=0;i<22;i++){
+    var s=document.createElement("span");s.className="spark";
+    s.style.left=(Math.random()*100)+"%";
+    s.style.setProperty("--dx",(Math.random()*80-40)+"px");
+    s.style.animationDuration=(9+Math.random()*10)+"s";
+    s.style.animationDelay=(-Math.random()*16)+"s";
+    var z=3+Math.random()*5;s.style.width=s.style.height=z+"px";
+    bg.appendChild(s);
+  }
+})();
+// Konfetti beim Antippen
+var cv=document.getElementById("confetti"),cx=cv.getContext("2d"),parts=[],running=false;
+function fit(){cv.width=innerWidth;cv.height=innerHeight}
+fit();addEventListener("resize",fit);
+function burst(r){
+  if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+  var cols=["#FFC247","#FF6A5C","#C9B6FF","#6FDDBF","#FF8FB8","#FFFFFF"];
+  var x=r.left+r.width/2,y=r.top+r.height/2;
+  for(var i=0;i<70;i++){
+    var a=Math.random()*Math.PI*2,v=3+Math.random()*7;
+    parts.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-4,s:4+Math.random()*6,c:cols[i%cols.length],l:1,rot:Math.random()*6});
+  }
+  if(!running){running=true;requestAnimationFrame(tick)}
+}
+function tick(){
+  cx.clearRect(0,0,cv.width,cv.height);
+  parts=parts.filter(function(p){return p.l>0});
+  parts.forEach(function(p){
+    p.x+=p.vx;p.y+=p.vy;p.vy+=.22;p.vx*=.985;p.l-=.014;p.rot+=.2;
+    cx.save();cx.globalAlpha=Math.max(p.l,0);cx.translate(p.x,p.y);cx.rotate(p.rot);
+    cx.fillStyle=p.c;cx.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);cx.restore();
+  });
+  if(parts.length)requestAnimationFrame(tick);else{running=false;cx.clearRect(0,0,cv.width,cv.height)}
+}
+function link(b){return b.url||("https://www.amazon.de/s?k="+encodeURIComponent(b.title))}
+var chips=document.getElementById("chips"),res=document.getElementById("result"),list=document.getElementById("books");
+BOOKS.forEach(function(b){
+  var c=document.createElement("button");c.className="chip";c.type="button";c.id="chip-"+b.id;c.textContent=b.chip;c.setAttribute("aria-pressed","false");
+  c.addEventListener("click",function(){
+    chips.querySelectorAll(".chip").forEach(function(x){x.setAttribute("aria-pressed","false")});
+    c.setAttribute("aria-pressed","true");
+    res.style.background=b.color;
+    document.getElementById("rTitle").textContent=b.title;
+    document.getElementById("rSentence").textContent=b.sentence;
+    document.getElementById("rTeaser").textContent=b.teaser;
+    document.getElementById("rBtn").href=link(b);
+    res.hidden=false;
+    res.style.animation="none";void res.offsetWidth;res.style.animation="";
+    burst(c.getBoundingClientRect());
+    res.scrollIntoView({behavior:"smooth",block:"nearest"});
+  });
+  chips.appendChild(c);
+  var a=document.createElement("a");a.className="book";a.href=link(b);a.target="_blank";a.rel="noopener";
+  a.innerHTML='<i style="background:'+b.color+'"></i><span><b></b><small>Auf Amazon ansehen</small></span>';
+  a.querySelector("b").textContent=b.title;
+  list.appendChild(a);
+});
+</script>
+
+</body></html>
