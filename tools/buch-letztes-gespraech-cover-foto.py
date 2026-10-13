@@ -21,7 +21,7 @@ if not BILD:
     raise SystemExit('Bilddatei als Argument angeben.')
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
-SEITEN  = 110
+SEITEN  = 99
 TRIM_B  = 139.7 * mm
 TRIM_H  = 215.9 * mm
 RUECKEN = SEITEN * 0.0025 * 25.4 * mm
@@ -169,8 +169,8 @@ for t in ('Du musst nicht verstehen, warum.', 'Du darfst trotzdem gehen.'):
     y -= 6.2 * mm
 
 vy = BLEED + SAFE + 12 * mm
-block(rx, vy, ['Petra Tanner, Autorin und Mentorin.',
-               'Seit 26 Jahren in eigener Praxis.'], 'SerifI', 9.2, GRAU, 5.0 * mm)
+block(rx, vy, ['Petra Tanner, Coachin.',
+               'Safe to Thrive, Schweiz.'], 'SerifI', 9.2, GRAU, 5.0 * mm)
 
 c.setFillColor(colors.white)
 c.rect(RUECK_X + TRIM_B - SAFE - 52 * mm, BLEED + SAFE, 52 * mm, BARCODE_H,
