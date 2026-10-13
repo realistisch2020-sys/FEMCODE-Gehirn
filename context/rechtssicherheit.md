@@ -156,7 +156,17 @@ Pflicht bei Eigenverlag, daran führt kein Weg vorbei.
       liest nur die Word-Datei und das Taschenbuch-PDF — Rückseiten- und
       Spine-Text auf dem Cover werden separat entworfen und laufen leicht
       auseinander (bei Buch 3 stand dort noch „Therapeutin" und die alte
-      private Mailadresse, obwohl das Manuskript längst korrigiert war)
+      private Mailadresse, obwohl das Manuskript längst korrigiert war).
+      **13. Oktober 2026, derselbe Fehlerkanal erneut:** Die Rückseiten-Zeile
+      „Petra Tanner, Autorin und Mentorin. Seit 26 Jahren in eigener Praxis."
+      stand unverändert in den Cover-Skripten von Buch 5, Buch 6 (Ich bin so
+      müde), Buch 7 und „Du brauchst kein letztes Gespräch" (beide Fassungen).
+      „Praxis" impliziert eine klinische/therapeutische Tätigkeit, nicht
+      Coachin — Ursprung war offenbar ein alter Bio-Entwurf mit
+      „Naturheilpraktikerin, 26 Jahre Praxis" (explizit verbotener Begriff,
+      siehe Regel 1). Jedes neue Cover-Skript und jedes bestehende vor einem
+      Re-Upload auf genau diese Zeile prüfen. Korrigierte Formel:
+      „Petra Tanner, Coachin. Safe to Thrive, Schweiz."
 
 ---
 

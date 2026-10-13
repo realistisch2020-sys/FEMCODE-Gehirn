@@ -2,6 +2,49 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## DRINGEND: "Naturheilpraktikerin"/"eigener Praxis" auf mehreren Buch-Rückseiten (seit 13. Okt. 2026)
+
+Eine 2/5-Rezenzo-Rezension zu "Du brauchst kein letztes Gespräch" führte zu
+einer Volllektorats-Prüfung des Manuskripts (siehe unten) — dabei beim
+Cover-Neubau entdeckt: Die Rückseite trug die Zeile **"Seit 26 Jahren in
+eigener Praxis."** Das verstösst gegen `rechtssicherheit.md` Regel 1
+("Niemals ... Naturheilpraktikerin" — genau dieser Begriff steht auch als
+früherer Bio-Vorschlag weiter unten in dieser Datei, Abschnitt Social
+Media/`petra.tanner.autorin`: "Naturheilpraktikerin, 26 Jahre Praxis").
+`buch-pruefen.py` prüft nur Manuskript + Taschenbuch-PDF, nicht den
+Cover-Text — darum ist das nie aufgefallen (derselbe Fehlerkanal wie bei
+Buch 3 mit "Therapeutin" auf dem Cover, siehe `rechtssicherheit.md` §9).
+
+**Bereits korrigiert:** `tools/buch-letztes-gespraech-cover-foto.py` →
+"Petra Tanner, Coachin. Safe to Thrive, Schweiz.", Cover neu gebaut
+(Commit 631879f), noch **nicht bei KDP neu hochgeladen**.
+
+**Noch offen, dieselbe Zeile unverändert in:**
+- `tools/buch5-cover.py`
+- `tools/buch6-cover.py`
+- `tools/buch7-cover-foto.py`
+- `tools/buch-letztes-gespraech-cover.py` (typografische Zweitfassung)
+
+Für jede Datei: Zeile ersetzen, Cover neu bauen, Petra informieren, dass
+sie das korrigierte Cover bei KDP erneut hochladen muss (betrifft
+mehrere bereits live/gedruckte Bücher).
+
+## Buch 6: "Du brauchst kein letztes Gespräch" — Inhalt gekürzt, Cover-Re-Upload nötig (Stand 13. Oktober 2026)
+
+**13. Oktober 2026:** 2/5-Rezenzo-Rezension ("ständige Wiederholungen, zu
+allgemein") führte zu einer Doppel-Lektoratsprüfung. Ergebnis: teilweise
+berechtigt. Korrigiert: Dopplung Verzeihen/Vergessen aufgelöst (Kapitel 10
+behalten, Dopplung gestrichen, stärkste Einsicht integriert), 4 der
+formelhaften "Wenn..."-Abschnitte ab Kapitel 8 gestrichen (Geschwister zu
+Fremden, einseitige Freundschaft, Feiertage, Selbstvertrauen aufbauen),
+Übungsformulierungen in 5 verbleibenden Abschnitten variiert, doppelte
+FAQ-Frage zusammengeführt. Seitenzahl **110 → 99**. `buch-pruefen.py` und
+visuelle PDF-Prüfung sauber. Commits 888b5d0 (Manuskript/PDF/eBook) und
+631879f (Cover, inkl. Rechtssicherheits-Fix oben), beide gepusht.
+
+**Offen:** Taschenbuch-PDF, eBook und Cover bei KDP neu hochladen
+(Seitenzahl und Rückenbreite haben sich geändert, Cover-Text korrigiert).
+
 ## Buch 6: "Du brauchst kein letztes Gespräch" — komplett hochgeladen (Stand 18. September 2026)
 
 **Von Petra bestätigt: Taschenbuch, eBook und Journal sind alle bei KDP
