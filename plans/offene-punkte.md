@@ -15,19 +15,27 @@ Media/`petra.tanner.autorin`: "Naturheilpraktikerin, 26 Jahre Praxis").
 Cover-Text — darum ist das nie aufgefallen (derselbe Fehlerkanal wie bei
 Buch 3 mit "Therapeutin" auf dem Cover, siehe `rechtssicherheit.md` §9).
 
-**Bereits korrigiert:** `tools/buch-letztes-gespraech-cover-foto.py` →
-"Petra Tanner, Coachin. Safe to Thrive, Schweiz.", Cover neu gebaut
-(Commit 631879f), noch **nicht bei KDP neu hochgeladen**.
+**Korrigiert (Quelltext UND Cover-PDF neu gebaut):**
+`tools/buch-letztes-gespraech-cover-foto.py` → "Petra Tanner, Coachin.
+Safe to Thrive, Schweiz.", Cover neu gebaut (Commit 631879f), noch
+**nicht bei KDP neu hochgeladen**.
 
-**Noch offen, dieselbe Zeile unverändert in:**
-- `tools/buch5-cover.py`
-- `tools/buch6-cover.py`
-- `tools/buch7-cover-foto.py`
-- `tools/buch-letztes-gespraech-cover.py` (typografische Zweitfassung)
+**Korrigiert (nur Quelltext, Cover-PDF noch NICHT neu gebaut — richtiges
+Vorderseitenbild pro Buch zuerst klären):**
+- `tools/buch6-cover.py` (Buch "Ich bin so müde...", 113 Seiten passt noch)
+- `tools/buch7-cover-foto.py` (Buch 7 "Meine Lust ist nicht weg...", Skript
+  hat 130 als Platzhalter-Seitenzahl, tatsächlich aktuell 123 Seiten —
+  beim Neubau `python3 tools/buch7-cover-foto.py <bild> 123` mit der
+  echten Seitenzahl aufrufen)
+- `tools/buch-letztes-gespraech-cover.py` (alte typografische Zweitfassung,
+  wird aktuell nicht verwendet — die Foto-Fassung oben ist die aktive)
 
-Für jede Datei: Zeile ersetzen, Cover neu bauen, Petra informieren, dass
-sie das korrigierte Cover bei KDP erneut hochladen muss (betrifft
-mehrere bereits live/gedruckte Bücher).
+**Bereits geprüft und sauber, keine Änderung nötig:** `tools/buch5-cover.py`
+(steht dort schon "Safe to Thrive.", keine "eigener Praxis"-Zeile).
+
+Sobald die Cover-PDFs für Buch 6 und Buch 7 neu gebaut sind: Petra
+informieren, dass sie die korrigierten Cover bei KDP erneut hochladen
+muss (betrifft mehrere bereits live/gedruckte Bücher).
 
 ## Buch 6: "Du brauchst kein letztes Gespräch" — Inhalt gekürzt, Cover-Re-Upload nötig (Stand 13. Oktober 2026)
 
