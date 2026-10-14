@@ -37,7 +37,7 @@ TIEFE  = colors.HexColor('#121916')
 CREME  = colors.HexColor('#FAF5EC')
 KUPFER = colors.HexColor('#C98A4F')
 KUPF_H = colors.HexColor('#E3AD75')
-SALBEI = colors.HexColor('#8FA396')
+SALBEI = colors.HexColor('#C2CFC3')
 GRAU   = colors.HexColor('#9A9389')
 
 # ─── Schriften ──────────────────────────────────────────────────────────────
@@ -165,12 +165,12 @@ c.setStrokeColor(KUPFER); c.setLineWidth(1.0)
 c.line(fx, ty, fx + 30 * mm, ty)
 
 ty -= 12.5 * mm
-block(fx, ty, ['Warum du gibst,', 'bis nichts mehr übrig ist.'],
+block(fx, ty, ['Warum du gibst, bis nichts mehr',
+               'von dir übrig ist,'],
       'SerifB', 15.5, CREME, 7.6 * mm)
 ty -= 17.5 * mm
-block(fx, ty, ['Wie du Grenzen setzt, alte Muster',
-               'erkennst und wieder zu dir zurückfindest.'],
-      'Serif', 11.6, SALBEI, 6.0 * mm)
+block(fx, ty, ['und wie du dich zurückholst.'],
+      'Serif', 12.6, SALBEI, 6.0 * mm)
 
 sy = BLEED + 20 * mm
 gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, CREME, 3.6, mitte=True)
