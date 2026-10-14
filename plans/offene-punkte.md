@@ -2,6 +2,58 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## Katalog-Qualitätsprüfung abgeschlossen, KDP-Re-Upload für alle 7 Bücher nötig (Stand 14. Oktober 2026)
+
+Alle Hauptbücher wurden von je zwei unabhängigen Lektorinnen auf Wiederholung/
+generischen Füllstoff geprüft (Ziel: "ein spannendes Buch mit Mehrwert") und
+wo nötig chirurgisch gestrafft. Alle Taschenbuch-PDFs und eBooks sind neu
+gebaut, `buch-pruefen.py` lief überall sauber (keine neuen Befunde), Seiten
+visuell geprüft. Details je Commit in der Git-Historie.
+
+**Wichtiger Technik-Fund dabei:** `tools/manuskript-word2pdf.py` und
+`tools/manuskript-ebook.py` lasen bisher nur Fliesstext-Absätze, Inhalt in
+Word-Tabellen (Zitat-/Reflexionsboxen) fiel lautlos weg. Betraf "Wenn
+Beziehungen erschöpfen" (54 Tabellen, u.a. eine ganze Antwort in Kapitel 1
+fehlte) und "Das schlechte Gewissen" (2 Tabellen, u.a. ein Satz aus "Zur
+Autorin"). Beide Tools jetzt gefixt, beide Bücher neu gebaut und geprüft.
+
+**Seitenzahlen, alt → neu:**
+- Das schlechte Gewissen: 106 → 106 (Tabellen-Fix gleicht Kürzung aus)
+- Wenn Beziehungen erschöpfen: 153 → **169** (grösstenteils wiederhergestellter Tabelleninhalt)
+- Ich bin so müde...: 113 → 113
+- Deine Reaktion gehört dir. Nicht mir.: 102 → 101
+- Ich stand nie auf meiner eigenen Liste: 121 → 120
+- Meine Lust ist nicht weg...: 123 → 115
+- Du brauchst kein letztes Gespräch: 110 → 99 (schon letzte Session erledigt, siehe unten)
+
+**Offen — Cover-Neubau nötig, weil sich die Seitenzahl/Rückenbreite geändert hat:**
+- "Wenn Beziehungen erschöpfen" (deutlichste Änderung, +16 Seiten) und "Das
+  schlechte Gewissen": **kein Build-Skript in `tools/` gefunden**, die
+  Cover sind offenbar früher manuell/ad-hoc gebaut worden. Für einen
+  Neubau müsste zuerst geklärt werden, wie das Cover ursprünglich
+  entstand, oder ein neues Skript nach dem Muster der neueren Bücher
+  gebaut werden.
+- "Ich stand nie auf meiner eigenen Liste" (121→120) und "Meine Lust ist
+  nicht weg..." (123→115): Build-Skripte vorhanden
+  (`/tmp/.../buch4_newcover2.py` bzw. `tools/buch7-cover-foto.py`,
+  `PAGES`/`SEITEN`-Konstante anpassen und neu bauen).
+- "Deine Reaktion gehört dir" (102→101) und "Ich bin so müde..." (113→113,
+  unverändert): Rückenbreite praktisch gleich, Cover-Neubau nicht dringend.
+
+**Danach für ALLE 7 Bücher:** Taschenbuch-PDF, eBook und (wo neu gebaut)
+Cover bei KDP neu hochladen.
+
+## "Seit 26 Jahren in eigener Praxis" auf Buch-Rückseiten — Textfix erledigt, Cover-PDFs noch nicht neu gebaut
+
+Siehe Abschnitt weiter unten für den Hintergrund. Quelltext in
+`tools/buch6-cover.py`, `tools/buch7-cover-foto.py` und
+`tools/buch-letztes-gespraech-cover.py` (unbenutzte Zweitfassung) korrigiert
+zu "Petra Tanner, Coachin. Safe to Thrive, Schweiz." — die eigentlichen
+Cover-PDFs für Buch 6 ("Ich bin so müde") und Buch 7 sind noch **nicht**
+neu gebaut (richtiges Vorderseitenbild pro Buch erst klären). Für
+"Du brauchst kein letztes Gespräch" ist das bereits erledigt (Commit
+631879f). `buch5-cover.py` war bereits korrekt.
+
 ## DRINGEND: "Naturheilpraktikerin"/"eigener Praxis" auf mehreren Buch-Rückseiten (seit 13. Okt. 2026)
 
 Eine 2/5-Rezenzo-Rezension zu "Du brauchst kein letztes Gespräch" führte zu
