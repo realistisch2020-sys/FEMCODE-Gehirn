@@ -36,6 +36,7 @@ for _i, _b, _n in ((0, 0, 'Times-Roman'), (1, 0, 'Times-Bold'),
 rl_config.canvas_basefontname = 'Times-Roman'
 
 from docx import Document
+from docx.table import Table as DocxTable
 from reportlab.platypus import (BaseDocTemplate, Frame, PageTemplate, Paragraph,
                                 Spacer, PageBreak, KeepTogether, NextPageTemplate,
                                 Table, TableStyle, Image)
@@ -148,6 +149,8 @@ tiktok_s = ps('TikTok', fontName='Times-Italic', fontSize=11, leading=15.5,
 herz_s = ps('Herz', fontName='Times-Roman', fontSize=13, leading=13,
             alignment=TA_CENTER, spaceBefore=14, spaceAfter=14,
             textColor=colors.HexColor('#b09a8f'))
+quote_s = ps('Quote', fontName='Times-Roman', fontSize=10.5, leading=15,
+             alignment=TA_LEFT, textColor=colors.HexColor('#6B6B6B'))
 
 
 import re as _re
@@ -173,6 +176,36 @@ def tiktok_box(text):
         ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
     ]))
     return t
+
+def zitat_box(tabelle):
+    """Eine eingebettete Word-Tabelle (Klientinnen-Zitat oder eine Liste von
+    Reflexionsfragen) als umrandeter Kasten, mit duennen Trennlinien
+    zwischen mehreren Zeilen. python-docx.Document.paragraphs liest nur
+    Absaetze auf oberster Ebene, keine Absaetze in Tabellenzellen - solche
+    Tabellen wuerden sonst stillschweigend aus dem Taschenbuch verschwinden,
+    obwohl sie im Manuskript stehen."""
+    zeilen = []
+    for row in tabelle.rows:
+        for cell in row.cells:
+            stuecke = [richtext(p) for p in cell.paragraphs if p.text.strip()]
+            if stuecke:
+                zeilen.append('<br/>'.join(stuecke))
+    if not zeilen:
+        return None
+    t = Table([[Paragraph(z, quote_s)] for z in zeilen], colWidths=[W - LM - RM])
+    stil = [
+        ('TOPPADDING', (0, 0), (-1, -1), 7),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 7),
+        ('LEFTPADDING', (0, 0), (-1, -1), 2),
+        ('RIGHTPADDING', (0, 0), (-1, -1), 2),
+        ('LINEABOVE', (0, 0), (-1, 0), 0.75, colors.HexColor('#C0848A')),
+        ('LINEBELOW', (0, -1), (-1, -1), 0.75, colors.HexColor('#C0848A')),
+    ]
+    if len(zeilen) > 1:
+        stil.append(('LINEBELOW', (0, 0), (-1, -2), 0.4, colors.HexColor('#C0848A')))
+    t.setStyle(TableStyle(stil))
+    return t
+
 
 def esc(s):
     s = s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -263,7 +296,17 @@ def baue(toc_pages=None, out_path=None, toc_capture=None):
             story.append(pending_mini)
         pending_mini = flowable
 
-    for p in docx.paragraphs:
+    for p in docx.iter_inner_content():
+        if isinstance(p, DocxTable):
+            # Klientinnen-Zitat oder Reflexionsfragen-Kasten, siehe
+            # zitat_box(). Steht nicht in docx.paragraphs, muss hier separat
+            # behandelt werden, sonst fehlt der Inhalt im PDF komplett.
+            kasten = zitat_box(p)
+            if kasten is not None:
+                absatz = mit_vorlauf(kasten, pending_space)
+                pending_space = 0.0
+                anhaengen(absatz, True)
+            continue
         text = p.text.strip()
         if text.startswith('EBOOKONLY'):
             # Absatz ist nur fuer das eBook gedacht (z.B. Text-Fallback-Link

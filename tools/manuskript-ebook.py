@@ -11,6 +11,7 @@ Charakter) wird uebersprungen, die eReader-Navigation ersetzt es.
 import re
 import sys
 from docx import Document
+from docx.table import Table as DocxTable
 from ebooklib import epub
 
 _TIKTOK_PREFIX = re.compile(r'TikTok\s*(?:&#183;|·)?\s*', re.IGNORECASE)
@@ -82,6 +83,25 @@ def laufweite_html(p):
     return ''.join(teile) if teile else p.text
 
 
+def zitat_box_html(tabelle):
+    """Eingebettete Word-Tabelle (Klientinnen-Zitat oder Reflexionsfragen-
+    Liste) als HTML-Kasten. docx.paragraphs liest keine Absaetze aus
+    Tabellenzellen, solche Tabellen wuerden sonst stillschweigend aus dem
+    eBook verschwinden, obwohl sie im Manuskript stehen."""
+    zeilen = []
+    for row in tabelle.rows:
+        for cell in row.cells:
+            for cp in cell.paragraphs:
+                if cp.text.strip():
+                    zeilen.append(laufweite_html(cp))
+    if not zeilen:
+        return ''
+    if len(zeilen) == 1:
+        return '<div class="zitatbox"><p>%s</p></div>' % zeilen[0]
+    zeilen_html = ''.join('<p class="zitatzeile">%s</p>' % z for z in zeilen)
+    return '<div class="zitatbox">%s</div>' % zeilen_html
+
+
 def baue():
     d = Document(DOCX)
     ps = d.paragraphs
@@ -106,9 +126,14 @@ def baue():
     spine = ['nav', titelseite]
     toc = []
 
-    # Start: erster Absatz nach dem zweiten Inline-Seitenumbruch (nach dem
+    # Elemente in Dokumentreihenfolge, inklusive Tabellen (Klientinnen-Zitate,
+    # Reflexionsfragen-Kaesten), die docx.paragraphs allein nicht liefert.
+    items = list(d.iter_inner_content())
+
+    # Start: erstes Element nach dem zweiten Inline-Seitenumbruch (nach dem
     # Papier-Inhaltsverzeichnis).
-    umbrueche = [i for i, p in enumerate(ps) if hat_inline_umbruch(p)]
+    umbrueche = [i for i, p in enumerate(items)
+                 if not isinstance(p, DocxTable) and hat_inline_umbruch(p)]
     start = umbrueche[1] + 1 if len(umbrueche) >= 2 else 0
 
     zaehler = 0
@@ -130,8 +155,13 @@ def baue():
         aktuelle_seite = seite
         return seite
 
-    for i in range(start, len(ps)):
-        p = ps[i]
+    for i in range(start, len(items)):
+        p = items[i]
+        if isinstance(p, DocxTable):
+            kasten = zitat_box_html(p)
+            if kasten and aktuelle_seite is not None:
+                html_buffer.append(kasten)
+            continue
         text = p.text.strip()
         bild = eingebettetes_bild(p)
         if bild is not None and aktuelle_seite is not None:
@@ -180,6 +210,12 @@ def baue():
     p { margin: 0 0 0.8em 0; text-indent: 0; }
     p.zitat { background: #efece6; font-style: italic; padding: 0.8em 1em;
               margin: 1em 0; }
+    div.zitatbox { border-top: 1px solid #C0848A; border-bottom: 1px solid #C0848A;
+                   padding: 0.6em 0.2em; margin: 1em 0; color: #6B6B6B; }
+    div.zitatbox p { margin: 0.5em 0; }
+    div.zitatbox p.zitatzeile { padding-bottom: 0.5em;
+                   border-bottom: 1px solid #C0848A; }
+    div.zitatbox p.zitatzeile:last-child { border-bottom: none; }
     '''
     stil_datei = epub.EpubItem(uid='stil', file_name='stil.css',
                                 media_type='text/css', content=css)
@@ -196,7 +232,7 @@ def baue():
     print('eBook erstellt:', OUT)
     print('  Kapitel/Seiten:', zaehler)
 
-    voll = '\n'.join(p.text for p in ps[start:])
+    voll = '\n'.join(p.text for p in items[start:] if not isinstance(p, DocxTable))
     fehlt = [k for k in ('Haftungsausschluss', 'Zur Autorin',
                           'Notfall und professionelle Hilfe', KONTAKT)
              if k not in voll]
