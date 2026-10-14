@@ -8,7 +8,7 @@ das sich nicht mehr praezise an eine neue Seitenzahl anpassen liess.
 
     python3 tools/buch3-cover.py
 """
-import math
+import math, sys, os
 from reportlab.pdfgen import canvas as rl
 from reportlab.lib.units import mm
 from reportlab.lib import colors
@@ -16,6 +16,8 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 OUT = '/home/user/FEMCODE-Gehirn/outputs/buch-beziehungen/wenn-beziehungen-erschoepfen-Cover-Print-FullWrap.pdf'
+# Optional: Petras eigenes, fertiges Vorderseitenbild als Argument.
+BILD = sys.argv[1] if len(sys.argv) > 1 and os.path.exists(sys.argv[1]) else None
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
 SEITEN  = 169
@@ -94,10 +96,10 @@ c.saveState()
 p = c.beginPath()
 p.rect(FRONT_X, 0, TRIM_B + BLEED, H)
 c.clipPath(p, stroke=0)
-c.setStrokeAlpha(0.55)
+c.setStrokeAlpha(0.0 if BILD else 0.55)
 ader(FRONT_X + TRIM_B - 14 * mm, H - BLEED + 2 * mm, 120 * mm, math.radians(253),
      breite=1.3, seed=4)
-c.setStrokeAlpha(0.28)
+c.setStrokeAlpha(0.0 if BILD else 0.28)
 ader(FRONT_X + TRIM_B - 38 * mm, BLEED - 3 * mm, 50 * mm, math.radians(70),
      breite=0.8, seed=19)
 c.restoreState()
@@ -155,28 +157,44 @@ def gruppe(zeilen, breite, farbe, ty, durchschuss=1.03):
     return ty
 
 
-ty = H - BLEED - 32 * mm
-ty = gruppe(['WENN'], innen * 0.60, CREME, ty, 1.02)
-ty -= 6 * mm
-ty = gruppe(['BEZIEHUNGEN', 'ERSCHÖPFEN'], innen * 0.92, KUPF_H, ty, 1.06)
+if BILD:
+    from reportlab.lib.utils import ImageReader
+    from PIL import Image as PILImage
+    iw, ih = PILImage.open(BILD).size
+    fw, fh = TRIM_B + BLEED, H
+    skala = max(fw / iw, fh / ih)
+    zw, zh = iw * skala, ih * skala
+    c.saveState()
+    pfad = c.beginPath(); pfad.rect(FRONT_X, 0, fw, H); c.clipPath(pfad, stroke=0)
+    c.drawImage(ImageReader(BILD), FRONT_X - (zw - fw) / 2, -(zh - fh) / 2,
+                width=zw, height=zh, mask='auto')
+    c.restoreState()
+    dpi = iw / (fw / mm / 25.4)
+    print(f'  Bild eingesetzt: {iw}x{ih} px  ->  {dpi:.0f} dpi'
+          + ('' if dpi >= 300 else '   ACHTUNG: unter 300 dpi'))
+else:
+    ty = H - BLEED - 32 * mm
+    ty = gruppe(['WENN'], innen * 0.60, CREME, ty, 1.02)
+    ty -= 6 * mm
+    ty = gruppe(['BEZIEHUNGEN', 'ERSCHÖPFEN'], innen * 0.92, KUPF_H, ty, 1.06)
 
-ty -= 9 * mm
-c.setStrokeColor(KUPFER); c.setLineWidth(1.0)
-c.line(fx, ty, fx + 30 * mm, ty)
+    ty -= 9 * mm
+    c.setStrokeColor(KUPFER); c.setLineWidth(1.0)
+    c.line(fx, ty, fx + 30 * mm, ty)
 
-ty -= 12.5 * mm
-block(fx, ty, ['Warum du gibst, bis nichts mehr',
-               'von dir übrig ist,'],
-      'SerifB', 15.5, CREME, 7.6 * mm)
-ty -= 17.5 * mm
-block(fx, ty, ['und wie du dich zurückholst.'],
-      'Serif', 12.6, SALBEI, 6.0 * mm)
+    ty -= 12.5 * mm
+    block(fx, ty, ['Warum du gibst, bis nichts mehr',
+                   'von dir übrig ist,'],
+          'SerifB', 15.5, CREME, 7.6 * mm)
+    ty -= 17.5 * mm
+    block(fx, ty, ['und wie du dich zurückholst.'],
+          'Serif', 12.6, SALBEI, 6.0 * mm)
 
-sy = BLEED + 20 * mm
-gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, CREME, 3.6, mitte=True)
-c.setStrokeColor(KUPFER); c.setLineWidth(0.7)
-c.line(fm - 26 * mm, sy - 5.2 * mm, fm + 26 * mm, sy - 5.2 * mm)
-gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2, KUPFER, 3.8, mitte=True)
+    sy = BLEED + 20 * mm
+    gesperrt(fm, sy, 'PETRA TANNER', 'SansB', 13.5, CREME, 3.6, mitte=True)
+    c.setStrokeColor(KUPFER); c.setLineWidth(0.7)
+    c.line(fm - 26 * mm, sy - 5.2 * mm, fm + 26 * mm, sy - 5.2 * mm)
+    gesperrt(fm, sy - 11.5 * mm, 'SAFE TO THRIVE', 'Sans', 8.2, KUPFER, 3.8, mitte=True)
 
 
 # ════════════════════════════════════════════════════════════════════════════
