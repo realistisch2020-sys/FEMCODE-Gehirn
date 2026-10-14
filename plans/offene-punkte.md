@@ -22,7 +22,7 @@ Autorin"). Beide Tools jetzt gefixt, beide Bücher neu gebaut und geprüft.
 - Wenn Beziehungen erschöpfen: 153 → **169** (grösstenteils wiederhergestellter Tabelleninhalt)
 - Ich bin so müde...: 113 → 113
 - Deine Reaktion gehört dir. Nicht mir.: 102 → 101
-- Ich stand nie auf meiner eigenen Liste: 121 → 120
+- Ich stand nie auf meiner eigenen Liste: 121 → 120 → **119** (Schritt-4-Korrektur, siehe unten)
 - Meine Lust ist nicht weg...: 123 → 115
 - Du brauchst kein letztes Gespräch: 110 → 99 (schon letzte Session erledigt, siehe unten)
 
@@ -33,15 +33,50 @@ Autorin"). Beide Tools jetzt gefixt, beide Bücher neu gebaut und geprüft.
   Neubau müsste zuerst geklärt werden, wie das Cover ursprünglich
   entstand, oder ein neues Skript nach dem Muster der neueren Bücher
   gebaut werden.
-- "Ich stand nie auf meiner eigenen Liste" (121→120) und "Meine Lust ist
-  nicht weg..." (123→115): Build-Skripte vorhanden
-  (`/tmp/.../buch4_newcover2.py` bzw. `tools/buch7-cover-foto.py`,
-  `PAGES`/`SEITEN`-Konstante anpassen und neu bauen).
+- "Ich stand nie auf meiner eigenen Liste" (121→120→**119**, Seitenzahl also
+  nochmal gesunken) und "Meine Lust ist nicht weg..." (123→115): Build-Skripte
+  vorhanden (`/tmp/.../buch4_newcover2.py`, Pfad war ein Scratchpad einer
+  früheren Session und existiert vermutlich nicht mehr — vor Gebrauch prüfen,
+  sonst Skript nach Muster `tools/buch7-cover-foto.py` neu schreiben;
+  `PAGES`/`SEITEN`-Konstante auf 119 setzen).
 - "Deine Reaktion gehört dir" (102→101) und "Ich bin so müde..." (113→113,
   unverändert): Rückenbreite praktisch gleich, Cover-Neubau nicht dringend.
 
 **Danach für ALLE 7 Bücher:** Taschenbuch-PDF, eBook und (wo neu gebaut)
 Cover bei KDP neu hochladen.
+
+### Schritt 4 (jeden neuen Satz einzeln gegenlesen, `buch-standard.md` §10) — für alle 7 Bücher erledigt (Stand 14. Oktober 2026, abends)
+
+Nachgeholt für alle Bücher, die heute inhaltlich korrigiert wurden ("Du brauchst
+kein letztes Gespräch" hatte diesen Schritt schon vorher). Ergebnis je Buch:
+
+- **Das schlechte Gewissen:** sauber, nichts an den neuen Sätzen zu korrigieren.
+  Separat gefunden (ausserhalb des heutigen Korrektur-Diffs, in der
+  Danksagung): zweimal "Praxis" ("in meiner Praxis", "In meiner Praxis, in
+  Kursen..."), gegen die Coachin-Regel. Ersetzt durch "in meiner Arbeit als
+  Coachin" / "In Coaching-Gesprächen". Seiten 106 → 106.
+- **Wenn Beziehungen erschöpfen:** sauber, nichts zu korrigieren. Seiten
+  169 → 169.
+- **Ich bin so müde...:** sauber, nichts zu korrigieren. Seiten 113 → 113.
+- **Deine Reaktion gehört dir:** eine Eigen-Dopplung gefunden und behoben
+  (Kap. 10 und 14 begannen mit identischem Verweissatz auf Kapitel 1).
+  Seiten 101 → 101.
+- **Ich stand nie auf meiner eigenen Liste:** zwei echte Funde behoben — Stilbruch
+  (3 von 4 neuen Boxen redeten die Leserin direkt an, alle 35 bestehenden Boxen
+  sind unpersönlich formuliert, angeglichen) und zwei Eigen-Dopplungen (Box am
+  Ende Kap. 15 wiederholte die TikTok-Zeile darüber, Box am Ende Kap. 18
+  wiederholte den Massstab-Absatz von 5 Zeilen zuvor, beide umformuliert).
+  Zusätzlich der dabei gefundene ältere Box-Fehler in Kap. 17c (falsches Thema,
+  gehörte zu 17e) jetzt auch korrigiert, nicht nur vorgemerkt. Seiten
+  120 → **119**.
+- **Meine Lust ist nicht weg...:** eine Eigen-Dopplung gefunden und behoben
+  (zwei Backmatter-Sätze begannen wortgleich). Seiten 115 → 115.
+- **Du brauchst kein letztes Gespräch:** schon vorher erledigt, eine Stelle beim
+  "unversendeten Brief" geglättet (holprige Satzkonstruktion plus
+  Phrasenwiederholung). Seiten 99 → 99.
+
+Alle PDFs/eBooks neu gebaut, `buch-pruefen.py` überall ohne neue Befunde,
+betroffene Seiten visuell geprüft. Alles committet und gepusht.
 
 ## "Seit 26 Jahren in eigener Praxis" auf Buch-Rückseiten — Textfix erledigt, Cover-PDFs noch nicht neu gebaut
 
