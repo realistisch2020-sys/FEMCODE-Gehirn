@@ -38,11 +38,9 @@ Autorin"). Beide Tools jetzt gefixt, beide Bücher neu gebaut und geprüft.
   wie die neueren Bücher), weil das alte Canva-Cover keine bearbeitbaren
   Ebenen hatte. 153→169 Seiten, Rücken 10.73mm. Petra hat diesen Weg
   ausdrücklich bestätigt. eBook-Cover passend mitgebaut.
-- **"Ich stand nie auf meiner eigenen Liste"** — noch offen. 121→119 Seiten,
-  Unterschied minimal (0,13mm Rücken), nicht dringend. Kein Build-Skript
-  vorhanden (`/tmp/.../buch4_newcover2.py` existiert nicht mehr) — bei
-  Bedarf neues Skript nach Muster `tools/buch3-cover.py`/`buch7-cover-foto.py`
-  schreiben.
+- **"Ich stand nie auf meiner eigenen Liste"** — erledigt, gleiches Vorgehen wie
+  bei "Wenn Beziehungen erschöpfen" (`tools/buch4-cover.py`, Wein/Gold-Palette).
+  121→119 Seiten, Rücken 7.56mm. eBook-Cover passend mitgebaut.
 - **"Deine Reaktion gehört dir"** und **"Ich bin so müde..."** — Seitenzahl
   praktisch unverändert (102→101 bzw. 113→113), Cover-Neubau nicht dringend.
 
