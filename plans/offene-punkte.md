@@ -26,21 +26,25 @@ Autorin"). Beide Tools jetzt gefixt, beide Bücher neu gebaut und geprüft.
 - Meine Lust ist nicht weg...: 123 → 115
 - Du brauchst kein letztes Gespräch: 110 → 99 (schon letzte Session erledigt, siehe unten)
 
-**Offen — Cover-Neubau nötig, weil sich die Seitenzahl/Rückenbreite geändert hat:**
-- "Wenn Beziehungen erschöpfen" (deutlichste Änderung, +16 Seiten) und "Das
-  schlechte Gewissen": **kein Build-Skript in `tools/` gefunden**, die
-  Cover sind offenbar früher manuell/ad-hoc gebaut worden. Für einen
-  Neubau müsste zuerst geklärt werden, wie das Cover ursprünglich
-  entstand, oder ein neues Skript nach dem Muster der neueren Bücher
-  gebaut werden.
-- "Ich stand nie auf meiner eigenen Liste" (121→120→**119**, Seitenzahl also
-  nochmal gesunken) und "Meine Lust ist nicht weg..." (123→115): Build-Skripte
-  vorhanden (`/tmp/.../buch4_newcover2.py`, Pfad war ein Scratchpad einer
-  früheren Session und existiert vermutlich nicht mehr — vor Gebrauch prüfen,
-  sonst Skript nach Muster `tools/buch7-cover-foto.py` neu schreiben;
-  `PAGES`/`SEITEN`-Konstante auf 119 setzen).
-- "Deine Reaktion gehört dir" (102→101) und "Ich bin so müde..." (113→113,
-  unverändert): Rückenbreite praktisch gleich, Cover-Neubau nicht dringend.
+**Cover-Status (Stand 14. Oktober 2026, abends):**
+- **"Du brauchst kein letztes Gespräch"** — erledigt, passt (99 Seiten).
+- **"Das schlechte Gewissen"** — Seitenzahl unverändert (106→106), bestehendes
+  Cover gilt weiter, nichts zu tun.
+- **"Meine Lust ist nicht weg..."** — erledigt, neu gebaut mit
+  `tools/buch7-cover-foto.py outputs/buch7/cover-front-foto-hires.png 115`
+  (123→115 Seiten, Rücken 7.30mm).
+- **"Wenn Beziehungen erschöpfen"** — erledigt, komplett neu als typografisches
+  Cover gebaut (`tools/buch3-cover.py`, Petrol/Kupfer-Palette, Kintsugi-Stil
+  wie die neueren Bücher), weil das alte Canva-Cover keine bearbeitbaren
+  Ebenen hatte. 153→169 Seiten, Rücken 10.73mm. Petra hat diesen Weg
+  ausdrücklich bestätigt. eBook-Cover passend mitgebaut.
+- **"Ich stand nie auf meiner eigenen Liste"** — noch offen. 121→119 Seiten,
+  Unterschied minimal (0,13mm Rücken), nicht dringend. Kein Build-Skript
+  vorhanden (`/tmp/.../buch4_newcover2.py` existiert nicht mehr) — bei
+  Bedarf neues Skript nach Muster `tools/buch3-cover.py`/`buch7-cover-foto.py`
+  schreiben.
+- **"Deine Reaktion gehört dir"** und **"Ich bin so müde..."** — Seitenzahl
+  praktisch unverändert (102→101 bzw. 113→113), Cover-Neubau nicht dringend.
 
 **Danach für ALLE 7 Bücher:** Taschenbuch-PDF, eBook und (wo neu gebaut)
 Cover bei KDP neu hochladen.
