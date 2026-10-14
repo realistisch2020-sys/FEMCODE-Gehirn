@@ -194,15 +194,14 @@ def zitat_box(tabelle):
         return None
     t = Table([[Paragraph(z, quote_s)] for z in zeilen], colWidths=[W - LM - RM])
     stil = [
-        ('TOPPADDING', (0, 0), (-1, -1), 7),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 7),
-        ('LEFTPADDING', (0, 0), (-1, -1), 2),
-        ('RIGHTPADDING', (0, 0), (-1, -1), 2),
-        ('LINEABOVE', (0, 0), (-1, 0), 0.75, colors.HexColor('#C0848A')),
-        ('LINEBELOW', (0, -1), (-1, -1), 0.75, colors.HexColor('#C0848A')),
+        ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor('#efece6')),
+        ('TOPPADDING', (0, 0), (-1, -1), 9),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 9),
+        ('LEFTPADDING', (0, 0), (-1, -1), 12),
+        ('RIGHTPADDING', (0, 0), (-1, -1), 12),
     ]
     if len(zeilen) > 1:
-        stil.append(('LINEBELOW', (0, 0), (-1, -2), 0.4, colors.HexColor('#C0848A')))
+        stil.append(('LINEBELOW', (0, 0), (-1, -2), 0.4, colors.HexColor('#d8d2c8')))
     t.setStyle(TableStyle(stil))
     return t
 

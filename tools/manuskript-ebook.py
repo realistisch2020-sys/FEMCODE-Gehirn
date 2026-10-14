@@ -210,11 +210,11 @@ def baue():
     p { margin: 0 0 0.8em 0; text-indent: 0; }
     p.zitat { background: #efece6; font-style: italic; padding: 0.8em 1em;
               margin: 1em 0; }
-    div.zitatbox { border-top: 1px solid #C0848A; border-bottom: 1px solid #C0848A;
-                   padding: 0.6em 0.2em; margin: 1em 0; color: #6B6B6B; }
+    div.zitatbox { background: #efece6; padding: 0.8em 1em; margin: 1em 0;
+                   color: #6B6B6B; }
     div.zitatbox p { margin: 0.5em 0; }
     div.zitatbox p.zitatzeile { padding-bottom: 0.5em;
-                   border-bottom: 1px solid #C0848A; }
+                   border-bottom: 1px solid #d8d2c8; }
     div.zitatbox p.zitatzeile:last-child { border-bottom: none; }
     '''
     stil_datei = epub.EpubItem(uid='stil', file_name='stil.css',
