@@ -33,6 +33,13 @@ Petra muss mich nie daran erinnern.
    Und danach das fertige PDF anschauen, nicht nur den Text abfragen.
    Ob etwas im Dokument steht, ist noch nicht geprüft, ob es an der
    richtigen Stelle steht.
+4. **Vor jedem KDP-Upload: doppeltes Lektorat, wie ein menschlicher Lektor.**
+   Voller Ablauf in `context/buch-standard.md` Abschnitt 10. Zwei unabhängige
+   Lektorinnen lesen das ganze Buch (Tiefgang, Nutzen, echte Wiederholungen),
+   nur bei Übereinstimmung wird chirurgisch korrigiert, Franzi-Stil und
+   menschlicher Ton bleiben (`context/schreibstil.md`). Jeden neu
+   geschriebenen Satz danach einzeln gegenlesen, nicht nur `buch-pruefen.py`
+   laufen lassen — das ersetzt kein echtes Lesen.
 
 ## Befehle
 

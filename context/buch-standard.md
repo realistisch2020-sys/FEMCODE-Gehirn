@@ -297,6 +297,84 @@ Schriftgrösse. Immer zuerst prüfen, ob ein Manuskript Formatvorlagen hat
   Backmatter (vor dem Pflichtteil) mit den anderen Safe-to-Thrive-Büchern —
   gehört inzwischen zum Standard-Backmatter jedes neuen Buchs.
 
+## 10. Doppeltes Lektorat vor jedem KDP-Upload (Petras Regel, 14. Oktober 2026)
+
+Ausgelöst durch eine 2-Sterne-Kritik ("ständige Wiederholungen, zu allgemein,
+nichts Neues, mehr versprochen als der Titel hält") bei "Du brauchst kein
+letztes Gespräch". Petras ausdrückliche Anweisung: **dieser Ablauf gilt ab
+jetzt für jedes Buch, nicht nur nach einer schlechten Bewertung.** Vor jedem
+KDP-Upload (Neuveröffentlichung oder Überarbeitung) durchlaufen, zusätzlich
+zu `buch-pruefen.py` und der Checkliste aus `rechtssicherheit.md` — ersetzt
+sie nicht, kommt dazu.
+
+Massstab, wörtlich von Petra: Die Bücher müssen **Tiefgang haben, Menschen
+wirklich helfen und nützen, keine Wiederholungen im Buch haben**, dabei den
+**Franzi-Stil** (`context/schreibstil.md`) halten und **immer sehr
+menschlich geschrieben** sein, rechtlich sicher nach `rechtssicherheit.md`.
+
+### Schritt 1: Zwei unabhängige Lektorinnen, blind voneinander
+
+Zwei separate Leseaufträge (parallel, kein Austausch zwischen ihnen), jede
+liest das **gesamte** Manuskript und beurteilt:
+
+- Was verspricht Titel/Untertitel konkret, wird das eingelöst?
+- Konkrete Stellen mit eigenständigen, nicht-austauschbaren Einsichten (mit
+  Kapitel + Zitat)
+- Konkrete Stellen, die generisch/plattitüdenhaft wirken, austauschbar mit
+  jedem anderen Ratgeber (mit Kapitel + Zitat)
+- Echte inhaltliche Wiederholung über Kapitel hinweg, mit Belegen, nicht nur
+  gefühlt
+- Spannung/Lesefluss: zieht es sich irgendwo, oder bleibt es durchgehend
+  packend und nützlich?
+- Begründetes Gesamturteil
+
+Unterschiedliche Blickwinkel pro Lektorin (z. B. einmal "hält die These
+durch", einmal "Vielleserin des Genres, erkennt sie Standardsätze?") finden
+mehr als zwei gleiche Durchgänge.
+
+### Schritt 2: Synthese, nur bei echter Übereinstimmung korrigieren
+
+Eine dritte Instanz vergleicht beide Berichte. Nur wenn **beide unabhängig
+voneinander** auf denselben, mit Zitat belegten Befund kommen (nicht nur
+eine Einzelmeinung), gilt das als echter Korrekturgrund. Ergebnis ist eine
+chirurgische, konkret umsetzbare Korrekturliste plus eine Liste der
+eigenständigen Stärken, die unter keinen Umständen gekürzt werden dürfen.
+Ein insgesamt starkes Buch mit vereinzelten generischen Sätzen wird nicht
+pauschal überarbeitet — das ist normal, kein Korrekturgrund für sich allein.
+
+### Schritt 3: Chirurgisch korrigieren, nicht neu schreiben
+
+Nur die konkret benannten Stellen ändern (zusammenlegen, streichen,
+Formulierung variieren). Pflichtteile, Backmatter, QR-Bonusabschnitte und
+die geschützten Stärken unangetastet lassen. Danach: PDF und eBook neu
+bauen, `buch-pruefen.py`, und **das PDF tatsächlich ansehen** (Seiten rund
+um jede Änderung plus Inhaltsverzeichnis als Bild rendern und prüfen, nicht
+nur den Text abfragen).
+
+### Schritt 4: Jeden neuen Satz einzeln gegenlesen, wie eine Lektorin es täte
+
+Das ist der Schritt, der am leichtesten übersprungen wird, und der wichtigste
+nach Petras Rückmeldung vom 14. Oktober 2026. `buch-pruefen.py` ist eine
+mechanische Heuristik (Kommas, ß, Anführungszeichen), **keine echte
+Lektorin**. Nach jeder inhaltlichen Ergänzung jeden einzelnen neuen Satz für
+sich lesen und prüfen:
+
+- Klingt er natürlich und menschlich, oder nach KI-Textbaustein? (siehe
+  Abschnitt 6 oben: keine selbsterklärenden Pointen, keine zu glatten
+  Kontrastsätze, konkrete Details statt allgemeiner Beschreibung)
+- Stimmt Rechtschreibung/Grammatik wirklich, nicht nur laut Heuristik
+  (ss statt ß, keine Gedankenstriche, Kommasetzung)
+- **Wiederholt sich der neue Satz nicht selbst mit einem anderen neuen
+  Satz.** Genau das ist beim ersten Versuch einmal passiert: sieben neue
+  Zusätze sollten je eigenständig formuliert sein, einer davon wiederholte
+  eine Formulierung aus dem Satz direkt davor und wurde erst in diesem
+  eigenen Prüfschritt bemerkt, nicht vom Standard-Check.
+
+Erst wenn dieser Schritt gemacht ist, gilt eine Änderung als wirklich
+fertig gegengelesen, nicht nur technisch geprüft.
+
+---
+
 ### Cover braucht eigene Rechtsprüfung
 
 Das Cover ist ein **eigenes Dokument**, das `buch-pruefen.py` nicht mitprüft.
