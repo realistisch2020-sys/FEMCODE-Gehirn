@@ -2,6 +2,50 @@
 
 Hier landen alle laufenden ToDos. Claude pflegt diese Datei beim `/shutdown` automatisch — erledigte Punkte raus, neue rein.
 
+## Tiefgang/Titeltreue-Korrektur aller 7 Bücher abgeschlossen, Re-Upload nötig (Stand 17. Oktober 2026)
+
+Doppeltes Lektorat (Tiefgang ohne Fachjargon, Titeltreue) für alle 7 Bücher
+durchgeführt, chirurgisch korrigiert, Fachwörter ("Nervensystem",
+"Psychologie", "neurologisch", Bowlby/Winnicott/van der Kolk-Zitate) durch
+Körper-/Alltagsbilder ersetzt — ausser in den gesetzlich vorgeschriebenen
+Haftungsausschluss-Absätzen, dort korrekt und Pflicht. Bei "Das schlechte
+Gewissen" zusätzlich Therapiesitzungs-Anmutung entfernt (Rechtssicherheit).
+Früher Bonus-Hinweis zusätzlich zum bestehenden am Buchende ergänzt (ausser
+bei "Meine Lust ist nicht weg", das hat noch gar keinen Bonus-Mechanismus).
+
+**Seitenzahlen, vorher → nachher, Cover neu gebaut wo nötig:**
+- Ich stand nie auf meiner eigenen Liste: 119 → 121, Cover neu gebaut
+- Wenn Beziehungen erschöpfen: 172 → 172, Cover unverändert
+- Das schlechte Gewissen: 106 → 106, Cover unverändert (altes Spine-Problem bleibt, siehe unten)
+- Ich bin so müde...: 112 → 114, Cover neu gebaut, zusätzlich Inhaltsverzeichnis/Kapitelnummern-Mismatch behoben
+- Du brauchst kein letztes Gespräch: 99 → 101, Cover neu gebaut
+- Deine Reaktion gehört dir: 101 → 102, Cover neu gebaut
+- Meine Lust ist nicht weg...: 115 → 115, Cover unverändert
+
+**Offen: "Meine Lust ist nicht weg" nur teilweise korrigiert.** Der
+Korrektur-Agent ist wegen eines Sitzungslimits abgebrochen — Fachjargon ist
+raus, PDF neu gebaut, aber die vorgeschlagenen Tiefgang-Ergänzungen zu
+Kapitel 7, 10, 12 und 13 (siehe Lektorat vom 17.10.) stehen noch aus. Bei
+Gelegenheit nachholen.
+
+**Offen: Bonus-QR-Code-Mechanismus für "Meine Lust ist nicht weg" fehlt
+komplett** — müsste wie bei den anderen Büchern neu gebaut werden (Tentary-
+Link, Platzierung früh + am Ende).
+
+**Weiterhin offen, unabhängig von dieser Korrektur:**
+- "Das schlechte Gewissen": Cover-Rücken ist für 96 Seiten gebaut, Buch hat
+  106 — Petra muss entscheiden (Original-Foto neu einsetzen falls Quelldatei
+  vorhanden / neues typografisches Cover / so hochladen und Risiko tragen).
+- GitHub-Repo `realistisch2020-sys/FEMCODE-Gehirn` ist weiterhin öffentlich
+  (unveröffentlichte Manuskripte, Adresse, Finanzpläne offen einsehbar) —
+  Petra muss bestätigen, ob auf privat gestellt werden soll.
+- Zwei getrennte, nie zusammengeführte Arbeitsstände des Repos entdeckt: der
+  Buch-Branch (dieser hier) und `main` (Publisher/Ads-Struktur einer anderen
+  Session, Stand 5.10.). Zusammenführen nur mit Petras Entscheidung.
+
+**Danach für alle 7 Bücher:** Taschenbuch-PDF, eBook und (wo neu gebaut)
+Cover bei KDP neu hochladen.
+
 ## Katalog-Qualitätsprüfung abgeschlossen, KDP-Re-Upload für alle 7 Bücher nötig (Stand 14. Oktober 2026)
 
 Alle Hauptbücher wurden von je zwei unabhängigen Lektorinnen auf Wiederholung/
