@@ -21,7 +21,7 @@ OUT = '/home/user/FEMCODE-Gehirn/outputs/buch-an-mich-denken/buch4-Cover-Print-F
 BILD = sys.argv[1] if len(sys.argv) > 1 and os.path.exists(sys.argv[1]) else None
 
 # ─── Masse ──────────────────────────────────────────────────────────────────
-SEITEN  = 119
+SEITEN  = 121
 TRIM_B  = 139.7 * mm
 TRIM_H  = 215.9 * mm
 RUECKEN = SEITEN * 0.0025 * 25.4 * mm
