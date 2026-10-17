@@ -115,7 +115,7 @@ Sondern: "Wer wählst du zu sein?"
 ## Was NICHT übernommen wird (Petra ≠ Manifestation-Coach)
 
 Franzi benutzt: "SEIN", "Magie", "expandieren", "duplizieren", "Manifest", spirituelle Sprache.
-Das ist Franzis Welt — nicht Petras. Petra ist Therapeutin. Die Energie wird übernommen, nicht das Vokabular.
+Das ist Franzis Welt — nicht Petras. Petra ist Coachin, nie Therapeutin (siehe `rechtssicherheit.md`). Die Energie wird übernommen, nicht das Vokabular.
 
 **Konkret zu meiden, auch wenn es in Franzis Originalmaterial auftaucht**
 (Screenshots/Buchseiten von Franzi sind reines Referenzmaterial für Rhythmus,
@@ -151,6 +151,17 @@ Bücher werden geschlechtsneutral geschrieben:
 
 ---
 
+## Klar benennen statt beschönigen (Stand 17. Oktober 2026)
+
+Petras Regel, nach dem Katalog-Tiefgang-Check: nicht um den Brei herum schreiben,
+sondern die Sache beim Namen nennen. Vorsichtiger formulieren (siehe Regel oben,
+"kann/oft" statt absoluter Aussagen) heisst nicht weichspülen — die Unsicherheit
+gilt der Verallgemeinerung ("nicht bei jeder passiert das gleich"), nicht der
+Deutlichkeit der einzelnen Aussage selbst. Trotz Verzicht auf Fachwörter darf das
+Buch nie laienhaft wirken: Tiefe entsteht durch ein genaues, nachvollziehbares
+Bild für den Mechanismus (siehe Schreibregel 6 oben, "Nicht erklären — benennen"),
+nicht durch Verflachen auf eine allgemeine Plattitüde.
+
 ## Petras eigene Stimme
 
 - Warm, aber direkt
@@ -181,6 +192,15 @@ Diese Sätze und Muster verraten KI-Herkunft. Nicht subtil — sofort erkennbar.
 **Verbotene Wörter und Phrasen:**
 - "Jeder dieser Sätze ist..." → KI-Listenabschluss
 - "Neurobiologisch betrachtet" / "Neurobiologisch gesehen" → zu akademisch; umschreiben
+- "Nervensystem", "Psychologie"/"psychologisch", "neurologisch", Namen echter Fachautoritäten
+  (z. B. Bowlby, Winnicott, van der Kolk) → nie wörtlich nennen (Stand 17. Oktober 2026,
+  Petras Regel, ausgelöst durch den Katalog-Tiefgang-Check). Der Hintergrund darf und soll
+  psychologisch fundiert SEIN, nur das Fachwort selbst fehlt — sonst klingt es nach
+  Therapeutin statt Coachin. Übersetzen in Körper-/Alltagsbilder, nicht streichen: aus
+  "Das Nervensystem reagiert" wird z. B. "Ein Teil von dir reagiert, bevor der Verstand
+  mitreden kann" — die Erklärung bleibt, nur das Etikett verschwindet.
+- Szenen, die wie eine echte Therapiesitzung wirken (Couch, "in der Sitzung sagte sie...")
+  → umschreiben als Coaching-Gespräch oder Alltagsszene, nie als Therapie-Setting.
 - "Das nennt man nicht X. Das ist Y." → zu aufgeräumt; Varianten nutzen
 - "Beides ist Information." → KI-Therapiesprech
 - "Das war mutig. Auch wenn es sich nicht so angefühlt hat." → zu geglättet
